@@ -68,6 +68,20 @@ def test_checkpoint_roundtrip_and_basis_mismatch(tmp_path):
     with pytest.raises(ValueError, match="order or instruction"):
         OptionEmbeddingHead.load(path, AttributeBasis(("shape", "color")))
 
+def test_encoder_accepts_provenance_metadata_but_rejects_wrong_backend(tmp_path):
+    backbone=nn.Linear(12,12); basis=AttributeBasis(('color','shape'))
+    source={'decision_checkpoint':'adapter','base_model':'base'}
+    mso=SimpleNamespace(branch=True,model=SimpleNamespace(backbone=backbone,head=OptionScorer(12,16)),
+                        _superembedding_source=source)
+    encoder=OmniJevEmbeddingEncoder(mso,basis,embed_dim=8,mode='raw')
+    path=tmp_path/'head.pt'
+    encoder.embedding_head.save(path,basis,{**source,'feature_backend':'omnijev','research_protocol':'v3'})
+    encoder.load_head(path)
+    encoder.embedding_head.save(path,basis,{**source,'feature_backend':'base','research_protocol':'v3'})
+    with pytest.raises(ValueError,match='matching feature extractor'): encoder.load_head(path,allow_source_relocation=True)
+    encoder.embedding_head.save(path,basis,{**source,'base_model':'wrong'})
+    with pytest.raises(ValueError,match='source references'): encoder.load_head(path)
+
 
 def test_loss_only_supervises_selected_attribute():
     torch.manual_seed(1)

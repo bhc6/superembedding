@@ -1,0 +1,14 @@
+{
+  "fashion_expanded": {
+    "verified_images": 10853,
+    "all_decoded_image_hashes_match": true
+  },
+  "cub_attributes": {
+    "verified_images": 11787,
+    "all_decoded_image_hashes_match": true
+  },
+  "dtd": {
+    "verified_images": 5623,
+    "all_decoded_image_hashes_match": true
+  }
+}

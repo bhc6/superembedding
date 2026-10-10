@@ -1,0 +1,53 @@
+{
+  "dataset": "CUB-200-2011",
+  "revision": "65de6-vp158",
+  "label_keys": [
+    "primary_color",
+    "bill_shape",
+    "wing_shape"
+  ],
+  "directions": [
+    "the primary color of the bird",
+    "the shape of the bird bill",
+    "the shape of the bird wings"
+  ],
+  "instruction": "Extract visible evidence about the pictured bird for the specified attribute direction.",
+  "label_policy": "Retain all positive attributes with human certainty >=3 (probably/definitely); absent high-confidence positives mean unobserved, not a negative class.",
+  "protocol": "Official train/test; species-stratified 20% official train for validation. Within-split retrieval; pair relevant iff at least one shared observed value in every requested attribute.",
+  "license": "Images restricted to non-commercial research and education; no image redistribution.",
+  "source": "https://www.vision.caltech.edu/datasets/cub_200_2011/",
+  "seed": 20261012,
+  "count": 11787,
+  "splits": {
+    "train": 4793,
+    "val": 1200,
+    "test": 5794
+  },
+  "scales": {
+    "25": 1198,
+    "50": 2396,
+    "100": 4793
+  },
+  "exact_duplicate_removed_ids": [
+    "cub_03340"
+  ],
+  "label_format": "lists; empty list means unobserved",
+  "labels_observed": {
+    "train": {
+      "primary_color": 4461,
+      "bill_shape": 4314,
+      "wing_shape": 2301
+    },
+    "val": {
+      "primary_color": 1132,
+      "bill_shape": 1079,
+      "wing_shape": 543
+    },
+    "test": {
+      "primary_color": 5433,
+      "bill_shape": 5266,
+      "wing_shape": 2873
+    }
+  },
+  "manifest_sha256": "495255edad7301650c63c25dc65a950955e358ae54fb89922e535abe923599f4"
+}

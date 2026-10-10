@@ -1,0 +1,49 @@
+{
+  "dataset": "dtd",
+  "backend": "flair",
+  "scale": 25,
+  "arch": "raw",
+  "seed": 17,
+  "lr": 0.0001,
+  "path": "runs/v3/dtd/suite/flair/n25/raw_s17_lr0.0001",
+  "head_sha256": "4e8e513286584515f369bf53057320b4e47ff209dfc33de4dabb5ed925ee531c",
+  "metrics": {
+    "attributes": {
+      "texture": {
+        "eligible_queries": 1877,
+        "total_queries": 1877,
+        "observed_queries": 1877,
+        "mAP": 0.4643988609313965,
+        "R@1": 0.7197656035423279,
+        "R@5": 0.9030367732048035
+      },
+      "macro": {
+        "mAP": 0.4643988609313965,
+        "R@1": 0.7197656035423279,
+        "R@5": 0.9030367732048035
+      }
+    },
+    "pairs": {},
+    "joint": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.46439892053604126,
+      "R@1": 0.7197656035423279,
+      "R@5": 0.9030367732048035
+    },
+    "joint_texture_overlap": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.4937206506729126,
+      "R@1": 0.791688859462738,
+      "R@5": 0.9366009831428528
+    }
+  },
+  "validation_score": 0.45718926191329956,
+  "best_step": 1000,
+  "output_dimension": 256,
+  "trainable_parameters": 132352,
+  "selection_fingerprint": "fea5d8df17108a662c4e79d07b3b547402641163b1e4bea427814805a02ed55c"
+}

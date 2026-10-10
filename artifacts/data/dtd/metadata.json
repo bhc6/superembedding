@@ -1,0 +1,58 @@
+{
+  "dataset": "Describable Textures Dataset",
+  "revision": "r1.0.1",
+  "label_keys": [
+    "texture"
+  ],
+  "directions": [
+    "the visible texture and repeated surface pattern"
+  ],
+  "instruction": "Extract evidence about the pictured surface for the specified texture direction.",
+  "protocol": "Official split 1 train/val/test. Primary relevance is equal key texture; secondary metric uses shared human joint texture annotations. This is not the official 10-split classification benchmark.",
+  "license": "Official website provides data for research purposes; no image redistribution.",
+  "source": "https://www.robots.ox.ac.uk/~vgg/data/dtd/",
+  "seed": 20261012,
+  "count": 5623,
+  "splits": {
+    "train": 1874,
+    "val": 1872,
+    "test": 1877
+  },
+  "scales": {
+    "25": 468,
+    "50": 937,
+    "100": 1874
+  },
+  "exact_duplicate_removed_ids": [
+    "dtd_dotted_dotted_0185",
+    "dtd_dotted_dotted_0203",
+    "dtd_dotted_dotted_0207",
+    "dtd_dotted_dotted_0134",
+    "dtd_dotted_dotted_0149",
+    "dtd_dotted_dotted_0155",
+    "dtd_dotted_dotted_0156",
+    "dtd_dotted_dotted_0166",
+    "dtd_dotted_dotted_0173",
+    "dtd_dotted_dotted_0182",
+    "dtd_potholed_potholed_0140",
+    "dtd_dotted_dotted_0140",
+    "dtd_dotted_dotted_0143",
+    "dtd_dotted_dotted_0146",
+    "dtd_dotted_dotted_0196",
+    "dtd_dotted_dotted_0198",
+    "dtd_dotted_dotted_0208"
+  ],
+  "label_format": "lists; empty list means unobserved",
+  "labels_observed": {
+    "train": {
+      "texture": 1874
+    },
+    "val": {
+      "texture": 1872
+    },
+    "test": {
+      "texture": 1877
+    }
+  },
+  "manifest_sha256": "7444bcfadc8b5ff5dc15d32eb6cddaec1df826fa72b2161d5efb6458e94c5b80"
+}

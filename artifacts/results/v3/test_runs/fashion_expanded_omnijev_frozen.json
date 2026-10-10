@@ -1,0 +1,72 @@
+{
+  "dataset": "fashion_expanded",
+  "backend": "omnijev",
+  "data_fingerprint": "fcf20e5a0e7d96f978951604367c18cf7093e2f3946b598212081b5a7b7078ac",
+  "raw": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.34988170862197876,
+        "R@1": 0.7183098793029785,
+        "R@5": 0.9019718170166016
+      },
+      "article_type": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7246405482292175,
+        "R@1": 0.8946478962898254,
+        "R@5": 0.9785915613174438
+      },
+      "audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7493711709976196,
+        "R@1": 0.9476056098937988,
+        "R@5": 0.983661949634552
+      },
+      "macro": {
+        "mAP": 0.6079644759496053,
+        "R@1": 0.8535211284955343,
+        "R@5": 0.9547417759895325
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 1773,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.31891486048698425,
+        "R@1": 0.6232374310493469,
+        "R@5": 0.8544839024543762
+      },
+      "color+audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.25898104906082153,
+        "R@1": 0.6366197466850281,
+        "R@5": 0.8625352382659912
+      },
+      "article_type+audience": {
+        "eligible_queries": 1774,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.6430288553237915,
+        "R@1": 0.8416008949279785,
+        "R@5": 0.9599774479866028
+      }
+    },
+    "joint": {
+      "eligible_queries": 1767,
+      "total_queries": 1775,
+      "observed_queries": 1775,
+      "mAP": 0.28469300270080566,
+      "R@1": 0.5755518078804016,
+      "R@5": 0.8064516186714172
+    }
+  }
+}

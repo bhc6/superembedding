@@ -1,0 +1,19 @@
+{
+  "training_runs": 432,
+  "selected_test_runs": 216,
+  "reload_validation_max_metric_difference": 0.0,
+  "fresh_inference_checks": 12,
+  "fresh_inference_max_abs_difference": 7.82310962677002e-07,
+  "pytest_passed": 32,
+  "figures_visually_reviewed": [
+    "v3_data_scaling.png",
+    "v3_validation_curves.png"
+  ],
+  "test_used_for_selection": false,
+  "initial_single_image_inference_issue": "BF16 batch-1 rounding amplified by base head; resolved using independent repeated batch-4 images; no change to training/test features",
+  "local_research_complete": true,
+  "publication_status": "ready for authorized single commit and release",
+  "archive_count": 12,
+  "archive_bytes": 4665138232,
+  "archive_members_verified": true
+}

@@ -1,0 +1,5622 @@
+{
+  "count": 432,
+  "maximum_metric_difference": 0.0,
+  "heads": [
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n25/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n50/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_frozen_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_frozen_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_frozen_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_frozen_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_frozen_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_frozen_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_tuned_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_tuned_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_tuned_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_tuned_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_tuned_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/gated_tuned_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/residual_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/residual_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/residual_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/residual_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/residual_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/residual_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/omnijev/n100/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n25/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n25/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n25/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n25/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n25/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n25/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n50/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n50/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n50/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n50/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n50/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n50/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n100/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n100/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n100/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n100/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n100/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/base/n100/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n25/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n25/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n25/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n25/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n25/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n25/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n50/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n50/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n50/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n50/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n50/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n50/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/fashion_expanded/suite/flair/n100/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1184,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1184,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n25/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n50/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_frozen_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_frozen_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_frozen_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_frozen_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_frozen_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_frozen_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_tuned_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_tuned_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_tuned_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_tuned_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_tuned_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/gated_tuned_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/residual_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/residual_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/residual_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/residual_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/residual_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/residual_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/omnijev/n100/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n25/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n25/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n25/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n25/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n25/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n25/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n50/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n50/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n50/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n50/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n50/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n50/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n100/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n100/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n100/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n100/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n100/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/base/n100/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n25/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n25/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n25/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n25/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n25/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n25/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n50/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n50/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n50/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n50/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n50/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n50/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        768
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1200,
+        3,
+        256
+      ],
+      "embedding_shape": [
+        1200,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n25/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_frozen_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_frozen_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_frozen_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_frozen_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_frozen_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_frozen_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_tuned_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_tuned_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_tuned_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_tuned_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_tuned_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/gated_tuned_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/residual_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/residual_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/residual_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/residual_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/residual_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/residual_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/omnijev/n100/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n25/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n25/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n25/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n25/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n25/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n25/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n50/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n50/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n50/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n50/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n50/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n50/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n100/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n100/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n100/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n100/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n100/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/base/n100/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n25/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n25/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n25/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n25/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n25/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n25/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n50/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n50/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n50/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n50/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n50/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n50/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/raw_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/raw_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/raw_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/raw_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/raw_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/raw_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_concat_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_concat_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_concat_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_concat_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_concat_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_concat_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_equal_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_equal_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_equal_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_equal_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_equal_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_equal_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        256
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_small_s17_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_small_s42_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_small_s91_lr0.0001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_small_s17_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_small_s42_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    },
+    {
+      "path": "runs/v3/dtd/suite/flair/n100/joint_out_small_s91_lr0.001",
+      "max_validation_metric_difference": 0.0,
+      "slots_shape": [
+        1872,
+        1,
+        256
+      ],
+      "embedding_shape": [
+        1872,
+        128
+      ]
+    }
+  ]
+}

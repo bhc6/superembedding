@@ -17,4 +17,12 @@ MIT; the HF mirror has no explicit license field. This repository
 publishes identifiers, labels, splits and download instructions, not
 copies of source product images. See sources/dataset_license_verification.json.
 
+The v3 multi-domain study additionally uses CUB-200-2011 (Wah et al.,
+Caltech-UCSD Birds, 2011) and Describable Textures Dataset (Cimpoi et al.,
+CVPR 2014). CUB images are restricted to non-commercial research and
+education; DTD is provided for research purposes. Image copyrights remain
+with their respective owners. No source bird or texture images are
+redistributed. Project code/head licensing does not waive dataset terms
+or assert commercial-use clearance. See sources/research_datasets_v3.json.
+
 No affiliation with or endorsement by the upstream authors is implied.

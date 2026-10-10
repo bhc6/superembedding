@@ -1,64 +1,57 @@
 # SuperEmbedding
 
-Reusable attribute memory vectors from OmniJev-0.8B / Qwen3.5-0.8B. This is a research prototype for fixed-direction image-to-image retrieval, with real local training on an RTX 5070 Laptop (8 GB).
+Reusable attribute memory vectors from OmniJev-0.8B / Qwen3.5-0.8B, trained and evaluated locally on an RTX 5070 Laptop with 8 GB VRAM.
 
-Each image is encoded once under an ordered attribute basis. The head returns normalized **slots** (one 256d vector per attribute) and a **global embedding** (concatenation, or a learned output projection). Queries choose a slot or a subset of slots without re-encoding the image. Unseen attribute directions require encoding a new basis.
+Each image is encoded once under fixed attribute directions. Store normalized 256d **slots**, plus a global vector from concatenation or an optional output projection. Select slots at retrieval time without re-encoding gallery images. New attribute directions require re-encoding. Domains use separate heads.
 
-Architectures: raw hidden projection, frozen/trained OmniJev multiplicative gates, a raw residual around the gate, and concatenation with/without a 768d or 256d output projection. See [design](reports/OUTPUT_PROJECTION_DESIGN.zh.md), [frozen protocol](reports/EXPERIMENT_PROTOCOL_V2.zh.md), and [architecture audit](reports/ARCHITECTURE_COMPARISON.zh.md).
+## Multi-domain results
 
-## Measured results
+**28,263 images, three domains, three nested training sizes, three seeds, 432 training runs.** Learning rates and checkpoints were sealed on validation before evaluating 216 selected models on test.
 
-On Fashion2400, three-seed three-attribute mAP is **52.60±0.09%** for direct concatenation with joint supervision, **51.93±0.20%** with a 768d output projection, and **51.97±0.79%** with a 256d projection. Output projection is optional here; the smaller vector is a compression tradeoff. Raw projection outperforms the copied multiplicative gate. These are local task results, not a claim of state of the art.
+Full-training attribute mAP, mean ± sample SD over three seeds:
 
-See the [complete results](reports/FORMAL_RESULTS_TABLE.md), [interpretation in Chinese](reports/FORMAL_CONCLUSIONS.zh.md), and [model card](MODEL_CARD.md).
+| Same-protocol model | Fashion | CUB attributes | DTD textures |
+|---|---:|---:|---:|
+| OmniJev raw | 82.10 ± 0.21 | 44.36 ± 0.10 | 49.37 ± 0.25 |
+| LoRA-disabled base raw | 71.89 ± 1.32 | 41.02 ± 0.06 | 49.94 ± 0.63 |
+| Official FLAIR + raw head | 74.50 ± 0.39 | 43.41 ± 0.03 | 50.88 ± 0.35 |
 
-Weights and resumable training states: [Fashion2400 release](https://github.com/bhc6/superembedding/releases/tag/v0.1.0-fashion2400). All 54 trained heads are included, including negative results. The LoRA follow-up did not beat its starting validation score; both the selected step0 model and actual final step100 model are clearly labeled.
+Output projection is **optional and task-dependent**. Under equal joint-loss training, compressed global projection versus concat changes global mAP by **+0.95 pp on Fashion, −0.02 pp on CUB, and −0.98 pp on DTD**. Fashion/CUB compress 768→256d; DTD compresses 256→128d. Attribute slots remain necessary for attribute-selective retrieval. Frozen copied decision gates underperform raw projection in all three domains.
 
-![Architecture comparison](artifacts/figures/architecture_comparison.png)
+More data clearly helps DTD; Fashion/CUB raw largely plateau at the fixed 1,000-update budget. Most selected models peak at the final update. These are budget-limited, custom image-retrieval comparisons, not optimal-capacity, SOTA, or official classification results. Backbones and compute differ.
 
-## Reproduce
+[Full results](reports/RESULTS_V3.md) · [Chinese conclusions](reports/CONCLUSIONS_V3.zh.md) · [Projection design](reports/PROJECTION_DESIGN_V3.zh.md) · [Protocol](reports/EXPERIMENT_PROTOCOL_V3.zh.md) · [Model card](MODEL_CARD.md)
 
-Python 3.13 was used. PowerShell commands, from this repository:
+![Data scaling](artifacts/figures/v3_data_scaling.png)
 
-```powershell
-python -m venv .venv
-.venv\Scripts\python -m pip install torch==2.10.0 torchvision==0.25.0 --index-url https://download.pytorch.org/whl/cu128
-.venv\Scripts\python -m pip install -r requirements-local.txt
-.venv\Scripts\python scripts/clone_dependencies.py
-.venv\Scripts\python scripts/download_models.py
-.venv\Scripts\python scripts/prepare_fashion.py
-.venv\Scripts\python scripts/prepare_formal.py
-.venv\Scripts\python scripts/extract_features.py --data data/fashion2400 --output runs/fashion2400/omnijev
-.venv\Scripts\python scripts/run_matrix.py
-.venv\Scripts\python scripts/evaluate_lora.py
-.venv\Scripts\python scripts/summarize_results.py
-.venv\Scripts\python -m pytest -q
-```
+## Reproduce and use
 
-Windows uses `MSO_FLA=0` (PyTorch fallback), set by the scripts. Keep Transformers at 5.5.0: 5.3.0 failed the real Qwen3.5 cache path. Exact installed dependencies are in `requirements-local.lock.txt`; CUDA wheels require the PyTorch index above.
-
-The first 600 images are development-only. The formal 2,400-image subset excludes those products and exact/dHash near duplicates. It contains 1,462 train / 469 validation / 469 test images, three catalog attributes and 40 joint strata. Split metadata and recorded results are published under `artifacts/`. Source product images are not redistributed.
-
-## Checkpoints and resume
-
-`experiment_suite.py` automatically resumes `last.pt`, including optimizer, completed step, sampling RNG, CPU/CUDA RNG and configuration/data/feature fingerprints. It keeps the best validation head and snapshots at steps 250 and 500. `train_lora.py` also resumes automatically and stores trainable backbone parameters plus the head, validating the original model/head identity. An interrupted update is replayed from the last saved completed update. Both use atomic temporary-file replacement.
-
-Use `--stop-after N` to test a graceful interruption, then rerun the same command without that flag. Do not change training/data settings in an existing run directory. Frozen-cache training is the primary multi-seed comparison; 100-step real-image LoRA is a separate one-seed follow-up. Original development results remain for provenance.
-
-## Encode a new image
-
-Download a published **OmniJev** head from the release; retain its fixed attribute order. For a head trained on frozen OmniJev features:
+Follow [the complete instructions](reports/REPRODUCING_V3.md) and pinned `requirements-local.lock.txt`. After installing upstream models/dependencies:
 
 ```powershell
-.venv\Scripts\python scripts/encode_image.py --image path/to/product.jpg --head path/to/best_head.pt --adapter models/OmniJev-0.8B-v1.1 --base models/Qwen3.5-0.8B --output runs/vector.pt
+.venv/Scripts/python.exe scripts/restore_research_data.py
+.venv/Scripts/python.exe scripts/run_research.py --parallel
+.venv/Scripts/python.exe scripts/verify_research_resume.py
+.venv/Scripts/python.exe scripts/audit_research.py
+.venv/Scripts/python.exe scripts/verify_research_exports.py
+.venv/Scripts/python.exe scripts/evaluate_research.py
+.venv/Scripts/python.exe scripts/report_research.py
 ```
 
-For fine-tuned LoRA, set `--adapter` to the released derived adapter directory and `--head` to its `embedding_head.pt`. Base-ablation and FLAIR heads require their respective extractors; they are not interchangeable with the OmniJev encoder.
+Restart the same training command to resume. `last.pt` includes model/optimizer, local/Python/torch/CUDA RNG, step, log accumulators, and input fingerprints. Atomic writes protect the last completed checkpoint. `best_head.pt` loads independently. Exact 2+2-step recovery versus four continuous updates is verified; all 432 heads reproduce saved validation metrics after reload.
 
-## Scope and attribution
+```powershell
+.venv/Scripts/python.exe scripts/encode_research_image.py --head path/to/best_head.pt --image path/to/image.jpg --output runs/vector.pt
+```
 
-FLAIR is directly measured on the same local fixed-direction retrieval protocol, frozen and with an equal-budget supervised head. This is not a reproduction of its original text-to-image benchmark. Omni-Attribute had no usable public checkpoint/code in the inspected repository and is not presented as an empirical baseline.
+The checkpoint selects its OmniJev, base-ablation, or FLAIR backend. Outputs contain `slots` and `embedding`. OmniJev/base single-image inference repeats the image into four independent batch rows to match training's BF16 geometry; batch-1 rounding can otherwise be amplified by the head.
 
-This small fashion task does not establish novelty, open-domain memory quality, unseen-composition generalization, or transfer of causal decision evidence. All values/combinations are seen in training; dHash filtering is heuristic. Models may have unknown pretraining overlap with product images. Negative results are retained.
+Every trained head and resumable state: [v0.2.0 multi-domain release](https://github.com/bhc6/superembedding/releases/tag/v0.2.0-multidomain). Includes both learning rates and negative results. No source images or upstream backbone weights are bundled. SHA256 manifests accompany all archives.
 
-Code and our derived models: Apache-2.0; attribution in [NOTICE](NOTICE). Original base weights and external models retain their upstream licenses and are downloaded at fixed revisions. Inherited OmniJev decision heads are not recalibrated or validated after LoRA updates.
+## Scope, pilot, and attribution
+
+V3 trains heads on frozen backbones. It does not establish causal transfer of decision sensitivity, unseen-composition generalization, arbitrary new-attribute transfer, or novelty. Omni-Attribute lacked usable released code/checkpoints in the inspected repository and is not an empirical baseline. [Source architecture comparison](reports/ARCHITECTURE_COMPARISON.zh.md).
+
+The [v0.1 Fashion2400 pilot](https://github.com/bhc6/superembedding/releases/tag/v0.1.0-fashion2400) remains available with [results](reports/FORMAL_RESULTS_TABLE.md), [model card](reports/MODEL_CARD_PILOT_V01.md), and [original workflow](reports/README_PILOT_V01.md). Its 100-update real-image LoRA follow-up did not improve validation; selected step-0 and actual step-100 models remain published. V3 includes no new end-to-end LoRA experiment.
+
+Code and contributed head parameters: Apache-2.0, with upstream attribution in [NOTICE](NOTICE). Dataset restrictions still apply: CUB is for non-commercial research/education; DTD is provided for research. We do not assert commercial-use clearance. See [data sources and terms](sources/research_datasets_v3.json).

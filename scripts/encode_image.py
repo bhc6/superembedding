@@ -25,7 +25,7 @@ def main():
     ap.add_argument('--base', help='Explicit local location of the pinned base model')
     args = ap.parse_args()
     head, basis, source = OptionEmbeddingHead.load(args.head)
-    if source.get('feature_backend')=='omnijev_lora_disabled' or source.get('decision_checkpoint')=='FLAIR':
+    if source.get('feature_backend') in {'omnijev_lora_disabled','base','flair'} or source.get('decision_checkpoint')=='FLAIR':
         raise ValueError('This baseline head requires its matching feature extractor, not the OmniJev adapter encoder')
     if not source.get('decision_checkpoint') or not source.get('base_model'):
         raise ValueError('checkpoint must record its OmniJev adapter and base model')

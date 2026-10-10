@@ -1,0 +1,82 @@
+{
+  "dataset": "cub_attributes",
+  "backend": "flair",
+  "scale": 100,
+  "arch": "joint_out_equal",
+  "seed": 42,
+  "lr": 0.001,
+  "path": "runs/v3/cub_attributes/suite/flair/n100/joint_out_equal_s42_lr0.001",
+  "head_sha256": "6ce023cb7e04b93634a724cb4b33d792133397fa255d4bf3fc1975c386efb972",
+  "metrics": {
+    "attributes": {
+      "primary_color": {
+        "eligible_queries": 5433,
+        "total_queries": 5794,
+        "observed_queries": 5433,
+        "mAP": 0.5591529607772827,
+        "R@1": 0.724093496799469,
+        "R@5": 0.9453340768814087
+      },
+      "bill_shape": {
+        "eligible_queries": 5266,
+        "total_queries": 5794,
+        "observed_queries": 5266,
+        "mAP": 0.39616745710372925,
+        "R@1": 0.5180402398109436,
+        "R@5": 0.8551082611083984
+      },
+      "wing_shape": {
+        "eligible_queries": 2873,
+        "total_queries": 5794,
+        "observed_queries": 2873,
+        "mAP": 0.35274988412857056,
+        "R@1": 0.3644274175167084,
+        "R@5": 0.8137835264205933
+      },
+      "macro": {
+        "mAP": 0.43602343400319415,
+        "R@1": 0.5355203847090403,
+        "R@5": 0.8714086214701334
+      }
+    },
+    "pairs": {
+      "primary_color+bill_shape": {
+        "eligible_queries": 5155,
+        "total_queries": 5794,
+        "observed_queries": 5160,
+        "mAP": 0.253991961479187,
+        "R@1": 0.38079532980918884,
+        "R@5": 0.7530552744865417
+      },
+      "primary_color+wing_shape": {
+        "eligible_queries": 2848,
+        "total_queries": 5794,
+        "observed_queries": 2848,
+        "mAP": 0.20216451585292816,
+        "R@1": 0.2559691071510315,
+        "R@5": 0.6724016666412354
+      },
+      "bill_shape+wing_shape": {
+        "eligible_queries": 2790,
+        "total_queries": 5794,
+        "observed_queries": 2790,
+        "mAP": 0.1496753990650177,
+        "R@1": 0.18172043561935425,
+        "R@5": 0.5440860390663147
+      }
+    },
+    "joint": {
+      "eligible_queries": 2738,
+      "total_queries": 5794,
+      "observed_queries": 2769,
+      "mAP": 0.09924051910638809,
+      "R@1": 0.12783053517341614,
+      "R@5": 0.4192841351032257
+    }
+  },
+  "validation_score": 0.27901649971803033,
+  "best_step": 1000,
+  "output_dimension": 768,
+  "trainable_parameters": 722176,
+  "selection_fingerprint": "fea5d8df17108a662c4e79d07b3b547402641163b1e4bea427814805a02ed55c"
+}

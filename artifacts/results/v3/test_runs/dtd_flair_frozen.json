@@ -1,0 +1,73 @@
+{
+  "dataset": "dtd",
+  "backend": "flair",
+  "data_fingerprint": "19d92d729ddc428cc81196f28fd81e29cfa91b1b235864a4212c8fb1b7217840",
+  "raw": {
+    "attributes": {
+      "texture": {
+        "eligible_queries": 1877,
+        "total_queries": 1877,
+        "observed_queries": 1877,
+        "mAP": 0.35503527522087097,
+        "R@1": 0.6856686472892761,
+        "R@5": 0.8700053095817566
+      },
+      "macro": {
+        "mAP": 0.35503527522087097,
+        "R@1": 0.6856686472892761,
+        "R@5": 0.8700053095817566
+      }
+    },
+    "pairs": {},
+    "joint": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.3550352156162262,
+      "R@1": 0.6856686472892761,
+      "R@5": 0.8700053095817566
+    },
+    "joint_texture_overlap": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.3751291036605835,
+      "R@1": 0.7549280524253845,
+      "R@5": 0.9072988629341125
+    }
+  },
+  "global": {
+    "attributes": {
+      "texture": {
+        "eligible_queries": 1877,
+        "total_queries": 1877,
+        "observed_queries": 1877,
+        "mAP": 0.34191712737083435,
+        "R@1": 0.673947811126709,
+        "R@5": 0.8716036081314087
+      },
+      "macro": {
+        "mAP": 0.34191712737083435,
+        "R@1": 0.673947811126709,
+        "R@5": 0.8716036081314087
+      }
+    },
+    "pairs": {},
+    "joint": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.34191712737083435,
+      "R@1": 0.673947811126709,
+      "R@5": 0.8716036081314087
+    },
+    "joint_texture_overlap": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.3615475594997406,
+      "R@1": 0.7437400221824646,
+      "R@5": 0.9067661166191101
+    }
+  }
+}

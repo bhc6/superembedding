@@ -1,0 +1,72 @@
+{
+  "dataset": "fashion_expanded",
+  "backend": "base",
+  "data_fingerprint": "615f9cb5d55ee1774d87a4162c3276c75b6d2c9f316e3be8b74effdfbeaed9be",
+  "raw": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.26147839426994324,
+        "R@1": 0.6371830701828003,
+        "R@5": 0.8850704431533813
+      },
+      "article_type": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7285299301147461,
+        "R@1": 0.8969014286994934,
+        "R@5": 0.9780281782150269
+      },
+      "audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7438104748725891,
+        "R@1": 0.9318310022354126,
+        "R@5": 0.9785915613174438
+      },
+      "macro": {
+        "mAP": 0.5779395997524261,
+        "R@1": 0.8219718337059021,
+        "R@5": 0.947230060895284
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 1773,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.2598254382610321,
+        "R@1": 0.5177664756774902,
+        "R@5": 0.8313592672348022
+      },
+      "color+audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.21573814749717712,
+        "R@1": 0.5707042217254639,
+        "R@5": 0.8450704216957092
+      },
+      "article_type+audience": {
+        "eligible_queries": 1774,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.6522176265716553,
+        "R@1": 0.8489289879798889,
+        "R@5": 0.9509583115577698
+      }
+    },
+    "joint": {
+      "eligible_queries": 1767,
+      "total_queries": 1775,
+      "observed_queries": 1775,
+      "mAP": 0.2352222204208374,
+      "R@1": 0.48047539591789246,
+      "R@5": 0.7894737124443054
+    }
+  }
+}

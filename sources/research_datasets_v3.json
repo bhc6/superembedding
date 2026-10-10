@@ -1,0 +1,28 @@
+{
+  "cub": {
+    "url": "https://data.caltech.edu/records/65de6-vp158/files/CUB_200_2011.tgz",
+    "sha256": "0c685df5597a8b24909f6a7c9db6d11e008733779a671760afef78feb49bf081",
+    "md5": "97eceeb196236b17998738112f37df78",
+    "size": 1150585339,
+    "checksum_reference": "https://data.caltech.edu/records/65de6-vp158",
+    "terms": "Official CUB site: non-commercial research and educational purposes; authors do not own image copyrights.",
+    "terms_url": "https://www.vision.caltech.edu/datasets/cub_200_2011/"
+  },
+  "dtd": {
+    "url": "https://www.robots.ox.ac.uk/~vgg/data/dtd/download/dtd-r1.0.1.tar.gz",
+    "sha256": "e42855a52a4950a3b59612834602aa253914755c95b0cff9ead6d07395f8e205",
+    "md5": "fff73e5086ae6bdbea199a49dfb8a4c1",
+    "size": 625239812,
+    "checksum_reference": "https://github.com/pytorch/vision/blob/v0.25.0/torchvision/datasets/dtd.py",
+    "terms": "Official DTD site: made available for research purposes; individual Google/Flickr image rights not separately cleared.",
+    "terms_url": "https://www.robots.ox.ac.uk/~vgg/data/dtd/",
+    "annotation_reference": "https://www.robots.ox.ac.uk/~vgg/data/dtd/download/README.txt"
+  },
+  "fashion": {
+    "reference": "sources/dataset_license_verification.json",
+    "revision": "3859c76db2f6f3d3b9a3863345e3ccdbff75879d",
+    "original_listing": "paramaggarwal/fashion-product-images-small",
+    "listing_license": "MIT",
+    "redistribute_images": false
+  }
+}

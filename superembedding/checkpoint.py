@@ -32,6 +32,15 @@ def atomic_copy(source, destination):
     os.replace(temporary,destination)
 
 
+def atomic_json(value, path):
+    path=Path(path); path.parent.mkdir(parents=True,exist_ok=True)
+    temporary=path.with_name(path.name+'.tmp')
+    with temporary.open('w',encoding='utf-8') as stream:
+        json.dump(value,stream,indent=2)
+        stream.flush(); os.fsync(stream.fileno())
+    os.replace(temporary,path)
+
+
 def save_training(path, model, optimizer, step, config, rng, extra=None, trainable_only=False):
     names = {n for n, p in model.named_parameters() if p.requires_grad}
     state = {k: v.detach().cpu().clone() for k, v in model.state_dict().items()

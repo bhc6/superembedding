@@ -1,0 +1,62 @@
+[
+  {
+    "file": "fashion_expanded_all_heads.zip",
+    "bytes": 481623241,
+    "sha256": "7b253027b66ad8199d0bb52a3afd46fd6c624e1628f78c4a185b9fb017d9d65d"
+  },
+  {
+    "file": "fashion_expanded_omnijev_resume.zip",
+    "bytes": 994876426,
+    "sha256": "6871c044f56e6defc846b7904916476456a642518bd9255bc6dba8ec92cca7ad"
+  },
+  {
+    "file": "fashion_expanded_base_resume.zip",
+    "bytes": 53334309,
+    "sha256": "50dd4ab7dc3a246149cd6835299af78a8105cae3beed52b8b92c18952fc27faa"
+  },
+  {
+    "file": "fashion_expanded_flair_resume.zip",
+    "bytes": 104852413,
+    "sha256": "9334d4707f4d9a700999b4c1a2cc2a6b3653d67e5895681cb2e5b1987be2e6b4"
+  },
+  {
+    "file": "cub_attributes_all_heads.zip",
+    "bytes": 481593883,
+    "sha256": "8c533d5dc02972d5e3b235c16737803d6b225e7d0e0d514aa061bb7e5291488e"
+  },
+  {
+    "file": "cub_attributes_omnijev_resume.zip",
+    "bytes": 998600396,
+    "sha256": "3b816b8d82b09e13ffce314eea54d9cdcd8da4664d8e6742d062ffd211bf7665"
+  },
+  {
+    "file": "cub_attributes_base_resume.zip",
+    "bytes": 53298434,
+    "sha256": "b85f2204ef00f5fc00c5fb4d488dc4d36a8d9c9111d49003ee0002c6c8d3a5ec"
+  },
+  {
+    "file": "cub_attributes_flair_resume.zip",
+    "bytes": 104906416,
+    "sha256": "dde738fc1900d4035a0e815a3ed037381c3d4af2581a1a613732623048397b84"
+  },
+  {
+    "file": "dtd_all_heads.zip",
+    "bytes": 420205121,
+    "sha256": "75e22c9eed8fd23b3cfcc26586bad211f9f117618cb7ae23af7c379723a7182c"
+  },
+  {
+    "file": "dtd_omnijev_resume.zip",
+    "bytes": 858993545,
+    "sha256": "fbdb4b7a38ac3e20760ae8e798d29c0723e346bbda1b82f8f4edee3bf0d1de7e"
+  },
+  {
+    "file": "dtd_base_resume.zip",
+    "bytes": 53356317,
+    "sha256": "53532f75feb5014af6cc7b4f990581f46fccb71bf277c88b5225139093bbd3f0"
+  },
+  {
+    "file": "dtd_flair_resume.zip",
+    "bytes": 59497731,
+    "sha256": "3907a63075023099bcf9954f6083254db5770007faaa665a053022e0adaeed76"
+  }
+]

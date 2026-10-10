@@ -1,13 +1,13 @@
-# Fashion2400 local research release
+# v0.2.0 — multi-domain attribute memory experiments
 
-54 reproducible cached-feature experiments on an RTX 5070 Laptop 8GB: seven OmniJev embedding-head architectures, three seeds and two learning rates, plus official FLAIR and LoRA-disabled base-network controls. A separate 100-update real-image LoRA follow-up verifies training, interruption/resume, validation selection and export reload.
+Completed local research on **28,263 images** from Fashion, CUB attributes, and DTD textures. Three nested training sizes, three seeds, two learning rates: **432 training runs**, followed by **216 validation-sealed test evaluations**.
 
-Main measurements: on 469 held-out images, direct concatenation with an attribute+joint triplet objective obtains 52.60±0.09% three-attribute mAP. A 768d output projection gives 51.93±0.20%; 256d gives 51.97±0.79%. Output projection is not necessary in this experiment; 256d offers a compression tradeoff. Multiplicative gates underperform a raw hidden projection; negative results are included.
+OmniJev raw attribute mAP: **82.10 ± 0.21 / 44.36 ± 0.10 / 49.37 ± 0.25** on Fashion/CUB/DTD. Same-protocol FLAIR raw: **74.50 ± 0.39 / 43.41 ± 0.03 / 50.88 ± 0.35**. These are image-retrieval tasks, not official CUB/DTD classification benchmarks.
 
-Raw projection single-attribute mAP: OmniJev 78.56±0.29%, FLAIR 70.66±0.63%, LoRA-disabled base ablation 67.20±0.17%. FLAIR/raw has comparable joint mAP and higher attribute R@1, so this is not an across-the-board win. These are our fixed-direction image-to-image task measurements, not the original papers' benchmark scores. All values/combinations are seen in training.
+Under equal joint training, compressed output projection versus concat changes global mAP by **+0.95 / −0.02 / −0.98 percentage points**. Projection is task-dependent, not universally necessary. Frozen gates underperform raw projection. More data helps DTD; Fashion/CUB largely plateau at the fixed update budget. Most selected runs peak at step 1,000, so this is a budget-limited study.
 
-Assets include all 54 trained heads, final resumable cached-training states, the derived LoRA model and best/last LoRA training states. Source code, frozen protocol, split manifests, all validation grids, held-out metrics, model card and figures are in the repository. Source product images, third-party code and original base weights are downloaded separately at pinned revisions. See SHA256SUMS.json and the model card for attribution and limitations.
+All 432 heads and all final optimizer/RNG recovery checkpoints are included, including both learning rates and negative outcomes. Each dataset has one heads archive and three backend-specific resume archives. `SHA256SUMS.json` covers all archives. Head reloads exactly reproduce validation scores; verified interrupted training is bitwise equivalent to continuous training.
 
-Research prerelease; this study does not establish novelty or causal transfer of decision evidence sensitivity.
+Single-image inference matches training batch geometry to avoid amplified BF16 batch-1 rounding. Full fresh-inference checks are included. See the complete results, Chinese conclusions, model card, data manifests, and reproduction scripts in the repository.
 
-The real-image LoRA follow-up did not improve validation: 80.73% initially versus 80.56% at update100; the selected checkpoint is step0. Both the selected starting model and the actually trained final adapter/head are included and clearly labeled, alongside optimizer/RNG states.
+No source images or upstream backbone weights are bundled. CUB/DTD artifacts are for research; project licensing does not waive dataset restrictions or assert commercial clearance. The v0.1 pilot and its LoRA negative result remain unchanged. V3 trains frozen-backbone heads, not a new end-to-end LoRA model, and makes no novelty, causal-transfer, or SOTA claim.

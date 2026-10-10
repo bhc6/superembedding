@@ -1,0 +1,49 @@
+{
+  "dataset": "dtd",
+  "backend": "omnijev",
+  "scale": 50,
+  "arch": "joint_out_equal",
+  "seed": 17,
+  "lr": 0.0001,
+  "path": "runs/v3/dtd/suite/omnijev/n50/joint_out_equal_s17_lr0.0001",
+  "head_sha256": "4365c4cfe449df25b6b2008d85991c15307cc9aead7cd396857aa36725e0c0d2",
+  "metrics": {
+    "attributes": {
+      "texture": {
+        "eligible_queries": 1877,
+        "total_queries": 1877,
+        "observed_queries": 1877,
+        "mAP": 0.4967639446258545,
+        "R@1": 0.696856677532196,
+        "R@5": 0.8716036081314087
+      },
+      "macro": {
+        "mAP": 0.4967639446258545,
+        "R@1": 0.696856677532196,
+        "R@5": 0.8716036081314087
+      }
+    },
+    "pairs": {},
+    "joint": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.4930264949798584,
+      "R@1": 0.6920617818832397,
+      "R@5": 0.863612174987793
+    },
+    "joint_texture_overlap": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.5146428346633911,
+      "R@1": 0.7581246495246887,
+      "R@5": 0.9025039672851562
+    }
+  },
+  "validation_score": 0.4724588394165039,
+  "best_step": 1000,
+  "output_dimension": 256,
+  "trainable_parameters": 329984,
+  "selection_fingerprint": "fea5d8df17108a662c4e79d07b3b547402641163b1e4bea427814805a02ed55c"
+}

@@ -1,4 +1,5 @@
 """Official FLAIR weights, fixed direction queries, reusable image slot vectors."""
+import argparse
 import json
 from pathlib import Path
 import sys
@@ -14,8 +15,12 @@ from superembedding.checkpoint import atomic_save
 
 
 def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument('--data',default='data/fashion2400')
+    ap.add_argument('--output',default='runs/fashion2400/flair')
+    args=ap.parse_args()
     torch.set_num_threads(4)
-    root=Path('data/fashion2400'); out=Path('runs/fashion2400/flair'); out.mkdir(parents=True,exist_ok=True)
+    root=Path(args.data); out=Path(args.output); out.mkdir(parents=True,exist_ok=True)
     meta=json.loads((root/'metadata.json').read_text())
     revision='0a306fd7060ba3076da3c9ee75b569e6aabea6c6'
     path=hf_hub_download('xiaorui638/flair','flair-merged30m.pt',revision=revision,local_dir='models/FLAIR')
@@ -55,4 +60,11 @@ def main():
         'count':len(todo),'peak_allocated_MiB':torch.cuda.max_memory_allocated()/2**20},indent=2))
 
 
-if __name__=='__main__': main()
+if __name__=='__main__':
+    from filelock import FileLock
+    lock_parser=argparse.ArgumentParser(add_help=False)
+    lock_parser.add_argument('--output',default='runs/fashion2400/flair')
+    lock_args,_=lock_parser.parse_known_args()
+    output=Path(lock_args.output).resolve(); output.parent.mkdir(parents=True,exist_ok=True)
+    with FileLock(str(output)+'.lock'):
+        main()

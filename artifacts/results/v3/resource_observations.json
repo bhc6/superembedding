@@ -1,0 +1,10 @@
+{
+  "sample_count": 354,
+  "sampling_seconds": 15,
+  "first": "2026-10-11 02:02:06",
+  "last": "2026-10-11 03:31:22",
+  "peak_total_GPU_memory_MiB": 7753.0,
+  "peak_temperature_C": 82.0,
+  "peak_power_W": 93.85,
+  "caveat": "Periodic device observations include concurrent processes and can miss short peaks."
+}

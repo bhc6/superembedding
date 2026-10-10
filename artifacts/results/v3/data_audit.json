@@ -1,0 +1,290 @@
+{
+  "fashion_expanded": {
+    "count": 10853,
+    "splits": {
+      "train": 7894,
+      "val": 1184,
+      "test": 1775
+    },
+    "manifest_sha256": "9604f645cde358947f1e0ce0d78eae7ae71e22a96df7308b22571989e1d591fb",
+    "nested_scales": {
+      "25": {
+        "count": 1974,
+        "first_attribute_value_counts": {
+          "White": 457,
+          "Black": 454,
+          "Blue": 311,
+          "Grey": 200,
+          "Red": 155,
+          "Green": 154,
+          "Brown": 148,
+          "Pink": 95
+        }
+      },
+      "50": {
+        "count": 3947,
+        "first_attribute_value_counts": {
+          "White": 913,
+          "Black": 909,
+          "Blue": 622,
+          "Grey": 399,
+          "Red": 310,
+          "Green": 308,
+          "Brown": 297,
+          "Pink": 189
+        }
+      },
+      "100": {
+        "count": 7894,
+        "first_attribute_value_counts": {
+          "White": 1826,
+          "Black": 1817,
+          "Blue": 1245,
+          "Grey": 798,
+          "Red": 620,
+          "Green": 616,
+          "Brown": 593,
+          "Pink": 379
+        }
+      }
+    }
+  },
+  "cub_attributes": {
+    "count": 11787,
+    "splits": {
+      "train": 4793,
+      "val": 1200,
+      "test": 5794
+    },
+    "manifest_sha256": "495255edad7301650c63c25dc65a950955e358ae54fb89922e535abe923599f4",
+    "nested_scales": {
+      "25": {
+        "count": 1198,
+        "first_attribute_value_counts": {
+          "black": 390,
+          "grey": 328,
+          "brown": 289,
+          "white": 321,
+          "buff": 216,
+          "yellow": 162,
+          "blue": 69,
+          "red": 37,
+          "olive": 45,
+          "orange": 37,
+          "iridescent": 20,
+          "green": 17,
+          "purple": 10,
+          "rufous": 16,
+          "pink": 4
+        }
+      },
+      "50": {
+        "count": 2396,
+        "first_attribute_value_counts": {
+          "black": 785,
+          "grey": 652,
+          "brown": 578,
+          "white": 633,
+          "buff": 420,
+          "yellow": 328,
+          "blue": 142,
+          "red": 90,
+          "olive": 95,
+          "orange": 79,
+          "iridescent": 45,
+          "green": 47,
+          "purple": 19,
+          "rufous": 35,
+          "pink": 13
+        }
+      },
+      "100": {
+        "count": 4793,
+        "first_attribute_value_counts": {
+          "black": 1563,
+          "grey": 1316,
+          "brown": 1149,
+          "white": 1278,
+          "buff": 852,
+          "yellow": 663,
+          "blue": 277,
+          "red": 163,
+          "olive": 188,
+          "orange": 148,
+          "iridescent": 88,
+          "green": 86,
+          "purple": 40,
+          "rufous": 67,
+          "pink": 21
+        }
+      }
+    }
+  },
+  "dtd": {
+    "count": 5623,
+    "splits": {
+      "train": 1874,
+      "val": 1872,
+      "test": 1877
+    },
+    "manifest_sha256": "7444bcfadc8b5ff5dc15d32eb6cddaec1df826fa72b2161d5efb6458e94c5b80",
+    "nested_scales": {
+      "25": {
+        "count": 468,
+        "first_attribute_value_counts": {
+          "banded": 10,
+          "blotchy": 10,
+          "braided": 10,
+          "bubbly": 10,
+          "bumpy": 10,
+          "chequered": 10,
+          "cobwebbed": 10,
+          "cracked": 10,
+          "crosshatched": 10,
+          "crystalline": 10,
+          "fibrous": 10,
+          "flecked": 10,
+          "freckled": 10,
+          "frilly": 10,
+          "gauzy": 10,
+          "grid": 10,
+          "grooved": 10,
+          "honeycombed": 10,
+          "interlaced": 10,
+          "knitted": 10,
+          "lacelike": 10,
+          "lined": 10,
+          "marbled": 10,
+          "matted": 10,
+          "meshed": 10,
+          "paisley": 10,
+          "perforated": 10,
+          "pitted": 10,
+          "pleated": 10,
+          "polka-dotted": 10,
+          "porous": 10,
+          "potholed": 10,
+          "scaly": 10,
+          "smeared": 10,
+          "spiralled": 10,
+          "sprinkled": 10,
+          "stained": 10,
+          "stratified": 10,
+          "striped": 10,
+          "studded": 10,
+          "swirly": 10,
+          "veined": 10,
+          "waffled": 10,
+          "woven": 10,
+          "wrinkled": 10,
+          "zigzagged": 10,
+          "dotted": 8
+        }
+      },
+      "50": {
+        "count": 937,
+        "first_attribute_value_counts": {
+          "banded": 20,
+          "blotchy": 20,
+          "braided": 20,
+          "bubbly": 20,
+          "bumpy": 20,
+          "chequered": 20,
+          "cobwebbed": 20,
+          "cracked": 20,
+          "crosshatched": 20,
+          "crystalline": 20,
+          "fibrous": 20,
+          "flecked": 20,
+          "freckled": 20,
+          "frilly": 20,
+          "gauzy": 20,
+          "grid": 20,
+          "grooved": 20,
+          "honeycombed": 20,
+          "interlaced": 20,
+          "knitted": 20,
+          "lacelike": 20,
+          "lined": 20,
+          "marbled": 20,
+          "matted": 20,
+          "meshed": 20,
+          "paisley": 20,
+          "perforated": 20,
+          "pitted": 20,
+          "pleated": 20,
+          "polka-dotted": 20,
+          "porous": 20,
+          "potholed": 20,
+          "scaly": 20,
+          "smeared": 20,
+          "spiralled": 20,
+          "sprinkled": 20,
+          "stained": 20,
+          "stratified": 20,
+          "striped": 20,
+          "studded": 20,
+          "swirly": 20,
+          "veined": 20,
+          "waffled": 20,
+          "woven": 20,
+          "wrinkled": 20,
+          "zigzagged": 20,
+          "dotted": 17
+        }
+      },
+      "100": {
+        "count": 1874,
+        "first_attribute_value_counts": {
+          "banded": 40,
+          "blotchy": 40,
+          "braided": 40,
+          "bubbly": 40,
+          "bumpy": 40,
+          "chequered": 40,
+          "cobwebbed": 40,
+          "cracked": 40,
+          "crosshatched": 40,
+          "crystalline": 40,
+          "fibrous": 40,
+          "flecked": 40,
+          "freckled": 40,
+          "frilly": 40,
+          "gauzy": 40,
+          "grid": 40,
+          "grooved": 40,
+          "honeycombed": 40,
+          "interlaced": 40,
+          "knitted": 40,
+          "lacelike": 40,
+          "lined": 40,
+          "marbled": 40,
+          "matted": 40,
+          "meshed": 40,
+          "paisley": 40,
+          "perforated": 40,
+          "pitted": 40,
+          "pleated": 40,
+          "polka-dotted": 40,
+          "porous": 40,
+          "potholed": 40,
+          "scaly": 40,
+          "smeared": 40,
+          "spiralled": 40,
+          "sprinkled": 40,
+          "stained": 40,
+          "stratified": 40,
+          "striped": 40,
+          "studded": 40,
+          "swirly": 40,
+          "veined": 40,
+          "waffled": 40,
+          "woven": 40,
+          "wrinkled": 40,
+          "zigzagged": 40,
+          "dotted": 34
+        }
+      }
+    }
+  }
+}

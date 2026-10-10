@@ -3,6 +3,7 @@
 Explicit user authorization is required before invoking. No credentials are logged or saved.
 """
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 import hashlib
 import json
 import os
@@ -18,7 +19,12 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--repo',default='superembedding')
     ap.add_argument('--tag',default='v0.1.0-fashion2400')
+    ap.add_argument('--assets',default='release_assets')
+    ap.add_argument('--name',default='Fashion2400 reproducible local experiments')
+    ap.add_argument('--record',default='runs/github_publication.json')
+    ap.add_argument('--upload-workers',type=int,default=1)
     args=ap.parse_args()
+    if args.upload_workers not in (1,2,3): raise ValueError('Use one to three upload workers')
     credential=subprocess.run(['git','credential','fill'],input='protocol=https\nhost=github.com\n\n',
         text=True,capture_output=True,check=True,env={**os.environ,'GIT_TERMINAL_PROMPT':'0','GCM_INTERACTIVE':'never'})
     fields=dict(line.split('=',1) for line in credential.stdout.splitlines() if '=' in line)
@@ -53,15 +59,15 @@ def main():
             response=client.get(f'{api}/repos/{repo}/releases/{matches[0]["id"]}')
         else:
             response=client.post(f'{api}/repos/{repo}/releases',json={'tag_name':args.tag,'target_commitish':head,
-                'name':'Fashion2400 reproducible local experiments','draft':True,'prerelease':True,
+                'name':args.name,'draft':True,'prerelease':True,
                 'body':(ROOT/'RELEASE_NOTES.md').read_text(encoding='utf-8')})
     response.raise_for_status();release=response.json()
-    expected=json.loads((ROOT/'release_assets/SHA256SUMS.json').read_text())
+    asset_root=Path(args.assets).resolve()
+    expected=json.loads((asset_root/'SHA256SUMS.json').read_text())
     assets=client.get(f'{api}/repos/{repo}/releases/{release["id"]}/assets');assets.raise_for_status()
     present={a['name']:a for a in assets.json()}
-    verified=[]
-    for entry in expected+[{'file':'SHA256SUMS.json'}]:
-        path=ROOT/'release_assets'/entry['file']
+    def upload(entry):
+        path=asset_root/entry['file']
         digest=hashlib.file_digest(path.open('rb'),'sha256').hexdigest()
         if entry.get('sha256',digest)!=digest: raise ValueError('Archive checksum changed')
         if path.name in present:
@@ -75,13 +81,16 @@ def main():
                     headers={'Content-Type':'application/octet-stream','Content-Length':str(path.stat().st_size)},timeout=1800)
             response.raise_for_status();asset=response.json()
             if asset['size']!=path.stat().st_size: raise RuntimeError('Uploaded size mismatch')
-            if asset.get('digest') and asset['digest']!='sha256:'+digest: raise RuntimeError('Uploaded checksum mismatch')
-        verified.append({'name':path.name,'size':asset['size'],'sha256':digest,'url':asset['browser_download_url']})
+            if asset.get('digest')!='sha256:'+digest: raise RuntimeError('Uploaded server checksum missing or mismatched')
         print(json.dumps({'uploaded':path.name,'bytes':asset['size']}),flush=True)
+        return {'name':path.name,'size':asset['size'],'sha256':digest,'url':asset['browser_download_url']}
+    with ThreadPoolExecutor(max_workers=args.upload_workers) as pool:
+        verified=list(pool.map(upload,expected+[{'file':'SHA256SUMS.json'}]))
     response=client.patch(f'{api}/repos/{repo}/releases/{release["id"]}',json={'draft':False})
     response.raise_for_status()
     result={'repository':f'https://github.com/{repo}','release':response.json()['html_url'],'commit':head,'assets':verified}
-    (ROOT/'runs/github_publication.json').write_text(json.dumps(result,indent=2))
+    record=ROOT/args.record;record.parent.mkdir(parents=True,exist_ok=True)
+    record.write_text(json.dumps(result,indent=2))
     print(json.dumps(result,indent=2))
 
 

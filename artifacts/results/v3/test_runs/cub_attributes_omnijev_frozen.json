@@ -1,0 +1,72 @@
+{
+  "dataset": "cub_attributes",
+  "backend": "omnijev",
+  "data_fingerprint": "c6e99b9028b064204ea2171946ed94d9e8dc26a5ccceebe51fc9fab64380589e",
+  "raw": {
+    "attributes": {
+      "primary_color": {
+        "eligible_queries": 5433,
+        "total_queries": 5794,
+        "observed_queries": 5433,
+        "mAP": 0.5067689418792725,
+        "R@1": 0.6961163282394409,
+        "R@5": 0.9433094263076782
+      },
+      "bill_shape": {
+        "eligible_queries": 5266,
+        "total_queries": 5794,
+        "observed_queries": 5266,
+        "mAP": 0.330121248960495,
+        "R@1": 0.49677175283432007,
+        "R@5": 0.8423851132392883
+      },
+      "wing_shape": {
+        "eligible_queries": 2873,
+        "total_queries": 5794,
+        "observed_queries": 2873,
+        "mAP": 0.3456183969974518,
+        "R@1": 0.3786982297897339,
+        "R@5": 0.8026453256607056
+      },
+      "macro": {
+        "mAP": 0.39416952927907306,
+        "R@1": 0.5238621036211649,
+        "R@5": 0.862779955069224
+      }
+    },
+    "pairs": {
+      "primary_color+bill_shape": {
+        "eligible_queries": 5155,
+        "total_queries": 5794,
+        "observed_queries": 5160,
+        "mAP": 0.18683406710624695,
+        "R@1": 0.367410272359848,
+        "R@5": 0.7352085113525391
+      },
+      "primary_color+wing_shape": {
+        "eligible_queries": 2848,
+        "total_queries": 5794,
+        "observed_queries": 2848,
+        "mAP": 0.17361176013946533,
+        "R@1": 0.235603928565979,
+        "R@5": 0.6422050595283508
+      },
+      "bill_shape+wing_shape": {
+        "eligible_queries": 2790,
+        "total_queries": 5794,
+        "observed_queries": 2790,
+        "mAP": 0.12686167657375336,
+        "R@1": 0.1781361997127533,
+        "R@5": 0.5086021423339844
+      }
+    },
+    "joint": {
+      "eligible_queries": 2738,
+      "total_queries": 5794,
+      "observed_queries": 2769,
+      "mAP": 0.07482831925153732,
+      "R@1": 0.11979547142982483,
+      "R@5": 0.39481374621391296
+    }
+  }
+}

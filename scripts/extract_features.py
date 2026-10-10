@@ -29,6 +29,7 @@ def main():
     ap.add_argument("--limit", type=int, default=0, help="0 means all; use 3 for an initial GPU smoke run")
     ap.add_argument('--disable-lora', action='store_true', help='Base-network ablation; retains OmniJev special-token embeddings')
     args = ap.parse_args()
+    torch.set_num_threads(4)
     if not torch.cuda.is_available():
         raise RuntimeError("Use the CUDA virtual environment for feature extraction")
     Path(args.output).resolve().parent.mkdir(parents=True,exist_ok=True)

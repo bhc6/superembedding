@@ -1,0 +1,139 @@
+{
+  "dataset": "cub_attributes",
+  "backend": "flair",
+  "data_fingerprint": "e332c152c7af9aa2e47679031433f989ae6debf97e2a6bc7f0b1bee82d74c8ba",
+  "raw": {
+    "attributes": {
+      "primary_color": {
+        "eligible_queries": 5433,
+        "total_queries": 5794,
+        "observed_queries": 5433,
+        "mAP": 0.48402535915374756,
+        "R@1": 0.7023743987083435,
+        "R@5": 0.9425731897354126
+      },
+      "bill_shape": {
+        "eligible_queries": 5266,
+        "total_queries": 5794,
+        "observed_queries": 5266,
+        "mAP": 0.36042556166648865,
+        "R@1": 0.5206988453865051,
+        "R@5": 0.8545385599136353
+      },
+      "wing_shape": {
+        "eligible_queries": 2873,
+        "total_queries": 5794,
+        "observed_queries": 2873,
+        "mAP": 0.35128259658813477,
+        "R@1": 0.3898364007472992,
+        "R@5": 0.8270100951194763
+      },
+      "macro": {
+        "mAP": 0.39857783913612366,
+        "R@1": 0.5376365482807159,
+        "R@5": 0.8747072815895081
+      }
+    },
+    "pairs": {
+      "primary_color+bill_shape": {
+        "eligible_queries": 5155,
+        "total_queries": 5794,
+        "observed_queries": 5160,
+        "mAP": 0.2038477659225464,
+        "R@1": 0.3726479113101959,
+        "R@5": 0.737342357635498
+      },
+      "primary_color+wing_shape": {
+        "eligible_queries": 2848,
+        "total_queries": 5794,
+        "observed_queries": 2848,
+        "mAP": 0.17694580554962158,
+        "R@1": 0.2714185416698456,
+        "R@5": 0.6604635119438171
+      },
+      "bill_shape+wing_shape": {
+        "eligible_queries": 2790,
+        "total_queries": 5794,
+        "observed_queries": 2790,
+        "mAP": 0.13689516484737396,
+        "R@1": 0.20215053856372833,
+        "R@5": 0.5344086289405823
+      }
+    },
+    "joint": {
+      "eligible_queries": 2738,
+      "total_queries": 5794,
+      "observed_queries": 2769,
+      "mAP": 0.08229675143957138,
+      "R@1": 0.1398831307888031,
+      "R@5": 0.413440465927124
+    }
+  },
+  "global": {
+    "attributes": {
+      "primary_color": {
+        "eligible_queries": 5433,
+        "total_queries": 5794,
+        "observed_queries": 5433,
+        "mAP": 0.47853878140449524,
+        "R@1": 0.7088164687156677,
+        "R@5": 0.9422050714492798
+      },
+      "bill_shape": {
+        "eligible_queries": 5266,
+        "total_queries": 5794,
+        "observed_queries": 5266,
+        "mAP": 0.35660865902900696,
+        "R@1": 0.5043676495552063,
+        "R@5": 0.8526395559310913
+      },
+      "wing_shape": {
+        "eligible_queries": 2873,
+        "total_queries": 5794,
+        "observed_queries": 2873,
+        "mAP": 0.3511194884777069,
+        "R@1": 0.38774800300598145,
+        "R@5": 0.8217890858650208
+      },
+      "macro": {
+        "mAP": 0.3954223096370697,
+        "R@1": 0.5336440404256185,
+        "R@5": 0.872211237748464
+      }
+    },
+    "pairs": {
+      "primary_color+bill_shape": {
+        "eligible_queries": 5155,
+        "total_queries": 5794,
+        "observed_queries": 5160,
+        "mAP": 0.19569148123264313,
+        "R@1": 0.36605238914489746,
+        "R@5": 0.7371484041213989
+      },
+      "primary_color+wing_shape": {
+        "eligible_queries": 2848,
+        "total_queries": 5794,
+        "observed_queries": 2848,
+        "mAP": 0.1761706918478012,
+        "R@1": 0.28125,
+        "R@5": 0.6734550595283508
+      },
+      "bill_shape+wing_shape": {
+        "eligible_queries": 2790,
+        "total_queries": 5794,
+        "observed_queries": 2790,
+        "mAP": 0.136911541223526,
+        "R@1": 0.19964157044887543,
+        "R@5": 0.5275985598564148
+      }
+    },
+    "joint": {
+      "eligible_queries": 2738,
+      "total_queries": 5794,
+      "observed_queries": 2769,
+      "mAP": 0.08042271435260773,
+      "R@1": 0.14536157250404358,
+      "R@5": 0.4097881615161896
+    }
+  }
+}

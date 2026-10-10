@@ -144,7 +144,9 @@ class OmniJevEmbeddingEncoder(nn.Module):
         if head.input_dim != self.embedding_head.input_dim:
             raise ValueError("checkpoint backbone hidden size does not match")
         # References are recorded for provenance, not a substitute for weight hashes.
-        if source and self.source and source != self.source and not allow_source_relocation:
+        if source.get('feature_backend') in {'omnijev_lora_disabled','base','flair'}:
+            raise ValueError('Baseline head requires its matching feature extractor')
+        if source and self.source and any(source.get(k)!=v for k,v in self.source.items()) and not allow_source_relocation:
             raise ValueError("checkpoint OmniJev source references do not match")
         self.embedding_head = head.to(next(self.backbone.parameters()).device)
         self.embedding_head.train(self.training)

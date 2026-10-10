@@ -1,0 +1,13 @@
+{
+  "model": true,
+  "optimizer": true,
+  "rng_local": true,
+  "rng_python": true,
+  "rng_torch": true,
+  "rng_cuda": true,
+  "config": true,
+  "step": true,
+  "extra": true,
+  "model_max_abs_difference": 0.0,
+  "audit_id": "b0e2a4f650d4f3bb"
+}

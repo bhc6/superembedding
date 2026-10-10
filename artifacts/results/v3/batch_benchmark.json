@@ -1,0 +1,32 @@
+[
+  {
+    "batch": 1,
+    "forward_seconds_per_image": 0.8495879333325623,
+    "single_seconds_per_image": 0.9714894250000725,
+    "u_max_abs_diff": 0.0,
+    "zq_max_abs_diff": 0.0,
+    "u_min_cosine": 0.9999999403953552,
+    "zq_min_cosine": 0.9999998807907104,
+    "peak_allocated_MiB": 1878.24853515625
+  },
+  {
+    "batch": 2,
+    "forward_seconds_per_image": 0.4447095833329513,
+    "single_seconds_per_image": 0.9714894250000725,
+    "u_max_abs_diff": 0.0625,
+    "zq_max_abs_diff": 0.0625,
+    "u_min_cosine": 0.9999062418937683,
+    "zq_min_cosine": 0.9999203681945801,
+    "peak_allocated_MiB": 1947.41552734375
+  },
+  {
+    "batch": 4,
+    "forward_seconds_per_image": 0.2289045333333585,
+    "single_seconds_per_image": 0.9714894250000725,
+    "u_max_abs_diff": 0.09375,
+    "zq_max_abs_diff": 0.125,
+    "u_min_cosine": 0.9998705983161926,
+    "zq_min_cosine": 0.9999017715454102,
+    "peak_allocated_MiB": 2107.32177734375
+  }
+]

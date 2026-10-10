@@ -1,0 +1,126 @@
+{
+  "checks": [
+    {
+      "dataset": "fashion_expanded",
+      "backend": "omnijev",
+      "arch": "raw",
+      "image_id": "10005",
+      "slots_minimum_cosine_to_cached": 1.0000001192092896,
+      "slots_max_abs_difference": 3.650784492492676e-07,
+      "embedding_minimum_cosine_to_cached": 1.0,
+      "embedding_max_abs_difference": 2.123415470123291e-07
+    },
+    {
+      "dataset": "fashion_expanded",
+      "backend": "omnijev",
+      "arch": "joint_out_small",
+      "image_id": "10005",
+      "slots_minimum_cosine_to_cached": 1.0,
+      "slots_max_abs_difference": 3.3760443329811096e-07,
+      "embedding_minimum_cosine_to_cached": 1.0,
+      "embedding_max_abs_difference": 1.4528632164001465e-07
+    },
+    {
+      "dataset": "fashion_expanded",
+      "backend": "base",
+      "arch": "raw",
+      "image_id": "10005",
+      "slots_minimum_cosine_to_cached": 1.0,
+      "slots_max_abs_difference": 7.82310962677002e-07,
+      "embedding_minimum_cosine_to_cached": 1.0,
+      "embedding_max_abs_difference": 4.5821070671081543e-07
+    },
+    {
+      "dataset": "fashion_expanded",
+      "backend": "flair",
+      "arch": "raw",
+      "image_id": "10005",
+      "slots_minimum_cosine_to_cached": 1.0,
+      "slots_max_abs_difference": 1.4062970876693726e-07,
+      "embedding_minimum_cosine_to_cached": 0.9999998807907104,
+      "embedding_max_abs_difference": 8.102506399154663e-08
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "omnijev",
+      "arch": "raw",
+      "image_id": "cub_00002",
+      "slots_minimum_cosine_to_cached": 0.9999998807907104,
+      "slots_max_abs_difference": 1.1175870895385742e-07,
+      "embedding_minimum_cosine_to_cached": 1.0,
+      "embedding_max_abs_difference": 6.705522537231445e-08
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "omnijev",
+      "arch": "joint_out_small",
+      "image_id": "cub_00002",
+      "slots_minimum_cosine_to_cached": 1.0,
+      "slots_max_abs_difference": 2.2351741790771484e-07,
+      "embedding_minimum_cosine_to_cached": 1.000000238418579,
+      "embedding_max_abs_difference": 1.3969838619232178e-07
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "base",
+      "arch": "raw",
+      "image_id": "cub_00002",
+      "slots_minimum_cosine_to_cached": 0.9999999403953552,
+      "slots_max_abs_difference": 2.868473529815674e-07,
+      "embedding_minimum_cosine_to_cached": 1.0,
+      "embedding_max_abs_difference": 1.6391277313232422e-07
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "flair",
+      "arch": "raw",
+      "image_id": "cub_00002",
+      "slots_minimum_cosine_to_cached": 1.0,
+      "slots_max_abs_difference": 6.705522537231445e-08,
+      "embedding_minimum_cosine_to_cached": 1.0,
+      "embedding_max_abs_difference": 4.0978193283081055e-08
+    },
+    {
+      "dataset": "dtd",
+      "backend": "omnijev",
+      "arch": "raw",
+      "image_id": "dtd_banded_banded_0005",
+      "slots_minimum_cosine_to_cached": 1.0000001192092896,
+      "slots_max_abs_difference": 1.6763806343078613e-07,
+      "embedding_minimum_cosine_to_cached": 1.0000001192092896,
+      "embedding_max_abs_difference": 1.6763806343078613e-07
+    },
+    {
+      "dataset": "dtd",
+      "backend": "omnijev",
+      "arch": "joint_out_small",
+      "image_id": "dtd_banded_banded_0005",
+      "slots_minimum_cosine_to_cached": 1.0000001192092896,
+      "slots_max_abs_difference": 1.9371509552001953e-07,
+      "embedding_minimum_cosine_to_cached": 1.0,
+      "embedding_max_abs_difference": 1.6391277313232422e-07
+    },
+    {
+      "dataset": "dtd",
+      "backend": "base",
+      "arch": "raw",
+      "image_id": "dtd_banded_banded_0005",
+      "slots_minimum_cosine_to_cached": 1.0,
+      "slots_max_abs_difference": 6.477348506450653e-07,
+      "embedding_minimum_cosine_to_cached": 1.0,
+      "embedding_max_abs_difference": 6.477348506450653e-07
+    },
+    {
+      "dataset": "dtd",
+      "backend": "flair",
+      "arch": "raw",
+      "image_id": "dtd_banded_banded_0005",
+      "slots_minimum_cosine_to_cached": 1.0,
+      "slots_max_abs_difference": 7.82310962677002e-08,
+      "embedding_minimum_cosine_to_cached": 1.0,
+      "embedding_max_abs_difference": 7.82310962677002e-08
+    }
+  ],
+  "minimum_accepted_cosine": 0.99,
+  "note": "BF16 batch-size and CPU/GPU projection differences are expected; this is not a bitwise equivalence assertion."
+}
