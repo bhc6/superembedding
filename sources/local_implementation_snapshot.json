@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-11",
+  "source_files": {
+    "superembedding\\heads.py": "1747ca7d9818f906f1ab52de4ad7bd7996b92d818f9778d77f5373064fa7a1d9",
+    "superembedding\\losses.py": "34f701e12661800516fded4ebf29b97bbdd1b076e5716a215662e63bf93419f1",
+    "superembedding\\omnijev.py": "6ec1cd237199a55a56f11e185453881fcaccc9d49a612dfadd71f45f22557f17",
+    "superembedding\\__init__.py": "00ee71a659dbffd09e0da36d6e5547049a7864573570715833a0c8a1d36f1480",
+    "scripts\\check_cuda.py": "9b511de50b203ae4a0773d5ea8525d15cfe8851c8667cc6fd10112d5929fe2be",
+    "scripts\\download_models.py": "758998d23a0b7bf41c2fca23c42c830add9b0cea09380c10e298c26c03117191",
+    "scripts\\encode_image.py": "9f3976065d4bd7d44ab7823283e2ac206403fd72f3c238f822a2382e9f0491cc",
+    "scripts\\extract_features.py": "fffac77575821dcba2beb303777656f4ce353f17ac8e4285ca91b62475685bc4",
+    "scripts\\prepare_fashion.py": "4ff52662bb81e3510365504328331ec9b6e276dcaa3f803d2a89f1bd25408856",
+    "scripts\\train_cached.py": "dda2a2916ba1c9915a6d2783d59d082b8254f7791b98b112c396ff61ce077a92",
+    "scripts\\train_lora.py": "093e412c462b92f0f15a80e64c70bb4827c4d2cf77d646defb74199d43095bdc",
+    "tests\\test_embedding.py": "b5c65108037e385e93946c400469729f7e1aaa5c8a0c8e81493e0689b0141cc0",
+    "tests\\test_retrieval.py": "afa2c41555d41cf5e7b7534066ebe5feae3ff2a5201b20bf9e83712310f26392"
+  },
+  "omnijev_commit": "14dbec4f71e194852c8d7b88ab36ef639493f400",
+  "omnijev_worktree": ""
+}

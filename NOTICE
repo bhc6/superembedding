@@ -1,0 +1,20 @@
+SuperEmbedding research implementation, 2026.
+
+This project uses Qwen3.5-0.8B (Qwen/Alibaba Cloud, Apache-2.0) and
+OmniJev-0.8B v1.1 (tinnel123, Apache-2.0). Published embedding checkpoints
+with copied decision-gate parameters and fine-tuned LoRA adapters are
+derived from these works. Their original notices/licenses are retained
+in the model release. Inherited decision heads are not validated after
+embedding fine-tuning.
+
+FLAIR (Xiao et al., CVPR 2025; ExplainableML) is used as an external
+baseline from its pinned official repository and MIT-licensed public
+model card. Its code and original checkpoint are downloaded separately.
+
+Fashion Product Images Small: Param Aggarwal / Myntra product catalog,
+mirrored by ashraq on Hugging Face. The upstream Kaggle listing reports
+MIT; the HF mirror has no explicit license field. This repository
+publishes identifiers, labels, splits and download instructions, not
+copies of source product images. See sources/dataset_license_verification.json.
+
+No affiliation with or endorsement by the upstream authors is implied.

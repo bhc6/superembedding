@@ -1,0 +1,99 @@
+{
+  "_id": "6361801a6483eb3832c8dc06",
+  "id": "ashraq/fashion-product-images-small",
+  "author": "ashraq",
+  "sha": "3859c76db2f6f3d3b9a3863345e3ccdbff75879d",
+  "lastModified": "2022-11-01T20:25:52.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "size_categories:10K<n<100K",
+    "format:parquet",
+    "modality:image",
+    "modality:text",
+    "library:datasets",
+    "library:dask",
+    "library:mlcroissant",
+    "library:polars",
+    "region:us"
+  ],
+  "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for \"fashion-product-images-small\"\n\t\n\nMore Information needed\nData was obtained from here\n",
+  "downloads": 2057,
+  "likes": 46,
+  "cardData": {
+    "dataset_info": {
+      "features": [
+        {
+          "name": "id",
+          "dtype": "int64"
+        },
+        {
+          "name": "gender",
+          "dtype": "string"
+        },
+        {
+          "name": "masterCategory",
+          "dtype": "string"
+        },
+        {
+          "name": "subCategory",
+          "dtype": "string"
+        },
+        {
+          "name": "articleType",
+          "dtype": "string"
+        },
+        {
+          "name": "baseColour",
+          "dtype": "string"
+        },
+        {
+          "name": "season",
+          "dtype": "string"
+        },
+        {
+          "name": "year",
+          "dtype": "float64"
+        },
+        {
+          "name": "usage",
+          "dtype": "string"
+        },
+        {
+          "name": "productDisplayName",
+          "dtype": "string"
+        },
+        {
+          "name": "image",
+          "dtype": "image"
+        }
+      ],
+      "splits": [
+        {
+          "name": "train",
+          "num_bytes": 546202015.44,
+          "num_examples": 44072
+        }
+      ],
+      "download_size": 271496441,
+      "dataset_size": 546202015.44
+    }
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "data/train-00000-of-00002-6cff4c59f91661c3.parquet"
+    },
+    {
+      "rfilename": "data/train-00001-of-00002-bb459e5ac5f01e71.parquet"
+    }
+  ],
+  "createdAt": "2022-11-01T20:22:50.000Z",
+  "usedStorage": 4192027127
+}

@@ -1,0 +1,551 @@
+{
+  "config": {
+    "data": "data/fashion600",
+    "features": "runs/fashion600/features",
+    "adapter": "models/OmniJev-0.8B-v1.1",
+    "output": "runs/fashion600/raw",
+    "mode": "raw",
+    "train_gate": false,
+    "steps": 300,
+    "batch_size": 64,
+    "embed_dim": 256,
+    "lr": 0.001,
+    "seed": 42
+  },
+  "device": "cuda",
+  "basis": {
+    "directions": [
+      "the dominant color of the product",
+      "the type of clothing or accessory",
+      "the product's intended catalog audience (men or women)"
+    ],
+    "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+  },
+  "trainable_parameters": 264448,
+  "splits": {
+    "train": 396,
+    "val": 132,
+    "test": 72
+  },
+  "selection": "highest validation macro mAP",
+  "initial_val": {
+    "color": {
+      "eligible_queries": 132,
+      "total_queries": 132,
+      "R@1": 0.4848484992980957,
+      "R@5": 0.8257575631141663,
+      "mAP": 0.2583253085613251
+    },
+    "article_type": {
+      "eligible_queries": 132,
+      "total_queries": 132,
+      "R@1": 0.7954545617103577,
+      "R@5": 0.939393937587738,
+      "mAP": 0.5945342779159546
+    },
+    "audience": {
+      "eligible_queries": 132,
+      "total_queries": 132,
+      "R@1": 0.8257575631141663,
+      "R@5": 0.9772727489471436,
+      "mAP": 0.6117388010025024
+    },
+    "macro": {
+      "R@1": 0.7020202080408732,
+      "R@5": 0.9141414165496826,
+      "mAP": 0.4881994624932607
+    }
+  },
+  "best_step": 300,
+  "best_val_macro_mAP": 0.7289474407831827,
+  "test": {
+    "color": {
+      "eligible_queries": 72,
+      "total_queries": 72,
+      "R@1": 0.6805555820465088,
+      "R@5": 0.9027777910232544,
+      "mAP": 0.5631689429283142
+    },
+    "article_type": {
+      "eligible_queries": 72,
+      "total_queries": 72,
+      "R@1": 0.75,
+      "R@5": 0.9722222089767456,
+      "mAP": 0.7568426728248596
+    },
+    "audience": {
+      "eligible_queries": 72,
+      "total_queries": 72,
+      "R@1": 0.9305555820465088,
+      "R@5": 0.9583333134651184,
+      "mAP": 0.9144740700721741
+    },
+    "macro": {
+      "R@1": 0.7870370546976725,
+      "R@5": 0.9444444378217062,
+      "mAP": 0.7448285619417826
+    }
+  },
+  "raw_backbone_test": {
+    "color": {
+      "eligible_queries": 72,
+      "total_queries": 72,
+      "R@1": 0.3472222089767456,
+      "R@5": 0.7916666865348816,
+      "mAP": 0.2571123540401459
+    },
+    "article_type": {
+      "eligible_queries": 72,
+      "total_queries": 72,
+      "R@1": 0.7361111044883728,
+      "R@5": 0.9305555820465088,
+      "mAP": 0.6225000619888306
+    },
+    "audience": {
+      "eligible_queries": 72,
+      "total_queries": 72,
+      "R@1": 0.7916666865348816,
+      "R@5": 0.9861111044883728,
+      "mAP": 0.6061051487922668
+    },
+    "macro": {
+      "R@1": 0.625,
+      "R@5": 0.9027777910232544,
+      "mAP": 0.49523918827374774
+    }
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 0.18103665113449097,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.4545454680919647,
+          "R@5": 0.8257575631141663,
+          "mAP": 0.2529924809932709
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.7878788113594055,
+          "R@5": 0.939393937587738,
+          "mAP": 0.5814385414123535
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8181818127632141,
+          "R@5": 0.9696969985961914,
+          "mAP": 0.5987920761108398
+        },
+        "macro": {
+          "R@1": 0.6868686974048615,
+          "R@5": 0.9116161664326986,
+          "mAP": 0.4777410328388214
+        }
+      },
+      "best_step": 0
+    },
+    {
+      "step": 25,
+      "loss": 0.07434016466140747,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.49242424964904785,
+          "R@5": 0.8409090638160706,
+          "mAP": 0.36436256766319275
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.7878788113594055,
+          "R@5": 0.939393937587738,
+          "mAP": 0.6605333685874939
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8333333134651184,
+          "R@5": 0.9696969985961914,
+          "mAP": 0.8498097062110901
+        },
+        "macro": {
+          "R@1": 0.7045454581578573,
+          "R@5": 0.9166666666666666,
+          "mAP": 0.6249018808205923
+        }
+      },
+      "best_step": 25
+    },
+    {
+      "step": 50,
+      "loss": 0.08719517290592194,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.5454545617103577,
+          "R@5": 0.8333333134651184,
+          "mAP": 0.4070003926753998
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.7878788113594055,
+          "R@5": 0.9242424368858337,
+          "mAP": 0.6820087432861328
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8560606241226196,
+          "R@5": 0.9772727489471436,
+          "mAP": 0.8630410432815552
+        },
+        "macro": {
+          "R@1": 0.7297979990641276,
+          "R@5": 0.9116161664326986,
+          "mAP": 0.6506833930810293
+        }
+      },
+      "best_step": 50
+    },
+    {
+      "step": 75,
+      "loss": 0.07208404690027237,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.5681818127632141,
+          "R@5": 0.8560606241226196,
+          "mAP": 0.4425669312477112
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8030303120613098,
+          "R@5": 0.9469696879386902,
+          "mAP": 0.7154443264007568
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8863636255264282,
+          "R@5": 0.9924242496490479,
+          "mAP": 0.8867185115814209
+        },
+        "macro": {
+          "R@1": 0.752525250116984,
+          "R@5": 0.9318181872367859,
+          "mAP": 0.6815765897432963
+        }
+      },
+      "best_step": 75
+    },
+    {
+      "step": 100,
+      "loss": 0.06285211443901062,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.6439393758773804,
+          "R@5": 0.8636363744735718,
+          "mAP": 0.44563573598861694
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8333333134651184,
+          "R@5": 0.9696969985961914,
+          "mAP": 0.7332391738891602
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8787878751754761,
+          "R@5": 0.9848484992980957,
+          "mAP": 0.8882179856300354
+        },
+        "macro": {
+          "R@1": 0.7853535215059916,
+          "R@5": 0.939393957455953,
+          "mAP": 0.6890309651692709
+        }
+      },
+      "best_step": 100
+    },
+    {
+      "step": 125,
+      "loss": 0.0610310435295105,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.6060606241226196,
+          "R@5": 0.8712121248245239,
+          "mAP": 0.4651859402656555
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8333333134651184,
+          "R@5": 0.9621211886405945,
+          "mAP": 0.7452424764633179
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8863636255264282,
+          "R@5": 0.9772727489471436,
+          "mAP": 0.8955016732215881
+        },
+        "macro": {
+          "R@1": 0.7752525210380554,
+          "R@5": 0.936868687470754,
+          "mAP": 0.7019766966501871
+        }
+      },
+      "best_step": 125
+    },
+    {
+      "step": 150,
+      "loss": 0.029990211129188538,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.6212121248245239,
+          "R@5": 0.8560606241226196,
+          "mAP": 0.4957478940486908
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8333333134651184,
+          "R@5": 0.9545454382896423,
+          "mAP": 0.7485175132751465
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8787878751754761,
+          "R@5": 0.9848484992980957,
+          "mAP": 0.8918313384056091
+        },
+        "macro": {
+          "R@1": 0.7777777711550394,
+          "R@5": 0.9318181872367859,
+          "mAP": 0.7120322485764822
+        }
+      },
+      "best_step": 150
+    },
+    {
+      "step": 175,
+      "loss": 0.055875930935144424,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.6363636255264282,
+          "R@5": 0.8560606241226196,
+          "mAP": 0.507520318031311
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8409090638160706,
+          "R@5": 0.9621211886405945,
+          "mAP": 0.7492858171463013
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8939393758773804,
+          "R@5": 0.9924242496490479,
+          "mAP": 0.8959311842918396
+        },
+        "macro": {
+          "R@1": 0.7904040217399597,
+          "R@5": 0.936868687470754,
+          "mAP": 0.7175791064898173
+        }
+      },
+      "best_step": 175
+    },
+    {
+      "step": 200,
+      "loss": 0.0397186353802681,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.6212121248245239,
+          "R@5": 0.8712121248245239,
+          "mAP": 0.5106444954872131
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8409090638160706,
+          "R@5": 0.9545454382896423,
+          "mAP": 0.7601824402809143
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.9166666865348816,
+          "R@5": 0.9924242496490479,
+          "mAP": 0.8947869539260864
+        },
+        "macro": {
+          "R@1": 0.7929292917251587,
+          "R@5": 0.939393937587738,
+          "mAP": 0.7218712965647379
+        }
+      },
+      "best_step": 200
+    },
+    {
+      "step": 225,
+      "loss": 0.06084838882088661,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.6742424368858337,
+          "R@5": 0.8863636255264282,
+          "mAP": 0.521545946598053
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8030303120613098,
+          "R@5": 0.9621211886405945,
+          "mAP": 0.7532299757003784
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.9242424368858337,
+          "R@5": 0.9924242496490479,
+          "mAP": 0.9008740186691284
+        },
+        "macro": {
+          "R@1": 0.8005050619443258,
+          "R@5": 0.9469696879386902,
+          "mAP": 0.7252166469891866
+        }
+      },
+      "best_step": 225
+    },
+    {
+      "step": 250,
+      "loss": 0.07342778891324997,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.6136363744735718,
+          "R@5": 0.8636363744735718,
+          "mAP": 0.47811636328697205
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.7424242496490479,
+          "R@5": 0.9621211886405945,
+          "mAP": 0.7438688278198242
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.9166666865348816,
+          "R@5": 0.9848484992980957,
+          "mAP": 0.8930333256721497
+        },
+        "macro": {
+          "R@1": 0.7575757702191671,
+          "R@5": 0.936868687470754,
+          "mAP": 0.7050061722596487
+        }
+      },
+      "best_step": 225
+    },
+    {
+      "step": 275,
+      "loss": 0.04048822447657585,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.6287878751754761,
+          "R@5": 0.8787878751754761,
+          "mAP": 0.5117603540420532
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.810606062412262,
+          "R@5": 0.9545454382896423,
+          "mAP": 0.7529823780059814
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.9015151262283325,
+          "R@5": 0.9848484992980957,
+          "mAP": 0.9001116156578064
+        },
+        "macro": {
+          "R@1": 0.7803030212720236,
+          "R@5": 0.939393937587738,
+          "mAP": 0.721618115901947
+        }
+      },
+      "best_step": 225
+    },
+    {
+      "step": 300,
+      "loss": 0.044449761509895325,
+      "val": {
+        "color": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.6818181872367859,
+          "R@5": 0.8712121248245239,
+          "mAP": 0.5425164699554443
+        },
+        "article_type": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8181818127632141,
+          "R@5": 0.9545454382896423,
+          "mAP": 0.7435142993927002
+        },
+        "audience": {
+          "eligible_queries": 132,
+          "total_queries": 132,
+          "R@1": 0.8863636255264282,
+          "R@5": 0.9924242496490479,
+          "mAP": 0.9008115530014038
+        },
+        "macro": {
+          "R@1": 0.7954545418421427,
+          "R@5": 0.939393937587738,
+          "mAP": 0.7289474407831827
+        }
+      },
+      "best_step": 300
+    }
+  ],
+  "training_and_evaluation_seconds": 1.5004674999981944,
+  "peak_allocated_MiB": 29.158203125,
+  "limitations": "One seed; development subset; seen attribute values and combinations; near duplicates not excluded. Raw hidden baseline has a different vector width. No backbone LoRA updates; projection and optional copied gate only."
+}

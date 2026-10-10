@@ -1,0 +1,65 @@
+{
+  "test": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.6993603706359863,
+        "R@5": 0.8933901786804199,
+        "mAP": 0.5859171152114868
+      },
+      "article_type": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.8187633156776428,
+        "R@5": 0.9744136333465576,
+        "mAP": 0.7919997572898865
+      },
+      "audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.9829424023628235,
+        "R@5": 0.9978678226470947,
+        "mAP": 0.9749271273612976
+      },
+      "macro": {
+        "R@1": 0.8336886962254842,
+        "R@5": 0.9552238782246908,
+        "mAP": 0.784281333287557
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.5650320053100586,
+        "R@5": 0.8507462739944458,
+        "mAP": 0.49751222133636475
+      },
+      "color+audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.6823027729988098,
+        "R@5": 0.9040511846542358,
+        "mAP": 0.5582592487335205
+      },
+      "article_type+audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.8230277299880981,
+        "R@5": 0.9786780476570129,
+        "mAP": 0.7779690623283386
+      }
+    },
+    "joint": {
+      "eligible_queries": 469,
+      "total_queries": 469,
+      "R@1": 0.558635413646698,
+      "R@5": 0.8507462739944458,
+      "mAP": 0.5008454322814941
+    }
+  },
+  "reload_max_abs_diff": 0.0,
+  "seconds": 197.28324260000227,
+  "scope": "One seed, 100 LoRA updates; exploratory follow-up, not a matched multi-seed architecture comparison."
+}

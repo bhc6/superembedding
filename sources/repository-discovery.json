@@ -1,0 +1,210 @@
+[
+  {
+    "query": "Omni-Attribute",
+    "status": 200,
+    "items": [
+      {
+        "name": "snap-research/omni-attribute",
+        "description": "Webpage of Omni-Attribute",
+        "url": "https://github.com/snap-research/omni-attribute"
+      },
+      {
+        "name": "OmniCTF/higmunds_attributes",
+        "description": "OMNI CTF - Higmund's attributes (Forensics, Medium)",
+        "url": "https://github.com/OmniCTF/higmunds_attributes"
+      },
+      {
+        "name": "Hawkfry-Group/omni-user-manager",
+        "description": "A package for synchronizing users, groups, and user attributes with Omni.",
+        "url": "https://github.com/Hawkfry-Group/omni-user-manager"
+      },
+      {
+        "name": "CameronWDavis/Aiproject3",
+        "description": " Project3 is a knowledge-based intelligent system that collects user preferences, attributes, and constraints, then computes the existence of all feasible objects, exemplification of two random objects, optimization, and omni-optimization for penalty, possibility, and qualitative logics",
+        "url": "https://github.com/CameronWDavis/Aiproject3"
+      },
+      {
+        "name": "mathriano/TELECOM_Mobility_Profile",
+        "description": "The purpose of these files original from DataStage is to provide a list of all the active subscribers on TELCO service through SMS/VOICE/DATA and the corresponding attributes such as Location, Active Time, Event Type, Duration, Quality, Duration, and Target. This data feeds into IBM SPSS Modeler as a analytical model for building the enhanced individual customer mobility, usage, and location profiles. This data is subsequently used for IBM SPSS Modeler + R reports for visualization and omni channel integration and to define predictive actions over Customer Insight's clusters",
+        "url": "https://github.com/mathriano/TELECOM_Mobility_Profile"
+      }
+    ]
+  },
+  {
+    "query": "MM-slotgate",
+    "status": 200,
+    "items": []
+  },
+  {
+    "query": "\"Factored Retrieval\"",
+    "status": 200,
+    "items": [
+      {
+        "name": "DanielCai402/Factor-Research",
+        "description": "Daily factor retrieval",
+        "url": "https://github.com/DanielCai402/Factor-Research"
+      },
+      {
+        "name": "kamjcx/CarbonFactorResolver",
+        "description": "Evidence-governed carbon-factor retrieval and qualification engine for materials, energy, transport and processes.",
+        "url": "https://github.com/kamjcx/CarbonFactorResolver"
+      }
+    ]
+  },
+  {
+    "query": "\"Promptable Embeddings\"",
+    "status": 200,
+    "items": [
+      {
+        "name": "xhinker/sd_embed",
+        "description": "Generate long weighted prompt embeddings for Stable Diffusion",
+        "url": "https://github.com/xhinker/sd_embed"
+      },
+      {
+        "name": "EmbraceAGI/AIGC_Interview",
+        "description": "📚 AIGC 求职面经、必备基础知识、提示词工程、ChatGPT、Stable Diffusion、Prompt、Embedding、Fintune 等 AIGC 求职你所需要知道的一切~",
+        "url": "https://github.com/EmbraceAGI/AIGC_Interview"
+      },
+      {
+        "name": "sen-mao/StyleDiffusion",
+        "description": "Official Implementations \"StyleDiffusion: Prompt-Embedding Inversion for Text-Based Editing\" (CVMJ2024 Spotlight🏆)",
+        "url": "https://github.com/sen-mao/StyleDiffusion"
+      },
+      {
+        "name": "AbstractEyes/comfy-clip-shunts",
+        "description": "A small set of unique adapters meant to bridge the dual_stream_shunt trained for guiding prompt embeddings and diffusion.",
+        "url": "https://github.com/AbstractEyes/comfy-clip-shunts"
+      },
+      {
+        "name": "SurrealByDesign/ComfyUI-Ideogram-Palette-and-Prompt-Tools",
+        "description": "ComfyUI nodes for Ideogram 4: extract color palettes from images, assemble/validate structured JSON prompts, embed & recover them from PNGs.",
+        "url": "https://github.com/SurrealByDesign/ComfyUI-Ideogram-Palette-and-Prompt-Tools"
+      },
+      {
+        "name": "andreafrancia/ticky",
+        "description": "An PROMPT embeddable timer",
+        "url": "https://github.com/andreafrancia/ticky"
+      },
+      {
+        "name": "km1994/AwesomeNLP",
+        "description": "此项目完成了关于 NLP-Beginner：自然语言处理入门练习 的所有任务（文本分类、信息抽取、知识图谱、机器翻译、问答系统、文本生成、Text-to-SQL、文本纠错、文本挖掘、知识蒸馏、模型加速、OCR、TTS、Prompt、embedding等），所有代码都经过测试,可以正常运行。",
+        "url": "https://github.com/km1994/AwesomeNLP"
+      },
+      {
+        "name": "liewcc/GemiPersona",
+        "description": "Gemini Batch Image Generator with Automatic Prompt Embedding",
+        "url": "https://github.com/liewcc/GemiPersona"
+      },
+      {
+        "name": "Open-Debin/TPSO",
+        "description": "[IJCNN 2026] TPSO: Training-Free Diverse Image Generation via Semantic Prompt Embedding Optimization",
+        "url": "https://github.com/Open-Debin/TPSO"
+      },
+      {
+        "name": "airomhq/airom",
+        "description": "Open-source AI Bill of Materials (AIBOM) scanner: inventories AI models, datasets, prompts, embeddings, vector DBs & RAG pipelines across code, containers & Kubernetes — with file:line evidence, load-time risk detection (poisoned pickle / Keras Lambda / unsafe torch.load) and NIST AI RMF / OWASP compliance mapping. CycloneDX · SARIF · JSON.",
+        "url": "https://github.com/airomhq/airom"
+      },
+      {
+        "name": "jfcantu/ComfyUI-Prompt-Companion",
+        "description": "A ComfyUI node that lets you save and reuse parts of prompts (embeddings, quality keywords, and so on.)",
+        "url": "https://github.com/jfcantu/ComfyUI-Prompt-Companion"
+      },
+      {
+        "name": "nkchocoai/Eagle-MetadataViewer",
+        "description": "This is a plugin for Eagle that displays information about prompts embedded in PNGs, JPEGs, WEBPs, etc. in the inspector.  ",
+        "url": "https://github.com/nkchocoai/Eagle-MetadataViewer"
+      },
+      {
+        "name": "tinyzqh/hype-rag",
+        "description": "Hypothetical Prompt Embeddings (HyPE)",
+        "url": "https://github.com/tinyzqh/hype-rag"
+      },
+      {
+        "name": "tjy828/DistillSAM",
+        "description": "The official PyTorch implementation of the paper \"Distillation-SAM: Knowledge distillation based auto-prompt embedding learning for surgical image segmentation, TMI 2026\".",
+        "url": "https://github.com/tjy828/DistillSAM"
+      },
+      {
+        "name": "zzf1955/vllm_memory",
+        "description": "vLLM prompt embeddings and extract hidden states demo",
+        "url": "https://github.com/zzf1955/vllm_memory"
+      },
+      {
+        "name": "neuralpixels/sd-webui-prompt-embedder",
+        "description": "Prompt embedding creator for Stable Diffusion Web UI",
+        "url": "https://github.com/neuralpixels/sd-webui-prompt-embedder"
+      },
+      {
+        "name": "NuCoreAI/references",
+        "description": "Everything you need to know: Schemas, prompts, embeddings, concepts ",
+        "url": "https://github.com/NuCoreAI/references"
+      },
+      {
+        "name": "kwishna/OpenAI_Practice",
+        "description": "Practicing OpenAI APIs, Prompts, Embeddings, Function Calls & New Features",
+        "url": "https://github.com/kwishna/OpenAI_Practice"
+      },
+      {
+        "name": "iintothewind/ips_gui",
+        "description": "ips_gui — Image Prompt Search, A fast GUI tool to search AI-generated image prompts embedded in local image metadata. Supports PNG, JPEG, and WebP files from Stable Diffusion (A1111/Forge), ComfyUI, NovelAI, and InvokeAI.",
+        "url": "https://github.com/iintothewind/ips_gui"
+      },
+      {
+        "name": "sahir2k/reduxcache",
+        "description": "utility package that caches prompt embeddings produced by the FluxPriorReduxPipeline",
+        "url": "https://github.com/sahir2k/reduxcache"
+      },
+      {
+        "name": "JiauZhang/StyleDiffusion",
+        "description": "Implementation of StyleDiffusion: Prompt-Embedding Inversion for Text-Based Editing",
+        "url": "https://github.com/JiauZhang/StyleDiffusion"
+      },
+      {
+        "name": "E2GO/comfyui-prompt-collector",
+        "description": "Extract and browse prompts embedded in ComfyUI-generated PNG images",
+        "url": "https://github.com/E2GO/comfyui-prompt-collector"
+      },
+      {
+        "name": "yuxiang-gao/tensordict-cache",
+        "description": "Online cache for prompt embeddings using TensorDict memory-mapped storage",
+        "url": "https://github.com/yuxiang-gao/tensordict-cache"
+      },
+      {
+        "name": "yg36/LangChain-Learning",
+        "description": "LangChain notebook exploring chains, prompts, embeddings, and vector database workflows.",
+        "url": "https://github.com/yg36/LangChain-Learning"
+      },
+      {
+        "name": "kunalyadav47/llm-rag-poc-lab",
+        "description": "Experiments with LLM prompts, embeddings, and RAG-style pipelines using Python.",
+        "url": "https://github.com/kunalyadav47/llm-rag-poc-lab"
+      },
+      {
+        "name": "ilya-ulyanov/rag-hypotetical-prompt-embedding",
+        "description": "Showcases Hypothetical Prompt Embedding (HyPE) method for document retrieval in RAG",
+        "url": "https://github.com/ilya-ulyanov/rag-hypotetical-prompt-embedding"
+      },
+      {
+        "name": "Chandra-Shivam/Codebase-Chat",
+        "description": "Contains Prompting, Embeddings, Vector Search, RAG, Re-ranker, Agent, Multi-Agent",
+        "url": "https://github.com/Chandra-Shivam/Codebase-Chat"
+      },
+      {
+        "name": "basiclab/PromptMoG",
+        "description": "Diversifying Long Prompt Image Generation through Structured Prompt Embedding Space Sampling",
+        "url": "https://github.com/basiclab/PromptMoG"
+      },
+      {
+        "name": "thejohnd0e/PromptKeep",
+        "description": "Save AI-generated images with their original prompts embedded as metadata.",
+        "url": "https://github.com/thejohnd0e/PromptKeep"
+      },
+      {
+        "name": "Tenos-ai/Tenos-Flux-Conditioning-Nodes",
+        "description": "A set of Flux specific layer‑aware ComfyUI nodes that let you scale, blend, and splice prompt embeddings per block.",
+        "url": "https://github.com/Tenos-ai/Tenos-Flux-Conditioning-Nodes"
+      }
+    ]
+  }
+]

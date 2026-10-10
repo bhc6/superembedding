@@ -1,0 +1,8 @@
+{
+  "source": "https://www.kaggle.com/api/v1/datasets/list?search=fashion-product-images-small",
+  "checked": "2026-10-11",
+  "dataset": "paramaggarwal/fashion-product-images-small",
+  "licenseName": "MIT",
+  "url": "https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small",
+  "note": "HF mirror lacks an explicit license field; upstream Kaggle listing reports MIT. Raw images will not be republished."
+}

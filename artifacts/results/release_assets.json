@@ -1,0 +1,32 @@
+[
+  {
+    "file": "all_trained_heads.zip",
+    "bytes": 355060132,
+    "sha256": "d9a0a0a6b7ef1f196b0398b1c14abd4ef95d16b81a2018fb6123ec0ed53697bc"
+  },
+  {
+    "file": "omnijev_resume_checkpoints.zip",
+    "bytes": 749366572,
+    "sha256": "522b40029a35c567afe7192da7a24266ec684c0cd9edfecea40495552a260db8"
+  },
+  {
+    "file": "base_resume_checkpoints.zip",
+    "bytes": 17775840,
+    "sha256": "6cbfd3fbb4d7ef29b28e2afe198ca6b4d5ae09aa053d5f20330c063935b223ec"
+  },
+  {
+    "file": "flair_resume_checkpoints.zip",
+    "bytes": 8860922,
+    "sha256": "d3c8a1cdb61a712f82e1aa90d7e491005a3c50691c27d9b72c2e0215c02f0eb4"
+  },
+  {
+    "file": "lora_model_and_resume.zip",
+    "bytes": 509725172,
+    "sha256": "a024cc634d606db6ae3960c1b19ae535800b5443d9d99037dc9cdda6ef95bc9f"
+  },
+  {
+    "file": "development_models_fashion600.zip",
+    "bytes": 151179620,
+    "sha256": "cc92aeb7aa43bbced80f9e7e487bc119e42af549e9c5e4e8ff17904252138c51"
+  }
+]

@@ -1,0 +1,973 @@
+{
+  "config": {
+    "data": "data/fashion2400",
+    "adapter": "models/OmniJev-0.8B-v1.1",
+    "base": "models/Qwen3.5-0.8B",
+    "head": "D:\\DEMO\\superembedding\\runs\\fashion2400\\suite\\raw_s42_lr0.001\\best_head.pt",
+    "output": "D:\\DEMO\\superembedding\\runs\\fashion2400\\lora_raw",
+    "steps": 100,
+    "accumulation": 1,
+    "lr": 1e-05,
+    "margin": 0.2,
+    "max_pixels": 65536,
+    "seed": 42,
+    "checkpoint_every": 10,
+    "stop_after": 0,
+    "validate_every": 25,
+    "relocate_source": false
+  },
+  "history": [
+    {
+      "step": 0,
+      "val": {
+        "color": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.778251588344574,
+          "R@5": 0.9211087226867676,
+          "mAP": 0.638885498046875
+        },
+        "article_type": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.8742004036903381,
+          "R@5": 0.9744136333465576,
+          "mAP": 0.8262612819671631
+        },
+        "audience": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.9445629119873047,
+          "R@5": 0.9808102250099182,
+          "mAP": 0.9567469358444214
+        },
+        "macro": {
+          "R@1": 0.8656716346740723,
+          "R@5": 0.9587775270144144,
+          "mAP": 0.8072979052861532
+        }
+      }
+    },
+    {
+      "step": 1,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6428.8564453125,
+      "peak_reserved_MiB": 6448.0
+    },
+    {
+      "step": 2,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 3,
+      "loss": 0.04660928249359131,
+      "gradient_norm": 25.744266510009766,
+      "probe_lora_gradient_norm": 0.09672333300113678,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 4,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 5,
+      "loss": 0.18086379766464233,
+      "gradient_norm": 32.461002349853516,
+      "probe_lora_gradient_norm": 0.10460563749074936,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 6,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 7,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 8,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 9,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 10,
+      "loss": 0.14844673871994019,
+      "gradient_norm": 16.435773849487305,
+      "probe_lora_gradient_norm": 0.11209886521100998,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 11,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6586.8740234375,
+      "peak_reserved_MiB": 6606.0
+    },
+    {
+      "step": 12,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 13,
+      "loss": 0.15838462114334106,
+      "gradient_norm": 9.512847900390625,
+      "probe_lora_gradient_norm": 0.1173458993434906,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 14,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 15,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 16,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 17,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 18,
+      "loss": 0.27507293224334717,
+      "gradient_norm": 10.535122871398926,
+      "probe_lora_gradient_norm": 0.12352515757083893,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 19,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 20,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 21,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 22,
+      "loss": 0.007740795612335205,
+      "gradient_norm": 14.162001609802246,
+      "probe_lora_gradient_norm": 0.08085247129201889,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 23,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 24,
+      "loss": 0.24202120304107666,
+      "gradient_norm": 13.600419998168945,
+      "probe_lora_gradient_norm": 0.09871610254049301,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 25,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0,
+      "val": {
+        "color": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.7889125943183899,
+          "R@5": 0.9253731369972229,
+          "mAP": 0.6701497435569763
+        },
+        "article_type": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.8656716346740723,
+          "R@5": 0.9765458703041077,
+          "mAP": 0.770208477973938
+        },
+        "audience": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.9573560953140259,
+          "R@5": 0.9829424023628235,
+          "mAP": 0.8925601243972778
+        },
+        "macro": {
+          "R@1": 0.8706467747688293,
+          "R@5": 0.9616204698880514,
+          "mAP": 0.7776394486427307
+        }
+      }
+    },
+    {
+      "step": 26,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 27,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 28,
+      "loss": 0.1479080319404602,
+      "gradient_norm": 60.252838134765625,
+      "probe_lora_gradient_norm": 0.11832758039236069,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 29,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 30,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 31,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 32,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 33,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 34,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 35,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 36,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 37,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 38,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 39,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 40,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 41,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 42,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 43,
+      "loss": 0.0008867383003234863,
+      "gradient_norm": 35.71865463256836,
+      "probe_lora_gradient_norm": 0.12057585269212723,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 44,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 45,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 46,
+      "loss": 0.1832839846611023,
+      "gradient_norm": 13.82056713104248,
+      "probe_lora_gradient_norm": 0.09764589369297028,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 47,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 48,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 49,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 50,
+      "loss": 0.21900242567062378,
+      "gradient_norm": 10.927116394042969,
+      "probe_lora_gradient_norm": 0.10553357750177383,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0,
+      "val": {
+        "color": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.7867803573608398,
+          "R@5": 0.9253731369972229,
+          "mAP": 0.6607244610786438
+        },
+        "article_type": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.8592750430107117,
+          "R@5": 0.968017041683197,
+          "mAP": 0.7862315773963928
+        },
+        "audience": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.9552238583564758,
+          "R@5": 0.9722814559936523,
+          "mAP": 0.9558890461921692
+        },
+        "macro": {
+          "R@1": 0.8670930862426758,
+          "R@5": 0.9552238782246908,
+          "mAP": 0.8009483615557352
+        }
+      }
+    },
+    {
+      "step": 51,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 52,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 53,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 54,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 55,
+      "loss": 0.07485008239746094,
+      "gradient_norm": 36.77730941772461,
+      "probe_lora_gradient_norm": 0.08746865391731262,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 56,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 57,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 58,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 59,
+      "loss": 0.009474575519561768,
+      "gradient_norm": 13.742284774780273,
+      "probe_lora_gradient_norm": 0.09889060258865356,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 60,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 61,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 62,
+      "loss": 0.655507504940033,
+      "gradient_norm": 21.149795532226562,
+      "probe_lora_gradient_norm": 0.08677559345960617,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 63,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 64,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 65,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 66,
+      "loss": 0.43538764119148254,
+      "gradient_norm": 29.23891258239746,
+      "probe_lora_gradient_norm": 0.09176706522703171,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 67,
+      "loss": 0.0632590502500534,
+      "gradient_norm": 54.422847747802734,
+      "probe_lora_gradient_norm": 0.07753776013851166,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 68,
+      "loss": 0.17202210426330566,
+      "gradient_norm": 24.809558868408203,
+      "probe_lora_gradient_norm": 0.09180337935686111,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 69,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 70,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 71,
+      "loss": 0.11488968133926392,
+      "gradient_norm": 8.634746551513672,
+      "probe_lora_gradient_norm": 0.09125570207834244,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 72,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 73,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 74,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 75,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0,
+      "val": {
+        "color": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.7761194109916687,
+          "R@5": 0.914712131023407,
+          "mAP": 0.6281951665878296
+        },
+        "article_type": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.863539457321167,
+          "R@5": 0.9701492786407471,
+          "mAP": 0.8036215305328369
+        },
+        "audience": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.9616204500198364,
+          "R@5": 0.9744136333465576,
+          "mAP": 0.9457477331161499
+        },
+        "macro": {
+          "R@1": 0.8670931061108907,
+          "R@5": 0.9530916810035706,
+          "mAP": 0.7925214767456055
+        }
+      }
+    },
+    {
+      "step": 76,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 77,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 78,
+      "loss": 0.6288830041885376,
+      "gradient_norm": 26.345273971557617,
+      "probe_lora_gradient_norm": 0.1074124425649643,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 79,
+      "loss": 0.1252477765083313,
+      "gradient_norm": 16.636287689208984,
+      "probe_lora_gradient_norm": 0.08976432681083679,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 80,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 81,
+      "loss": 0.012532234191894531,
+      "gradient_norm": 11.868965148925781,
+      "probe_lora_gradient_norm": 0.1187722235918045,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 82,
+      "loss": 0.024698853492736816,
+      "gradient_norm": 27.395658493041992,
+      "probe_lora_gradient_norm": 0.13939878344535828,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 83,
+      "loss": 0.08097660541534424,
+      "gradient_norm": 10.988051414489746,
+      "probe_lora_gradient_norm": 0.11949316412210464,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 84,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 85,
+      "loss": 0.4787614047527313,
+      "gradient_norm": 21.571474075317383,
+      "probe_lora_gradient_norm": 0.09520142525434494,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 86,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 87,
+      "loss": 0.013718575239181519,
+      "gradient_norm": 20.83605194091797,
+      "probe_lora_gradient_norm": 0.09698586165904999,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 88,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 89,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 90,
+      "loss": 0.1971527338027954,
+      "gradient_norm": 9.205973625183105,
+      "probe_lora_gradient_norm": 0.14983521401882172,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 91,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 92,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 93,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 94,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 95,
+      "loss": 0.18991726636886597,
+      "gradient_norm": 43.1513786315918,
+      "probe_lora_gradient_norm": 0.08600854873657227,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 96,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 97,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 98,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 99,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 100,
+      "loss": 0.0,
+      "gradient_norm": 0.0,
+      "probe_lora_gradient_norm": 0.0,
+      "peak_allocated_MiB": 6596.83154296875,
+      "peak_reserved_MiB": 6626.0,
+      "val": {
+        "color": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.8059701323509216,
+          "R@5": 0.9339019060134888,
+          "mAP": 0.7273727655410767
+        },
+        "article_type": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.8443496823310852,
+          "R@5": 0.9701492786407471,
+          "mAP": 0.7606804966926575
+        },
+        "audience": {
+          "eligible_queries": 469,
+          "total_queries": 469,
+          "R@1": 0.9594882726669312,
+          "R@5": 0.9722814559936523,
+          "mAP": 0.9286024570465088
+        },
+        "macro": {
+          "R@1": 0.8699360291163126,
+          "R@5": 0.9587775468826294,
+          "mAP": 0.8055519064267477
+        }
+      }
+    }
+  ],
+  "probe_parameter": "base_model.model.model.language_model.layers.0.linear_attn.out_proj.lora_B.default.weight",
+  "best_validation_mAP": 0.8072979052861532,
+  "best_step": 0,
+  "test_evaluated": false,
+  "probe_max_abs_weight_change": 0.0,
+  "trainable_parameters": 20711680,
+  "seconds": 988.9972110000017,
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "scope": "Validation-selected real-image LoRA plus projection; one-seed exploratory follow-up. Inherited decision heads are not recalibrated or validated after LoRA updates."
+}

@@ -1,0 +1,347 @@
+{
+  "data": {
+    "dataset": "ashraq/fashion-product-images-small",
+    "revision": "3859c76db2f6f3d3b9a3863345e3ccdbff75879d",
+    "shard": "data/train-00000-of-00002-6cff4c59f91661c3.parquet",
+    "seed": 20261011,
+    "count": 2400,
+    "splits": {
+      "train": 1462,
+      "val": 469,
+      "test": 469
+    },
+    "label_keys": [
+      "color",
+      "article_type",
+      "audience"
+    ],
+    "directions": [
+      "the dominant color of the product",
+      "the type of clothing or accessory",
+      "the product's intended catalog audience (men or women)"
+    ],
+    "instruction": "Extract evidence about the pictured product for the specified attribute direction.",
+    "protocol": "Joint-stratified held-out product split, development IDs and exact/dHash-distance<=4 duplicates excluded before splitting; seen values/combinations; dHash is heuristic, not a semantic duplicate guarantee.",
+    "shards": [
+      "data/train-00000-of-00002-6cff4c59f91661c3.parquet",
+      "data/train-00001-of-00002-bb459e5ac5f01e71.parquet"
+    ],
+    "manifest_sha256": "1f2ddb346975f75b9d8faf11b4a428b65688f6674bc1f8b6050b1163aa574901",
+    "filtering": {
+      "excluded_exact_or_dhash": 9398,
+      "excluded_id": 600
+    },
+    "joint_strata": 40
+  },
+  "features": {
+    "adapter": "D:\\DEMO\\superembedding\\models\\OmniJev-0.8B-v1.1",
+    "base": "D:\\DEMO\\superembedding\\models\\Qwen3.5-0.8B",
+    "basis": {
+      "directions": [
+        "the dominant color of the product",
+        "the type of clothing or accessory",
+        "the product's intended catalog audience (men or women)"
+      ],
+      "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+    },
+    "max_pixels": 65536,
+    "dataset_revision": "3859c76db2f6f3d3b9a3863345e3ccdbff75879d",
+    "disable_lora": true
+  },
+  "selection_rule": "mean validation score across three seeds; test not used for LR/checkpoint selection",
+  "frozen_features": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.5095948576927185,
+        "R@5": 0.8400852680206299,
+        "mAP": 0.24867403507232666
+      },
+      "article_type": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.8379530906677246,
+        "R@5": 0.9872068166732788,
+        "mAP": 0.646828293800354
+      },
+      "audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.9509595036506653,
+        "R@5": 0.9914712309837341,
+        "mAP": 0.6613896489143372
+      },
+      "macro": {
+        "R@1": 0.7661691506703695,
+        "R@5": 0.9395877718925476,
+        "mAP": 0.5189639925956726
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.3837953209877014,
+        "R@5": 0.7313432693481445,
+        "mAP": 0.23637479543685913
+      },
+      "color+audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.46908316016197205,
+        "R@5": 0.7825160026550293,
+        "mAP": 0.20635071396827698
+      },
+      "article_type+audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.7803837656974792,
+        "R@5": 0.9744136333465576,
+        "mAP": 0.5762776732444763
+      }
+    },
+    "joint": {
+      "eligible_queries": 469,
+      "total_queries": 469,
+      "R@1": 0.34328359365463257,
+      "R@5": 0.695095956325531,
+      "mAP": 0.21806417405605316
+    }
+  },
+  "global_features": null,
+  "architectures": {
+    "raw": {
+      "lr": 0.0001,
+      "validation_grid": {
+        "0.0001": 0.6767898499965668,
+        "0.001": 0.6662043746974733
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite_base\\raw_s17_lr0.0001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5778251886367798,
+                "R@5": 0.863539457321167,
+                "mAP": 0.28130075335502625
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8187633156776428,
+                "R@5": 0.9872068166732788,
+                "mAP": 0.7651679515838623
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9872068166732788,
+                "R@5": 0.9957355856895447,
+                "mAP": 0.9640249609947205
+              },
+              "macro": {
+                "R@1": 0.7945984403292338,
+                "R@5": 0.9488272865613302,
+                "mAP": 0.670164555311203
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.43070361018180847,
+                "R@5": 0.778251588344574,
+                "mAP": 0.2832918167114258
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.526652455329895,
+                "R@5": 0.8592750430107117,
+                "mAP": 0.2940577566623688
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8187633156776428,
+                "R@5": 0.9808102250099182,
+                "mAP": 0.7557948231697083
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.3837953209877014,
+              "R@5": 0.7697228193283081,
+              "mAP": 0.28622788190841675
+            }
+          }
+        },
+        {
+          "seed": 42,
+          "best_step": 450,
+          "checkpoint": "runs\\fashion2400\\suite_base\\raw_s42_lr0.0001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5884861350059509,
+                "R@5": 0.8699360489845276,
+                "mAP": 0.2808701694011688
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8294243216514587,
+                "R@5": 0.9808102250099182,
+                "mAP": 0.7702606916427612
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9893389940261841,
+                "R@5": 0.9957355856895447,
+                "mAP": 0.9654421806335449
+              },
+              "macro": {
+                "R@1": 0.8024164835611979,
+                "R@5": 0.9488272865613302,
+                "mAP": 0.6721910138924917
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.3965884745121002,
+                "R@5": 0.7633262276649475,
+                "mAP": 0.27274107933044434
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5223880410194397,
+                "R@5": 0.8742004036903381,
+                "mAP": 0.2924709916114807
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8017057776451111,
+                "R@5": 0.9829424023628235,
+                "mAP": 0.7512516975402832
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.3603411614894867,
+              "R@5": 0.7697228193283081,
+              "mAP": 0.27382922172546387
+            }
+          }
+        },
+        {
+          "seed": 91,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite_base\\raw_s91_lr0.0001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5373134613037109,
+                "R@5": 0.8742004036903381,
+                "mAP": 0.2757701277732849
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8422175049781799,
+                "R@5": 0.9765458703041077,
+                "mAP": 0.7734125852584839
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9893389940261841,
+                "R@5": 0.9957355856895447,
+                "mAP": 0.9713858366012573
+              },
+              "macro": {
+                "R@1": 0.7896233201026917,
+                "R@5": 0.9488272865613302,
+                "mAP": 0.6735228498776754
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.3710021376609802,
+                "R@5": 0.7441364526748657,
+                "mAP": 0.2650707960128784
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5159914493560791,
+                "R@5": 0.8443496823310852,
+                "mAP": 0.2903904616832733
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8272920846939087,
+                "R@5": 0.9765458703041077,
+                "mAP": 0.7567558884620667
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.3710021376609802,
+              "R@5": 0.7590618133544922,
+              "mAP": 0.2729322910308838
+            }
+          }
+        }
+      ],
+      "summary": {
+        "attribute_mAP": {
+          "mean": 0.6719594730271233,
+          "std": 0.0016910777563586958
+        },
+        "attribute_R1": {
+          "mean": 0.7955460813310411,
+          "std": 0.006449013523031609
+        },
+        "joint_mAP": {
+          "mean": 0.27766313155492145,
+          "std": 0.00743083660370709
+        },
+        "joint_R1": {
+          "mean": 0.37171287337938946,
+          "std": 0.011743221806131014
+        },
+        "pair_mAP": {
+          "mean": 0.44020281235376996,
+          "std": 0.0036873832997735435
+        }
+      }
+    }
+  }
+}

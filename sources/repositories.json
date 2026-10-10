@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Omni-Attribute",
+    "url": "https://github.com/snap-research/omni-attribute.git",
+    "path": "D:\\DEMO\\superembedding\\repos\\Omni-Attribute",
+    "commit": "4008bb3c5b9b81c5fdc5a4e3971fc26534786b9a",
+    "clone": "depth=1, blob:none",
+    "checkout": "webpage source only; media excluded"
+  },
+  {
+    "name": "OmniJev",
+    "url": "https://github.com/tinnel123666888/OmniJev.git",
+    "path": "D:\\DEMO\\superembedding\\repos\\OmniJev",
+    "commit": "14dbec4f71e194852c8d7b88ab36ef639493f400",
+    "clone": "depth=1, blob:none",
+    "checkout": "full worktree"
+  },
+  {
+    "name": "FLAIR",
+    "url": "https://github.com/ExplainableML/flair.git",
+    "path": "D:\\DEMO\\superembedding\\repos\\FLAIR",
+    "commit": "0f9ce05886d1ee0aa2c628653104cce77a1fff14",
+    "clone": "depth=1, blob:none",
+    "checkout": "full worktree"
+  },
+  {
+    "name": "AG-MAN",
+    "url": "https://github.com/Dr-LingXiao/AG-MAN.git",
+    "path": "D:\\DEMO\\superembedding\\repos\\AG-MAN",
+    "commit": "11d3e89b10cadb6cc52c16c97cee1cd4ec8f4d3b",
+    "clone": "depth=1, blob:none",
+    "checkout": "full worktree"
+  },
+  {
+    "name": "Bag-of-Queries",
+    "url": "https://github.com/amaralibey/Bag-of-Queries.git",
+    "path": "D:\\DEMO\\superembedding\\repos\\Bag-of-Queries",
+    "commit": "1a4965ea7dfd9bd0dd846adf7a0e430f68101d12",
+    "clone": "depth=1, blob:none",
+    "checkout": "full worktree"
+  }
+]

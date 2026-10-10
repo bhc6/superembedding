@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "workdir": "D:\\DEMO\\superembedding",
+  "validation": "repository commits and clean worktrees; local Markdown links and line anchors; official config parsing",
+  "model_inference_run": false,
+  "repositories": [
+    {
+      "repository": "Omni-Attribute",
+      "commit": "4008bb3c5b9b81c5fdc5a4e3971fc26534786b9a",
+      "clean": true
+    },
+    {
+      "repository": "OmniJev",
+      "commit": "14dbec4f71e194852c8d7b88ab36ef639493f400",
+      "clean": true
+    },
+    {
+      "repository": "FLAIR",
+      "commit": "0f9ce05886d1ee0aa2c628653104cce77a1fff14",
+      "clean": true
+    },
+    {
+      "repository": "AG-MAN",
+      "commit": "11d3e89b10cadb6cc52c16c97cee1cd4ec8f4d3b",
+      "clean": true
+    },
+    {
+      "repository": "Bag-of-Queries",
+      "commit": "1a4965ea7dfd9bd0dd846adf7a0e430f68101d12",
+      "clean": true
+    }
+  ],
+  "backbones": [
+    {
+      "source": "qwen25vl7b-config.json",
+      "text_hidden": 3584,
+      "text_layers": 28,
+      "linear_layers": 0,
+      "full_layers": 0,
+      "vision_depth": 32,
+      "vision_hidden": 1280
+    },
+    {
+      "source": "qwen35-08b-config.json",
+      "text_hidden": 1024,
+      "text_layers": 24,
+      "linear_layers": 18,
+      "full_layers": 6,
+      "vision_depth": 12,
+      "vision_hidden": 768
+    },
+    {
+      "source": "qwen35-2b-config.json",
+      "text_hidden": 2048,
+      "text_layers": 24,
+      "linear_layers": 18,
+      "full_layers": 6,
+      "vision_depth": 24,
+      "vision_hidden": 1024
+    },
+    {
+      "source": "qwen35-4b-config.json",
+      "text_hidden": 2560,
+      "text_layers": 32,
+      "linear_layers": 24,
+      "full_layers": 8,
+      "vision_depth": 24,
+      "vision_hidden": 1024
+    }
+  ],
+  "retained_incomplete_clones": [
+    "repos/Omni-Attribute.incomplete",
+    "repos/OmniJev.incomplete"
+  ],
+  "cleanup_status": "Automatic approval policy rejected recursive removal; directories retained.",
+  "source_sha256": {
+    "2301.13014_attribute.html": "4935adc8b50b69b4d7e6bd6af74b3f80fb0a24efc5511729021528acdcd50dba",
+    "2301.13014_attribute.txt": "4bc551e721e046ffed9f65648c2884c6b8f391a2d4cf80d796163363e0cfc27f",
+    "2405.07364.html": "09cf09a5407c15a47487199bc426c0de8f91aa3e1fc2529013081a6b8d990299",
+    "2412.03561.html": "be06d6511bfbcddc441f11e68d17e25106febd2b45447de45dd0ed5a571ba9c7",
+    "2505.15877.html": "302a128c87e7d919ec5be06659b1fa6be5ebeb5c28317e7c97b1c3f5b8ba2567",
+    "2505.15877_tables.txt": "eeda9e9e9eaa1d9b3b2055eec291c35c501456133357c8f2a3e6c2c0bc6c451f",
+    "2512.10955_attribute.html": "e943a6483078821b51038172b280d5d516ffac65f6514f33e20944dd4bb0d50c",
+    "2512.10955_attribute.txt": "79264f448db434b0929e8ebc26ffbb5e9876687e6250d0ee80b1bbec272304bf",
+    "2608.12570_attribute.html": "296a09c69ad89483390a35ba79fc2ef0e2d453a7453d78b0a4c0c0142ed66fa7",
+    "2608.12570_attribute.txt": "b10fae53a1c544fdc039c00babf1d3fa3ddfad303c99e98d9df1a790f0d922d9",
+    "2609.08886_attribute.html": "539e33591f649e71cf542fc97fc888d8e6f86b001534a72d8d18394989ecf06f",
+    "2609.08886_attribute.txt": "0eda64368f72a403936db3b72c5f7acd078b05c2b28e842dc512f7d631fd57ec",
+    "boq_readme_verified.txt": "523dca7162ae84ef1e1129f14af2d1d595e03b458b9a5392382185ef3acf49e0",
+    "flair_method_checked.txt": "49dbe32c1e5bdaff70950567226f5ef413ee30aee9a29885ebde9cafb46c9c92",
+    "omni-attribute-project.html": "b475f2beaf802b19d6f1e5b15bb45028adbe829e1ea8caa1df292193df4602f1",
+    "omni_branch.txt": "b43b4fabd98e50bec78833508b3096e2ee3582a47966d495d36184d0a52447c3",
+    "omni_head.txt": "2c67a487a68c648663e889d1443c8f02350e3fc1561f52f54b30caf802ea7dec",
+    "OmniJev-0.8B-adapter_config.json": "a0a1a6c0756f9d15609f1284320d817943b0db36db3e64cf050b96aa9301d2ce",
+    "OmniJev-0.8B-head_meta.json": "504177129404d6d347614d03406577c63d7f19ba110032c2c0c2bc25630a29e6",
+    "OmniJev-2B-adapter_config.json": "d2766712c6a72d60e438f8d6d24160ba0b16e1347757541f3df4107e5606cae2",
+    "OmniJev-2B-head_meta.json": "a2ad1e954a98e90631e9a86b5feca5f2d3b3d0b49ce38ccf12e5393a54d330fe",
+    "OmniJev-adapter_config.json": "69c7e7d67e92106cd8d97601d0b51c7e10c6df11367081a602df690bb6fc098d",
+    "OmniJev-head_meta.json": "d184edd664ad85bbbb782157a8965db33c36d4a144d8b781d19f5c11cd2778ee",
+    "omnijev_card.txt": "c0f9a14c3073141bdf594e81b8a003d1bc3936cb03eb7373939bc6bfd03adc2c",
+    "qwen25vl7b-config.json": "9d506bb6cd45d455c52b6eba66cca7dc145b6b704b12d84e441fb4b0816dbf36",
+    "qwen35-08b-config.json": "f9061afb89151d97c70fd78de2ce3fe4e11cdf5e853e36ebe19e16499bf5f619",
+    "qwen35-2b-config.json": "0c355dd21206677d2930aa28d668274e3809be45e2d715b95ad8806534410e98",
+    "qwen35-4b-config.json": "c857db69a33400b29db19b4aa8212174253f8c76498b79c5aa9b2a6fd4013ecc",
+    "repositories.json": "74485c6e8f7f05fd68705bf95a0ab178b8cbc4349db673365148c2d1a11bb452",
+    "repository-discovery.json": "8577858d1c116b0014af5cee64451f3393a8c88c997ca7c48c0e3abdb4301f12"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "config": {
+    "data": "data/fashion600",
+    "adapter": "models/OmniJev-0.8B-v1.1",
+    "base": "models/Qwen3.5-0.8B",
+    "head": "runs/fashion600/gated/best_head.pt",
+    "output": "runs/fashion600/lora_smoke",
+    "steps": 3,
+    "accumulation": 1,
+    "lr": 1e-05,
+    "margin": 0.5,
+    "max_pixels": 65536,
+    "seed": 43
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 0.49860113859176636,
+      "gradient_norm": 22.005674362182617,
+      "probe_lora_gradient_norm": 0.11778726428747177,
+      "peak_allocated_MiB": 6447.435546875,
+      "peak_reserved_MiB": 6468.0
+    },
+    {
+      "step": 2,
+      "loss": 0.47454774379730225,
+      "gradient_norm": 61.239646911621094,
+      "probe_lora_gradient_norm": 0.14271914958953857,
+      "peak_allocated_MiB": 6614.95361328125,
+      "peak_reserved_MiB": 6626.0
+    },
+    {
+      "step": 3,
+      "loss": 0.5625894069671631,
+      "gradient_norm": 32.13066101074219,
+      "probe_lora_gradient_norm": 0.14203104376792908,
+      "peak_allocated_MiB": 6614.95361328125,
+      "peak_reserved_MiB": 6626.0
+    }
+  ],
+  "probe_parameter": "base_model.model.model.language_model.layers.0.linear_attn.out_proj.lora_B.default.weight",
+  "probe_max_abs_weight_change": 3.005005419254303e-05,
+  "trainable_parameters": 20711680,
+  "seconds": 13.738381300001492,
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "scope": "Real-image LoRA plus projection training smoke; retrieval quality not evaluated. Inherited decision heads are not recalibrated or validated after LoRA updates."
+}

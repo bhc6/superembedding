@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+/models/
+/data/
+/runs/
+/repos/
+/release_assets/
+/sources/*
+!/sources/*.json
+*.tmp
+*.lock

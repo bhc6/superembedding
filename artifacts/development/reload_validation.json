@@ -1,0 +1,9 @@
+{
+  "lora_reload_max_abs_error": 0.0,
+  "raw_reload_vs_cached_max_abs_error": 1.0570511221885681e-07,
+  "shape": [
+    3,
+    256
+  ],
+  "passed": true
+}

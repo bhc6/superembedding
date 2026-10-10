@@ -1,0 +1,78 @@
+{
+  "unique_ids": 600,
+  "unique_decoded_images": 600,
+  "splits": {
+    "train": {
+      "color": {
+        "Brown": 42,
+        "Pink": 42,
+        "Blue": 54,
+        "Green": 36,
+        "Grey": 54,
+        "Red": 48,
+        "White": 60,
+        "Black": 60
+      },
+      "article_type": {
+        "Shirts": 78,
+        "Tshirts": 90,
+        "Handbags": 48,
+        "Tops": 48,
+        "Casual Shoes": 72,
+        "Sports Shoes": 60
+      },
+      "audience": {
+        "Men": 174,
+        "Women": 222
+      }
+    },
+    "val": {
+      "color": {
+        "Brown": 14,
+        "Pink": 14,
+        "Blue": 18,
+        "Green": 12,
+        "Grey": 18,
+        "Red": 16,
+        "White": 20,
+        "Black": 20
+      },
+      "article_type": {
+        "Shirts": 26,
+        "Tshirts": 30,
+        "Handbags": 16,
+        "Tops": 16,
+        "Casual Shoes": 24,
+        "Sports Shoes": 20
+      },
+      "audience": {
+        "Men": 58,
+        "Women": 74
+      }
+    },
+    "test": {
+      "color": {
+        "Brown": 8,
+        "Pink": 9,
+        "Blue": 10,
+        "Green": 7,
+        "Grey": 10,
+        "Red": 8,
+        "White": 10,
+        "Black": 10
+      },
+      "article_type": {
+        "Shirts": 14,
+        "Tshirts": 18,
+        "Handbags": 9,
+        "Tops": 9,
+        "Casual Shoes": 12,
+        "Sports Shoes": 10
+      },
+      "audience": {
+        "Men": 32,
+        "Women": 40
+      }
+    }
+  }
+}

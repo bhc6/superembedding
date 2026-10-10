@@ -1,0 +1,1738 @@
+{
+  "data": {
+    "dataset": "ashraq/fashion-product-images-small",
+    "revision": "3859c76db2f6f3d3b9a3863345e3ccdbff75879d",
+    "shard": "data/train-00000-of-00002-6cff4c59f91661c3.parquet",
+    "seed": 20261011,
+    "count": 2400,
+    "splits": {
+      "train": 1462,
+      "val": 469,
+      "test": 469
+    },
+    "label_keys": [
+      "color",
+      "article_type",
+      "audience"
+    ],
+    "directions": [
+      "the dominant color of the product",
+      "the type of clothing or accessory",
+      "the product's intended catalog audience (men or women)"
+    ],
+    "instruction": "Extract evidence about the pictured product for the specified attribute direction.",
+    "protocol": "Joint-stratified held-out product split, development IDs and exact/dHash-distance<=4 duplicates excluded before splitting; seen values/combinations; dHash is heuristic, not a semantic duplicate guarantee.",
+    "shards": [
+      "data/train-00000-of-00002-6cff4c59f91661c3.parquet",
+      "data/train-00001-of-00002-bb459e5ac5f01e71.parquet"
+    ],
+    "manifest_sha256": "1f2ddb346975f75b9d8faf11b4a428b65688f6674bc1f8b6050b1163aa574901",
+    "filtering": {
+      "excluded_exact_or_dhash": 9398,
+      "excluded_id": 600
+    },
+    "joint_strata": 40
+  },
+  "features": {
+    "adapter": "D:\\DEMO\\superembedding\\models\\OmniJev-0.8B-v1.1",
+    "base": "D:\\DEMO\\superembedding\\models\\Qwen3.5-0.8B",
+    "basis": {
+      "directions": [
+        "the dominant color of the product",
+        "the type of clothing or accessory",
+        "the product's intended catalog audience (men or women)"
+      ],
+      "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+    },
+    "max_pixels": 65536,
+    "dataset_revision": "3859c76db2f6f3d3b9a3863345e3ccdbff75879d"
+  },
+  "selection_rule": "mean validation score across three seeds; test not used for LR/checkpoint selection",
+  "frozen_features": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.6567164063453674,
+        "R@5": 0.8933901786804199,
+        "mAP": 0.32665491104125977
+      },
+      "article_type": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.7931769490242004,
+        "R@5": 0.9786780476570129,
+        "mAP": 0.6212964653968811
+      },
+      "audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.9594882726669312,
+        "R@5": 0.9914712309837341,
+        "mAP": 0.6523088812828064
+      },
+      "macro": {
+        "R@1": 0.8031272093454996,
+        "R@5": 0.954513152440389,
+        "mAP": 0.5334200859069824
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.4456290006637573,
+        "R@5": 0.799573540687561,
+        "mAP": 0.25684845447540283
+      },
+      "color+audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.5522388219833374,
+        "R@5": 0.8443496823310852,
+        "mAP": 0.22909249365329742
+      },
+      "article_type+audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.7697228193283081,
+        "R@5": 0.9744136333465576,
+        "mAP": 0.5623080730438232
+      }
+    },
+    "joint": {
+      "eligible_queries": 469,
+      "total_queries": 469,
+      "R@1": 0.4221748411655426,
+      "R@5": 0.7654584050178528,
+      "mAP": 0.23464293777942657
+    }
+  },
+  "global_features": null,
+  "architectures": {
+    "gated_frozen": {
+      "lr": 0.001,
+      "validation_grid": {
+        "0.0001": 0.4484828644328647,
+        "0.001": 0.4542562961578369
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\gated_frozen_s17_lr0.001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.33262258768081665,
+                "R@5": 0.7313432693481445,
+                "mAP": 0.24951912462711334
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6652451753616333,
+                "R@5": 0.9232409596443176,
+                "mAP": 0.5435390472412109
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7611940503120422,
+                "R@5": 0.9637526869773865,
+                "mAP": 0.5809642672538757
+              },
+              "macro": {
+                "R@1": 0.5863539377848307,
+                "R@5": 0.8727789719899496,
+                "mAP": 0.4580074797074
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.2046908289194107,
+                "R@5": 0.5842217206954956,
+                "mAP": 0.18150031566619873
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.21321961283683777,
+                "R@5": 0.6268656849861145,
+                "mAP": 0.16139613091945648
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6204690933227539,
+                "R@5": 0.8869935870170593,
+                "mAP": 0.4769348204135895
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.18976545333862305,
+              "R@5": 0.5714285969734192,
+              "mAP": 0.16743174195289612
+            }
+          }
+        },
+        {
+          "seed": 42,
+          "best_step": 450,
+          "checkpoint": "runs\\fashion2400\\suite\\gated_frozen_s42_lr0.001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.28997868299484253,
+                "R@5": 0.7334755063056946,
+                "mAP": 0.2465965449810028
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6289978623390198,
+                "R@5": 0.9232409596443176,
+                "mAP": 0.5303235650062561
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7249466776847839,
+                "R@5": 0.9616204500198364,
+                "mAP": 0.5692573189735413
+              },
+              "macro": {
+                "R@1": 0.5479744076728821,
+                "R@5": 0.8727789719899496,
+                "mAP": 0.44872580965360004
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.21321961283683777,
+                "R@5": 0.5415778160095215,
+                "mAP": 0.17506101727485657
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.20682302117347717,
+                "R@5": 0.611940324306488,
+                "mAP": 0.1538962870836258
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.609808087348938,
+                "R@5": 0.8912580013275146,
+                "mAP": 0.45511189103126526
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.19402985274791718,
+              "R@5": 0.5501065850257874,
+              "mAP": 0.1564551144838333
+            }
+          }
+        },
+        {
+          "seed": 91,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\gated_frozen_s91_lr0.001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.28358209133148193,
+                "R@5": 0.7164179086685181,
+                "mAP": 0.2480759471654892
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6588486433029175,
+                "R@5": 0.9232409596443176,
+                "mAP": 0.535122811794281
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7377398610115051,
+                "R@5": 0.9744136333465576,
+                "mAP": 0.5700145363807678
+              },
+              "macro": {
+                "R@1": 0.5600568652153015,
+                "R@5": 0.8713575005531311,
+                "mAP": 0.451071098446846
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.20042644441127777,
+                "R@5": 0.5778251886367798,
+                "mAP": 0.17882339656352997
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.20255863666534424,
+                "R@5": 0.6183369159698486,
+                "mAP": 0.15977917611598969
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6332622766494751,
+                "R@5": 0.8976545929908752,
+                "mAP": 0.466570109128952
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.18763326108455658,
+              "R@5": 0.5756929516792297,
+              "mAP": 0.16362597048282623
+            }
+          }
+        }
+      ],
+      "summary": {
+        "attribute_mAP": {
+          "mean": 0.45260146260261536,
+          "std": 0.004826371368207131
+        },
+        "attribute_R1": {
+          "mean": 0.5647950702243381,
+          "std": 0.019623583335727373
+        },
+        "joint_mAP": {
+          "mean": 0.1625042756398519,
+          "std": 0.0055736197519397086
+        },
+        "joint_R1": {
+          "mean": 0.19047618905703226,
+          "std": 0.0032569855960704786
+        },
+        "pair_mAP": {
+          "mean": 0.2676747937997182,
+          "std": 0.005992521612042823
+        }
+      }
+    },
+    "gated_tuned": {
+      "lr": 0.001,
+      "validation_grid": {
+        "0.0001": 0.7209704253408644,
+        "0.001": 0.7353508604897393
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\gated_tuned_s17_lr0.001\\best_head.pt",
+          "trainable_parameters": 4462848,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.41791045665740967,
+                "R@5": 0.8081023693084717,
+                "mAP": 0.34659749269485474
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8230277299880981,
+                "R@5": 0.968017041683197,
+                "mAP": 0.7942523956298828
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9850746393203735,
+                "R@5": 0.9957355856895447,
+                "mAP": 0.9791799783706665
+              },
+              "macro": {
+                "R@1": 0.7420042753219604,
+                "R@5": 0.9239516655604044,
+                "mAP": 0.7066766222318014
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.3283582031726837,
+                "R@5": 0.7675906419754028,
+                "mAP": 0.31917494535446167
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.3965884745121002,
+                "R@5": 0.8230277299880981,
+                "mAP": 0.35320135951042175
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8081023693084717,
+                "R@5": 0.9573560953140259,
+                "mAP": 0.7779053449630737
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.36460554599761963,
+              "R@5": 0.7633262276649475,
+              "mAP": 0.3287416398525238
+            }
+          }
+        },
+        {
+          "seed": 42,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\gated_tuned_s42_lr0.001\\best_head.pt",
+          "trainable_parameters": 4462848,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.4904051125049591,
+                "R@5": 0.8208954930305481,
+                "mAP": 0.4180424213409424
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8358209133148193,
+                "R@5": 0.9616204500198364,
+                "mAP": 0.7811983823776245
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9893389940261841,
+                "R@5": 0.9957355856895447,
+                "mAP": 0.9746851921081543
+              },
+              "macro": {
+                "R@1": 0.7718550066153208,
+                "R@5": 0.9260838429133097,
+                "mAP": 0.7246419986089071
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.4456290006637573,
+                "R@5": 0.8166311383247375,
+                "mAP": 0.38697099685668945
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5501065850257874,
+                "R@5": 0.8550106883049011,
+                "mAP": 0.4301346242427826
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8081023693084717,
+                "R@5": 0.9722814559936523,
+                "mAP": 0.7708166241645813
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.4840085208415985,
+              "R@5": 0.8123667240142822,
+              "mAP": 0.3968663513660431
+            }
+          }
+        },
+        {
+          "seed": 91,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\gated_tuned_s91_lr0.001\\best_head.pt",
+          "trainable_parameters": 4462848,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.4712153375148773,
+                "R@5": 0.8230277299880981,
+                "mAP": 0.42625460028648376
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8144989609718323,
+                "R@5": 0.9722814559936523,
+                "mAP": 0.7927302718162537
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9786780476570129,
+                "R@5": 0.9957355856895447,
+                "mAP": 0.9774319529533386
+              },
+              "macro": {
+                "R@1": 0.7547974487145742,
+                "R@5": 0.930348257223765,
+                "mAP": 0.7321389416853586
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.3923240900039673,
+                "R@5": 0.7803837656974792,
+                "mAP": 0.3748314678668976
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5031982660293579,
+                "R@5": 0.831556499004364,
+                "mAP": 0.42358940839767456
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7803837656974792,
+                "R@5": 0.9765458703041077,
+                "mAP": 0.78379887342453
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.4115138649940491,
+              "R@5": 0.7846481800079346,
+              "mAP": 0.38134247064590454
+            }
+          }
+        }
+      ],
+      "summary": {
+        "attribute_mAP": {
+          "mean": 0.7211525208420224,
+          "std": 0.013084906163321815
+        },
+        "attribute_R1": {
+          "mean": 0.7562189102172852,
+          "std": 0.01497604601655149
+        },
+        "joint_mAP": {
+          "mean": 0.36898348728815716,
+          "std": 0.03570437552916819
+        },
+        "joint_R1": {
+          "mean": 0.4200426439444224,
+          "std": 0.06015665094722455
+        },
+        "pair_mAP": {
+          "mean": 0.5133804049756792,
+          "std": 0.025957627210925656
+        }
+      }
+    },
+    "joint_concat": {
+      "lr": 0.001,
+      "validation_grid": {
+        "0.0001": 0.6819729838106368,
+        "0.001": 0.6960244211885664
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\joint_concat_s17_lr0.001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7526652216911316,
+                "R@5": 0.8933901786804199,
+                "mAP": 0.6228451728820801
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8166311383247375,
+                "R@5": 0.9808102250099182,
+                "mAP": 0.7757877707481384
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9893389940261841,
+                "R@5": 0.9936034083366394,
+                "mAP": 0.9683279991149902
+              },
+              "macro": {
+                "R@1": 0.8528784513473511,
+                "R@5": 0.9559346040089926,
+                "mAP": 0.7889869809150696
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6226012706756592,
+                "R@5": 0.8656716346740723,
+                "mAP": 0.5204374194145203
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7334755063056946,
+                "R@5": 0.8891258239746094,
+                "mAP": 0.583306610584259
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8294243216514587,
+                "R@5": 0.9872068166732788,
+                "mAP": 0.7653312087059021
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.6247334480285645,
+              "R@5": 0.8720682263374329,
+              "mAP": 0.5250549912452698
+            }
+          }
+        },
+        {
+          "seed": 42,
+          "best_step": 350,
+          "checkpoint": "runs\\fashion2400\\suite\\joint_concat_s42_lr0.001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7590618133544922,
+                "R@5": 0.9040511846542358,
+                "mAP": 0.6188045144081116
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8187633156776428,
+                "R@5": 0.9829424023628235,
+                "mAP": 0.7756217122077942
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9850746393203735,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9696757793426514
+              },
+              "macro": {
+                "R@1": 0.8542999227841696,
+                "R@5": 0.9616204698880514,
+                "mAP": 0.7880340019861857
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6055437326431274,
+                "R@5": 0.863539457321167,
+                "mAP": 0.5237361192703247
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7228145003318787,
+                "R@5": 0.9040511846542358,
+                "mAP": 0.5800232291221619
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8166311383247375,
+                "R@5": 0.9701492786407471,
+                "mAP": 0.7685492038726807
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.6076759099960327,
+              "R@5": 0.8571428656578064,
+              "mAP": 0.5268880724906921
+            }
+          }
+        },
+        {
+          "seed": 91,
+          "best_step": 450,
+          "checkpoint": "runs\\fashion2400\\suite\\joint_concat_s91_lr0.001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7356076836585999,
+                "R@5": 0.8933901786804199,
+                "mAP": 0.6241211295127869
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.810234546661377,
+                "R@5": 0.9722814559936523,
+                "mAP": 0.7804595232009888
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9936034083366394,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9685173034667969
+              },
+              "macro": {
+                "R@1": 0.8464818795522054,
+                "R@5": 0.954513152440389,
+                "mAP": 0.7910326520601908
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6076759099960327,
+                "R@5": 0.8592750430107117,
+                "mAP": 0.5232598781585693
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7164179086685181,
+                "R@5": 0.9040511846542358,
+                "mAP": 0.5846556425094604
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8251599073410034,
+                "R@5": 0.9808102250099182,
+                "mAP": 0.7679558396339417
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.6055437326431274,
+              "R@5": 0.8656716346740723,
+              "mAP": 0.5261858701705933
+            }
+          }
+        }
+      ],
+      "summary": {
+        "attribute_mAP": {
+          "mean": 0.7893512116538154,
+          "std": 0.0015321467259594317
+        },
+        "attribute_R1": {
+          "mean": 0.851220084561242,
+          "std": 0.004164503006622424
+        },
+        "joint_mAP": {
+          "mean": 0.5260429779688517,
+          "std": 0.0009248569343788846
+        },
+        "joint_R1": {
+          "mean": 0.6126510302225748,
+          "std": 0.01051784959461444
+        },
+        "pair_mAP": {
+          "mean": 0.6241394612524245,
+          "std": 0.001133130590139123
+        }
+      }
+    },
+    "joint_out256": {
+      "lr": 0.001,
+      "validation_grid": {
+        "0.0001": 0.6866356299983131,
+        "0.001": 0.6882690356837379
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "best_step": 450,
+          "checkpoint": "runs\\fashion2400\\suite\\joint_out256_s17_lr0.001\\best_head.pt",
+          "trainable_parameters": 461056,
+          "global_dim": 256,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7334755063056946,
+                "R@5": 0.9104477763175964,
+                "mAP": 0.6108539700508118
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8059701323509216,
+                "R@5": 0.9722814559936523,
+                "mAP": 0.7894856333732605
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9872068166732788,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9753474593162537
+              },
+              "macro": {
+                "R@1": 0.842217485109965,
+                "R@5": 0.9601990183194479,
+                "mAP": 0.7918956875801086
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6034114956855774,
+                "R@5": 0.8528784513473511,
+                "mAP": 0.5176973342895508
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7142857313156128,
+                "R@5": 0.8933901786804199,
+                "mAP": 0.5745385885238647
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8166311383247375,
+                "R@5": 0.9637526869773865,
+                "mAP": 0.7762863039970398
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.6012793183326721,
+              "R@5": 0.8422175049781799,
+              "mAP": 0.5221357345581055
+            }
+          }
+        },
+        {
+          "seed": 42,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\joint_out256_s42_lr0.001\\best_head.pt",
+          "trainable_parameters": 461056,
+          "global_dim": 256,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7420042753219604,
+                "R@5": 0.9040511846542358,
+                "mAP": 0.6134012937545776
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8187633156776428,
+                "R@5": 0.9808102250099182,
+                "mAP": 0.7891452312469482
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9914712309837341,
+                "R@5": 0.9957355856895447,
+                "mAP": 0.9734860062599182
+              },
+              "macro": {
+                "R@1": 0.8507462739944458,
+                "R@5": 0.9601989984512329,
+                "mAP": 0.7920108437538147
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5906183123588562,
+                "R@5": 0.8699360489845276,
+                "mAP": 0.5094002485275269
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7377398610115051,
+                "R@5": 0.8891258239746094,
+                "mAP": 0.5674390196800232
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8464818596839905,
+                "R@5": 0.9744136333465576,
+                "mAP": 0.7769039273262024
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.6012793183326721,
+              "R@5": 0.8528784513473511,
+              "mAP": 0.5260257720947266
+            }
+          }
+        },
+        {
+          "seed": 91,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\joint_out256_s91_lr0.001\\best_head.pt",
+          "trainable_parameters": 461056,
+          "global_dim": 256,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7398720979690552,
+                "R@5": 0.8997867703437805,
+                "mAP": 0.5969604253768921
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8251599073410034,
+                "R@5": 0.9786780476570129,
+                "mAP": 0.7839312553405762
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9914712309837341,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9755184054374695
+              },
+              "macro": {
+                "R@1": 0.8521677454312643,
+                "R@5": 0.9587775468826294,
+                "mAP": 0.7854700287183126
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5927505493164062,
+                "R@5": 0.8571428656578064,
+                "mAP": 0.5070849657058716
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7206823229789734,
+                "R@5": 0.9019189476966858,
+                "mAP": 0.5650017857551575
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8379530906677246,
+                "R@5": 0.9808102250099182,
+                "mAP": 0.7725520133972168
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.5778251886367798,
+              "R@5": 0.8592750430107117,
+              "mAP": 0.5107998847961426
+            }
+          }
+        }
+      ],
+      "summary": {
+        "attribute_mAP": {
+          "mean": 0.7897921866840787,
+          "std": 0.003743541417810379
+        },
+        "attribute_R1": {
+          "mean": 0.8483771681785583,
+          "std": 0.0053815812630266645
+        },
+        "joint_mAP": {
+          "mean": 0.5196537971496582,
+          "std": 0.007910557564538843
+        },
+        "joint_R1": {
+          "mean": 0.593461275100708,
+          "std": 0.013541248093531834
+        },
+        "pair_mAP": {
+          "mean": 0.6185449096891615,
+          "std": 0.004017854085033504
+        }
+      }
+    },
+    "joint_out768": {
+      "lr": 0.0001,
+      "validation_grid": {
+        "0.0001": 0.689227733347151,
+        "0.001": 0.686212099260754
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "best_step": 450,
+          "checkpoint": "runs\\fashion2400\\suite\\joint_out768_s17_lr0.0001\\best_head.pt",
+          "trainable_parameters": 854272,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7292110919952393,
+                "R@5": 0.914712131023407,
+                "mAP": 0.5920540690422058
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8272920846939087,
+                "R@5": 0.9722814559936523,
+                "mAP": 0.7780489325523376
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9829424023628235,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9711827635765076
+              },
+              "macro": {
+                "R@1": 0.8464818596839905,
+                "R@5": 0.9616204698880514,
+                "mAP": 0.7804285883903503
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5735607743263245,
+                "R@5": 0.8592750430107117,
+                "mAP": 0.4858785569667816
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7377398610115051,
+                "R@5": 0.8891258239746094,
+                "mAP": 0.5343255996704102
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8123667240142822,
+                "R@5": 0.9850746393203735,
+                "mAP": 0.7677929401397705
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.5970149040222168,
+              "R@5": 0.8614072203636169,
+              "mAP": 0.5195625424385071
+            }
+          }
+        },
+        {
+          "seed": 42,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\joint_out768_s42_lr0.0001\\best_head.pt",
+          "trainable_parameters": 854272,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7505330443382263,
+                "R@5": 0.9019189476966858,
+                "mAP": 0.5996515154838562
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8166311383247375,
+                "R@5": 0.9786780476570129,
+                "mAP": 0.7734262347221375
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9765458703041077,
+                "R@5": 0.9957355856895447,
+                "mAP": 0.9667798280715942
+              },
+              "macro": {
+                "R@1": 0.8479033509890238,
+                "R@5": 0.9587775270144144,
+                "mAP": 0.7799525260925293
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5714285969734192,
+                "R@5": 0.8550106883049011,
+                "mAP": 0.48449626564979553
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7377398610115051,
+                "R@5": 0.884861409664154,
+                "mAP": 0.5441598892211914
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8144989609718323,
+                "R@5": 0.9765458703041077,
+                "mAP": 0.7606688737869263
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.5948827266693115,
+              "R@5": 0.863539457321167,
+              "mAP": 0.5211162567138672
+            }
+          }
+        },
+        {
+          "seed": 91,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\joint_out768_s91_lr0.0001\\best_head.pt",
+          "trainable_parameters": 854272,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7334755063056946,
+                "R@5": 0.9019189476966858,
+                "mAP": 0.5982251167297363
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8230277299880981,
+                "R@5": 0.9744136333465576,
+                "mAP": 0.7778591513633728
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9808102250099182,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9646154046058655
+              },
+              "macro": {
+                "R@1": 0.8457711537679037,
+                "R@5": 0.9580668012301127,
+                "mAP": 0.7802332242329916
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5906183123588562,
+                "R@5": 0.8614072203636169,
+                "mAP": 0.4830720126628876
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7313432693481445,
+                "R@5": 0.8976545929908752,
+                "mAP": 0.5419032573699951
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8059701323509216,
+                "R@5": 0.9808102250099182,
+                "mAP": 0.768052875995636
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.6076759099960327,
+              "R@5": 0.8699360489845276,
+              "mAP": 0.5171820521354675
+            }
+          }
+        }
+      ],
+      "summary": {
+        "attribute_mAP": {
+          "mean": 0.7802047795719571,
+          "std": 0.0002393024277095599
+        },
+        "attribute_R1": {
+          "mean": 0.8467187881469727,
+          "std": 0.0010856645752102341
+        },
+        "joint_mAP": {
+          "mean": 0.5192869504292806,
+          "std": 0.0019815283578181074
+        },
+        "joint_R1": {
+          "mean": 0.5998578468958536,
+          "std": 0.006854059238498477
+        },
+        "pair_mAP": {
+          "mean": 0.5967055857181549,
+          "std": 0.000869098488990167
+        }
+      }
+    },
+    "raw": {
+      "lr": 0.001,
+      "validation_grid": {
+        "0.0001": 0.8072024318906996,
+        "0.001": 0.8102092213100857
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "best_step": 450,
+          "checkpoint": "runs\\fashion2400\\suite\\raw_s17_lr0.001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7356076836585999,
+                "R@5": 0.8976545929908752,
+                "mAP": 0.5849019885063171
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8294243216514587,
+                "R@5": 0.9786780476570129,
+                "mAP": 0.7913095951080322
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9829424023628235,
+                "R@5": 0.9957355856895447,
+                "mAP": 0.9748239517211914
+              },
+              "macro": {
+                "R@1": 0.8493248025576273,
+                "R@5": 0.9573560754458109,
+                "mAP": 0.7836785117785136
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5820895433425903,
+                "R@5": 0.8550106883049011,
+                "mAP": 0.49647262692451477
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7377398610115051,
+                "R@5": 0.8976545929908752,
+                "mAP": 0.5602472424507141
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8358209133148193,
+                "R@5": 0.9722814559936523,
+                "mAP": 0.7813841104507446
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.5884861350059509,
+              "R@5": 0.8486140966415405,
+              "mAP": 0.5015970468521118
+            }
+          }
+        },
+        {
+          "seed": 42,
+          "best_step": 400,
+          "checkpoint": "runs\\fashion2400\\suite\\raw_s42_lr0.001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6993603706359863,
+                "R@5": 0.8933901786804199,
+                "mAP": 0.5859167575836182
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8187633156776428,
+                "R@5": 0.9744136333465576,
+                "mAP": 0.7919929623603821
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9829424023628235,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9749270677566528
+              },
+              "macro": {
+                "R@1": 0.8336886962254842,
+                "R@5": 0.9552238782246908,
+                "mAP": 0.784278929233551
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5650320053100586,
+                "R@5": 0.8507462739944458,
+                "mAP": 0.49751222133636475
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6823027729988098,
+                "R@5": 0.9040511846542358,
+                "mAP": 0.5582592487335205
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8230277299880981,
+                "R@5": 0.9786780476570129,
+                "mAP": 0.7779690623283386
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.558635413646698,
+              "R@5": 0.8507462739944458,
+              "mAP": 0.5008454322814941
+            }
+          }
+        },
+        {
+          "seed": 91,
+          "best_step": 400,
+          "checkpoint": "runs\\fashion2400\\suite\\raw_s91_lr0.001\\best_head.pt",
+          "trainable_parameters": 264448,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7121534943580627,
+                "R@5": 0.8869935870170593,
+                "mAP": 0.6015703678131104
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8081023693084717,
+                "R@5": 0.9701492786407471,
+                "mAP": 0.7894735932350159
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9872068166732788,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.975830078125
+              },
+              "macro": {
+                "R@1": 0.8358208934466044,
+                "R@5": 0.951670229434967,
+                "mAP": 0.7889580130577087
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5820895433425903,
+                "R@5": 0.8422175049781799,
+                "mAP": 0.5076926946640015
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.6972281336784363,
+                "R@5": 0.8976545929908752,
+                "mAP": 0.580057680606842
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8358209133148193,
+                "R@5": 0.9808102250099182,
+                "mAP": 0.7801185250282288
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.5948827266693115,
+              "R@5": 0.8571428656578064,
+              "mAP": 0.5122443437576294
+            }
+          }
+        }
+      ],
+      "summary": {
+        "attribute_mAP": {
+          "mean": 0.7856384846899245,
+          "std": 0.0028904284662437064
+        },
+        "attribute_R1": {
+          "mean": 0.839611464076572,
+          "std": 0.008479285027825221
+        },
+        "joint_mAP": {
+          "mean": 0.5048956076304117,
+          "std": 0.006375278277557472
+        },
+        "joint_R1": {
+          "mean": 0.5806680917739868,
+          "std": 0.01934704823280484
+        },
+        "pair_mAP": {
+          "mean": 0.6155237125025855,
+          "std": 0.006190996538882056
+        }
+      }
+    },
+    "residual": {
+      "lr": 0.001,
+      "validation_grid": {
+        "0.0001": 0.7980921202235752,
+        "0.001": 0.8108992377916971
+      },
+      "seeds": [
+        {
+          "seed": 17,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\residual_s17_lr0.001\\best_head.pt",
+          "trainable_parameters": 4727296,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.727078914642334,
+                "R@5": 0.8976545929908752,
+                "mAP": 0.6086178421974182
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8144989609718323,
+                "R@5": 0.9786780476570129,
+                "mAP": 0.7853943109512329
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9893389940261841,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9762359261512756
+              },
+              "macro": {
+                "R@1": 0.8436389565467834,
+                "R@5": 0.9580668210983276,
+                "mAP": 0.7900826930999756
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5842217206954956,
+                "R@5": 0.8486140966415405,
+                "mAP": 0.5066932439804077
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7164179086685181,
+                "R@5": 0.9019189476966858,
+                "mAP": 0.5848497152328491
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8187633156776428,
+                "R@5": 0.9744136333465576,
+                "mAP": 0.7693292498588562
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.5842217206954956,
+              "R@5": 0.8507462739944458,
+              "mAP": 0.5085021257400513
+            }
+          }
+        },
+        {
+          "seed": 42,
+          "best_step": 500,
+          "checkpoint": "runs\\fashion2400\\suite\\residual_s42_lr0.001\\best_head.pt",
+          "trainable_parameters": 4727296,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7206823229789734,
+                "R@5": 0.8976545929908752,
+                "mAP": 0.5990480184555054
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8336886763572693,
+                "R@5": 0.9722814559936523,
+                "mAP": 0.7910037040710449
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9893389940261841,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9816386699676514
+              },
+              "macro": {
+                "R@1": 0.847903331120809,
+                "R@5": 0.9559346238772074,
+                "mAP": 0.7905634641647339
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5927505493164062,
+                "R@5": 0.8614072203636169,
+                "mAP": 0.5027145147323608
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.695095956325531,
+                "R@5": 0.8933901786804199,
+                "mAP": 0.5750111937522888
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8038379549980164,
+                "R@5": 0.9701492786407471,
+                "mAP": 0.7809315919876099
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.5863539576530457,
+              "R@5": 0.8550106883049011,
+              "mAP": 0.5129536390304565
+            }
+          }
+        },
+        {
+          "seed": 91,
+          "best_step": 450,
+          "checkpoint": "runs\\fashion2400\\suite\\residual_s91_lr0.001\\best_head.pt",
+          "trainable_parameters": 4727296,
+          "global_dim": 768,
+          "test": {
+            "attributes": {
+              "color": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7377398610115051,
+                "R@5": 0.89552241563797,
+                "mAP": 0.6007604002952576
+              },
+              "article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8081023693084717,
+                "R@5": 0.9829424023628235,
+                "mAP": 0.7853062152862549
+              },
+              "audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.9872068166732788,
+                "R@5": 0.9978678226470947,
+                "mAP": 0.9785857796669006
+              },
+              "macro": {
+                "R@1": 0.8443496823310852,
+                "R@5": 0.9587775468826294,
+                "mAP": 0.7882174650828043
+              }
+            },
+            "pairs": {
+              "color+article_type": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.5884861350059509,
+                "R@5": 0.8571428656578064,
+                "mAP": 0.500590980052948
+              },
+              "color+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.7057569026947021,
+                "R@5": 0.9019189476966858,
+                "mAP": 0.5673576593399048
+              },
+              "article_type+audience": {
+                "eligible_queries": 469,
+                "total_queries": 469,
+                "R@1": 0.8144989609718323,
+                "R@5": 0.9765458703041077,
+                "mAP": 0.7724023461341858
+              }
+            },
+            "joint": {
+              "eligible_queries": 469,
+              "total_queries": 469,
+              "R@1": 0.5692963600158691,
+              "R@5": 0.8656716346740723,
+              "mAP": 0.5089961290359497
+            }
+          }
+        }
+      ],
+      "summary": {
+        "attribute_mAP": {
+          "mean": 0.7896212074491713,
+          "std": 0.0012392153475192687
+        },
+        "attribute_R1": {
+          "mean": 0.8452973233328925,
+          "std": 0.0022846750815222307
+        },
+        "joint_mAP": {
+          "mean": 0.5101506312688192,
+          "std": 0.0024400100815240773
+        },
+        "joint_R1": {
+          "mean": 0.5799573461214701,
+          "std": 0.009294034493622705
+        },
+        "pair_mAP": {
+          "mean": 0.617764499452379,
+          "std": 0.0037543742457502452
+        }
+      }
+    }
+  }
+}

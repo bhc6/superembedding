@@ -1,0 +1,9 @@
+{
+  "final_step": 100,
+  "validation_selected_step": 0,
+  "final_lora_max_abs_weight_change": 0.00046780379489064217,
+  "changed_lora_tensors": 300,
+  "selected_is_unmodified_initialization": true,
+  "final_adapter": "D:\\DEMO\\superembedding\\runs\\fashion2400\\lora_raw\\final_adapter",
+  "final_head": "D:\\DEMO\\superembedding\\runs\\fashion2400\\lora_raw\\final_embedding_head.pt"
+}

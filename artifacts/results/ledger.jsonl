@@ -1,0 +1,24 @@
+{"stage": "matrix_omnijev", "event": "start", "utc": 1791650328.3759909, "arguments": ["scripts/experiment_suite.py"]}
+{"stage": "matrix_omnijev", "event": "finish", "utc": 1791650332.0036247, "returncode": 1}
+{"stage": "matrix_omnijev", "event": "start", "utc": 1791650357.1058419, "arguments": ["scripts/experiment_suite.py"]}
+{"stage": "matrix_omnijev", "event": "finish", "utc": 1791650547.8274496, "returncode": 0}
+{"stage": "extract_base", "event": "start", "utc": 1791650547.8278348, "arguments": ["scripts/extract_features.py", "--data", "data/fashion2400", "--output", "runs/fashion2400/base", "--disable-lora"]}
+{"stage": "extract_base", "event": "finish", "utc": 1791650850.0010645, "returncode": 0}
+{"stage": "matrix_base", "event": "start", "utc": 1791650850.0015209, "arguments": ["scripts/experiment_suite.py", "--features", "runs/fashion2400/base", "--output", "runs/fashion2400/suite_base", "--architectures", "raw"]}
+{"stage": "matrix_base", "event": "finish", "utc": 1791650867.8607616, "returncode": 0}
+{"stage": "extract_flair_matrix", "event": "start", "utc": 1791650867.8613102, "arguments": ["scripts/extract_flair.py"]}
+{"stage": "extract_flair_matrix", "event": "finish", "utc": 1791650872.0008438, "returncode": 0}
+{"stage": "matrix_flair", "event": "start", "utc": 1791650872.0014622, "arguments": ["scripts/experiment_suite.py", "--features", "runs/fashion2400/flair", "--output", "runs/fashion2400/suite_flair", "--architectures", "raw"]}
+{"stage": "matrix_flair", "event": "finish", "utc": 1791650874.7583556, "returncode": 0}
+{"stage": "lora_pause_test", "event": "start", "utc": 1791650874.7603812, "arguments": ["scripts/train_lora.py", "--data", "data/fashion2400", "--head", "D:\\DEMO\\superembedding\\runs\\fashion2400\\suite\\raw_s42_lr0.001\\best_head.pt", "--output", "D:\\DEMO\\superembedding\\runs\\fashion2400\\lora_raw", "--steps", "100", "--accumulation", "1", "--lr", "1e-5", "--margin", "0.2", "--seed", "42", "--checkpoint-every", "10", "--validate-every", "25", "--stop-after", "10"]}
+{"stage": "lora_pause_test", "event": "finish", "utc": 1791651094.5746043, "returncode": 0}
+{"stage": "lora_formal", "event": "start", "utc": 1791651094.5751998, "arguments": ["scripts/train_lora.py", "--data", "data/fashion2400", "--head", "D:\\DEMO\\superembedding\\runs\\fashion2400\\suite\\raw_s42_lr0.001\\best_head.pt", "--output", "D:\\DEMO\\superembedding\\runs\\fashion2400\\lora_raw", "--steps", "100", "--accumulation", "1", "--lr", "1e-5", "--margin", "0.2", "--seed", "42", "--checkpoint-every", "10", "--validate-every", "25"]}
+{"stage": "lora_formal", "event": "finish", "utc": 1791652099.344378, "returncode": 0}
+{"stage": "evaluate_omnijev", "event": "start", "utc": 1791652099.3448074, "arguments": ["scripts/evaluate_suite.py", "--features", "runs/fashion2400/omnijev", "--suite", "runs/fashion2400/suite", "--output", "runs/fashion2400/results_omnijev.json"]}
+{"stage": "evaluate_omnijev", "event": "finish", "utc": 1791652101.0439909, "returncode": 0}
+{"stage": "evaluate_base", "event": "start", "utc": 1791652101.0445547, "arguments": ["scripts/evaluate_suite.py", "--features", "runs/fashion2400/base", "--suite", "runs/fashion2400/suite_base", "--output", "runs/fashion2400/results_base.json"]}
+{"stage": "evaluate_base", "event": "finish", "utc": 1791652102.6795733, "returncode": 0}
+{"stage": "evaluate_flair", "event": "start", "utc": 1791652102.6799605, "arguments": ["scripts/evaluate_suite.py", "--features", "runs/fashion2400/flair", "--suite", "runs/fashion2400/suite_flair", "--output", "runs/fashion2400/results_flair.json"]}
+{"stage": "evaluate_flair", "event": "finish", "utc": 1791652104.295092, "returncode": 0}
+{"stage": "evaluate_lora", "event": "start", "utc": 1791652104.2955556, "arguments": ["scripts/evaluate_lora.py"]}
+{"stage": "evaluate_lora", "event": "finish", "utc": 1791652316.988937, "returncode": 0}

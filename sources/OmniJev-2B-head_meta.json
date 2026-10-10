@@ -1,0 +1,82 @@
+{
+ "norm": "softmax",
+ "lm_feats": true,
+ "ordinal": true,
+ "packed_train": true,
+ "rlcd": false,
+ "branch": true,
+ "base_model": "Qwen3.5-2B",
+ "lora_targets": [
+  "q_proj",
+  "k_proj",
+  "v_proj",
+  "o_proj",
+  "gate_proj",
+  "up_proj",
+  "down_proj",
+  "in_proj_qkv",
+  "in_proj_z",
+  "out_proj"
+ ],
+ "temperatures": {
+  "noul": 1.0181,
+  "choice": 1.1253,
+  "score": 1.0173
+ },
+ "calibration": {
+  "n_dev": 7767,
+  "n_test": 17754,
+  "raw": {
+   "noul": {
+    "n": 5566,
+    "acc": 0.8674,
+    "ece": 0.0093,
+    "brier": 0.1881,
+    "nll": 0.3012,
+    "e_aurc": 0.0267
+   },
+   "choice": {
+    "n": 9226,
+    "acc": 0.5108,
+    "ece": 0.016,
+    "brier": 0.5612,
+    "nll": 1.4139,
+    "e_aurc": 0.0591
+   },
+   "score": {
+    "n": 2962,
+    "acc": 0.6428,
+    "ece": 0.0311,
+    "brier": 0.4507,
+    "nll": 0.817,
+    "e_aurc": 0.0891
+   }
+  },
+  "calibrated": {
+   "noul": {
+    "n": 5566,
+    "acc": 0.8674,
+    "ece": 0.0089,
+    "brier": 0.1881,
+    "nll": 0.301,
+    "e_aurc": 0.0267
+   },
+   "choice": {
+    "n": 9226,
+    "acc": 0.5108,
+    "ece": 0.0231,
+    "brier": 0.5613,
+    "nll": 1.4123,
+    "e_aurc": 0.059
+   },
+   "score": {
+    "n": 2962,
+    "acc": 0.6428,
+    "ece": 0.0321,
+    "brier": 0.451,
+    "nll": 0.8178,
+    "e_aurc": 0.0891
+   }
+  }
+ }
+}

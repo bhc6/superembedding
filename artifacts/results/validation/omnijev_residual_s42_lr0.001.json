@@ -1,0 +1,140 @@
+{
+  "config": {
+    "arch": "residual",
+    "seed": 42,
+    "lr": 0.001,
+    "steps": 500,
+    "batch_size": 64,
+    "data_fingerprint": "6bc4ebf4e74081a02ecd24e79ea2b355db519522fca9f2c4bb7da55c8352c0c5",
+    "basis": {
+      "directions": [
+        "the dominant color of the product",
+        "the type of clothing or accessory",
+        "the product's intended catalog audience (men or women)"
+      ],
+      "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+    },
+    "margin": 0.2,
+    "loss": "attribute",
+    "embed_dim": 256,
+    "feature_width": 1024,
+    "checkpoint_version": 1
+  },
+  "best": 0.8100579977035522,
+  "best_step": 500,
+  "history": [
+    {
+      "step": 50,
+      "loss": 0.05433172732591629,
+      "score": 0.6632195810476939
+    },
+    {
+      "step": 100,
+      "loss": 0.0724676325917244,
+      "score": 0.7274720271428426
+    },
+    {
+      "step": 150,
+      "loss": 0.06304140388965607,
+      "score": 0.7526414195696512
+    },
+    {
+      "step": 200,
+      "loss": 0.07241840660572052,
+      "score": 0.7519787748654684
+    },
+    {
+      "step": 250,
+      "loss": 0.07887285202741623,
+      "score": 0.782231072584788
+    },
+    {
+      "step": 300,
+      "loss": 0.05408181995153427,
+      "score": 0.7953962484995524
+    },
+    {
+      "step": 350,
+      "loss": 0.03174014389514923,
+      "score": 0.7949230472246805
+    },
+    {
+      "step": 400,
+      "loss": 0.023726943880319595,
+      "score": 0.8087655107180277
+    },
+    {
+      "step": 450,
+      "loss": 0.06650954484939575,
+      "score": 0.7987366914749146
+    },
+    {
+      "step": 500,
+      "loss": 0.053384605795145035,
+      "score": 0.8100579977035522
+    }
+  ],
+  "best_metrics": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.7867803573608398,
+        "R@5": 0.9296375513076782,
+        "mAP": 0.6347035765647888
+      },
+      "article_type": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.8891258239746094,
+        "R@5": 0.9765458703041077,
+        "mAP": 0.8331274390220642
+      },
+      "audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.9552238583564758,
+        "R@5": 0.9765458703041077,
+        "mAP": 0.9623429775238037
+      },
+      "macro": {
+        "R@1": 0.877043346563975,
+        "R@5": 0.9609097639719645,
+        "mAP": 0.8100579977035522
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.6567164063453674,
+        "R@5": 0.9083155393600464,
+        "mAP": 0.5426027774810791
+      },
+      "color+audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.7526652216911316,
+        "R@5": 0.9019189476966858,
+        "mAP": 0.5970110893249512
+      },
+      "article_type+audience": {
+        "eligible_queries": 469,
+        "total_queries": 469,
+        "R@1": 0.8400852680206299,
+        "R@5": 0.9552238583564758,
+        "mAP": 0.7982043623924255
+      }
+    },
+    "joint": {
+      "eligible_queries": 469,
+      "total_queries": 469,
+      "R@1": 0.6481876373291016,
+      "R@5": 0.8891258239746094,
+      "mAP": 0.5404712557792664
+    }
+  },
+  "trainable_parameters": 4727296,
+  "elapsed_this_invocation": 5.16911059999984,
+  "test_evaluated": false
+}

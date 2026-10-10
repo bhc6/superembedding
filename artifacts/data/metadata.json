@@ -1,0 +1,34 @@
+{
+  "dataset": "ashraq/fashion-product-images-small",
+  "revision": "3859c76db2f6f3d3b9a3863345e3ccdbff75879d",
+  "shard": "data/train-00000-of-00002-6cff4c59f91661c3.parquet",
+  "seed": 20261011,
+  "count": 2400,
+  "splits": {
+    "train": 1462,
+    "val": 469,
+    "test": 469
+  },
+  "label_keys": [
+    "color",
+    "article_type",
+    "audience"
+  ],
+  "directions": [
+    "the dominant color of the product",
+    "the type of clothing or accessory",
+    "the product's intended catalog audience (men or women)"
+  ],
+  "instruction": "Extract evidence about the pictured product for the specified attribute direction.",
+  "protocol": "Joint-stratified held-out product split, development IDs and exact/dHash-distance<=4 duplicates excluded before splitting; seen values/combinations; dHash is heuristic, not a semantic duplicate guarantee.",
+  "shards": [
+    "data/train-00000-of-00002-6cff4c59f91661c3.parquet",
+    "data/train-00001-of-00002-bb459e5ac5f01e71.parquet"
+  ],
+  "manifest_sha256": "1f2ddb346975f75b9d8faf11b4a428b65688f6674bc1f8b6050b1163aa574901",
+  "filtering": {
+    "excluded_exact_or_dhash": 9398,
+    "excluded_id": 600
+  },
+  "joint_strata": 40
+}
