@@ -44,9 +44,17 @@ def main():
     head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
     response=client.get(f'{api}/repos/{repo}/releases/tags/{args.tag}')
     if response.status_code==404:
-        response=client.post(f'{api}/repos/{repo}/releases',json={'tag_name':args.tag,'target_commitish':head,
-            'name':'Fashion2400 reproducible local experiments','draft':True,'prerelease':True,
-            'body':(ROOT/'RELEASE_NOTES.md').read_text(encoding='utf-8')})
+        # GitHub's by-tag endpoint can omit drafts. Reuse an existing draft on retry.
+        listed=client.get(f'{api}/repos/{repo}/releases',params={'per_page':100})
+        listed.raise_for_status()
+        matches=[r for r in listed.json() if r['tag_name']==args.tag]
+        if len(matches)>1: raise RuntimeError('Multiple matching releases; inspect before uploading')
+        if matches:
+            response=client.get(f'{api}/repos/{repo}/releases/{matches[0]["id"]}')
+        else:
+            response=client.post(f'{api}/repos/{repo}/releases',json={'tag_name':args.tag,'target_commitish':head,
+                'name':'Fashion2400 reproducible local experiments','draft':True,'prerelease':True,
+                'body':(ROOT/'RELEASE_NOTES.md').read_text(encoding='utf-8')})
     response.raise_for_status();release=response.json()
     expected=json.loads((ROOT/'release_assets/SHA256SUMS.json').read_text())
     assets=client.get(f'{api}/repos/{repo}/releases/{release["id"]}/assets');assets.raise_for_status()
