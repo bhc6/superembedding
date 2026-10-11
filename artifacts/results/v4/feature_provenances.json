@@ -1,0 +1,456 @@
+{
+  "fashion_expanded/clip_b32": {
+    "protocol": "v4",
+    "backend": "clip_b32",
+    "spec": {
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "width": 512,
+      "family": "CLIP contrastive dual encoder"
+    },
+    "basis": {
+      "directions": [
+        "the dominant color of the product",
+        "the type of clothing or accessory",
+        "the product's intended catalog audience (men or women)"
+      ],
+      "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+    },
+    "record_fingerprint": "37e69410a2364927aba3084c7df09883d7bbfb8a06f415fc60fbb1ee87363604",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "official Hugging Face image processor; float32 forward",
+    "endpoint": null,
+    "provider_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
+  },
+  "fashion_expanded/siglip2_b16": {
+    "protocol": "v4",
+    "backend": "siglip2_b16",
+    "spec": {
+      "repo": "google/siglip2-base-patch16-224",
+      "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "width": 768,
+      "family": "SigLIP2 sigmoid image-text encoder"
+    },
+    "basis": {
+      "directions": [
+        "the dominant color of the product",
+        "the type of clothing or accessory",
+        "the product's intended catalog audience (men or women)"
+      ],
+      "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+    },
+    "record_fingerprint": "37e69410a2364927aba3084c7df09883d7bbfb8a06f415fc60fbb1ee87363604",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "official Hugging Face image processor; float32 forward",
+    "endpoint": null,
+    "provider_revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2"
+  },
+  "fashion_expanded/dinov2_small": {
+    "protocol": "v4",
+    "backend": "dinov2_small",
+    "spec": {
+      "repo": "facebook/dinov2-small",
+      "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+      "width": 384,
+      "family": "DINOv2 visual self-supervision"
+    },
+    "basis": {
+      "directions": [
+        "the dominant color of the product",
+        "the type of clothing or accessory",
+        "the product's intended catalog audience (men or women)"
+      ],
+      "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+    },
+    "record_fingerprint": "37e69410a2364927aba3084c7df09883d7bbfb8a06f415fc60fbb1ee87363604",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "official Hugging Face image processor; float32 forward",
+    "endpoint": null,
+    "provider_revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056"
+  },
+  "fashion_expanded/qwen3_vl": {
+    "protocol": "v4",
+    "backend": "qwen3_vl",
+    "spec": {
+      "model": "qwen3-vl-embedding",
+      "width": 2560,
+      "family": "Qwen VL embedding API",
+      "parameters": {
+        "dimension": 2560
+      }
+    },
+    "basis": {
+      "directions": [
+        "the dominant color of the product",
+        "the type of clothing or accessory",
+        "the product's intended catalog audience (men or women)"
+      ],
+      "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+    },
+    "record_fingerprint": "37e69410a2364927aba3084c7df09883d7bbfb8a06f415fc60fbb1ee87363604",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "original image bytes; provider preprocessing",
+    "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+    "provider_revision": "alias not immutable; cached vectors define this run"
+  },
+  "fashion_expanded/qwen3_vl_instruct": {
+    "protocol": "v4",
+    "backend": "qwen3_vl_instruct",
+    "spec": {
+      "model": "qwen3-vl-embedding",
+      "width": 2560,
+      "family": "Qwen VL embedding API, fixed attribute instructions",
+      "parameters": {
+        "dimension": 2560
+      },
+      "conditioned": true
+    },
+    "basis": {
+      "directions": [
+        "the dominant color of the product",
+        "the type of clothing or accessory",
+        "the product's intended catalog audience (men or women)"
+      ],
+      "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+    },
+    "record_fingerprint": "37e69410a2364927aba3084c7df09883d7bbfb8a06f415fc60fbb1ee87363604",
+    "conditioning": "fixed attribute instruct",
+    "prompts": [
+      "Represent the image for retrieval by the dominant color of the product. Focus on this attribute and ignore other attributes.",
+      "Represent the image for retrieval by the type of clothing or accessory. Focus on this attribute and ignore other attributes.",
+      "Represent the image for retrieval by the product's intended catalog audience (men or women). Focus on this attribute and ignore other attributes."
+    ],
+    "preprocessing": "original image bytes; provider preprocessing",
+    "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+    "provider_revision": "alias not immutable; cached vectors define this run"
+  },
+  "fashion_expanded/tongyi_plus": {
+    "protocol": "v4",
+    "backend": "tongyi_plus",
+    "spec": {
+      "model": "tongyi-embedding-vision-plus-2026-03-06",
+      "width": 1152,
+      "family": "Tongyi vision embedding API, dated snapshot",
+      "parameters": {
+        "dimension": 1152,
+        "res_level": 1
+      }
+    },
+    "basis": {
+      "directions": [
+        "the dominant color of the product",
+        "the type of clothing or accessory",
+        "the product's intended catalog audience (men or women)"
+      ],
+      "instruction": "Extract evidence about the pictured product for the specified attribute direction."
+    },
+    "record_fingerprint": "37e69410a2364927aba3084c7df09883d7bbfb8a06f415fc60fbb1ee87363604",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "original image bytes; provider preprocessing",
+    "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+    "provider_revision": "tongyi-embedding-vision-plus-2026-03-06"
+  },
+  "cub_attributes/clip_b32": {
+    "protocol": "v4",
+    "backend": "clip_b32",
+    "spec": {
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "width": 512,
+      "family": "CLIP contrastive dual encoder"
+    },
+    "basis": {
+      "directions": [
+        "the primary color of the bird",
+        "the shape of the bird bill",
+        "the shape of the bird wings"
+      ],
+      "instruction": "Extract visible evidence about the pictured bird for the specified attribute direction."
+    },
+    "record_fingerprint": "27ea4e8b2d1905bdf2895a84cc91c6e02f4593b9536b24a0c15ca3662474e222",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "official Hugging Face image processor; float32 forward",
+    "endpoint": null,
+    "provider_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
+  },
+  "cub_attributes/siglip2_b16": {
+    "protocol": "v4",
+    "backend": "siglip2_b16",
+    "spec": {
+      "repo": "google/siglip2-base-patch16-224",
+      "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "width": 768,
+      "family": "SigLIP2 sigmoid image-text encoder"
+    },
+    "basis": {
+      "directions": [
+        "the primary color of the bird",
+        "the shape of the bird bill",
+        "the shape of the bird wings"
+      ],
+      "instruction": "Extract visible evidence about the pictured bird for the specified attribute direction."
+    },
+    "record_fingerprint": "27ea4e8b2d1905bdf2895a84cc91c6e02f4593b9536b24a0c15ca3662474e222",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "official Hugging Face image processor; float32 forward",
+    "endpoint": null,
+    "provider_revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2"
+  },
+  "cub_attributes/dinov2_small": {
+    "protocol": "v4",
+    "backend": "dinov2_small",
+    "spec": {
+      "repo": "facebook/dinov2-small",
+      "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+      "width": 384,
+      "family": "DINOv2 visual self-supervision"
+    },
+    "basis": {
+      "directions": [
+        "the primary color of the bird",
+        "the shape of the bird bill",
+        "the shape of the bird wings"
+      ],
+      "instruction": "Extract visible evidence about the pictured bird for the specified attribute direction."
+    },
+    "record_fingerprint": "27ea4e8b2d1905bdf2895a84cc91c6e02f4593b9536b24a0c15ca3662474e222",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "official Hugging Face image processor; float32 forward",
+    "endpoint": null,
+    "provider_revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056"
+  },
+  "cub_attributes/qwen3_vl": {
+    "protocol": "v4",
+    "backend": "qwen3_vl",
+    "spec": {
+      "model": "qwen3-vl-embedding",
+      "width": 2560,
+      "family": "Qwen VL embedding API",
+      "parameters": {
+        "dimension": 2560
+      }
+    },
+    "basis": {
+      "directions": [
+        "the primary color of the bird",
+        "the shape of the bird bill",
+        "the shape of the bird wings"
+      ],
+      "instruction": "Extract visible evidence about the pictured bird for the specified attribute direction."
+    },
+    "record_fingerprint": "27ea4e8b2d1905bdf2895a84cc91c6e02f4593b9536b24a0c15ca3662474e222",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "original image bytes; provider preprocessing",
+    "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+    "provider_revision": "alias not immutable; cached vectors define this run"
+  },
+  "cub_attributes/qwen3_vl_instruct": {
+    "protocol": "v4",
+    "backend": "qwen3_vl_instruct",
+    "spec": {
+      "model": "qwen3-vl-embedding",
+      "width": 2560,
+      "family": "Qwen VL embedding API, fixed attribute instructions",
+      "parameters": {
+        "dimension": 2560
+      },
+      "conditioned": true
+    },
+    "basis": {
+      "directions": [
+        "the primary color of the bird",
+        "the shape of the bird bill",
+        "the shape of the bird wings"
+      ],
+      "instruction": "Extract visible evidence about the pictured bird for the specified attribute direction."
+    },
+    "record_fingerprint": "27ea4e8b2d1905bdf2895a84cc91c6e02f4593b9536b24a0c15ca3662474e222",
+    "conditioning": "fixed attribute instruct",
+    "prompts": [
+      "Represent the image for retrieval by the primary color of the bird. Focus on this attribute and ignore other attributes.",
+      "Represent the image for retrieval by the shape of the bird bill. Focus on this attribute and ignore other attributes.",
+      "Represent the image for retrieval by the shape of the bird wings. Focus on this attribute and ignore other attributes."
+    ],
+    "preprocessing": "original image bytes; provider preprocessing",
+    "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+    "provider_revision": "alias not immutable; cached vectors define this run"
+  },
+  "cub_attributes/tongyi_plus": {
+    "protocol": "v4",
+    "backend": "tongyi_plus",
+    "spec": {
+      "model": "tongyi-embedding-vision-plus-2026-03-06",
+      "width": 1152,
+      "family": "Tongyi vision embedding API, dated snapshot",
+      "parameters": {
+        "dimension": 1152,
+        "res_level": 1
+      }
+    },
+    "basis": {
+      "directions": [
+        "the primary color of the bird",
+        "the shape of the bird bill",
+        "the shape of the bird wings"
+      ],
+      "instruction": "Extract visible evidence about the pictured bird for the specified attribute direction."
+    },
+    "record_fingerprint": "27ea4e8b2d1905bdf2895a84cc91c6e02f4593b9536b24a0c15ca3662474e222",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "original image bytes; provider preprocessing",
+    "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+    "provider_revision": "tongyi-embedding-vision-plus-2026-03-06"
+  },
+  "dtd/clip_b32": {
+    "protocol": "v4",
+    "backend": "clip_b32",
+    "spec": {
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "width": 512,
+      "family": "CLIP contrastive dual encoder"
+    },
+    "basis": {
+      "directions": [
+        "the visible texture and repeated surface pattern"
+      ],
+      "instruction": "Extract evidence about the pictured surface for the specified texture direction."
+    },
+    "record_fingerprint": "876a8bd3c60d19b8b21f8b11d891863c3e85c8d63ffad92dfed6c2c04d15f601",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "official Hugging Face image processor; float32 forward",
+    "endpoint": null,
+    "provider_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
+  },
+  "dtd/siglip2_b16": {
+    "protocol": "v4",
+    "backend": "siglip2_b16",
+    "spec": {
+      "repo": "google/siglip2-base-patch16-224",
+      "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "width": 768,
+      "family": "SigLIP2 sigmoid image-text encoder"
+    },
+    "basis": {
+      "directions": [
+        "the visible texture and repeated surface pattern"
+      ],
+      "instruction": "Extract evidence about the pictured surface for the specified texture direction."
+    },
+    "record_fingerprint": "876a8bd3c60d19b8b21f8b11d891863c3e85c8d63ffad92dfed6c2c04d15f601",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "official Hugging Face image processor; float32 forward",
+    "endpoint": null,
+    "provider_revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2"
+  },
+  "dtd/dinov2_small": {
+    "protocol": "v4",
+    "backend": "dinov2_small",
+    "spec": {
+      "repo": "facebook/dinov2-small",
+      "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+      "width": 384,
+      "family": "DINOv2 visual self-supervision"
+    },
+    "basis": {
+      "directions": [
+        "the visible texture and repeated surface pattern"
+      ],
+      "instruction": "Extract evidence about the pictured surface for the specified texture direction."
+    },
+    "record_fingerprint": "876a8bd3c60d19b8b21f8b11d891863c3e85c8d63ffad92dfed6c2c04d15f601",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "official Hugging Face image processor; float32 forward",
+    "endpoint": null,
+    "provider_revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056"
+  },
+  "dtd/qwen3_vl": {
+    "protocol": "v4",
+    "backend": "qwen3_vl",
+    "spec": {
+      "model": "qwen3-vl-embedding",
+      "width": 2560,
+      "family": "Qwen VL embedding API",
+      "parameters": {
+        "dimension": 2560
+      }
+    },
+    "basis": {
+      "directions": [
+        "the visible texture and repeated surface pattern"
+      ],
+      "instruction": "Extract evidence about the pictured surface for the specified texture direction."
+    },
+    "record_fingerprint": "876a8bd3c60d19b8b21f8b11d891863c3e85c8d63ffad92dfed6c2c04d15f601",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "original image bytes; provider preprocessing",
+    "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+    "provider_revision": "alias not immutable; cached vectors define this run"
+  },
+  "dtd/qwen3_vl_instruct": {
+    "protocol": "v4",
+    "backend": "qwen3_vl_instruct",
+    "spec": {
+      "model": "qwen3-vl-embedding",
+      "width": 2560,
+      "family": "Qwen VL embedding API, fixed attribute instructions",
+      "parameters": {
+        "dimension": 2560
+      },
+      "conditioned": true
+    },
+    "basis": {
+      "directions": [
+        "the visible texture and repeated surface pattern"
+      ],
+      "instruction": "Extract evidence about the pictured surface for the specified texture direction."
+    },
+    "record_fingerprint": "876a8bd3c60d19b8b21f8b11d891863c3e85c8d63ffad92dfed6c2c04d15f601",
+    "conditioning": "fixed attribute instruct",
+    "prompts": [
+      "Represent the image for retrieval by the visible texture and repeated surface pattern. Focus on this attribute and ignore other attributes."
+    ],
+    "preprocessing": "original image bytes; provider preprocessing",
+    "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+    "provider_revision": "alias not immutable; cached vectors define this run"
+  },
+  "dtd/tongyi_plus": {
+    "protocol": "v4",
+    "backend": "tongyi_plus",
+    "spec": {
+      "model": "tongyi-embedding-vision-plus-2026-03-06",
+      "width": 1152,
+      "family": "Tongyi vision embedding API, dated snapshot",
+      "parameters": {
+        "dimension": 1152,
+        "res_level": 1
+      }
+    },
+    "basis": {
+      "directions": [
+        "the visible texture and repeated surface pattern"
+      ],
+      "instruction": "Extract evidence about the pictured surface for the specified texture direction."
+    },
+    "record_fingerprint": "876a8bd3c60d19b8b21f8b11d891863c3e85c8d63ffad92dfed6c2c04d15f601",
+    "conditioning": "global image; repeated identical slots",
+    "prompts": [],
+    "preprocessing": "original image bytes; provider preprocessing",
+    "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+    "provider_revision": "tongyi-embedding-vision-plus-2026-03-06"
+  }
+}

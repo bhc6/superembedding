@@ -1,0 +1,9 @@
+{
+  "protocol": "v4",
+  "sha256": "e0c3b9551f518c154afd3cd74adc88a3e1a45997691906a8e95d4f03120c8421",
+  "path": "reports/EXPERIMENT_PROTOCOL_V4.zh.md",
+  "test_selection_rule": "validation only; v3 test already published",
+  "new_models": 6,
+  "planned_training_runs": 324,
+  "planned_selected_tests": 162
+}

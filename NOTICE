@@ -25,4 +25,12 @@ with their respective owners. No source bird or texture images are
 redistributed. Project code/head licensing does not waive dataset terms
 or assert commercial-use clearance. See sources/research_datasets_v3.json.
 
+The v4 comparison additionally uses OpenAI CLIP (MIT), Google SigLIP2
+(Apache-2.0 model card), and Meta DINOv2 (Apache-2.0 model card), with
+pinned Hugging Face revisions. Original weights are downloaded separately.
+Qwen3-VL Embedding and Tongyi Vision Plus are accessed through Alibaba
+Cloud DashScope; service use remains subject to provider terms. The
+service architecture and weights are not claimed to be reproduced or
+redistributed here. See sources/baseline_models_v4.json and the v4 model card.
+
 No affiliation with or endorsement by the upstream authors is implied.

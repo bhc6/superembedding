@@ -35,12 +35,16 @@ def load(data,cache):
     prov=json.loads((cache/'provenance.json').read_text())
     basis=AttributeBasis(tuple(meta['directions']),meta['instruction'])
     if AttributeBasis(**prov['basis'])!=basis: raise ValueError('Feature basis mismatch')
-    features=[]
-    for r in records:
-        f=torch.load(cache/f"{r['id']}.pt",weights_only=True,map_location='cpu')
-        if f['id']!=r['id'] or f['image_sha256']!=r['image_sha256']: raise ValueError('Feature record mismatch')
-        features.append(f)
-    u=torch.stack([f['u'] for f in features]).float(); zq=torch.stack([f['zq'] for f in features]).float()
+    if (cache/'features.pt').exists():
+        from superembedding.baselines import load_packed
+        u,zq=load_packed(cache,records,prov)
+    else:
+        features=[]
+        for r in records:
+            f=torch.load(cache/f"{r['id']}.pt",weights_only=True,map_location='cpu')
+            if f['id']!=r['id'] or f['image_sha256']!=r['image_sha256']: raise ValueError('Feature record mismatch')
+            features.append(f)
+        u=torch.stack([f['u'] for f in features]).float(); zq=torch.stack([f['zq'] for f in features]).float()
     digest=hashlib.sha256(u.numpy().tobytes()+zq.numpy().tobytes()).hexdigest()
     stable_prov={k:v for k,v in prov.items() if k not in ('adapter','base')}
     if 'adapter' in prov:
@@ -70,7 +74,9 @@ def create(arch,width,k,decision,seed):
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--dataset',required=True)
-    ap.add_argument('--backend',choices=['omnijev','base','flair'],required=True)
+    from superembedding.baselines import MODELS
+    ap.add_argument('--backend',choices=['omnijev','base','flair',*MODELS],required=True)
+    ap.add_argument('--protocol',choices=['v3','v4'],default='v3')
     ap.add_argument('--scales',nargs='+',type=int,default=[25,50,100])
     ap.add_argument('--seeds',nargs='+',type=int,default=[17,42,91])
     ap.add_argument('--lrs',nargs='+',type=float,default=[.0001,.001])
@@ -95,18 +101,19 @@ def main():
         sys.path.insert(0,str(Path('repos/OmniJev').resolve()))
         from mso.head import OptionScorer
         decision=OptionScorer(u.shape[-1]); decision.load_state_dict(torch.load(Path(prov['adapter'])/'head.pt',map_location='cpu',weights_only=True))
-    source={'decision_checkpoint':prov.get('adapter','FLAIR'),'base_model':prov.get('base','FLAIR'),
-            'feature_backend':args.backend,'research_protocol':'v3'}
+    source={'decision_checkpoint':prov.get('adapter','FLAIR' if args.backend=='flair' else None),
+            'base_model':prov.get('base',prov.get('model',prov.get('spec',{}).get('repo',prov.get('spec',{}).get('model','FLAIR')))),
+            'feature_backend':args.backend,'research_protocol':args.protocol}
     for scale in args.scales:
         train=sorted(splits['train'],key=lambda i:records[i]['train_rank'])[:meta['scales'][str(scale)]]
         pools=ObservedTriplets(labels,train); joint_pools=ObservedTriplets(labels,train,joint=True)
         if args.architectures: archs=args.architectures
-        elif args.backend=='base': archs=['raw']
+        elif args.backend=='base' or args.backend in MODELS: archs=['raw']
         elif args.backend=='flair': archs=['raw'] if scale<100 else ['raw','joint_concat','joint_out_equal','joint_out_small']
         else: archs=list(ARCHS) if scale==100 else ['raw','joint_concat','joint_out_equal','joint_out_small']
         for arch,seed,lr in itertools.product(archs,args.seeds,args.lrs):
             out=base/'suite'/args.backend/f'n{scale}'/f'{arch}_s{seed}_lr{lr:g}'; out.mkdir(parents=True,exist_ok=True)
-            config={'protocol':'v3','arch':arch,'backend':args.backend,'scale':scale,'train_count':len(train),
+            config={'protocol':args.protocol,'arch':arch,'backend':args.backend,'scale':scale,'train_count':len(train),
                     'seed':seed,'lr':lr,'steps':args.steps,'batch_size':64,'margin':.2,'data_fingerprint':ident,
                     'basis':asdict(basis),'label_policy':meta.get('label_policy','observed set overlap'),
                     'feature_width':u.shape[-1],'embed_dim':256,'val_every':250,

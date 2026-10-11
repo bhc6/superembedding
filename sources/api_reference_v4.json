@@ -1,0 +1,8 @@
+{
+  "url": "https://help.aliyun.com/zh/model-studio/multimodal-embedding-api-reference",
+  "retrieved_local_date": "2026-10-11",
+  "response_text_sha256": "54a7d5459eab732f278aaaf6f36aff17f9c42bb841e504f1b602e49c7892ad20",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/embeddings/multimodal-embedding/multimodal-embedding",
+  "instruct_parameter": "Custom English task instruction",
+  "credentials_distributed": false
+}

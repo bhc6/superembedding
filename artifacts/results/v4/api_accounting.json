@@ -1,0 +1,37 @@
+{
+  "qwen3_vl": {
+    "requests": 3534,
+    "images": 28263,
+    "extra_attempts": 0,
+    "total_tokens": 4020366,
+    "input_tokens": 621786,
+    "image_tokens": 3398580,
+    "output_tokens": 0,
+    "first_utc": "2026-10-11T01:53:49.759829+00:00",
+    "last_utc": "2026-10-11T02:05:41.349282+00:00"
+  },
+  "qwen3_vl_instruct": {
+    "requests": 9196,
+    "images": 73543,
+    "extra_attempts": 0,
+    "total_tokens": 10516761,
+    "input_tokens": 2843669,
+    "image_tokens": 7673092,
+    "output_tokens": 0,
+    "first_utc": "2026-10-11T02:05:42.832518+00:00",
+    "last_utc": "2026-10-11T02:35:21.879085+00:00"
+  },
+  "tongyi_plus": {
+    "requests": 3534,
+    "images": 28263,
+    "extra_attempts": 0,
+    "total_tokens": 11389989,
+    "input_tokens": 11361726,
+    "image_tokens": 0,
+    "output_tokens": 28263,
+    "detail_image_tokens": 11361726,
+    "detail_text_tokens": 0,
+    "first_utc": "2026-10-11T02:35:23.362082+00:00",
+    "last_utc": "2026-10-11T02:46:29.859774+00:00"
+  }
+}

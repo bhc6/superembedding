@@ -1,0 +1,73 @@
+{
+  "dataset": "fashion_expanded",
+  "backend": "tongyi_plus",
+  "data_fingerprint": "933391dabd78861f0ef559faea79abbc9a0e93670b67f62157cd8fa277fd0350",
+  "raw": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.36877351999282837,
+        "R@1": 0.7250704169273376,
+        "R@5": 0.9369013905525208
+      },
+      "article_type": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7018789052963257,
+        "R@1": 0.9160563349723816,
+        "R@5": 0.9892957806587219
+      },
+      "audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7735417485237122,
+        "R@1": 0.9532394409179688,
+        "R@5": 0.9904225468635559
+      },
+      "macro": {
+        "mAP": 0.6147313912709554,
+        "R@1": 0.8647887309392294,
+        "R@5": 0.9722065726915995
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 1773,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.39086318016052246,
+        "R@1": 0.663282573223114,
+        "R@5": 0.9046813249588013
+      },
+      "color+audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.33051738142967224,
+        "R@1": 0.6907042264938354,
+        "R@5": 0.9143661856651306
+      },
+      "article_type+audience": {
+        "eligible_queries": 1774,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.6396164894104004,
+        "R@1": 0.8810597658157349,
+        "R@5": 0.9746335744857788
+      }
+    },
+    "joint": {
+      "eligible_queries": 1767,
+      "total_queries": 1775,
+      "observed_queries": 1775,
+      "mAP": 0.37523695826530457,
+      "R@1": 0.6400679349899292,
+      "R@5": 0.8788907527923584
+    }
+  },
+  "native_width": 1152
+}

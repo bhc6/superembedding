@@ -8,3 +8,5 @@ pytest
 pillow
 open_clip_torch==3.3.0
 matplotlib==3.11.2
+httpx
+filelock

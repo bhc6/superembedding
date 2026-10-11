@@ -1,0 +1,48 @@
+{
+  "dataset": "dtd",
+  "backend": "clip_b32",
+  "scale": 100,
+  "arch": "raw",
+  "seed": 91,
+  "lr": 0.001,
+  "path": "runs/v4/dtd/suite/clip_b32/n100/raw_s91_lr0.001",
+  "head_sha256": "dbebad280f2a941ee0317ac001069476fd7743f0693a1000663ef66f9a7fe760",
+  "metrics": {
+    "attributes": {
+      "texture": {
+        "eligible_queries": 1877,
+        "total_queries": 1877,
+        "observed_queries": 1877,
+        "mAP": 0.4636264741420746,
+        "R@1": 0.6702184081077576,
+        "R@5": 0.8641449213027954
+      },
+      "macro": {
+        "mAP": 0.4636264741420746,
+        "R@1": 0.6702184081077576,
+        "R@5": 0.8641449213027954
+      }
+    },
+    "pairs": {},
+    "joint": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.4636264741420746,
+      "R@1": 0.6702184081077576,
+      "R@5": 0.8641449213027954
+    },
+    "joint_texture_overlap": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.49012327194213867,
+      "R@1": 0.7394778728485107,
+      "R@5": 0.9046350717544556
+    }
+  },
+  "selection_fingerprint": "369dd578c38090db86195c8ecddfbc6d74be5d10153840a2f1611d3b8e748f4b",
+  "best_step": 1000,
+  "trainable_parameters": 132352,
+  "output_dimension": 256
+}

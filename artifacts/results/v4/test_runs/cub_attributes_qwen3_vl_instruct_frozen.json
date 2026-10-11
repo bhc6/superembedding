@@ -1,0 +1,73 @@
+{
+  "dataset": "cub_attributes",
+  "backend": "qwen3_vl_instruct",
+  "data_fingerprint": "1f3feec7dc7a5a9bcaf8e1a0faae8520ab9dd5e91c500ed79c89ac7c48e5dc68",
+  "raw": {
+    "attributes": {
+      "primary_color": {
+        "eligible_queries": 5433,
+        "total_queries": 5794,
+        "observed_queries": 5433,
+        "mAP": 0.5393680930137634,
+        "R@1": 0.7292472124099731,
+        "R@5": 0.9480949640274048
+      },
+      "bill_shape": {
+        "eligible_queries": 5266,
+        "total_queries": 5794,
+        "observed_queries": 5266,
+        "mAP": 0.3942239284515381,
+        "R@1": 0.5619065761566162,
+        "R@5": 0.8573870062828064
+      },
+      "wing_shape": {
+        "eligible_queries": 2873,
+        "total_queries": 5794,
+        "observed_queries": 2873,
+        "mAP": 0.350796103477478,
+        "R@1": 0.38357117772102356,
+        "R@5": 0.8078663349151611
+      },
+      "macro": {
+        "mAP": 0.4281293749809265,
+        "R@1": 0.5582416554292043,
+        "R@5": 0.8711161017417908
+      }
+    },
+    "pairs": {
+      "primary_color+bill_shape": {
+        "eligible_queries": 5155,
+        "total_queries": 5794,
+        "observed_queries": 5160,
+        "mAP": 0.2500205934047699,
+        "R@1": 0.4236663579940796,
+        "R@5": 0.7734238505363464
+      },
+      "primary_color+wing_shape": {
+        "eligible_queries": 2848,
+        "total_queries": 5794,
+        "observed_queries": 2848,
+        "mAP": 0.19270285964012146,
+        "R@1": 0.2717696726322174,
+        "R@5": 0.6692415475845337
+      },
+      "bill_shape+wing_shape": {
+        "eligible_queries": 2790,
+        "total_queries": 5794,
+        "observed_queries": 2790,
+        "mAP": 0.1508517861366272,
+        "R@1": 0.21397849917411804,
+        "R@5": 0.5573476552963257
+      }
+    },
+    "joint": {
+      "eligible_queries": 2738,
+      "total_queries": 5794,
+      "observed_queries": 2769,
+      "mAP": 0.1004047617316246,
+      "R@1": 0.15303140878677368,
+      "R@5": 0.4558071494102478
+    }
+  },
+  "native_width": 2560
+}

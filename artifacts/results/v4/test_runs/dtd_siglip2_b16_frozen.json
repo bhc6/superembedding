@@ -1,0 +1,40 @@
+{
+  "dataset": "dtd",
+  "backend": "siglip2_b16",
+  "data_fingerprint": "dede933b6e5861b07998e7d63bf1cc6260ce355ae65621a635ee2381079386d4",
+  "raw": {
+    "attributes": {
+      "texture": {
+        "eligible_queries": 1877,
+        "total_queries": 1877,
+        "observed_queries": 1877,
+        "mAP": 0.3924112319946289,
+        "R@1": 0.7474693655967712,
+        "R@5": 0.9025039672851562
+      },
+      "macro": {
+        "mAP": 0.3924112319946289,
+        "R@1": 0.7474693655967712,
+        "R@5": 0.9025039672851562
+      }
+    },
+    "pairs": {},
+    "joint": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.39241117238998413,
+      "R@1": 0.7474693655967712,
+      "R@5": 0.9025039672851562
+    },
+    "joint_texture_overlap": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.40352872014045715,
+      "R@1": 0.8066062927246094,
+      "R@5": 0.9323388338088989
+    }
+  },
+  "native_width": 768
+}

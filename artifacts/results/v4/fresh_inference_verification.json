@@ -1,0 +1,202 @@
+{
+  "checks": [
+    {
+      "dataset": "fashion_expanded",
+      "backend": "clip_b32",
+      "train_ids": [
+        "44758",
+        "54524"
+      ],
+      "min_feature_cosine": 1.0000001192092896,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "clip_b32",
+      "train_ids": [
+        "cub_10988",
+        "cub_07490"
+      ],
+      "min_feature_cosine": 0.9999998211860657,
+      "min_head_cosine": 0.9999998807907104,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "backend": "clip_b32",
+      "train_ids": [
+        "dtd_banded_banded_0064",
+        "dtd_blotchy_blotchy_0057"
+      ],
+      "min_feature_cosine": 1.0,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "fashion_expanded",
+      "backend": "siglip2_b16",
+      "train_ids": [
+        "44758",
+        "54524"
+      ],
+      "min_feature_cosine": 1.0,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "siglip2_b16",
+      "train_ids": [
+        "cub_10988",
+        "cub_07490"
+      ],
+      "min_feature_cosine": 0.9999999403953552,
+      "min_head_cosine": 0.9999999403953552,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "backend": "siglip2_b16",
+      "train_ids": [
+        "dtd_banded_banded_0064",
+        "dtd_blotchy_blotchy_0057"
+      ],
+      "min_feature_cosine": 0.9999998211860657,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "fashion_expanded",
+      "backend": "dinov2_small",
+      "train_ids": [
+        "44758",
+        "54524"
+      ],
+      "min_feature_cosine": 0.9999998807907104,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "dinov2_small",
+      "train_ids": [
+        "cub_10988",
+        "cub_07490"
+      ],
+      "min_feature_cosine": 1.0,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "backend": "dinov2_small",
+      "train_ids": [
+        "dtd_banded_banded_0064",
+        "dtd_blotchy_blotchy_0057"
+      ],
+      "min_feature_cosine": 1.0,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "fashion_expanded",
+      "backend": "qwen3_vl",
+      "train_ids": [
+        "44758",
+        "54524"
+      ],
+      "min_feature_cosine": 1.0000001192092896,
+      "min_head_cosine": 0.9999999403953552,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "qwen3_vl",
+      "train_ids": [
+        "cub_10988",
+        "cub_07490"
+      ],
+      "min_feature_cosine": 1.0,
+      "min_head_cosine": 0.9999999403953552,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "backend": "qwen3_vl",
+      "train_ids": [
+        "dtd_banded_banded_0064",
+        "dtd_blotchy_blotchy_0057"
+      ],
+      "min_feature_cosine": 1.0000001192092896,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "fashion_expanded",
+      "backend": "qwen3_vl_instruct",
+      "train_ids": [
+        "44758",
+        "54524"
+      ],
+      "min_feature_cosine": 1.0,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 2.9802322387695312e-08
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "qwen3_vl_instruct",
+      "train_ids": [
+        "cub_10988",
+        "cub_07490"
+      ],
+      "min_feature_cosine": 0.9999998807907104,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "backend": "qwen3_vl_instruct",
+      "train_ids": [
+        "dtd_banded_banded_0064",
+        "dtd_blotchy_blotchy_0057"
+      ],
+      "min_feature_cosine": 1.0000001192092896,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "fashion_expanded",
+      "backend": "tongyi_plus",
+      "train_ids": [
+        "44758",
+        "54524"
+      ],
+      "min_feature_cosine": 0.9999998807907104,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "cub_attributes",
+      "backend": "tongyi_plus",
+      "train_ids": [
+        "cub_10988",
+        "cub_07490"
+      ],
+      "min_feature_cosine": 0.9999998807907104,
+      "min_head_cosine": 1.0,
+      "max_head_abs_difference": 0.0
+    },
+    {
+      "dataset": "dtd",
+      "backend": "tongyi_plus",
+      "train_ids": [
+        "dtd_banded_banded_0064",
+        "dtd_blotchy_blotchy_0057"
+      ],
+      "min_feature_cosine": 1.0,
+      "min_head_cosine": 0.9999999403953552,
+      "max_head_abs_difference": 0.0
+    }
+  ]
+}

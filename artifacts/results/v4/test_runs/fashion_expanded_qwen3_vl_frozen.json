@@ -1,0 +1,73 @@
+{
+  "dataset": "fashion_expanded",
+  "backend": "qwen3_vl",
+  "data_fingerprint": "445bdb9202dfa874637e0ad0c008415b33a7f9e1b54beea580b3ea649f15abc1",
+  "raw": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.40944933891296387,
+        "R@1": 0.7273239493370056,
+        "R@5": 0.9059154987335205
+      },
+      "article_type": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.6747003197669983,
+        "R@1": 0.8636619448661804,
+        "R@5": 0.9785915613174438
+      },
+      "audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7754803895950317,
+        "R@1": 0.9284507036209106,
+        "R@5": 0.982535183429718
+      },
+      "macro": {
+        "mAP": 0.6198766827583313,
+        "R@1": 0.8398121992746989,
+        "R@5": 0.9556807478268942
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 1773,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.4224739372730255,
+        "R@1": 0.628877580165863,
+        "R@5": 0.8753525018692017
+      },
+      "color+audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.3668196499347687,
+        "R@1": 0.6788732409477234,
+        "R@5": 0.8816901445388794
+      },
+      "article_type+audience": {
+        "eligible_queries": 1774,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.6151248812675476,
+        "R@1": 0.8179255723953247,
+        "R@5": 0.953213095664978
+      }
+    },
+    "joint": {
+      "eligible_queries": 1767,
+      "total_queries": 1775,
+      "observed_queries": 1775,
+      "mAP": 0.4063723087310791,
+      "R@1": 0.5993208885192871,
+      "R@5": 0.8415393233299255
+    }
+  },
+  "native_width": 2560
+}

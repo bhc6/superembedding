@@ -6,6 +6,26 @@ Each image is encoded once under fixed attribute directions. Store normalized 25
 
 ## Multi-domain results
 
+**New v4 mainstream comparison:** 324 additional training runs and 162 validation-selected tests on the same fixed data, adding CLIP, SigLIP2, DINOv2 and real Qwen/Tongyi multimodal embedding API calls. All 324 heads reproduce saved validation scores after reload; complete optimizer/RNG checkpoints are retained.
+
+| Equal-update raw-head comparison | Fashion | CUB | DTD |
+|---|---:|---:|---:|
+| OmniJev | 82.10 ± 0.21 | 44.36 ± 0.10 | 49.37 ± 0.25 |
+| CLIP B/32 | 69.22 ± 0.15 | 42.48 ± 0.09 | 45.95 ± 0.50 |
+| SigLIP2 B/16 | 71.29 ± 0.07 | 43.84 ± 0.06 | 62.94 ± 0.42 |
+| DINOv2 Small | 67.44 ± 0.17 | 43.80 ± 0.09 | 53.83 ± 0.22 |
+| Qwen3-VL embedding API | 68.63 ± 0.14 | 44.35 ± 0.05 | 65.42 ± 0.14 |
+| Qwen3-VL API + attribute instruct | 79.90 ± 0.56 | 47.38 ± 0.03 | 65.43 ± 0.17 |
+| Tongyi Vision Plus 2026-03-06 | 72.12 ± 0.10 | 44.12 ± 0.23 | 65.95 ± 0.09 |
+
+Attribute mAP (%), full training data, three-seed mean ± SD. Native frozen-vector results are reported separately. Fixed attribute instructions improve Qwen by **+11.28 pp Fashion / +3.03 pp CUB / +0.01 pp DTD** after adaptation. OmniJev is not universally better: Qwen instruct leads CUB, and mainstream embedding models strongly outperform it on DTD. Global baselines reuse one identical vector for all attributes; input/head widths and backbone compute differ. API aliases are not immutable checkpoints. No new novelty or causal-transfer claim follows.
+
+[V4 full results](reports/RESULTS_V4.md) · [Chinese conclusions](reports/CONCLUSIONS_V4.zh.md) · [Architectures](reports/ARCHITECTURES_V4.zh.md) · [Protocol](reports/EXPERIMENT_PROTOCOL_V4.zh.md) · [Reproduce / encode new images](reports/REPRODUCING_V4.md) · [V4 model card](reports/MODEL_CARD_V4.md) · [All heads and recovery states](https://github.com/bhc6/superembedding/releases/tag/v0.3.0-mainstream)
+
+![Mainstream model scaling](artifacts/figures/v4_mainstream_scaling.png)
+
+### Preserved v3 architecture experiments
+
 **28,263 images, three domains, three nested training sizes, three seeds, 432 training runs.** Learning rates and checkpoints were sealed on validation before evaluating 216 selected models on test.
 
 Full-training attribute mAP, mean ± sample SD over three seeds:

@@ -1,0 +1,15 @@
+# V4 mainstream embedding adaptation heads
+
+These are research image-retrieval heads trained on fixed features, not new pretrained foundation models. Six additional backends cover CLIP, SigLIP2, DINOv2, Qwen3-VL embedding (global and fixed-attribute instructions), and Tongyi Vision Plus. The existing OmniJev, Qwen3.5 base and FLAIR experiments remain separate and unchanged.
+
+Each contributed head is shared LayerNorm + Linear to 256 dimensions, followed by slot normalization. Fashion and CUB have three slots; DTD has one. For global backends, all slots are identical. For Qwen attribute instructions, each slot starts from a distinct instruction-conditioned feature. Concatenated normalized output is 768d or 256d; repeated global slots do not provide extra information. No output projection is trained in the new baseline grid.
+
+Training follows v3's frozen data splits and three nested training sizes: 1,000 updates, 64 triplets per update, margin .2, AdamW with weight decay .01, learning rates 1e-4 and 1e-3, seeds 17/42/91. Only training labels enter the loss. Validation chooses each checkpoint, then one learning rate by the three-seed mean for each dataset/backend/size. Full grid: 324 heads and matching recovery states; 162 validation-selected test evaluations. The machine is an RTX 5070 Laptop 8 GB. Backbones stay frozen; provider model training is external and not controlled.
+
+See [measured results](RESULTS_V4.md), [predeclared protocol](EXPERIMENT_PROTOCOL_V4.zh.md), [architectures](ARCHITECTURES_V4.zh.md), and [reproduction/inference](REPRODUCING_V4.md). The report distinguishes native frozen vectors from supervised adaptations and preserves negative results. These custom attribute-retrieval tests are not standard MTEB, MMEB or official classification benchmark scores. No universal superiority or causal decision-transfer claim is made.
+
+Feature provenance pins local HF revisions and processor settings. Qwen API aliases are mutable; server weights, hardware and exact preprocessing are not exposed. Recorded vectors, usage, date range and request parameters define the measured service. Re-querying may differ. Exact training recovery requires the original feature cache. Feature banks remain local; released heads do not contain source images or upstream weights. This limits bitwise re-creation of API experiments if the service changes.
+
+Dataset restrictions carry forward: CUB images are for noncommercial research/education; DTD is provided for research. Fashion labels describe catalog audience, not inferred personal gender. Unobserved CUB attributes are excluded from relevance comparisons, not treated as negatives. Pretraining contamination of these public datasets cannot be ruled out. Project licensing does not grant rights to underlying datasets or waive provider terms.
+
+Code and contributed head parameters are offered under the project Apache-2.0 license subject to applicable upstream/data terms. CLIP upstream is MIT; SigLIP2 and DINOv2 cards specify Apache-2.0. API usage remains governed by the provider. Secrets are never distributed. Fresh-inference and exact-resume audit artifacts accompany the results.

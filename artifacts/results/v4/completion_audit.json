@@ -1,0 +1,14 @@
+{
+  "complete_training_runs": 324,
+  "validated_exported_heads": 324,
+  "recovery_states": 324,
+  "sealed_test_evaluations": 162,
+  "frozen_baseline_evaluations": 18,
+  "feature_banks": 18,
+  "fresh_inference_domain_backend_checks": 18,
+  "protocol_unchanged": true,
+  "all_checkpoint_hashes_match": true,
+  "all_feature_bank_hashes_recorded": true,
+  "selection_fingerprint": "369dd578c38090db86195c8ecddfbc6d74be5d10153840a2f1611d3b8e748f4b",
+  "prior_v3_results_reused_without_reselection": true
+}

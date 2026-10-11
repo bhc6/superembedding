@@ -1,0 +1,73 @@
+{
+  "dataset": "fashion_expanded",
+  "backend": "dinov2_small",
+  "data_fingerprint": "b413fcdf902abb953dbebe2fa48a24bf604feb1cd88ef9a0779ee5c0097601d4",
+  "raw": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.24555695056915283,
+        "R@1": 0.4754929542541504,
+        "R@5": 0.8191549181938171
+      },
+      "article_type": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7934539318084717,
+        "R@1": 0.9070422649383545,
+        "R@5": 0.982535183429718
+      },
+      "audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7678864002227783,
+        "R@1": 0.9335211515426636,
+        "R@5": 0.983661949634552
+      },
+      "macro": {
+        "mAP": 0.6022990942001343,
+        "R@1": 0.7720187902450562,
+        "R@5": 0.9284506837526957
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 1773,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.2540055215358734,
+        "R@1": 0.42131978273391724,
+        "R@5": 0.7789058089256287
+      },
+      "color+audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.20958366990089417,
+        "R@1": 0.4388732314109802,
+        "R@5": 0.79605633020401
+      },
+      "article_type+audience": {
+        "eligible_queries": 1774,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7202135920524597,
+        "R@1": 0.8556933403015137,
+        "R@5": 0.9560315608978271
+      }
+    },
+    "joint": {
+      "eligible_queries": 1767,
+      "total_queries": 1775,
+      "observed_queries": 1775,
+      "mAP": 0.23376533389091492,
+      "R@1": 0.3967176079750061,
+      "R@5": 0.7532541155815125
+    }
+  },
+  "native_width": 384
+}

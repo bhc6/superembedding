@@ -1,0 +1,73 @@
+{
+  "dataset": "fashion_expanded",
+  "backend": "clip_b32",
+  "data_fingerprint": "8c74ac78b83da8d95c257037f668e9856ea5f0ddafc7960ecee0ecc14680d1ea",
+  "raw": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.2598702907562256,
+        "R@1": 0.611267626285553,
+        "R@5": 0.8878872990608215
+      },
+      "article_type": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7236162424087524,
+        "R@1": 0.8816901445388794,
+        "R@5": 0.9819718599319458
+      },
+      "audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7777137160301208,
+        "R@1": 0.9515492916107178,
+        "R@5": 0.985352098941803
+      },
+      "macro": {
+        "mAP": 0.5870667497316996,
+        "R@1": 0.8148356874783834,
+        "R@5": 0.9517370859781901
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 1773,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.2754335105419159,
+        "R@1": 0.5335589647293091,
+        "R@5": 0.8437676429748535
+      },
+      "color+audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.23519904911518097,
+        "R@1": 0.580845057964325,
+        "R@5": 0.8630985617637634
+      },
+      "article_type+audience": {
+        "eligible_queries": 1774,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.6613059639930725,
+        "R@1": 0.8478015661239624,
+        "R@5": 0.9611048698425293
+      }
+    },
+    "joint": {
+      "eligible_queries": 1767,
+      "total_queries": 1775,
+      "observed_queries": 1775,
+      "mAP": 0.26299849152565,
+      "R@1": 0.5138652920722961,
+      "R@5": 0.8200339674949646
+    }
+  },
+  "native_width": 512
+}

@@ -1,0 +1,73 @@
+{
+  "dataset": "cub_attributes",
+  "backend": "tongyi_plus",
+  "data_fingerprint": "fb92a7e3a268b2ca9dbf14595670cabe0e5cff1035d067afb9acbff2df3f04b5",
+  "raw": {
+    "attributes": {
+      "primary_color": {
+        "eligible_queries": 5433,
+        "total_queries": 5794,
+        "observed_queries": 5433,
+        "mAP": 0.48073405027389526,
+        "R@1": 0.7187557816505432,
+        "R@5": 0.9433094263076782
+      },
+      "bill_shape": {
+        "eligible_queries": 5266,
+        "total_queries": 5794,
+        "observed_queries": 5266,
+        "mAP": 0.3656766712665558,
+        "R@1": 0.5611469745635986,
+        "R@5": 0.8636536002159119
+      },
+      "wing_shape": {
+        "eligible_queries": 2873,
+        "total_queries": 5794,
+        "observed_queries": 2873,
+        "mAP": 0.3391554653644562,
+        "R@1": 0.3780020773410797,
+        "R@5": 0.809606671333313
+      },
+      "macro": {
+        "mAP": 0.3951887289683024,
+        "R@1": 0.5526349445184072,
+        "R@5": 0.8721898992856344
+      }
+    },
+    "pairs": {
+      "primary_color+bill_shape": {
+        "eligible_queries": 5155,
+        "total_queries": 5794,
+        "observed_queries": 5160,
+        "mAP": 0.21644151210784912,
+        "R@1": 0.4112512171268463,
+        "R@5": 0.7677982449531555
+      },
+      "primary_color+wing_shape": {
+        "eligible_queries": 2848,
+        "total_queries": 5794,
+        "observed_queries": 2848,
+        "mAP": 0.17314134538173676,
+        "R@1": 0.27703651785850525,
+        "R@5": 0.6702949404716492
+      },
+      "bill_shape+wing_shape": {
+        "eligible_queries": 2790,
+        "total_queries": 5794,
+        "observed_queries": 2790,
+        "mAP": 0.1398100107908249,
+        "R@1": 0.21684588491916656,
+        "R@5": 0.5591397881507874
+      }
+    },
+    "joint": {
+      "eligible_queries": 2738,
+      "total_queries": 5794,
+      "observed_queries": 2769,
+      "mAP": 0.08945939689874649,
+      "R@1": 0.15960554778575897,
+      "R@5": 0.45142439007759094
+    }
+  },
+  "native_width": 1152
+}

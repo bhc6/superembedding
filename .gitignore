@@ -11,3 +11,6 @@ __pycache__/
 !/sources/*.json
 *.tmp
 *.lock
+.env
+.env.*
+!.env.example

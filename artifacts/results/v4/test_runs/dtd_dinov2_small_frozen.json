@@ -1,0 +1,40 @@
+{
+  "dataset": "dtd",
+  "backend": "dinov2_small",
+  "data_fingerprint": "c2a6091caff6d4eb850ad4e1a96ba0ccdc48c3faa76cf618f2d8cfa8a0477e2d",
+  "raw": {
+    "attributes": {
+      "texture": {
+        "eligible_queries": 1877,
+        "total_queries": 1877,
+        "observed_queries": 1877,
+        "mAP": 0.4219013452529907,
+        "R@1": 0.7346829771995544,
+        "R@5": 0.8902503848075867
+      },
+      "macro": {
+        "mAP": 0.4219013452529907,
+        "R@1": 0.7346829771995544,
+        "R@5": 0.8902503848075867
+      }
+    },
+    "pairs": {},
+    "joint": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.4219013452529907,
+      "R@1": 0.7346829771995544,
+      "R@5": 0.8902503848075867
+    },
+    "joint_texture_overlap": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.4437708556652069,
+      "R@1": 0.7991475462913513,
+      "R@5": 0.9259456396102905
+    }
+  },
+  "native_width": 384
+}

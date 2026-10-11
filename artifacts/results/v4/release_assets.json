@@ -1,0 +1,32 @@
+[
+  {
+    "file": "clip_b32_all_heads_and_resume.zip",
+    "sha256": "776826c521d1b08f9faaa64c937ed300a49dd01d038fc2254538ac036fe48fac",
+    "bytes": 106161491
+  },
+  {
+    "file": "siglip2_b16_all_heads_and_resume.zip",
+    "sha256": "7dea358ba469aa161de91ebb70df9593aaf9e0113fdf8f38e34c194570c19c7f",
+    "bytes": 158915522
+  },
+  {
+    "file": "dinov2_small_all_heads_and_resume.zip",
+    "sha256": "29b27dcbe3a17593918d8df825215e8cefb199e944614ddd953fd57acc80edcc",
+    "bytes": 79740825
+  },
+  {
+    "file": "qwen3_vl_all_heads_and_resume.zip",
+    "sha256": "1dc91e69e73a6a856bf1866a4e38271a7bac7dc8350641febc56e184b09d3889",
+    "bytes": 524249670
+  },
+  {
+    "file": "qwen3_vl_instruct_all_heads_and_resume.zip",
+    "sha256": "6ee189287807f3e3ae442b90cb0826f4cb907e277d53353a679adbac86caf5fd",
+    "bytes": 524313661
+  },
+  {
+    "file": "tongyi_plus_all_heads_and_resume.zip",
+    "sha256": "b71a23cff444474fc77279bc6b3ce6b936d0724d6511b7b28c9733941ef68352",
+    "bytes": 236408706
+  }
+]

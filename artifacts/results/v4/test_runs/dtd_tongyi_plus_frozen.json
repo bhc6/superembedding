@@ -1,0 +1,40 @@
+{
+  "dataset": "dtd",
+  "backend": "tongyi_plus",
+  "data_fingerprint": "5bb233733cfa766dcc555b57be818e6e2a3b6eed62d45d1723931f7f9765cae9",
+  "raw": {
+    "attributes": {
+      "texture": {
+        "eligible_queries": 1877,
+        "total_queries": 1877,
+        "observed_queries": 1877,
+        "mAP": 0.4508609175682068,
+        "R@1": 0.7852956652641296,
+        "R@5": 0.9227490425109863
+      },
+      "macro": {
+        "mAP": 0.4508609175682068,
+        "R@1": 0.7852956652641296,
+        "R@5": 0.9227490425109863
+      }
+    },
+    "pairs": {},
+    "joint": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.4508609175682068,
+      "R@1": 0.7852956652641296,
+      "R@5": 0.9227490425109863
+    },
+    "joint_texture_overlap": {
+      "eligible_queries": 1877,
+      "total_queries": 1877,
+      "observed_queries": 1877,
+      "mAP": 0.4572173058986664,
+      "R@1": 0.8337773084640503,
+      "R@5": 0.9504528641700745
+    }
+  },
+  "native_width": 1152
+}

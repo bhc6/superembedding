@@ -1,0 +1,73 @@
+{
+  "dataset": "fashion_expanded",
+  "backend": "siglip2_b16",
+  "data_fingerprint": "55fbd258b5c2c1cde0d7e8cdd129f950f87d09d4d0ae51671842d2e0608bcd57",
+  "raw": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.25979629158973694,
+        "R@1": 0.5847887396812439,
+        "R@5": 0.8799999952316284
+      },
+      "article_type": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7666780352592468,
+        "R@1": 0.9070422649383545,
+        "R@5": 0.9892957806587219
+      },
+      "audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7863509654998779,
+        "R@1": 0.9504225254058838,
+        "R@5": 0.9909859299659729
+      },
+      "macro": {
+        "mAP": 0.6042750974496206,
+        "R@1": 0.814084510008494,
+        "R@5": 0.953427235285441
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 1773,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.28108006715774536,
+        "R@1": 0.5228426456451416,
+        "R@5": 0.8510998487472534
+      },
+      "color+audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.23373347520828247,
+        "R@1": 0.5521126985549927,
+        "R@5": 0.8585915565490723
+      },
+      "article_type+audience": {
+        "eligible_queries": 1774,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7066135406494141,
+        "R@1": 0.8720405697822571,
+        "R@5": 0.9706876873970032
+      }
+    },
+    "joint": {
+      "eligible_queries": 1767,
+      "total_queries": 1775,
+      "observed_queries": 1775,
+      "mAP": 0.26814261078834534,
+      "R@1": 0.5025466680526733,
+      "R@5": 0.8268251419067383
+    }
+  },
+  "native_width": 768
+}

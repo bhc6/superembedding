@@ -1,0 +1,73 @@
+{
+  "dataset": "fashion_expanded",
+  "backend": "qwen3_vl_instruct",
+  "data_fingerprint": "d637af5550c90b50466e7d73bfdecd60844586cc1e44a0f1e928b9e1f9c3f94c",
+  "raw": {
+    "attributes": {
+      "color": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.3847598433494568,
+        "R@1": 0.7273239493370056,
+        "R@5": 0.9064788818359375
+      },
+      "article_type": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.7641963362693787,
+        "R@1": 0.8676056265830994,
+        "R@5": 0.9797183275222778
+      },
+      "audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.8076186180114746,
+        "R@1": 0.9312676191329956,
+        "R@5": 0.9819718599319458
+      },
+      "macro": {
+        "mAP": 0.6521915992101034,
+        "R@1": 0.8420657316843668,
+        "R@5": 0.9560563564300537
+      }
+    },
+    "pairs": {
+      "color+article_type": {
+        "eligible_queries": 1773,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.40101975202560425,
+        "R@1": 0.6192893385887146,
+        "R@5": 0.8618161082267761
+      },
+      "color+audience": {
+        "eligible_queries": 1775,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.3417762517929077,
+        "R@1": 0.6788732409477234,
+        "R@5": 0.8816901445388794
+      },
+      "article_type+audience": {
+        "eligible_queries": 1774,
+        "total_queries": 1775,
+        "observed_queries": 1775,
+        "mAP": 0.6963870525360107,
+        "R@1": 0.8162344694137573,
+        "R@5": 0.9571589827537537
+      }
+    },
+    "joint": {
+      "eligible_queries": 1767,
+      "total_queries": 1775,
+      "observed_queries": 1775,
+      "mAP": 0.388258159160614,
+      "R@1": 0.5913978219032288,
+      "R@5": 0.8353140950202942
+    }
+  },
+  "native_width": 2560
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "dataset": "fashion_expanded",
+    "backend": "clip_b32",
+    "bytes": 23190697,
+    "sha256": "341f072df1a0716dfdfd5932bf2216a4225fb7ca2a3aed557e1308231cc61247"
+  },
+  {
+    "dataset": "fashion_expanded",
+    "backend": "siglip2_b16",
+    "bytes": 34304169,
+    "sha256": "1728bf97eaad2eb201886c0ae981b4aa83d5c942f59bcd32394c57293f7071ea"
+  },
+  {
+    "dataset": "fashion_expanded",
+    "backend": "dinov2_small",
+    "bytes": 17633961,
+    "sha256": "23e13706c79636448f078b6635f2965dc1f643442f78f861de11922bce9f44dc"
+  },
+  {
+    "dataset": "fashion_expanded",
+    "backend": "qwen3_vl",
+    "bytes": 112098473,
+    "sha256": "fcad12ff37f7ca74a9eb09213ac4d647f87ce55b928ebbc3d2cbf1df97b39fc7"
+  },
+  {
+    "dataset": "fashion_expanded",
+    "backend": "qwen3_vl_instruct",
+    "bytes": 334367913,
+    "sha256": "d5b659f1f11d26edb6b68f09a5bbbf4b24641394c320de45705c90bbef5ed2fa"
+  },
+  {
+    "dataset": "fashion_expanded",
+    "backend": "tongyi_plus",
+    "bytes": 50974377,
+    "sha256": "68fdbf32f4fc72001879ccc7cbe4bd4ce6e35794581e2dd101f485c37b090455"
+  },
+  {
+    "dataset": "cub_attributes",
+    "backend": "clip_b32",
+    "bytes": 25237033,
+    "sha256": "c78103b2c63ca0f1bce3f43e09c041cc459b8fed2609f3066df0c37d44d0edd2"
+  },
+  {
+    "dataset": "cub_attributes",
+    "backend": "siglip2_b16",
+    "bytes": 37306921,
+    "sha256": "6140e7d82e63c2a3513e1ae33862eda691dcf6578723aa091d0d3d4f0b119531"
+  },
+  {
+    "dataset": "cub_attributes",
+    "backend": "dinov2_small",
+    "bytes": 19202089,
+    "sha256": "b5ae90975130ce9933993a545831fe8687ddb1b79f5e06f144b35140c36ad31a"
+  },
+  {
+    "dataset": "cub_attributes",
+    "backend": "qwen3_vl",
+    "bytes": 121796137,
+    "sha256": "71e10f3ae1a147a2b7be4da221969d1c403ea6f18a950b90823d6eba8aa3e83c"
+  },
+  {
+    "dataset": "cub_attributes",
+    "backend": "qwen3_vl_instruct",
+    "bytes": 363193897,
+    "sha256": "70a8ee9db7c7ef9d24c6dde9de1f6ab9bd86ba9f198735c5df1db82fa7972faf"
+  },
+  {
+    "dataset": "cub_attributes",
+    "backend": "tongyi_plus",
+    "bytes": 55411753,
+    "sha256": "814df1cdfaa7de9678cd5d5e803495208b27a4581039b8703b5659ee93ac2584"
+  },
+  {
+    "dataset": "dtd",
+    "backend": "clip_b32",
+    "bytes": 12128617,
+    "sha256": "929b4372a45f51111e76a17df0cf05ee13e81f81b0c0511329d097c7af4a385c"
+  },
+  {
+    "dataset": "dtd",
+    "backend": "siglip2_b16",
+    "bytes": 17886569,
+    "sha256": "2fce3245acc637e0cd5149d364374533d6a0b92608b99013bd0f3d66be98080d"
+  },
+  {
+    "dataset": "dtd",
+    "backend": "dinov2_small",
+    "bytes": 9249641,
+    "sha256": "b3e6b9e9fc80fa89d2963f43543ff021dae5347614083be67d2def7b6ea7c20e"
+  },
+  {
+    "dataset": "dtd",
+    "backend": "qwen3_vl",
+    "bytes": 58192233,
+    "sha256": "f05addf02066faded1eeded0e95dc4636a5da868ca128d09abbb6451fabcd9f9"
+  },
+  {
+    "dataset": "dtd",
+    "backend": "qwen3_vl_instruct",
+    "bytes": 58192233,
+    "sha256": "2d30f02f00ab3a4c06604b597fa47ab86100f0ea16622278eb84daf81fddf523"
+  },
+  {
+    "dataset": "dtd",
+    "backend": "tongyi_plus",
+    "bytes": 26523497,
+    "sha256": "75650bebfe20df78f6934728d552ecc6c45cbecaef38a8648e5371f0375778ba"
+  }
+]

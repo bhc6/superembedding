@@ -1,0 +1,6 @@
+{
+  "backend": "qwen3_vl",
+  "complete_banks_skipped": 3,
+  "request_batches_this_resume": 0,
+  "reason": "all packed files validated; extraction loop skipped before api_batch"
+}

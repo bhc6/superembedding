@@ -1,13 +1,23 @@
-# v0.2.0 — multi-domain attribute memory experiments
+# v0.3.0 — mainstream embedding comparison
 
-Completed local research on **28,263 images** from Fashion, CUB attributes, and DTD textures. Three nested training sizes, three seeds, two learning rates: **432 training runs**, followed by **216 validation-sealed test evaluations**.
+324 new frozen-backbone head runs, 162 validation-selected test evaluations, six new baselines, three domains, and three nested training sizes on the same 28,263 images as v3. Adds OpenAI CLIP B/32, Google SigLIP2 B/16, Meta DINOv2 Small, Qwen3-VL embedding API (global and fixed attribute instruct), and Tongyi Vision Plus 2026-03-06.
 
-OmniJev raw attribute mAP: **82.10 ± 0.21 / 44.36 ± 0.10 / 49.37 ± 0.25** on Fashion/CUB/DTD. Same-protocol FLAIR raw: **74.50 ± 0.39 / 43.41 ± 0.03 / 50.88 ± 0.35**. These are image-retrieval tasks, not official CUB/DTD classification benchmarks.
+Full-training attribute mAP (%), three seeds mean ± SD:
 
-Under equal joint training, compressed output projection versus concat changes global mAP by **+0.95 / −0.02 / −0.98 percentage points**. Projection is task-dependent, not universally necessary. Frozen gates underperform raw projection. More data helps DTD; Fashion/CUB largely plateau at the fixed update budget. Most selected runs peak at step 1,000, so this is a budget-limited study.
+| Model | Fashion | CUB | DTD |
+|---|---:|---:|---:|
+| OmniJev raw (v3) | 82.10 ± 0.21 | 44.36 ± 0.10 | 49.37 ± 0.25 |
+| CLIP B/32 | 69.22 ± 0.15 | 42.48 ± 0.09 | 45.95 ± 0.50 |
+| SigLIP2 B/16 | 71.29 ± 0.07 | 43.84 ± 0.06 | 62.94 ± 0.42 |
+| DINOv2 Small | 67.44 ± 0.17 | 43.80 ± 0.09 | 53.83 ± 0.22 |
+| Qwen3-VL API | 68.63 ± 0.14 | 44.35 ± 0.05 | 65.42 ± 0.14 |
+| Qwen3-VL API + attribute instruct | 79.90 ± 0.56 | 47.38 ± 0.03 | 65.43 ± 0.17 |
+| Tongyi Vision Plus | 72.12 ± 0.10 | 44.12 ± 0.23 | 65.95 ± 0.09 |
 
-All 432 heads and all final optimizer/RNG recovery checkpoints are included, including both learning rates and negative outcomes. Each dataset has one heads archive and three backend-specific resume archives. `SHA256SUMS.json` covers all archives. Head reloads exactly reproduce validation scores; verified interrupted training is bitwise equivalent to continuous training.
+OmniJev is not universally stronger. Under the same shared raw-head/update budget, fixed Qwen attribute instructions add +11.28/+3.03/+0.01 pp on Fashion/CUB/DTD. Native frozen embeddings are reported separately. Input widths, pretraining and compute differ. General image embeddings remain identical across repeated slots; conditional backends encode distinct fixed directions. These are custom retrieval protocols, not official classification/MMEB results.
 
-Single-image inference matches training batch geometry to avoid amplified BF16 batch-1 rounding. Full fresh-inference checks are included. See the complete results, Chinese conclusions, model card, data manifests, and reproduction scripts in the repository.
+Six archives contain all 324 heads, all 324 complete optimizer/RNG recovery states, validation reports and documentation. All heads exactly reproduce stored validation mAP; global and multi-slot exact-resume checks pass. Fresh image inference across all 18 domain/backend combinations matches cached head outputs within 2.98e-8. SHA256SUMS.json verifies each archive. Negative and non-selected runs remain included.
 
-No source images or upstream backbone weights are bundled. CUB/DTD artifacts are for research; project licensing does not waive dataset restrictions or assert commercial clearance. The v0.1 pilot and its LoRA negative result remain unchanged. V3 trains frozen-backbone heads, not a new end-to-end LoRA model, and makes no novelty, causal-transfer, or SOTA claim.
+API extraction completed 16,264 successful requests without retries. Service aliases may change; cached features remain local and are not part of this release. Regeneration from an API is not guaranteed bitwise reproducible. No images, credentials, upstream backbone weights or provider model weights are bundled. CUB/DTD research restrictions and provider terms apply; project licensing does not waive them. V3 and v0.1 releases remain intact.
+
+See reports/RESULTS_V4.md, reports/CONCLUSIONS_V4.zh.md, reports/EXPERIMENT_PROTOCOL_V4.zh.md and reports/REPRODUCING_V4.md for measurements, limits and commands. This release does not establish decision-sensitivity transfer, unseen-attribute generalization or novelty.
