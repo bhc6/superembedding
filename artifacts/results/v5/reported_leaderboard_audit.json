@@ -1,0 +1,5563 @@
+{
+  "revision": "578a5b28e13abc7d6e9fbce2ea5be8bee75ceed6",
+  "retrieved_utc": "2026-10-11T03:18:49.249673+00:00",
+  "source": "https://huggingface.co/spaces/TIGER-Lab/MMEB-Leaderboard",
+  "status": "upstream submissions, NOT local reproduction",
+  "aggregation": "Official definitions; missing tasks count as zero. Rounded only at final mean; official rounds individual tasks first.",
+  "models": [
+    {
+      "metadata": {
+        "model_name": "WeMM-Embedding-9B",
+        "model_backbone": "Qwen3.5",
+        "model_size": "9.41",
+        "embedding_dimension": 4096,
+        "max_length_tokens": 262144,
+        "model_release_date": "2026-08-20",
+        "data_source": "Self-Reported",
+        "url": "https://github.com/Tencent/WeMM-Embedding",
+        "contact": "",
+        "report_generated_date": "2026-08-24T20:13:06.819763"
+      },
+      "file": "scores/WeMM-Embedding-9B.json",
+      "sha256": "67cae906aaccfcc46eaaa10ad7ad11d26283a99ac1c0deceb81af2a7e6429bda",
+      "coverage": 179,
+      "task_count": 190,
+      "overall_zero_filled": 59.332671253329416,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 48.75992852670601,
+          "available_mean": 48.75992852670601
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 80.98712944699597,
+          "available_mean": 80.98712944699597
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 83.34142673966285,
+          "available_mean": 83.34142673966285
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 74.30852932636448,
+          "available_mean": 74.30852932636448
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 50.09914397982661,
+          "available_mean": 50.09914397982661
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Ovis-Omni-Embedding-3B",
+        "model_size": 3,
+        "model_release_date": "2026-09-03",
+        "data_source": "",
+        "url": "https://github.com/ATH-MaaS/Ovis-Omni-Embedding",
+        "contact": "",
+        "report_generated_date": "2026-09-03T21:02:02.551487"
+      },
+      "file": "scores/Ovis-Omni-Embedding-v1-3B.json",
+      "sha256": "4eac4dba823728aa0db1911bbaa9cf39eae46c2bf6787cbb1bb280963799eea5",
+      "coverage": 190,
+      "task_count": 190,
+      "overall_zero_filled": 58.454969408653845,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 47.15089024587787,
+          "available_mean": 47.15089024587787
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 77.54706232376985,
+          "available_mean": 77.54706232376985
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 78.25864639585545,
+          "available_mean": 78.25864639585545
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 64.99321433518142,
+          "available_mean": 64.99321433518142
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 50.08126977279098,
+          "available_mean": 50.08126977279098
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 45.515454459547264,
+          "available_mean": 45.515454459547264
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Wianmu-3B-v0",
+        "model_backbone": "WeMM-Embedding-2B (VL) + Qwen2.5-Omni-3B (audio, frozen)",
+        "model_size": "3",
+        "embedding_dimension": 2048,
+        "max_length_tokens": null,
+        "model_release_date": "2026-09-29",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/Huawei-Cloud/Wianmu-3B",
+        "contact": "eduardo.terres.caballero@h-partners.com",
+        "report_generated_date": "2026-09-29T15:00:01.093199"
+      },
+      "file": "scores/Wianmu-3B-v0.json",
+      "sha256": "44ed189270ee382eadb1a7fa38566a3ed9ac95871ddcd7340e8aadb07fe4afee",
+      "coverage": 190,
+      "task_count": 190,
+      "overall_zero_filled": 58.16205617857787,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 45.296850197688386,
+          "available_mean": 45.296850197688386
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 78.6704562205438,
+          "available_mean": 78.6704562205438
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 80.79390270579832,
+          "available_mean": 80.79390270579832
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 70.79288405840897,
+          "available_mean": 70.79288405840897
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 41.16124779171449,
+          "available_mean": 41.16124779171449
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 44.10960488495343,
+          "available_mean": 44.10960488495343
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "WeMM-Embedding-4B",
+        "model_backbone": "Qwen3.5",
+        "model_size": "4.54",
+        "embedding_dimension": 2560,
+        "max_length_tokens": 262144,
+        "model_release_date": "2026-08-20",
+        "data_source": "Self-Reported",
+        "url": "https://github.com/Tencent/WeMM-Embedding",
+        "contact": "",
+        "report_generated_date": "2026-08-24T09:56:04.590963"
+      },
+      "file": "scores/WeMM-Embedding-4B.json",
+      "sha256": "f3df2768d2d8c71a85a04c3089eb19880a4cf3d4838df8521e2680e6f91830ed",
+      "coverage": 179,
+      "task_count": 190,
+      "overall_zero_filled": 57.97464158965826,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 47.88255464664532,
+          "available_mean": 47.88255464664532
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 79.78395756276666,
+          "available_mean": 79.78395756276666
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 82.03726189452706,
+          "available_mean": 82.03726189452706
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 72.1064398745826,
+          "available_mean": 72.1064398745826
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 48.055103675092866,
+          "available_mean": 48.055103675092866
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Ovis-Omni-Embedding-v0.5-3B",
+        "model_size": 3,
+        "model_release_date": "2026-08-20",
+        "data_source": "",
+        "url": "https://github.com/ATH-MaaS/Ovis-Omni-Embedding",
+        "contact": "",
+        "report_generated_date": "2026-08-20T22:41:30.846747"
+      },
+      "file": "scores/Ovis-Omni-Embedding-v0.5-3B.json",
+      "sha256": "e9e7cd8724866bb91da898dc35c5f5dea32c2d18c789c04ae34572a32575da00",
+      "coverage": 189,
+      "task_count": 190,
+      "overall_zero_filled": 57.42203089104536,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 46.514545055297894,
+          "available_mean": 46.514545055297894
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 76.55945945945946,
+          "available_mean": 78.68611111111112
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 77.72185451777234,
+          "available_mean": 77.72185451777234
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 63.96973522159236,
+          "available_mean": 63.96973522159236
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 48.589451419480945,
+          "available_mean": 48.589451419480945
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 43.85002709230511,
+          "available_mean": 43.85002709230511
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "WeMM-Embedding-2B",
+        "model_backbone": "Qwen3.5",
+        "model_size": "2.21",
+        "embedding_dimension": 2048,
+        "max_length_tokens": 262144,
+        "model_release_date": "2026-08-20",
+        "data_source": "Self-Reported",
+        "url": "https://github.com/Tencent/WeMM-Embedding",
+        "contact": "",
+        "report_generated_date": "2026-08-24T09:55:25.149196"
+      },
+      "file": "scores/WeMM-Embedding-2B.json",
+      "sha256": "bef85711f81dfd82d49a326f8d1fc2424b969e7faeb486d6f9024ef2f00485ab",
+      "coverage": 179,
+      "task_count": 190,
+      "overall_zero_filled": 55.766923549512555,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 45.342706488952444,
+          "available_mean": 45.342706488952444
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 78.62991568000325,
+          "available_mean": 78.62991568000325
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 80.74859450505663,
+          "available_mean": 80.74859450505663
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 70.82425494550176,
+          "available_mean": 70.82425494550176
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 44.05196368494457,
+          "available_mean": 44.05196368494457
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Tianmu-Emb-Uni",
+        "model_backbone": "Qwen3-VL-Embedding-8B + Qwen2.5-Omni audio tower",
+        "model_size": "8",
+        "embedding_dimension": 3584,
+        "max_length_tokens": 262144,
+        "model_release_date": "2026-08-06",
+        "data_source": "Self-Reported",
+        "score_source": "Self-Reported",
+        "url": "https://huggingface.co/TianmuLab/Tianmu-Emb-Uni/tree/main",
+        "contact": null,
+        "report_generated_date": "2026-08-06T08:57:49.929002",
+        "eval_output_path": "/data/models/tianmu-mmeb-v3/checkpoints/stage1b_adapter_proto_retrieval/mmeb_v3_eval",
+        "notes": "Qwen3-VL backbone frozen; audio tower last 8 layers plus connector/projection/adapter/prototype trained. Full MMEB-V3 190/190 evaluation."
+      },
+      "file": "scores/Tianmu-Emb-Uni.json",
+      "sha256": "1d229f44498b7b8e3223c24d038e0c54ddc332e1cf9fc85255ec4f441b1be59b",
+      "coverage": 190,
+      "task_count": 190,
+      "overall_zero_filled": 53.27473279667565,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 43.622010666643796,
+          "available_mean": 43.622010666643796
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 73.8278141038211,
+          "available_mean": 73.8278141038211
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 72.03009859369548,
+          "available_mean": 72.03009859369548
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 59.368465072155914,
+          "available_mean": 59.368465072155914
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 38.944803916688734,
+          "available_mean": 38.944803916688734
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 39.422467309868,
+          "available_mean": 39.422467309868
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Ovis-Omni-Embedding-v0.1-3B",
+        "model_size": 3,
+        "model_release_date": "2026-08-03",
+        "data_source": "",
+        "url": "https://github.com/wl122593/Ovis-Omni-Embedding",
+        "contact": "",
+        "report_generated_date": "2026-08-03T10:24:20.289093"
+      },
+      "file": "scores/Ovis-Omni-Embedding-v0.1-3B.json",
+      "sha256": "f604caa445a69904297ad19a5503fffd1c28f5eaecc7c84cbcc25034ef708c2a",
+      "coverage": 189,
+      "task_count": 190,
+      "overall_zero_filled": 53.092630132145594,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 44.75069424113768,
+          "available_mean": 44.75069424113768
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 74.34594594594594,
+          "available_mean": 76.4111111111111
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 68.29569863478778,
+          "available_mean": 68.29569863478778
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 61.8038009546572,
+          "available_mean": 61.8038009546572
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 47.82141741042101,
+          "available_mean": 47.82141741042101
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 35.902386263702105,
+          "available_mean": 35.902386263702105
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UEmbed-9B (hybrid)",
+        "model_backbone": "qwen3.5",
+        "model_size": "9",
+        "embedding_dimension": 4096,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-08-04",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/Alibaba-NLP/UEmbed-9B",
+        "contact": "songtingyu23@mails.ucas.ac.cn",
+        "report_generated_date": "2026-08-13T19:06:43.751652"
+      },
+      "file": "scores/UEmbed-9B (hybrid).json",
+      "sha256": "cc26324dec84c472f958f01fd2dafebfdff78aa79390b64ef785592511fc5dea",
+      "coverage": 178,
+      "task_count": 190,
+      "overall_zero_filled": 52.25892095553224,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 46.635966729387526,
+          "available_mean": 46.635966729387526
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.27837837837838,
+          "available_mean": 73.25833333333334
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 79.27020289403231,
+          "available_mean": 79.27020289403231
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 59.07230162852053,
+          "available_mean": 59.07230162852053
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 39.45537119411576,
+          "available_mean": 39.45537119411576
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UEmbed-9B (dense)",
+        "model_backbone": "qwen3.5",
+        "model_size": "9",
+        "embedding_dimension": 4096,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-08-04",
+        "data_source": "https://arxiv.org/abs/2608.02583",
+        "url": "https://huggingface.co/Alibaba-NLP/UEmbed-9B",
+        "contact": "songtingyu23@mails.ucas.ac.cn",
+        "report_generated_date": "2026-08-12T15:24:22.528067"
+      },
+      "file": "scores/UEmbed-9B (dense).json",
+      "sha256": "9f55c54147fff46119fcb46f2da05bba455b03519fefeda302db32ef8a612955",
+      "coverage": 178,
+      "task_count": 190,
+      "overall_zero_filled": 52.219787811401005,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 46.642798556911565,
+          "available_mean": 46.642798556911565
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.22432432432433,
+          "available_mean": 73.20277777777778
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 79.19636503592076,
+          "available_mean": 79.19636503592076
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 59.018083057642485,
+          "available_mean": 59.018083057642485
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 39.390491590430095,
+          "available_mean": 39.390491590430095
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UEmbed-9B (sparse)",
+        "model_backbone": "qwen3.5",
+        "model_size": "9",
+        "embedding_dimension": 4096,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-08-04",
+        "data_source": "https://arxiv.org/abs/2608.02583",
+        "url": "https://huggingface.co/Alibaba-NLP/UEmbed-9B",
+        "contact": "songtingyu23@mails.ucas.ac.cn",
+        "report_generated_date": "2026-08-12T15:24:22.822223"
+      },
+      "file": "scores/UEmbed-9B (sparse).json",
+      "sha256": "8db05821b9f697fea6778ba1778d267f6f1a364066c445268c87b9be3e3fb518",
+      "coverage": 178,
+      "task_count": 190,
+      "overall_zero_filled": 51.77077055002087,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 46.12969079254545,
+          "available_mean": 46.12969079254545
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 70.5108108108108,
+          "available_mean": 72.46944444444443
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 79.07260227530163,
+          "available_mean": 79.07260227530163
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 57.50006081186474,
+          "available_mean": 57.50006081186474
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 39.36019666549469,
+          "available_mean": 39.36019666549469
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UEmbed-4B (dense)",
+        "model_backbone": "qwen3.5",
+        "model_size": "4",
+        "embedding_dimension": 2560,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-08-04",
+        "data_source": "https://arxiv.org/abs/2608.02583",
+        "url": "https://huggingface.co/Alibaba-NLP/UEmbed-4B",
+        "contact": "songtingyu23@mails.ucas.ac.cn",
+        "report_generated_date": "2026-08-12T15:24:21.828953"
+      },
+      "file": "scores/UEmbed-4B (dense).json",
+      "sha256": "8c9a2cfa2fd4991d92d1df0b7abb6518c321e6a872272197abf5716f0205c34e",
+      "coverage": 178,
+      "task_count": 190,
+      "overall_zero_filled": 51.009241114197934,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 46.207556797829454,
+          "available_mean": 46.207556797829454
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 69.5,
+          "available_mean": 71.43055555555556
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 78.77307988453698,
+          "available_mean": 78.77307988453698
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 57.00865632919753,
+          "available_mean": 57.00865632919753
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 37.33075681400431,
+          "available_mean": 37.33075681400431
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UEmbed-4B (sparse)",
+        "model_backbone": "qwen3.5",
+        "model_size": "4",
+        "embedding_dimension": 2560,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-08-04",
+        "data_source": "https://arxiv.org/abs/2608.02583",
+        "url": "https://huggingface.co/Alibaba-NLP/UEmbed-4B",
+        "contact": "songtingyu23@mails.ucas.ac.cn",
+        "report_generated_date": "2026-08-12T15:24:22.225771"
+      },
+      "file": "scores/UEmbed-4B (sparse).json",
+      "sha256": "41b4e047384f64b8b6f1bcb941a9d937dcd869025012293a226cffc36de17450",
+      "coverage": 178,
+      "task_count": 190,
+      "overall_zero_filled": 50.85379514371437,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 46.011366491839524,
+          "available_mean": 46.011366491839524
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 68.67297297297297,
+          "available_mean": 70.58055555555556
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 78.60430925903935,
+          "available_mean": 78.60430925903935
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 56.010798714101206,
+          "available_mean": 56.010798714101206
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 38.042996897180224,
+          "available_mean": 38.042996897180224
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UEmbed-2B (dense)",
+        "model_backbone": "qwen3.5",
+        "model_size": "2",
+        "embedding_dimension": 2048,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-08-04",
+        "data_source": "https://arxiv.org/abs/2608.02583",
+        "url": "https://huggingface.co/Alibaba-NLP/UEmbed-2B",
+        "contact": "songtingyu23@mails.ucas.ac.cn",
+        "report_generated_date": "2026-08-12T15:24:21.088959"
+      },
+      "file": "scores/UEmbed-2B (dense).json",
+      "sha256": "fe41fcb64b926b20456ad2c78e7555215927c8b400b7ceeeda546ebaa370764b",
+      "coverage": 178,
+      "task_count": 190,
+      "overall_zero_filled": 48.61302213517244,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 44.191544419239676,
+          "available_mean": 44.191544419239676
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 65.92432432432432,
+          "available_mean": 67.75555555555555
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 76.9946776435024,
+          "available_mean": 76.9946776435024
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 49.956877506243245,
+          "available_mean": 49.956877506243245
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 36.34098495546011,
+          "available_mean": 36.34098495546011
+        }
+      }
+    },
+    {
+      "metadata": {
+        "data_source": "Self-Reported",
+        "embedding_dimension": 3584,
+        "model_name": "AuroLA-Omni-7B",
+        "model_size": 7,
+        "report_generated_date": "2026-08-26T07:33:25-04:00",
+        "url": "https://huggingface.co/Jazzcharles/AuroLA-Omni-7B"
+      },
+      "file": "scores/AuroLA-Omni-7B.json",
+      "sha256": "0533e64726b6bda6f662b70243bcf2312355f8828d70276b71ca6a42f96b43c4",
+      "coverage": 190,
+      "task_count": 190,
+      "overall_zero_filled": 48.18738873562377,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 36.535075074442936,
+          "available_mean": 36.535075074442936
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 66.31742387871986,
+          "available_mean": 66.31742387871986
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 69.72151879855043,
+          "available_mean": 69.72151879855043
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 51.99626999700688,
+          "available_mean": 51.99626999700688
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 50.48945283858507,
+          "available_mean": 50.48945283858507
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 34.06099797818378,
+          "available_mean": 34.06099797818378
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UEmbed-2B (sparse)",
+        "model_backbone": "qwen3.5",
+        "model_size": "2",
+        "embedding_dimension": 2048,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-08-04",
+        "data_source": "https://arxiv.org/abs/2608.02583",
+        "url": "https://huggingface.co/Alibaba-NLP/UEmbed-2B",
+        "contact": "songtingyu23@mails.ucas.ac.cn",
+        "report_generated_date": "2026-08-12T15:24:21.356237"
+      },
+      "file": "scores/UEmbed-2B (sparse).json",
+      "sha256": "ced8819c4037bb92a4cf3e98fb6bb97b4cfaaaa0f1a9ad69eba7f92bddb1916a",
+      "coverage": 178,
+      "task_count": 190,
+      "overall_zero_filled": 47.757402715952075,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 43.26826827176915,
+          "available_mean": 43.26826827176915
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 65.1891891891892,
+          "available_mean": 67.0
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 76.73978465609322,
+          "available_mean": 76.73978465609322
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 47.65117414909057,
+          "available_mean": 47.65117414909057
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 35.51515598292045,
+          "available_mean": 35.51515598292045
+        }
+      }
+    },
+    {
+      "metadata": {
+        "data_source": "Self-Reported",
+        "embedding_dimension": 2048,
+        "model_name": "AuroLA-Omni-3B",
+        "model_size": 3,
+        "report_generated_date": "2026-08-26T07:33:25-04:00",
+        "url": "https://huggingface.co/Jazzcharles/AuroLA-Omni-3B"
+      },
+      "file": "scores/AuroLA-Omni-3B.json",
+      "sha256": "659d36f5f26f1a5fdb567b65dc5f7845e16e3612748ba3a0c5f2c1a0421b83df",
+      "coverage": 190,
+      "task_count": 190,
+      "overall_zero_filled": 47.33317831205937,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 35.18689254240415,
+          "available_mean": 35.18689254240415
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 63.79360533913949,
+          "available_mean": 63.79360533913949
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 69.16138591054538,
+          "available_mean": 69.16138591054538
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 48.86355093545839,
+          "available_mean": 48.86355093545839
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 46.839678334337805,
+          "available_mean": 46.839678334337805
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 36.45492631120514,
+          "available_mean": 36.45492631120514
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "e5-omni-7B",
+        "model_size": 7,
+        "embedding_dimension": 0,
+        "url": "https://huggingface.co/Haon-Chen/e5-omni-7B",
+        "data_source": "Reproduced by TIGER-Lab",
+        "report_generated_date": "2026-07-20T13:57:44.725269"
+      },
+      "file": "scores/e5-omni-7B.json",
+      "sha256": "ad55197ebd74932dba68906d7978d1bd6eacf827fa6d5f4b8baa8900553207ca",
+      "coverage": 190,
+      "task_count": 190,
+      "overall_zero_filled": 47.139390815457794,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 26.927419636289883,
+          "available_mean": 26.927419636289883
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 70.5021840704853,
+          "available_mean": 70.5021840704853
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 75.37619535823345,
+          "available_mean": 75.37619535823345
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 50.827932354028775,
+          "available_mean": 50.827932354028775
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 43.037783422910834,
+          "available_mean": 43.037783422910834
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 36.668151382628096,
+          "available_mean": 36.668151382628096
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "e5-omni-3B",
+        "model_size": 3,
+        "embedding_dimension": 0,
+        "url": "https://huggingface.co/Haon-Chen/e5-omni-3B",
+        "data_source": "Reproduced by TIGER-Lab",
+        "report_generated_date": "2026-07-23T17:40:39.795658"
+      },
+      "file": "scores/e5-omni-3B.json",
+      "sha256": "1bd3814ef4978d4aa3b2cc780c47d223bbdf8bc4d7590a0fc20a4e7a123a5c4e",
+      "coverage": 190,
+      "task_count": 190,
+      "overall_zero_filled": 44.627072760964055,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 26.733744799651262,
+          "available_mean": 26.733744799651262
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 63.480375822407346,
+          "available_mean": 63.480375822407346
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 73.4525605515493,
+          "available_mean": 73.4525605515493
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 48.905617758399316,
+          "available_mean": 48.905617758399316
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 30.760209609150625,
+          "available_mean": 30.760209609150625
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 36.8501397060331,
+          "available_mean": 36.8501397060331
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "omni-embed-nemotron-3b",
+        "model_size": 3,
+        "embedding_dimension": 0,
+        "url": "https://huggingface.co/nvidia/omni-embed-nemotron-3b",
+        "data_source": "Reproduced by TIGER-Lab",
+        "report_generated_date": "2026-07-20T13:57:43.169818"
+      },
+      "file": "scores/omni-embed-nemotron-3b.json",
+      "sha256": "25d016fa7ab1f63cb308a9a049923f19bdf015431fe0008e79cf32548b407502",
+      "coverage": 190,
+      "task_count": 190,
+      "overall_zero_filled": 43.59706492068499,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 39.2280858536179,
+          "available_mean": 39.2280858536179
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 43.41944837006133,
+          "available_mean": 43.41944837006133
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 72.26949827578838,
+          "available_mean": 72.26949827578838
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 41.36337186947675,
+          "available_mean": 41.36337186947675
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 36.52040730887432,
+          "available_mean": 36.52040730887432
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 36.5340651559364,
+          "available_mean": 36.5340651559364
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "LCO-Embedding-Omni-7B",
+        "model_size": 7,
+        "embedding_dimension": 0,
+        "url": "https://huggingface.co/LCO-Embedding/LCO-Embedding-Omni-7B",
+        "data_source": "Reproduced by TIGER-Lab",
+        "report_generated_date": "2026-07-23T16:25:55.268061"
+      },
+      "file": "scores/LCO-Embedding-Omni-7B.json",
+      "sha256": "4c5197b7b109b7dfe0435fa41bec80ba9457326116ea105d692a3d100380a28b",
+      "coverage": 190,
+      "task_count": 190,
+      "overall_zero_filled": 43.14469877936274,
+      "scores": {
+        "text": {
+          "coverage": 53,
+          "tasks": 53,
+          "zero_filled_mean": 32.39920017104269,
+          "available_mean": 32.39920017104269
+        },
+        "image": {
+          "coverage": 37,
+          "tasks": 37,
+          "zero_filled_mean": 56.27202631703508,
+          "available_mean": 56.27202631703508
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 69.18885495168614,
+          "available_mean": 69.18885495168614
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 53.026164714454254,
+          "available_mean": 53.026164714454254
+        },
+        "audio": {
+          "coverage": 11,
+          "tasks": 11,
+          "zero_filled_mean": 43.16858244792941,
+          "available_mean": 43.16858244792941
+        },
+        "agent": {
+          "coverage": 47,
+          "tasks": 47,
+          "zero_filled_mean": 27.83855946075517,
+          "available_mean": 27.83855946075517
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Ovis-VL-Embedding-9B",
+        "model_size": 9,
+        "model_release_date": "2026-09-08",
+        "data_source": "",
+        "url": "https://github.com/ATH-MaaS/Ovis-VL-Embedding",
+        "contact": "",
+        "report_generated_date": "2026-09-08T21:57:05.947895"
+      },
+      "file": "scores/Ovis-VL-Embedding-v1-9B.json",
+      "sha256": "94549d9a033c5c967c27a111cdc657b1a4e9fc96e835b1a0935d269447b8cdb0",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 33.306272763399065,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 81.69189189189188,
+          "available_mean": 83.96111111111111
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 83.05907438615436,
+          "available_mean": 83.05907438615436
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 72.89855776545095,
+          "available_mean": 72.89855776545095
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "DME-Large",
+        "model_size": null,
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-07-16",
+        "data_source": "Self-Reported",
+        "url": "https://arxiv.org/abs/2608.02148",
+        "report_generated_date": "2026-07-17T15:49:39.831339"
+      },
+      "file": "scores/DME-Large.json",
+      "sha256": "a32412c95bf35b2ea10f0d79dad004c605b034daad1406cd5e5d8ec684f71956",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 32.94144124070039,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 78.91351351351352,
+          "available_mean": 81.10555555555555
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 83.36100039090518,
+          "available_mean": 83.36100039090518
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 74.3561014639639,
+          "available_mean": 74.3561014639639
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "octen-vl-embedding-large",
+        "model_size": "unknow",
+        "embedding_dimension": 4096,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-05-15",
+        "data_source": "",
+        "url": "https://docs.octen.ai/api-reference/vl-embedding",
+        "report_generated_date": "2026-05-15T00:51:56.435372"
+      },
+      "file": "scores/Octen-VL-Embedding-Large.json",
+      "sha256": "66a5dc689cee88dd9b46d771fd88d4892fb55481ba382577742ad4f843381766",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 32.879888186723946,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 79.65135135135135,
+          "available_mean": 81.86388888888888
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 80.53762844443611,
+          "available_mean": 80.53762844443611
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 75.95420404506014,
+          "available_mean": 75.95420404506014
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Wanderboat-Embedding-2B",
+        "model_backbone": "Qwen3.5-2B",
+        "model_size": "2",
+        "embedding_dimension": 2048,
+        "max_length_tokens": 262144,
+        "model_release_date": "2026-09-30",
+        "data_source": "Self-Reported",
+        "url": "https://models.wanderboat.ai",
+        "contact": null,
+        "report_generated_date": "2026-09-30T00:26:04.731052"
+      },
+      "file": "scores/wanderboat-embedding-2b.json",
+      "sha256": "92ce61e262b3d5157d61305472324367471f0d0bdc5ae6363626540d1b96ec0b",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 32.27944112843469,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 78.96756756756757,
+          "available_mean": 81.16111111111111
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 80.77046609365031,
+          "available_mean": 80.77046609365031
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 70.71125711972131,
+          "available_mean": 70.71125711972131
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "DME-Medium",
+        "model_size": "9.4",
+        "embedding_dimension": 4096,
+        "max_length_tokens": null,
+        "model_release_date": "2026-07-16",
+        "data_source": "Self-Reported",
+        "url": "https://arxiv.org/abs/2608.02148",
+        "report_generated_date": "2026-07-17T00:28:49.555887"
+      },
+      "file": "scores/DME-Medium.json",
+      "sha256": "1c46315375c2947907bca9f8b41155cf49cc8d56ec6fd791febdbb9d8f275156",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 32.178268928936866,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 77.6,
+          "available_mean": 79.75555555555555
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 82.02131598710268,
+          "available_mean": 82.02131598710268
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 70.7866396004189,
+          "available_mean": 70.7866396004189
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "QQMM-embed-v4",
+        "model_backbone": null,
+        "model_size": null,
+        "embedding_dimension": "2048",
+        "max_length_tokens": "10240",
+        "model_release_date": "2026-07-01",
+        "data_source": "Self-Reported",
+        "report_generated_date": "2026-07-01T21:25:45.719031"
+      },
+      "file": "scores/QQMM-embed-v4.json",
+      "sha256": "a6a8b0a89761bc5940f6e8f6bbeb5f9edb00926a3a1d5a3c3a1f59543865bdf8",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 32.14693026525986,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 79.8054054054054,
+          "available_mean": 82.02222222222221
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 80.91407506870563,
+          "available_mean": 80.91407506870563
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 67.39883048613547,
+          "available_mean": 67.39883048613547
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Qwen3-VL-Embedding-8B",
+        "model_backbone": "qwen3vl",
+        "model_size": 8.14,
+        "embedding_dimension": 4096,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-01-08",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B",
+        "report_generated_date": "2026-01-06T15:18:12.733345"
+      },
+      "file": "scores/Qwen3-VL-Embedding-8B.json",
+      "sha256": "dc4988671170690cde0e914f43a84f80f99605d93c4553226a5c5a57846fc7b5",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 31.946422157593307,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 77.95675675675676,
+          "available_mean": 80.12222222222222
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 82.36422827211867,
+          "available_mean": 82.36422827211867
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 67.1488184117711,
+          "available_mean": 67.1488184117711
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Ovis-VL-Embedding-2B",
+        "model_size": 2,
+        "model_release_date": "2026-09-11",
+        "data_source": "",
+        "url": "https://github.com/ATH-MaaS/Ovis-VL-Embedding",
+        "contact": "",
+        "report_generated_date": "2026-09-11T14:50:16.153786"
+      },
+      "file": "scores/Ovis-VL-Embedding-2B.json",
+      "sha256": "6447a2b375bf0697a49d561978bbcbc6e5700dce06df81aa74d9a8a98d66c1ea",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 31.798546247977093,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 78.43783783783783,
+          "available_mean": 80.61666666666666
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 80.47431728747519,
+          "available_mean": 80.47431728747519
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 67.11889845645796,
+          "available_mean": 67.11889845645796
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "seed1.6-embedding-1215",
+        "model_size": "Unknow",
+        "embedding_dimension": 2048,
+        "max_length_tokens": null,
+        "model_release_date": "2025-12-15",
+        "data_source": "",
+        "url": "https://console.volcengine.com/ark/region:ark+cn-beijing/model/detail?Id=doubao-embedding-vision",
+        "report_generated_date": "2025-12-18T15:57:31.369645"
+      },
+      "file": "scores/seed1.6-embedding-1215.json",
+      "sha256": "3b8a253e2b47dfc3d86faa2a5eeb76bfd730bb158566b016b8d8862642b2f931",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 31.598990166267924,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 75.87837837837837,
+          "available_mean": 77.98611111111111
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 82.37573075029779,
+          "available_mean": 82.37573075029779
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 67.73836631020885,
+          "available_mean": 67.73836631020885
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Ovis-VL-Embedding-v0.5-2B",
+        "model_size": 2,
+        "model_release_date": "2026-08-19",
+        "data_source": "",
+        "url": "https://github.com/ATH-MaaS/Ovis-Omni-Embedding",
+        "contact": "",
+        "report_generated_date": "2026-08-19T16:26:34.956446"
+      },
+      "file": "scores/Ovis-VL-Embedding-v0.5-2B.json",
+      "sha256": "d4410ec3bc50d0f95031696f8c1a6ef7c6b502ac3952e301f084746160653f0a",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 31.170944771313785,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 76.6891891891892,
+          "available_mean": 78.81944444444444
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 79.39466451507347,
+          "available_mean": 79.39466451507347
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 65.52819767710314,
+          "available_mean": 65.52819767710314
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "octen-vl-embedding",
+        "model_size": "unknow",
+        "embedding_dimension": 2048,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-05-15",
+        "data_source": "",
+        "url": "https://docs.octen.ai/api-reference/vl-embedding",
+        "report_generated_date": "2026-05-15T00:51:56.313070"
+      },
+      "file": "scores/Octen-VL-Embedding.json",
+      "sha256": "0bb2206be8778388937e0946859aee5c67d21f2bf6de75fca8a5e167639423d5",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 30.961754140121496,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 75.31351351351351,
+          "available_mean": 77.40555555555555
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 77.37558623163645,
+          "available_mean": 77.37558623163645
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 68.83995650354501,
+          "available_mean": 68.83995650354501
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "DME-Small",
+        "model_size": "2.21",
+        "embedding_dimension": 2048,
+        "max_length_tokens": null,
+        "model_release_date": "2026-07-16",
+        "data_source": "Self-Reported",
+        "url": "https://arxiv.org/abs/2608.02148",
+        "report_generated_date": "2026-07-16T18:02:02.343631"
+      },
+      "file": "scores/DME-Small.json",
+      "sha256": "bca837da93a019d173bf4444074a1ca6b0118a838a404f98cb4a884324aeb251",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 30.68831657472968,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 73.85675675675677,
+          "available_mean": 75.90833333333335
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 79.86315871913548,
+          "available_mean": 79.86315871913548
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 65.63135221885487,
+          "available_mean": 65.63135221885487
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "DME-Pre",
+        "model_size": "2.21",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-02-10",
+        "data_source": null,
+        "url": null,
+        "report_generated_date": "2026-02-11T10:09:45.735820"
+      },
+      "file": "scores/DME-Pre.json",
+      "sha256": "88fb635cfa7dc1e2120a52aec129ed42e762b0e316278487db866df3fc88b98a",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 30.471047071260646,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 74.1972972972973,
+          "available_mean": 76.25833333333333
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 80.85621982809269,
+          "available_mean": 80.85621982809269
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 61.31387042584991,
+          "available_mean": 61.31387042584991
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Qwen3-VL-Embedding-2B",
+        "model_backbone": "qwen3vl",
+        "model_size": 2.13,
+        "embedding_dimension": 2048,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-01-08",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B",
+        "report_generated_date": "2026-01-06T11:33:58.919147"
+      },
+      "file": "scores/Qwen3-VL-Embedding-2B.json",
+      "sha256": "05fbda32803cfed192236f36ac1e058effb7b5b69c95151324b07b52d6d7f661",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 30.07031557064086,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 72.93243243243244,
+          "available_mean": 74.95833333333333
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 79.21855200844006,
+          "available_mean": 79.21855200844006
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 61.86748390106681,
+          "available_mean": 61.86748390106681
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "IFM-TTE-7B",
+        "model_size": "8.29",
+        "embedding_dimension": 3584,
+        "max_length_tokens": null,
+        "model_release_date": "2025-10-11",
+        "score_source": "Self-Reported",
+        "url": "https://interestfm-tte.github.io/",
+        "report_generated_date": "2025-10-11T21:57:26.789669"
+      },
+      "file": "scores/IFM-TTE-7B.json",
+      "sha256": "46927c42533b9e80c60ab326a7b9db93778bb54513037d492c25618cf751d4d6",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 29.994243459275726,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 75.7945945945946,
+          "available_mean": 77.9
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 76.21085374291191,
+          "available_mean": 83.13911317408571
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 59.191431524027884,
+          "available_mean": 59.191431524027884
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "RzenEmbed-v2-7B",
+        "model_size": 8.29,
+        "embedding_dimension": 3584,
+        "max_length_tokens": null,
+        "model_release_date": "2025-09-20",
+        "data_source": "RzenAI",
+        "url": "https://github.com/360CVGroup/RzenEmbed",
+        "report_generated_date": "2025-09-20T07:51:38.145706"
+      },
+      "file": "scores/RzenEmbed-v2-7B.json",
+      "sha256": "1ae8e9f1248d90a808ceac476c2134963b31ced218fd2e224113f21f6788b867",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 29.194986096850023,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 73.87027027027028,
+          "available_mean": 75.92222222222223
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 75.44893507924668,
+          "available_mean": 82.30792917736001
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 55.72627313886578,
+          "available_mean": 55.72627313886578
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "seed-1.6-embedding",
+        "model_size": "Unknow",
+        "embedding_dimension": 2048,
+        "max_length_tokens": null,
+        "model_release_date": "2025-06-18",
+        "data_source": "",
+        "url": "https://seed1-6-embedding.github.io",
+        "report_generated_date": "2025-06-17T17:11:28.306214"
+      },
+      "file": "scores/seed-1.6-embedding.json",
+      "sha256": "9eb1c05ef8ba7b4f8bd9269afe0baf8e0acc571542da2f3ab07df254b8e7749a",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 29.055243625693812,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 75.67837837837837,
+          "available_mean": 77.78055555555555
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 71.84214225296193,
+          "available_mean": 78.3732460941403
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 55.343604156152104,
+          "available_mean": 55.343604156152104
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UniME-R1-4B",
+        "model_backbone": "Qwen3-VL-4B-Instruct",
+        "model_size": "4.44",
+        "embedding_dimension": "2560",
+        "max_length_tokens": "8192",
+        "data_source": "Self-Reported",
+        "url": "https://github.com/deepglint/UniME-R1",
+        "report_generated_date": "2026-08-07T04:31:05.718212+00:00"
+      },
+      "file": "scores/UniME-R1-4B.json",
+      "sha256": "6999c45df9cf06b978cac0b2f4f39d3a65a10036bf89c23541bb2a042dbc9f27",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 28.8748900128788,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 72.28648648648648,
+          "available_mean": 74.29444444444444
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 77.39459942258394,
+          "available_mean": 77.39459942258394
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 53.00881757249764,
+          "available_mean": 53.00881757249764
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UniME-R1-2B",
+        "model_backbone": "Qwen3-VL-2B-Instruct",
+        "model_size": "2.13",
+        "embedding_dimension": "2048",
+        "max_length_tokens": "8192",
+        "data_source": "Self-Reported",
+        "url": "https://github.com/deepglint/UniME-R1",
+        "report_generated_date": "2026-08-07T04:37:17.501458+00:00"
+      },
+      "file": "scores/UniME-R1-2B.json",
+      "sha256": "813e8c317f8a0cd9f1e14cc7e1281bdbea0361e831eda75f94574d7bc8328546",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 28.723757141636614,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.44324324324324,
+          "available_mean": 73.42777777777778
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 76.6942374426549,
+          "available_mean": 76.6942374426549
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 54.08067546040218,
+          "available_mean": 54.08067546040218
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "RIME-7B",
+        "model_backbone": "Qwen2-VL-7B",
+        "model_size": "8.29",
+        "embedding_dimension": 3584,
+        "max_length_tokens": null,
+        "model_release_date": "2026-04-11",
+        "data_source": "Self-Reported",
+        "url": "",
+        "report_generated_date": "2026-04-11T11:34:57.221178"
+      },
+      "file": "scores/RIME-7B.json",
+      "sha256": "f70f49c50e4d93700ae09861019fd2a0257a650112a7024dfd550d6b22499496",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 28.1435658416224,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.45135135135136,
+          "available_mean": 73.43611111111112
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 75.59341092114596,
+          "available_mean": 75.59341092114596
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 49.40753598893069,
+          "available_mean": 49.40753598893069
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "RzenEmbed-v1-7B",
+        "model_size": 8.29,
+        "embedding_dimension": 3584,
+        "max_length_tokens": null,
+        "model_release_date": "2025-07-15",
+        "data_source": "RzenAI",
+        "url": "",
+        "report_generated_date": "2025-07-30T09:25:14.225556"
+      },
+      "file": "scores/RzenEmbed-v1-7B.json",
+      "sha256": "7ba586137e7096fa481a68745ccea5ff72784e8b73404098e282e1bd01161d31",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 28.06924625125654,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.6108108108108,
+          "available_mean": 73.6
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 75.16475327658522,
+          "available_mean": 81.99791266536569
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 48.866817172260966,
+          "available_mean": 48.866817172260966
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Btoks",
+        "model_backbone": "Qwen3-VL-2B-Instruct",
+        "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+        "model_size": 2.13,
+        "embedding_dimension": 2048,
+        "max_length_tokens": 32768,
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/siyrus/Btoks-Qwen3VL-2B-Instruct",
+        "paper_url": "https://arxiv.org/abs/2604.11095",
+        "report_generated_date": "2026-06-11T00:00:00.000000",
+        "source_experiment": "sieve_qwen3vl_2b_v1_expanded_train_v2_weight0.2_0513",
+        "source_checkpoint": "checkpoint-4500"
+      },
+      "file": "scores/Btoks.json",
+      "sha256": "7144b9a12c9ff4243ec8b7c06279f90270cefc4016d9206195a396dbc742a9bb",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 28.034205648459885,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 69.61892174707877,
+          "available_mean": 71.55278068449762
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 77.76733736197154,
+          "available_mean": 77.76733736197154
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 49.121270659897064,
+          "available_mean": 49.121270659897064
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Embed-RL-4B",
+        "model_backbone": "Qwen3VL-4B",
+        "model_size": "4.44",
+        "embedding_dimension": "2560",
+        "max_length_tokens": "8192",
+        "data_source": "Self-Reported",
+        "url": "https://github.com/ZoengHN/Embed-RL",
+        "report_generated_date": "2026-02-08T07:25:09.354377"
+      },
+      "file": "scores/Embed-RL-4B.json",
+      "sha256": "6f74df13e71aa5b9214160f89b3d066c5410a1f7660a039c64b87f4dbec98c99",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 27.949933987840627,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 69.26756756756757,
+          "available_mean": 71.19166666666666
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 74.73910443775048,
+          "available_mean": 74.73910443775048
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 52.99160839909482,
+          "available_mean": 52.99160839909482
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Ops-MM-embedding-v1-7B",
+        "model_backbone": "Qwen2-VL-7B",
+        "model_size": 8.29,
+        "embedding_dimension": 3584,
+        "max_length_tokens": null,
+        "model_release_date": "2025-07-03",
+        "data_source": "OpenSearch-AI",
+        "url": "https://huggingface.co/OpenSearch-AI/Ops-MM-embedding-v1-7B",
+        "report_generated_date": "2025-07-02T23:11:24.116227"
+      },
+      "file": "scores/Ops-MM-embedding-v1-7B.json",
+      "sha256": "90e26ac859e96a586f58871f70433f6c2a2e60c9cf0417e7922455cab725e635",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 27.555242227799326,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 70.75675675675676,
+          "available_mean": 72.72222222222223
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 68.7392983216367,
+          "available_mean": 74.98832544178549
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 53.76404797569951,
+          "available_mean": 53.76404797569951
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Embed-RL-2B",
+        "model_backbone": "Qwen3VL-2B",
+        "model_size": "2.13",
+        "embedding_dimension": "2048",
+        "max_length_tokens": "8192",
+        "data_source": "Self-Reported",
+        "url": "https://github.com/ZoengHN/Embed-RL",
+        "report_generated_date": "2026-02-08T07:25:08.543892"
+      },
+      "file": "scores/Crotchet-embedding-2B.json",
+      "sha256": "333e629189df2bd232d1ab361decc31084ec6a40293932fa45582837e9832f69",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 27.413726546888455,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 67.37297297297297,
+          "available_mean": 69.24444444444445
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 74.0639949418568,
+          "available_mean": 74.0639949418568
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 52.126231405791266,
+          "available_mean": 52.126231405791266
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UME-R1-7B",
+        "model_backbone": "Qwen2-VL-7B-Instruct",
+        "model_size": "8.29",
+        "embedding_dimension": 3584,
+        "max_length_tokens": null,
+        "model_release_date": "2025-11-04",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/zhibinlan/UME-R1-7B",
+        "report_generated_date": "2025-10-20T08:03:41.155975"
+      },
+      "file": "scores/UME-R1-7B.json",
+      "sha256": "f81ed38ccc025a0421043677617a5ce62174fc5d5664ef8bf8b2147888e74985",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 26.30259157753907,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 69.32162162162163,
+          "available_mean": 71.24722222222222
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 65.7318598899953,
+          "available_mean": 71.70748351635852
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 47.50154235402977,
+          "available_mean": 47.50154235402977
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "RIME-2B",
+        "model_backbone": "Qwen2-VL-2B",
+        "model_size": "2.21",
+        "embedding_dimension": 1536,
+        "max_length_tokens": null,
+        "model_release_date": "2026-04-11",
+        "data_source": "Self-Reported",
+        "url": "",
+        "report_generated_date": "2026-04-11T11:57:04.070941"
+      },
+      "file": "scores/RIME-2B.json",
+      "sha256": "1ab71c6b1a227484221800881c888c071ede9e9ab6cefc1b8e6c420128cebf02",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 26.27728305519354,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 67.3162162162162,
+          "available_mean": 69.1861111111111
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 71.45010787518521,
+          "available_mean": 71.45010787518521
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 43.732288415684906,
+          "available_mean": 43.732288415684906
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "RzenEmbed-v1-2B",
+        "model_size": 2.21,
+        "embedding_dimension": 1536,
+        "max_length_tokens": null,
+        "model_release_date": "2025-07-15",
+        "data_source": "RzenAI",
+        "url": "",
+        "report_generated_date": "2025-07-16T17:36:59.567353"
+      },
+      "file": "scores/RzenEmbed-v1-2B.json",
+      "sha256": "e6edefdddd06cea66b84d277c525f821aef86170700fd1805880dc4c9bed8eac",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 26.214945841495616,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 66.67567567567568,
+          "available_mean": 68.52777777777777
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 72.77929710401497,
+          "available_mean": 79.39559684074361
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 42.618698854878204,
+          "available_mean": 42.618698854878204
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "OmniMM-LI-3B-v0",
+        "model_backbone": "nvidia/omni-embed-nemotron-3b / Qwen2.5-Omni Thinker",
+        "model_size": 4.7,
+        "embedding_dimension": 512,
+        "max_length_tokens": 32768,
+        "model_release_date": null,
+        "data_source": "Self-Reported",
+        "score_source": "Self-Reported",
+        "url": null,
+        "contact": "anwesha.basu@tamu.edu",
+        "training_data": "VLM2Vec-V2 public training data sources: MMEB-train image; ColPali train set + VisRAG visual-document data; LLaVA-Hound video_caption_300k used for caption_retrieval and video_retrieval.",
+        "training_config": "Late Interaction dimension=512; Batch Size=32, Gradient Accumulation=4, GPUs=2 A100s; training steps 4000; 8 frames/video; reduced video weights: video_caption_300k caption_retrieval=1.5, video_caption_300k-video video_retrieval=2.5; video_qa_240k disabled.",
+        "retrieval_head": "late interaction; projected token dimension 512",
+        "notes": "Reduced video weight means total video block weight 4.0 in this run (1.5 + 2.5), not the original VLM2Vec-V2 video block weight 15. The video_qa_240k subset was not used.",
+        "report_generated_date": "2026-05-05T19:32:44.382012"
+      },
+      "file": "scores/OmniMM-LI-3B-v0.json",
+      "sha256": "e5228dc70f3fb253ba5715dad67b8d39fc35a566f3dc65f32c86597835e9c0e1",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 26.013103524743723,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 65.85135135135135,
+          "available_mean": 67.68055555555556
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 74.88833210453333,
+          "available_mean": 74.88833210453333
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 39.370538844028204,
+          "available_mean": 39.370538844028204
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Eddy-vl_embedding_1.9B_v1",
+        "model_size": 1.93,
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": null,
+        "score_source": "Self-Reported",
+        "url": "https://huggingface.co/Urock-AI/Eddy-vl_embedding_1.9B_v1",
+        "report_generated_date": "2026-03-23T00:03:09.465782"
+      },
+      "file": "scores/Eddy-vl_embedding_1.9B_v1.json",
+      "sha256": "d735005db9fb15ed4d95af6eb00692188c966db62d9a69589222b2b87750a9f9",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 25.930315253729066,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 61.65945945945946,
+          "available_mean": 63.37222222222223
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 72.68778817843834,
+          "available_mean": 72.68778817843834
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 50.04738788477793,
+          "available_mean": 50.04738788477793
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Ops-MM-embedding-v1-2B",
+        "model_backbone": "Qwen2-VL-2B",
+        "model_size": 2.21,
+        "embedding_dimension": 1536,
+        "max_length_tokens": null,
+        "model_release_date": "2025-07-03",
+        "data_source": "OpenSearch-AI",
+        "url": "https://huggingface.co/OpenSearch-AI/Ops-MM-embedding-v1-2B",
+        "report_generated_date": "2025-07-02T22:59:36.793912"
+      },
+      "file": "scores/Ops-MM-embedding-v1-2B.json",
+      "sha256": "6a4aebb7ea8f41eafd1113627484a9382cee9d174ab4129437984f2d1dd4ab8d",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 25.863009623598334,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 67.16756756756756,
+          "available_mean": 69.03333333333333
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 65.52815483164089,
+          "available_mean": 71.48525981633553
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 47.56089514023897,
+          "available_mean": 47.56089514023897
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "interestFM-UIR-CAFe-7B",
+        "model_size": 8.03,
+        "embedding_dimension": 3584,
+        "max_length_tokens": null,
+        "model_release_date": "",
+        "data_source": "Self-Reported",
+        "url": "https://arxiv.org/abs/2503.19900",
+        "report_generated_date": "2025-07-06T19:24:15.378448"
+      },
+      "file": "scores/interestFM-UIR-CAFe-7B.json",
+      "sha256": "4bf513fcb2cb90a0099878387d716a36a1ec6d7c160c1d64be74d56c9097ed49",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 24.701667362382423,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 65.72972972972973,
+          "available_mean": 67.55555555555556
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 62.42388235989166,
+          "available_mean": 68.09878075624545
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 42.39686790084784,
+          "available_mean": 42.39686790084784
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UME-R1-2B",
+        "model_backbone": "Qwen2-VL-2B-Instruct",
+        "model_size": "2.21",
+        "embedding_dimension": 1536,
+        "max_length_tokens": null,
+        "model_release_date": "2025-11-04",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/zhibinlan/UME-R1-2B",
+        "report_generated_date": "2025-10-20T08:00:47.802341"
+      },
+      "file": "scores/UME-R1-2B.json",
+      "sha256": "a67a3a025c0cd1170e686111ca00a64967aa04acaeb948fe3280df1c6382295d",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 24.502829118768897,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 64.75675675675676,
+          "available_mean": 66.55555555555556
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 62.47846351287263,
+          "available_mean": 68.1583238322247
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 42.22524490317487,
+          "available_mean": 42.22524490317487
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UniME-V2-LLaVA-OneVision-7B",
+        "model_backbone": "llava_ov",
+        "model_size": "8.03",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2025-08-28",
+        "data_source": "Self-Reported",
+        "url": "https://github.com/GaryGuTC/UniME-v2",
+        "report_generated_date": "2025-10-15T22:33:53.038390"
+      },
+      "file": "scores/UniME-V2-LLaVA-OneVision-7B.json",
+      "sha256": "f5ccf81b6c1ffa06a7f498c8c8a600a08718cdb64b972fd7e68e6c8c980d925d",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 24.269013558663918,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 69.82702702702703,
+          "available_mean": 71.76666666666667
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 55.22267995307271,
+          "available_mean": 60.24292358517023
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 39.009347626244434,
+          "available_mean": 39.009347626244434
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "EmbeddingGemma-2",
+        "model_size": "0.438",
+        "embedding_dimension": 768,
+        "max_length_tokens": 8192,
+        "model_release_date": "2026-10-06",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "report_generated_date": "2026-10-04T14:52:34.155145"
+      },
+      "file": "scores/EmbeddingGemma-2.json",
+      "sha256": "e1b5e1950cc8769715a76ef374547e0f96ceab0329365be782db883b9dc6a49e",
+      "coverage": 78,
+      "task_count": 190,
+      "overall_zero_filled": 24.223773580586844,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 55.73513513513513,
+          "available_mean": 57.28333333333333
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 67.84402342304126,
+          "available_mean": 67.84402342304126
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 50.67002323102838,
+          "available_mean": 50.67002323102838
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "VLM2Vec-V2.0-Qwen2VL-2B",
+        "report_generated_date": "2025-12-29T09:27:50.301732",
+        "model_size": 2.21,
+        "url": "https://huggingface.co/VLM2Vec/VLM2Vec-V2.0",
+        "data_source": "TIGER-Lab"
+      },
+      "file": "scores/VLM2Vec-V2.0-Qwen2VL-2B.json",
+      "sha256": "3d6ca56f0f891c6c62d806a673e7312c12db0471b3c58122f05b84116bff4747",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 23.602734653475032,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 63.16756756756756,
+          "available_mean": 64.92222222222222
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 63.470915458562246,
+          "available_mean": 69.24099868206791
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 34.66764517526458,
+          "available_mean": 34.66764517526458
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "gme-Qwen2-VL-7B-Instruct",
+        "report_generated_date": "2025-12-29T09:27:50.352865",
+        "model_size": 8.29,
+        "url": "https://huggingface.co/Alibaba-NLP/gme-Qwen2-VL-7B-Instruct",
+        "data_source": "TIGER-Lab"
+      },
+      "file": "scores/gme-Qwen2-VL-7B-Instruct.json",
+      "sha256": "653ec10028a427da04fdcc17116f79929072286e6962820edd0cafaa30264de3",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 23.532599900562797,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 54.418918918918926,
+          "available_mean": 55.930555555555564
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 73.58428032936146,
+          "available_mean": 80.27376035930341
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 38.426180733458665,
+          "available_mean": 38.426180733458665
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "gme-Qwen2-VL-2B-Instruct",
+        "report_generated_date": "2025-12-29T09:27:50.332077",
+        "model_size": 2.21,
+        "url": "https://huggingface.co/Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+        "data_source": "TIGER-Lab"
+      },
+      "file": "scores/gme-Qwen2-VL-2B-Instruct.json",
+      "sha256": "01d81e19ced12f3d6c85e8d750824babb18836bfaec5fc8f3f3fb375075809b5",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 22.023393350487087,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 50.47027027027027,
+          "available_mean": 51.87222222222222
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 71.35066924946506,
+          "available_mean": 77.83709372668915
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 33.59048192252141,
+          "available_mean": 33.59048192252141
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "interestFM-UIR-CAFe-0.5B",
+        "model_size": 0.894,
+        "embedding_dimension": 896,
+        "max_length_tokens": null,
+        "model_release_date": "",
+        "data_source": "Self-Reported",
+        "url": "https://arxiv.org/abs/2503.19900",
+        "report_generated_date": "2025-07-06T19:24:15.037083"
+      },
+      "file": "scores/interestFM-UIR-CAFe-0.5B.json",
+      "sha256": "6e3d4233b716638239b3900b80f08baeaec8fb160ccdad52e71f8b0a0b79e6fb",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 20.2503609835906,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 53.935135135135134,
+          "available_mean": 55.43333333333333
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 50.26284556661191,
+          "available_mean": 54.83219516357663
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 35.87001629352932,
+          "available_mean": 35.87001629352932
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "VLM2Vec-V1-Qwen2VL-7B",
+        "report_generated_date": "2025-12-29T09:27:50.447394",
+        "model_size": 8.29,
+        "url": "https://huggingface.co/TIGER-Lab/VLM2Vec-Qwen2VL-7B",
+        "data_source": "TIGER-Lab"
+      },
+      "file": "scores/VLM2Vec-V1-Qwen2VL-7B.json",
+      "sha256": "c1973f0fe3ebde680c5df479d85eb24fe36d58af1914f69cf148c7f0f1db3653",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 19.29278656378732,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 63.599999999999994,
+          "available_mean": 65.36666666666666
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 29.338885750308282,
+          "available_mean": 32.00605718215449
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 33.794232728455114,
+          "available_mean": 33.794232728455114
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "LamRA-Ret-Qwen2.5VL-7b",
+        "report_generated_date": "2025-06-28T08:54:18.581107",
+        "model_size": 8.29,
+        "url": "https://huggingface.co/code-kunkun/LamRA-Ret-Qwen2.5VL-7b",
+        "data_source": "TIGER-Lab"
+      },
+      "file": "scores/LamRA-Ret-Qwen2.5VL-7b.json",
+      "sha256": "b41cf5c911000194893e6453adf6fb0baabc3f2506a07588ac52545a0ded90d2",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 19.220853474898924,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 51.11891891891892,
+          "available_mean": 52.53888888888889
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 47.987448982231825,
+          "available_mean": 52.3499443442529
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 33.825743592068385,
+          "available_mean": 33.825743592068385
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "colpali-v1.3",
+        "report_generated_date": "2025-12-29T09:27:50.414129",
+        "model_size": 2.92,
+        "url": "https://huggingface.co/vidore/colpali-v1.3",
+        "data_source": "TIGER-Lab"
+      },
+      "file": "scores/colpali-v1.3.json",
+      "sha256": "30843a6324427c3796b7aacd2efe537b21d756c6e4e1f0adfd2418fae83a02c0",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 18.145637252805912,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 33.94864864864864,
+          "available_mean": 34.891666666666666
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 70.1411403884218,
+          "available_mean": 76.51760769646015
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 28.23242826172221,
+          "available_mean": 28.23242826172221
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "VLM2Vec-V1-Qwen2VL-2B",
+        "report_generated_date": "2025-12-29T09:27:50.432685",
+        "model_size": 2.21,
+        "url": "https://huggingface.co/TIGER-Lab/VLM2Vec-Qwen2VL-2B",
+        "data_source": "TIGER-Lab"
+      },
+      "file": "scores/VLM2Vec-V1-Qwen2VL-2B.json",
+      "sha256": "9f9869526108f8eb7a447baa73c0a2ab041b483dfafff4d1ade0e1f46adff002",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 17.525879535796367,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 58.11351351351351,
+          "available_mean": 59.727777777777774
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 27.743783728850257,
+          "available_mean": 30.26594588601846
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 28.548127906050198,
+          "available_mean": 28.548127906050198
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "LamRA-Ret",
+        "report_generated_date": "2025-12-29T09:27:50.385069",
+        "model_size": 8.29,
+        "url": "https://huggingface.co/code-kunkun/LamRA-Ret",
+        "data_source": "TIGER-Lab"
+      },
+      "file": "scores/LamRA-Ret.json",
+      "sha256": "319c15ea0017da9f763dcac994fd574830068944a2b627f2b99a1c06189d6973",
+      "coverage": 76,
+      "task_count": 190,
+      "overall_zero_filled": 17.079834442193416,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 52.67027027027027,
+          "available_mean": 54.13333333333333
+        },
+        "visdoc": {
+          "coverage": 22,
+          "tasks": 24,
+          "zero_filled_mean": 27.604900380975423,
+          "available_mean": 30.114436779245917
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 35.213940826296636,
+          "available_mean": 35.213940826296636
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "SME-8B-V1",
+        "model_backbone": "",
+        "model_size": "8.14",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-08-04",
+        "data_source": "Self-Reported",
+        "url": "",
+        "contact": "",
+        "image_score": "80.38",
+        "checkpoint_path": "",
+        "score_json_path": "",
+        "image_dir": "",
+        "score_summary": {
+          "IMG_CLS(10)": "74.17",
+          "IMG_QA(10)": "81.51",
+          "IMG_RET(12)": "80.42",
+          "IMG_GRD(4)": "92.90",
+          "IMG(36)": "80.38",
+          "IND(20)": "81.83",
+          "OOD(16)": "78.55"
+        },
+        "report_generated_date": "2026-08-04T14:49:22.328155"
+      },
+      "file": "scores/SME-8B-V1.json",
+      "sha256": "1cb357d7efdd51dbb9433d9025e446f01174951a514f9e89b9d073edf821a2fb",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 15.228947368421053,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 78.20270270270271,
+          "available_mean": 80.375
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "MMI-VL-Embedding",
+        "model_backbone": "",
+        "model_size": "8.29",
+        "embedding_dimension": 4096,
+        "max_length_tokens": 32768,
+        "model_release_date": "",
+        "data_source": "Self-Reported",
+        "url": "",
+        "contact": "sjd163mail@163.com",
+        "report_generated_date": "2026-04-27T09:49:26.574000"
+      },
+      "file": "scores/MMI-VL-Embedding.json",
+      "sha256": "6b3ebcdbc5027ea4f76f206aef61491cf45715b5085b20986e08befba7322835",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 15.214210526315789,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 78.12702702702703,
+          "available_mean": 80.29722222222222
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Taichu-Embedding-9B",
+        "model_size": "9.4",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-07-31",
+        "data_source": "",
+        "url": "",
+        "report_generated_date": "2026-07-30T16:07:44.000843"
+      },
+      "file": "scores/Taichu-Embedding-9B.json",
+      "sha256": "b0c7f5b3f4f31b71bcd5e154de3ded0b9111b2dff13a59e1ab4912ccf81893b2",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 15.134210526315789,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 77.71621621621621,
+          "available_mean": 79.875
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "SME-2B-V1",
+        "model_backbone": "",
+        "model_size": "2.14",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-08-04",
+        "data_source": "Self-Reported",
+        "url": "",
+        "contact": "",
+        "image_score": "78.41",
+        "checkpoint_path": "",
+        "score_json_path": "",
+        "image_dir": "",
+        "score_summary": {
+          "IMG_CLS(10)": "72.01",
+          "IMG_QA(10)": "78.44",
+          "IMG_RET(12)": "79.08",
+          "IMG_GRD(4)": "92.28",
+          "IMG(36)": "78.41",
+          "IND(20)": "79.36",
+          "OOD(16)": "77.21"
+        },
+        "report_generated_date": "2026-08-04T14:49:22.260766"
+      },
+      "file": "scores/SME-2B-V1.json",
+      "sha256": "63ef4954f7064fed42460e99d4f81ed442e86c011d140c038464e52aef6f6305",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 14.85578947368421,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 76.28648648648648,
+          "available_mean": 78.40555555555555
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "QQMM-embed-v3",
+        "model_backbone": "QQMM",
+        "model_size": 8.29,
+        "embedding_dimension": 3584,
+        "max_length_tokens": 4096,
+        "model_release_date": "2025-12-30",
+        "data_source": "Self-Reported",
+        "report_generated_date": "2025-12-30T17:06:50.924943"
+      },
+      "file": "scores/QQMM-embed-v3.json",
+      "sha256": "dcc98d46a63478d6e632d33825d83428feb161ad58673a6ea0322e2570e1fb10",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 14.818947368421052,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 76.09729729729729,
+          "available_mean": 78.21111111111111
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "SME-2B-v0.1",
+        "model_backbone": "",
+        "model_size": "2.14",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-07-02",
+        "data_source": "Self-Reported",
+        "url": "",
+        "report_generated_date": "2026-07-02T10:34:30.441282"
+      },
+      "file": "scores/SME-2B-v0.1.json",
+      "sha256": "f50ec9a6d4513247335d27de449c51b734b936535cf3f51d4f98be1eda019efb",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 14.541578947368421,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 74.67297297297297,
+          "available_mean": 76.74722222222222
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Taichu-Embedding-2B",
+        "model_size": "2.2",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-08-11",
+        "data_source": "",
+        "url": "",
+        "report_generated_date": "2026-08-11T09:59:18.641567"
+      },
+      "file": "scores/Taichu-Embedding-2B.json",
+      "sha256": "c50439fe108fa273c1ae80901b24798f5dbbd61c8ceed122a41f21b3b9285a6d",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 14.470526315789474,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 74.30810810810812,
+          "available_mean": 76.37222222222222
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "QQMM-embed-v2",
+        "model_backbone": "QQMM",
+        "model_size": 8.29,
+        "embedding_dimension": 3584,
+        "max_length_tokens": 4096,
+        "model_release_date": "2025-09-15",
+        "data_source": "Self-Reported",
+        "url": "https://github.com/QQ-MM/QQMM-embed",
+        "report_generated_date": "2025-09-15T17:33:58.137833"
+      },
+      "file": "scores/QQMM-embed-v2.json",
+      "sha256": "c1e25fbd66a4b969464fd0188379ce3433380f5576d21f685f4e2c1b0e337be6",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 14.263157894736842,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 73.24324324324324,
+          "available_mean": 75.27777777777777
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "RGE(Qwen2VL-7B)",
+        "model_backbone": "Qwen2VL",
+        "model_size": "7B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2025-11-20",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/MCG-NJU/RGE",
+        "report_generated_date": "2026-05-11T15:49:32.810768"
+      },
+      "file": "scores/RGE(Qwen2VL-7B).json",
+      "sha256": "7d140f52ebc1f207ab2610b3315c899f147db6a9a2cb09ff4659db0ac7e14b4f",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 14.081052631578947,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 72.30810810810812,
+          "available_mean": 74.31666666666666
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "ALICE-8B (Qwen3VL-8B)",
+        "model_backbone": "Qwen3VL-8B",
+        "model_size": "8B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-5-11",
+        "data_source": "Self-Reported",
+        "url": null,
+        "report_generated_date": "2026-05-11T16:17:07.468738"
+      },
+      "file": "scores/ALICE-8B.json",
+      "sha256": "2714c0e3174ca58b8367d60d1d6296a529cee0fd49ae4d2aa46ed30411600514",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 14.067894736842106,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 72.24054054054054,
+          "available_mean": 74.24722222222222
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UniVec-CoT-7B",
+        "model_size": 8.29,
+        "embedding_dimension": 3584,
+        "model_release_date": "2025-12-02",
+        "data_source": "Self-Reported",
+        "url": "",
+        "contact": ""
+      },
+      "file": "scores/UniVec-CoT-7B.json",
+      "sha256": "a6f8774ada30dd08f3dc0e195e121ef8f191dea4546c8e3d46d3fbaf9a4a5094",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 14.04157894736842,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 72.10540540540539,
+          "available_mean": 74.10833333333332
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "OEmbedding-v1-7B",
+        "model_backbone": "Qwen2-VL-7B-Instruct",
+        "model_size": 8.29,
+        "embedding_dimension": 3584,
+        "max_length_tokens": null,
+        "model_release_date": "2025-10-14",
+        "data_source": "Self-Reported",
+        "url": "",
+        "report_generated_date": "2025-10-14T14:25:49.651141"
+      },
+      "file": "scores/OEmbedding-v1-7B.json",
+      "sha256": "ef6253d16293edc64a9d00f55334a27e7c812cef1fff604d9ebec33c9063fe54",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 14.030526315789475,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 72.04864864864865,
+          "available_mean": 74.05000000000001
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "ReCo-7B",
+        "model_backbone": "Qwen2-VL-7B-Instruct",
+        "model_size": 8.29,
+        "embedding_dimension": 3584,
+        "max_length_tokens": 4096,
+        "model_release_date": "2025-08-13",
+        "data_source": "Self-Reported",
+        "url": "",
+        "report_generated_date": "2025-08-15T11:46:24.390071"
+      },
+      "file": "scores/ReCo-7B.json",
+      "sha256": "7d5d28f07f0c757072ea6a3191fb42400acc0833dd5169c7fc96f0cbe347142d",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.996842105263159,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.87567567567568,
+          "available_mean": 73.87222222222222
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "UniVec-7B",
+        "model_size": 8.29,
+        "embedding_dimension": 3584,
+        "model_release_date": "2025-11-28",
+        "data_source": "Self-Reported",
+        "url": "",
+        "contact": ""
+      },
+      "file": "scores/UniVec-7B.json",
+      "sha256": "2b355779d9654cc4d68a183918e50360ff5e38169c3f955d1a709a3af3ce752c",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.982105263157894,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.8,
+          "available_mean": 73.79444444444444
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "ReMatch-7B",
+        "model_size": "8.29",
+        "embedding_dimension": 3584,
+        "max_length_tokens": null,
+        "model_release_date": "2025-11-24",
+        "score_source": "Self-Reported",
+        "url": "https://github.com/FireRedTeam/ReMatch",
+        "report_generated_date": "2025-11-24T12:19:02.408483"
+      },
+      "file": "scores/ReMatch-7B.json",
+      "sha256": "bd7825248cc08873a32c12a42ecdabdc2dd3931661d4365a77c73adc2d8fe186",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.963684210526315,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.7054054054054,
+          "available_mean": 73.69722222222222
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "ALICE-7B (Qwen2.5VL-7B)",
+        "model_backbone": "Qwen2.5VL-7B",
+        "model_size": "7B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-5-11",
+        "data_source": "Self-Reported",
+        "url": null,
+        "report_generated_date": "2026-05-11T16:17:06.292871"
+      },
+      "file": "scores/ALICE-7B.json",
+      "sha256": "ae3eebbba3f40f7a07e3e03b447794860490b69470ced8cce948ae6aa9ba9ec2",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.909473684210527,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.42702702702704,
+          "available_mean": 73.41111111111111
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "dp-embedding-v3-lite",
+        "model_size": 8.29,
+        "embedding_dimension": 768,
+        "max_length_tokens": null,
+        "model_release_date": "2025-12-11",
+        "data_source": "",
+        "url": "",
+        "report_generated_date": "2025-12-15T10:41:05.995239"
+      },
+      "file": "scores/dp-embedding-v3-lite.json",
+      "sha256": "d0805956d70e821621316c9d372ec2c3539d81bbcd9f9362f09077cfa2e103fd",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.902631578947368,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 71.39189189189189,
+          "available_mean": 73.375
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "ALICE-4B (Qwen3VL-4B)",
+        "model_backbone": "Qwen3VL-4B",
+        "model_size": "4B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-5-11",
+        "data_source": "Self-Reported",
+        "url": null,
+        "report_generated_date": "2026-05-11T16:17:05.956770"
+      },
+      "file": "scores/ALICE-4B.json",
+      "sha256": "37b031c8c50b42d5b25fcab2d0883ab3e89083db254ca33bce360921e6571f70",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.8,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 70.86486486486487,
+          "available_mean": 72.83333333333333
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "RGE(Qwen2.5VL-7B)",
+        "model_backbone": "Qwen2.5VL",
+        "model_size": "7B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2025-11-20",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/MCG-NJU/RGE",
+        "report_generated_date": "2026-05-11T15:49:31.062703"
+      },
+      "file": "scores/RGE(Qwen2.5VL-7B).json",
+      "sha256": "c215b6b02bb809adab8b6c0c378d40697a0bcac39e9a2f09009a2bac3cd74009",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.76157894736842,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 70.66756756756756,
+          "available_mean": 72.63055555555555
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "TCE-v1",
+        "model_size": 8,
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2025-10-31",
+        "data_source": "",
+        "url": "",
+        "report_generated_date": "2025-10-31T14:33:36.676783"
+      },
+      "file": "scores/taichu-embedding-v1.json",
+      "sha256": "96e9d6e12c74974e91f9e07efb8df372e04f8f62c410a244fc854decaed9853d",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.709473684210527,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 70.4,
+          "available_mean": 72.35555555555555
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "ALICE-3B (Qwen2.5VL-3B)",
+        "model_backbone": "Qwen2.5VL-3B",
+        "model_size": "3B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-5-11",
+        "data_source": "Self-Reported",
+        "url": null,
+        "report_generated_date": "2026-05-11T16:17:07.097653"
+      },
+      "file": "scores/ALICE-3B.json",
+      "sha256": "5b7a86dbc47fc88bd32f365748070cef459c8c4e5b67d24d2490a00791bc9bcb",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.613684210526316,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 69.90810810810811,
+          "available_mean": 71.85
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "S2R-7B",
+        "model_backbone": "Qwen2VL-7B",
+        "model_size": "7B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2025-03-01",
+        "score_source": "",
+        "url": "",
+        "report_generated_date": "2026-03-26T08:45:04.555979"
+      },
+      "file": "scores/S2R-7B.json",
+      "sha256": "b4aa3acf0991cc5b7f0fe8db1f5564d50ce91a40038f4297a76d24b83dbaebc9",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.49157894736842,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 69.28108108108108,
+          "available_mean": 71.20555555555556
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "ALICE-2B (Qwen3VL-2B)",
+        "model_backbone": "Qwen3VL-2B",
+        "model_size": "2B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-5-11",
+        "data_source": "Self-Reported",
+        "url": null,
+        "report_generated_date": "2026-05-11T16:17:05.653050"
+      },
+      "file": "scores/ALICE-2B.json",
+      "sha256": "3962c705cf3cf88e4674ae504be838a4f9bb2f936f30dc67904472951450d2b8",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.375263157894738,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 68.6837837837838,
+          "available_mean": 70.59166666666667
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "ReMatch-3B",
+        "model_size": "3.75",
+        "embedding_dimension": 2048,
+        "max_length_tokens": null,
+        "model_release_date": "2025-11-24",
+        "score_source": "Self-Reported",
+        "url": "https://github.com/FireRedTeam/ReMatch",
+        "report_generated_date": "2025-11-24T12:19:02.227418"
+      },
+      "file": "scores/ReMatch-3B.json",
+      "sha256": "30281a7f108d5e9fe48f42655d00e70c28c43a54b82b3c38c5d31acc4e0f9042",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.300526315789472,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 68.3,
+          "available_mean": 70.19722222222222
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "RGE(Qwen2.5VL-3B)",
+        "model_backbone": "Qwen2.5VL",
+        "model_size": "3B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2025-11-20",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/MCG-NJU/RGE",
+        "report_generated_date": "2025-11-20T15:49:30.024670"
+      },
+      "file": "scores/RGE(Qwen2.5VL-3B).json",
+      "sha256": "944771f71d317c17a88b094da859254f71f9061c22e149d1e969c5b7367167d7",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.28578947368421,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 68.22432432432431,
+          "available_mean": 70.11944444444444
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "RGE(Qwen2VL-2B)",
+        "model_backbone": "Qwen2VL",
+        "model_size": "2B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2025-11-20",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/MCG-NJU/RGE",
+        "report_generated_date": "2026-05-11T15:49:31.956978"
+      },
+      "file": "scores/RGE(Qwen2VL-2B).json",
+      "sha256": "db73f1a625ec3581a960b12e324fad41610a4c1ddad0d49f1f97f99ccb1f4918",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.16263157894737,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 67.59189189189189,
+          "available_mean": 69.46944444444445
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "ReMatch-2B",
+        "model_size": "2.21",
+        "embedding_dimension": 1536,
+        "max_length_tokens": null,
+        "model_release_date": "2025-11-24",
+        "score_source": "Self-Reported",
+        "url": "https://github.com/FireRedTeam/ReMatch",
+        "report_generated_date": "2025-11-24T12:19:01.814804"
+      },
+      "file": "scores/ReMatch-2B.json",
+      "sha256": "b7b786706e6071c6a940436742f6a2c036d2eb22bada52cde3b0866e02e1e913",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 13.112631578947369,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 67.33513513513513,
+          "available_mean": 69.20555555555556
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "S2R-2B",
+        "model_backbone": "Qwen2VL-2B",
+        "model_size": "2B parameters",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2025-03-1",
+        "score_source": "",
+        "url": "",
+        "report_generated_date": "2026-03-26T16:38:40.197169"
+      },
+      "file": "scores/S2R-2B.json",
+      "sha256": "19d79086947f016a97b292f5eaa15332912c6ced70a8a499030ab9f8248cbe3b",
+      "coverage": 36,
+      "task_count": 190,
+      "overall_zero_filled": 12.462631578947368,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 36,
+          "tasks": 37,
+          "zero_filled_mean": 63.9972972972973,
+          "available_mean": 65.775
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Ops-Colqwen3-4B",
+        "model_backbone": "Qwen3-VL-8B",
+        "model_size": 4.44,
+        "embedding_dimension": 2560,
+        "max_length_tokens": null,
+        "model_release_date": "2026-01-24",
+        "data_source": "OpenSearch-AI",
+        "url": "https://huggingface.co/OpenSearch-AI/Ops-Colqwen3-4B",
+        "report_generated_date": "2026-01-27T12:01:31.653851"
+      },
+      "file": "scores/Ops-Colqwen3-4B.json",
+      "sha256": "65fc9fd257198dd5dec4476fea36d9562b8e69c7f82eabe0384dbd4403b8b7b3",
+      "coverage": 24,
+      "task_count": 190,
+      "overall_zero_filled": 10.62540899849389,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 0,
+          "tasks": 37,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 84.11782123807664,
+          "available_mean": 84.11782123807664
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Taichu-UniRetriever-8B",
+        "model_size": "8.77",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-1-15",
+        "data_source": "",
+        "url": "",
+        "report_generated_date": "2026-01-15T10:05:25.903699"
+      },
+      "file": "scores/Taichu-UniRetriever-v1.json",
+      "sha256": "96a9c804ee772fca5b9f18c54274fb36f3dd7160000033efe1948d4b557a891f",
+      "coverage": 24,
+      "task_count": 190,
+      "overall_zero_filled": 10.515668296802106,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 0,
+          "tasks": 37,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 83.24904068301667,
+          "available_mean": 83.24904068301667
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "Taichu-UniRetriever-2B",
+        "model_size": "2.13",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-1-15",
+        "data_source": "",
+        "url": "",
+        "report_generated_date": "2026-01-15T09:57:17.848402"
+      },
+      "file": "scores/Taichu-UniRetriever-v1-2B.json",
+      "sha256": "856c28b36a02f00e391987bd348cef85e43112af75fff611bdd20a330ce885ca",
+      "coverage": 24,
+      "task_count": 190,
+      "overall_zero_filled": 10.270702240422342,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 0,
+          "tasks": 37,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "visdoc": {
+          "coverage": 24,
+          "tasks": 24,
+          "zero_filled_mean": 81.3097260700102,
+          "available_mean": 81.3097260700102
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "GVE-7B",
+        "model_size": 8.29,
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/Alibaba-NLP/GVE-7B",
+        "contact": "zhuoning.guo@gmail.com"
+      },
+      "file": "scores/GVE-7B.json",
+      "sha256": "1c2ff945aa569ffdabd6d4af5479e0e680a8a4643aae5102a926501896059bcf",
+      "coverage": 18,
+      "task_count": 190,
+      "overall_zero_filled": 4.790473684210527,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 0,
+          "tasks": 37,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 18,
+          "tasks": 18,
+          "zero_filled_mean": 50.56611111111111,
+          "available_mean": 50.56611111111111
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "jina-embeddings-v5-omni-small",
+        "model_backbone": "jina-embeddings-v5-text",
+        "model_size": 1.626268672,
+        "embedding_dimension": 1024,
+        "max_length_tokens": 32768,
+        "model_release_date": "2026-04-01",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/jinaai/jina-embeddings-v5-omni-small",
+        "model_sha": "127a6f9c7dbb47c9c1d97dc4fa040dc250ec6d42",
+        "report_generated_date": "2026-05-08T08:45:15.622977"
+      },
+      "file": "scores/jina-embeddings-v5-omni-small.json",
+      "sha256": "8cc53150994d2bd1c4796a001abb4a9bf7186bd1538769d980de91b00edeb5e6",
+      "coverage": 1,
+      "task_count": 190,
+      "overall_zero_filled": 0.19210526315789472,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 0,
+          "tasks": 37,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 1,
+          "tasks": 18,
+          "zero_filled_mean": 2.0277777777777777,
+          "available_mean": 36.5
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "jina-embeddings-v5-omni-nano",
+        "model_backbone": "jina-embeddings-v5-text",
+        "model_size": 0.985984512,
+        "embedding_dimension": 768,
+        "max_length_tokens": 8192,
+        "model_release_date": "2026-04-01",
+        "data_source": "Self-Reported",
+        "url": "https://huggingface.co/jinaai/jina-embeddings-v5-omni-nano",
+        "model_sha": "239e42e62b94a11abe778b8b688fade126550ed1",
+        "report_generated_date": "2026-05-08T08:45:15.622977"
+      },
+      "file": "scores/jina-embeddings-v5-omni-nano.json",
+      "sha256": "2bb8d3f99e2bddf91c133a435a939df9b8376a6377ad90d1402ab5be6f149f77",
+      "coverage": 1,
+      "task_count": 190,
+      "overall_zero_filled": 0.1326315789473684,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 0,
+          "tasks": 37,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 1,
+          "tasks": 18,
+          "zero_filled_mean": 1.4,
+          "available_mean": 25.2
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    },
+    {
+      "metadata": {
+        "model_name": "TCR",
+        "model_size": "8.77",
+        "embedding_dimension": null,
+        "max_length_tokens": null,
+        "model_release_date": "2026-1-15",
+        "data_source": "",
+        "url": "",
+        "report_generated_date": "2026-01-15T10:32:12.708538"
+      },
+      "file": "scores/Taichu-UniRetriever-v1-8B.json",
+      "sha256": "08c916ab99b07c904223b9fbe007c68ae00170620621840d023ca2ca1167420b",
+      "coverage": 0,
+      "task_count": 190,
+      "overall_zero_filled": 0.0,
+      "scores": {
+        "text": {
+          "coverage": 0,
+          "tasks": 53,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "image": {
+          "coverage": 0,
+          "tasks": 37,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "visdoc": {
+          "coverage": 0,
+          "tasks": 24,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "video": {
+          "coverage": 0,
+          "tasks": 18,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "audio": {
+          "coverage": 0,
+          "tasks": 11,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        },
+        "agent": {
+          "coverage": 0,
+          "tasks": 47,
+          "zero_filled_mean": 0.0,
+          "available_mean": null
+        }
+      }
+    }
+  ]
+}

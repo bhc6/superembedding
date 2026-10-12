@@ -1,0 +1,25 @@
+{
+  "protocol": "step556-exact-diagnostic-continuation-v1",
+  "sealed_utc": "2026-10-12T06:08:02.362366+00:00",
+  "parent_run": "D:\\DEMO\\superembedding-storage\\superembedding\\v5\\general_stage1_v51",
+  "parent_step": 556,
+  "parent_checkpoint_sha256": "916dbea86eceb965d4888ab4339305775cd590bad2f8900f1879a1aa7792f2fb",
+  "sealed_files": {
+    "D:\\DEMO\\superembedding\\scripts\\train_general.py": "7bc859a22530508c7718c4dd6e4dc3666d034442275cf5a6e025d18f2064d624",
+    "D:\\DEMO\\superembedding\\superembedding\\general.py": "529b524c89295b2969e97a235ea25a4603f3ed88df5bcef677d4c040cf0f492b",
+    "D:\\DEMO\\superembedding\\superembedding\\checkpoint.py": "d535916cacebcf9f985b314ed50d823cd1956c452cd49d0524b13e7c9461f6b3",
+    "D:\\DEMO\\superembedding\\superembedding\\heads.py": "a13053e0083f59d5e4333cae758a60b23302dc5bb9d2e9f6b8d16147275cc39e",
+    "D:\\DEMO\\superembedding-storage\\superembedding\\v5\\data_v51\\records.jsonl": "470b7a9b2ca8017fdaad15c404f54b9179a0d556434807d252e89102e9a92f44",
+    "D:\\DEMO\\superembedding\\scripts\\continue_step556.py": "32a9d07937f32b11ac218e3e83f85185a18928f1e7b4355db273d54a562cf402"
+  },
+  "training_data_unchanged": true,
+  "resume_optimizer_rng_and_sampler": true,
+  "terminal_step": 2000,
+  "terminal_rule": "Original pre-audit fixed 2000 updates; never select by observed scores.",
+  "old_validation_use": "Diagnostic only. Trainer still records best.pt for historical numerical equivalence; it is NOT the confirmatory checkpoint.",
+  "confirmatory_checkpoint": "Fixed terminal step 2000, subject to separate evaluation clearance. No automatic external evaluation.",
+  "new_holdout_boundary": "All historical train AND validation manifests, including pre-v51 data, are development exposure. New holdouts require image/document/entity/scene and text-overlap audit against that union.",
+  "not_a_clean_retraining_claim": true,
+  "release_eligible": false,
+  "scope": "Continue useful V5 learned weights; does not repair CUB/DTD historical experiments or certify no pretraining contamination."
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "restored_step": 556,
+  "saved_step": 557,
+  "optimizer_states": 304,
+  "all_optimizer_steps": 557,
+  "rng_preserved": true,
+  "gradient_replay_max_error": 0,
+  "parent_preserved": true,
+  "scope": "Actual resume/update/save smoke; not an independent uninterrupted-vs-resumed trajectory comparison"
+}

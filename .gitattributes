@@ -4,3 +4,10 @@
 *.png binary
 *.pdf binary
 *.zip binary
+# Preserve exact bytes of the already-sealed acquisition implementation.
+scripts/prepare_official_vsr_holdout_v2.py -text
+# Audit manifests reference SHA256 of these exact JSON bytes.
+/artifacts/results/v5/** -text
+/artifacts/results/data_leakage_review.json -text
+/artifacts/data/cub_attributes_leakage_v2_draft/** -text
+/artifacts/data/dtd_leakage_v2_draft/** -text

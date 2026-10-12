@@ -1,0 +1,599 @@
+{
+  "selection": {
+    "selected_step": 250,
+    "selection": "First full validation checkpoint; interim, not final 2000-step best",
+    "checkpoint_sha256": "a51170d12c2886838599b61663566f8626b3bf643f2aecccccf9e6f57430ce38",
+    "export_sha256": "3cad7dfc34c749bc8b0b25782c3026cd98f49ef5adcbc0f1fbf7cca2a52af016",
+    "test_used_for_selection": false,
+    "pid": 33400,
+    "scope": "Interim Step250 diagnostic, no test-based checkpoint or architecture selection",
+    "tests": [
+      "Official MMEB ScienceQA 1000",
+      "Urban1k common999",
+      "Synthetic paired evidence v1"
+    ]
+  },
+  "scienceqa_full": {
+    "backend": "general_3cad7dfc34c7_cpu",
+    "queries": 1000,
+    "unique_targets": 736,
+    "hit@1": 0.144,
+    "wilson_95": [
+      0.12360059987923061,
+      0.16712415191427943
+    ],
+    "candidate_count_min": 736,
+    "candidate_count_max": 736,
+    "provenance": {
+      "backend": "general",
+      "spec": {},
+      "dataset": {
+        "dataset": "TIGER-Lab/MMEB-eval",
+        "revision": "2f069730be515ea60778413777816b53e2d2a697",
+        "config": "ScienceQA",
+        "split": "test",
+        "queries": 1000,
+        "parquet_sha256": "ee300b032eb566134f81545d0a9b530ae414e5a67e7eda0bca1c8299d582a7b0",
+        "scope": "Complete official task; original per-query candidate lists and positive-at-index-0 preserved."
+      },
+      "query": "original qry_text with image placeholder removed; no additional task instruction",
+      "candidate": "raw original target text; no task instruction",
+      "metric": "hit@1 on each original candidate list; target text equals first entry",
+      "api_warning": null,
+      "checkpoint_sha256": "3cad7dfc34c749bc8b0b25782c3026cd98f49ef5adcbc0f1fbf7cca2a52af016",
+      "execution": "cpu float32"
+    },
+    "local_evaluation": true,
+    "training_on_this_task": false,
+    "scope": "Full ScienceQA task from pinned MMEB-v1 metadata; NOT full MMEB or proof of SOTA.",
+    "question_types": {
+      "other": {
+        "queries": 966,
+        "hit@1": 0.14803312629399587
+      },
+      "material": {
+        "queries": 15,
+        "hit@1": 0.0
+      },
+      "time": {
+        "queries": 9,
+        "hit@1": 0.1111111111111111
+      },
+      "comparison": {
+        "queries": 10,
+        "hit@1": 0.0
+      }
+    },
+    "question_type_annotation": "Question-only heuristic, not official ScienceQA question types"
+  },
+  "scienceqa_text_only": {
+    "backend": "general_3cad7dfc34c7_cpu_text_only",
+    "queries": 1000,
+    "unique_targets": 736,
+    "hit@1": 0.071,
+    "wilson_95": [
+      0.05666945999361375,
+      0.08861401899350932
+    ],
+    "candidate_count_min": 736,
+    "candidate_count_max": 736,
+    "provenance": {
+      "backend": "general",
+      "spec": {},
+      "dataset": {
+        "dataset": "TIGER-Lab/MMEB-eval",
+        "revision": "2f069730be515ea60778413777816b53e2d2a697",
+        "config": "ScienceQA",
+        "split": "test",
+        "queries": 1000,
+        "parquet_sha256": "ee300b032eb566134f81545d0a9b530ae414e5a67e7eda0bca1c8299d582a7b0",
+        "scope": "Complete official task; original per-query candidate lists and positive-at-index-0 preserved."
+      },
+      "query": "original qry_text with image placeholder removed; no additional task instruction",
+      "candidate": "raw original target text; no task instruction",
+      "metric": "hit@1 on each original candidate list; target text equals first entry",
+      "api_warning": null,
+      "checkpoint_sha256": "3cad7dfc34c749bc8b0b25782c3026cd98f49ef5adcbc0f1fbf7cca2a52af016",
+      "execution": "cpu float32",
+      "query_mode": "text_only",
+      "control": "Remove query images only; reuse exact full-input target vectors"
+    },
+    "local_evaluation": true,
+    "training_on_this_task": false,
+    "scope": "Full ScienceQA task from pinned MMEB-v1 metadata; NOT full MMEB or proof of SOTA.",
+    "question_types": {
+      "other": {
+        "queries": 966,
+        "hit@1": 0.07349896480331262
+      },
+      "material": {
+        "queries": 15,
+        "hit@1": 0.0
+      },
+      "time": {
+        "queries": 9,
+        "hit@1": 0.0
+      },
+      "comparison": {
+        "queries": 10,
+        "hit@1": 0.0
+      }
+    },
+    "question_type_annotation": "Question-only heuristic, not official ScienceQA question types",
+    "full_minus_text_only": {
+      "delta": 0.073,
+      "paired_bootstrap_95": [
+        0.053,
+        0.094
+      ],
+      "unit": "query; shared answer/image dependence not clustered",
+      "full_result_sha256": "7c262781bfa698434e6fe3d10f20bb8a7acbcf8f72cda6c3041c5c7a076b22de"
+    }
+  },
+  "urban1k": {
+    "general_3cad7dfc34c7_cpu": {
+      "image_to_text_R@1": 0.25525525212287903,
+      "image_to_text_R@5": 0.46746745705604553,
+      "image_to_text_R@10": 0.5775775909423828,
+      "text_to_image_R@1": 0.22822822630405426,
+      "text_to_image_R@5": 0.4464464485645294,
+      "text_to_image_R@10": 0.5605605840682983
+    },
+    "omnijev_raw_cpu": {
+      "image_to_text_R@1": 0.0400400385260582,
+      "image_to_text_R@5": 0.11011011153459549,
+      "image_to_text_R@10": 0.1511511504650116,
+      "text_to_image_R@1": 0.023023022338747978,
+      "text_to_image_R@5": 0.07807807624340057,
+      "text_to_image_R@10": 0.11011011153459549
+    }
+  },
+  "evidence": {
+    "color": {
+      "qwen3_vl": {
+        "rate": 0.90625,
+        "cluster_bootstrap_95": [
+          0.828125,
+          0.96875
+        ],
+        "minus_reference": 0.65625,
+        "paired_cluster_bootstrap_95": [
+          0.515625,
+          0.78125
+        ]
+      },
+      "clip_b32": {
+        "rate": 0.6875,
+        "cluster_bootstrap_95": [
+          0.578125,
+          0.796875
+        ],
+        "minus_reference": 0.4375,
+        "paired_cluster_bootstrap_95": [
+          0.296875,
+          0.578125
+        ]
+      },
+      "siglip2_b16": {
+        "rate": 0.859375,
+        "cluster_bootstrap_95": [
+          0.765625,
+          0.9375
+        ],
+        "minus_reference": 0.609375,
+        "paired_cluster_bootstrap_95": [
+          0.453125,
+          0.75
+        ]
+      },
+      "flair_global": {
+        "rate": 0.84375,
+        "cluster_bootstrap_95": [
+          0.75,
+          0.921875
+        ],
+        "minus_reference": 0.59375,
+        "paired_cluster_bootstrap_95": [
+          0.453125,
+          0.734375
+        ]
+      },
+      "flair_native": {
+        "rate": 0.84375,
+        "cluster_bootstrap_95": [
+          0.75,
+          0.921875
+        ],
+        "minus_reference": 0.59375,
+        "paired_cluster_bootstrap_95": [
+          0.453125,
+          0.71875
+        ]
+      },
+      "omnijev_raw_cpu": {
+        "rate": 0.25,
+        "cluster_bootstrap_95": [
+          0.15625,
+          0.359375
+        ],
+        "minus_reference": 0.0,
+        "paired_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "general_3cad7dfc34c7_cpu": {
+        "rate": 0.703125,
+        "cluster_bootstrap_95": [
+          0.59375,
+          0.8125
+        ],
+        "minus_reference": 0.453125,
+        "paired_cluster_bootstrap_95": [
+          0.3125,
+          0.59375
+        ]
+      }
+    },
+    "number": {
+      "qwen3_vl": {
+        "rate": 0.984375,
+        "cluster_bootstrap_95": [
+          0.953125,
+          1.0
+        ],
+        "minus_reference": 0.71875,
+        "paired_cluster_bootstrap_95": [
+          0.609375,
+          0.828125
+        ]
+      },
+      "clip_b32": {
+        "rate": 0.234375,
+        "cluster_bootstrap_95": [
+          0.140625,
+          0.34375
+        ],
+        "minus_reference": -0.03125,
+        "paired_cluster_bootstrap_95": [
+          -0.1875,
+          0.125
+        ]
+      },
+      "siglip2_b16": {
+        "rate": 1.0,
+        "cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ],
+        "minus_reference": 0.734375,
+        "paired_cluster_bootstrap_95": [
+          0.625,
+          0.84375
+        ]
+      },
+      "flair_global": {
+        "rate": 0.5,
+        "cluster_bootstrap_95": [
+          0.375,
+          0.625
+        ],
+        "minus_reference": 0.234375,
+        "paired_cluster_bootstrap_95": [
+          0.0625,
+          0.40625
+        ]
+      },
+      "flair_native": {
+        "rate": 0.46875,
+        "cluster_bootstrap_95": [
+          0.34375,
+          0.59375
+        ],
+        "minus_reference": 0.203125,
+        "paired_cluster_bootstrap_95": [
+          0.03125,
+          0.375
+        ]
+      },
+      "omnijev_raw_cpu": {
+        "rate": 0.265625,
+        "cluster_bootstrap_95": [
+          0.15625,
+          0.375
+        ],
+        "minus_reference": 0.0,
+        "paired_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "general_3cad7dfc34c7_cpu": {
+        "rate": 0.40625,
+        "cluster_bootstrap_95": [
+          0.28125,
+          0.53125
+        ],
+        "minus_reference": 0.140625,
+        "paired_cluster_bootstrap_95": [
+          0.0,
+          0.28125
+        ]
+      }
+    },
+    "position": {
+      "qwen3_vl": {
+        "rate": 0.265625,
+        "cluster_bootstrap_95": [
+          0.15625,
+          0.375
+        ],
+        "minus_reference": 0.03125,
+        "paired_cluster_bootstrap_95": [
+          -0.078125,
+          0.140625
+        ]
+      },
+      "clip_b32": {
+        "rate": 0.21875,
+        "cluster_bootstrap_95": [
+          0.125,
+          0.328125
+        ],
+        "minus_reference": -0.015625,
+        "paired_cluster_bootstrap_95": [
+          -0.125,
+          0.09375
+        ]
+      },
+      "siglip2_b16": {
+        "rate": 0.5625,
+        "cluster_bootstrap_95": [
+          0.4375,
+          0.6875
+        ],
+        "minus_reference": 0.328125,
+        "paired_cluster_bootstrap_95": [
+          0.125,
+          0.515625
+        ]
+      },
+      "flair_global": {
+        "rate": 0.28125,
+        "cluster_bootstrap_95": [
+          0.171875,
+          0.390625
+        ],
+        "minus_reference": 0.046875,
+        "paired_cluster_bootstrap_95": [
+          -0.109375,
+          0.203125
+        ]
+      },
+      "flair_native": {
+        "rate": 0.28125,
+        "cluster_bootstrap_95": [
+          0.171875,
+          0.390625
+        ],
+        "minus_reference": 0.046875,
+        "paired_cluster_bootstrap_95": [
+          -0.09375,
+          0.1875
+        ]
+      },
+      "omnijev_raw_cpu": {
+        "rate": 0.234375,
+        "cluster_bootstrap_95": [
+          0.140625,
+          0.34375
+        ],
+        "minus_reference": 0.0,
+        "paired_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "general_3cad7dfc34c7_cpu": {
+        "rate": 0.28125,
+        "cluster_bootstrap_95": [
+          0.171875,
+          0.390625
+        ],
+        "minus_reference": 0.046875,
+        "paired_cluster_bootstrap_95": [
+          -0.109375,
+          0.203125
+        ]
+      }
+    },
+    "shape": {
+      "qwen3_vl": {
+        "rate": 0.703125,
+        "cluster_bootstrap_95": [
+          0.59375,
+          0.8125
+        ],
+        "minus_reference": 0.40625,
+        "paired_cluster_bootstrap_95": [
+          0.25,
+          0.5625
+        ]
+      },
+      "clip_b32": {
+        "rate": 0.484375,
+        "cluster_bootstrap_95": [
+          0.359375,
+          0.609375
+        ],
+        "minus_reference": 0.1875,
+        "paired_cluster_bootstrap_95": [
+          0.046875,
+          0.328125
+        ]
+      },
+      "siglip2_b16": {
+        "rate": 0.75,
+        "cluster_bootstrap_95": [
+          0.640625,
+          0.859375
+        ],
+        "minus_reference": 0.453125,
+        "paired_cluster_bootstrap_95": [
+          0.296875,
+          0.59375
+        ]
+      },
+      "flair_global": {
+        "rate": 0.625,
+        "cluster_bootstrap_95": [
+          0.5,
+          0.734375
+        ],
+        "minus_reference": 0.328125,
+        "paired_cluster_bootstrap_95": [
+          0.15625,
+          0.484375
+        ]
+      },
+      "flair_native": {
+        "rate": 0.703125,
+        "cluster_bootstrap_95": [
+          0.59375,
+          0.8125
+        ],
+        "minus_reference": 0.40625,
+        "paired_cluster_bootstrap_95": [
+          0.24960937500000036,
+          0.5625
+        ]
+      },
+      "omnijev_raw_cpu": {
+        "rate": 0.296875,
+        "cluster_bootstrap_95": [
+          0.1875,
+          0.40625
+        ],
+        "minus_reference": 0.0,
+        "paired_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "general_3cad7dfc34c7_cpu": {
+        "rate": 0.6875,
+        "cluster_bootstrap_95": [
+          0.578125,
+          0.796875
+        ],
+        "minus_reference": 0.390625,
+        "paired_cluster_bootstrap_95": [
+          0.25,
+          0.53125
+        ]
+      }
+    },
+    "macro_all_attributes": {
+      "qwen3_vl": {
+        "rate": 0.71484375,
+        "cluster_bootstrap_95": [
+          0.66796875,
+          0.76171875
+        ],
+        "minus_reference": 0.453125,
+        "paired_cluster_bootstrap_95": [
+          0.375,
+          0.52734375
+        ]
+      },
+      "clip_b32": {
+        "rate": 0.40625,
+        "cluster_bootstrap_95": [
+          0.3515625,
+          0.4609375
+        ],
+        "minus_reference": 0.14453125,
+        "paired_cluster_bootstrap_95": [
+          0.0703125,
+          0.22265625
+        ]
+      },
+      "siglip2_b16": {
+        "rate": 0.79296875,
+        "cluster_bootstrap_95": [
+          0.74609375,
+          0.8360351562499986
+        ],
+        "minus_reference": 0.53125,
+        "paired_cluster_bootstrap_95": [
+          0.45703125,
+          0.60546875
+        ]
+      },
+      "flair_global": {
+        "rate": 0.5625,
+        "cluster_bootstrap_95": [
+          0.49609375,
+          0.625
+        ],
+        "minus_reference": 0.30078125,
+        "paired_cluster_bootstrap_95": [
+          0.2109375,
+          0.390625
+        ]
+      },
+      "flair_native": {
+        "rate": 0.57421875,
+        "cluster_bootstrap_95": [
+          0.51171875,
+          0.6328125
+        ],
+        "minus_reference": 0.3125,
+        "paired_cluster_bootstrap_95": [
+          0.2265625,
+          0.3984375
+        ]
+      },
+      "omnijev_raw_cpu": {
+        "rate": 0.26171875,
+        "cluster_bootstrap_95": [
+          0.203125,
+          0.3203125
+        ],
+        "minus_reference": 0.0,
+        "paired_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "general_3cad7dfc34c7_cpu": {
+        "rate": 0.51953125,
+        "cluster_bootstrap_95": [
+          0.44921875,
+          0.58984375
+        ],
+        "minus_reference": 0.2578125,
+        "paired_cluster_bootstrap_95": [
+          0.1796875,
+          0.34375
+        ]
+      }
+    }
+  },
+  "evidence_reference": "omnijev_raw_cpu",
+  "artifact_sha256": {
+    "evidence_qwen3_vl.json": "84622401ad7d7e6500a8a75585b09af28dd70385acf3af0b1c8116c9b4ad73f1",
+    "evidence_clip_b32.json": "858a86c51a6ed062162005b9c3194181feda5721ec8c5131dd9306aaadb148f8",
+    "evidence_siglip2_b16.json": "0cce472d604245cabbd5510b67ecdb0d53f44f2fdfa7c7c692213f37508d90d4",
+    "evidence_flair_global.json": "0711063033acc792e63b9777665eb7b03febea480daba9c75d9d6280599d0a40",
+    "evidence_flair_native.json": "eaecc843a12aed0a500aac795c7fed082f2cf7bdea4b80f323e550144164f05b",
+    "evidence_omnijev_raw_cpu.json": "a082fcfc9c8afbf13931461b136b93ceb976bbd94893c8a3bda8372697bb750f",
+    "evidence_general_3cad7dfc34c7_cpu.json": "329cb25d1b4ae601c4030c07bb68ccc66c10aa24236d7732918a594151d35f85"
+  },
+  "limitations": [
+    "Interim validation-selected checkpoint, not final model",
+    "CPU FP32 for trained and raw OmniJev; other baselines have native execution",
+    "Single synthetic renderer, 64 scene groups; not natural-image causal evidence",
+    "No test-based tuning permitted"
+  ]
+}

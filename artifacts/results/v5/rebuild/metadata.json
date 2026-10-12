@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "source_repo": "HuggingFaceM4/the_cauldron",
+  "source_revisions": [
+    "847a98a779b1652d65111daf20c972dfcd333605"
+  ],
+  "upstream_split": "train for every source; local split field is our experimental partition",
+  "local_manifest_sha256": "470b7a9b2ca8017fdaad15c404f54b9179a0d556434807d252e89102e9a92f44",
+  "public_manifest_sha256": "2a608dc285e0fd245763d3e24c15e99f248ef45e77e07bcad8283a14535611b8",
+  "records": 8311,
+  "source_split_counts": {
+    "localized_narratives/train": 914,
+    "localized_narratives/val": 110,
+    "textcaps/train": 942,
+    "textcaps/val": 82,
+    "screen2words/train": 919,
+    "screen2words/val": 100,
+    "chart2text/train": 926,
+    "chart2text/val": 80,
+    "docvqa/train": 928,
+    "docvqa/val": 96,
+    "chartqa/train": 939,
+    "chartqa/val": 65,
+    "clevr/train": 907,
+    "clevr/val": 117,
+    "vsr/train": 913,
+    "vsr/val": 110,
+    "ai2d/ood": 96,
+    "scienceqa/ood": 67
+  },
+  "fields": [
+    "id",
+    "source",
+    "source_row",
+    "source_revision",
+    "split",
+    "order",
+    "task",
+    "original_rgb_sha256",
+    "image_file_sha256"
+  ],
+  "contains_images": false,
+  "contains_captions_questions_answers": false,
+  "image_transform": "PIL RGB; thumbnail max side 640 LANCZOS; JPEG quality 90; compare saved file hash",
+  "rebuild": "Fetch the pinned original source rows under their upstream terms, then apply listed identities/splits/order and verify hashes. Local file paths are deliberately excluded.",
+  "limitations": "This is an identity manifest, not an annotation license grant or a complete independent download client."
+}

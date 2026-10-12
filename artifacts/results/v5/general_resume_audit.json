@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "trials": [
+    {
+      "trial": 0,
+      "start_step": 1,
+      "loss": 0.6770391464233398,
+      "replay_error": 0.0,
+      "state_sha256": "48b027ca6546f09bbbe984bf4e0318db160c1fd2bde140507b2a6aca1a73ed7f"
+    },
+    {
+      "trial": 1,
+      "start_step": 1,
+      "loss": 0.6770391464233398,
+      "replay_error": 0.0,
+      "state_sha256": "48b027ca6546f09bbbe984bf4e0318db160c1fd2bde140507b2a6aca1a73ed7f"
+    }
+  ],
+  "parameter_differences": {},
+  "scope": "Real image/text LoRA, optimizer and RNG update replay from saved checkpoint; no quality claim"
+}

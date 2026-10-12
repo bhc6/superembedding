@@ -1,0 +1,41 @@
+{
+  "state": "completed",
+  "models": [
+    {
+      "repo": "Qwen/Qwen3-VL-Embedding-2B",
+      "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "path": "D:\\DEMO\\superembedding-storage\\official_models\\Qwen--Qwen3-VL-Embedding-2B",
+      "scope": "Official files downloaded and hashed only; inference reproduction pending; remote code not executed."
+    },
+    {
+      "repo": "tencent/WeMM-Embedding-2B",
+      "revision": "bbd6cd4bf52cfc6716f752a2df80b2706720bd95",
+      "path": "D:\\DEMO\\superembedding-storage\\official_models\\tencent--WeMM-Embedding-2B",
+      "scope": "Official files downloaded and hashed only; inference reproduction pending; remote code not executed."
+    },
+    {
+      "repo": "VLM2Vec/VLM2Vec-V2.0",
+      "revision": "e39ff079b8275ef876d3656da8c0bddbff3c4dde",
+      "path": "D:\\DEMO\\superembedding-storage\\official_models\\VLM2Vec--VLM2Vec-V2.0",
+      "scope": "Official files downloaded and hashed only; inference reproduction pending; remote code not executed."
+    },
+    {
+      "repo": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+      "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "path": "D:\\DEMO\\superembedding-storage\\official_models\\Alibaba-NLP--gme-Qwen2-VL-2B-Instruct",
+      "scope": "Official files downloaded and hashed only; inference reproduction pending; remote code not executed."
+    },
+    {
+      "repo": "ATH-MaaS/Ovis-Omni-Embedding-3B",
+      "revision": "9726d1ad56420a07ba745aafaf5d7030963cda4e",
+      "path": "D:\\DEMO\\superembedding-storage\\official_models\\ATH-MaaS--Ovis-Omni-Embedding-3B",
+      "scope": "Official files downloaded and hashed only; inference reproduction pending; remote code not executed."
+    },
+    {
+      "repo": "Qwen/Qwen2-VL-2B-Instruct",
+      "revision": "895c3a49bc3fa70a340399125c650a463535e71c",
+      "path": "D:\\DEMO\\superembedding-storage\\official_models\\Qwen--Qwen2-VL-2B-Instruct",
+      "scope": "Official files downloaded and hashed only; inference reproduction pending; remote code not executed."
+    }
+  ]
+}

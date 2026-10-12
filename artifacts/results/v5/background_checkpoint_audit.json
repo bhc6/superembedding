@@ -1,0 +1,14 @@
+{
+  "saved_step": 6,
+  "trainable_tensors": 304,
+  "optimizer_states": 304,
+  "rng_cuda_devices": 1,
+  "implementation_hashes_match": true,
+  "data_sha256": "dc492313d094684a7e190c1e29be45ada15c5a4f89c25c732bfa903c29a39fe9",
+  "checkpoint_bytes": 248925653,
+  "checkpoint_sha256": "a047afe679f856000e746245bb5bfe92d8c860e1fc8cafab923ac3754d8f94da",
+  "resumed_step_6_logged": true,
+  "post_restart_completed_step": 8,
+  "post_restart_state": "running",
+  "post_restart_replay_error": 0.0
+}

@@ -1,0 +1,155 @@
+{
+  "manifest_sha256": "dc492313d094684a7e190c1e29be45ada15c5a4f89c25c732bfa903c29a39fe9",
+  "count": 8352,
+  "split_counts": {
+    "train": 7388,
+    "val": 801,
+    "ood": 163
+  },
+  "source_split_counts": {
+    "localized_narratives/train": 914,
+    "localized_narratives/val": 110,
+    "textcaps/train": 942,
+    "textcaps/val": 82,
+    "screen2words/train": 919,
+    "screen2words/val": 105,
+    "chart2text/train": 926,
+    "chart2text/val": 96,
+    "docvqa/train": 928,
+    "docvqa/val": 96,
+    "chartqa/val": 85,
+    "chartqa/train": 939,
+    "clevr/train": 907,
+    "clevr/val": 117,
+    "vsr/train": 913,
+    "vsr/val": 110,
+    "ai2d/ood": 96,
+    "scienceqa/ood": 67
+  },
+  "supervision_pairs": 22069,
+  "test_overlap_excluded": [
+    {
+      "id": "vsr:63",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1472",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1474",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1475",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1476",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1483",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1484",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1489",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1494",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1497",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:1500",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4288",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4290",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4291",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4295",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4303",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4308",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4313",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4316",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4317",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4768",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4771",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4776",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4778",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4784",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4788",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4789",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4792",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4795",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    },
+    {
+      "id": "scienceqa:4797",
+      "reason": "official ScienceQA/Urban1k exact RGB or dHash overlap"
+    }
+  ],
+  "image_integrity": "all encoded files SHA256 verified",
+  "near_duplicate_limit": "Exact dHash equality only; not exhaustive perceptual/semantic decontamination",
+  "pretraining_contamination": "Unknown for all inherited backbones; no claim of clean pretraining."
+}

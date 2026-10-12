@@ -1,0 +1,45 @@
+{
+  "heads": [
+    {
+      "architecture": "shared_concat",
+      "parameters": 264448,
+      "output_dimension": 1024,
+      "estimated_last_and_best_bytes_6_runs": 38080512
+    },
+    {
+      "architecture": "output_equal",
+      "parameters": 1313024,
+      "output_dimension": 1024,
+      "estimated_last_and_best_bytes_6_runs": 189075456
+    },
+    {
+      "architecture": "output_small",
+      "parameters": 526592,
+      "output_dimension": 256,
+      "estimated_last_and_best_bytes_6_runs": 75829248
+    },
+    {
+      "architecture": "independent_equal",
+      "parameters": 1057792,
+      "output_dimension": 1024,
+      "estimated_last_and_best_bytes_6_runs": 152322048
+    },
+    {
+      "architecture": "independent_matched",
+      "parameters": 270592,
+      "output_dimension": 256,
+      "estimated_last_and_best_bytes_6_runs": 38965248
+    },
+    {
+      "architecture": "mean_pool",
+      "parameters": 1051648,
+      "output_dimension": 1024,
+      "estimated_last_and_best_bytes_6_runs": 151437312
+    }
+  ],
+  "estimated_ablation_checkpoint_bytes": 645709824,
+  "current_C_free_bytes": 2362478592,
+  "estimated_remaining_main_best_milestones_atomic_and_feature_bytes": 939880000,
+  "estimated_free_after_all_with_atomic_reserve": 776888768,
+  "scope": "Approximate fp32 AdamW accounting; OS/other jobs can change available space; checkpoint safety guards remain enabled."
+}

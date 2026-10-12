@@ -1,0 +1,48 @@
+{
+  "protocol": "frozen-step250-choice-adaptation-v1",
+  "sources": ["chartqa", "vsr"],
+  "selection": "All 65 ChartQA and 110 VSR records in existing full validation; no prompt selection by results",
+  "checkpoint_steps": [0, 250],
+  "step0_status": "Reconstructed initialization, not original saved checkpoint",
+  "arms": ["original", "paraphrase", "specialized"],
+  "instruction": "Represent the supplied content for retrieval along each fixed evidence direction.",
+  "directions": {
+    "original": [
+      "Entities, objects and semantic meaning",
+      "Appearance, attributes and material",
+      "Spatial relations, layout and composition",
+      "Written text, numbers and quantitative evidence"
+    ],
+    "paraphrase": [
+      "Identify the entities and the meaning of the content",
+      "Describe visual appearance, properties and materials",
+      "Represent spatial relationships and arrangement",
+      "Capture written information, numeric values and quantities"
+    ],
+    "specialized": {
+      "chartqa": [
+        "Chart title, topic, legend entries and named data series",
+        "Colors and visual markers that identify chart categories and series",
+        "Axis labels, tick positions and alignment between marks and categories",
+        "Exact numeric values, units, scales, differences, totals and comparisons"
+      ],
+      "vsr": [
+        "The subject and reference object named in the spatial statement",
+        "Visual attributes that distinguish the subject from other objects",
+        "The directed spatial relation of the subject to the reference object",
+        "Visual evidence supporting or contradicting the stated spatial relation"
+      ]
+    }
+  },
+  "fixed": ["Weights", "Four slots in original slot order", "Shared projection", "Head dimensions", "Max pixels 65536", "Max text tokens 256", "Query and answer text", "Candidate identities and positive rules"],
+  "comparisons": [
+    "Both query and candidates use the same task-fixed basis; requires rebuilding the task index",
+    "Only query basis changes, original candidate vectors retained; no reindexing",
+    "Full query versus text-only with identical candidate vectors",
+    "Raw pretrained branches versus reconstructed Step 0 head versus Step 250 head"
+  ],
+  "primary_contrasts": ["specialized minus original full R1 within each source and model", "specialized minus original VSR balanced accuracy"],
+  "secondary_contrasts": ["paraphrase minus original", "specialized visual contribution minus original visual contribution", "prompt benefit at Step 250 minus prompt benefit at reconstructed Step 0"],
+  "inference": "Exploratory, motivated by observed weak validation scores; all arms reported, no best prompt selection. Paired query bootstrap intervals are descriptive and unadjusted.",
+  "claim_boundary": "May demonstrate frozen task-prompt adaptation. These training sources and validation examples are already known; cannot establish unseen-task generalization or publication-level novelty. No query-specific or answer-dependent choice construction."
+}

@@ -1,0 +1,81 @@
+{
+  "results": {
+    "wemm2b/vsr110": {
+      "passed": true,
+      "result_sha256": "b66f166fbd8f761474a687ac05478dc2dc0beb36a852e31cfb3bf41ff6ed90ef",
+      "queries": 110,
+      "full_correct": 79,
+      "full_macro_r1": 0.7181818181818181,
+      "qa_text_only_macro_r1": 0.6090909090909091,
+      "scope": "All cached predictions/scores replayed; not fresh inference of every case; seen diagnostic data.",
+      "full_balanced_accuracy": 0.6855742296918768,
+      "text_only_balanced_accuracy": 0.5154061624649859,
+      "text_only_correct": 67
+    },
+    "wemm2b/validation760": {
+      "passed": true,
+      "result_sha256": "c94b5c76175c82a13a175bdc9edba83a1efe573a15c732316b10173a03dc245c",
+      "queries": 760,
+      "full_correct": 578,
+      "full_macro_r1": 0.7582743564870089,
+      "qa_text_only_macro_r1": 0.21787101787101787,
+      "scope": "All cached predictions/scores replayed; not fresh inference of every case; seen diagnostic data."
+    },
+    "wemm2b/scienceqa_full": {
+      "passed": true,
+      "queries": 1000,
+      "accuracy": 0.774,
+      "correct": 774,
+      "result_sha256": "9ba2c9b336f23c0f71ceebf54ceb81171c9923853502bb8f0555dbd4a901d3b4",
+      "scope": "All cached predictions replayed; not fresh inference; pretraining contamination unknown."
+    },
+    "wemm2b/scienceqa_text_only": {
+      "passed": true,
+      "queries": 1000,
+      "accuracy": 0.281,
+      "correct": 281,
+      "result_sha256": "f66187d968bf964a28d2c32bd69833688bf76e2b7974a08daa50230daa8f4354",
+      "scope": "All cached predictions replayed; not fresh inference; pretraining contamination unknown."
+    },
+    "gme2b/vsr110": {
+      "passed": true,
+      "result_sha256": "35ecbb3ee27608b8fd2f2abf8f812b305e53cb9b30fe9a72f6bb652bd51b8759",
+      "queries": 110,
+      "full_correct": 67,
+      "full_macro_r1": 0.6090909090909091,
+      "qa_text_only_macro_r1": 0.5636363636363636,
+      "scope": "All cached predictions/scores replayed; not fresh inference of every case; seen diagnostic data.",
+      "full_balanced_accuracy": 0.5882352941176471,
+      "text_only_balanced_accuracy": 0.5059523809523809,
+      "text_only_correct": 62
+    },
+    "gme2b/validation760": {
+      "passed": true,
+      "result_sha256": "7bb20d7e12bc108fcf938b62d0ad742b459dbc9df9f69d001211aa3f5b9254cd",
+      "queries": 760,
+      "full_correct": 345,
+      "full_macro_r1": 0.4556729229442644,
+      "qa_text_only_macro_r1": 0.18703622766122766,
+      "scope": "All cached predictions/scores replayed; not fresh inference of every case; seen diagnostic data."
+    },
+    "gme2b/scienceqa_full": {
+      "passed": true,
+      "queries": 1000,
+      "accuracy": 0.273,
+      "correct": 273,
+      "result_sha256": "b63c3ba363dba851a3da74b431dff5cd27fac437950e7b4e25a7c9a6517f4fc4",
+      "scope": "All cached predictions replayed; not fresh inference; pretraining contamination unknown."
+    },
+    "gme2b/scienceqa_text_only": {
+      "passed": true,
+      "queries": 1000,
+      "accuracy": 0.124,
+      "correct": 124,
+      "result_sha256": "f83ec421b6579f68bd746b48843406aeb8d651e9f3168263ee13d130b9e52643",
+      "scope": "All cached predictions replayed; not fresh inference; pretraining contamination unknown."
+    }
+  },
+  "completed_validation_tasks_checked": true,
+  "completed_scienceqa_tasks_checked": true,
+  "whole_project_complete": false
+}

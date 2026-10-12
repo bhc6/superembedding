@@ -25,6 +25,9 @@ def main():
     ap.add_argument('--base', help='Explicit local location of the pinned base model')
     args = ap.parse_args()
     head, basis, source = OptionEmbeddingHead.load(args.head)
+    from superembedding.general import GENERAL_BASIS
+    if basis==GENERAL_BASIS:
+        raise ValueError('V5 general head alone omits trained LoRA and requires GeneralOmniEncoder. Use encode_general.py --model export/general_model.pt.')
     if source.get('feature_backend') in {'omnijev_lora_disabled','base','flair'} or source.get('decision_checkpoint')=='FLAIR':
         raise ValueError('This baseline head requires its matching feature extractor, not the OmniJev adapter encoder')
     if not source.get('decision_checkpoint') or not source.get('base_model'):

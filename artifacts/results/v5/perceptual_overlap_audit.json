@@ -1,0 +1,893 @@
+{
+  "manifest_sha256": "dc492313d094684a7e190c1e29be45ada15c5a4f89c25c732bfa903c29a39fe9",
+  "mode": "read-only screening",
+  "train_images": 7388,
+  "held_images": 2964,
+  "candidate_pairs": 87,
+  "held_images_flagged": 41,
+  "external_test_images_flagged": [],
+  "checkpoint_monitor_images_flagged": [
+    "chart2text:11171",
+    "chart2text:1314",
+    "chart2text:13181",
+    "chart2text:1331",
+    "chartqa:14895",
+    "chartqa:14905",
+    "chartqa:15330"
+  ],
+  "confirmed_exact_pairs": 0,
+  "method": "63-bit DCT pHash Hamming<=6 AND existing 64-bit dHash Hamming<=6; RGB32 MSE for review order",
+  "limit": "Screening only. Similar layouts, charts, synthetic objects can be false positives. Manual/semantic review required.",
+  "pairs": [
+    {
+      "held_id": "screen2words:6556",
+      "held_split": "val",
+      "train_id": "screen2words:5830",
+      "phash_distance": 4,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.0002830041048582643,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "screen2words:2886",
+      "held_split": "val",
+      "train_id": "screen2words:7538",
+      "phash_distance": 2,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.0003475175763014704,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:16929",
+      "held_split": "val",
+      "train_id": "chart2text:5810",
+      "phash_distance": 0,
+      "dhash_distance": 1,
+      "rgb32_mse": 0.0003535849682521075,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "screen2words:2886",
+      "held_split": "val",
+      "train_id": "screen2words:8719",
+      "phash_distance": 2,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.00036054340307600796,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:8848",
+      "held_split": "val",
+      "train_id": "chartqa:9036",
+      "phash_distance": 0,
+      "dhash_distance": 1,
+      "rgb32_mse": 0.000443093798821792,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:6993",
+      "held_split": "val",
+      "train_id": "chart2text:15402",
+      "phash_distance": 4,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.0005369078717194498,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:14905",
+      "held_split": "val",
+      "train_id": "chartqa:17506",
+      "phash_distance": 2,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.0007250266498886049,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:19854",
+      "held_split": "val",
+      "train_id": "chartqa:17525",
+      "phash_distance": 4,
+      "dhash_distance": 3,
+      "rgb32_mse": 0.0009981937473639846,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:1331",
+      "held_split": "val",
+      "train_id": "chart2text:19845",
+      "phash_distance": 0,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.0010423124767839909,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:17522",
+      "held_split": "val",
+      "train_id": "chart2text:19696",
+      "phash_distance": 2,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.001117098261602223,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:18187",
+      "held_split": "val",
+      "train_id": "chart2text:4220",
+      "phash_distance": 6,
+      "dhash_distance": 1,
+      "rgb32_mse": 0.0013327003689482808,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:6993",
+      "held_split": "val",
+      "train_id": "chart2text:19702",
+      "phash_distance": 4,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.001360719557851553,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:1331",
+      "held_split": "val",
+      "train_id": "chartqa:17506",
+      "phash_distance": 0,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.0014610117068514228,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:17522",
+      "held_split": "val",
+      "train_id": "chart2text:11588",
+      "phash_distance": 4,
+      "dhash_distance": 3,
+      "rgb32_mse": 0.001756065059453249,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:14895",
+      "held_split": "val",
+      "train_id": "chartqa:7136",
+      "phash_distance": 4,
+      "dhash_distance": 3,
+      "rgb32_mse": 0.0018916950793936849,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:14905",
+      "held_split": "val",
+      "train_id": "chart2text:19845",
+      "phash_distance": 2,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.0019053719006478786,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:19674",
+      "held_split": "val",
+      "train_id": "chartqa:17963",
+      "phash_distance": 6,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.002022248925641179,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:17532",
+      "held_split": "val",
+      "train_id": "chart2text:13496",
+      "phash_distance": 4,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.002187704900279641,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:9033",
+      "held_split": "val",
+      "train_id": "chart2text:5805",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.0022468669340014458,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:13181",
+      "held_split": "val",
+      "train_id": "chart2text:18137",
+      "phash_distance": 2,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.0024938371498137712,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:17691",
+      "held_split": "val",
+      "train_id": "chart2text:15162",
+      "phash_distance": 4,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.0025470070540905,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:13181",
+      "held_split": "val",
+      "train_id": "chart2text:11193",
+      "phash_distance": 2,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.002556258114054799,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:17522",
+      "held_split": "val",
+      "train_id": "chartqa:16348",
+      "phash_distance": 6,
+      "dhash_distance": 3,
+      "rgb32_mse": 0.002576192608103156,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:6993",
+      "held_split": "val",
+      "train_id": "chartqa:7282",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.002579035935923457,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:5418",
+      "held_split": "val",
+      "train_id": "chart2text:8862",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.0026090473402291536,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:15555",
+      "held_split": "val",
+      "train_id": "chartqa:18195",
+      "phash_distance": 6,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.002897402970120311,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:16929",
+      "held_split": "val",
+      "train_id": "chartqa:15352",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.002901918487623334,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:13181",
+      "held_split": "val",
+      "train_id": "chart2text:11176",
+      "phash_distance": 0,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.002909047296270728,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:5814",
+      "held_split": "val",
+      "train_id": "chartqa:10343",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.0029831472784280777,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:20017",
+      "held_split": "val",
+      "train_id": "chart2text:11189",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.002989264437928796,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:17694",
+      "held_split": "val",
+      "train_id": "chartqa:5676",
+      "phash_distance": 6,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.0033368775621056557,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:6993",
+      "held_split": "val",
+      "train_id": "chartqa:5411",
+      "phash_distance": 4,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.0033400515094399452,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:1331",
+      "held_split": "val",
+      "train_id": "chart2text:10137",
+      "phash_distance": 6,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.0035315093118697405,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:3595",
+      "held_split": "val",
+      "train_id": "chart2text:15141",
+      "phash_distance": 4,
+      "dhash_distance": 3,
+      "rgb32_mse": 0.003759686602279544,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:17522",
+      "held_split": "val",
+      "train_id": "chartqa:18177",
+      "phash_distance": 4,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.0038834817241877317,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:20003",
+      "held_split": "val",
+      "train_id": "chart2text:19687",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.0039025202859193087,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:15347",
+      "held_split": "val",
+      "train_id": "chart2text:16999",
+      "phash_distance": 6,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.003950759302824736,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:13181",
+      "held_split": "val",
+      "train_id": "chartqa:6491",
+      "phash_distance": 4,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.004022155422717333,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:20003",
+      "held_split": "val",
+      "train_id": "chart2text:1339",
+      "phash_distance": 2,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.004035892430692911,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:17522",
+      "held_split": "val",
+      "train_id": "chartqa:12521",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.004067886155098677,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:14905",
+      "held_split": "val",
+      "train_id": "chart2text:10137",
+      "phash_distance": 6,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.004143784288316965,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:20003",
+      "held_split": "val",
+      "train_id": "chartqa:18195",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.0046844761818647385,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:5418",
+      "held_split": "val",
+      "train_id": "chart2text:10134",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.005188613664358854,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:14905",
+      "held_split": "val",
+      "train_id": "chartqa:5674",
+      "phash_distance": 6,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.005418037995696068,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:16957",
+      "held_split": "val",
+      "train_id": "chartqa:5438",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.005431934725493193,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:17532",
+      "held_split": "val",
+      "train_id": "chartqa:15354",
+      "phash_distance": 4,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.005661188159137964,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:19854",
+      "held_split": "val",
+      "train_id": "chart2text:1327",
+      "phash_distance": 6,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.005977243185043335,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:1314",
+      "held_split": "val",
+      "train_id": "chartqa:17674",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.006126745138317347,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:6976",
+      "held_split": "val",
+      "train_id": "chart2text:11189",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.006274379789829254,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:1331",
+      "held_split": "val",
+      "train_id": "chartqa:5674",
+      "phash_distance": 6,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.006477586925029755,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:7158",
+      "held_split": "val",
+      "train_id": "chart2text:19662",
+      "phash_distance": 6,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.006559500936418772,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:16331",
+      "held_split": "val",
+      "train_id": "chart2text:10122",
+      "phash_distance": 6,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.006727330386638641,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:18187",
+      "held_split": "val",
+      "train_id": "chartqa:15339",
+      "phash_distance": 4,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.007265135180205107,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:5418",
+      "held_split": "val",
+      "train_id": "chartqa:18195",
+      "phash_distance": 4,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.007341115269809961,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:14905",
+      "held_split": "val",
+      "train_id": "chartqa:5551",
+      "phash_distance": 6,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.00794828962534666,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:16993",
+      "held_split": "val",
+      "train_id": "chartqa:18204",
+      "phash_distance": 6,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.009167227894067764,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:1331",
+      "held_split": "val",
+      "train_id": "chartqa:5551",
+      "phash_distance": 6,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.009185274131596088,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:14905",
+      "held_split": "val",
+      "train_id": "chartqa:17954",
+      "phash_distance": 6,
+      "dhash_distance": 3,
+      "rgb32_mse": 0.009332072921097279,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:20003",
+      "held_split": "val",
+      "train_id": "chartqa:16323",
+      "phash_distance": 4,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.009413771331310272,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "screen2words:4203",
+      "held_split": "val",
+      "train_id": "screen2words:11832",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.010358561761677265,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:9033",
+      "held_split": "val",
+      "train_id": "chart2text:1313",
+      "phash_distance": 4,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.01096352655440569,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:16993",
+      "held_split": "val",
+      "train_id": "chartqa:7684",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.011392943561077118,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:11171",
+      "held_split": "val",
+      "train_id": "chart2text:11614",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.011588852852582932,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:17023",
+      "held_split": "val",
+      "train_id": "chartqa:5681",
+      "phash_distance": 4,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.012965801171958447,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:13181",
+      "held_split": "val",
+      "train_id": "chartqa:10843",
+      "phash_distance": 4,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.01305472943931818,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:6985",
+      "held_split": "val",
+      "train_id": "chartqa:6987",
+      "phash_distance": 4,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.013239540159702301,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:17002",
+      "held_split": "val",
+      "train_id": "chartqa:15344",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.01331007108092308,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:9054",
+      "held_split": "val",
+      "train_id": "chart2text:19657",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.013457928784191608,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:14905",
+      "held_split": "val",
+      "train_id": "chartqa:6487",
+      "phash_distance": 4,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.014529933221638203,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:20002",
+      "held_split": "val",
+      "train_id": "chartqa:17667",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.014765900559723377,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "screen2words:3355",
+      "held_split": "val",
+      "train_id": "screen2words:11832",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.015090721659362316,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:20002",
+      "held_split": "val",
+      "train_id": "chart2text:10140",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.015547715127468109,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:1331",
+      "held_split": "val",
+      "train_id": "chartqa:6487",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.016028886660933495,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:59",
+      "held_split": "val",
+      "train_id": "chart2text:18124",
+      "phash_distance": 6,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.016166822984814644,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:17002",
+      "held_split": "val",
+      "train_id": "chart2text:11189",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.01625436171889305,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:15330",
+      "held_split": "val",
+      "train_id": "chartqa:5411",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.01644110679626465,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:17002",
+      "held_split": "val",
+      "train_id": "chartqa:6495",
+      "phash_distance": 6,
+      "dhash_distance": 4,
+      "rgb32_mse": 0.016455383971333504,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:20017",
+      "held_split": "val",
+      "train_id": "chartqa:10354",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.017020948231220245,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:16331",
+      "held_split": "val",
+      "train_id": "chart2text:9284",
+      "phash_distance": 6,
+      "dhash_distance": 2,
+      "rgb32_mse": 0.01747939921915531,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "screen2words:13558",
+      "held_split": "val",
+      "train_id": "screen2words:7537",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.017903627827763557,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:19854",
+      "held_split": "val",
+      "train_id": "chartqa:10829",
+      "phash_distance": 2,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.019113833084702492,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:13181",
+      "held_split": "val",
+      "train_id": "chartqa:15561",
+      "phash_distance": 4,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.019367417320609093,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:17002",
+      "held_split": "val",
+      "train_id": "chartqa:10838",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.020576946437358856,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:13181",
+      "held_split": "val",
+      "train_id": "chartqa:5908",
+      "phash_distance": 4,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.030163703486323357,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:19854",
+      "held_split": "val",
+      "train_id": "chartqa:11523",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.031975697726011276,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chartqa:15347",
+      "held_split": "val",
+      "train_id": "chart2text:17013",
+      "phash_distance": 6,
+      "dhash_distance": 5,
+      "rgb32_mse": 0.03373401239514351,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    },
+    {
+      "held_id": "chart2text:19674",
+      "held_split": "val",
+      "train_id": "chart2text:19675",
+      "phash_distance": 6,
+      "dhash_distance": 6,
+      "rgb32_mse": 0.04877910017967224,
+      "same_original_rgb": false,
+      "same_encoded_sha256": false
+    }
+  ]
+}

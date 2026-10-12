@@ -1,0 +1,545 @@
+{
+  "dataset": "dtd",
+  "output": "D:\\DEMO\\superembedding\\data\\dtd_leakage_v2_draft",
+  "status": "draft_not_cleared_for_training_or_claims",
+  "source_sha256": "7444bcfadc8b5ff5dc15d32eb6cddaec1df826fa72b2161d5efb6458e94c5b80",
+  "manifest_sha256": "5cfa50f4d2b38721f2d16ad462906eb6b6aee9a792a708b4e56da5dec31f428f",
+  "audit_sha256": "05ee4fc44c49fdd076a6da646fec63be2f32ca3e00846f7d4ae27edab200941f",
+  "policy": "All screened pairs treated conservatively as grouping edges; not all are confirmed duplicates.",
+  "components": [
+    {
+      "members": [
+        "dtd_chequered_chequered_0045",
+        "dtd_chequered_chequered_0048"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_chequered_chequered_0048"
+      ]
+    },
+    {
+      "members": [
+        "dtd_chequered_chequered_0063",
+        "dtd_chequered_chequered_0084",
+        "dtd_chequered_chequered_0093",
+        "dtd_chequered_chequered_0107"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_chequered_chequered_0093",
+        "dtd_chequered_chequered_0107"
+      ]
+    },
+    {
+      "members": [
+        "dtd_chequered_chequered_0103",
+        "dtd_chequered_chequered_0178"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_chequered_chequered_0178"
+      ]
+    },
+    {
+      "members": [
+        "dtd_cobwebbed_cobwebbed_0030",
+        "dtd_cobwebbed_cobwebbed_0041"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_cobwebbed_cobwebbed_0041"
+      ]
+    },
+    {
+      "members": [
+        "dtd_cobwebbed_cobwebbed_0049",
+        "dtd_cobwebbed_cobwebbed_0050"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_cobwebbed_cobwebbed_0050"
+      ]
+    },
+    {
+      "members": [
+        "dtd_cobwebbed_cobwebbed_0064",
+        "dtd_cobwebbed_cobwebbed_0080"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_cobwebbed_cobwebbed_0080"
+      ]
+    },
+    {
+      "members": [
+        "dtd_cobwebbed_cobwebbed_0075",
+        "dtd_cobwebbed_cobwebbed_0078",
+        "dtd_cobwebbed_cobwebbed_0125"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_cobwebbed_cobwebbed_0075",
+        "dtd_cobwebbed_cobwebbed_0078"
+      ]
+    },
+    {
+      "members": [
+        "dtd_crosshatched_crosshatched_0092",
+        "dtd_crosshatched_crosshatched_0093"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_crosshatched_crosshatched_0093"
+      ]
+    },
+    {
+      "members": [
+        "dtd_crystalline_crystalline_0111",
+        "dtd_crystalline_crystalline_0219"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_crystalline_crystalline_0111"
+      ]
+    },
+    {
+      "members": [
+        "dtd_dotted_dotted_0060",
+        "dtd_dotted_dotted_0131"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_dotted_dotted_0131"
+      ]
+    },
+    {
+      "members": [
+        "dtd_flecked_flecked_0063",
+        "dtd_flecked_flecked_0089"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_flecked_flecked_0089"
+      ]
+    },
+    {
+      "members": [
+        "dtd_flecked_flecked_0065",
+        "dtd_flecked_flecked_0066",
+        "dtd_flecked_flecked_0087"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_flecked_flecked_0065",
+        "dtd_flecked_flecked_0066"
+      ]
+    },
+    {
+      "members": [
+        "dtd_frilly_frilly_0053",
+        "dtd_frilly_frilly_0078"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_frilly_frilly_0078"
+      ]
+    },
+    {
+      "members": [
+        "dtd_gauzy_gauzy_0095",
+        "dtd_gauzy_gauzy_0172"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_gauzy_gauzy_0095"
+      ]
+    },
+    {
+      "members": [
+        "dtd_grid_grid_0035",
+        "dtd_meshed_meshed_0044"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_meshed_meshed_0044"
+      ]
+    },
+    {
+      "members": [
+        "dtd_grooved_grooved_0095",
+        "dtd_grooved_grooved_0096",
+        "dtd_grooved_grooved_0097",
+        "dtd_grooved_grooved_0098"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_grooved_grooved_0095",
+        "dtd_grooved_grooved_0097",
+        "dtd_grooved_grooved_0098"
+      ]
+    },
+    {
+      "members": [
+        "dtd_honeycombed_honeycombed_0099",
+        "dtd_honeycombed_honeycombed_0166"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_honeycombed_honeycombed_0166"
+      ]
+    },
+    {
+      "members": [
+        "dtd_honeycombed_honeycombed_0126",
+        "dtd_honeycombed_honeycombed_0136"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_honeycombed_honeycombed_0136"
+      ]
+    },
+    {
+      "members": [
+        "dtd_interlaced_interlaced_0099",
+        "dtd_interlaced_interlaced_0184"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_interlaced_interlaced_0184"
+      ]
+    },
+    {
+      "members": [
+        "dtd_knitted_knitted_0091",
+        "dtd_knitted_knitted_0102"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_knitted_knitted_0102"
+      ]
+    },
+    {
+      "members": [
+        "dtd_lined_lined_0023",
+        "dtd_lined_lined_0047"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_lined_lined_0023"
+      ]
+    },
+    {
+      "members": [
+        "dtd_lined_lined_0061",
+        "dtd_lined_lined_0062"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_lined_lined_0062"
+      ]
+    },
+    {
+      "members": [
+        "dtd_matted_matted_0069",
+        "dtd_matted_matted_0136"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_matted_matted_0069"
+      ]
+    },
+    {
+      "members": [
+        "dtd_matted_matted_0073",
+        "dtd_matted_matted_0115"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_matted_matted_0073"
+      ]
+    },
+    {
+      "members": [
+        "dtd_meshed_meshed_0107",
+        "dtd_meshed_meshed_0189"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_meshed_meshed_0107"
+      ]
+    },
+    {
+      "members": [
+        "dtd_perforated_perforated_0057",
+        "dtd_perforated_perforated_0074",
+        "dtd_perforated_perforated_0119"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_perforated_perforated_0057",
+        "dtd_perforated_perforated_0074"
+      ]
+    },
+    {
+      "members": [
+        "dtd_pitted_pitted_0002",
+        "dtd_pitted_pitted_0124"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_pitted_pitted_0124"
+      ]
+    },
+    {
+      "members": [
+        "dtd_pitted_pitted_0004",
+        "dtd_pitted_pitted_0109",
+        "dtd_pitted_pitted_0151"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_pitted_pitted_0151"
+      ]
+    },
+    {
+      "members": [
+        "dtd_pitted_pitted_0049",
+        "dtd_pitted_pitted_0101"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_pitted_pitted_0101"
+      ]
+    },
+    {
+      "members": [
+        "dtd_pitted_pitted_0061",
+        "dtd_pitted_pitted_0148"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_pitted_pitted_0061"
+      ]
+    },
+    {
+      "members": [
+        "dtd_pleated_pleated_0050",
+        "dtd_pleated_pleated_0153"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_pleated_pleated_0050"
+      ]
+    },
+    {
+      "members": [
+        "dtd_pleated_pleated_0084",
+        "dtd_pleated_pleated_0086"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_pleated_pleated_0084"
+      ]
+    },
+    {
+      "members": [
+        "dtd_pleated_pleated_0095",
+        "dtd_pleated_pleated_0108"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_pleated_pleated_0095"
+      ]
+    },
+    {
+      "members": [
+        "dtd_porous_porous_0066",
+        "dtd_porous_porous_0077"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_porous_porous_0066"
+      ]
+    },
+    {
+      "members": [
+        "dtd_potholed_potholed_0045",
+        "dtd_potholed_potholed_0144"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_potholed_potholed_0144"
+      ]
+    },
+    {
+      "members": [
+        "dtd_potholed_potholed_0080",
+        "dtd_potholed_potholed_0094"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_potholed_potholed_0080"
+      ]
+    },
+    {
+      "members": [
+        "dtd_scaly_scaly_0174",
+        "dtd_scaly_scaly_0193"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_scaly_scaly_0193"
+      ]
+    },
+    {
+      "members": [
+        "dtd_stratified_stratified_0069",
+        "dtd_stratified_stratified_0102"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_stratified_stratified_0069"
+      ]
+    },
+    {
+      "members": [
+        "dtd_stratified_stratified_0070",
+        "dtd_stratified_stratified_0134"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_stratified_stratified_0134"
+      ]
+    },
+    {
+      "members": [
+        "dtd_stratified_stratified_0072",
+        "dtd_stratified_stratified_0140"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_stratified_stratified_0072"
+      ]
+    },
+    {
+      "members": [
+        "dtd_stratified_stratified_0089",
+        "dtd_stratified_stratified_0160"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_stratified_stratified_0089"
+      ]
+    },
+    {
+      "members": [
+        "dtd_veined_veined_0094",
+        "dtd_veined_veined_0183"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_veined_veined_0094"
+      ]
+    },
+    {
+      "members": [
+        "dtd_veined_veined_0100",
+        "dtd_veined_veined_0143"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_veined_veined_0100"
+      ]
+    },
+    {
+      "members": [
+        "dtd_woven_woven_0008",
+        "dtd_woven_woven_0009",
+        "dtd_woven_woven_0010",
+        "dtd_woven_woven_0011",
+        "dtd_woven_woven_0012",
+        "dtd_woven_woven_0013",
+        "dtd_woven_woven_0014",
+        "dtd_woven_woven_0015"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_woven_woven_0009",
+        "dtd_woven_woven_0011",
+        "dtd_woven_woven_0013",
+        "dtd_woven_woven_0014",
+        "dtd_woven_woven_0015"
+      ]
+    },
+    {
+      "members": [
+        "dtd_woven_woven_0019",
+        "dtd_woven_woven_0020"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_woven_woven_0020"
+      ]
+    },
+    {
+      "members": [
+        "dtd_woven_woven_0071",
+        "dtd_woven_woven_0072",
+        "dtd_woven_woven_0073"
+      ],
+      "retained_split": "val",
+      "quarantined_ids": [
+        "dtd_woven_woven_0071",
+        "dtd_woven_woven_0072"
+      ]
+    },
+    {
+      "members": [
+        "dtd_woven_woven_0076",
+        "dtd_woven_woven_0078"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_woven_woven_0076"
+      ]
+    },
+    {
+      "members": [
+        "dtd_wrinkled_wrinkled_0023",
+        "dtd_wrinkled_wrinkled_0037"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_wrinkled_wrinkled_0023"
+      ]
+    },
+    {
+      "members": [
+        "dtd_wrinkled_wrinkled_0067",
+        "dtd_wrinkled_wrinkled_0125"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "dtd_wrinkled_wrinkled_0067"
+      ]
+    }
+  ],
+  "quarantined_by_split": {
+    "val": 21,
+    "train": 39
+  },
+  "retained_by_split": {
+    "test": 1877,
+    "train": 1835,
+    "val": 1851
+  },
+  "test_ids_unchanged": true,
+  "screened_cross_split_edges_remaining": 0,
+  "further_work": [
+    "Crop/scene review beyond hash threshold",
+    "Fresh trainable head initialization; never resume contaminated heads",
+    "Rerun all matched baselines; unchanged frozen encoders may reuse verified per-image features",
+    "Seen test remains diagnostic; new unseen confirmation needed"
+  ],
+  "predictions_used_for_filtering": false
+}

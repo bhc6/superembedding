@@ -11,6 +11,8 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 def main():
+    from superembedding.leakage_guard import require_promotion_clearance
+    require_promotion_clearance()
     root=ROOT/'data/fashion2400'
     records=[json.loads(s) for s in (root/'records.jsonl').read_text().splitlines()]
     old=[json.loads(s) for s in (ROOT/'data/fashion600/records.jsonl').read_text().splitlines()]

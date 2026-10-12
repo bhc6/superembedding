@@ -1,0 +1,5041 @@
+{
+  "backend": "qwen3_vl",
+  "queries": 1000,
+  "unique_targets": 736,
+  "hit@1": 0.731,
+  "wilson_95": [
+    0.7026696935780132,
+    0.7575622792750745
+  ],
+  "candidate_count_min": 736,
+  "candidate_count_max": 736,
+  "provenance": {
+    "backend": "qwen3_vl",
+    "spec": {
+      "model": "qwen3-vl-embedding",
+      "width": 2560,
+      "family": "Qwen VL embedding API",
+      "parameters": {
+        "dimension": 2560
+      }
+    },
+    "dataset": {
+      "dataset": "TIGER-Lab/MMEB-eval",
+      "revision": "2f069730be515ea60778413777816b53e2d2a697",
+      "config": "ScienceQA",
+      "split": "test",
+      "queries": 1000,
+      "parquet_sha256": "ee300b032eb566134f81545d0a9b530ae414e5a67e7eda0bca1c8299d582a7b0",
+      "scope": "Complete official task; original per-query candidate lists and positive-at-index-0 preserved."
+    },
+    "query": "original qry_text with image placeholder removed; no additional task instruction",
+    "candidate": "raw original target text; no task instruction",
+    "metric": "hit@1 on each original candidate list; target text equals first entry",
+    "api_warning": "API alias does not identify local Qwen2B/8B weights"
+  },
+  "local_evaluation": true,
+  "training_on_this_task": false,
+  "scope": "Full ScienceQA task from pinned MMEB-v1 metadata; NOT full MMEB or proof of SOTA.",
+  "predictions": [
+    {
+      "query": 0,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 1,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 2,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 3,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 4,
+      "candidate_index": 383,
+      "correct": false
+    },
+    {
+      "query": 5,
+      "candidate_index": 64,
+      "correct": false
+    },
+    {
+      "query": 6,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 7,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 8,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 9,
+      "candidate_index": 396,
+      "correct": false
+    },
+    {
+      "query": 10,
+      "candidate_index": 296,
+      "correct": false
+    },
+    {
+      "query": 11,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 12,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 13,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 14,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 15,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 16,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 17,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 18,
+      "candidate_index": 698,
+      "correct": false
+    },
+    {
+      "query": 19,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 20,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 21,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 22,
+      "candidate_index": 375,
+      "correct": false
+    },
+    {
+      "query": 23,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 24,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 25,
+      "candidate_index": 263,
+      "correct": false
+    },
+    {
+      "query": 26,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 27,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 28,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 29,
+      "candidate_index": 360,
+      "correct": false
+    },
+    {
+      "query": 30,
+      "candidate_index": 648,
+      "correct": false
+    },
+    {
+      "query": 31,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 32,
+      "candidate_index": 478,
+      "correct": false
+    },
+    {
+      "query": 33,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 34,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 35,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 36,
+      "candidate_index": 12,
+      "correct": false
+    },
+    {
+      "query": 37,
+      "candidate_index": 690,
+      "correct": false
+    },
+    {
+      "query": 38,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 39,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 40,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 41,
+      "candidate_index": 715,
+      "correct": false
+    },
+    {
+      "query": 42,
+      "candidate_index": 562,
+      "correct": false
+    },
+    {
+      "query": 43,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 44,
+      "candidate_index": 223,
+      "correct": false
+    },
+    {
+      "query": 45,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 46,
+      "candidate_index": 70,
+      "correct": false
+    },
+    {
+      "query": 47,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 48,
+      "candidate_index": 300,
+      "correct": false
+    },
+    {
+      "query": 49,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 50,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 51,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 52,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 53,
+      "candidate_index": 131,
+      "correct": false
+    },
+    {
+      "query": 54,
+      "candidate_index": 179,
+      "correct": false
+    },
+    {
+      "query": 55,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 56,
+      "candidate_index": 250,
+      "correct": false
+    },
+    {
+      "query": 57,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 58,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 59,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 60,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 61,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 62,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 63,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 64,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 65,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 66,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 67,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 68,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 69,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 70,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 71,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 72,
+      "candidate_index": 656,
+      "correct": false
+    },
+    {
+      "query": 73,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 74,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 75,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 76,
+      "candidate_index": 647,
+      "correct": false
+    },
+    {
+      "query": 77,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 78,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 79,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 80,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 81,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 82,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 83,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 84,
+      "candidate_index": 64,
+      "correct": false
+    },
+    {
+      "query": 85,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 86,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 87,
+      "candidate_index": 404,
+      "correct": false
+    },
+    {
+      "query": 88,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 89,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 90,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 91,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 92,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 93,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 94,
+      "candidate_index": 417,
+      "correct": false
+    },
+    {
+      "query": 95,
+      "candidate_index": 522,
+      "correct": false
+    },
+    {
+      "query": 96,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 97,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 98,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 99,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 100,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 101,
+      "candidate_index": 168,
+      "correct": false
+    },
+    {
+      "query": 102,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 103,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 104,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 105,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 106,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 107,
+      "candidate_index": 172,
+      "correct": false
+    },
+    {
+      "query": 108,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 109,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 110,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 111,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 112,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 113,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 114,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 115,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 116,
+      "candidate_index": 526,
+      "correct": false
+    },
+    {
+      "query": 117,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 118,
+      "candidate_index": 123,
+      "correct": false
+    },
+    {
+      "query": 119,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 120,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 121,
+      "candidate_index": 419,
+      "correct": false
+    },
+    {
+      "query": 122,
+      "candidate_index": 325,
+      "correct": false
+    },
+    {
+      "query": 123,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 124,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 125,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 126,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 127,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 128,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 129,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 130,
+      "candidate_index": 11,
+      "correct": false
+    },
+    {
+      "query": 131,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 132,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 133,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 134,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 135,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 136,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 137,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 138,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 139,
+      "candidate_index": 175,
+      "correct": false
+    },
+    {
+      "query": 140,
+      "candidate_index": 493,
+      "correct": false
+    },
+    {
+      "query": 141,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 142,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 143,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 144,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 145,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 146,
+      "candidate_index": 593,
+      "correct": false
+    },
+    {
+      "query": 147,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 148,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 149,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 150,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 151,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 152,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 153,
+      "candidate_index": 270,
+      "correct": false
+    },
+    {
+      "query": 154,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 155,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 156,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 157,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 158,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 159,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 160,
+      "candidate_index": 186,
+      "correct": false
+    },
+    {
+      "query": 161,
+      "candidate_index": 574,
+      "correct": false
+    },
+    {
+      "query": 162,
+      "candidate_index": 688,
+      "correct": false
+    },
+    {
+      "query": 163,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 164,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 165,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 166,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 167,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 168,
+      "candidate_index": 359,
+      "correct": false
+    },
+    {
+      "query": 169,
+      "candidate_index": 268,
+      "correct": false
+    },
+    {
+      "query": 170,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 171,
+      "candidate_index": 60,
+      "correct": false
+    },
+    {
+      "query": 172,
+      "candidate_index": 472,
+      "correct": false
+    },
+    {
+      "query": 173,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 174,
+      "candidate_index": 25,
+      "correct": false
+    },
+    {
+      "query": 175,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 176,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 177,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 178,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 179,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 180,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 181,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 182,
+      "candidate_index": 79,
+      "correct": false
+    },
+    {
+      "query": 183,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 184,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 185,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 186,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 187,
+      "candidate_index": 95,
+      "correct": false
+    },
+    {
+      "query": 188,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 189,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 190,
+      "candidate_index": 182,
+      "correct": false
+    },
+    {
+      "query": 191,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 192,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 193,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 194,
+      "candidate_index": 500,
+      "correct": false
+    },
+    {
+      "query": 195,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 196,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 197,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 198,
+      "candidate_index": 57,
+      "correct": false
+    },
+    {
+      "query": 199,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 200,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 201,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 202,
+      "candidate_index": 332,
+      "correct": false
+    },
+    {
+      "query": 203,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 204,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 205,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 206,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 207,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 208,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 209,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 210,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 211,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 212,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 213,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 214,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 215,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 216,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 217,
+      "candidate_index": 130,
+      "correct": false
+    },
+    {
+      "query": 218,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 219,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 220,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 221,
+      "candidate_index": 118,
+      "correct": false
+    },
+    {
+      "query": 222,
+      "candidate_index": 133,
+      "correct": false
+    },
+    {
+      "query": 223,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 224,
+      "candidate_index": 106,
+      "correct": false
+    },
+    {
+      "query": 225,
+      "candidate_index": 440,
+      "correct": false
+    },
+    {
+      "query": 226,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 227,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 228,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 229,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 230,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 231,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 232,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 233,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 234,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 235,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 236,
+      "candidate_index": 208,
+      "correct": false
+    },
+    {
+      "query": 237,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 238,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 239,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 240,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 241,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 242,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 243,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 244,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 245,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 246,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 247,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 248,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 249,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 250,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 251,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 252,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 253,
+      "candidate_index": 69,
+      "correct": false
+    },
+    {
+      "query": 254,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 255,
+      "candidate_index": 576,
+      "correct": false
+    },
+    {
+      "query": 256,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 257,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 258,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 259,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 260,
+      "candidate_index": 469,
+      "correct": false
+    },
+    {
+      "query": 261,
+      "candidate_index": 590,
+      "correct": false
+    },
+    {
+      "query": 262,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 263,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 264,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 265,
+      "candidate_index": 327,
+      "correct": false
+    },
+    {
+      "query": 266,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 267,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 268,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 269,
+      "candidate_index": 540,
+      "correct": false
+    },
+    {
+      "query": 270,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 271,
+      "candidate_index": 519,
+      "correct": false
+    },
+    {
+      "query": 272,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 273,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 274,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 275,
+      "candidate_index": 688,
+      "correct": false
+    },
+    {
+      "query": 276,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 277,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 278,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 279,
+      "candidate_index": 602,
+      "correct": false
+    },
+    {
+      "query": 280,
+      "candidate_index": 113,
+      "correct": false
+    },
+    {
+      "query": 281,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 282,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 283,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 284,
+      "candidate_index": 428,
+      "correct": false
+    },
+    {
+      "query": 285,
+      "candidate_index": 121,
+      "correct": false
+    },
+    {
+      "query": 286,
+      "candidate_index": 679,
+      "correct": false
+    },
+    {
+      "query": 287,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 288,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 289,
+      "candidate_index": 428,
+      "correct": false
+    },
+    {
+      "query": 290,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 291,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 292,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 293,
+      "candidate_index": 83,
+      "correct": false
+    },
+    {
+      "query": 294,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 295,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 296,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 297,
+      "candidate_index": 168,
+      "correct": false
+    },
+    {
+      "query": 298,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 299,
+      "candidate_index": 690,
+      "correct": false
+    },
+    {
+      "query": 300,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 301,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 302,
+      "candidate_index": 377,
+      "correct": false
+    },
+    {
+      "query": 303,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 304,
+      "candidate_index": 441,
+      "correct": false
+    },
+    {
+      "query": 305,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 306,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 307,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 308,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 309,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 310,
+      "candidate_index": 214,
+      "correct": false
+    },
+    {
+      "query": 311,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 312,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 313,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 314,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 315,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 316,
+      "candidate_index": 610,
+      "correct": false
+    },
+    {
+      "query": 317,
+      "candidate_index": 52,
+      "correct": false
+    },
+    {
+      "query": 318,
+      "candidate_index": 1,
+      "correct": false
+    },
+    {
+      "query": 319,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 320,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 321,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 322,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 323,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 324,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 325,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 326,
+      "candidate_index": 275,
+      "correct": false
+    },
+    {
+      "query": 327,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 328,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 329,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 330,
+      "candidate_index": 109,
+      "correct": false
+    },
+    {
+      "query": 331,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 332,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 333,
+      "candidate_index": 507,
+      "correct": false
+    },
+    {
+      "query": 334,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 335,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 336,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 337,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 338,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 339,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 340,
+      "candidate_index": 217,
+      "correct": false
+    },
+    {
+      "query": 341,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 342,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 343,
+      "candidate_index": 230,
+      "correct": false
+    },
+    {
+      "query": 344,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 345,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 346,
+      "candidate_index": 372,
+      "correct": false
+    },
+    {
+      "query": 347,
+      "candidate_index": 86,
+      "correct": false
+    },
+    {
+      "query": 348,
+      "candidate_index": 97,
+      "correct": false
+    },
+    {
+      "query": 349,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 350,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 351,
+      "candidate_index": 225,
+      "correct": false
+    },
+    {
+      "query": 352,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 353,
+      "candidate_index": 289,
+      "correct": false
+    },
+    {
+      "query": 354,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 355,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 356,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 357,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 358,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 359,
+      "candidate_index": 349,
+      "correct": false
+    },
+    {
+      "query": 360,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 361,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 362,
+      "candidate_index": 146,
+      "correct": false
+    },
+    {
+      "query": 363,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 364,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 365,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 366,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 367,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 368,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 369,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 370,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 371,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 372,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 373,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 374,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 375,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 376,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 377,
+      "candidate_index": 259,
+      "correct": false
+    },
+    {
+      "query": 378,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 379,
+      "candidate_index": 144,
+      "correct": false
+    },
+    {
+      "query": 380,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 381,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 382,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 383,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 384,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 385,
+      "candidate_index": 6,
+      "correct": false
+    },
+    {
+      "query": 386,
+      "candidate_index": 162,
+      "correct": false
+    },
+    {
+      "query": 387,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 388,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 389,
+      "candidate_index": 711,
+      "correct": false
+    },
+    {
+      "query": 390,
+      "candidate_index": 215,
+      "correct": false
+    },
+    {
+      "query": 391,
+      "candidate_index": 594,
+      "correct": false
+    },
+    {
+      "query": 392,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 393,
+      "candidate_index": 723,
+      "correct": false
+    },
+    {
+      "query": 394,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 395,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 396,
+      "candidate_index": 188,
+      "correct": false
+    },
+    {
+      "query": 397,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 398,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 399,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 400,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 401,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 402,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 403,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 404,
+      "candidate_index": 517,
+      "correct": false
+    },
+    {
+      "query": 405,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 406,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 407,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 408,
+      "candidate_index": 36,
+      "correct": false
+    },
+    {
+      "query": 409,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 410,
+      "candidate_index": 126,
+      "correct": false
+    },
+    {
+      "query": 411,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 412,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 413,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 414,
+      "candidate_index": 99,
+      "correct": false
+    },
+    {
+      "query": 415,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 416,
+      "candidate_index": 500,
+      "correct": false
+    },
+    {
+      "query": 417,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 418,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 419,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 420,
+      "candidate_index": 34,
+      "correct": false
+    },
+    {
+      "query": 421,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 422,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 423,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 424,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 425,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 426,
+      "candidate_index": 390,
+      "correct": false
+    },
+    {
+      "query": 427,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 428,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 429,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 430,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 431,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 432,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 433,
+      "candidate_index": 298,
+      "correct": false
+    },
+    {
+      "query": 434,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 435,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 436,
+      "candidate_index": 328,
+      "correct": false
+    },
+    {
+      "query": 437,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 438,
+      "candidate_index": 366,
+      "correct": false
+    },
+    {
+      "query": 439,
+      "candidate_index": 330,
+      "correct": false
+    },
+    {
+      "query": 440,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 441,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 442,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 443,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 444,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 445,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 446,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 447,
+      "candidate_index": 233,
+      "correct": false
+    },
+    {
+      "query": 448,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 449,
+      "candidate_index": 268,
+      "correct": false
+    },
+    {
+      "query": 450,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 451,
+      "candidate_index": 102,
+      "correct": false
+    },
+    {
+      "query": 452,
+      "candidate_index": 590,
+      "correct": false
+    },
+    {
+      "query": 453,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 454,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 455,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 456,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 457,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 458,
+      "candidate_index": 651,
+      "correct": false
+    },
+    {
+      "query": 459,
+      "candidate_index": 97,
+      "correct": false
+    },
+    {
+      "query": 460,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 461,
+      "candidate_index": 284,
+      "correct": false
+    },
+    {
+      "query": 462,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 463,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 464,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 465,
+      "candidate_index": 670,
+      "correct": false
+    },
+    {
+      "query": 466,
+      "candidate_index": 256,
+      "correct": false
+    },
+    {
+      "query": 467,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 468,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 469,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 470,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 471,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 472,
+      "candidate_index": 332,
+      "correct": false
+    },
+    {
+      "query": 473,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 474,
+      "candidate_index": 366,
+      "correct": false
+    },
+    {
+      "query": 475,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 476,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 477,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 478,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 479,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 480,
+      "candidate_index": 117,
+      "correct": false
+    },
+    {
+      "query": 481,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 482,
+      "candidate_index": 295,
+      "correct": false
+    },
+    {
+      "query": 483,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 484,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 485,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 486,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 487,
+      "candidate_index": 239,
+      "correct": false
+    },
+    {
+      "query": 488,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 489,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 490,
+      "candidate_index": 274,
+      "correct": false
+    },
+    {
+      "query": 491,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 492,
+      "candidate_index": 126,
+      "correct": false
+    },
+    {
+      "query": 493,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 494,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 495,
+      "candidate_index": 244,
+      "correct": false
+    },
+    {
+      "query": 496,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 497,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 498,
+      "candidate_index": 378,
+      "correct": false
+    },
+    {
+      "query": 499,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 500,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 501,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 502,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 503,
+      "candidate_index": 418,
+      "correct": false
+    },
+    {
+      "query": 504,
+      "candidate_index": 561,
+      "correct": false
+    },
+    {
+      "query": 505,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 506,
+      "candidate_index": 349,
+      "correct": false
+    },
+    {
+      "query": 507,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 508,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 509,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 510,
+      "candidate_index": 699,
+      "correct": false
+    },
+    {
+      "query": 511,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 512,
+      "candidate_index": 246,
+      "correct": false
+    },
+    {
+      "query": 513,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 514,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 515,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 516,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 517,
+      "candidate_index": 41,
+      "correct": false
+    },
+    {
+      "query": 518,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 519,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 520,
+      "candidate_index": 613,
+      "correct": false
+    },
+    {
+      "query": 521,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 522,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 523,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 524,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 525,
+      "candidate_index": 73,
+      "correct": false
+    },
+    {
+      "query": 526,
+      "candidate_index": 490,
+      "correct": false
+    },
+    {
+      "query": 527,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 528,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 529,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 530,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 531,
+      "candidate_index": 338,
+      "correct": false
+    },
+    {
+      "query": 532,
+      "candidate_index": 94,
+      "correct": false
+    },
+    {
+      "query": 533,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 534,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 535,
+      "candidate_index": 125,
+      "correct": false
+    },
+    {
+      "query": 536,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 537,
+      "candidate_index": 168,
+      "correct": false
+    },
+    {
+      "query": 538,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 539,
+      "candidate_index": 246,
+      "correct": false
+    },
+    {
+      "query": 540,
+      "candidate_index": 562,
+      "correct": false
+    },
+    {
+      "query": 541,
+      "candidate_index": 525,
+      "correct": false
+    },
+    {
+      "query": 542,
+      "candidate_index": 155,
+      "correct": false
+    },
+    {
+      "query": 543,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 544,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 545,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 546,
+      "candidate_index": 692,
+      "correct": false
+    },
+    {
+      "query": 547,
+      "candidate_index": 669,
+      "correct": false
+    },
+    {
+      "query": 548,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 549,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 550,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 551,
+      "candidate_index": 606,
+      "correct": false
+    },
+    {
+      "query": 552,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 553,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 554,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 555,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 556,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 557,
+      "candidate_index": 498,
+      "correct": false
+    },
+    {
+      "query": 558,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 559,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 560,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 561,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 562,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 563,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 564,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 565,
+      "candidate_index": 577,
+      "correct": false
+    },
+    {
+      "query": 566,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 567,
+      "candidate_index": 561,
+      "correct": false
+    },
+    {
+      "query": 568,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 569,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 570,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 571,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 572,
+      "candidate_index": 57,
+      "correct": false
+    },
+    {
+      "query": 573,
+      "candidate_index": 528,
+      "correct": false
+    },
+    {
+      "query": 574,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 575,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 576,
+      "candidate_index": 279,
+      "correct": false
+    },
+    {
+      "query": 577,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 578,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 579,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 580,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 581,
+      "candidate_index": 527,
+      "correct": false
+    },
+    {
+      "query": 582,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 583,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 584,
+      "candidate_index": 137,
+      "correct": false
+    },
+    {
+      "query": 585,
+      "candidate_index": 301,
+      "correct": false
+    },
+    {
+      "query": 586,
+      "candidate_index": 441,
+      "correct": false
+    },
+    {
+      "query": 587,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 588,
+      "candidate_index": 96,
+      "correct": false
+    },
+    {
+      "query": 589,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 590,
+      "candidate_index": 727,
+      "correct": false
+    },
+    {
+      "query": 591,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 592,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 593,
+      "candidate_index": 292,
+      "correct": false
+    },
+    {
+      "query": 594,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 595,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 596,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 597,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 598,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 599,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 600,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 601,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 602,
+      "candidate_index": 500,
+      "correct": false
+    },
+    {
+      "query": 603,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 604,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 605,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 606,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 607,
+      "candidate_index": 334,
+      "correct": false
+    },
+    {
+      "query": 608,
+      "candidate_index": 619,
+      "correct": false
+    },
+    {
+      "query": 609,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 610,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 611,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 612,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 613,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 614,
+      "candidate_index": 600,
+      "correct": false
+    },
+    {
+      "query": 615,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 616,
+      "candidate_index": 506,
+      "correct": false
+    },
+    {
+      "query": 617,
+      "candidate_index": 112,
+      "correct": false
+    },
+    {
+      "query": 618,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 619,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 620,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 621,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 622,
+      "candidate_index": 576,
+      "correct": false
+    },
+    {
+      "query": 623,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 624,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 625,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 626,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 627,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 628,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 629,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 630,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 631,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 632,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 633,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 634,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 635,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 636,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 637,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 638,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 639,
+      "candidate_index": 402,
+      "correct": false
+    },
+    {
+      "query": 640,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 641,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 642,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 643,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 644,
+      "candidate_index": 582,
+      "correct": false
+    },
+    {
+      "query": 645,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 646,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 647,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 648,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 649,
+      "candidate_index": 616,
+      "correct": false
+    },
+    {
+      "query": 650,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 651,
+      "candidate_index": 292,
+      "correct": false
+    },
+    {
+      "query": 652,
+      "candidate_index": 167,
+      "correct": false
+    },
+    {
+      "query": 653,
+      "candidate_index": 627,
+      "correct": false
+    },
+    {
+      "query": 654,
+      "candidate_index": 3,
+      "correct": false
+    },
+    {
+      "query": 655,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 656,
+      "candidate_index": 431,
+      "correct": false
+    },
+    {
+      "query": 657,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 658,
+      "candidate_index": 559,
+      "correct": false
+    },
+    {
+      "query": 659,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 660,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 661,
+      "candidate_index": 509,
+      "correct": false
+    },
+    {
+      "query": 662,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 663,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 664,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 665,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 666,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 667,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 668,
+      "candidate_index": 85,
+      "correct": false
+    },
+    {
+      "query": 669,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 670,
+      "candidate_index": 278,
+      "correct": false
+    },
+    {
+      "query": 671,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 672,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 673,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 674,
+      "candidate_index": 327,
+      "correct": false
+    },
+    {
+      "query": 675,
+      "candidate_index": 701,
+      "correct": false
+    },
+    {
+      "query": 676,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 677,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 678,
+      "candidate_index": 90,
+      "correct": false
+    },
+    {
+      "query": 679,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 680,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 681,
+      "candidate_index": 225,
+      "correct": false
+    },
+    {
+      "query": 682,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 683,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 684,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 685,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 686,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 687,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 688,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 689,
+      "candidate_index": 293,
+      "correct": false
+    },
+    {
+      "query": 690,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 691,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 692,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 693,
+      "candidate_index": 236,
+      "correct": false
+    },
+    {
+      "query": 694,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 695,
+      "candidate_index": 112,
+      "correct": false
+    },
+    {
+      "query": 696,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 697,
+      "candidate_index": 458,
+      "correct": false
+    },
+    {
+      "query": 698,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 699,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 700,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 701,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 702,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 703,
+      "candidate_index": 169,
+      "correct": false
+    },
+    {
+      "query": 704,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 705,
+      "candidate_index": 579,
+      "correct": false
+    },
+    {
+      "query": 706,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 707,
+      "candidate_index": 531,
+      "correct": false
+    },
+    {
+      "query": 708,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 709,
+      "candidate_index": 339,
+      "correct": false
+    },
+    {
+      "query": 710,
+      "candidate_index": 416,
+      "correct": false
+    },
+    {
+      "query": 711,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 712,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 713,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 714,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 715,
+      "candidate_index": 290,
+      "correct": false
+    },
+    {
+      "query": 716,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 717,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 718,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 719,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 720,
+      "candidate_index": 571,
+      "correct": false
+    },
+    {
+      "query": 721,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 722,
+      "candidate_index": 594,
+      "correct": false
+    },
+    {
+      "query": 723,
+      "candidate_index": 664,
+      "correct": false
+    },
+    {
+      "query": 724,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 725,
+      "candidate_index": 541,
+      "correct": false
+    },
+    {
+      "query": 726,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 727,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 728,
+      "candidate_index": 248,
+      "correct": false
+    },
+    {
+      "query": 729,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 730,
+      "candidate_index": 18,
+      "correct": false
+    },
+    {
+      "query": 731,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 732,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 733,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 734,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 735,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 736,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 737,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 738,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 739,
+      "candidate_index": 347,
+      "correct": false
+    },
+    {
+      "query": 740,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 741,
+      "candidate_index": 603,
+      "correct": false
+    },
+    {
+      "query": 742,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 743,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 744,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 745,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 746,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 747,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 748,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 749,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 750,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 751,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 752,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 753,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 754,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 755,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 756,
+      "candidate_index": 443,
+      "correct": false
+    },
+    {
+      "query": 757,
+      "candidate_index": 111,
+      "correct": false
+    },
+    {
+      "query": 758,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 759,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 760,
+      "candidate_index": 613,
+      "correct": false
+    },
+    {
+      "query": 761,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 762,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 763,
+      "candidate_index": 419,
+      "correct": false
+    },
+    {
+      "query": 764,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 765,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 766,
+      "candidate_index": 196,
+      "correct": false
+    },
+    {
+      "query": 767,
+      "candidate_index": 241,
+      "correct": false
+    },
+    {
+      "query": 768,
+      "candidate_index": 65,
+      "correct": false
+    },
+    {
+      "query": 769,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 770,
+      "candidate_index": 505,
+      "correct": false
+    },
+    {
+      "query": 771,
+      "candidate_index": 120,
+      "correct": false
+    },
+    {
+      "query": 772,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 773,
+      "candidate_index": 146,
+      "correct": false
+    },
+    {
+      "query": 774,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 775,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 776,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 777,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 778,
+      "candidate_index": 542,
+      "correct": false
+    },
+    {
+      "query": 779,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 780,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 781,
+      "candidate_index": 82,
+      "correct": false
+    },
+    {
+      "query": 782,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 783,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 784,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 785,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 786,
+      "candidate_index": 610,
+      "correct": false
+    },
+    {
+      "query": 787,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 788,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 789,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 790,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 791,
+      "candidate_index": 626,
+      "correct": false
+    },
+    {
+      "query": 792,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 793,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 794,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 795,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 796,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 797,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 798,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 799,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 800,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 801,
+      "candidate_index": 333,
+      "correct": false
+    },
+    {
+      "query": 802,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 803,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 804,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 805,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 806,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 807,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 808,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 809,
+      "candidate_index": 71,
+      "correct": false
+    },
+    {
+      "query": 810,
+      "candidate_index": 677,
+      "correct": false
+    },
+    {
+      "query": 811,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 812,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 813,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 814,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 815,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 816,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 817,
+      "candidate_index": 463,
+      "correct": false
+    },
+    {
+      "query": 818,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 819,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 820,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 821,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 822,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 823,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 824,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 825,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 826,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 827,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 828,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 829,
+      "candidate_index": 37,
+      "correct": false
+    },
+    {
+      "query": 830,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 831,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 832,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 833,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 834,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 835,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 836,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 837,
+      "candidate_index": 97,
+      "correct": false
+    },
+    {
+      "query": 838,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 839,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 840,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 841,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 842,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 843,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 844,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 845,
+      "candidate_index": 14,
+      "correct": false
+    },
+    {
+      "query": 846,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 847,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 848,
+      "candidate_index": 461,
+      "correct": false
+    },
+    {
+      "query": 849,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 850,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 851,
+      "candidate_index": 203,
+      "correct": false
+    },
+    {
+      "query": 852,
+      "candidate_index": 524,
+      "correct": false
+    },
+    {
+      "query": 853,
+      "candidate_index": 723,
+      "correct": false
+    },
+    {
+      "query": 854,
+      "candidate_index": 358,
+      "correct": false
+    },
+    {
+      "query": 855,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 856,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 857,
+      "candidate_index": 86,
+      "correct": false
+    },
+    {
+      "query": 858,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 859,
+      "candidate_index": 582,
+      "correct": false
+    },
+    {
+      "query": 860,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 861,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 862,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 863,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 864,
+      "candidate_index": 527,
+      "correct": false
+    },
+    {
+      "query": 865,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 866,
+      "candidate_index": 182,
+      "correct": false
+    },
+    {
+      "query": 867,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 868,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 869,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 870,
+      "candidate_index": 193,
+      "correct": false
+    },
+    {
+      "query": 871,
+      "candidate_index": 470,
+      "correct": false
+    },
+    {
+      "query": 872,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 873,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 874,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 875,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 876,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 877,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 878,
+      "candidate_index": 413,
+      "correct": false
+    },
+    {
+      "query": 879,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 880,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 881,
+      "candidate_index": 357,
+      "correct": false
+    },
+    {
+      "query": 882,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 883,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 884,
+      "candidate_index": 576,
+      "correct": false
+    },
+    {
+      "query": 885,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 886,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 887,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 888,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 889,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 890,
+      "candidate_index": 25,
+      "correct": false
+    },
+    {
+      "query": 891,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 892,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 893,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 894,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 895,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 896,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 897,
+      "candidate_index": 27,
+      "correct": false
+    },
+    {
+      "query": 898,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 899,
+      "candidate_index": 465,
+      "correct": false
+    },
+    {
+      "query": 900,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 901,
+      "candidate_index": 539,
+      "correct": false
+    },
+    {
+      "query": 902,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 903,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 904,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 905,
+      "candidate_index": 568,
+      "correct": false
+    },
+    {
+      "query": 906,
+      "candidate_index": 218,
+      "correct": false
+    },
+    {
+      "query": 907,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 908,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 909,
+      "candidate_index": 655,
+      "correct": false
+    },
+    {
+      "query": 910,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 911,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 912,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 913,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 914,
+      "candidate_index": 10,
+      "correct": false
+    },
+    {
+      "query": 915,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 916,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 917,
+      "candidate_index": 173,
+      "correct": false
+    },
+    {
+      "query": 918,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 919,
+      "candidate_index": 130,
+      "correct": false
+    },
+    {
+      "query": 920,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 921,
+      "candidate_index": 247,
+      "correct": false
+    },
+    {
+      "query": 922,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 923,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 924,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 925,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 926,
+      "candidate_index": 449,
+      "correct": false
+    },
+    {
+      "query": 927,
+      "candidate_index": 228,
+      "correct": false
+    },
+    {
+      "query": 928,
+      "candidate_index": 532,
+      "correct": false
+    },
+    {
+      "query": 929,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 930,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 931,
+      "candidate_index": 623,
+      "correct": false
+    },
+    {
+      "query": 932,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 933,
+      "candidate_index": 610,
+      "correct": false
+    },
+    {
+      "query": 934,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 935,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 936,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 937,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 938,
+      "candidate_index": 493,
+      "correct": false
+    },
+    {
+      "query": 939,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 940,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 941,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 942,
+      "candidate_index": 665,
+      "correct": false
+    },
+    {
+      "query": 943,
+      "candidate_index": 205,
+      "correct": false
+    },
+    {
+      "query": 944,
+      "candidate_index": 344,
+      "correct": false
+    },
+    {
+      "query": 945,
+      "candidate_index": 72,
+      "correct": false
+    },
+    {
+      "query": 946,
+      "candidate_index": 586,
+      "correct": false
+    },
+    {
+      "query": 947,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 948,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 949,
+      "candidate_index": 25,
+      "correct": false
+    },
+    {
+      "query": 950,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 951,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 952,
+      "candidate_index": 504,
+      "correct": false
+    },
+    {
+      "query": 953,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 954,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 955,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 956,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 957,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 958,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 959,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 960,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 961,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 962,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 963,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 964,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 965,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 966,
+      "candidate_index": 669,
+      "correct": false
+    },
+    {
+      "query": 967,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 968,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 969,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 970,
+      "candidate_index": 108,
+      "correct": false
+    },
+    {
+      "query": 971,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 972,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 973,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 974,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 975,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 976,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 977,
+      "candidate_index": 138,
+      "correct": false
+    },
+    {
+      "query": 978,
+      "candidate_index": 431,
+      "correct": false
+    },
+    {
+      "query": 979,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 980,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 981,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 982,
+      "candidate_index": 187,
+      "correct": false
+    },
+    {
+      "query": 983,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 984,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 985,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 986,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 987,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 988,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 989,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 990,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 991,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 992,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 993,
+      "candidate_index": 121,
+      "correct": false
+    },
+    {
+      "query": 994,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 995,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 996,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 997,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 998,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 999,
+      "candidate_index": 0,
+      "correct": true
+    }
+  ]
+}

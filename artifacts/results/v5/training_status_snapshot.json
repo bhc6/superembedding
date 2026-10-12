@@ -1,0 +1,17 @@
+{
+  "step": 544,
+  "source": "localized_narratives",
+  "loss": 0.35770511627197266,
+  "lr": 8.840830521805525e-06,
+  "gradient_norm": 18.483354568481445,
+  "lora_probe_grad_norm": 0.13246619701385498,
+  "lora_probe_delta_from_launch": 0.0006098529556766152,
+  "gradient_replay_max_error": 0.0,
+  "seconds": 64.48159250000026,
+  "peak_allocated_MiB": 5257.9150390625,
+  "pid": 5484,
+  "state": "running",
+  "last_checkpoint_step": 540,
+  "completed_this_launch": 266,
+  "elapsed_seconds": 18370.6001426
+}

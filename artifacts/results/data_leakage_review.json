@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-11T14:41:08.275051+00:00",
+  "audit": {
+    "path": "artifacts/results/v5/data_leakage_audit.json",
+    "sha256": "05ee4fc44c49fdd076a6da646fec63be2f32ca3e00846f7d4ae27edab200941f"
+  },
+  "datasets": {
+    "fashion600": {
+      "status": "blocked",
+      "unresolved": [
+        "Product identity/variant and crop-aware review; full-image hashes are insufficient."
+      ],
+      "historical_result_use": "exploratory_only_not_leakage_cleared"
+    },
+    "fashion2400": {
+      "status": "blocked",
+      "unresolved": [
+        "Product identity/variant and crop-aware review; full-image hashes are insufficient."
+      ],
+      "historical_result_use": "exploratory_only_not_leakage_cleared"
+    },
+    "fashion_expanded": {
+      "status": "blocked",
+      "unresolved": [
+        "Product identity/variant and crop-aware review; full-image hashes are insufficient."
+      ],
+      "historical_result_use": "exploratory_only_not_leakage_cleared"
+    },
+    "cub_attributes": {
+      "status": "blocked",
+      "unresolved": [
+        "Confirmed cross-split photo/scene dependence. New versioned split, fresh head training and all matched baseline reruns required.",
+        "Conservative removal of screened candidates does not exhaust crop/scene duplicates."
+      ],
+      "historical_result_use": "exploratory_only_not_leakage_cleared"
+    },
+    "dtd": {
+      "status": "blocked",
+      "unresolved": [
+        "Confirmed cross-split photo/scene dependence. New versioned split, fresh head training and all matched baseline reruns required.",
+        "Conservative removal of screened candidates does not exhaust crop/scene duplicates."
+      ],
+      "historical_result_use": "exploratory_only_not_leakage_cleared"
+    },
+    "v5": {
+      "status": "blocked",
+      "unresolved": [
+        "DocVQA entity/answer grouping missing; current validation selection is exploratory.",
+        "Remaining ScienceQA shared-map candidates require content review; OOD and external are related sources.",
+        "Question-only overlap and language-shortcut controls are diagnostics, not independent entity holdout.",
+        "Current external results already observed; new method choices need a separately sealed unseen test."
+      ],
+      "historical_result_use": "exploratory_only_not_leakage_cleared"
+    }
+  },
+  "pair_decisions": [
+    {
+      "family": "cub_attributes",
+      "a": "cub_01413",
+      "b": "cub_01460",
+      "a_split": "test",
+      "b_split": "train",
+      "a_file_sha256": "016d0ec1623540e65f1da02fab5297771ff16ea8aa0c3c845af1ea5ca0e1f8b7",
+      "b_file_sha256": "cc471aa0ca94258b17286a00a88731b0b2250cefe06bbfcef55658092376c90d",
+      "verdict": "same_photo",
+      "reason": "Same black bird, branch and background; encoding differs.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "cub_attributes",
+      "a": "cub_10371",
+      "b": "cub_10379",
+      "a_split": "test",
+      "b_split": "train",
+      "a_file_sha256": "634fa01d8b74023fc6afdf68439fa6f9e58a6a4b70c9f5504498dc6ff50c02b6",
+      "b_file_sha256": "425cfaa02bd23ac3aacc9c7cbf34345b35e88fd98afd25d9498a40d42e3aac4e",
+      "verdict": "same_photo",
+      "reason": "Same yellow bird, foliage and composition; encoding differs.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "cub_attributes",
+      "a": "cub_11592",
+      "b": "cub_11594",
+      "a_split": "test",
+      "b_split": "val",
+      "a_file_sha256": "1b4aacb2a1fc8c383c691ac3354dcdd2bdc9cdd657719e417d498fdc481cbc70",
+      "b_file_sha256": "fc35c70b4a03972656591ccb98d58caa49da853d1e6ec2966c7f95bcc7534019",
+      "verdict": "same_scene",
+      "reason": "Same bird/branch/background, differing beak pose; burst/scene dependence.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "dtd",
+      "a": "dtd_potholed_potholed_0144",
+      "b": "dtd_potholed_potholed_0045",
+      "a_split": "train",
+      "b_split": "val",
+      "a_file_sha256": "3191b80f08b086e731c6545efbdd2e7515081df4756a7ab28c95a62056b7ba23",
+      "b_file_sha256": "b469e82916be2d7552d131b5215d8b2199fc35f2c9642f25bf53fef08e9d590a",
+      "verdict": "same_photo",
+      "reason": "Visually matching texture detail and composition; resized/recompressed versions.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "dtd",
+      "a": "dtd_dotted_dotted_0131",
+      "b": "dtd_dotted_dotted_0060",
+      "a_split": "train",
+      "b_split": "val",
+      "a_file_sha256": "0c1e5daac0a738755844312deebf3dc904254f13614e3eb4aa065eabd5ca9116",
+      "b_file_sha256": "3f86f32ab3fa0f545f9c8284ddc42fc2120a9bdba90b8d8975a3a756f38cb246",
+      "verdict": "same_photo",
+      "reason": "Visually matching texture detail and composition; resized/recompressed versions.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "dtd",
+      "a": "dtd_grid_grid_0035",
+      "b": "dtd_meshed_meshed_0044",
+      "a_split": "test",
+      "b_split": "train",
+      "a_file_sha256": "b0680b05ece96fa757fa33620b9ac7e93161b06f3485f90c87ed2d24ed2427d7",
+      "b_file_sha256": "608272c414f819d379c6819c0ab5726f7aeb55fd2b85da3f808982eb76d648f0",
+      "verdict": "same_photo",
+      "reason": "Visually matching texture detail and composition; resized/recompressed versions.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "dtd",
+      "a": "dtd_wrinkled_wrinkled_0037",
+      "b": "dtd_wrinkled_wrinkled_0023",
+      "a_split": "test",
+      "b_split": "val",
+      "a_file_sha256": "2b4b430096133acbb4185c6181a9a12ae5a58a15b1a6d3166ee2282bff0f95c7",
+      "b_file_sha256": "1dccfe8b36d3cc2ee71e611cb76b537991e3fdd4046e207114e5354a547f1e04",
+      "verdict": "same_photo",
+      "reason": "Visually matching texture detail and composition; resized/recompressed versions.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "dtd",
+      "a": "dtd_lined_lined_0047",
+      "b": "dtd_lined_lined_0023",
+      "a_split": "test",
+      "b_split": "val",
+      "a_file_sha256": "63c6389a15812aac9a140e257888a355e9d67774ba0d42c25189d1544e27c6b2",
+      "b_file_sha256": "cd2eed81a250c6a46360fd6b0606153a47f119ece910aa2cf61066afca604cdb",
+      "verdict": "same_photo",
+      "reason": "Visually matching texture detail and composition; resized/recompressed versions.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "dtd",
+      "a": "dtd_knitted_knitted_0102",
+      "b": "dtd_knitted_knitted_0091",
+      "a_split": "train",
+      "b_split": "val",
+      "a_file_sha256": "db05c729095f045aca1d86005a1df851e785e5a06ca3b59837196d9db44963ac",
+      "b_file_sha256": "9ef9e308f41e3cc03b7a160b47e46b3b36dc3aa0f734b8970cf50dbccbccb740",
+      "verdict": "same_photo",
+      "reason": "Visually matching texture detail and composition; resized/recompressed versions.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "dtd",
+      "a": "dtd_crosshatched_crosshatched_0092",
+      "b": "dtd_crosshatched_crosshatched_0093",
+      "a_split": "test",
+      "b_split": "val",
+      "a_file_sha256": "ee7895031b761697401ef837af1e80f6a6bbb1bf2e4785383a00320170b12916",
+      "b_file_sha256": "a47eab2279e8fefd47cfcb8ce7d1b133c7c888eb748184aa42d93a7f4cedc870",
+      "verdict": "same_photo",
+      "reason": "Visually matching texture detail and composition; resized/recompressed versions.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "dtd",
+      "a": "dtd_pitted_pitted_0002",
+      "b": "dtd_pitted_pitted_0124",
+      "a_split": "test",
+      "b_split": "val",
+      "a_file_sha256": "33ff61aa8124824bf0ae90274cd458a3c0bd6668b38dacf631d55ed722569fa8",
+      "b_file_sha256": "1092dc7af4f2dc4269ab366ea287aed99c6993c85aa241c298b0c48d2e2d31ff",
+      "verdict": "same_photo",
+      "reason": "Visually matching texture detail and composition; resized/recompressed versions.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "v5",
+      "a": "chart2text:20016",
+      "b": "chartqa:12515",
+      "a_split": "train",
+      "b_split": "val",
+      "a_file_sha256": "65344a2e0b1fd3973be904fcb0c3e65857268dc3545daa35e0caacfff12cbbc7",
+      "b_file_sha256": "f3c3e717576ae0d3ae64cfbfba4516d1a0b166f86ab5b171145de46de93530ac",
+      "verdict": "different_content_shared_template",
+      "reason": "Different chart topics/labels/values; do not delete by low hash distance alone.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "v5",
+      "a": "chart2text:19695",
+      "b": "chart2text:1329",
+      "a_split": "train",
+      "b_split": "val",
+      "a_file_sha256": "f8c296bc1f18234497acf409a9927cd50febf9d10a3c3f050f524f81139dc774",
+      "b_file_sha256": "25e3b1f16b4e769694ff64def592d1be9c189b85d60fb6621fa9370c7a2357e3",
+      "verdict": "different_content_shared_template",
+      "reason": "Different chart topics/labels/values; do not delete by low hash distance alone.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "v5",
+      "a": "chartqa:17976",
+      "b": "chartqa:3692",
+      "a_split": "train",
+      "b_split": "val",
+      "a_file_sha256": "afa3cf8919be6ea2a3e5c2c8b5257ae464eb94f0df68d3fa0b5a793cd008c470",
+      "b_file_sha256": "690fa1c2ffc12d2a52140465fb2e243745e82e6f8a48915623fcfb8c8197dde4",
+      "verdict": "different_content_shared_template",
+      "reason": "Different chart topics/labels/values; do not delete by low hash distance alone.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "v5",
+      "a": "scienceqa_official:681",
+      "b": "scienceqa:4772",
+      "a_split": "external_scienceqa",
+      "b_split": "ood",
+      "a_file_sha256": "d33ceebe4828d47c512cb25505f642b17d1337a2a53fb18fe450d1ce3f56609b",
+      "b_file_sha256": "c9afe394c34584b53d16ffbcbfbd832bc031c51b5c97f64d4309c60830bddc52",
+      "verdict": "different_content_shared_template",
+      "reason": "Same US map canvas, different city marker locations; reviewed pair only.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "v5",
+      "a": "scienceqa_official:152",
+      "b": "scienceqa:1499",
+      "a_split": "external_scienceqa",
+      "b_split": "ood",
+      "a_file_sha256": "4736b4fa623df382652b94e37063821024abd0890aa714b4df578105d44d1fca",
+      "b_file_sha256": "9488600ca5f44b644586d8837da36ff9b74fb434f8af2afd3ebf07acb3197833",
+      "verdict": "different_content_shared_template",
+      "reason": "Same US map canvas, different city marker locations; reviewed pair only.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "v5",
+      "a": "scienceqa_official:322",
+      "b": "scienceqa:1499",
+      "a_split": "external_scienceqa",
+      "b_split": "ood",
+      "a_file_sha256": "b842c25be38fef31e8ea6f446b55b49a06892f00f935372bbdd2bfab8db0b9e8",
+      "b_file_sha256": "9488600ca5f44b644586d8837da36ff9b74fb434f8af2afd3ebf07acb3197833",
+      "verdict": "different_content_shared_template",
+      "reason": "Same US map canvas, different city marker locations; reviewed pair only.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    },
+    {
+      "family": "v5",
+      "a": "docvqa:7503",
+      "b": "docvqa:7512",
+      "a_split": "train",
+      "b_split": "val",
+      "a_file_sha256": "6b4600455762012484eb350b93eb77404aa785dcd163f3ee22d2c10b9df6d69d",
+      "b_file_sha256": "c5f8c5479cf0aa64fc008b47f4738b29098b2e0e3b2ae362c7c7eb6184db7ddc",
+      "verdict": "same_entity_fixed_answer",
+      "reason": "Different dates/products/amounts, same BIOMET company/vendor and PO box question/answer. Not identical documents; entity generalization is confounded.",
+      "reviewer": "assistant visual inspection; not independent human adjudication"
+    }
+  ],
+  "entity_group": {
+    "family": "v5",
+    "members": [
+      "docvqa:7461",
+      "docvqa:7499",
+      "docvqa:7503",
+      "docvqa:7512"
+    ],
+    "scope": "Verified examples, not an exhaustive inventory of this entity"
+  },
+  "blockers": [
+    "Cross-split duplicates in CUB/DTD",
+    "V5 DocVQA entity overlap",
+    "Remaining product/document/scene review",
+    "Seen tests cannot validate subsequent design choices"
+  ],
+  "release_eligible": false,
+  "confirmatory_test_status": "not_sealed",
+  "prediction_or_metric_used_for_filtering": false,
+  "historical_files_modified": false,
+  "pretraining_contamination": "Unknown; no local audit can clear inherited/proprietary training corpora.",
+  "v5_continuation_policy": {
+    "protocol": "artifacts/results/v5/step556_continuation_protocol.json",
+    "allowed": "Exact diagnostic continuation from last step 556 to predeclared terminal 2000",
+    "old_validation_selection_allowed": false,
+    "release_eligible": false,
+    "fresh_holdout_required": true
+  }
+}

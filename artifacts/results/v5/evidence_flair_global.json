@@ -1,0 +1,1833 @@
+{
+  "backend": "flair_global",
+  "dataset_sha256": "998427f3c4f808df7ccc2f4c5723dcf2c7409395ebaefc74b09b7ba283de30a2",
+  "provenance": {
+    "checkpoint_sha256": "f27893da7eceb8d94553fa10efce143330896f4181caf91d76a4d864fce70193",
+    "model_revision": "0a306fd7060ba3076da3c9ee75b569e6aabea6c6",
+    "repo_revision": "0f9ce05886d1ee0aa2c628653104cce77a1fff14",
+    "dataset_sha256": "998427f3c4f808df7ccc2f4c5723dcf2c7409395ebaefc74b09b7ba283de30a2",
+    "device": "cpu",
+    "dtype": "float32",
+    "implementation_sha256": "4b5a4458c5af167579aac6d8c3d7453d3ef764d6d5857599fb360e729876e9c1",
+    "query": "original v1 text; official tokenizer; no extra instruction"
+  },
+  "metrics": {
+    "color": {
+      "cases": 64,
+      "anchor_preference": 1.0,
+      "robust_both_preference": 0.84375
+    },
+    "number": {
+      "cases": 64,
+      "anchor_preference": 0.65625,
+      "robust_both_preference": 0.5
+    },
+    "position": {
+      "cases": 64,
+      "anchor_preference": 0.546875,
+      "robust_both_preference": 0.28125
+    },
+    "shape": {
+      "cases": 64,
+      "anchor_preference": 0.71875,
+      "robust_both_preference": 0.625
+    }
+  },
+  "cases": [
+    {
+      "id": "0000/color",
+      "scene_group": 0,
+      "attribute": "color",
+      "anchor_margin": 1.7077093124389648,
+      "nuisance_margin": -0.6371278762817383
+    },
+    {
+      "id": "0000/shape",
+      "scene_group": 0,
+      "attribute": "shape",
+      "anchor_margin": -0.9283113479614258,
+      "nuisance_margin": -2.6247034072875977
+    },
+    {
+      "id": "0000/number",
+      "scene_group": 0,
+      "attribute": "number",
+      "anchor_margin": -0.018365859985351562,
+      "nuisance_margin": -1.4849929809570312
+    },
+    {
+      "id": "0000/position",
+      "scene_group": 0,
+      "attribute": "position",
+      "anchor_margin": -0.32819461822509766,
+      "nuisance_margin": -0.6671438217163086
+    },
+    {
+      "id": "0001/color",
+      "scene_group": 1,
+      "attribute": "color",
+      "anchor_margin": 1.089803695678711,
+      "nuisance_margin": -1.7896900177001953
+    },
+    {
+      "id": "0001/shape",
+      "scene_group": 1,
+      "attribute": "shape",
+      "anchor_margin": 2.183037757873535,
+      "nuisance_margin": -0.029893875122070312
+    },
+    {
+      "id": "0001/number",
+      "scene_group": 1,
+      "attribute": "number",
+      "anchor_margin": 0.48807477951049805,
+      "nuisance_margin": -0.19678878784179688
+    },
+    {
+      "id": "0001/position",
+      "scene_group": 1,
+      "attribute": "position",
+      "anchor_margin": 0.13621997833251953,
+      "nuisance_margin": -0.8627204895019531
+    },
+    {
+      "id": "0002/color",
+      "scene_group": 2,
+      "attribute": "color",
+      "anchor_margin": 3.032571792602539,
+      "nuisance_margin": 1.9455137252807617
+    },
+    {
+      "id": "0002/shape",
+      "scene_group": 2,
+      "attribute": "shape",
+      "anchor_margin": -0.8258600234985352,
+      "nuisance_margin": -1.7597923278808594
+    },
+    {
+      "id": "0002/number",
+      "scene_group": 2,
+      "attribute": "number",
+      "anchor_margin": 0.3503861427307129,
+      "nuisance_margin": -0.8011527061462402
+    },
+    {
+      "id": "0002/position",
+      "scene_group": 2,
+      "attribute": "position",
+      "anchor_margin": 1.109847068786621,
+      "nuisance_margin": -0.9914875030517578
+    },
+    {
+      "id": "0003/color",
+      "scene_group": 3,
+      "attribute": "color",
+      "anchor_margin": 2.8388442993164062,
+      "nuisance_margin": 3.663649559020996
+    },
+    {
+      "id": "0003/shape",
+      "scene_group": 3,
+      "attribute": "shape",
+      "anchor_margin": 0.18276405334472656,
+      "nuisance_margin": 0.5411558151245117
+    },
+    {
+      "id": "0003/number",
+      "scene_group": 3,
+      "attribute": "number",
+      "anchor_margin": 0.4178133010864258,
+      "nuisance_margin": 0.14502811431884766
+    },
+    {
+      "id": "0003/position",
+      "scene_group": 3,
+      "attribute": "position",
+      "anchor_margin": 0.16445541381835938,
+      "nuisance_margin": 1.6298208236694336
+    },
+    {
+      "id": "0004/color",
+      "scene_group": 4,
+      "attribute": "color",
+      "anchor_margin": 3.2405662536621094,
+      "nuisance_margin": 1.556549072265625
+    },
+    {
+      "id": "0004/shape",
+      "scene_group": 4,
+      "attribute": "shape",
+      "anchor_margin": 2.680058479309082,
+      "nuisance_margin": 1.7483491897583008
+    },
+    {
+      "id": "0004/number",
+      "scene_group": 4,
+      "attribute": "number",
+      "anchor_margin": -0.06286191940307617,
+      "nuisance_margin": -0.9410433769226074
+    },
+    {
+      "id": "0004/position",
+      "scene_group": 4,
+      "attribute": "position",
+      "anchor_margin": 0.06725311279296875,
+      "nuisance_margin": -1.6812257766723633
+    },
+    {
+      "id": "0005/color",
+      "scene_group": 5,
+      "attribute": "color",
+      "anchor_margin": 3.7383220195770264,
+      "nuisance_margin": 6.559410333633423
+    },
+    {
+      "id": "0005/shape",
+      "scene_group": 5,
+      "attribute": "shape",
+      "anchor_margin": -1.4812488555908203,
+      "nuisance_margin": -1.132711410522461
+    },
+    {
+      "id": "0005/number",
+      "scene_group": 5,
+      "attribute": "number",
+      "anchor_margin": 1.1918866634368896,
+      "nuisance_margin": 3.155203104019165
+    },
+    {
+      "id": "0005/position",
+      "scene_group": 5,
+      "attribute": "position",
+      "anchor_margin": 0.10232353210449219,
+      "nuisance_margin": 2.699124336242676
+    },
+    {
+      "id": "0006/color",
+      "scene_group": 6,
+      "attribute": "color",
+      "anchor_margin": 3.470480442047119,
+      "nuisance_margin": 2.7089476585388184
+    },
+    {
+      "id": "0006/shape",
+      "scene_group": 6,
+      "attribute": "shape",
+      "anchor_margin": 0.14436626434326172,
+      "nuisance_margin": -1.190511703491211
+    },
+    {
+      "id": "0006/number",
+      "scene_group": 6,
+      "attribute": "number",
+      "anchor_margin": 0.8637354373931885,
+      "nuisance_margin": 1.5167725086212158
+    },
+    {
+      "id": "0006/position",
+      "scene_group": 6,
+      "attribute": "position",
+      "anchor_margin": 0.36183738708496094,
+      "nuisance_margin": -0.621607780456543
+    },
+    {
+      "id": "0007/color",
+      "scene_group": 7,
+      "attribute": "color",
+      "anchor_margin": 3.322221279144287,
+      "nuisance_margin": 4.340080738067627
+    },
+    {
+      "id": "0007/shape",
+      "scene_group": 7,
+      "attribute": "shape",
+      "anchor_margin": 1.2384119033813477,
+      "nuisance_margin": 1.4881591796875
+    },
+    {
+      "id": "0007/number",
+      "scene_group": 7,
+      "attribute": "number",
+      "anchor_margin": 0.19617223739624023,
+      "nuisance_margin": 0.6926970481872559
+    },
+    {
+      "id": "0007/position",
+      "scene_group": 7,
+      "attribute": "position",
+      "anchor_margin": 0.5323219299316406,
+      "nuisance_margin": 2.56771183013916
+    },
+    {
+      "id": "0008/color",
+      "scene_group": 8,
+      "attribute": "color",
+      "anchor_margin": 0.20517349243164062,
+      "nuisance_margin": -3.9385128021240234
+    },
+    {
+      "id": "0008/shape",
+      "scene_group": 8,
+      "attribute": "shape",
+      "anchor_margin": 2.79555606842041,
+      "nuisance_margin": 0.7052335739135742
+    },
+    {
+      "id": "0008/number",
+      "scene_group": 8,
+      "attribute": "number",
+      "anchor_margin": 0.8466625213623047,
+      "nuisance_margin": -0.025823116302490234
+    },
+    {
+      "id": "0008/position",
+      "scene_group": 8,
+      "attribute": "position",
+      "anchor_margin": 0.2744626998901367,
+      "nuisance_margin": -2.7118587493896484
+    },
+    {
+      "id": "0009/color",
+      "scene_group": 9,
+      "attribute": "color",
+      "anchor_margin": 2.736330509185791,
+      "nuisance_margin": 2.7587342262268066
+    },
+    {
+      "id": "0009/shape",
+      "scene_group": 9,
+      "attribute": "shape",
+      "anchor_margin": 4.422324180603027,
+      "nuisance_margin": 3.0295543670654297
+    },
+    {
+      "id": "0009/number",
+      "scene_group": 9,
+      "attribute": "number",
+      "anchor_margin": 0.6607890129089355,
+      "nuisance_margin": 0.5497322082519531
+    },
+    {
+      "id": "0009/position",
+      "scene_group": 9,
+      "attribute": "position",
+      "anchor_margin": 0.09335994720458984,
+      "nuisance_margin": -0.5487079620361328
+    },
+    {
+      "id": "0010/color",
+      "scene_group": 10,
+      "attribute": "color",
+      "anchor_margin": 2.031362533569336,
+      "nuisance_margin": 1.5634346008300781
+    },
+    {
+      "id": "0010/shape",
+      "scene_group": 10,
+      "attribute": "shape",
+      "anchor_margin": 2.8516693115234375,
+      "nuisance_margin": 3.1229639053344727
+    },
+    {
+      "id": "0010/number",
+      "scene_group": 10,
+      "attribute": "number",
+      "anchor_margin": -0.7774543762207031,
+      "nuisance_margin": 0.15448427200317383
+    },
+    {
+      "id": "0010/position",
+      "scene_group": 10,
+      "attribute": "position",
+      "anchor_margin": 0.07132339477539062,
+      "nuisance_margin": 0.6046285629272461
+    },
+    {
+      "id": "0011/color",
+      "scene_group": 11,
+      "attribute": "color",
+      "anchor_margin": 3.1161036491394043,
+      "nuisance_margin": 3.392434597015381
+    },
+    {
+      "id": "0011/shape",
+      "scene_group": 11,
+      "attribute": "shape",
+      "anchor_margin": 3.705089569091797,
+      "nuisance_margin": 3.147547721862793
+    },
+    {
+      "id": "0011/number",
+      "scene_group": 11,
+      "attribute": "number",
+      "anchor_margin": -0.7891366481781006,
+      "nuisance_margin": -0.8231723308563232
+    },
+    {
+      "id": "0011/position",
+      "scene_group": 11,
+      "attribute": "position",
+      "anchor_margin": 0.1066598892211914,
+      "nuisance_margin": 0.0055942535400390625
+    },
+    {
+      "id": "0012/color",
+      "scene_group": 12,
+      "attribute": "color",
+      "anchor_margin": 4.12897253036499,
+      "nuisance_margin": 2.0386910438537598
+    },
+    {
+      "id": "0012/shape",
+      "scene_group": 12,
+      "attribute": "shape",
+      "anchor_margin": 4.1945013999938965,
+      "nuisance_margin": 2.607743740081787
+    },
+    {
+      "id": "0012/number",
+      "scene_group": 12,
+      "attribute": "number",
+      "anchor_margin": 0.9037623405456543,
+      "nuisance_margin": 0.12720203399658203
+    },
+    {
+      "id": "0012/position",
+      "scene_group": 12,
+      "attribute": "position",
+      "anchor_margin": 0.2106475830078125,
+      "nuisance_margin": -0.32923221588134766
+    },
+    {
+      "id": "0013/color",
+      "scene_group": 13,
+      "attribute": "color",
+      "anchor_margin": 1.9627912044525146,
+      "nuisance_margin": 5.356245279312134
+    },
+    {
+      "id": "0013/shape",
+      "scene_group": 13,
+      "attribute": "shape",
+      "anchor_margin": 2.20394229888916,
+      "nuisance_margin": 3.614948272705078
+    },
+    {
+      "id": "0013/number",
+      "scene_group": 13,
+      "attribute": "number",
+      "anchor_margin": 0.5410995483398438,
+      "nuisance_margin": 1.6603541374206543
+    },
+    {
+      "id": "0013/position",
+      "scene_group": 13,
+      "attribute": "position",
+      "anchor_margin": 0.21215248107910156,
+      "nuisance_margin": 3.587127685546875
+    },
+    {
+      "id": "0014/color",
+      "scene_group": 14,
+      "attribute": "color",
+      "anchor_margin": 5.366849899291992,
+      "nuisance_margin": 5.128632545471191
+    },
+    {
+      "id": "0014/shape",
+      "scene_group": 14,
+      "attribute": "shape",
+      "anchor_margin": 0.28400230407714844,
+      "nuisance_margin": 0.530512809753418
+    },
+    {
+      "id": "0014/number",
+      "scene_group": 14,
+      "attribute": "number",
+      "anchor_margin": -0.6694612503051758,
+      "nuisance_margin": -2.12020206451416
+    },
+    {
+      "id": "0014/position",
+      "scene_group": 14,
+      "attribute": "position",
+      "anchor_margin": -0.24076175689697266,
+      "nuisance_margin": 0.49944305419921875
+    },
+    {
+      "id": "0015/color",
+      "scene_group": 15,
+      "attribute": "color",
+      "anchor_margin": 2.8125061988830566,
+      "nuisance_margin": 2.611100673675537
+    },
+    {
+      "id": "0015/shape",
+      "scene_group": 15,
+      "attribute": "shape",
+      "anchor_margin": 2.8304758071899414,
+      "nuisance_margin": 1.7903995513916016
+    },
+    {
+      "id": "0015/number",
+      "scene_group": 15,
+      "attribute": "number",
+      "anchor_margin": 0.7356886863708496,
+      "nuisance_margin": -0.25220394134521484
+    },
+    {
+      "id": "0015/position",
+      "scene_group": 15,
+      "attribute": "position",
+      "anchor_margin": 0.1475057601928711,
+      "nuisance_margin": -1.1930522918701172
+    },
+    {
+      "id": "0016/color",
+      "scene_group": 16,
+      "attribute": "color",
+      "anchor_margin": 2.9289541244506836,
+      "nuisance_margin": 1.155686855316162
+    },
+    {
+      "id": "0016/shape",
+      "scene_group": 16,
+      "attribute": "shape",
+      "anchor_margin": 1.7631144523620605,
+      "nuisance_margin": 1.0827889442443848
+    },
+    {
+      "id": "0016/number",
+      "scene_group": 16,
+      "attribute": "number",
+      "anchor_margin": 0.9175028800964355,
+      "nuisance_margin": 0.8333029747009277
+    },
+    {
+      "id": "0016/position",
+      "scene_group": 16,
+      "attribute": "position",
+      "anchor_margin": 0.22485637664794922,
+      "nuisance_margin": 0.4487123489379883
+    },
+    {
+      "id": "0017/color",
+      "scene_group": 17,
+      "attribute": "color",
+      "anchor_margin": 4.001887798309326,
+      "nuisance_margin": 3.1621198654174805
+    },
+    {
+      "id": "0017/shape",
+      "scene_group": 17,
+      "attribute": "shape",
+      "anchor_margin": 2.7537479400634766,
+      "nuisance_margin": 3.204763412475586
+    },
+    {
+      "id": "0017/number",
+      "scene_group": 17,
+      "attribute": "number",
+      "anchor_margin": 1.6008353233337402,
+      "nuisance_margin": 2.0815720558166504
+    },
+    {
+      "id": "0017/position",
+      "scene_group": 17,
+      "attribute": "position",
+      "anchor_margin": 0.3795299530029297,
+      "nuisance_margin": 1.161055564880371
+    },
+    {
+      "id": "0018/color",
+      "scene_group": 18,
+      "attribute": "color",
+      "anchor_margin": 1.4234437942504883,
+      "nuisance_margin": -3.0389671325683594
+    },
+    {
+      "id": "0018/shape",
+      "scene_group": 18,
+      "attribute": "shape",
+      "anchor_margin": 2.643014907836914,
+      "nuisance_margin": 0.565464973449707
+    },
+    {
+      "id": "0018/number",
+      "scene_group": 18,
+      "attribute": "number",
+      "anchor_margin": 0.06984758377075195,
+      "nuisance_margin": -1.7489349842071533
+    },
+    {
+      "id": "0018/position",
+      "scene_group": 18,
+      "attribute": "position",
+      "anchor_margin": 0.29851627349853516,
+      "nuisance_margin": -3.483290672302246
+    },
+    {
+      "id": "0019/color",
+      "scene_group": 19,
+      "attribute": "color",
+      "anchor_margin": 1.7840876579284668,
+      "nuisance_margin": -0.6012530326843262
+    },
+    {
+      "id": "0019/shape",
+      "scene_group": 19,
+      "attribute": "shape",
+      "anchor_margin": -0.9317522048950195,
+      "nuisance_margin": -3.0191049575805664
+    },
+    {
+      "id": "0019/number",
+      "scene_group": 19,
+      "attribute": "number",
+      "anchor_margin": 0.006547689437866211,
+      "nuisance_margin": 0.6854848861694336
+    },
+    {
+      "id": "0019/position",
+      "scene_group": 19,
+      "attribute": "position",
+      "anchor_margin": -0.41912174224853516,
+      "nuisance_margin": -0.9887619018554688
+    },
+    {
+      "id": "0020/color",
+      "scene_group": 20,
+      "attribute": "color",
+      "anchor_margin": 2.294313907623291,
+      "nuisance_margin": 2.414527416229248
+    },
+    {
+      "id": "0020/shape",
+      "scene_group": 20,
+      "attribute": "shape",
+      "anchor_margin": -1.0901269912719727,
+      "nuisance_margin": -2.031270980834961
+    },
+    {
+      "id": "0020/number",
+      "scene_group": 20,
+      "attribute": "number",
+      "anchor_margin": 0.4999351501464844,
+      "nuisance_margin": 1.979513168334961
+    },
+    {
+      "id": "0020/position",
+      "scene_group": 20,
+      "attribute": "position",
+      "anchor_margin": -0.2925119400024414,
+      "nuisance_margin": 0.43480682373046875
+    },
+    {
+      "id": "0021/color",
+      "scene_group": 21,
+      "attribute": "color",
+      "anchor_margin": 3.0547447204589844,
+      "nuisance_margin": 0.40778303146362305
+    },
+    {
+      "id": "0021/shape",
+      "scene_group": 21,
+      "attribute": "shape",
+      "anchor_margin": 5.335638999938965,
+      "nuisance_margin": 3.4522180557250977
+    },
+    {
+      "id": "0021/number",
+      "scene_group": 21,
+      "attribute": "number",
+      "anchor_margin": -0.5732202529907227,
+      "nuisance_margin": -0.9027466773986816
+    },
+    {
+      "id": "0021/position",
+      "scene_group": 21,
+      "attribute": "position",
+      "anchor_margin": -0.17937660217285156,
+      "nuisance_margin": -2.875340461730957
+    },
+    {
+      "id": "0022/color",
+      "scene_group": 22,
+      "attribute": "color",
+      "anchor_margin": 3.6410794258117676,
+      "nuisance_margin": -0.31683349609375
+    },
+    {
+      "id": "0022/shape",
+      "scene_group": 22,
+      "attribute": "shape",
+      "anchor_margin": 2.557767868041992,
+      "nuisance_margin": -0.6047534942626953
+    },
+    {
+      "id": "0022/number",
+      "scene_group": 22,
+      "attribute": "number",
+      "anchor_margin": -0.22217273712158203,
+      "nuisance_margin": -3.1125340461730957
+    },
+    {
+      "id": "0022/position",
+      "scene_group": 22,
+      "attribute": "position",
+      "anchor_margin": -0.1096200942993164,
+      "nuisance_margin": -3.4352235794067383
+    },
+    {
+      "id": "0023/color",
+      "scene_group": 23,
+      "attribute": "color",
+      "anchor_margin": 3.643458127975464,
+      "nuisance_margin": 2.9801671504974365
+    },
+    {
+      "id": "0023/shape",
+      "scene_group": 23,
+      "attribute": "shape",
+      "anchor_margin": 1.3611598014831543,
+      "nuisance_margin": -0.5264730453491211
+    },
+    {
+      "id": "0023/number",
+      "scene_group": 23,
+      "attribute": "number",
+      "anchor_margin": -0.04118013381958008,
+      "nuisance_margin": -1.4831438064575195
+    },
+    {
+      "id": "0023/position",
+      "scene_group": 23,
+      "attribute": "position",
+      "anchor_margin": -0.01984691619873047,
+      "nuisance_margin": -1.1225147247314453
+    },
+    {
+      "id": "0024/color",
+      "scene_group": 24,
+      "attribute": "color",
+      "anchor_margin": 1.3983378410339355,
+      "nuisance_margin": 0.12287282943725586
+    },
+    {
+      "id": "0024/shape",
+      "scene_group": 24,
+      "attribute": "shape",
+      "anchor_margin": 0.5377941131591797,
+      "nuisance_margin": -1.457362174987793
+    },
+    {
+      "id": "0024/number",
+      "scene_group": 24,
+      "attribute": "number",
+      "anchor_margin": 1.134763240814209,
+      "nuisance_margin": 1.2261223793029785
+    },
+    {
+      "id": "0024/position",
+      "scene_group": 24,
+      "attribute": "position",
+      "anchor_margin": 0.38919925689697266,
+      "nuisance_margin": -0.23550891876220703
+    },
+    {
+      "id": "0025/color",
+      "scene_group": 25,
+      "attribute": "color",
+      "anchor_margin": 4.37246561050415,
+      "nuisance_margin": 4.1775336265563965
+    },
+    {
+      "id": "0025/shape",
+      "scene_group": 25,
+      "attribute": "shape",
+      "anchor_margin": 4.052008628845215,
+      "nuisance_margin": 3.3582582473754883
+    },
+    {
+      "id": "0025/number",
+      "scene_group": 25,
+      "attribute": "number",
+      "anchor_margin": 0.8017473220825195,
+      "nuisance_margin": 1.182981014251709
+    },
+    {
+      "id": "0025/position",
+      "scene_group": 25,
+      "attribute": "position",
+      "anchor_margin": -0.13667011260986328,
+      "nuisance_margin": -0.4218921661376953
+    },
+    {
+      "id": "0026/color",
+      "scene_group": 26,
+      "attribute": "color",
+      "anchor_margin": 2.9430583715438843,
+      "nuisance_margin": 3.2099865674972534
+    },
+    {
+      "id": "0026/shape",
+      "scene_group": 26,
+      "attribute": "shape",
+      "anchor_margin": -0.3792390823364258,
+      "nuisance_margin": -0.973419189453125
+    },
+    {
+      "id": "0026/number",
+      "scene_group": 26,
+      "attribute": "number",
+      "anchor_margin": -0.31998252868652344,
+      "nuisance_margin": 0.7161747217178345
+    },
+    {
+      "id": "0026/position",
+      "scene_group": 26,
+      "attribute": "position",
+      "anchor_margin": 0.258084774017334,
+      "nuisance_margin": -0.02655649185180664
+    },
+    {
+      "id": "0027/color",
+      "scene_group": 27,
+      "attribute": "color",
+      "anchor_margin": 3.0187673568725586,
+      "nuisance_margin": 3.5937795639038086
+    },
+    {
+      "id": "0027/shape",
+      "scene_group": 27,
+      "attribute": "shape",
+      "anchor_margin": -0.533656120300293,
+      "nuisance_margin": -0.26855945587158203
+    },
+    {
+      "id": "0027/number",
+      "scene_group": 27,
+      "attribute": "number",
+      "anchor_margin": 0.5352778434753418,
+      "nuisance_margin": 2.089590549468994
+    },
+    {
+      "id": "0027/position",
+      "scene_group": 27,
+      "attribute": "position",
+      "anchor_margin": -0.13768386840820312,
+      "nuisance_margin": 1.888899803161621
+    },
+    {
+      "id": "0028/color",
+      "scene_group": 28,
+      "attribute": "color",
+      "anchor_margin": 3.631957530975342,
+      "nuisance_margin": 4.056158065795898
+    },
+    {
+      "id": "0028/shape",
+      "scene_group": 28,
+      "attribute": "shape",
+      "anchor_margin": -0.7285594940185547,
+      "nuisance_margin": -0.18048667907714844
+    },
+    {
+      "id": "0028/number",
+      "scene_group": 28,
+      "attribute": "number",
+      "anchor_margin": 0.37807512283325195,
+      "nuisance_margin": -0.7187352180480957
+    },
+    {
+      "id": "0028/position",
+      "scene_group": 28,
+      "attribute": "position",
+      "anchor_margin": -0.2043609619140625,
+      "nuisance_margin": 0.5896263122558594
+    },
+    {
+      "id": "0029/color",
+      "scene_group": 29,
+      "attribute": "color",
+      "anchor_margin": 2.571428060531616,
+      "nuisance_margin": 3.0481278896331787
+    },
+    {
+      "id": "0029/shape",
+      "scene_group": 29,
+      "attribute": "shape",
+      "anchor_margin": -0.6734733581542969,
+      "nuisance_margin": -1.714371681213379
+    },
+    {
+      "id": "0029/number",
+      "scene_group": 29,
+      "attribute": "number",
+      "anchor_margin": -0.016837596893310547,
+      "nuisance_margin": 1.3955321311950684
+    },
+    {
+      "id": "0029/position",
+      "scene_group": 29,
+      "attribute": "position",
+      "anchor_margin": 0.4206843376159668,
+      "nuisance_margin": 0.5685362815856934
+    },
+    {
+      "id": "0030/color",
+      "scene_group": 30,
+      "attribute": "color",
+      "anchor_margin": 2.391963005065918,
+      "nuisance_margin": 3.3095245361328125
+    },
+    {
+      "id": "0030/shape",
+      "scene_group": 30,
+      "attribute": "shape",
+      "anchor_margin": -0.30210113525390625,
+      "nuisance_margin": -0.5672321319580078
+    },
+    {
+      "id": "0030/number",
+      "scene_group": 30,
+      "attribute": "number",
+      "anchor_margin": 0.3400750160217285,
+      "nuisance_margin": 1.9931902885437012
+    },
+    {
+      "id": "0030/position",
+      "scene_group": 30,
+      "attribute": "position",
+      "anchor_margin": 0.07367610931396484,
+      "nuisance_margin": 0.4661903381347656
+    },
+    {
+      "id": "0031/color",
+      "scene_group": 31,
+      "attribute": "color",
+      "anchor_margin": 3.1120285987854004,
+      "nuisance_margin": 0.1937255859375
+    },
+    {
+      "id": "0031/shape",
+      "scene_group": 31,
+      "attribute": "shape",
+      "anchor_margin": 2.1276063919067383,
+      "nuisance_margin": 0.5409660339355469
+    },
+    {
+      "id": "0031/number",
+      "scene_group": 31,
+      "attribute": "number",
+      "anchor_margin": 0.5311222076416016,
+      "nuisance_margin": 0.30334949493408203
+    },
+    {
+      "id": "0031/position",
+      "scene_group": 31,
+      "attribute": "position",
+      "anchor_margin": -0.23348045349121094,
+      "nuisance_margin": -2.419989585876465
+    },
+    {
+      "id": "0032/color",
+      "scene_group": 32,
+      "attribute": "color",
+      "anchor_margin": 2.0533981323242188,
+      "nuisance_margin": 1.3142781257629395
+    },
+    {
+      "id": "0032/shape",
+      "scene_group": 32,
+      "attribute": "shape",
+      "anchor_margin": 4.129327297210693,
+      "nuisance_margin": 3.691718578338623
+    },
+    {
+      "id": "0032/number",
+      "scene_group": 32,
+      "attribute": "number",
+      "anchor_margin": -0.24991989135742188,
+      "nuisance_margin": -0.39936065673828125
+    },
+    {
+      "id": "0032/position",
+      "scene_group": 32,
+      "attribute": "position",
+      "anchor_margin": 0.4151134490966797,
+      "nuisance_margin": -0.05837535858154297
+    },
+    {
+      "id": "0033/color",
+      "scene_group": 33,
+      "attribute": "color",
+      "anchor_margin": 3.724324941635132,
+      "nuisance_margin": 3.263314962387085
+    },
+    {
+      "id": "0033/shape",
+      "scene_group": 33,
+      "attribute": "shape",
+      "anchor_margin": 2.6674914360046387,
+      "nuisance_margin": 2.1142730712890625
+    },
+    {
+      "id": "0033/number",
+      "scene_group": 33,
+      "attribute": "number",
+      "anchor_margin": 0.33819150924682617,
+      "nuisance_margin": 1.1947290897369385
+    },
+    {
+      "id": "0033/position",
+      "scene_group": 33,
+      "attribute": "position",
+      "anchor_margin": -0.10544872283935547,
+      "nuisance_margin": -0.5294303894042969
+    },
+    {
+      "id": "0034/color",
+      "scene_group": 34,
+      "attribute": "color",
+      "anchor_margin": 2.5584702491760254,
+      "nuisance_margin": 2.251645565032959
+    },
+    {
+      "id": "0034/shape",
+      "scene_group": 34,
+      "attribute": "shape",
+      "anchor_margin": 5.722783088684082,
+      "nuisance_margin": 4.863500595092773
+    },
+    {
+      "id": "0034/number",
+      "scene_group": 34,
+      "attribute": "number",
+      "anchor_margin": 1.0944972038269043,
+      "nuisance_margin": 0.42626094818115234
+    },
+    {
+      "id": "0034/position",
+      "scene_group": 34,
+      "attribute": "position",
+      "anchor_margin": 0.6752328872680664,
+      "nuisance_margin": 0.3686494827270508
+    },
+    {
+      "id": "0035/color",
+      "scene_group": 35,
+      "attribute": "color",
+      "anchor_margin": 4.055586814880371,
+      "nuisance_margin": 3.979480743408203
+    },
+    {
+      "id": "0035/shape",
+      "scene_group": 35,
+      "attribute": "shape",
+      "anchor_margin": 2.8211116790771484,
+      "nuisance_margin": 3.7004241943359375
+    },
+    {
+      "id": "0035/number",
+      "scene_group": 35,
+      "attribute": "number",
+      "anchor_margin": 0.1633288860321045,
+      "nuisance_margin": 2.088951587677002
+    },
+    {
+      "id": "0035/position",
+      "scene_group": 35,
+      "attribute": "position",
+      "anchor_margin": -0.026277542114257812,
+      "nuisance_margin": -0.13343334197998047
+    },
+    {
+      "id": "0036/color",
+      "scene_group": 36,
+      "attribute": "color",
+      "anchor_margin": 3.3261680603027344,
+      "nuisance_margin": 6.115475654602051
+    },
+    {
+      "id": "0036/shape",
+      "scene_group": 36,
+      "attribute": "shape",
+      "anchor_margin": 1.659977912902832,
+      "nuisance_margin": 2.8782691955566406
+    },
+    {
+      "id": "0036/number",
+      "scene_group": 36,
+      "attribute": "number",
+      "anchor_margin": 1.0240445137023926,
+      "nuisance_margin": 1.7784380912780762
+    },
+    {
+      "id": "0036/position",
+      "scene_group": 36,
+      "attribute": "position",
+      "anchor_margin": -0.14652538299560547,
+      "nuisance_margin": 1.7743873596191406
+    },
+    {
+      "id": "0037/color",
+      "scene_group": 37,
+      "attribute": "color",
+      "anchor_margin": 3.684159278869629,
+      "nuisance_margin": 1.2683730125427246
+    },
+    {
+      "id": "0037/shape",
+      "scene_group": 37,
+      "attribute": "shape",
+      "anchor_margin": -0.3708457946777344,
+      "nuisance_margin": -2.223944664001465
+    },
+    {
+      "id": "0037/number",
+      "scene_group": 37,
+      "attribute": "number",
+      "anchor_margin": 1.0124385356903076,
+      "nuisance_margin": 1.2940495014190674
+    },
+    {
+      "id": "0037/position",
+      "scene_group": 37,
+      "attribute": "position",
+      "anchor_margin": 0.4418659210205078,
+      "nuisance_margin": -0.4729776382446289
+    },
+    {
+      "id": "0038/color",
+      "scene_group": 38,
+      "attribute": "color",
+      "anchor_margin": 3.217930793762207,
+      "nuisance_margin": 1.6066150665283203
+    },
+    {
+      "id": "0038/shape",
+      "scene_group": 38,
+      "attribute": "shape",
+      "anchor_margin": 3.730638027191162,
+      "nuisance_margin": 3.059074878692627
+    },
+    {
+      "id": "0038/number",
+      "scene_group": 38,
+      "attribute": "number",
+      "anchor_margin": 0.7397003173828125,
+      "nuisance_margin": 0.6825613975524902
+    },
+    {
+      "id": "0038/position",
+      "scene_group": 38,
+      "attribute": "position",
+      "anchor_margin": -0.3948516845703125,
+      "nuisance_margin": -0.4899740219116211
+    },
+    {
+      "id": "0039/color",
+      "scene_group": 39,
+      "attribute": "color",
+      "anchor_margin": 2.355837821960449,
+      "nuisance_margin": 1.617849349975586
+    },
+    {
+      "id": "0039/shape",
+      "scene_group": 39,
+      "attribute": "shape",
+      "anchor_margin": 3.035564422607422,
+      "nuisance_margin": 2.0421571731567383
+    },
+    {
+      "id": "0039/number",
+      "scene_group": 39,
+      "attribute": "number",
+      "anchor_margin": -0.41474246978759766,
+      "nuisance_margin": -1.629683494567871
+    },
+    {
+      "id": "0039/position",
+      "scene_group": 39,
+      "attribute": "position",
+      "anchor_margin": -0.27182674407958984,
+      "nuisance_margin": -2.825383186340332
+    },
+    {
+      "id": "0040/color",
+      "scene_group": 40,
+      "attribute": "color",
+      "anchor_margin": 4.64107608795166,
+      "nuisance_margin": 0.8246908187866211
+    },
+    {
+      "id": "0040/shape",
+      "scene_group": 40,
+      "attribute": "shape",
+      "anchor_margin": 1.5640029907226562,
+      "nuisance_margin": -1.1612300872802734
+    },
+    {
+      "id": "0040/number",
+      "scene_group": 40,
+      "attribute": "number",
+      "anchor_margin": 1.0060057640075684,
+      "nuisance_margin": -1.4602937698364258
+    },
+    {
+      "id": "0040/position",
+      "scene_group": 40,
+      "attribute": "position",
+      "anchor_margin": -0.26097869873046875,
+      "nuisance_margin": -2.5162220001220703
+    },
+    {
+      "id": "0041/color",
+      "scene_group": 41,
+      "attribute": "color",
+      "anchor_margin": 3.7181239128112793,
+      "nuisance_margin": 3.847811222076416
+    },
+    {
+      "id": "0041/shape",
+      "scene_group": 41,
+      "attribute": "shape",
+      "anchor_margin": 3.7952346801757812,
+      "nuisance_margin": 3.2371883392333984
+    },
+    {
+      "id": "0041/number",
+      "scene_group": 41,
+      "attribute": "number",
+      "anchor_margin": 0.6099967956542969,
+      "nuisance_margin": 1.4589266777038574
+    },
+    {
+      "id": "0041/position",
+      "scene_group": 41,
+      "attribute": "position",
+      "anchor_margin": -0.138519287109375,
+      "nuisance_margin": -0.4856071472167969
+    },
+    {
+      "id": "0042/color",
+      "scene_group": 42,
+      "attribute": "color",
+      "anchor_margin": 1.289006233215332,
+      "nuisance_margin": 0.5010089874267578
+    },
+    {
+      "id": "0042/shape",
+      "scene_group": 42,
+      "attribute": "shape",
+      "anchor_margin": -0.3015165328979492,
+      "nuisance_margin": -0.6912755966186523
+    },
+    {
+      "id": "0042/number",
+      "scene_group": 42,
+      "attribute": "number",
+      "anchor_margin": 0.13060665130615234,
+      "nuisance_margin": 0.9147243499755859
+    },
+    {
+      "id": "0042/position",
+      "scene_group": 42,
+      "attribute": "position",
+      "anchor_margin": -0.4926319122314453,
+      "nuisance_margin": 1.724111557006836
+    },
+    {
+      "id": "0043/color",
+      "scene_group": 43,
+      "attribute": "color",
+      "anchor_margin": 3.4619879722595215,
+      "nuisance_margin": 1.5391478538513184
+    },
+    {
+      "id": "0043/shape",
+      "scene_group": 43,
+      "attribute": "shape",
+      "anchor_margin": 2.694852352142334,
+      "nuisance_margin": 0.8227105140686035
+    },
+    {
+      "id": "0043/number",
+      "scene_group": 43,
+      "attribute": "number",
+      "anchor_margin": -0.1593489646911621,
+      "nuisance_margin": -1.472867488861084
+    },
+    {
+      "id": "0043/position",
+      "scene_group": 43,
+      "attribute": "position",
+      "anchor_margin": 0.10685062408447266,
+      "nuisance_margin": -2.9992504119873047
+    },
+    {
+      "id": "0044/color",
+      "scene_group": 44,
+      "attribute": "color",
+      "anchor_margin": 1.338864803314209,
+      "nuisance_margin": -1.244140625
+    },
+    {
+      "id": "0044/shape",
+      "scene_group": 44,
+      "attribute": "shape",
+      "anchor_margin": 2.8713150024414062,
+      "nuisance_margin": 2.270857810974121
+    },
+    {
+      "id": "0044/number",
+      "scene_group": 44,
+      "attribute": "number",
+      "anchor_margin": 0.11250519752502441,
+      "nuisance_margin": -0.6867876052856445
+    },
+    {
+      "id": "0044/position",
+      "scene_group": 44,
+      "attribute": "position",
+      "anchor_margin": -0.49697017669677734,
+      "nuisance_margin": -1.4097251892089844
+    },
+    {
+      "id": "0045/color",
+      "scene_group": 45,
+      "attribute": "color",
+      "anchor_margin": 2.3319382667541504,
+      "nuisance_margin": 1.6788830757141113
+    },
+    {
+      "id": "0045/shape",
+      "scene_group": 45,
+      "attribute": "shape",
+      "anchor_margin": 1.8497447967529297,
+      "nuisance_margin": 1.6847152709960938
+    },
+    {
+      "id": "0045/number",
+      "scene_group": 45,
+      "attribute": "number",
+      "anchor_margin": 0.7168111801147461,
+      "nuisance_margin": 1.5650606155395508
+    },
+    {
+      "id": "0045/position",
+      "scene_group": 45,
+      "attribute": "position",
+      "anchor_margin": 0.3664369583129883,
+      "nuisance_margin": 0.8194293975830078
+    },
+    {
+      "id": "0046/color",
+      "scene_group": 46,
+      "attribute": "color",
+      "anchor_margin": 2.371044158935547,
+      "nuisance_margin": -1.1935210227966309
+    },
+    {
+      "id": "0046/shape",
+      "scene_group": 46,
+      "attribute": "shape",
+      "anchor_margin": 2.8218908309936523,
+      "nuisance_margin": 0.5666894912719727
+    },
+    {
+      "id": "0046/number",
+      "scene_group": 46,
+      "attribute": "number",
+      "anchor_margin": 0.8678703308105469,
+      "nuisance_margin": 0.1840062141418457
+    },
+    {
+      "id": "0046/position",
+      "scene_group": 46,
+      "attribute": "position",
+      "anchor_margin": -0.07243537902832031,
+      "nuisance_margin": -2.3296823501586914
+    },
+    {
+      "id": "0047/color",
+      "scene_group": 47,
+      "attribute": "color",
+      "anchor_margin": 1.6994800567626953,
+      "nuisance_margin": -0.32215118408203125
+    },
+    {
+      "id": "0047/shape",
+      "scene_group": 47,
+      "attribute": "shape",
+      "anchor_margin": 4.170132637023926,
+      "nuisance_margin": 4.073826789855957
+    },
+    {
+      "id": "0047/number",
+      "scene_group": 47,
+      "attribute": "number",
+      "anchor_margin": -0.4362201690673828,
+      "nuisance_margin": -0.9210729598999023
+    },
+    {
+      "id": "0047/position",
+      "scene_group": 47,
+      "attribute": "position",
+      "anchor_margin": -0.2537250518798828,
+      "nuisance_margin": 0.21245384216308594
+    },
+    {
+      "id": "0048/color",
+      "scene_group": 48,
+      "attribute": "color",
+      "anchor_margin": 3.754397392272949,
+      "nuisance_margin": 3.2604546546936035
+    },
+    {
+      "id": "0048/shape",
+      "scene_group": 48,
+      "attribute": "shape",
+      "anchor_margin": -0.6332387924194336,
+      "nuisance_margin": -0.7824506759643555
+    },
+    {
+      "id": "0048/number",
+      "scene_group": 48,
+      "attribute": "number",
+      "anchor_margin": 0.003134012222290039,
+      "nuisance_margin": 0.007868528366088867
+    },
+    {
+      "id": "0048/position",
+      "scene_group": 48,
+      "attribute": "position",
+      "anchor_margin": -0.031475067138671875,
+      "nuisance_margin": 0.39708518981933594
+    },
+    {
+      "id": "0049/color",
+      "scene_group": 49,
+      "attribute": "color",
+      "anchor_margin": 3.06850004196167,
+      "nuisance_margin": 4.709707736968994
+    },
+    {
+      "id": "0049/shape",
+      "scene_group": 49,
+      "attribute": "shape",
+      "anchor_margin": 2.7220778465270996,
+      "nuisance_margin": 3.468895435333252
+    },
+    {
+      "id": "0049/number",
+      "scene_group": 49,
+      "attribute": "number",
+      "anchor_margin": 0.3036308288574219,
+      "nuisance_margin": -0.1821742057800293
+    },
+    {
+      "id": "0049/position",
+      "scene_group": 49,
+      "attribute": "position",
+      "anchor_margin": -0.01864147186279297,
+      "nuisance_margin": 1.2792224884033203
+    },
+    {
+      "id": "0050/color",
+      "scene_group": 50,
+      "attribute": "color",
+      "anchor_margin": 2.3261027336120605,
+      "nuisance_margin": 1.1755118370056152
+    },
+    {
+      "id": "0050/shape",
+      "scene_group": 50,
+      "attribute": "shape",
+      "anchor_margin": 1.2500677108764648,
+      "nuisance_margin": 1.1874570846557617
+    },
+    {
+      "id": "0050/number",
+      "scene_group": 50,
+      "attribute": "number",
+      "anchor_margin": 0.2402629852294922,
+      "nuisance_margin": -0.7495386600494385
+    },
+    {
+      "id": "0050/position",
+      "scene_group": 50,
+      "attribute": "position",
+      "anchor_margin": 0.1380176544189453,
+      "nuisance_margin": -0.6985769271850586
+    },
+    {
+      "id": "0051/color",
+      "scene_group": 51,
+      "attribute": "color",
+      "anchor_margin": 2.350508213043213,
+      "nuisance_margin": -0.22711467742919922
+    },
+    {
+      "id": "0051/shape",
+      "scene_group": 51,
+      "attribute": "shape",
+      "anchor_margin": 4.314690113067627,
+      "nuisance_margin": 3.408290386199951
+    },
+    {
+      "id": "0051/number",
+      "scene_group": 51,
+      "attribute": "number",
+      "anchor_margin": -0.9822072982788086,
+      "nuisance_margin": -2.2701640129089355
+    },
+    {
+      "id": "0051/position",
+      "scene_group": 51,
+      "attribute": "position",
+      "anchor_margin": 0.10648536682128906,
+      "nuisance_margin": -2.8590497970581055
+    },
+    {
+      "id": "0052/color",
+      "scene_group": 52,
+      "attribute": "color",
+      "anchor_margin": 3.1019320487976074,
+      "nuisance_margin": 2.092711925506592
+    },
+    {
+      "id": "0052/shape",
+      "scene_group": 52,
+      "attribute": "shape",
+      "anchor_margin": 3.961942195892334,
+      "nuisance_margin": 2.910614490509033
+    },
+    {
+      "id": "0052/number",
+      "scene_group": 52,
+      "attribute": "number",
+      "anchor_margin": 0.9545578956604004,
+      "nuisance_margin": 1.0891122817993164
+    },
+    {
+      "id": "0052/position",
+      "scene_group": 52,
+      "attribute": "position",
+      "anchor_margin": 0.060965538024902344,
+      "nuisance_margin": -1.0160026550292969
+    },
+    {
+      "id": "0053/color",
+      "scene_group": 53,
+      "attribute": "color",
+      "anchor_margin": 0.08829784393310547,
+      "nuisance_margin": 2.744039535522461
+    },
+    {
+      "id": "0053/shape",
+      "scene_group": 53,
+      "attribute": "shape",
+      "anchor_margin": -0.9420986175537109,
+      "nuisance_margin": -0.9062366485595703
+    },
+    {
+      "id": "0053/number",
+      "scene_group": 53,
+      "attribute": "number",
+      "anchor_margin": -0.03262472152709961,
+      "nuisance_margin": 1.297034740447998
+    },
+    {
+      "id": "0053/position",
+      "scene_group": 53,
+      "attribute": "position",
+      "anchor_margin": 0.395601749420166,
+      "nuisance_margin": 3.5841803550720215
+    },
+    {
+      "id": "0054/color",
+      "scene_group": 54,
+      "attribute": "color",
+      "anchor_margin": 1.732618808746338,
+      "nuisance_margin": 0.6317043304443359
+    },
+    {
+      "id": "0054/shape",
+      "scene_group": 54,
+      "attribute": "shape",
+      "anchor_margin": 2.3922529220581055,
+      "nuisance_margin": 2.0232410430908203
+    },
+    {
+      "id": "0054/number",
+      "scene_group": 54,
+      "attribute": "number",
+      "anchor_margin": -0.22871065139770508,
+      "nuisance_margin": 0.2607550621032715
+    },
+    {
+      "id": "0054/position",
+      "scene_group": 54,
+      "attribute": "position",
+      "anchor_margin": -0.05259513854980469,
+      "nuisance_margin": -1.120957374572754
+    },
+    {
+      "id": "0055/color",
+      "scene_group": 55,
+      "attribute": "color",
+      "anchor_margin": 3.196927547454834,
+      "nuisance_margin": 3.5913472175598145
+    },
+    {
+      "id": "0055/shape",
+      "scene_group": 55,
+      "attribute": "shape",
+      "anchor_margin": 2.8674864768981934,
+      "nuisance_margin": 1.8470511436462402
+    },
+    {
+      "id": "0055/number",
+      "scene_group": 55,
+      "attribute": "number",
+      "anchor_margin": 0.8501200675964355,
+      "nuisance_margin": 1.6631946563720703
+    },
+    {
+      "id": "0055/position",
+      "scene_group": 55,
+      "attribute": "position",
+      "anchor_margin": -0.21219539642333984,
+      "nuisance_margin": -0.6688995361328125
+    },
+    {
+      "id": "0056/color",
+      "scene_group": 56,
+      "attribute": "color",
+      "anchor_margin": 3.699605941772461,
+      "nuisance_margin": 3.730245590209961
+    },
+    {
+      "id": "0056/shape",
+      "scene_group": 56,
+      "attribute": "shape",
+      "anchor_margin": 4.123125076293945,
+      "nuisance_margin": 3.5615835189819336
+    },
+    {
+      "id": "0056/number",
+      "scene_group": 56,
+      "attribute": "number",
+      "anchor_margin": 0.6964569091796875,
+      "nuisance_margin": 0.613215446472168
+    },
+    {
+      "id": "0056/position",
+      "scene_group": 56,
+      "attribute": "position",
+      "anchor_margin": 0.2563047409057617,
+      "nuisance_margin": 0.36655139923095703
+    },
+    {
+      "id": "0057/color",
+      "scene_group": 57,
+      "attribute": "color",
+      "anchor_margin": 3.587158679962158,
+      "nuisance_margin": 1.5776185989379883
+    },
+    {
+      "id": "0057/shape",
+      "scene_group": 57,
+      "attribute": "shape",
+      "anchor_margin": 2.2400169372558594,
+      "nuisance_margin": 0.7069492340087891
+    },
+    {
+      "id": "0057/number",
+      "scene_group": 57,
+      "attribute": "number",
+      "anchor_margin": -0.07103538513183594,
+      "nuisance_margin": -1.1518588066101074
+    },
+    {
+      "id": "0057/position",
+      "scene_group": 57,
+      "attribute": "position",
+      "anchor_margin": -0.12876415252685547,
+      "nuisance_margin": -2.643315315246582
+    },
+    {
+      "id": "0058/color",
+      "scene_group": 58,
+      "attribute": "color",
+      "anchor_margin": 1.747206211090088,
+      "nuisance_margin": 4.697123050689697
+    },
+    {
+      "id": "0058/shape",
+      "scene_group": 58,
+      "attribute": "shape",
+      "anchor_margin": -0.3002901077270508,
+      "nuisance_margin": 0.4341917037963867
+    },
+    {
+      "id": "0058/number",
+      "scene_group": 58,
+      "attribute": "number",
+      "anchor_margin": 0.783632755279541,
+      "nuisance_margin": 3.777478337287903
+    },
+    {
+      "id": "0058/position",
+      "scene_group": 58,
+      "attribute": "position",
+      "anchor_margin": 0.5559396743774414,
+      "nuisance_margin": 3.582611083984375
+    },
+    {
+      "id": "0059/color",
+      "scene_group": 59,
+      "attribute": "color",
+      "anchor_margin": 4.638740539550781,
+      "nuisance_margin": 5.792128562927246
+    },
+    {
+      "id": "0059/shape",
+      "scene_group": 59,
+      "attribute": "shape",
+      "anchor_margin": -0.5555152893066406,
+      "nuisance_margin": -0.4989175796508789
+    },
+    {
+      "id": "0059/number",
+      "scene_group": 59,
+      "attribute": "number",
+      "anchor_margin": -0.3509254455566406,
+      "nuisance_margin": -0.19440650939941406
+    },
+    {
+      "id": "0059/position",
+      "scene_group": 59,
+      "attribute": "position",
+      "anchor_margin": -0.15656661987304688,
+      "nuisance_margin": 0.07651901245117188
+    },
+    {
+      "id": "0060/color",
+      "scene_group": 60,
+      "attribute": "color",
+      "anchor_margin": 3.5084009170532227,
+      "nuisance_margin": 4.037820816040039
+    },
+    {
+      "id": "0060/shape",
+      "scene_group": 60,
+      "attribute": "shape",
+      "anchor_margin": 4.764657497406006,
+      "nuisance_margin": 4.129642009735107
+    },
+    {
+      "id": "0060/number",
+      "scene_group": 60,
+      "attribute": "number",
+      "anchor_margin": 1.6858420372009277,
+      "nuisance_margin": 1.6142663955688477
+    },
+    {
+      "id": "0060/position",
+      "scene_group": 60,
+      "attribute": "position",
+      "anchor_margin": 1.0198144912719727,
+      "nuisance_margin": 0.9263782501220703
+    },
+    {
+      "id": "0061/color",
+      "scene_group": 61,
+      "attribute": "color",
+      "anchor_margin": 5.9546098709106445,
+      "nuisance_margin": 5.732500076293945
+    },
+    {
+      "id": "0061/shape",
+      "scene_group": 61,
+      "attribute": "shape",
+      "anchor_margin": -0.8904266357421875,
+      "nuisance_margin": -1.7834844589233398
+    },
+    {
+      "id": "0061/number",
+      "scene_group": 61,
+      "attribute": "number",
+      "anchor_margin": -0.051543235778808594,
+      "nuisance_margin": 0.2011241912841797
+    },
+    {
+      "id": "0061/position",
+      "scene_group": 61,
+      "attribute": "position",
+      "anchor_margin": -0.38811492919921875,
+      "nuisance_margin": -1.3285894393920898
+    },
+    {
+      "id": "0062/color",
+      "scene_group": 62,
+      "attribute": "color",
+      "anchor_margin": 3.3924357891082764,
+      "nuisance_margin": 3.2323648929595947
+    },
+    {
+      "id": "0062/shape",
+      "scene_group": 62,
+      "attribute": "shape",
+      "anchor_margin": -0.14563846588134766,
+      "nuisance_margin": -0.13075876235961914
+    },
+    {
+      "id": "0062/number",
+      "scene_group": 62,
+      "attribute": "number",
+      "anchor_margin": -0.18079137802124023,
+      "nuisance_margin": 0.13633203506469727
+    },
+    {
+      "id": "0062/position",
+      "scene_group": 62,
+      "attribute": "position",
+      "anchor_margin": 0.11336708068847656,
+      "nuisance_margin": 1.0483379364013672
+    },
+    {
+      "id": "0063/color",
+      "scene_group": 63,
+      "attribute": "color",
+      "anchor_margin": 2.0706558227539062,
+      "nuisance_margin": 0.8081941604614258
+    },
+    {
+      "id": "0063/shape",
+      "scene_group": 63,
+      "attribute": "shape",
+      "anchor_margin": 1.5250234603881836,
+      "nuisance_margin": 1.3204011917114258
+    },
+    {
+      "id": "0063/number",
+      "scene_group": 63,
+      "attribute": "number",
+      "anchor_margin": -0.15040349960327148,
+      "nuisance_margin": 0.3453068733215332
+    },
+    {
+      "id": "0063/position",
+      "scene_group": 63,
+      "attribute": "position",
+      "anchor_margin": 0.060538291931152344,
+      "nuisance_margin": 0.8019113540649414
+    }
+  ],
+  "seconds_this_invocation": 73.15439940000942,
+  "candidate_encoding": "Query-independent global image vector",
+  "scope": "Official pretrained inference; no task training. Native is a query-dependent reranking comparator, not fixed-vector ANN."
+}

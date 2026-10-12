@@ -10,3 +10,5 @@ open_clip_torch==3.3.0
 matplotlib==3.11.2
 httpx
 filelock
+qwen-vl-utils==0.0.14
+requests==2.32.5

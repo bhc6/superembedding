@@ -1,0 +1,16 @@
+{
+  "status": "reconstructed_not_original_saved_checkpoint",
+  "seed": 20261011,
+  "device": "cpu",
+  "parent_step": 60,
+  "parent_sha256": "ccf9f4879cea6d8ce6f3aaefe8cf1d18cc2e32e8c2a91eefe6f1a0b9d5c52718",
+  "cpu_rng_matches_parent": true,
+  "head_delta_to_parent": {
+    "embedding_head.projection.0.weight": 0.00016987323760986328,
+    "embedding_head.projection.0.bias": 0.00016746831533964723,
+    "embedding_head.projection.1.weight": 0.00018343329429626465,
+    "embedding_head.projection.1.bias": 0.0001621665433049202
+  },
+  "head_state_sha256": "a1649f65c71a53c43665366b568d80e6781073c944efaa67e601695aa6057f72",
+  "limitation": "Original step-0 checkpoint was overwritten. Same seed/constructor reconstruction cannot be certified bit-identical without an original hash. CPU/GPU loading can consume different RNG."
+}

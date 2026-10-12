@@ -1,0 +1,29 @@
+{
+  "protocol": {
+    "protocol": "official-vsr-random-holdout-audit-v2",
+    "dataset": "cambridgeltl/vsr_random",
+    "revision": "b2053328fafdd018ff56cf1dfa9643caaa4e69b8",
+    "source_split": "test",
+    "expected_rows": 2195,
+    "checkpoint_rule": "Fixed terminal Step2000; do not select checkpoints/prompts by this dataset.",
+    "exclusion": "Exact RGB or pHash<=6 AND dHash<=6 against all inventoried prior local image exposure; conservatively quarantine candidates before inference.",
+    "text_overlap": "Flag repeated spatial captions separately; they are not sufficient to classify image leakage.",
+    "further_clearance": "Crop/scene/entity review required. No automatic inference or release.",
+    "implementation_sha256": "47e879952db6163009a8ab6cafd945ea986c5a58814629ab7c194f624fb7e9db",
+    "image_transport": "Original official COCO HTTP image_link; HTTPS has hostname certificate mismatch. Persist byte hashes and image validation; no TLS verification bypass.",
+    "metrics_used_for_filtering": false,
+    "release_eligible": false
+  },
+  "source_sha256": "8ade82a0b93ac9dc1e53f6cf1f11e9d5536776a3715102b6b4d27d4f81d551cc",
+  "historical_inventory_sha256": "641792199d60c395f1f52fbe5e0406c354fde0e4c0c68a309fa0c347464553a2",
+  "rows": 2195,
+  "unique_images": 1874,
+  "exact_overlap_queries": 0,
+  "near_candidate_queries": 385,
+  "quarantined_queries": 385,
+  "retained_queries_pending_scene_review": 1810,
+  "caption_seen_queries": 558,
+  "official_full_test_protocol_preserved": false,
+  "scope": "Conservative development-disjoint subset candidate, not official full-test score. Review before any formal evaluation.",
+  "utc": "2026-10-12T07:10:52.796239+00:00"
+}

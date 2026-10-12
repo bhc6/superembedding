@@ -1,0 +1,5969 @@
+{
+  "provenance": {
+    "protocol": {
+      "protocol": "v5-full-validation-controls-v1",
+      "data_sha256": "470b7a9b2ca8017fdaad15c404f54b9179a0d556434807d252e89102e9a92f44",
+      "items_sha256": "a3a167138ba8a45e0fde2fc66f7f29a5ad520b80173671648008981eda082207",
+      "queries": 760,
+      "selection": "All validation records; pair(random.Random(record.id)); sorted source then id",
+      "candidates": "All same-source validation targets, including duplicate targets",
+      "positives": "Exact training positive_mask; normalized answers or overlapping image/caption keys",
+      "ties": "First candidate in record-id order, exactly as training validation",
+      "types": "Question/source-only heuristic v1; not official question-type annotation",
+      "implementation_sha256": "738450f698de6581c54fd6d5495fcd776510fd9357538266be0ceced87ecdf9a",
+      "training_pair_sha256": "7bc859a22530508c7718c4dd6e4dc3666d034442275cf5a6e025d18f2064d624"
+    },
+    "backend": "raw_cached",
+    "device": "cpu",
+    "script_sha256": "7b800f079657fe8b58c557ff27bf642c109e6ad79f95aa9ab7f88937427f98ea",
+    "feature_provenance": {
+      "protocol": "general-frozen-head-ablation-v1",
+      "data_sha256": "470b7a9b2ca8017fdaad15c404f54b9179a0d556434807d252e89102e9a92f44",
+      "ids": [
+        "chart2text:19846",
+        "chart2text:19668",
+        "chart2text:10140",
+        "chart2text:5792",
+        "chart2text:18139",
+        "chart2text:19648",
+        "chart2text:3588",
+        "chart2text:25929",
+        "chart2text:11605",
+        "chart2text:13486",
+        "chart2text:22231",
+        "chart2text:15148",
+        "chart2text:26902",
+        "chart2text:11584",
+        "chart2text:26292",
+        "chart2text:25947",
+        "chart2text:4223",
+        "chart2text:22679",
+        "chart2text:19685",
+        "chart2text:19683",
+        "chart2text:11198",
+        "chart2text:8832",
+        "chart2text:53",
+        "chart2text:1317",
+        "chart2text:11588",
+        "chart2text:15397",
+        "chart2text:18137",
+        "chart2text:8841",
+        "chart2text:17007",
+        "chart2text:13161",
+        "chart2text:20029",
+        "chart2text:21382",
+        "chart2text:26296",
+        "chart2text:19681",
+        "chart2text:20006",
+        "chart2text:26223",
+        "chart2text:25594",
+        "chart2text:11594",
+        "chart2text:10137",
+        "chart2text:11196",
+        "chart2text:19687",
+        "chart2text:22469",
+        "chart2text:13183",
+        "chart2text:15414",
+        "chart2text:22685",
+        "chart2text:21879",
+        "chart2text:26440",
+        "chart2text:18130",
+        "chart2text:3587",
+        "chart2text:3590",
+        "chart2text:22676",
+        "chart2text:22468",
+        "chart2text:26439",
+        "chart2text:26448",
+        "chart2text:17016",
+        "chart2text:13494",
+        "chart2text:19653",
+        "chart2text:22209",
+        "chart2text:22224",
+        "chart2text:26303",
+        "chart2text:25235",
+        "chart2text:22660",
+        "chart2text:10113",
+        "chart2text:15415",
+        "chart2text:19662",
+        "chart2text:9280",
+        "chart2text:13478",
+        "chart2text:20022",
+        "chart2text:25584",
+        "chart2text:19659",
+        "chart2text:21885",
+        "chart2text:11590",
+        "chart2text:15401",
+        "chart2text:22229",
+        "chart2text:19680",
+        "chart2text:51",
+        "chart2text:1318",
+        "chart2text:26286",
+        "chart2text:17012",
+        "chart2text:44",
+        "chart2text:19842",
+        "chart2text:21866",
+        "chart2text:26209",
+        "chart2text:25936",
+        "chart2text:5810",
+        "chart2text:26294",
+        "chart2text:25570",
+        "chart2text:3585",
+        "chart2text:22226",
+        "chart2text:18140",
+        "chart2text:26298",
+        "chart2text:25219",
+        "chart2text:22662",
+        "chart2text:19867",
+        "chart2text:16994",
+        "chart2text:26452",
+        "chart2text:26896",
+        "chart2text:26884",
+        "chart2text:1322",
+        "chart2text:9285",
+        "chart2text:22215",
+        "chart2text:10124",
+        "chart2text:1313",
+        "chart2text:25223",
+        "chart2text:13473",
+        "chart2text:19699",
+        "chart2text:22220",
+        "chart2text:54",
+        "chart2text:3584",
+        "chart2text:13170",
+        "chart2text:22683",
+        "chart2text:15157",
+        "chart2text:22467",
+        "chart2text:15420",
+        "chart2text:3603",
+        "chart2text:26434",
+        "chart2text:19845",
+        "chart2text:19852",
+        "chart2text:19684",
+        "chart2text:9309",
+        "chart2text:26272",
+        "chart2text:5812",
+        "chart2text:18132",
+        "chart2text:22473",
+        "chart2text:13159",
+        "chart2text:26463",
+        "chart2text:15421",
+        "chart2text:11172",
+        "chartqa:5808",
+        "chartqa:7285",
+        "chartqa:12523",
+        "chartqa:6995",
+        "chartqa:17749",
+        "chartqa:7161",
+        "chartqa:15569",
+        "chartqa:2234",
+        "chartqa:18205",
+        "chartqa:3701",
+        "chartqa:10842",
+        "chartqa:15557",
+        "chartqa:15335",
+        "chartqa:10816",
+        "chartqa:7143",
+        "chartqa:7699",
+        "chartqa:5557",
+        "chartqa:7690",
+        "chartqa:5538",
+        "chartqa:5547",
+        "chartqa:7145",
+        "chartqa:17529",
+        "chartqa:5411",
+        "chartqa:17955",
+        "chartqa:6495",
+        "chartqa:16952",
+        "chartqa:17121",
+        "chartqa:6485",
+        "chartqa:7282",
+        "chartqa:3113",
+        "chartqa:14896",
+        "chartqa:3711",
+        "chartqa:10351",
+        "chartqa:2223",
+        "chartqa:10349",
+        "chartqa:9044",
+        "chartqa:16351",
+        "chartqa:14884",
+        "chartqa:6991",
+        "chartqa:16321",
+        "chartqa:11537",
+        "chartqa:7283",
+        "chartqa:17678",
+        "chartqa:6994",
+        "chartqa:16335",
+        "chartqa:15566",
+        "chartqa:17732",
+        "chartqa:5890",
+        "chartqa:920",
+        "chartqa:17512",
+        "chartqa:5672",
+        "chartqa:7001",
+        "chartqa:3118",
+        "chartqa:5674",
+        "chartqa:7138",
+        "chartqa:1668",
+        "chartqa:14909",
+        "chartqa:14894",
+        "chartqa:1690",
+        "chartqa:5898",
+        "chartqa:16336",
+        "chartqa:17527",
+        "chartqa:17687",
+        "chartqa:17671",
+        "chartqa:15556",
+        "chartqa:16958",
+        "chartqa:6983",
+        "chartqa:15560",
+        "chartqa:17977",
+        "chartqa:5433",
+        "chartqa:5423",
+        "chartqa:12543",
+        "chartqa:2597",
+        "chartqa:17138",
+        "chartqa:906",
+        "chartqa:2609",
+        "chartqa:6464",
+        "chartqa:5562",
+        "chartqa:7702",
+        "chartqa:5429",
+        "chartqa:2236",
+        "chartqa:17133",
+        "chartqa:18194",
+        "chartqa:5911",
+        "chartqa:10364",
+        "chartqa:17508",
+        "chartqa:18203",
+        "chartqa:15355",
+        "chartqa:5431",
+        "chartqa:15352",
+        "chartqa:7686",
+        "chartqa:17754",
+        "chartqa:3109",
+        "chartqa:9030",
+        "chartqa:9042",
+        "chartqa:18200",
+        "chartqa:15574",
+        "chartqa:15564",
+        "chartqa:5413",
+        "chartqa:17509",
+        "chartqa:5438",
+        "chartqa:17141",
+        "chartqa:1666",
+        "chartqa:11549",
+        "chartqa:5428",
+        "chartqa:918",
+        "chartqa:17534",
+        "chartqa:3691",
+        "chartqa:11521",
+        "chartqa:10352",
+        "chartqa:6977",
+        "chartqa:7692",
+        "chartqa:7000",
+        "chartqa:14882",
+        "chartqa:5567",
+        "chartqa:3125",
+        "chartqa:7696",
+        "chartqa:7707",
+        "chartqa:3129",
+        "chartqa:10837",
+        "chartqa:3693",
+        "chartqa:16940",
+        "chartqa:18193",
+        "chartqa:5555",
+        "chartqa:910",
+        "chartqa:2615",
+        "chartqa:7159",
+        "chartqa:17531",
+        "clevr:66455",
+        "clevr:10185",
+        "clevr:21824",
+        "clevr:66445",
+        "clevr:17627",
+        "clevr:35296",
+        "clevr:64654",
+        "clevr:55551",
+        "clevr:36905",
+        "clevr:36911",
+        "clevr:36746",
+        "clevr:22839",
+        "clevr:2749",
+        "clevr:20190",
+        "clevr:44356",
+        "clevr:34069",
+        "clevr:35299",
+        "clevr:29882",
+        "clevr:10201",
+        "clevr:58556",
+        "clevr:35690",
+        "clevr:10204",
+        "clevr:8357",
+        "clevr:29866",
+        "clevr:29871",
+        "clevr:35689",
+        "clevr:36900",
+        "clevr:9980",
+        "clevr:13034",
+        "clevr:4822",
+        "clevr:66443",
+        "clevr:51156",
+        "clevr:36925",
+        "clevr:10187",
+        "clevr:50741",
+        "clevr:10198",
+        "clevr:65582",
+        "clevr:9978",
+        "clevr:29862",
+        "clevr:4804",
+        "clevr:34049",
+        "clevr:17630",
+        "clevr:58538",
+        "clevr:16797",
+        "clevr:64668",
+        "clevr:35881",
+        "clevr:65642",
+        "clevr:20168",
+        "clevr:17625",
+        "clevr:64667",
+        "clevr:13030",
+        "clevr:58537",
+        "clevr:9983",
+        "clevr:8376",
+        "clevr:13035",
+        "clevr:8359",
+        "clevr:64658",
+        "clevr:36747",
+        "clevr:7251",
+        "clevr:35710",
+        "clevr:65573",
+        "clevr:66449",
+        "clevr:35711",
+        "clevr:17600",
+        "clevr:20184",
+        "clevr:35699",
+        "clevr:36751",
+        "clevr:36745",
+        "clevr:35317",
+        "clevr:64665",
+        "clevr:45814",
+        "clevr:34075",
+        "clevr:10191",
+        "clevr:50728",
+        "clevr:65641",
+        "clevr:29380",
+        "clevr:66446",
+        "clevr:10177",
+        "clevr:16798",
+        "clevr:20173",
+        "clevr:7254",
+        "clevr:36909",
+        "clevr:22819",
+        "clevr:29879",
+        "clevr:22846",
+        "clevr:50731",
+        "clevr:29861",
+        "clevr:34052",
+        "clevr:34048",
+        "clevr:51150",
+        "clevr:45816",
+        "clevr:17606",
+        "clevr:66444",
+        "clevr:17610",
+        "clevr:33571",
+        "clevr:35687",
+        "clevr:35899",
+        "clevr:20183",
+        "clevr:7257",
+        "clevr:50742",
+        "clevr:33585",
+        "clevr:58536",
+        "clevr:33569",
+        "clevr:50722",
+        "clevr:7249",
+        "clevr:29865",
+        "clevr:55522",
+        "clevr:13043",
+        "clevr:4803",
+        "clevr:8361",
+        "clevr:8448",
+        "clevr:65635",
+        "clevr:35297",
+        "clevr:9958",
+        "clevr:16799",
+        "clevr:65586",
+        "clevr:44352",
+        "clevr:2747",
+        "clevr:36910",
+        "clevr:33596",
+        "clevr:17622",
+        "clevr:51155",
+        "clevr:29397",
+        "clevr:17611",
+        "clevr:33572",
+        "clevr:36919",
+        "clevr:45822",
+        "clevr:66457",
+        "docvqa:3956",
+        "docvqa:2973",
+        "docvqa:9567",
+        "docvqa:99",
+        "docvqa:2263",
+        "docvqa:7472",
+        "docvqa:3967",
+        "docvqa:2256",
+        "docvqa:7469",
+        "docvqa:6362",
+        "docvqa:2175",
+        "docvqa:6466",
+        "docvqa:2167",
+        "docvqa:6676",
+        "docvqa:2970",
+        "docvqa:3291",
+        "docvqa:5525",
+        "docvqa:117",
+        "docvqa:3738",
+        "docvqa:865",
+        "docvqa:5513",
+        "docvqa:3947",
+        "docvqa:548",
+        "docvqa:3282",
+        "docvqa:9538",
+        "docvqa:6687",
+        "docvqa:572",
+        "docvqa:6347",
+        "docvqa:4137",
+        "docvqa:6479",
+        "docvqa:3741",
+        "docvqa:6596",
+        "docvqa:6360",
+        "docvqa:1215",
+        "docvqa:8871",
+        "docvqa:888",
+        "docvqa:200",
+        "docvqa:9550",
+        "docvqa:2259",
+        "docvqa:7916",
+        "docvqa:2096",
+        "docvqa:7516",
+        "docvqa:5505",
+        "docvqa:2174",
+        "docvqa:553",
+        "docvqa:9001",
+        "docvqa:2504",
+        "docvqa:6668",
+        "docvqa:7515",
+        "docvqa:2154",
+        "docvqa:205",
+        "docvqa:560",
+        "docvqa:3735",
+        "docvqa:101",
+        "docvqa:110",
+        "docvqa:6609",
+        "docvqa:5700",
+        "docvqa:9928",
+        "docvqa:6734",
+        "docvqa:6737",
+        "docvqa:6673",
+        "docvqa:3275",
+        "docvqa:6359",
+        "docvqa:2109",
+        "docvqa:9922",
+        "docvqa:9536",
+        "docvqa:7508",
+        "docvqa:2144",
+        "docvqa:6747",
+        "docvqa:4146",
+        "docvqa:6736",
+        "docvqa:3287",
+        "docvqa:98",
+        "docvqa:6349",
+        "docvqa:6616",
+        "docvqa:2965",
+        "docvqa:7465",
+        "docvqa:8590",
+        "docvqa:7906",
+        "docvqa:3266",
+        "docvqa:7467",
+        "docvqa:2506",
+        "docvqa:9944",
+        "docvqa:2169",
+        "docvqa:6486",
+        "docvqa:2100",
+        "docvqa:3715",
+        "docvqa:4157",
+        "docvqa:5517",
+        "docvqa:6605",
+        "docvqa:6489",
+        "docvqa:9020",
+        "docvqa:3264",
+        "docvqa:2972",
+        "docvqa:6721",
+        "docvqa:9556",
+        "docvqa:210",
+        "docvqa:6608",
+        "docvqa:5709",
+        "docvqa:2957",
+        "docvqa:6351",
+        "docvqa:9545",
+        "docvqa:3946",
+        "docvqa:2518",
+        "docvqa:9553",
+        "docvqa:558",
+        "docvqa:2165",
+        "docvqa:3731",
+        "docvqa:7499",
+        "docvqa:7487",
+        "docvqa:5530",
+        "docvqa:892",
+        "docvqa:5524",
+        "docvqa:2095",
+        "docvqa:3736",
+        "docvqa:4154",
+        "docvqa:8600",
+        "docvqa:3279",
+        "docvqa:4139",
+        "docvqa:2945",
+        "docvqa:6491",
+        "docvqa:7495",
+        "docvqa:5712",
+        "docvqa:615",
+        "docvqa:7907",
+        "docvqa:872",
+        "docvqa:8993",
+        "docvqa:575",
+        "localized_narratives:29275",
+        "localized_narratives:161634",
+        "localized_narratives:100977",
+        "localized_narratives:84767",
+        "localized_narratives:39137",
+        "localized_narratives:26704",
+        "localized_narratives:61653",
+        "localized_narratives:85382",
+        "localized_narratives:99455",
+        "localized_narratives:42312",
+        "localized_narratives:127817",
+        "localized_narratives:25789",
+        "localized_narratives:10419",
+        "localized_narratives:170861",
+        "localized_narratives:111545",
+        "localized_narratives:29256",
+        "localized_narratives:127826",
+        "localized_narratives:42329",
+        "localized_narratives:157287",
+        "localized_narratives:84745",
+        "localized_narratives:6168",
+        "localized_narratives:23923",
+        "localized_narratives:127835",
+        "localized_narratives:17151",
+        "localized_narratives:2982",
+        "localized_narratives:17129",
+        "localized_narratives:120182",
+        "localized_narratives:161636",
+        "localized_narratives:111530",
+        "localized_narratives:163163",
+        "localized_narratives:127834",
+        "localized_narratives:78037",
+        "localized_narratives:61639",
+        "localized_narratives:148945",
+        "localized_narratives:157300",
+        "localized_narratives:41702",
+        "localized_narratives:161659",
+        "localized_narratives:10402",
+        "localized_narratives:191337",
+        "localized_narratives:170859",
+        "localized_narratives:25781",
+        "localized_narratives:163144",
+        "localized_narratives:85391",
+        "localized_narratives:26708",
+        "localized_narratives:84738",
+        "localized_narratives:108639",
+        "localized_narratives:128697",
+        "localized_narratives:10409",
+        "localized_narratives:42325",
+        "localized_narratives:148950",
+        "localized_narratives:41712",
+        "localized_narratives:194633",
+        "localized_narratives:17145",
+        "localized_narratives:10405",
+        "localized_narratives:23915",
+        "localized_narratives:10406",
+        "localized_narratives:84741",
+        "localized_narratives:84750",
+        "localized_narratives:2995",
+        "localized_narratives:26693",
+        "localized_narratives:163151",
+        "localized_narratives:10420",
+        "localized_narratives:41716",
+        "localized_narratives:100989",
+        "localized_narratives:42316",
+        "localized_narratives:78045",
+        "localized_narratives:100961",
+        "localized_narratives:108614",
+        "localized_narratives:127814",
+        "localized_narratives:136339",
+        "localized_narratives:194650",
+        "localized_narratives:61655",
+        "localized_narratives:10428",
+        "localized_narratives:161641",
+        "localized_narratives:42315",
+        "localized_narratives:42320",
+        "localized_narratives:2985",
+        "localized_narratives:100962",
+        "localized_narratives:3005",
+        "localized_narratives:26702",
+        "localized_narratives:10412",
+        "localized_narratives:41722",
+        "localized_narratives:84751",
+        "localized_narratives:85392",
+        "localized_narratives:23927",
+        "localized_narratives:41714",
+        "localized_narratives:194638",
+        "localized_narratives:157296",
+        "localized_narratives:100967",
+        "localized_narratives:78017",
+        "localized_narratives:120166",
+        "localized_narratives:23930",
+        "localized_narratives:101100",
+        "localized_narratives:10421",
+        "localized_narratives:120164",
+        "localized_narratives:136348",
+        "localized_narratives:2990",
+        "localized_narratives:78020",
+        "localized_narratives:161647",
+        "localized_narratives:181126",
+        "localized_narratives:136340",
+        "localized_narratives:161645",
+        "localized_narratives:6147",
+        "localized_narratives:17124",
+        "localized_narratives:161654",
+        "localized_narratives:163159",
+        "localized_narratives:157297",
+        "localized_narratives:136334",
+        "localized_narratives:17125",
+        "localized_narratives:101114",
+        "localized_narratives:85394",
+        "localized_narratives:108637",
+        "localized_narratives:99438",
+        "localized_narratives:10410",
+        "localized_narratives:128696",
+        "localized_narratives:85386",
+        "localized_narratives:25771",
+        "localized_narratives:128685",
+        "localized_narratives:101111",
+        "localized_narratives:181136",
+        "localized_narratives:10425",
+        "localized_narratives:6162",
+        "localized_narratives:29249",
+        "localized_narratives:84755",
+        "localized_narratives:127813",
+        "localized_narratives:2976",
+        "localized_narratives:191343",
+        "localized_narratives:6164",
+        "screen2words:7542",
+        "screen2words:9524",
+        "screen2words:3348",
+        "screen2words:1065",
+        "screen2words:7021",
+        "screen2words:10677",
+        "screen2words:6544",
+        "screen2words:10669",
+        "screen2words:8563",
+        "screen2words:11718",
+        "screen2words:4196",
+        "screen2words:11408",
+        "screen2words:5855",
+        "screen2words:8697",
+        "screen2words:11170",
+        "screen2words:3770",
+        "screen2words:8729",
+        "screen2words:11368",
+        "screen2words:2583",
+        "screen2words:2574",
+        "screen2words:5667",
+        "screen2words:11719",
+        "screen2words:13549",
+        "screen2words:10676",
+        "screen2words:5674",
+        "screen2words:15520",
+        "screen2words:6397",
+        "screen2words:6668",
+        "screen2words:11831",
+        "screen2words:5351",
+        "screen2words:3334",
+        "screen2words:15538",
+        "screen2words:13557",
+        "screen2words:6666",
+        "screen2words:9527",
+        "screen2words:5677",
+        "screen2words:10944",
+        "screen2words:3328",
+        "screen2words:14580",
+        "screen2words:11402",
+        "screen2words:6371",
+        "screen2words:6376",
+        "screen2words:262",
+        "screen2words:7533",
+        "screen2words:3999",
+        "screen2words:5831",
+        "screen2words:1535",
+        "screen2words:4197",
+        "screen2words:10946",
+        "screen2words:5681",
+        "screen2words:2161",
+        "screen2words:3337",
+        "screen2words:3746",
+        "screen2words:3753",
+        "screen2words:11737",
+        "screen2words:2582",
+        "screen2words:8561",
+        "screen2words:8575",
+        "screen2words:2892",
+        "screen2words:3764",
+        "screen2words:5685",
+        "screen2words:3974",
+        "screen2words:11391",
+        "screen2words:6684",
+        "screen2words:3978",
+        "screen2words:2589",
+        "screen2words:2590",
+        "screen2words:5359",
+        "screen2words:3751",
+        "screen2words:8716",
+        "screen2words:8698",
+        "screen2words:11835",
+        "screen2words:11739",
+        "screen2words:9510",
+        "screen2words:8685",
+        "screen2words:8550",
+        "screen2words:11421",
+        "screen2words:1057",
+        "screen2words:1077",
+        "screen2words:7544",
+        "screen2words:14567",
+        "screen2words:9508",
+        "screen2words:11381",
+        "screen2words:2170",
+        "screen2words:2175",
+        "screen2words:3346",
+        "screen2words:8673",
+        "screen2words:7036",
+        "screen2words:3745",
+        "screen2words:10959",
+        "screen2words:11364",
+        "screen2words:7015",
+        "screen2words:2173",
+        "screen2words:15551",
+        "screen2words:11821",
+        "screen2words:3342",
+        "screen2words:2587",
+        "screen2words:8687",
+        "screen2words:14570",
+        "screen2words:8564",
+        "screen2words:6674",
+        "screen2words:7030",
+        "screen2words:5692",
+        "screen2words:3356",
+        "screen2words:5352",
+        "screen2words:10664",
+        "screen2words:1522",
+        "screen2words:3775",
+        "screen2words:9535",
+        "screen2words:8682",
+        "screen2words:11813",
+        "screen2words:11729",
+        "screen2words:11193",
+        "screen2words:4216",
+        "screen2words:11174",
+        "screen2words:7034",
+        "screen2words:11179",
+        "screen2words:6383",
+        "screen2words:1063",
+        "screen2words:15528",
+        "screen2words:11717",
+        "screen2words:11178",
+        "screen2words:8569",
+        "screen2words:1068",
+        "screen2words:2591",
+        "screen2words:2902",
+        "screen2words:4208",
+        "screen2words:6388",
+        "textcaps:1345",
+        "textcaps:1162",
+        "textcaps:11386",
+        "textcaps:11365",
+        "textcaps:2515",
+        "textcaps:11778",
+        "textcaps:19131",
+        "textcaps:1364",
+        "textcaps:11368",
+        "textcaps:1366",
+        "textcaps:1183",
+        "textcaps:78",
+        "textcaps:13478",
+        "textcaps:2523",
+        "textcaps:16584",
+        "textcaps:16587",
+        "textcaps:5848",
+        "textcaps:13480",
+        "textcaps:13324",
+        "textcaps:20057",
+        "textcaps:76",
+        "textcaps:2838",
+        "textcaps:695",
+        "textcaps:11788",
+        "textcaps:11369",
+        "textcaps:2750",
+        "textcaps:11379",
+        "textcaps:11802",
+        "textcaps:19123",
+        "textcaps:5852",
+        "textcaps:1374",
+        "textcaps:8031",
+        "textcaps:7432",
+        "textcaps:12876",
+        "textcaps:12878",
+        "textcaps:8950",
+        "textcaps:18164",
+        "textcaps:15498",
+        "textcaps:26",
+        "textcaps:8000",
+        "textcaps:11781",
+        "textcaps:20038",
+        "textcaps:5104",
+        "textcaps:74",
+        "textcaps:16597",
+        "textcaps:5854",
+        "textcaps:13774",
+        "textcaps:18166",
+        "textcaps:5103",
+        "textcaps:2824",
+        "textcaps:5115",
+        "textcaps:2732",
+        "textcaps:2748",
+        "textcaps:13788",
+        "textcaps:2527",
+        "textcaps:16604",
+        "textcaps:2736",
+        "textcaps:5838",
+        "textcaps:2722",
+        "textcaps:5097",
+        "textcaps:11789",
+        "textcaps:8414",
+        "textcaps:2525",
+        "textcaps:13335",
+        "textcaps:3568",
+        "textcaps:8075",
+        "textcaps:13496",
+        "textcaps:703",
+        "textcaps:1154",
+        "textcaps:19135",
+        "textcaps:13490",
+        "textcaps:10583",
+        "textcaps:12886",
+        "textcaps:18152",
+        "textcaps:7442",
+        "textcaps:7424",
+        "textcaps:13778",
+        "textcaps:19125",
+        "textcaps:2742",
+        "textcaps:2847",
+        "textcaps:2520",
+        "textcaps:31",
+        "textcaps:15506",
+        "textcaps:8958",
+        "textcaps:11317",
+        "textcaps:5113",
+        "textcaps:10562",
+        "textcaps:12870",
+        "textcaps:13780",
+        "textcaps:11382",
+        "textcaps:2513",
+        "textcaps:7452",
+        "textcaps:7447",
+        "textcaps:7444",
+        "textcaps:8177",
+        "textcaps:8941",
+        "textcaps:8018",
+        "textcaps:64",
+        "textcaps:19297",
+        "textcaps:5676",
+        "textcaps:19130",
+        "textcaps:7",
+        "textcaps:5105",
+        "textcaps:19326",
+        "textcaps:72",
+        "textcaps:2845",
+        "textcaps:2519",
+        "textcaps:11785",
+        "textcaps:13489",
+        "textcaps:2846",
+        "textcaps:18145",
+        "textcaps:5837",
+        "textcaps:5666",
+        "textcaps:19134",
+        "textcaps:10569",
+        "textcaps:2526",
+        "textcaps:8029",
+        "textcaps:8006",
+        "textcaps:5827",
+        "textcaps:2816",
+        "textcaps:11362",
+        "textcaps:685",
+        "textcaps:11316",
+        "textcaps:11800",
+        "textcaps:8412",
+        "textcaps:681",
+        "textcaps:5108",
+        "textcaps:8408",
+        "vsr:925",
+        "vsr:62",
+        "vsr:2091",
+        "vsr:804",
+        "vsr:158",
+        "vsr:1346",
+        "vsr:644",
+        "vsr:1623",
+        "vsr:1611",
+        "vsr:1352",
+        "vsr:527",
+        "vsr:1075",
+        "vsr:2138",
+        "vsr:180",
+        "vsr:197",
+        "vsr:1692",
+        "vsr:723",
+        "vsr:2034",
+        "vsr:295",
+        "vsr:822",
+        "vsr:1351",
+        "vsr:321",
+        "vsr:2083",
+        "vsr:843",
+        "vsr:320",
+        "vsr:290",
+        "vsr:1627",
+        "vsr:1528",
+        "vsr:1183",
+        "vsr:1925",
+        "vsr:717",
+        "vsr:153",
+        "vsr:901",
+        "vsr:898",
+        "vsr:913",
+        "vsr:2102",
+        "vsr:735",
+        "vsr:532",
+        "vsr:838",
+        "vsr:842",
+        "vsr:1431",
+        "vsr:202",
+        "vsr:1179",
+        "vsr:1681",
+        "vsr:304",
+        "vsr:664",
+        "vsr:61",
+        "vsr:1742",
+        "vsr:3",
+        "vsr:2031",
+        "vsr:146",
+        "vsr:518",
+        "vsr:1424",
+        "vsr:733",
+        "vsr:1691",
+        "vsr:2030",
+        "vsr:1154",
+        "vsr:531",
+        "vsr:912",
+        "vsr:711",
+        "vsr:1907",
+        "vsr:1667",
+        "vsr:2123",
+        "vsr:720",
+        "vsr:198",
+        "vsr:1101",
+        "vsr:178",
+        "vsr:2",
+        "vsr:1091",
+        "vsr:1355",
+        "vsr:1951",
+        "vsr:803",
+        "vsr:2043",
+        "vsr:820",
+        "vsr:1943",
+        "vsr:1917",
+        "vsr:1292",
+        "vsr:2037",
+        "vsr:132",
+        "vsr:515",
+        "vsr:1097",
+        "vsr:1",
+        "vsr:1064",
+        "vsr:1202",
+        "vsr:1408",
+        "vsr:1690",
+        "vsr:1628",
+        "vsr:1358",
+        "vsr:155",
+        "vsr:979",
+        "vsr:614",
+        "vsr:1509",
+        "vsr:1833",
+        "vsr:1417",
+        "vsr:152",
+        "vsr:1913",
+        "vsr:220",
+        "vsr:927",
+        "vsr:196",
+        "vsr:1160",
+        "vsr:1429",
+        "vsr:318",
+        "vsr:897",
+        "vsr:1618",
+        "vsr:1759",
+        "vsr:1733",
+        "vsr:2041",
+        "vsr:1185",
+        "vsr:1359",
+        "vsr:643",
+        "vsr:1743",
+        "vsr:2127",
+        "vsr:835",
+        "vsr:1734",
+        "vsr:631",
+        "vsr:856",
+        "vsr:2117",
+        "vsr:55",
+        "vsr:1108",
+        "vsr:298",
+        "vsr:2140",
+        "vsr:808",
+        "vsr:1909",
+        "vsr:1211",
+        "vsr:671",
+        "vsr:983",
+        "vsr:2096",
+        "vsr:670",
+        "ai2d:1408",
+        "ai2d:1409",
+        "ai2d:1410",
+        "ai2d:1411",
+        "ai2d:1412",
+        "ai2d:1413",
+        "ai2d:1414",
+        "ai2d:1415",
+        "ai2d:1416",
+        "ai2d:1417",
+        "ai2d:1418",
+        "ai2d:1419",
+        "ai2d:1420",
+        "ai2d:1421",
+        "ai2d:1422",
+        "ai2d:1423",
+        "ai2d:1424",
+        "ai2d:1425",
+        "ai2d:1426",
+        "ai2d:1427",
+        "ai2d:1428",
+        "ai2d:1429",
+        "ai2d:1430",
+        "ai2d:1431",
+        "ai2d:1432",
+        "ai2d:1433",
+        "ai2d:1434",
+        "ai2d:1435",
+        "ai2d:1436",
+        "ai2d:1437",
+        "ai2d:1438",
+        "ai2d:1439",
+        "ai2d:1664",
+        "ai2d:1665",
+        "ai2d:1666",
+        "ai2d:1667",
+        "ai2d:1668",
+        "ai2d:1669",
+        "ai2d:1670",
+        "ai2d:1671",
+        "ai2d:1672",
+        "ai2d:1673",
+        "ai2d:1674",
+        "ai2d:1675",
+        "ai2d:1676",
+        "ai2d:1677",
+        "ai2d:1678",
+        "ai2d:1679",
+        "ai2d:1680",
+        "ai2d:1681",
+        "ai2d:1682",
+        "ai2d:1683",
+        "ai2d:1684",
+        "ai2d:1685",
+        "ai2d:1686",
+        "ai2d:1687",
+        "ai2d:1688",
+        "ai2d:1689",
+        "ai2d:1690",
+        "ai2d:1691",
+        "ai2d:1692",
+        "ai2d:1693",
+        "ai2d:1694",
+        "ai2d:1695",
+        "ai2d:1952",
+        "ai2d:1953",
+        "ai2d:1954",
+        "ai2d:1955",
+        "ai2d:1956",
+        "ai2d:1957",
+        "ai2d:1958",
+        "ai2d:1959",
+        "ai2d:1960",
+        "ai2d:1961",
+        "ai2d:1962",
+        "ai2d:1963",
+        "ai2d:1964",
+        "ai2d:1965",
+        "ai2d:1966",
+        "ai2d:1967",
+        "ai2d:1968",
+        "ai2d:1969",
+        "ai2d:1970",
+        "ai2d:1971",
+        "ai2d:1972",
+        "ai2d:1973",
+        "ai2d:1974",
+        "ai2d:1975",
+        "ai2d:1976",
+        "ai2d:1977",
+        "ai2d:1978",
+        "ai2d:1979",
+        "ai2d:1980",
+        "ai2d:1981",
+        "ai2d:1982",
+        "ai2d:1983",
+        "chart2text:10117",
+        "chart2text:10121",
+        "chart2text:10129",
+        "chart2text:11597",
+        "chart2text:11602",
+        "chart2text:13154",
+        "chart2text:13155",
+        "chart2text:13160",
+        "chart2text:13167",
+        "chart2text:13168",
+        "chart2text:1329",
+        "chart2text:15156",
+        "chart2text:15159",
+        "chart2text:15161",
+        "chart2text:15406",
+        "chart2text:15409",
+        "chart2text:15418",
+        "chart2text:16992",
+        "chart2text:18123",
+        "chart2text:19650",
+        "chart2text:19663",
+        "chart2text:19676",
+        "chart2text:19692",
+        "chart2text:19697",
+        "chart2text:19710",
+        "chart2text:19853",
+        "chart2text:19861",
+        "chart2text:19864",
+        "chart2text:20001",
+        "chart2text:20007",
+        "chart2text:20027",
+        "chart2text:21397",
+        "chart2text:21402",
+        "chart2text:21862",
+        "chart2text:21865",
+        "chart2text:21870",
+        "chart2text:21871",
+        "chart2text:21877",
+        "chart2text:21886",
+        "chart2text:22208",
+        "chart2text:22210",
+        "chart2text:22214",
+        "chart2text:22216",
+        "chart2text:22232",
+        "chart2text:22234",
+        "chart2text:22477",
+        "chart2text:22483",
+        "chart2text:22657",
+        "chart2text:22661",
+        "chart2text:22664",
+        "chart2text:22678",
+        "chart2text:22687",
+        "chart2text:25246",
+        "chart2text:25579",
+        "chart2text:25582",
+        "chart2text:25593",
+        "chart2text:25596",
+        "chart2text:25599",
+        "chart2text:25922",
+        "chart2text:26212",
+        "chart2text:26213",
+        "chart2text:26224",
+        "chart2text:26225",
+        "chart2text:26235",
+        "chart2text:26276",
+        "chart2text:26290",
+        "chart2text:26443",
+        "chart2text:26455",
+        "chart2text:26459",
+        "chart2text:26880",
+        "chart2text:26881",
+        "chart2text:3598",
+        "chart2text:3612",
+        "chart2text:4194",
+        "chart2text:4203",
+        "chart2text:48",
+        "chart2text:5803",
+        "chart2text:62",
+        "chart2text:8851",
+        "chart2text:9295",
+        "chartqa:10337",
+        "chartqa:10367",
+        "chartqa:10823",
+        "chartqa:10830",
+        "chartqa:10841",
+        "chartqa:11526",
+        "chartqa:11528",
+        "chartqa:12513",
+        "chartqa:12515",
+        "chartqa:12517",
+        "chartqa:12542",
+        "chartqa:15333",
+        "chartqa:15336",
+        "chartqa:15353",
+        "chartqa:16324",
+        "chartqa:16339",
+        "chartqa:16340",
+        "chartqa:16342",
+        "chartqa:16346",
+        "chartqa:1667",
+        "chartqa:1671",
+        "chartqa:16930",
+        "chartqa:17122",
+        "chartqa:17124",
+        "chartqa:17142",
+        "chartqa:17150",
+        "chartqa:17517",
+        "chartqa:17530",
+        "chartqa:17666",
+        "chartqa:17675",
+        "chartqa:17735",
+        "chartqa:2593",
+        "chartqa:2599",
+        "chartqa:2607",
+        "chartqa:2621",
+        "chartqa:2622",
+        "chartqa:3112",
+        "chartqa:3121",
+        "chartqa:3127",
+        "chartqa:3134",
+        "chartqa:3687",
+        "chartqa:3692",
+        "chartqa:3695",
+        "chartqa:5437",
+        "chartqa:5536",
+        "chartqa:5552",
+        "chartqa:5561",
+        "chartqa:5675",
+        "chartqa:5678",
+        "chartqa:5802",
+        "chartqa:5803",
+        "chartqa:5813",
+        "chartqa:5893",
+        "chartqa:5899",
+        "chartqa:6482",
+        "chartqa:6494",
+        "chartqa:6988",
+        "chartqa:7004",
+        "chartqa:7149",
+        "chartqa:7160",
+        "chartqa:7272",
+        "chartqa:7280",
+        "chartqa:7683",
+        "chartqa:7704",
+        "chartqa:9046",
+        "clevr:10179",
+        "clevr:10182",
+        "clevr:10188",
+        "clevr:13032",
+        "clevr:13040",
+        "clevr:13041",
+        "clevr:13048",
+        "clevr:16768",
+        "clevr:16772",
+        "clevr:16776",
+        "clevr:16782",
+        "clevr:16785",
+        "clevr:16787",
+        "clevr:16794",
+        "clevr:17607",
+        "clevr:20174",
+        "clevr:21832",
+        "clevr:21845",
+        "clevr:22836",
+        "clevr:2722",
+        "clevr:2728",
+        "clevr:2737",
+        "clevr:2739",
+        "clevr:2741",
+        "clevr:2748",
+        "clevr:29379",
+        "clevr:29387",
+        "clevr:29390",
+        "clevr:29391",
+        "clevr:29401",
+        "clevr:29405",
+        "clevr:29863",
+        "clevr:29867",
+        "clevr:29873",
+        "clevr:29883",
+        "clevr:29886",
+        "clevr:33583",
+        "clevr:33588",
+        "clevr:33589",
+        "clevr:33591",
+        "clevr:33592",
+        "clevr:33599",
+        "clevr:34053",
+        "clevr:34055",
+        "clevr:34067",
+        "clevr:35306",
+        "clevr:35315",
+        "clevr:35701",
+        "clevr:35888",
+        "clevr:35890",
+        "clevr:35891",
+        "clevr:36737",
+        "clevr:36766",
+        "clevr:36898",
+        "clevr:36921",
+        "clevr:44367",
+        "clevr:44368",
+        "clevr:44375",
+        "clevr:44378",
+        "clevr:45792",
+        "clevr:45795",
+        "clevr:45803",
+        "clevr:45807",
+        "clevr:45813",
+        "clevr:4806",
+        "clevr:4809",
+        "clevr:4812",
+        "clevr:4817",
+        "clevr:4819",
+        "clevr:4831",
+        "clevr:50727",
+        "clevr:50739",
+        "clevr:50744",
+        "clevr:50749",
+        "clevr:51146",
+        "clevr:51151",
+        "clevr:51158",
+        "clevr:51164",
+        "clevr:51166",
+        "clevr:55521",
+        "clevr:55524",
+        "clevr:55526",
+        "clevr:55528",
+        "clevr:58530",
+        "clevr:58543",
+        "clevr:58549",
+        "clevr:64649",
+        "clevr:65569",
+        "clevr:65580",
+        "clevr:65589",
+        "clevr:65598",
+        "clevr:65637",
+        "clevr:65644",
+        "clevr:65645",
+        "clevr:65650",
+        "clevr:65652",
+        "clevr:65657",
+        "clevr:65660",
+        "clevr:66435",
+        "clevr:66437",
+        "clevr:66439",
+        "clevr:66441",
+        "clevr:66459",
+        "clevr:7247",
+        "clevr:7256",
+        "clevr:7259",
+        "clevr:8363",
+        "clevr:8364",
+        "clevr:8378",
+        "clevr:8452",
+        "clevr:8458",
+        "clevr:8459",
+        "clevr:8464",
+        "clevr:8474",
+        "clevr:9961",
+        "clevr:9963",
+        "clevr:9976",
+        "docvqa:113",
+        "docvqa:1184",
+        "docvqa:1189",
+        "docvqa:121",
+        "docvqa:199",
+        "docvqa:202",
+        "docvqa:2081",
+        "docvqa:2088",
+        "docvqa:2094",
+        "docvqa:2104",
+        "docvqa:211",
+        "docvqa:2111",
+        "docvqa:2149",
+        "docvqa:216",
+        "docvqa:2170",
+        "docvqa:2244",
+        "docvqa:2264",
+        "docvqa:2265",
+        "docvqa:2267",
+        "docvqa:2515",
+        "docvqa:2956",
+        "docvqa:2960",
+        "docvqa:3267",
+        "docvqa:3272",
+        "docvqa:3292",
+        "docvqa:3941",
+        "docvqa:3943",
+        "docvqa:3949",
+        "docvqa:3964",
+        "docvqa:4138",
+        "docvqa:5026",
+        "docvqa:5037",
+        "docvqa:5039",
+        "docvqa:5047",
+        "docvqa:5515",
+        "docvqa:5516",
+        "docvqa:565",
+        "docvqa:570",
+        "docvqa:5702",
+        "docvqa:5714",
+        "docvqa:5717",
+        "docvqa:5721",
+        "docvqa:5724",
+        "docvqa:5725",
+        "docvqa:574",
+        "docvqa:612",
+        "docvqa:620",
+        "docvqa:6336",
+        "docvqa:6343",
+        "docvqa:6354",
+        "docvqa:6358",
+        "docvqa:6364",
+        "docvqa:6365",
+        "docvqa:6598",
+        "docvqa:6604",
+        "docvqa:6621",
+        "docvqa:6661",
+        "docvqa:6680",
+        "docvqa:6728",
+        "docvqa:6730",
+        "docvqa:7464",
+        "docvqa:7471",
+        "docvqa:7482",
+        "docvqa:7496",
+        "docvqa:7512",
+        "docvqa:7552",
+        "docvqa:7558",
+        "docvqa:7567",
+        "docvqa:7569",
+        "docvqa:7573",
+        "docvqa:7577",
+        "docvqa:7578",
+        "docvqa:7583",
+        "docvqa:7909",
+        "docvqa:7923",
+        "docvqa:7930",
+        "docvqa:8579",
+        "docvqa:8589",
+        "docvqa:8604",
+        "docvqa:868",
+        "docvqa:871",
+        "docvqa:876",
+        "docvqa:877",
+        "docvqa:8864",
+        "docvqa:8868",
+        "docvqa:8893",
+        "docvqa:8995",
+        "docvqa:9003",
+        "docvqa:9010",
+        "docvqa:9023",
+        "docvqa:9542",
+        "docvqa:9549",
+        "docvqa:9555",
+        "docvqa:9920",
+        "docvqa:9927",
+        "docvqa:9936",
+        "localized_narratives:100964",
+        "localized_narratives:100990",
+        "localized_narratives:101099",
+        "localized_narratives:10422",
+        "localized_narratives:10426",
+        "localized_narratives:10430",
+        "localized_narratives:111532",
+        "localized_narratives:111533",
+        "localized_narratives:111538",
+        "localized_narratives:111540",
+        "localized_narratives:111546",
+        "localized_narratives:120162",
+        "localized_narratives:120165",
+        "localized_narratives:120172",
+        "localized_narratives:120174",
+        "localized_narratives:120185",
+        "localized_narratives:127810",
+        "localized_narratives:127828",
+        "localized_narratives:127829",
+        "localized_narratives:127832",
+        "localized_narratives:128678",
+        "localized_narratives:128686",
+        "localized_narratives:136321",
+        "localized_narratives:136325",
+        "localized_narratives:136327",
+        "localized_narratives:148933",
+        "localized_narratives:148936",
+        "localized_narratives:148940",
+        "localized_narratives:148944",
+        "localized_narratives:157292",
+        "localized_narratives:157299",
+        "localized_narratives:157304",
+        "localized_narratives:161639",
+        "localized_narratives:161640",
+        "localized_narratives:161663",
+        "localized_narratives:163147",
+        "localized_narratives:163149",
+        "localized_narratives:170850",
+        "localized_narratives:170856",
+        "localized_narratives:170870",
+        "localized_narratives:170875",
+        "localized_narratives:170876",
+        "localized_narratives:170877",
+        "localized_narratives:17137",
+        "localized_narratives:17149",
+        "localized_narratives:181122",
+        "localized_narratives:181124",
+        "localized_narratives:181125",
+        "localized_narratives:181130",
+        "localized_narratives:181134",
+        "localized_narratives:181140",
+        "localized_narratives:191330",
+        "localized_narratives:191335",
+        "localized_narratives:191357",
+        "localized_narratives:194627",
+        "localized_narratives:194646",
+        "localized_narratives:23905",
+        "localized_narratives:23907",
+        "localized_narratives:23910",
+        "localized_narratives:23913",
+        "localized_narratives:23919",
+        "localized_narratives:23926",
+        "localized_narratives:23928",
+        "localized_narratives:23932",
+        "localized_narratives:23934",
+        "localized_narratives:25762",
+        "localized_narratives:25773",
+        "localized_narratives:26710",
+        "localized_narratives:26713",
+        "localized_narratives:29248",
+        "localized_narratives:29253",
+        "localized_narratives:29258",
+        "localized_narratives:29272",
+        "localized_narratives:29277",
+        "localized_narratives:2984",
+        "localized_narratives:2991",
+        "localized_narratives:39138",
+        "localized_narratives:39149",
+        "localized_narratives:39164",
+        "localized_narratives:39166",
+        "localized_narratives:41698",
+        "localized_narratives:41699",
+        "localized_narratives:41711",
+        "localized_narratives:41717",
+        "localized_narratives:41720",
+        "localized_narratives:41726",
+        "localized_narratives:42331",
+        "localized_narratives:6144",
+        "localized_narratives:6155",
+        "localized_narratives:61633",
+        "localized_narratives:61637",
+        "localized_narratives:61641",
+        "localized_narratives:61643",
+        "localized_narratives:61657",
+        "localized_narratives:61660",
+        "localized_narratives:61661",
+        "localized_narratives:6175",
+        "localized_narratives:78016",
+        "localized_narratives:78029",
+        "localized_narratives:78035",
+        "localized_narratives:78041",
+        "localized_narratives:84736",
+        "localized_narratives:84752",
+        "localized_narratives:84756",
+        "localized_narratives:85383",
+        "localized_narratives:85390",
+        "localized_narratives:85397",
+        "localized_narratives:85400",
+        "localized_narratives:85403",
+        "localized_narratives:99450",
+        "scienceqa:1473",
+        "scienceqa:1477",
+        "scienceqa:1478",
+        "scienceqa:1479",
+        "scienceqa:1480",
+        "scienceqa:1481",
+        "scienceqa:1482",
+        "scienceqa:1485",
+        "scienceqa:1486",
+        "scienceqa:1487",
+        "scienceqa:1488",
+        "scienceqa:1490",
+        "scienceqa:1491",
+        "scienceqa:1492",
+        "scienceqa:1493",
+        "scienceqa:1495",
+        "scienceqa:1496",
+        "scienceqa:1498",
+        "scienceqa:1499",
+        "scienceqa:1501",
+        "scienceqa:1502",
+        "scienceqa:1503",
+        "scienceqa:4289",
+        "scienceqa:4292",
+        "scienceqa:4293",
+        "scienceqa:4294",
+        "scienceqa:4296",
+        "scienceqa:4297",
+        "scienceqa:4298",
+        "scienceqa:4299",
+        "scienceqa:4300",
+        "scienceqa:4301",
+        "scienceqa:4302",
+        "scienceqa:4304",
+        "scienceqa:4305",
+        "scienceqa:4306",
+        "scienceqa:4307",
+        "scienceqa:4309",
+        "scienceqa:4310",
+        "scienceqa:4311",
+        "scienceqa:4312",
+        "scienceqa:4314",
+        "scienceqa:4315",
+        "scienceqa:4318",
+        "scienceqa:4319",
+        "scienceqa:4769",
+        "scienceqa:4770",
+        "scienceqa:4772",
+        "scienceqa:4773",
+        "scienceqa:4774",
+        "scienceqa:4775",
+        "scienceqa:4777",
+        "scienceqa:4779",
+        "scienceqa:4780",
+        "scienceqa:4781",
+        "scienceqa:4782",
+        "scienceqa:4783",
+        "scienceqa:4785",
+        "scienceqa:4786",
+        "scienceqa:4787",
+        "scienceqa:4790",
+        "scienceqa:4791",
+        "scienceqa:4793",
+        "scienceqa:4794",
+        "scienceqa:4796",
+        "scienceqa:4798",
+        "scienceqa:4799",
+        "screen2words:10667",
+        "screen2words:10674",
+        "screen2words:1069",
+        "screen2words:1076",
+        "screen2words:10954",
+        "screen2words:11172",
+        "screen2words:11182",
+        "screen2words:11186",
+        "screen2words:11189",
+        "screen2words:11190",
+        "screen2words:11191",
+        "screen2words:11196",
+        "screen2words:11367",
+        "screen2words:11383",
+        "screen2words:11384",
+        "screen2words:11390",
+        "screen2words:11401",
+        "screen2words:11411",
+        "screen2words:11413",
+        "screen2words:11417",
+        "screen2words:11712",
+        "screen2words:11720",
+        "screen2words:11725",
+        "screen2words:11815",
+        "screen2words:11823",
+        "screen2words:11824",
+        "screen2words:11834",
+        "screen2words:11838",
+        "screen2words:13547",
+        "screen2words:13548",
+        "screen2words:13551",
+        "screen2words:13562",
+        "screen2words:13563",
+        "screen2words:14571",
+        "screen2words:14574",
+        "screen2words:14579",
+        "screen2words:14585",
+        "screen2words:1504",
+        "screen2words:1507",
+        "screen2words:1533",
+        "screen2words:15530",
+        "screen2words:15537",
+        "screen2words:15550",
+        "screen2words:2159",
+        "screen2words:2164",
+        "screen2words:2171",
+        "screen2words:2562",
+        "screen2words:2564",
+        "screen2words:257",
+        "screen2words:2576",
+        "screen2words:268",
+        "screen2words:2882",
+        "screen2words:2896",
+        "screen2words:2901",
+        "screen2words:2903",
+        "screen2words:2909",
+        "screen2words:2910",
+        "screen2words:3338",
+        "screen2words:3347",
+        "screen2words:3754",
+        "screen2words:3755",
+        "screen2words:3768",
+        "screen2words:3771",
+        "screen2words:3976",
+        "screen2words:3981",
+        "screen2words:3985",
+        "screen2words:3996",
+        "screen2words:4205",
+        "screen2words:4214",
+        "screen2words:5345",
+        "screen2words:5354",
+        "screen2words:5365",
+        "screen2words:5367",
+        "screen2words:5373",
+        "screen2words:5827",
+        "screen2words:5841",
+        "screen2words:5843",
+        "screen2words:5845",
+        "screen2words:6390",
+        "screen2words:6529",
+        "screen2words:6536",
+        "screen2words:6678",
+        "screen2words:6686",
+        "screen2words:7009",
+        "screen2words:7029",
+        "screen2words:7521",
+        "screen2words:7522",
+        "screen2words:7529",
+        "screen2words:7534",
+        "screen2words:7535",
+        "screen2words:7549",
+        "screen2words:8544",
+        "screen2words:8556",
+        "screen2words:8686",
+        "screen2words:8717",
+        "screen2words:8727",
+        "screen2words:8728",
+        "screen2words:9504",
+        "screen2words:9522",
+        "screen2words:9528",
+        "textcaps:10563",
+        "textcaps:10570",
+        "textcaps:10577",
+        "textcaps:11301",
+        "textcaps:11307",
+        "textcaps:11309",
+        "textcaps:11314",
+        "textcaps:11327",
+        "textcaps:11361",
+        "textcaps:11381",
+        "textcaps:1152",
+        "textcaps:1159",
+        "textcaps:1164",
+        "textcaps:1173",
+        "textcaps:11782",
+        "textcaps:11801",
+        "textcaps:1181",
+        "textcaps:12871",
+        "textcaps:13319",
+        "textcaps:1347",
+        "textcaps:13476",
+        "textcaps:13477",
+        "textcaps:13499",
+        "textcaps:13502",
+        "textcaps:13760",
+        "textcaps:13763",
+        "textcaps:15497",
+        "textcaps:15513",
+        "textcaps:15519",
+        "textcaps:16581",
+        "textcaps:16585",
+        "textcaps:16593",
+        "textcaps:16601",
+        "textcaps:18150",
+        "textcaps:18153",
+        "textcaps:18161",
+        "textcaps:19104",
+        "textcaps:19109",
+        "textcaps:19117",
+        "textcaps:19303",
+        "textcaps:19307",
+        "textcaps:19313",
+        "textcaps:20048",
+        "textcaps:20056",
+        "textcaps:21",
+        "textcaps:2505",
+        "textcaps:2509",
+        "textcaps:2819",
+        "textcaps:2830",
+        "textcaps:2831",
+        "textcaps:2832",
+        "textcaps:29",
+        "textcaps:3553",
+        "textcaps:3564",
+        "textcaps:3571",
+        "textcaps:5102",
+        "textcaps:5116",
+        "textcaps:5117",
+        "textcaps:5825",
+        "textcaps:5830",
+        "textcaps:5834",
+        "textcaps:5836",
+        "textcaps:5850",
+        "textcaps:673",
+        "textcaps:68",
+        "textcaps:682",
+        "textcaps:7434",
+        "textcaps:7453",
+        "textcaps:8028",
+        "textcaps:8073",
+        "textcaps:8094",
+        "textcaps:8162",
+        "textcaps:8189",
+        "textcaps:8407",
+        "textcaps:8409",
+        "textcaps:8936",
+        "textcaps:8939",
+        "textcaps:8942",
+        "textcaps:8949",
+        "textcaps:8952",
+        "textcaps:8955",
+        "textcaps:8956",
+        "vsr:1057",
+        "vsr:1060",
+        "vsr:1067",
+        "vsr:1076",
+        "vsr:1088",
+        "vsr:1090",
+        "vsr:1095",
+        "vsr:1102",
+        "vsr:1104",
+        "vsr:1109",
+        "vsr:1118",
+        "vsr:1155",
+        "vsr:1174",
+        "vsr:1189",
+        "vsr:1282",
+        "vsr:1285",
+        "vsr:1296",
+        "vsr:13",
+        "vsr:1300",
+        "vsr:1303",
+        "vsr:1304",
+        "vsr:1308",
+        "vsr:131",
+        "vsr:1310",
+        "vsr:134",
+        "vsr:1348",
+        "vsr:1354",
+        "vsr:136",
+        "vsr:1373",
+        "vsr:1375",
+        "vsr:139",
+        "vsr:1414",
+        "vsr:1420",
+        "vsr:1430",
+        "vsr:1436",
+        "vsr:144",
+        "vsr:1520",
+        "vsr:1521",
+        "vsr:1524",
+        "vsr:154",
+        "vsr:1608",
+        "vsr:1610",
+        "vsr:1624",
+        "vsr:1631",
+        "vsr:164",
+        "vsr:1673",
+        "vsr:1676",
+        "vsr:169",
+        "vsr:1693",
+        "vsr:1730",
+        "vsr:1731",
+        "vsr:1756",
+        "vsr:1831",
+        "vsr:1836",
+        "vsr:1844",
+        "vsr:1846",
+        "vsr:1893",
+        "vsr:1903",
+        "vsr:1905",
+        "vsr:1908",
+        "vsr:1923",
+        "vsr:1928",
+        "vsr:1929",
+        "vsr:193",
+        "vsr:199",
+        "vsr:2023",
+        "vsr:2093",
+        "vsr:2113",
+        "vsr:2126",
+        "vsr:2129",
+        "vsr:213",
+        "vsr:2132",
+        "vsr:214",
+        "vsr:26",
+        "vsr:301",
+        "vsr:306",
+        "vsr:309",
+        "vsr:319",
+        "vsr:330",
+        "vsr:34",
+        "vsr:526",
+        "vsr:530",
+        "vsr:615",
+        "vsr:617",
+        "vsr:618",
+        "vsr:619",
+        "vsr:620",
+        "vsr:623",
+        "vsr:626",
+        "vsr:639",
+        "vsr:640",
+        "vsr:661",
+        "vsr:666",
+        "vsr:734",
+        "vsr:812",
+        "vsr:816",
+        "vsr:827",
+        "vsr:830",
+        "vsr:847",
+        "vsr:848",
+        "vsr:851",
+        "vsr:854",
+        "vsr:861",
+        "vsr:903",
+        "vsr:911",
+        "vsr:917",
+        "vsr:920",
+        "vsr:962",
+        "vsr:966",
+        "vsr:989"
+      ],
+      "train_per_source": 128,
+      "device": "cpu",
+      "dtype": "float32",
+      "basis": [
+        "Entities, objects and semantic meaning",
+        "Appearance, attributes and material",
+        "Spatial relations, layout and composition",
+        "Written text, numbers and quantitative evidence"
+      ],
+      "max_pixels": 65536,
+      "max_text_tokens": 256,
+      "supervision": "one fixed pair per image, random.Random(record id), no test selection",
+      "adapter_sha256": "fecb22639ad3df3a0db3f17f096ae180a56120ef895f4ad18b4422e51727ad71",
+      "base_sha256": "c69af30617a6f9ecae563f51cb1aea3092bb1285c7fd4fd0180ea4dbfd2b91ae",
+      "code_sha256": {
+        "scripts/extract_general_ablation.py": "746c4a91bbb5d4cb85b2a0a20452a76cecbe618922d6ef46a94c264a57a95543",
+        "scripts/train_general.py": "7bc859a22530508c7718c4dd6e4dc3666d034442275cf5a6e025d18f2064d624",
+        "superembedding/general.py": "529b524c89295b2969e97a235ea25a4603f3ed88df5bcef677d4c040cf0f492b",
+        "superembedding/omnijev.py": "63e3bc6f1263c8dd40dbf81988d2ba553b796ad7dbd3c7275cf1b140abd3bb71"
+      },
+      "torch": "2.10.0+cu128",
+      "transformers": "5.5.0"
+    },
+    "dtype": "float32"
+  },
+  "full": {
+    "macro_r1": 0.12606946576458772,
+    "micro_r1": 0.13815789473684212,
+    "per_source": {
+      "chart2text": {
+        "queries": 80,
+        "R1": 0.05,
+        "candidate_count": 80,
+        "unique_positive_keys": 80,
+        "random_candidate_expected_R1": 0.012500000186264515,
+        "per_question_type": {
+          "caption": {
+            "queries": 80,
+            "R1": 0.05
+          }
+        }
+      },
+      "chartqa": {
+        "queries": 65,
+        "R1": 0.03076923076923077,
+        "candidate_count": 65,
+        "unique_positive_keys": 63,
+        "random_candidate_expected_R1": 0.01633136160671711,
+        "per_question_type": {
+          "color": {
+            "queries": 1,
+            "R1": 0.0
+          },
+          "comparison": {
+            "queries": 4,
+            "R1": 0.0
+          },
+          "count": {
+            "queries": 14,
+            "R1": 0.07142857142857142
+          },
+          "location": {
+            "queries": 1,
+            "R1": 0.0
+          },
+          "other": {
+            "queries": 40,
+            "R1": 0.025
+          },
+          "time": {
+            "queries": 4,
+            "R1": 0.0
+          },
+          "yes_no": {
+            "queries": 1,
+            "R1": 0.0
+          }
+        }
+      },
+      "clevr": {
+        "queries": 117,
+        "R1": 0.09401709401709402,
+        "candidate_count": 117,
+        "unique_positive_keys": 18,
+        "random_candidate_expected_R1": 0.13419534265995026,
+        "per_question_type": {
+          "color": {
+            "queries": 25,
+            "R1": 0.04
+          },
+          "comparison": {
+            "queries": 2,
+            "R1": 0.0
+          },
+          "count": {
+            "queries": 32,
+            "R1": 0.28125
+          },
+          "material": {
+            "queries": 14,
+            "R1": 0.07142857142857142
+          },
+          "other": {
+            "queries": 12,
+            "R1": 0.0
+          },
+          "shape": {
+            "queries": 18,
+            "R1": 0.0
+          },
+          "yes_no": {
+            "queries": 14,
+            "R1": 0.0
+          }
+        }
+      },
+      "docvqa": {
+        "queries": 96,
+        "R1": 0.0,
+        "candidate_count": 96,
+        "unique_positive_keys": 94,
+        "random_candidate_expected_R1": 0.0108506940305233,
+        "per_question_type": {
+          "count": {
+            "queries": 5,
+            "R1": 0.0
+          },
+          "location": {
+            "queries": 2,
+            "R1": 0.0
+          },
+          "other": {
+            "queries": 75,
+            "R1": 0.0
+          },
+          "time": {
+            "queries": 14,
+            "R1": 0.0
+          }
+        }
+      },
+      "localized_narratives": {
+        "queries": 110,
+        "R1": 0.06363636363636363,
+        "candidate_count": 110,
+        "unique_positive_keys": 110,
+        "random_candidate_expected_R1": 0.00909090880304575,
+        "per_question_type": {
+          "caption": {
+            "queries": 110,
+            "R1": 0.06363636363636363
+          }
+        }
+      },
+      "screen2words": {
+        "queries": 100,
+        "R1": 0.03,
+        "candidate_count": 100,
+        "unique_positive_keys": 100,
+        "random_candidate_expected_R1": 0.010400000028312206,
+        "per_question_type": {
+          "caption": {
+            "queries": 100,
+            "R1": 0.03
+          }
+        }
+      },
+      "textcaps": {
+        "queries": 82,
+        "R1": 0.12195121951219512,
+        "candidate_count": 82,
+        "unique_positive_keys": 82,
+        "random_candidate_expected_R1": 0.012195121496915817,
+        "per_question_type": {
+          "caption": {
+            "queries": 82,
+            "R1": 0.12195121951219512
+          }
+        }
+      },
+      "vsr": {
+        "queries": 110,
+        "R1": 0.6181818181818182,
+        "candidate_count": 110,
+        "unique_positive_keys": 2,
+        "random_candidate_expected_R1": 0.5279338955879211,
+        "per_question_type": {
+          "spatial_statement_verification": {
+            "queries": 110,
+            "R1": 0.6181818181818182
+          }
+        }
+      }
+    },
+    "predictions": [
+      {
+        "id": "chart2text:10117",
+        "candidate_id": "chart2text:21886",
+        "correct": false
+      },
+      {
+        "id": "chart2text:10121",
+        "candidate_id": "chart2text:19663",
+        "correct": false
+      },
+      {
+        "id": "chart2text:10129",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:11597",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:11602",
+        "candidate_id": "chart2text:22477",
+        "correct": false
+      },
+      {
+        "id": "chart2text:13154",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:13155",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:13160",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:13167",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:13168",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:1329",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:15156",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:15159",
+        "candidate_id": "chart2text:20027",
+        "correct": false
+      },
+      {
+        "id": "chart2text:15161",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:15406",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:15409",
+        "candidate_id": "chart2text:3612",
+        "correct": false
+      },
+      {
+        "id": "chart2text:15418",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:16992",
+        "candidate_id": "chart2text:20027",
+        "correct": false
+      },
+      {
+        "id": "chart2text:18123",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:19650",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:19663",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:19676",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:19692",
+        "candidate_id": "chart2text:26224",
+        "correct": false
+      },
+      {
+        "id": "chart2text:19697",
+        "candidate_id": "chart2text:26290",
+        "correct": false
+      },
+      {
+        "id": "chart2text:19710",
+        "candidate_id": "chart2text:26881",
+        "correct": false
+      },
+      {
+        "id": "chart2text:19853",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:19861",
+        "candidate_id": "chart2text:20027",
+        "correct": false
+      },
+      {
+        "id": "chart2text:19864",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:20001",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:20007",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:20027",
+        "candidate_id": "chart2text:20027",
+        "correct": true
+      },
+      {
+        "id": "chart2text:21397",
+        "candidate_id": "chart2text:26880",
+        "correct": false
+      },
+      {
+        "id": "chart2text:21402",
+        "candidate_id": "chart2text:26880",
+        "correct": false
+      },
+      {
+        "id": "chart2text:21862",
+        "candidate_id": "chart2text:26290",
+        "correct": false
+      },
+      {
+        "id": "chart2text:21865",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:21870",
+        "candidate_id": "chart2text:26224",
+        "correct": false
+      },
+      {
+        "id": "chart2text:21871",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:21877",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:21886",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22208",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22210",
+        "candidate_id": "chart2text:26880",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22214",
+        "candidate_id": "chart2text:26881",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22216",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22232",
+        "candidate_id": "chart2text:26459",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22234",
+        "candidate_id": "chart2text:26880",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22477",
+        "candidate_id": "chart2text:22477",
+        "correct": true
+      },
+      {
+        "id": "chart2text:22483",
+        "candidate_id": "chart2text:21886",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22657",
+        "candidate_id": "chart2text:26224",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22661",
+        "candidate_id": "chart2text:26224",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22664",
+        "candidate_id": "chart2text:26880",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22678",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:22687",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:25246",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:25579",
+        "candidate_id": "chart2text:26224",
+        "correct": false
+      },
+      {
+        "id": "chart2text:25582",
+        "candidate_id": "chart2text:21886",
+        "correct": false
+      },
+      {
+        "id": "chart2text:25593",
+        "candidate_id": "chart2text:26224",
+        "correct": false
+      },
+      {
+        "id": "chart2text:25596",
+        "candidate_id": "chart2text:26880",
+        "correct": false
+      },
+      {
+        "id": "chart2text:25599",
+        "candidate_id": "chart2text:25599",
+        "correct": true
+      },
+      {
+        "id": "chart2text:25922",
+        "candidate_id": "chart2text:26880",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26212",
+        "candidate_id": "chart2text:26290",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26213",
+        "candidate_id": "chart2text:26881",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26224",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26225",
+        "candidate_id": "chart2text:26224",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26235",
+        "candidate_id": "chart2text:26880",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26276",
+        "candidate_id": "chart2text:26880",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26290",
+        "candidate_id": "chart2text:26290",
+        "correct": true
+      },
+      {
+        "id": "chart2text:26443",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26455",
+        "candidate_id": "chart2text:26290",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26459",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26880",
+        "candidate_id": "chart2text:21402",
+        "correct": false
+      },
+      {
+        "id": "chart2text:26881",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:3598",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:3612",
+        "candidate_id": "chart2text:26455",
+        "correct": false
+      },
+      {
+        "id": "chart2text:4194",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:4203",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:48",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:5803",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:62",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:8851",
+        "candidate_id": "chart2text:25579",
+        "correct": false
+      },
+      {
+        "id": "chart2text:9295",
+        "candidate_id": "chart2text:20027",
+        "correct": false
+      },
+      {
+        "id": "chartqa:10337",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:10367",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:10823",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:10830",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:10841",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:11526",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:11528",
+        "candidate_id": "chartqa:16342",
+        "correct": false
+      },
+      {
+        "id": "chartqa:12513",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:12515",
+        "candidate_id": "chartqa:5437",
+        "correct": false
+      },
+      {
+        "id": "chartqa:12517",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:12542",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:15333",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:15336",
+        "candidate_id": "chartqa:15336",
+        "correct": true
+      },
+      {
+        "id": "chartqa:15353",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:16324",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:16339",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:16340",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:16342",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:16346",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:1667",
+        "candidate_id": "chartqa:5437",
+        "correct": false
+      },
+      {
+        "id": "chartqa:1671",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:16930",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:17122",
+        "candidate_id": "chartqa:17122",
+        "correct": true
+      },
+      {
+        "id": "chartqa:17124",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:17142",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:17150",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:17517",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:17530",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:17666",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:17675",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:17735",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:2593",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:2599",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:2607",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:2621",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:2622",
+        "candidate_id": "chartqa:16340",
+        "correct": false
+      },
+      {
+        "id": "chartqa:3112",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:3121",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:3127",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:3134",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:3687",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:3692",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:3695",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5437",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5536",
+        "candidate_id": "chartqa:16340",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5552",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5561",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5675",
+        "candidate_id": "chartqa:17122",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5678",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5802",
+        "candidate_id": "chartqa:6988",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5803",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5813",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5893",
+        "candidate_id": "chartqa:16340",
+        "correct": false
+      },
+      {
+        "id": "chartqa:5899",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:6482",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:6494",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:6988",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:7004",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:7149",
+        "candidate_id": "chartqa:16930",
+        "correct": false
+      },
+      {
+        "id": "chartqa:7160",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:7272",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:7280",
+        "candidate_id": "chartqa:15336",
+        "correct": false
+      },
+      {
+        "id": "chartqa:7683",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:7704",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "chartqa:9046",
+        "candidate_id": "chartqa:17142",
+        "correct": false
+      },
+      {
+        "id": "clevr:10179",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:10182",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:10188",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:13032",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:13040",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:13041",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:13048",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:16768",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:16772",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:16776",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:16782",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:16785",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:16787",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:16794",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:17607",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:20174",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:21832",
+        "candidate_id": "clevr:9961",
+        "correct": true
+      },
+      {
+        "id": "clevr:21845",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:22836",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:2722",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:2728",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:2737",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:2739",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:2741",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:2748",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:29379",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:29387",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:29390",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:29391",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:29401",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:29405",
+        "candidate_id": "clevr:16782",
+        "correct": true
+      },
+      {
+        "id": "clevr:29863",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:29867",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:29873",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:29883",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:29886",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:33583",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:33588",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:33589",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:33591",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:33592",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:33599",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:34053",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:34055",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:34067",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:35306",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:35315",
+        "candidate_id": "clevr:16782",
+        "correct": true
+      },
+      {
+        "id": "clevr:35701",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:35888",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:35890",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:35891",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:36737",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:36766",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:36898",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:36921",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:44367",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:44368",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:44375",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:44378",
+        "candidate_id": "clevr:21832",
+        "correct": true
+      },
+      {
+        "id": "clevr:45792",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:45795",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:45803",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:45807",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:45813",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:4806",
+        "candidate_id": "clevr:9961",
+        "correct": true
+      },
+      {
+        "id": "clevr:4809",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:4812",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:4817",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:4819",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:4831",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:50727",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:50739",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:50744",
+        "candidate_id": "clevr:9961",
+        "correct": true
+      },
+      {
+        "id": "clevr:50749",
+        "candidate_id": "clevr:21832",
+        "correct": true
+      },
+      {
+        "id": "clevr:51146",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:51151",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:51158",
+        "candidate_id": "clevr:9961",
+        "correct": true
+      },
+      {
+        "id": "clevr:51164",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:51166",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:55521",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:55524",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:55526",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:55528",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:58530",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:58543",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:58549",
+        "candidate_id": "clevr:9961",
+        "correct": true
+      },
+      {
+        "id": "clevr:64649",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:65569",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:65580",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:65589",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:65598",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:65637",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:65644",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:65645",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:65650",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:65652",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:65657",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:65660",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:66435",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:66437",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:66439",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:66441",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:66459",
+        "candidate_id": "clevr:9961",
+        "correct": true
+      },
+      {
+        "id": "clevr:7247",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:7256",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "clevr:7259",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:8363",
+        "candidate_id": "clevr:55521",
+        "correct": false
+      },
+      {
+        "id": "clevr:8364",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:8378",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:8452",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:8458",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:8459",
+        "candidate_id": "clevr:21832",
+        "correct": false
+      },
+      {
+        "id": "clevr:8464",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:8474",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:9961",
+        "candidate_id": "clevr:9961",
+        "correct": true
+      },
+      {
+        "id": "clevr:9963",
+        "candidate_id": "clevr:16782",
+        "correct": false
+      },
+      {
+        "id": "clevr:9976",
+        "candidate_id": "clevr:9961",
+        "correct": false
+      },
+      {
+        "id": "docvqa:113",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:1184",
+        "candidate_id": "docvqa:8604",
+        "correct": false
+      },
+      {
+        "id": "docvqa:1189",
+        "candidate_id": "docvqa:6598",
+        "correct": false
+      },
+      {
+        "id": "docvqa:121",
+        "candidate_id": "docvqa:5702",
+        "correct": false
+      },
+      {
+        "id": "docvqa:199",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:202",
+        "candidate_id": "docvqa:7482",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2081",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2088",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2094",
+        "candidate_id": "docvqa:7578",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2104",
+        "candidate_id": "docvqa:7567",
+        "correct": false
+      },
+      {
+        "id": "docvqa:211",
+        "candidate_id": "docvqa:5725",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2111",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2149",
+        "candidate_id": "docvqa:9555",
+        "correct": false
+      },
+      {
+        "id": "docvqa:216",
+        "candidate_id": "docvqa:7567",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2170",
+        "candidate_id": "docvqa:2960",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2244",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2264",
+        "candidate_id": "docvqa:1184",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2265",
+        "candidate_id": "docvqa:620",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2267",
+        "candidate_id": "docvqa:868",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2515",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2956",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:2960",
+        "candidate_id": "docvqa:1189",
+        "correct": false
+      },
+      {
+        "id": "docvqa:3267",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:3272",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:3292",
+        "candidate_id": "docvqa:8579",
+        "correct": false
+      },
+      {
+        "id": "docvqa:3941",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:3943",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:3949",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:3964",
+        "candidate_id": "docvqa:113",
+        "correct": false
+      },
+      {
+        "id": "docvqa:4138",
+        "candidate_id": "docvqa:6680",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5026",
+        "candidate_id": "docvqa:6598",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5037",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5039",
+        "candidate_id": "docvqa:7567",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5047",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5515",
+        "candidate_id": "docvqa:620",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5516",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:565",
+        "candidate_id": "docvqa:113",
+        "correct": false
+      },
+      {
+        "id": "docvqa:570",
+        "candidate_id": "docvqa:5702",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5702",
+        "candidate_id": "docvqa:6604",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5714",
+        "candidate_id": "docvqa:6598",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5717",
+        "candidate_id": "docvqa:8579",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5721",
+        "candidate_id": "docvqa:7578",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5724",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:5725",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:574",
+        "candidate_id": "docvqa:1184",
+        "correct": false
+      },
+      {
+        "id": "docvqa:612",
+        "candidate_id": "docvqa:6680",
+        "correct": false
+      },
+      {
+        "id": "docvqa:620",
+        "candidate_id": "docvqa:7578",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6336",
+        "candidate_id": "docvqa:113",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6343",
+        "candidate_id": "docvqa:6598",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6354",
+        "candidate_id": "docvqa:8995",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6358",
+        "candidate_id": "docvqa:7567",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6364",
+        "candidate_id": "docvqa:7482",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6365",
+        "candidate_id": "docvqa:6680",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6598",
+        "candidate_id": "docvqa:7578",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6604",
+        "candidate_id": "docvqa:1184",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6621",
+        "candidate_id": "docvqa:871",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6661",
+        "candidate_id": "docvqa:7567",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6680",
+        "candidate_id": "docvqa:7567",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6728",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:6730",
+        "candidate_id": "docvqa:9549",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7464",
+        "candidate_id": "docvqa:9936",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7471",
+        "candidate_id": "docvqa:7578",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7482",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7496",
+        "candidate_id": "docvqa:5724",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7512",
+        "candidate_id": "docvqa:5725",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7552",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7558",
+        "candidate_id": "docvqa:113",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7567",
+        "candidate_id": "docvqa:113",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7569",
+        "candidate_id": "docvqa:2081",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7573",
+        "candidate_id": "docvqa:1189",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7577",
+        "candidate_id": "docvqa:5725",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7578",
+        "candidate_id": "docvqa:5702",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7583",
+        "candidate_id": "docvqa:6680",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7909",
+        "candidate_id": "docvqa:2244",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7923",
+        "candidate_id": "docvqa:7567",
+        "correct": false
+      },
+      {
+        "id": "docvqa:7930",
+        "candidate_id": "docvqa:7482",
+        "correct": false
+      },
+      {
+        "id": "docvqa:8579",
+        "candidate_id": "docvqa:9549",
+        "correct": false
+      },
+      {
+        "id": "docvqa:8589",
+        "candidate_id": "docvqa:113",
+        "correct": false
+      },
+      {
+        "id": "docvqa:8604",
+        "candidate_id": "docvqa:1189",
+        "correct": false
+      },
+      {
+        "id": "docvqa:868",
+        "candidate_id": "docvqa:6730",
+        "correct": false
+      },
+      {
+        "id": "docvqa:871",
+        "candidate_id": "docvqa:8579",
+        "correct": false
+      },
+      {
+        "id": "docvqa:876",
+        "candidate_id": "docvqa:6680",
+        "correct": false
+      },
+      {
+        "id": "docvqa:877",
+        "candidate_id": "docvqa:6680",
+        "correct": false
+      },
+      {
+        "id": "docvqa:8864",
+        "candidate_id": "docvqa:2104",
+        "correct": false
+      },
+      {
+        "id": "docvqa:8868",
+        "candidate_id": "docvqa:9549",
+        "correct": false
+      },
+      {
+        "id": "docvqa:8893",
+        "candidate_id": "docvqa:113",
+        "correct": false
+      },
+      {
+        "id": "docvqa:8995",
+        "candidate_id": "docvqa:8864",
+        "correct": false
+      },
+      {
+        "id": "docvqa:9003",
+        "candidate_id": "docvqa:8893",
+        "correct": false
+      },
+      {
+        "id": "docvqa:9010",
+        "candidate_id": "docvqa:7567",
+        "correct": false
+      },
+      {
+        "id": "docvqa:9023",
+        "candidate_id": "docvqa:5725",
+        "correct": false
+      },
+      {
+        "id": "docvqa:9542",
+        "candidate_id": "docvqa:6598",
+        "correct": false
+      },
+      {
+        "id": "docvqa:9549",
+        "candidate_id": "docvqa:113",
+        "correct": false
+      },
+      {
+        "id": "docvqa:9555",
+        "candidate_id": "docvqa:8579",
+        "correct": false
+      },
+      {
+        "id": "docvqa:9920",
+        "candidate_id": "docvqa:565",
+        "correct": false
+      },
+      {
+        "id": "docvqa:9927",
+        "candidate_id": "docvqa:5725",
+        "correct": false
+      },
+      {
+        "id": "docvqa:9936",
+        "candidate_id": "docvqa:5725",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:100964",
+        "candidate_id": "localized_narratives:29277",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:100990",
+        "candidate_id": "localized_narratives:148933",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:101099",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:10422",
+        "candidate_id": "localized_narratives:148933",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:10426",
+        "candidate_id": "localized_narratives:84736",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:10430",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:111532",
+        "candidate_id": "localized_narratives:161640",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:111533",
+        "candidate_id": "localized_narratives:29277",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:111538",
+        "candidate_id": "localized_narratives:181122",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:111540",
+        "candidate_id": "localized_narratives:161640",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:111546",
+        "candidate_id": "localized_narratives:23928",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:120162",
+        "candidate_id": "localized_narratives:120162",
+        "correct": true
+      },
+      {
+        "id": "localized_narratives:120165",
+        "candidate_id": "localized_narratives:26710",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:120172",
+        "candidate_id": "localized_narratives:85390",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:120174",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:120185",
+        "candidate_id": "localized_narratives:6175",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:127810",
+        "candidate_id": "localized_narratives:61637",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:127828",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:127829",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:127832",
+        "candidate_id": "localized_narratives:84756",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:128678",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:128686",
+        "candidate_id": "localized_narratives:128686",
+        "correct": true
+      },
+      {
+        "id": "localized_narratives:136321",
+        "candidate_id": "localized_narratives:6175",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:136325",
+        "candidate_id": "localized_narratives:148933",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:136327",
+        "candidate_id": "localized_narratives:161640",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:148933",
+        "candidate_id": "localized_narratives:111538",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:148936",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:148940",
+        "candidate_id": "localized_narratives:61637",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:148944",
+        "candidate_id": "localized_narratives:127810",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:157292",
+        "candidate_id": "localized_narratives:84736",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:157299",
+        "candidate_id": "localized_narratives:157299",
+        "correct": true
+      },
+      {
+        "id": "localized_narratives:157304",
+        "candidate_id": "localized_narratives:120185",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:161639",
+        "candidate_id": "localized_narratives:84736",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:161640",
+        "candidate_id": "localized_narratives:61637",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:161663",
+        "candidate_id": "localized_narratives:23926",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:163147",
+        "candidate_id": "localized_narratives:25762",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:163149",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:170850",
+        "candidate_id": "localized_narratives:181122",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:170856",
+        "candidate_id": "localized_narratives:127810",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:170870",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:170875",
+        "candidate_id": "localized_narratives:29277",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:170876",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:170877",
+        "candidate_id": "localized_narratives:85383",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:17137",
+        "candidate_id": "localized_narratives:120185",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:17149",
+        "candidate_id": "localized_narratives:61637",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:181122",
+        "candidate_id": "localized_narratives:25762",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:181124",
+        "candidate_id": "localized_narratives:85383",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:181125",
+        "candidate_id": "localized_narratives:148933",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:181130",
+        "candidate_id": "localized_narratives:148933",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:181134",
+        "candidate_id": "localized_narratives:85383",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:181140",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:191330",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:191335",
+        "candidate_id": "localized_narratives:181122",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:191357",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:194627",
+        "candidate_id": "localized_narratives:85383",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:194646",
+        "candidate_id": "localized_narratives:25762",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:23905",
+        "candidate_id": "localized_narratives:161640",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:23907",
+        "candidate_id": "localized_narratives:120185",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:23910",
+        "candidate_id": "localized_narratives:23928",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:23913",
+        "candidate_id": "localized_narratives:120185",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:23919",
+        "candidate_id": "localized_narratives:85383",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:23926",
+        "candidate_id": "localized_narratives:181122",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:23928",
+        "candidate_id": "localized_narratives:23928",
+        "correct": true
+      },
+      {
+        "id": "localized_narratives:23932",
+        "candidate_id": "localized_narratives:181122",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:23934",
+        "candidate_id": "localized_narratives:85383",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:25762",
+        "candidate_id": "localized_narratives:25762",
+        "correct": true
+      },
+      {
+        "id": "localized_narratives:25773",
+        "candidate_id": "localized_narratives:181122",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:26710",
+        "candidate_id": "localized_narratives:148933",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:26713",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:29248",
+        "candidate_id": "localized_narratives:85383",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:29253",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:29258",
+        "candidate_id": "localized_narratives:161640",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:29272",
+        "candidate_id": "localized_narratives:148933",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:29277",
+        "candidate_id": "localized_narratives:29277",
+        "correct": true
+      },
+      {
+        "id": "localized_narratives:2984",
+        "candidate_id": "localized_narratives:120185",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:2991",
+        "candidate_id": "localized_narratives:111538",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:39138",
+        "candidate_id": "localized_narratives:127810",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:39149",
+        "candidate_id": "localized_narratives:29277",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:39164",
+        "candidate_id": "localized_narratives:61633",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:39166",
+        "candidate_id": "localized_narratives:6175",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:41698",
+        "candidate_id": "localized_narratives:29277",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:41699",
+        "candidate_id": "localized_narratives:29277",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:41711",
+        "candidate_id": "localized_narratives:120174",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:41717",
+        "candidate_id": "localized_narratives:120174",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:41720",
+        "candidate_id": "localized_narratives:85383",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:41726",
+        "candidate_id": "localized_narratives:120185",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:42331",
+        "candidate_id": "localized_narratives:161640",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:6144",
+        "candidate_id": "localized_narratives:61637",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:6155",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:61633",
+        "candidate_id": "localized_narratives:61637",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:61637",
+        "candidate_id": "localized_narratives:25762",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:61641",
+        "candidate_id": "localized_narratives:157299",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:61643",
+        "candidate_id": "localized_narratives:29277",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:61657",
+        "candidate_id": "localized_narratives:25762",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:61660",
+        "candidate_id": "localized_narratives:39149",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:61661",
+        "candidate_id": "localized_narratives:84736",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:6175",
+        "candidate_id": "localized_narratives:23932",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:78016",
+        "candidate_id": "localized_narratives:85383",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:78029",
+        "candidate_id": "localized_narratives:23926",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:78035",
+        "candidate_id": "localized_narratives:148933",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:78041",
+        "candidate_id": "localized_narratives:6175",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:84736",
+        "candidate_id": "localized_narratives:23926",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:84752",
+        "candidate_id": "localized_narratives:120174",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:84756",
+        "candidate_id": "localized_narratives:23932",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:85383",
+        "candidate_id": "localized_narratives:85383",
+        "correct": true
+      },
+      {
+        "id": "localized_narratives:85390",
+        "candidate_id": "localized_narratives:29277",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:85397",
+        "candidate_id": "localized_narratives:6175",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:85400",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:85403",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "localized_narratives:99450",
+        "candidate_id": "localized_narratives:120162",
+        "correct": false
+      },
+      {
+        "id": "screen2words:10667",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:10674",
+        "candidate_id": "screen2words:7529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:1069",
+        "candidate_id": "screen2words:7549",
+        "correct": false
+      },
+      {
+        "id": "screen2words:1076",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:10954",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11172",
+        "candidate_id": "screen2words:7529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11182",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11186",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11189",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11190",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11191",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11196",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11367",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11383",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11384",
+        "candidate_id": "screen2words:11384",
+        "correct": true
+      },
+      {
+        "id": "screen2words:11390",
+        "candidate_id": "screen2words:1507",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11401",
+        "candidate_id": "screen2words:6529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11411",
+        "candidate_id": "screen2words:7529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11413",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11417",
+        "candidate_id": "screen2words:7529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11712",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11720",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11725",
+        "candidate_id": "screen2words:7549",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11815",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11823",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11824",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11834",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:11838",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:13547",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:13548",
+        "candidate_id": "screen2words:1069",
+        "correct": false
+      },
+      {
+        "id": "screen2words:13551",
+        "candidate_id": "screen2words:7529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:13562",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:13563",
+        "candidate_id": "screen2words:6529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:14571",
+        "candidate_id": "screen2words:10667",
+        "correct": false
+      },
+      {
+        "id": "screen2words:14574",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:14579",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:14585",
+        "candidate_id": "screen2words:7529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:1504",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:1507",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:1533",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:15530",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:15537",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:15550",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2159",
+        "candidate_id": "screen2words:11401",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2164",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2171",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2562",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2564",
+        "candidate_id": "screen2words:3754",
+        "correct": false
+      },
+      {
+        "id": "screen2words:257",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2576",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:268",
+        "candidate_id": "screen2words:268",
+        "correct": true
+      },
+      {
+        "id": "screen2words:2882",
+        "candidate_id": "screen2words:3996",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2896",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2901",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2903",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2909",
+        "candidate_id": "screen2words:11401",
+        "correct": false
+      },
+      {
+        "id": "screen2words:2910",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3338",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3347",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3754",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3755",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3768",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3771",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3976",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3981",
+        "candidate_id": "screen2words:6529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3985",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:3996",
+        "candidate_id": "screen2words:10667",
+        "correct": false
+      },
+      {
+        "id": "screen2words:4205",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:4214",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:5345",
+        "candidate_id": "screen2words:14579",
+        "correct": false
+      },
+      {
+        "id": "screen2words:5354",
+        "candidate_id": "screen2words:6529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:5365",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:5367",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:5373",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:5827",
+        "candidate_id": "screen2words:5827",
+        "correct": true
+      },
+      {
+        "id": "screen2words:5841",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:5843",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:5845",
+        "candidate_id": "screen2words:6529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:6390",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:6529",
+        "candidate_id": "screen2words:7529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:6536",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:6678",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:6686",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:7009",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:7029",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:7521",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:7522",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:7529",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:7534",
+        "candidate_id": "screen2words:7529",
+        "correct": false
+      },
+      {
+        "id": "screen2words:7535",
+        "candidate_id": "screen2words:3976",
+        "correct": false
+      },
+      {
+        "id": "screen2words:7549",
+        "candidate_id": "screen2words:10667",
+        "correct": false
+      },
+      {
+        "id": "screen2words:8544",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:8556",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:8686",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:8717",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:8727",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:8728",
+        "candidate_id": "screen2words:5827",
+        "correct": false
+      },
+      {
+        "id": "screen2words:9504",
+        "candidate_id": "screen2words:10667",
+        "correct": false
+      },
+      {
+        "id": "screen2words:9522",
+        "candidate_id": "screen2words:268",
+        "correct": false
+      },
+      {
+        "id": "screen2words:9528",
+        "candidate_id": "screen2words:6529",
+        "correct": false
+      },
+      {
+        "id": "textcaps:10563",
+        "candidate_id": "textcaps:16585",
+        "correct": false
+      },
+      {
+        "id": "textcaps:10570",
+        "candidate_id": "textcaps:8936",
+        "correct": false
+      },
+      {
+        "id": "textcaps:10577",
+        "candidate_id": "textcaps:8956",
+        "correct": false
+      },
+      {
+        "id": "textcaps:11301",
+        "candidate_id": "textcaps:20048",
+        "correct": false
+      },
+      {
+        "id": "textcaps:11307",
+        "candidate_id": "textcaps:13319",
+        "correct": false
+      },
+      {
+        "id": "textcaps:11309",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:11314",
+        "candidate_id": "textcaps:11314",
+        "correct": true
+      },
+      {
+        "id": "textcaps:11327",
+        "candidate_id": "textcaps:13319",
+        "correct": false
+      },
+      {
+        "id": "textcaps:11361",
+        "candidate_id": "textcaps:15497",
+        "correct": false
+      },
+      {
+        "id": "textcaps:11381",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:1152",
+        "candidate_id": "textcaps:20048",
+        "correct": false
+      },
+      {
+        "id": "textcaps:1159",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:1164",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:1173",
+        "candidate_id": "textcaps:19313",
+        "correct": false
+      },
+      {
+        "id": "textcaps:11782",
+        "candidate_id": "textcaps:15497",
+        "correct": false
+      },
+      {
+        "id": "textcaps:11801",
+        "candidate_id": "textcaps:15497",
+        "correct": false
+      },
+      {
+        "id": "textcaps:1181",
+        "candidate_id": "textcaps:13319",
+        "correct": false
+      },
+      {
+        "id": "textcaps:12871",
+        "candidate_id": "textcaps:19313",
+        "correct": false
+      },
+      {
+        "id": "textcaps:13319",
+        "candidate_id": "textcaps:7453",
+        "correct": false
+      },
+      {
+        "id": "textcaps:1347",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:13476",
+        "candidate_id": "textcaps:13319",
+        "correct": false
+      },
+      {
+        "id": "textcaps:13477",
+        "candidate_id": "textcaps:19313",
+        "correct": false
+      },
+      {
+        "id": "textcaps:13499",
+        "candidate_id": "textcaps:19313",
+        "correct": false
+      },
+      {
+        "id": "textcaps:13502",
+        "candidate_id": "textcaps:7453",
+        "correct": false
+      },
+      {
+        "id": "textcaps:13760",
+        "candidate_id": "textcaps:5830",
+        "correct": false
+      },
+      {
+        "id": "textcaps:13763",
+        "candidate_id": "textcaps:16601",
+        "correct": false
+      },
+      {
+        "id": "textcaps:15497",
+        "candidate_id": "textcaps:15497",
+        "correct": true
+      },
+      {
+        "id": "textcaps:15513",
+        "candidate_id": "textcaps:16585",
+        "correct": false
+      },
+      {
+        "id": "textcaps:15519",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:16581",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:16585",
+        "candidate_id": "textcaps:16585",
+        "correct": true
+      },
+      {
+        "id": "textcaps:16593",
+        "candidate_id": "textcaps:19313",
+        "correct": false
+      },
+      {
+        "id": "textcaps:16601",
+        "candidate_id": "textcaps:16585",
+        "correct": false
+      },
+      {
+        "id": "textcaps:18150",
+        "candidate_id": "textcaps:7453",
+        "correct": false
+      },
+      {
+        "id": "textcaps:18153",
+        "candidate_id": "textcaps:5830",
+        "correct": false
+      },
+      {
+        "id": "textcaps:18161",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:19104",
+        "candidate_id": "textcaps:1152",
+        "correct": false
+      },
+      {
+        "id": "textcaps:19109",
+        "candidate_id": "textcaps:19109",
+        "correct": true
+      },
+      {
+        "id": "textcaps:19117",
+        "candidate_id": "textcaps:20056",
+        "correct": false
+      },
+      {
+        "id": "textcaps:19303",
+        "candidate_id": "textcaps:20048",
+        "correct": false
+      },
+      {
+        "id": "textcaps:19307",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:19313",
+        "candidate_id": "textcaps:1159",
+        "correct": false
+      },
+      {
+        "id": "textcaps:20048",
+        "candidate_id": "textcaps:13319",
+        "correct": false
+      },
+      {
+        "id": "textcaps:20056",
+        "candidate_id": "textcaps:20056",
+        "correct": true
+      },
+      {
+        "id": "textcaps:21",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:2505",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:2509",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:2819",
+        "candidate_id": "textcaps:19313",
+        "correct": false
+      },
+      {
+        "id": "textcaps:2830",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:2831",
+        "candidate_id": "textcaps:7453",
+        "correct": false
+      },
+      {
+        "id": "textcaps:2832",
+        "candidate_id": "textcaps:1173",
+        "correct": false
+      },
+      {
+        "id": "textcaps:29",
+        "candidate_id": "textcaps:19313",
+        "correct": false
+      },
+      {
+        "id": "textcaps:3553",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:3564",
+        "candidate_id": "textcaps:3564",
+        "correct": true
+      },
+      {
+        "id": "textcaps:3571",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:5102",
+        "candidate_id": "textcaps:13476",
+        "correct": false
+      },
+      {
+        "id": "textcaps:5116",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:5117",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:5825",
+        "candidate_id": "textcaps:7453",
+        "correct": false
+      },
+      {
+        "id": "textcaps:5830",
+        "candidate_id": "textcaps:673",
+        "correct": false
+      },
+      {
+        "id": "textcaps:5834",
+        "candidate_id": "textcaps:16581",
+        "correct": false
+      },
+      {
+        "id": "textcaps:5836",
+        "candidate_id": "textcaps:7453",
+        "correct": false
+      },
+      {
+        "id": "textcaps:5850",
+        "candidate_id": "textcaps:19109",
+        "correct": false
+      },
+      {
+        "id": "textcaps:673",
+        "candidate_id": "textcaps:18153",
+        "correct": false
+      },
+      {
+        "id": "textcaps:68",
+        "candidate_id": "textcaps:16585",
+        "correct": false
+      },
+      {
+        "id": "textcaps:682",
+        "candidate_id": "textcaps:19313",
+        "correct": false
+      },
+      {
+        "id": "textcaps:7434",
+        "candidate_id": "textcaps:7453",
+        "correct": false
+      },
+      {
+        "id": "textcaps:7453",
+        "candidate_id": "textcaps:7453",
+        "correct": true
+      },
+      {
+        "id": "textcaps:8028",
+        "candidate_id": "textcaps:19313",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8073",
+        "candidate_id": "textcaps:7453",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8094",
+        "candidate_id": "textcaps:16585",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8162",
+        "candidate_id": "textcaps:7453",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8189",
+        "candidate_id": "textcaps:8189",
+        "correct": true
+      },
+      {
+        "id": "textcaps:8407",
+        "candidate_id": "textcaps:8936",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8409",
+        "candidate_id": "textcaps:8409",
+        "correct": true
+      },
+      {
+        "id": "textcaps:8936",
+        "candidate_id": "textcaps:8936",
+        "correct": true
+      },
+      {
+        "id": "textcaps:8939",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8942",
+        "candidate_id": "textcaps:16585",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8949",
+        "candidate_id": "textcaps:13319",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8952",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8955",
+        "candidate_id": "textcaps:8028",
+        "correct": false
+      },
+      {
+        "id": "textcaps:8956",
+        "candidate_id": "textcaps:8409",
+        "correct": false
+      },
+      {
+        "id": "vsr:1057",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1060",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1067",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:1076",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1088",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1090",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1095",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:1102",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:1104",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1109",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1118",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1155",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1174",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1189",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1282",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1285",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1296",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:13",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1300",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1303",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1304",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:1308",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:131",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:1310",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:134",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1348",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1354",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:136",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:1373",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1375",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:139",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1414",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1420",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1430",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1436",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:144",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1520",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1521",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1524",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:154",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:1608",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1610",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:1624",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1631",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:164",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1673",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1676",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:169",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1693",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1730",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1731",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:1756",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1831",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1836",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1844",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1846",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1893",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1903",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:1905",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1908",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:1923",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1928",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:1929",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:193",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:199",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:2023",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:2093",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:2113",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:2126",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:2129",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:213",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:2132",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:214",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:26",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:301",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:306",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:309",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:319",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:330",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:34",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:526",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:530",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:615",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:617",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:618",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:619",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:620",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:623",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:626",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:639",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:640",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:661",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:666",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:734",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:812",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:816",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:827",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:830",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:847",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:848",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:851",
+        "candidate_id": "vsr:830",
+        "correct": true
+      },
+      {
+        "id": "vsr:854",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:861",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:903",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:911",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:917",
+        "candidate_id": "vsr:1057",
+        "correct": true
+      },
+      {
+        "id": "vsr:920",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:962",
+        "candidate_id": "vsr:830",
+        "correct": false
+      },
+      {
+        "id": "vsr:966",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      },
+      {
+        "id": "vsr:989",
+        "candidate_id": "vsr:1057",
+        "correct": false
+      }
+    ]
+  },
+  "limitation": "Same queries/candidates/metric; CPU float32, while live training validation uses CUDA bfloat16. Not a precision-controlled gain estimate."
+}

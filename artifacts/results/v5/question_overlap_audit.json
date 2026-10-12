@@ -1,0 +1,4026 @@
+{
+  "protocol": {
+    "protocol": "v5-full-validation-controls-v1",
+    "data_sha256": "470b7a9b2ca8017fdaad15c404f54b9179a0d556434807d252e89102e9a92f44",
+    "items_sha256": "a3a167138ba8a45e0fde2fc66f7f29a5ad520b80173671648008981eda082207",
+    "queries": 760,
+    "selection": "All validation records; pair(random.Random(record.id)); sorted source then id",
+    "candidates": "All same-source validation targets, including duplicate targets",
+    "positives": "Exact training positive_mask; normalized answers or overlapping image/caption keys",
+    "ties": "First candidate in record-id order, exactly as training validation",
+    "types": "Question/source-only heuristic v1; not official question-type annotation",
+    "implementation_sha256": "738450f698de6581c54fd6d5495fcd776510fd9357538266be0ceced87ecdf9a",
+    "training_pair_sha256": "7bc859a22530508c7718c4dd6e4dc3666d034442275cf5a6e025d18f2064d624"
+  },
+  "rule": "Normalize full question including instruction; all training QA pairs; train-only counts and lexicographic ties; source-majority fallback. No fitting on val/test.",
+  "limitation": "Question overlap is a shortcut diagnostic, not proof of image leakage; unseen exact wording is not unseen semantics/entity. No original text released.",
+  "per_source": {
+    "chartqa": {
+      "queries": 65,
+      "seen_question": 0,
+      "seen_question_and_answer": 0,
+      "lookup_R1": 0.015384615384615385,
+      "models": {
+        "general_3cad7dfc34c7_cuda:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.16923076923076924
+          }
+        },
+        "general_3cad7dfc34c7_cuda:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.09230769230769231
+          }
+        },
+        "qwen2b_cpu:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.6153846153846154
+          }
+        },
+        "qwen2b_cpu:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.15384615384615385
+          }
+        },
+        "qwen_api_cpu:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.8923076923076924
+          }
+        },
+        "qwen_api_cpu:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.12307692307692308
+          }
+        },
+        "raw_cached:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.03076923076923077
+          }
+        },
+        "raw_cuda:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.046153846153846156
+          }
+        },
+        "raw_cuda:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.03076923076923077
+          }
+        },
+        "step0_reconstructed_cpu:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.015384615384615385
+          }
+        },
+        "step0_reconstructed_cuda:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.015384615384615385
+          }
+        },
+        "step0_reconstructed_cuda:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 65,
+            "R1": 0.015384615384615385
+          }
+        }
+      }
+    },
+    "clevr": {
+      "queries": 117,
+      "seen_question": 0,
+      "seen_question_and_answer": 0,
+      "lookup_R1": 0.23931623931623933,
+      "models": {
+        "general_3cad7dfc34c7_cuda:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.38461538461538464
+          }
+        },
+        "general_3cad7dfc34c7_cuda:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.19658119658119658
+          }
+        },
+        "qwen2b_cpu:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.7350427350427351
+          }
+        },
+        "qwen2b_cpu:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.39316239316239315
+          }
+        },
+        "qwen_api_cpu:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.7948717948717948
+          }
+        },
+        "qwen_api_cpu:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.28205128205128205
+          }
+        },
+        "raw_cached:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.09401709401709402
+          }
+        },
+        "raw_cuda:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.09401709401709402
+          }
+        },
+        "raw_cuda:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.042735042735042736
+          }
+        },
+        "step0_reconstructed_cpu:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.08547008547008547
+          }
+        },
+        "step0_reconstructed_cuda:full": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.08547008547008547
+          }
+        },
+        "step0_reconstructed_cuda:qa_text_only": {
+          "seen": {
+            "n": 0,
+            "R1": null
+          },
+          "unseen": {
+            "n": 117,
+            "R1": 0.03418803418803419
+          }
+        }
+      }
+    },
+    "docvqa": {
+      "queries": 96,
+      "seen_question": 14,
+      "seen_question_and_answer": 1,
+      "lookup_R1": 0.010416666666666666,
+      "models": {
+        "general_3cad7dfc34c7_cuda:full": {
+          "seen": {
+            "n": 14,
+            "R1": 0.14285714285714285
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.1951219512195122
+          }
+        },
+        "general_3cad7dfc34c7_cuda:qa_text_only": {
+          "seen": {
+            "n": 14,
+            "R1": 0.14285714285714285
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.14634146341463414
+          }
+        },
+        "qwen2b_cpu:full": {
+          "seen": {
+            "n": 14,
+            "R1": 0.5
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.524390243902439
+          }
+        },
+        "qwen2b_cpu:qa_text_only": {
+          "seen": {
+            "n": 14,
+            "R1": 0.14285714285714285
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.23170731707317074
+          }
+        },
+        "qwen_api_cpu:full": {
+          "seen": {
+            "n": 14,
+            "R1": 0.9285714285714286
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.9390243902439024
+          }
+        },
+        "qwen_api_cpu:qa_text_only": {
+          "seen": {
+            "n": 14,
+            "R1": 0.0
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.2804878048780488
+          }
+        },
+        "raw_cached:full": {
+          "seen": {
+            "n": 14,
+            "R1": 0.0
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.0
+          }
+        },
+        "raw_cuda:full": {
+          "seen": {
+            "n": 14,
+            "R1": 0.0
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.0
+          }
+        },
+        "raw_cuda:qa_text_only": {
+          "seen": {
+            "n": 14,
+            "R1": 0.07142857142857142
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.04878048780487805
+          }
+        },
+        "step0_reconstructed_cpu:full": {
+          "seen": {
+            "n": 14,
+            "R1": 0.0
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.024390243902439025
+          }
+        },
+        "step0_reconstructed_cuda:full": {
+          "seen": {
+            "n": 14,
+            "R1": 0.0
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.012195121951219513
+          }
+        },
+        "step0_reconstructed_cuda:qa_text_only": {
+          "seen": {
+            "n": 14,
+            "R1": 0.07142857142857142
+          },
+          "unseen": {
+            "n": 82,
+            "R1": 0.036585365853658534
+          }
+        }
+      }
+    },
+    "vsr": {
+      "queries": 110,
+      "seen_question": 21,
+      "seen_question_and_answer": 13,
+      "lookup_R1": 0.42727272727272725,
+      "models": {
+        "general_3cad7dfc34c7_cuda:full": {
+          "seen": {
+            "n": 21,
+            "R1": 0.6666666666666666
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.5280898876404494
+          }
+        },
+        "general_3cad7dfc34c7_cuda:qa_text_only": {
+          "seen": {
+            "n": 21,
+            "R1": 0.6190476190476191
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.550561797752809
+          }
+        },
+        "qwen2b_cpu:full": {
+          "seen": {
+            "n": 21,
+            "R1": 0.47619047619047616
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.7528089887640449
+          }
+        },
+        "qwen2b_cpu:qa_text_only": {
+          "seen": {
+            "n": 21,
+            "R1": 0.6190476190476191
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.5842696629213483
+          }
+        },
+        "qwen_api_cpu:full": {
+          "seen": {
+            "n": 21,
+            "R1": 0.7619047619047619
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.8202247191011236
+          }
+        },
+        "qwen_api_cpu:qa_text_only": {
+          "seen": {
+            "n": 21,
+            "R1": 0.7619047619047619
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.6404494382022472
+          }
+        },
+        "raw_cached:full": {
+          "seen": {
+            "n": 21,
+            "R1": 0.6666666666666666
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.6067415730337079
+          }
+        },
+        "raw_cuda:full": {
+          "seen": {
+            "n": 21,
+            "R1": 0.6666666666666666
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.6067415730337079
+          }
+        },
+        "raw_cuda:qa_text_only": {
+          "seen": {
+            "n": 21,
+            "R1": 0.6666666666666666
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.6067415730337079
+          }
+        },
+        "step0_reconstructed_cpu:full": {
+          "seen": {
+            "n": 21,
+            "R1": 0.6666666666666666
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.6067415730337079
+          }
+        },
+        "step0_reconstructed_cuda:full": {
+          "seen": {
+            "n": 21,
+            "R1": 0.6666666666666666
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.6067415730337079
+          }
+        },
+        "step0_reconstructed_cuda:qa_text_only": {
+          "seen": {
+            "n": 21,
+            "R1": 0.6666666666666666
+          },
+          "unseen": {
+            "n": 89,
+            "R1": 0.6067415730337079
+          }
+        }
+      }
+    }
+  },
+  "predictions": [
+    {
+      "id": "chartqa:10337",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "fbca9ef3980ea0b5812923db9c3b25257f5a651365ffe6eded33146932f41ac8",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:10367",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "12acba7971d899f3ba9d756487a87353c674bea97f22438c22c9fee6dbb69c15",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:10823",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d796e53a1a6cc128ccd7c9c0a79e6a64cd8b3d9dac66471b0d9fc2eff02bf12b",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:10830",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "31f6c21b962cd1b1725dc17502472f7ef44f7bd0e795db96b1f0b2f46ccca1ed",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:10841",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5d09c7da8a8abbfeee27115b73b5345ab2a97aa02d73cbe8236303164cdacde8",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:11526",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "a35881a024ff871c8cea257f3bb7ece033372c7d1d79826282d82b53c7b0c171",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:11528",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1f7b2f64388f423adba193607614f643f056f587f3c10d85ec7bd9114636abb0",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:12513",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "02f810a48ded52faad074b8ed1b4c751fbd982bb2d68049f46a5cdd33257ad14",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:12515",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "dac163e6fdd99c87af587764c27f3d171b1ae11a97625a763cbaaf352168cf75",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:12517",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7a9accf1fd398f8ab6fb7ec928bb197e242c1f9dd6233662b81d7e08cbbdb3c8",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:12542",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "fefc7636c5d41827a715e3c92f650ae157b18c65619a6d98aba5b6791af82f02",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:15333",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "548b321797ae02dde7b479828ecc10b2d7fddbb60b30a0843df3d1829dc92029",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:15336",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "cd6f611b508695e906300a0b968039f16e55dd9a1da1b35ee6ab6e3997ca4ce6",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:15353",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "572c291748485c9433d00f3068ccb7821da056e8cbcf687faaf58597c7130d2a",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:16324",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1111182f069b7041aa177de8c18e5fc7ea00cdc2ea5b925e8555cae18104900d",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:16339",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "fb865d3d6d573eecf7fef0aa55cfb5e32a96d671bddbbd1eb6e85fd6904d6c93",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:16340",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4620fec5feb23010902a80a5bf42ece2426405727addb3081b07ca5795900671",
+      "lookup_correct": true
+    },
+    {
+      "id": "chartqa:16342",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e210310ad66f176120626bdc539aafc70df09f3b6cc08f1253b0b3aec21bff13",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:16346",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7517eed54acf9c8060210668b85e4867d95020109b9ab566c723cdb84d958830",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:1667",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9340b6167513615a0b7121886ea70e2b72f0547b3ba9d2e8cb44f2a65d3976e4",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:1671",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1a0f41e69e5df96387fe535d45f0818759e7bfc524f6f82b2b6e4373b3754f21",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:16930",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d4554112505120cc25b3dc6b2ebf84072c3daf58139be5935223a5d0f7dcb1ad",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:17122",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6d87d66ed395d8bae308bec2f7bc7407a511f197ce3ab59e5172914d3bdfbc21",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:17124",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b3afdfbd5fabbfdbd6c62c15ccc1dc587a3b3877ae5bca221d73d429b5900cc8",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:17142",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "507343c2450b52ac7dc6524c86205a14e6acc29914a2a800b462e7eb1e1f7c49",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:17150",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "667b7aa9e6f84287ae6fd54799010acbc47c72824ffa82f5c5b9eaa4b513b627",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:17517",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "268deb4d6fa8dad1cb0405b2fa10de1911e41d98cc535e1c8e5a43d6dc646985",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:17530",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "63ce3b9854fa6a59ebf873e87ce86a3a4e3aff43b8848ef7c114dedab4e25a47",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:17666",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ffb93fdcc1e0270884b1d705965a86d874f4edc79fab908026ca95e995f499ae",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:17675",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c2f52c22744f50592d0c865df22a95c416c4f30ed51fe25d6c053417e4c79d5d",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:17735",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7af2a6db8457ab6c92f4a9b8ba13f195385d00fd070a04c54f4b3efffbcc667f",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:2593",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4996c516be9be976d30f43c8efb90a0493498c12b15f6e1c5201a1b84f1643e8",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:2599",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "84d7fe9edddbfb68914d81d862c49a534451951c65e5b9ae23594058f8b2047b",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:2607",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "eaabe5f4534f993c95e961ad3b11e463b8ad461e2da03e6ed0ff5431751dafaa",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:2621",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ceac9621cdab7382a7981b68d65ff9f65c333e89bbc43bc0fdcf137f143c25b8",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:2622",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d5398b62f47d25d76f74a377332714d8f57f177a6745ae2f0c0417f4cc466e15",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:3112",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0beaa9b07354137b10add4ec13e80c82cd2d2b0ef2a2e1b9605e9e2143ece5bc",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:3121",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e75ec190a5b4ed7bc6f2529c614e63d200163ea76c40babf9eb66c3a23e9f00e",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:3127",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "178be8bc2d8aa573d2a56eb4702c05cdd68f0cf9935544833071612f7612a984",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:3134",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c12f30ba0b16a4850b64fc653d1fc1fb38f7f07a3246d79a2c0a0768851ea078",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:3687",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "153bd8e5a0c4e48a08d833e332cea7b57fc8c9e9a327304e1fd1522211ad3d51",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:3692",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "3fe1b6458fcd7daf8be48efdc779d2f6846fda278fc0b35134b78ffe25d459d5",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:3695",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5cf921b0d3cc63695694a42bbf15ff23a119439fcf5c11dcc6c47e03c6216729",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5437",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b108356a89002d348f7f1167577c4f37df375ca632672283931cdba890090177",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5536",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ac55014721cc5b52fc06cfc93cffaa01cd32e50cee5abe9b3977250c2ffbdea2",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5552",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "343db0d5ffc7c81ed0ef280f557a7bb2cd3d7b25385dae8e0681ffe286b85c3d",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5561",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "96fe13fce3e43fae2e758d63dd6ce08ded4c97f3390bb538e7c6c3542222ecee",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5675",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1fd2f0511b97386f94dc2d075104b99d638a462699557a284b4f15a21bdba5c7",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5678",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "56e4c37fbe7f3cd4ed9de8e823bc21fac23044a3d887d471f5ab44c2027c932e",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5802",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "92ed5148df44725f164271a9770efe9acdbaf561d93d08fc4b12d2b3bd759d83",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5803",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b01b6c8617e18003992559abfbb88935819f953723d628645b888288a5d79a06",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5813",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4b061049fa739421454443a63e1dc6190895b80c9842f74a4172d2be000278be",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5893",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "40204c033fd94fa11db99f786e6830de3f5c41fda4f2dba4dea09bb743ed29f0",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:5899",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5e022bc69d553ed6b602bd9a169a218b5e3afa55366a9160b41f9deb6348bcac",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:6482",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "33e19a4f7043d4b58b183452205a01d042a8e32356bcacfb68a078dcc31885af",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:6494",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d776f05e11b01ede8bcae6b477e17ed56ae862d704f2800d7c95359a63a9e8c1",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:6988",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9905d7b37300cf37177b49a5710ae9a77c9d35b00ff3d646652cff63e53d9a3f",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:7004",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0ecaf19e71aff2ef0ba8417c65c8608dfadb67eba73bb1ef5a371a030ced7194",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:7149",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d98f4cbf72769c7340a98411514d09b35824b6318bd5be8b736c7da2b3a8420e",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:7160",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "53a8d2a7f2756ac73c44807b98800e25c2b07bdb8f3b27ccb0113d405f3008fc",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:7272",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "202348cb27fc2adf6a177d60f142076fd48026bc392d350e5fdcbed57c0743da",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:7280",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1b4c8cb2a00fa296152ad2d30b1bd378d3fdbc98d2252c85c0a6a7e6506ce8a0",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:7683",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ade62a4b8514189ee175e87e4569d4a5d02bda2e09a3f995259d5a38f4a48847",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:7704",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ba015b90dafeb4f73af442ecd152f22cdcc62276045dc2bc3a02408f757f573a",
+      "lookup_correct": false
+    },
+    {
+      "id": "chartqa:9046",
+      "source": "chartqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "597506b513023bea9a0d4505632d4bb8d0d25f52c745c71733ea859de1835338",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:10179",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5e48aa7657dd4c8d0b962bd86a7a2096d7b4dabd77e4172c591e49d147521d3a",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:10182",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e40c8d533a24159b11971e6757d7825b4ab9124d9edb4c71334579cef920485f",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:10188",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1b62b75c7a2dfa2fc5a8c1e736f81666cf499409f18216044e97f7bfdfc54a15",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:13032",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e1f99a0e97a548d17ea98a2dedb7cac141747dcc2ca4b7a54031cb63b555183f",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:13040",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f6df9724b0a74120795be7dce2ef6a08f295e83e3f4ec48b702f81a4d399ac9c",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:13041",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "67945c7196b5ae89938d80fe102ac442baa469a4ee79ff4a253053a242effee4",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:13048",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "982711b428fa081e12858e792bb7064a6ba91832e6af0b68bb5e3b38782a2680",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:16768",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "50e67b65d928ef812cbe9839c42635f122da652b98d39f54d0d98378c7f7b961",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:16772",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "a6656690a18d7cb8d0bd181a003f2ddfb8f586fc2afb225c0cf8ee93ea43b20c",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:16776",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c856b256bfb7efec020b3e0eb1cd2a4fba4c5b373e4142498b2c0ab1ddde320c",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:16782",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b4141c5c417bd97d17b3593bd421e30db601dd35129dc9e33fc4ac5b70a580a7",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:16785",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f4018cecc800147f4c5669d251f871702ef4690fa4a3fa9865daae9a1066db5b",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:16787",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4b72e544f83e9cc9461e479dbb95cde9ba28f77da2757bd7d87749cbcb8342b8",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:16794",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7add20fe1b151a5e7b3add4baa4177df653b6c0ad5bab41be8aa7b719b603baf",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:17607",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0b48d5c34e49c1888a093fd0678d5f3f97c1948d687aaf2f4aa88bf5cf7b7bb8",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:20174",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "514bab8cdfa922383b44a9e377f5a90eac095e82b0e0057ce4e968c888a059db",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:21832",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f7c51b3fe3a6bf9dd067546c5c3e63a67ad8eb3579a2072b024c17d63c75dd7b",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:21845",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f4b49442d1cb9da529e89520ec03f4e201c00b59705aee22ab58516560998327",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:22836",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ab6b235766ae0ba37c06cec80aa29b067c7186327446259772ee22996e0046dc",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:2722",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "037dcb754d123de5c8056ae0111322be674860a5f2a6280b980cb53cfa956285",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:2728",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5ad7786582374726994765c5d8cbb1e6c1c7cdf30ebba72fafee55e8b05c8159",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:2737",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "48cd3dca7a89d4797b739ba50c0aa8ac5660fd9a21e488e2b973cf2cf23dcca3",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:2739",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8dbe558e73f16f010e67a245593e826099f62d7a482282cbeff769dc013b1049",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:2741",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1ac71d981dfe165b6c3496b683226390778014845fee4c3e7511a2e2463d8dde",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:2748",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "63394392b4c43c2369dc07dde7c71b3e3f93b0cd24dd12a9045facda3e183840",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:29379",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "57f6b4a5374268ffaa4e8c46f979b933cafa450bd8b1e6af128e421ab73af76c",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:29387",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d2d7c3be316c2de2aae093db17936c05b0950750c063833e36228833d3b7241f",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:29390",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d4811509a2f8bc314e5539626ef94ffc2e7011048ff1b0c5aff3a7059d52f942",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:29391",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9fb5217f4fdafa6b3bfaae007e02877870dbf50cc44f9a4d6dea30032a4449bf",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:29401",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "3d9f5b018ca24c90bd36be341a670755080f6e740ca2b9ceb9509f010b15c7d4",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:29405",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "bfa8ec18ac56301e013072aa1f97f5743d3c985eb2fafe2f3732d0eb214faea6",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:29863",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "39ab5c7a90a3bc358326a087f0d7f1bbaed5e8eae94152948b1864fd0eed88c8",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:29867",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f8f0684f0aa2f960f00bdb0db70aa8d149cb37402ebdd2141f7bc389e0cb8d4c",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:29873",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "91547d4aff8e6baf46e539de323d032ac34cf854da395c7be76fca4d631b23a9",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:29883",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "46a91d150d8390106d78f62886440575caacec73b07c54a847469c13ec679f64",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:29886",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "97465eb25f2d84d58e7706ff2ecd5e2cf110142b45abc93d79ae220e0f0e61b2",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:33583",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "478a09d579e77bddcaba9edc661c739e4be37a977253a3250fe95e70f4fe4944",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:33588",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "af7ab32f1356b0c5d3e99593de6514fb49615d7748b95a2214237c120bc90734",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:33589",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "cde6880f27adefe72a47e4cab28828f7501ea803ced7d49060a417cb685e0aba",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:33591",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c34a84d9c37ee3ff30806377861fcaf257d10e1eebe9f258132fba3f79dbdf7d",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:33592",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8d16710f0c90ba668db271571b96bd46d64872c6fd836a4b1b3e89cf5bc7d3c7",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:33599",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1d03b5b9d54d088f469916fa89e0f8cd05fee77d4091338b30bebcf6bbbca797",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:34053",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9e9624def73b697b27d9c0efb8ce7f5716d7695e46ac433ff8d38caa580f3e94",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:34055",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "82897d1681a6bb8f470586324a9959224d70a82de32f64be8af3e7532fa82528",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:34067",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9694de52308f407671b8401f423c30f8419d89dad8a0152b3aaa4e827d682368",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:35306",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6ab12b607e2f5b12269ae0f35ad2489ff71c175ec80d2668d3e8c2c7c25fde3d",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:35315",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "54e65b37ae67d0b61ca935e554ccb403055dd8f87c6c952def87b6a61a6d3dc3",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:35701",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5d4a42fb9d1357d7e5d44ca88a5a741c0ee1e91c7ac3555df03ea40b20dc98ce",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:35888",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4de35d81699faeea4362a942fb118de04a5620a45847b89bcfd5a4c3cae4904d",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:35890",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "042d1a7564fd8c9164a88c800088d8edbc8d3ab3208499170a963ad2d2e6b700",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:35891",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4f8be486a67cfefcff2cd1012782b163dff8f92e2a56005881dfe7e3dc4dbca0",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:36737",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "a4d92ffa903c845990265f0653fceb026f41b24be3653778cefff9fd4075407c",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:36766",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0f627abd5107b6acffc514116ae30031ae183ee61d6896307edc824380d8778f",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:36898",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e6b892bc9a9f99d66ba435d163f40b1ed9284dc2ccd1361bd748a237f4948ff4",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:36921",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "86b622e85f8b55d92523c4d706a837f8f2b353889e50b6cbdbcec6f9d114fb0c",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:44367",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b73d90b7d42b132158d6d2727a268c46df92aa59ff1beaee51ed7ab6e4760993",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:44368",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "81deab4de12fe3d21ab7a81d5b30e21c124a19c7232151ee5e47299806a871c2",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:44375",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "21aa86c74f8f3d5890054f5a4b7c2ec74c17bf47c08264b0ab0783587155a58b",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:44378",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5037e7ed9e52838a5a21c4131617ed2390e7881441ceacd41f5cad4987695d5a",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:45792",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b45500ec4ef6ec7acf5ff7759da535fb7dc3a17fb39451289b7727a3410b37ff",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:45795",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "43f1193c992847939b3e9949211923092bab7c1354139a0a47db2ad7ccf77487",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:45803",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "da31632b00935d3855eaf831068ae4e77ae385e8e63748e8db8bc2ec19b85768",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:45807",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "baff363b196d564d2419b49502efc6c707983a8255a279dbeaa0ebfc5d56be47",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:45813",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0e5901f9a6a1f452b9cdb3153b0f2888e6c262919d2f5b633fc219375ed4f705",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:4806",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d1c0e877c9d2899fc96c12ca8c5162160d361ed7b1626aa4c3d4289d255e6daf",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:4809",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f0fde896cac4a2f0f5f038203172f7bf1ec2208832db8b4b32c50367b00f90f6",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:4812",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8747630c74b24c7118f372a3a53ec9eedb47186eeb1247372096f538fb294808",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:4817",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "21da999fbd0d437df016e9e617994d52de7cd6a180be44aecde42ef0b84be9ca",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:4819",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "eab5359f2b1c100c658fee522c86a9007046884694517a160a5e51a36f31d64f",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:4831",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "72709cadeb5a490249c2898d0b14f08d9efef09afd6948ad5d7f3450f8b057e7",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:50727",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "068ee24f7557a7ff4e539a15eaf3894c2f54de8818c324770dc9ca9ec58fd7cb",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:50739",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f55eb50ca7c592396b76efa14159c45bbc4d9a39421c983fee04637844c4053c",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:50744",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "43af9be9c150f1c40bfe0b602a98a7512fdb6fa4132736fb7227e909f345a509",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:50749",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "213e20958c6fe331afd27474fe326075b601deb4b369a9350eba525d6d6e9e7c",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:51146",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9b4673c0df66e406dba51b6b481d4f82f0ca4be03c095bc0ce69bd5c0e678ee7",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:51151",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0be447c4f627b387577f4961573d3165f3ef7237a854b177ef106342b761d4f3",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:51158",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "64261ad504e81a045c54521e62b1de0d9e414006040fbbc1f270b1443850ef14",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:51164",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "29c2386c57ee1e79d1e46e877d1c355bf6e3dfa914117b03c4a4dcb34922ae99",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:51166",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f7dd0064fbee9b7666d12e6733229efedbd693c76308fafdf5559627dcbe481d",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:55521",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9e948571dec30389c6d8cce84328f6d9e558c8a05dd70320b073e6f40264a7ea",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:55524",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "db0cc7791011a99624a1ea65f7d4289897bcb0093c803586780fa1c9e7e97419",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:55526",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0647b659f7af6073f2dd587fe8e7a2afc33fa120bdf9d8719345f48d86ec8083",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:55528",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "bee79113b666eb4f787fa34024597ae31d21a3e81d8a1daac31fc7a583bd26a8",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:58530",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c34fb61afbcc9aea0eca57d4f0907c421668c63e212a6cd8ca9eaaaaee60a355",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:58543",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "fa8f4c6cc2f2de1ed28bd31dff9713e37dc6582193d718f1b5fe23c25eabe418",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:58549",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d0b05edf481222ac2bfa49543d5f9a9c3b089744aeaf078c75018c41c19b8dfe",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:64649",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "a86d4568cb3094d5c442b2ef13b9f21c7659fe63b7cb4a0ebaf00ed3291e5095",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:65569",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4cc0c5f3ab8d343860594e3c32421a5047ebdf4c7154a4caea16416120cab04b",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:65580",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "80e37c37bdd8db069d5439d73c17a5963ca40ab91daf0949099c6641d9cd4092",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:65589",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9beb727afa5caf84728db7c0306562af26cd8ad0bab890da9ad651c74249d53d",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:65598",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "cb85fd6248598b3cfd18660af075c0005656b102c995ecb77e8a2ee153ffde88",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:65637",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "a4db179a843d3a382af186fa8ba7c37f584226241fa1a71b55c0d5ff1ca6c477",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:65644",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "2900ecc52f388232efb44dfe85732b65d8a079a20d809d372c08b5e78e04b029",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:65645",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "65c01fa1b8a4e820ab3aec4f2d65c71b8d933ce35e9b83c8ecc51bb02e3e7053",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:65650",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c605178f14ae351c76629fc0764b11112b11f735ae64b992bbc6e231a12e4e6f",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:65652",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e02e85868326e2d9cd304e7bcd0e365799a9ea5dec9ff57c6bc88353137fd2df",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:65657",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b320b0b8cc1dd81e8b603de503f02c168801dc3707c0edfdf5ededea3a44df5b",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:65660",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "fbcae4cfa05c0a09eed49d6fe345da01e5da34bd8752e94c4f360b953bfee83d",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:66435",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "15e9736241fc48c5ed3e9c6cde1d05fa914e40a22c7ee4dcbfc33f2828a7744c",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:66437",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "840383c15eedf31a651ff96fc2460335c7cdece5169d68922c7fb99ae668283a",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:66439",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1befc94e66cac5fded781f38ac5d0a2193f25f44c9fa8d807ecc745000ffc215",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:66441",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "aae7b8aac4f2d90413db189133b75f90473b257c5cf12094795347c780a76552",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:66459",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b0625d3a21590eb561a3a9a2d079a641aa13faf74d1c936e887744c3f42b3d0a",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:7247",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "94e994401f09db5c375dd76c6a78cbf126bd2b7e9fa7dbc11ea5eb8edaf07b9e",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:7256",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9cd916a2a9059d255ee6fd971c2759462fedcf08a950ae566dd663050620d593",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:7259",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0685fe8de9b3744f05354148cdf6e3237668f4dd61ee50e0f020b3560ea2c986",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:8363",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e99f5dadbf99720731cd9c971f19444e02f4bbbda5b2580d73eecd9b10354f43",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:8364",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "3631710ae85c759f43c802534668b1cc44befa7e8823b98af8e18a2b1c5ce4c8",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:8378",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "03e59a93edc88c98cddf139a23b82695150949f0e9668ad3d66343e48fa4f57e",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:8452",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4c31a31f707349bcc14aa89209184cf2be604c764bf64396d36533d2b1798c31",
+      "lookup_correct": true
+    },
+    {
+      "id": "clevr:8458",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1316b5821ed22d738937de689116ff2f6f7abd0cb1f500ffdadb72239104ab34",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:8459",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "a483354e07c7606c6e30a6e63ee707be174f5da584fb4f2c1f2737b72f131d01",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:8464",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b651d91c58be4e4b49b520b1ca7d2d9fac889a64732b6da31dcf1bbebfe70483",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:8474",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "15b5582baf781b13acb0c150b1dcceeb9dcdc0f148d53c1c92ad2134e2a5d2dd",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:9961",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d68f3960be6dc3373ea1208c3890b6ea9370fc5e7a71a3afcbca8d589629d503",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:9963",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "47a201aa6b533e2f70815c213872e0aa7dd7d08aee26d824ba0e321f5fa3f5dd",
+      "lookup_correct": false
+    },
+    {
+      "id": "clevr:9976",
+      "source": "clevr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ac266bcf4c43364056375144e83d576de2184febe078a6997e566cfbc4fd50ad",
+      "lookup_correct": true
+    },
+    {
+      "id": "docvqa:113",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e2961cff991e2755c1190a090f5b61e8cea3289191d6550b01df687aa5b7b93a",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:1184",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "51af095eb9bcc5911a45c22ad0f1904a5180065c0a3f50e189c5296120b562f4",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:1189",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "3371986c7d4998de7672886622684239944d6a37d7b8fd68b50c0c49fa9e1921",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:121",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1efbfdb002cfcfad7947654ed873c4f864beef2a4f90ff501b7b4f970d4bd23f",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:199",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6b305ea9bec23c4ce68041c57f1bb173005859f1651432d2e154d08ede1b44df",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:202",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "39bd18d96b80614af2ed96c837f05858e979101fbd20b745d7060f051890fd30",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2081",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e7aa7ebcb6f62bb5f3427bba2b1bebcc5fe7fe77a543e91104732cb966435659",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2088",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "be38d368cd2a48a71d4a4f590494638cc9c7ac352f37e9998488db986318f1b6",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2094",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "53e2ed386c0ad73f18df5c214a16b57cbdcecc80c8dd6932a2173eea004cbcc3",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2104",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8ac5032612e1bdc13fc9b208bcede645623c3b9f7191483b18cde5c3c0dad39c",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:211",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6e5ccda87f26ff1751e152f9b4226e57136759832b10dc75264d1c80715d86d3",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2111",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e97f60f340e8772b52d81f535d7e08b28077058bf9e1c20a6468e2f9b6ea33bc",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2149",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": true,
+      "question_sha256": "8d1edf748564d185b9c7283405275612116642107fb72e7cb153e3d2371a744e",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:216",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "2080b13997c1de7a0a74f96f7b17bc9fe1756d04a9148f5ec42d37c0d9479165",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2170",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "44de97582e9639f3269efad27c766c72aad8be76efe61fee9ff8fb5f7ccc5faf",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2244",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "906f32257afbd54d635d0f1595e04eb430ccf5a5e847812cbbe33d4002b280b2",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2264",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "35685c8415aa79c2589b63e62b6757ca23e5bfae9bd8d9b6b35e06b3440a3ed1",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2265",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b740b41bfca813e0e795e62aaf3e162cfb64c82c9da7c3ae3a7437ba8ac1941e",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2267",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "24466b8698bd07f9e1fda7e9e7d46eb43c84beec99bcaa5dd78a23d3019130b0",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2515",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "efa2de0dc25fc019c0f33e3e6675d04eb3c3c1ecf496d1070b6066c292a393a3",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2956",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d74ebfa24c4c86f52f179237770b39a179b0f50d3a01bb4ec1e084d3a5723da2",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:2960",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8de29edff22070d8f8267df27c83f3d30ae8d59f6c84a82e55d4e341596ec532",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:3267",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "717c659ca54ff88e072d52647db91db6aed20d9c2b5ba5440914be4a4cdcc625",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:3272",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "490feb92b65c31e6d260af6fe19510f57ad016fc14af9a9c4b22a32147043808",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:3292",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8387348849871334a2dcea73918f86277779ed2dea10a3e9fd17f35c9b960f6e",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:3941",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": true,
+      "question_sha256": "cc0b0d075cdf9b26dd311458f7e858cd8de2be8c414a558bc196ab6c9154c64a",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:3943",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "fc6be5a9b558b2eda270497ed82726a8b7cf3cd66962f51e73f532ef4477e3c5",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:3949",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "12dde779637b17b40a5b1dcbf3d166f3114b63118cb942f1be0dc4c72e26b50c",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:3964",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "625afc5dc81baddc101ee6c7eeea1916fafeefc2d3da376c5b43f2b7f3430b66",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:4138",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c07649592b66a95927befd98cb67c28105ab49635b324d013ee6983b2a74cb1b",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5026",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7c295f996bad1cdd4ce6a79d6491c4b196c1ae9b1d7048948fd25e3603d0ecf0",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5037",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e5d9ce3d0807815d51cfeb50104d2efa2780a528f5fac3c7007f8f6c8f4b75c5",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5039",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e9991cb9e03e17cdcccd611ca94cf188a74955f15f2ca33f9bdad83a8d05325a",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5047",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0ce97ccb93a864e1967203f521c5d2ba069f1914fbd97b347190b2559ac8b629",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5515",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9ed00fbb41ef225f557c823b2b2396d681a5134468fa49977f332b47041090e3",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5516",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "3e8e0fbf948557b5e4d4f8a4a1bff4a5546e5e8066a370c08cc4e6c37c782e46",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:565",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6c5ef5a974d90b787a043f9162d71897cbc8a442099e4d046113f32736557ebc",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:570",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0114fd622e075d7b2380d642642d822d3296d69eb28d09640904beb1fffaf4a0",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5702",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "22a3f15196bcf649d37cd887a56a3124e84b0c0667b8a3c9884d908d40d7f977",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5714",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "370b1cdec5e6696213ee6414f469db364db42acf6583c963ba1f9476cbb6dd1d",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5717",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "381dc2afa73776ead2d2d07f38d24c3673f4948be4eb576e49fb0c08e8455ee3",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5721",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "bd49cd19b78fdc99b1faa40fb7a06cc031c947363e6ec01e4adac60dee6cb117",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5724",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0370a79409f7523be0bff73400626605cad97211d814e7e23b0a5f4e2464f58c",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:5725",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "49604085f81c83f4bbce54fdf47c14b4a2d69ec14c86de303ee1952debfe261b",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:574",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c14530d149ff8d345569ab4789322a787cf2c69b23e8b4381d7cf3569f95159f",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:612",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "22b891722ba1d3fde075433f81669eff36f2b3965ed5c1e18840cf28d0e79da0",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:620",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "59e1082ab8d813bbac616b0476af86bfbde8a488f65a15495f1b96b2a3767550",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6336",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "2cf3730350f402c5bcbd39359a712e6d2faa7f49f52cf20120d3ef70845a9633",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6343",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "dbebaec31fda96031182748947026a82da1472d316fa7fe9c5fb2ea1d1f64554",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6354",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4c5cc5113705b166401b36fe3eb7a2b0f7054dcf4047a13800ff40d16a178702",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6358",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "a04375b631e3d962b65c8969290e41683343b457cffd968f309b60afcb0ed705",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6364",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "01b6896bbff2c42d14279ed5131bdc2779bb622fb727030ae0dfcf6d0518249a",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6365",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "029e26cebdaec282e082bbe6fcfd1b8aae6fbb35e646ed21b79b16253f6e63d9",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6598",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8625f5bcb6586e33e20e89d88bc4478b73d77aeb9391f7360e903a9a7617091b",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6604",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "161dea1e2a98d00ade18cbb445aa945f57d8967e3ee6002d1575e08cd5db6682",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6621",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "60844539e5ff477008b78be44e32c2b33fc7655d6d30641d8c04063a105b7902",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6661",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "bee89481c8cc1939705edfc76d8c955750028accc2c790b4dede7832348f4b99",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6680",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "87dc147d25c31e9fc82b1793f2eefa83dd261b9f8bf4f35bbf878c3efb5b5680",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6728",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5665073a4ba52bee8f5b3ac6af053df6084da902ada45a563cd9a7ecf1fd8f6d",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:6730",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e915dc76b8437a2d959a1aa8984b2c68ed411994eb7470636d31e5642d0c7434",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7464",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": true,
+      "question_sha256": "9352647fdcdfb9c2bdf983be1af26169ed8db0e8d541dea5b0bd61cd62e00b18",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7471",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "10f2313f2a0ff8c8edc89cf944c3efd5c3f14a608c018be92481ba9449f12d38",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7482",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8cd0b8276f2591e81ea885781fe9a0059a5e91d75bce9fd38ca1d8a50b92ce35",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7496",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "796f4efae44ed8b19a474eef4c92d816dc53b549459756eaefd9dde5a7808ca1",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7512",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "f3b9c7edaea71277c02974421d27269e2faacfe11d34a3a04508dec6ff1d3973",
+      "lookup_correct": true
+    },
+    {
+      "id": "docvqa:7552",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "519f3036838d282b859a7299526c2ea98ded76f1d6e8a603a5cdad5924f99d44",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7558",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "179ca0309458c2a56e01e4efc76acb1d2de4219a4b7a4d7732f1d0cc9915c6d1",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7567",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": true,
+      "question_sha256": "2a368f11e152edc80a53c04892c3e4f8b53fd0365c6ca79c9f4878b6d4fcb0ea",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7569",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": true,
+      "question_sha256": "7716c26c44afb47993a1a19eed602953374545a9325082929934ff45cd2be9ff",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7573",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ac5257f32704df69da34d16a73554eb1a8167eb5c460b90d137e733ce937f051",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7577",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": true,
+      "question_sha256": "5c6be7eeca70f6713235430d9a3122ad70beea6fc0c2ebc1fc9a74e2ba1bb881",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7578",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "88a338e19f818aecbaefc292b8cdd17a01a20ad00548f46a130320f9f8219a4d",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7583",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ca63c972d156c8675092cca3909ba4d0cf27049a728d43da25881930e3fbcc9f",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7909",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6359539aab5b4f3a3887af632358e007f6b5ee9ea2eca3e9276f019f5de2b569",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7923",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1ad7e1979867e1c041fd43e4ad593ca944d2924bd7245c6f8f27a01fff04eb63",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:7930",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "28a6f10ac967a367077e7f2ee36ae57631d4f8be96adbb9c50d7427000c4d28c",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:8579",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ac7e153c60e1978717d5f8525b38d7bc3a76dbab4576d588d05862c798035f5e",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:8589",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e90f93a802ccc938e2bd8ebbd65560ba8a80591bf5a173d89727c17007dff70c",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:8604",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "95e966072e1da1db34d9832b4f53e6a935fee76cce477bccddb5302cfebb7072",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:868",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "3ad39c6b77c4fed1959124650d2836b08336bc6cd1aa1399d3320097d4f175b2",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:871",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d3d48f476bb84a3937012f6f8f324e9e1a7502b5ddd6f42b39b1436e4e079c9c",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:876",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "3d6b173c52517514e0cdc9d2100b9db50c846dbe988424577d862be4b3bee1ce",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:877",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "2838aee38d3b623efd1c56a9e9bd58359db6d77093721b2ad1cf67f5da5e50f7",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:8864",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "be53e1d2401e3a07a5d0d76e2ce89a0690e0593ca55dba6ab914cf2d730ab36b",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:8868",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "223321e0d6f27366b441e900f363689a6e2ef79a2febdc028372de82a3e5e1d8",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:8893",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "77df840b83e5edd78c0356c253435522f9876f6add29dc924b6fdab637eb6c2b",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:8995",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e73ed1737f0b5cb8882b1d30d17b1e59e0d723d1da45ef6bd346075014a837e7",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:9003",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "135f22f2c58dc22cce58daf974ff588ea62e21037a4900797797d9e303d0e5f5",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:9010",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "abc0dd08c486f6edca7246b62fb12f02f5a6f8c813ab939f5fde693d2be613d2",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:9023",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0beb0cb26e0bdb3b7cf302b146c2baaab8895d0cf908b63c53ab596779ad6426",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:9542",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "de66eb0c412d826169e4602f4fa391f56157428b4b652cc8b389d848cb602fca",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:9549",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6bdea5b7e36d04967f7e025ae25e93dc6ea217cccd01966d42d7a93f4166da79",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:9555",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ec912e02f8100a9e8b5dcc0e30d2cb07c4cb1b3d30c63dffc7dbc5b39ce471b7",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:9920",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b7bc5ef0c75a656f5bfc79eff186371b0b4fbc4a85b85e27ddbbf8eb8eaa871c",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:9927",
+      "source": "docvqa",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d385aee755e0e124f52aeccdb875d783c7ced54a0ded92289e19f2da8020e23f",
+      "lookup_correct": false
+    },
+    {
+      "id": "docvqa:9936",
+      "source": "docvqa",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "452934492a4287198d7ccc412b1cf6b9d3ae9348dd968d8cbed8a5c108d9385a",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1057",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "54c5003c5a9fd6d2fd071e56e79465e4e1beaf33ad7e2ab81dd1d47876d9b468",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1060",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7cac917ddcfcf834466f0bef598d34777a528ba3aff239e29145f343e2073515",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1067",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "2aad8be04e79528a5669d43be9b14d9179afe345a40f0e26db76490a2655ea5c",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1076",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9aaae0a80513c267075a853628cb4859e8974e7b267fca4f2ee566e2b86b4d68",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1088",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6006ba208172b4195eb373841b14c5a335611d516ae81941acaa577eeea0df83",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1090",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "22c144979c45a230dfef1ca33b8070e6bba6a93a17e08fb32bc2f1d7f93bf587",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1095",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1d41f9ea152cfdb9ea49e707235084a2e54fa1d74ec5cfe2a34a2f31253943da",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1102",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f9ee4042b4e7d78c2a4808801354e8372393495a337862ddb612423603199802",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1104",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "aaf61f27b44e73c41449b7db9bb7a9c5cb447fac37a6b8857d04bb3c180abbd2",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1109",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ca9e7e5953def760981c99e9113483ef719e3783997e939c9bf9efb7077549b6",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1118",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "232bef25fcfa0f724a5adaeba137d0f8056a0f9d059d1b53c0bf613669f1338a",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1155",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "fcf43880df93120ba4a81389168fd9928ebf85f316d4c59e089d3b47e38e4e2e",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1174",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8974e733cec90c376695c887e3a20d7e00dd1cb3ec4fcbcda7f71419db29e04d",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1189",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c0b013620da348a3ce7a1f2094b59da9a32cc8c68c46ff02f9a1707a7680a9a0",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1282",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5a9f0c08101648bb0a815b1fe42c5d92b0e8a6d1a4f92fe09fa473b01516d02e",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1285",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b3906fe5a124fd765b96a63227f4563c8e406d66e0409acfcd75c7ddc2694827",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1296",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b3502a57497c959e081c47eaee9deb259a5dc7036fc01bc2ae4ae4220d6e3f49",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:13",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "00afbdea911bed32a2b1ca2312b71d6a56eebc34eb27f611e9c4e98a9159542c",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1300",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "309ddde8fb5a2a2914d9f6762220cb99ba497b6986947ab891df4944e0edfbe6",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1303",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d20208f04bd5af6f750afbe424c56e7e2ea6ddce213b82fba46b17e32278dacb",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1304",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "de785acc938c0886667d80ba4317558aed5d7be9ff72f85d4734afd797f4d518",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1308",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1837c9bfab4921c51715192ed3706a49c75b91fa153bc58a0f12bc63233a9629",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:131",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6687adaee2cdd6290708bba45a18ebc47411cf8a809fe1aba3824e2c2b1420e6",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1310",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "32d74d25a2cc30cf2b430b9217afe638a7af8f5d0ab169cb809351d928324f52",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:134",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "05525f5576d15dcabfce2a3bdc0ade66d4933c021cdb047b7f1c0f43ea5fc1cc",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1348",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "37876fc08a852b37b1f97f7adde645dc6d76a76eb24b90cc4036426280fcb423",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1354",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1f85dedd4552eef54cf9999ee316cfe4e888d8796ace46a65f2b97bd5bbb8732",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:136",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b10da103a7f5e4850418baf8160833af2caafde7c92daa4dc4cc841ea1ca43e3",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1373",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "cff7ea274685b5470edfdece51c6b66e49bc994eeefb70051bc5f3069baf012c",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1375",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "6ee3a6bb253723ec8850135c6e479131c077f10d2b306435822f2d3afe15996c",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:139",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "a938f21faab1374e5973cf599cfc978338730923392fe95cb22dac8d1d2cc3a9",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1414",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4def94ad9ea56bd7809c976c1857bf00240792ce8ea881db72da4f5f39527325",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1420",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0d311629ea521beafaf21f4525d8cdd1ff6f1516e4640448554a2d8c80c766b1",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1430",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8cbc9c59cfcd307d12e3b9cae057b58465f250968c9571743161ad70162af79b",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1436",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8216b3d269d5526ff9b3dba504e3c77fbb5d6a2f70e9f5843e3ca21c042c28bc",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:144",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5b497673f6014acf4072539dfd33e967cd7a21e3b9f0fe151215e6f40a388100",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1520",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "dc23f0b9773697d62648daef9de9efa9078af2ffee7aae8cbf1471c88ae0ae0e",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1521",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "5d1f16b89ba9de0486338b4b21d676c41ac564367717998366717a45561860cb",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1524",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "ce563ace70b8e53a424c24ff8114813669cc244f6f843e2083126315528a0ed6",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:154",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "63f54c09398a39667aa56558719264066dc3afb55b62805c73d489a542521e34",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1608",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "16addcc20d60978e75639f85959c96f4c26e482fd451950f08807c4a4e767e92",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1610",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "c82195a7d87f58e71b4ffc9f3a837c4e56fcf3fbb945774a9314b7f9b3dafb6d",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1624",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "86d46c406c719514c545dcf191ddca77b7bf46b629a0ddfafd4493f5bde3381d",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1631",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "2684655e9fd2681bb908aae63c9c6b602eee47d23ae48b1fbec5e6713abd815f",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:164",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "09b6e9de6315bdd1d9eddb807c20ef8739dc9a6539d1be370adae81a0b318efc",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1673",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7c1ab07f885bdd6626b5f29786658eff41c567ac4da49ae355fc50815ed55479",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1676",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": true,
+      "question_sha256": "2b6bc6f0d4bc4bdd2fb312b83bd1298ce70aad9f33513798636a1e0ff2a17135",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:169",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b7e39d6929e173284dc4b6896e3ee44b8c5e2ab19fddbb09b3720893e2e90640",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1693",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "a86e39d6aa33ed0f818770b5aa14a5267b1eecb35db82bd0944c704a197f454c",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1730",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "48b5578ecabd5d6f6a849fba7dfc57cbe40c605cf54caab12f2d85f879ce9d6d",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1731",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "cf2e82b26140afbd24982f5573f48b8559535999be82a5c3ed296405627a3092",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1756",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c66b6904268613b93efa1bc1bd1950827fad7285c1e8073746469dfb03ac9b92",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1831",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d00b372c0c52972a12cf097db626d2dc50be7ce7b52fbf9daca2f4c89140faa7",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1836",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "488cbf689b7ed8965d43a9ade3af7eb7f90427560d1173b8718bfdc9491faba3",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1844",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7dc0b67dbe4f069d2fc8a8160dbe0e15d5be7bfef8200849f8745dc514fb5ca7",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1846",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": true,
+      "question_sha256": "fa726f4eac749b75007be1a5f2e5aab69c278980d550ae24e4625dba701c3029",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1893",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "650df9b52843fb4b5bd311cbf3e317ca4af6335d70062d6547840a76e31dc30f",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1903",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c82bf1412838057dd0a6b2e346a2948a26640d988362bd5eb68ae72e4e2b50a0",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1905",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "80fcc0384c9a27fa02597ae9f0b9d73d0610e331ae7c37fb990cc24bc0782758",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1908",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6bc5a3a3adc7b75d993a9f1de9ce0571e4e02a8a2bbe9b745a484b6b678e1558",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1923",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "2c1d668d2206727bc19171e5d6822d629feb633c6b6a4b8db4ca730d128a5ce6",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:1928",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ac8895b6319c98593d159c8dd00a01da50f5ca11d023612247c8449e4300fadd",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:1929",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ed93fb9717e4cc9700aa22bebb8828e98440f2adc3cf6232c649cc758cfa2702",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:193",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "cd8276121091f855ce4ab8ef05403b921668261c10fec7f87aedb91f7b6214ab",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:199",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "0f9eef04c44f3219a43eddcd6fdafff17e656771b94434e5d590d4694e616602",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:2023",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": true,
+      "question_sha256": "40e1418c517563d3a076f5c932a9f1e99a93ffad7278b2551f998126544d333c",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:2093",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9fbdbbd5f1c2032d27f50bc175efefb2389f8db872bb7dd3dd7a483ae7afeaf6",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:2113",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d187b92a3a9db235e189f238f9fa32c5be60f615ebf455a0a3589e48f1d31d34",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:2126",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "8b97220edf4310d85b82d7f2b4681ef421b16cf3e5ac5a0b8d714afc40bbccad",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:2129",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "44a7121cf314fa498f6d722dd7945cec4b994163b183af5843a492172416adfc",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:213",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9007f89ab8446509ec4585eb8b1536459e4a6387441f72864f9c50894fa75686",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:2132",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "e125a4e2b908d71caccf3bf4c3880d675d044ca22448f277fca16ea918b28465",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:214",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "2f0a7fe0538b83aa812b163638a2970a389321350eb0d4da33829890af507903",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:26",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "56f5b974eb139aac7b0a2498d504670b69950b49041e4ff0a968994486d94d19",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:301",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "4e3260205d431c457370d91bf19112055e64e502646b261745ce997289f75faa",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:306",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "2ee26ebe4022fdaa7c661cfe87af44a519af5b8d87fb3cb222132d2be827d9ab",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:309",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "06b96a0da7fd949195e50af323ece2ad4bc3d34702f7dbde5ead746c84dac93b",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:319",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "84bc673311c01b671e7dbad0b4f1dea73bce71b641d7d0ad788b374cea09c6a6",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:330",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c62c767bc523daac2c21483c4f3176824973dcfb5ee4bf55deb8b3a7fda133a3",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:34",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "43dd9900dfbc9076aaa4cacd573594912e1d5d252ce173ddcf7a86a05505e603",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:526",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "f0f6b01e726dd247a4299e0d44a7ef72ce3e68b283179ad446edd0ce0cfcbb12",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:530",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "161628dfe987e82b3ef3bd0a92e056d9b8adda9798a0275a2c9ff4cf1ea737d2",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:615",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7fdaf460fa1d939e115115cb6d52b3707c3aa2d80fae4351b755b00411ed3a13",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:617",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "48836bd56044faadf3dd27241b5f889ee69dd97a10ff943d59b82ef61da3cc48",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:618",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "0035b81350efecc4f4297429b5eb6c0e8ce949e5d47d0dc84d0c07208e4052c7",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:619",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "29fe90ccaca1772eb219333da2d48ebe50d018e25ea9036908b6375455e56562",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:620",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "28e1cb8ecea1aed4b1897ad6e4b6ffbf15f5cb8f42ea923b06af0a585ecf7da1",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:623",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "c9244ee687605baee21a4dd4b58e00f303acaa0e6bd918f4637aec06ab72e1c8",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:626",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "70943f40d9d68f9418686fbd92371b0b8fecea576a009f05aa58e07b4951154e",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:639",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9a171aa3742787a5b5405cef5b238651623441d434f1965acc9a2e11f4e22239",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:640",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "6e23f8e354f7e636a7666105ddd0affe9b60c16ff8232bfe8aa595ed1005631c",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:661",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "316d8f99f192090310548216f39a40611bf715a03b98af1831a91e62a2f7a25d",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:666",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": true,
+      "conflicting_train_answers": false,
+      "question_sha256": "5b497673f6014acf4072539dfd33e967cd7a21e3b9f0fe151215e6f40a388100",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:734",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "91d4e7f25455e4d0c2d72b0a703d130c49241143ee11cc22300eba2cfc7efad9",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:812",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "7e56a7e20f88e3c41106f2786b151010350adbeb93369b8e9c5ef3aff08f306e",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:816",
+      "source": "vsr",
+      "seen_question": true,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "9aae910e19d8b1a971c74abb70509b2a5e4beee6a447e73ea51ad5774912828b",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:827",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "64f1836c69eb925a33105d0004f88c4143f9521bddd2e4be4cbdde5288a4a6d9",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:830",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d91efafedfb27850960e15be8c56d66a27a03b05c44be5dd30d8d863961d7a15",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:847",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "d4152dee400be44a610d888a3b005d95ac29beb953a9829054df627553920f7a",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:848",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "83930fa3ee6764907927dae080ffd6eabc7368c84057946af5d61dc8125fa49c",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:851",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "f9a086b7f89503847bd0282bbe42c01ba3ffd116c2a119d68640305f28a62db9",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:854",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "78ded0b8abc96d56ad116e8bf10a22a4bf158fe535f1793ba6cb9938338b10f9",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:861",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "ed9276e603fc8c249494e6218cb0e772041fe41aaae5b26072f147bb1e5d6fa7",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:903",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "07d2b4664ba0be82e19d237748cee5b1992d0526d1765734537a56b30f65f63d",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:911",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "b77d4c5a5bf307ecc5d7bee8ba69cbbc62718a86d678df21951c5a3067c02aef",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:917",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "dee78578a5f488fc98431fee353565653cc81ce30a41888215fb5030cc792628",
+      "lookup_correct": false
+    },
+    {
+      "id": "vsr:920",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "1458205f5643fda5b00f266ca57f72b1fdf891e73294bfff5abb44951c14a22a",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:962",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "83a94441e8877bc1432d61a294be7a5f4f9a767d3ecd6d3cd0465d05e6671889",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:966",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "10a3a4159704baf19e3727a042c1fdebcbc35f980393f222738b9f42cbf58ad2",
+      "lookup_correct": true
+    },
+    {
+      "id": "vsr:989",
+      "source": "vsr",
+      "seen_question": false,
+      "seen_question_and_answer": false,
+      "conflicting_train_answers": false,
+      "question_sha256": "615d53e3d36769dd64ba20cb6a5ab7401129f3b23dd261b04840150e22a4bddc",
+      "lookup_correct": true
+    }
+  ],
+  "selection_use": false
+}

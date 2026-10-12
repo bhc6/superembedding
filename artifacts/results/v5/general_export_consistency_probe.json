@@ -1,0 +1,22 @@
+{
+  "checkpoint_sha256": "0d6ab13fc842e73f9726e6a6d905374a2414146121c2bd217d66c66c67db75b0",
+  "export_sha256": "17654a7451e3a84a38bbbd81afdb61315d34c0e6bdfaf9ece3e8ae4bebacb25a",
+  "step": 215,
+  "trained_tensors": 304,
+  "export": "D:\\DEMO\\superembedding-storage\\superembedding\\v5\\export_consistency_probe\\general_model.pt",
+  "passed": true,
+  "all_trained_tensors_equal": true,
+  "input_types": [
+    "text",
+    "image",
+    "image+text"
+  ],
+  "embedding_max_abs_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "device": "cpu",
+  "image_sha256": "c136e9aa6d8118a0b4f373cee59031da9abad9541f4159395048adecdcea5864",
+  "scope": "Exact checkpoint-to-bundle reload on real inputs; not a retrieval metric or quality claim."
+}

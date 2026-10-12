@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "continuous_digest": "16b808a6944fcb57eef9fefe28335a3cd9ebd27f615d60a83ecf9329cdb71288",
+  "resumed_digest": "16b808a6944fcb57eef9fefe28335a3cd9ebd27f615d60a83ecf9329cdb71288",
+  "stop_step": 3,
+  "final_step": 6,
+  "architecture": "output_small",
+  "scope": "Real trainer on synthetic 1024d features; not a retrieval quality experiment"
+}

@@ -1,0 +1,14 @@
+{
+  "parent_checkpoint_sha256": "ccf9f4879cea6d8ce6f3aaefe8cf1d18cc2e32e8c2a91eefe6f1a0b9d5c52718",
+  "parent_manifest_sha256": "dc492313d094684a7e190c1e29be45ada15c5a4f89c25c732bfa903c29a39fe9",
+  "child_manifest_sha256": "470b7a9b2ca8017fdaad15c404f54b9179a0d556434807d252e89102e9a92f44",
+  "step": 60,
+  "reason": "Repair cross-source validation overlap before first selection; full validation replaces 16/source monitor",
+  "training_records_identical": true,
+  "training_records_sha256": "ad080affc59297c3149d40924c7b3b5aba3a6082e3547ee755dec08f3aedb8ac",
+  "quarantined_held_records": 41,
+  "state_digest_before": "9db334e145b7474ae8ff4ab2cca02ab8ded67b0422ee86fa03b30cf61e71e5ff",
+  "state_digest_after": "9db334e145b7474ae8ff4ab2cca02ab8ded67b0422ee86fa03b30cf61e71e5ff",
+  "passed": true,
+  "source_queue_preserved": true
+}

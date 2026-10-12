@@ -1,0 +1,245 @@
+{
+  "utc": "2026-10-11T15:35:20.557224+00:00",
+  "passed_checks": [
+    {
+      "check": "training_history_checkpoints_and_implementation",
+      "passed": true,
+      "detail": {
+        "history_through_step": 556,
+        "validation_steps": [
+          250,
+          500
+        ],
+        "best_step": 500,
+        "best_macro_r1": 0.4739429709856539,
+        "checkpoints": {
+          "last.pt": {
+            "step": 556,
+            "tensors": 304,
+            "optimizer": true
+          },
+          "best.pt": {
+            "step": 500,
+            "tensors": 304,
+            "optimizer": true
+          },
+          "step_000500_weights.pt": {
+            "step": 500,
+            "tensors": 304,
+            "optimizer": false
+          }
+        }
+      }
+    },
+    {
+      "check": "selected_step250_export_all_tensors",
+      "passed": true,
+      "detail": {
+        "step": 250,
+        "exact_trained_tensors": 304,
+        "real_input_audit_errors": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "check": "queued_frozen_lora_control_implementation",
+      "passed": true,
+      "detail": {
+        "state": "stopped_before_training",
+        "sealed_dependencies_unchanged": true,
+        "not_yet_training": true,
+        "intentional_leakage_review_stop": true
+      }
+    },
+    {
+      "check": "validation_raw_cuda",
+      "passed": true,
+      "detail": {
+        "queries": 760,
+        "qa_queries": 388,
+        "macro_r1": 0.12494306929520343,
+        "all_cached_predictions_replayed": true,
+        "scoring_threads": 4
+      }
+    },
+    {
+      "check": "validation_step0_reconstructed_cuda",
+      "passed": true,
+      "detail": {
+        "queries": 760,
+        "qa_queries": 388,
+        "macro_r1": 0.12171934222620198,
+        "all_cached_predictions_replayed": true,
+        "scoring_threads": 4
+      }
+    },
+    {
+      "check": "validation_general_3cad7dfc34c7_cuda",
+      "passed": true,
+      "detail": {
+        "queries": 760,
+        "qa_queries": 388,
+        "macro_r1": 0.4156193501620331,
+        "all_cached_predictions_replayed": true,
+        "scoring_threads": 2
+      }
+    },
+    {
+      "check": "validation_qwen2b_cpu",
+      "passed": true,
+      "detail": {
+        "queries": 760,
+        "qa_queries": 388,
+        "macro_r1": 0.678474520059886,
+        "all_cached_predictions_replayed": true,
+        "scoring_threads": 2
+      }
+    },
+    {
+      "check": "validation_qwen_api_cpu",
+      "passed": true,
+      "detail": {
+        "queries": 760,
+        "qa_queries": 388,
+        "macro_r1": 0.8376892873386775,
+        "all_cached_predictions_replayed": true,
+        "scoring_threads": 2
+      }
+    },
+    {
+      "check": "train_only_majority_controls",
+      "passed": true,
+      "detail": {
+        "train_only_recomputed": true
+      }
+    },
+    {
+      "check": "choice_all_72_cells_and_cache_replay",
+      "passed": true,
+      "detail": {
+        "scored_cells": 72,
+        "models": 3,
+        "sources": 2,
+        "choices": 3,
+        "index_modes": 2,
+        "input_modes": 2,
+        "cached_replay": true
+      }
+    },
+    {
+      "check": "frozen_architecture_grid",
+      "passed": true,
+      "detail": {
+        "training_runs": 36,
+        "sealed_selected_evaluations": 18,
+        "checkpoints_verified": 72
+      }
+    },
+    {
+      "check": "scienceqa_general_3cad7dfc34c7_cpu",
+      "passed": true,
+      "detail": {
+        "queries": 1000,
+        "candidates": 736,
+        "hit@1": 0.144,
+        "cached_replay": true
+      }
+    },
+    {
+      "check": "scienceqa_general_3cad7dfc34c7_cpu_text_only",
+      "passed": true,
+      "detail": {
+        "queries": 1000,
+        "candidates": 736,
+        "hit@1": 0.071,
+        "cached_replay": true
+      }
+    },
+    {
+      "check": "transfer_general_3cad7dfc34c7_cpu",
+      "passed": true,
+      "detail": {
+        "urban_pairs": 999,
+        "evidence_cases": 256,
+        "scene_groups": 64,
+        "cached_replay": true,
+        "limitation": "Historical transfer cache does not bind image bytes or encoder code; replay validates current artifact consistency, not historical immutability."
+      }
+    },
+    {
+      "check": "transfer_omnijev_raw_cpu",
+      "passed": true,
+      "detail": {
+        "urban_pairs": 999,
+        "evidence_cases": 256,
+        "scene_groups": 64,
+        "cached_replay": true,
+        "limitation": "Historical transfer cache does not bind image bytes or encoder code; replay validates current artifact consistency, not historical immutability."
+      }
+    },
+    {
+      "check": "scienceqa_omnijev_raw_cpu",
+      "passed": true,
+      "detail": {
+        "queries": 1000,
+        "candidates": 736,
+        "hit@1": 0.002,
+        "cached_replay": true
+      }
+    },
+    {
+      "check": "scienceqa_omnijev_raw_cpu_text_only",
+      "passed": true,
+      "detail": {
+        "queries": 1000,
+        "candidates": 736,
+        "hit@1": 0.006,
+        "cached_replay": true
+      }
+    }
+  ],
+  "failed_checks": [],
+  "leakage_clearance_passed": false,
+  "leakage_blockers": [
+    "Dataset not cleared: fashion600",
+    "Dataset not cleared: fashion2400",
+    "Dataset not cleared: fashion_expanded",
+    "Dataset not cleared: cub_attributes",
+    "Dataset not cleared: dtd",
+    "Dataset not cleared: v5",
+    "Research release is blocked by leakage/selection review",
+    "No sealed unseen confirmatory test"
+  ],
+  "pending": [
+    "LEAKAGE BLOCK: CUB/DTD confirmed duplicate photos/scenes; V5 DocVQA entity overlap; all historical results exploratory until versioned remediation and fresh runs",
+    "2000-step general training and final validation-selected export/evaluation",
+    "Matched frozen-versus-LoRA run waits for parent training AND final evaluation",
+    "VLM2Vec/GME/WeMM/Ovis inference comparisons (download is not evaluation)",
+    "Unseen natural/compositional evidence and broader data/method study",
+    "True single-branch/direction-count/decision-pretraining controls and general LoRA seed replication",
+    "Final data rights/model card/release audit; no Git publication until complete"
+  ],
+  "current_artifacts_integrity_passed": true,
+  "whole_project_complete": false,
+  "audit_scope": "Read-only full cached prediction replay for selected tasks, checkpoint integrity and arm coverage; not fresh model inference or a claim of research completeness.",
+  "external_control_completion": {
+    "state": "running",
+    "stage": 2,
+    "command": [
+      "scripts/audit_experiment_completeness.py"
+    ],
+    "pid": 23332,
+    "updated_utc": "2026-10-11T15:34:59.798511+00:00"
+  },
+  "retrospective_input_inventory": {
+    "passed": true,
+    "phase": "retrospective",
+    "fingerprint": "23f7f71bc8b3a5ab61739ced2ae739c6f68bab9ad10d5dc5d957c498c754c907",
+    "assets": 2396,
+    "checked_utc": "2026-10-11T14:23:33.602187+00:00",
+    "original_seal_phase": "retrospective"
+  }
+}

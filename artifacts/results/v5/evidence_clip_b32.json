@@ -1,0 +1,2606 @@
+{
+  "backend": "clip_b32",
+  "provenance": {
+    "spec": {
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "width": 512,
+      "family": "CLIP contrastive dual encoder"
+    },
+    "dataset_sha256": "998427f3c4f808df7ccc2f4c5723dcf2c7409395ebaefc74b09b7ba283de30a2",
+    "device": "cpu",
+    "dtype": "float32",
+    "query": "original v1 query, no extra instruction",
+    "candidate": "query-independent image vector",
+    "max_text_tokens": 77,
+    "transformers": "5.5.0",
+    "implementation_sha256": "10acae88e06eacdbecfe27e8b574b356baa487ab19ecbf63fd059e470722f190"
+  },
+  "dataset_sha256": "998427f3c4f808df7ccc2f4c5723dcf2c7409395ebaefc74b09b7ba283de30a2",
+  "metrics": {
+    "color": {
+      "cases": 64,
+      "anchor_preference": 0.953125,
+      "robust_both_preference": 0.6875
+    },
+    "number": {
+      "cases": 64,
+      "anchor_preference": 0.796875,
+      "robust_both_preference": 0.234375
+    },
+    "position": {
+      "cases": 64,
+      "anchor_preference": 0.390625,
+      "robust_both_preference": 0.21875
+    },
+    "shape": {
+      "cases": 64,
+      "anchor_preference": 0.703125,
+      "robust_both_preference": 0.484375
+    }
+  },
+  "cases": [
+    {
+      "id": "0000/color",
+      "scene_group": 0,
+      "attribute": "color",
+      "anchor_margin": -0.0028678178787231445,
+      "nuisance_margin": -0.007815718650817871,
+      "nuisance_query_shift": 0.0049479007720947266,
+      "target_change_distance": 0.022851109504699707,
+      "nuisance_distance": 0.06535249948501587
+    },
+    {
+      "id": "0000/shape",
+      "scene_group": 0,
+      "attribute": "shape",
+      "anchor_margin": -0.00451892614364624,
+      "nuisance_margin": -0.0032155215740203857,
+      "nuisance_query_shift": 0.0013034045696258545,
+      "target_change_distance": 0.01659095287322998,
+      "nuisance_distance": 0.06535249948501587
+    },
+    {
+      "id": "0000/number",
+      "scene_group": 0,
+      "attribute": "number",
+      "anchor_margin": 0.001095592975616455,
+      "nuisance_margin": 0.009357422590255737,
+      "nuisance_query_shift": 0.008261829614639282,
+      "target_change_distance": 0.0033888816833496094,
+      "nuisance_distance": 0.06535249948501587
+    },
+    {
+      "id": "0000/position",
+      "scene_group": 0,
+      "attribute": "position",
+      "anchor_margin": -0.01524341106414795,
+      "nuisance_margin": -0.007009327411651611,
+      "nuisance_query_shift": 0.008234083652496338,
+      "target_change_distance": 0.019867777824401855,
+      "nuisance_distance": 0.06535249948501587
+    },
+    {
+      "id": "0001/color",
+      "scene_group": 1,
+      "attribute": "color",
+      "anchor_margin": 0.002956479787826538,
+      "nuisance_margin": -0.0019488930702209473,
+      "nuisance_query_shift": 0.004905372858047485,
+      "target_change_distance": 0.011567831039428711,
+      "nuisance_distance": 0.07642382383346558
+    },
+    {
+      "id": "0001/shape",
+      "scene_group": 1,
+      "attribute": "shape",
+      "anchor_margin": 0.0011256039142608643,
+      "nuisance_margin": -0.0065177977085113525,
+      "nuisance_query_shift": 0.007643401622772217,
+      "target_change_distance": 0.015224099159240723,
+      "nuisance_distance": 0.07642382383346558
+    },
+    {
+      "id": "0001/number",
+      "scene_group": 1,
+      "attribute": "number",
+      "anchor_margin": -0.000516057014465332,
+      "nuisance_margin": -0.006608158349990845,
+      "nuisance_query_shift": 0.006092101335525513,
+      "target_change_distance": 0.0077931880950927734,
+      "nuisance_distance": 0.07642382383346558
+    },
+    {
+      "id": "0001/position",
+      "scene_group": 1,
+      "attribute": "position",
+      "anchor_margin": 0.011360883712768555,
+      "nuisance_margin": 0.007408499717712402,
+      "nuisance_query_shift": 0.003952383995056152,
+      "target_change_distance": 0.01669001579284668,
+      "nuisance_distance": 0.07642382383346558
+    },
+    {
+      "id": "0002/color",
+      "scene_group": 2,
+      "attribute": "color",
+      "anchor_margin": 0.008384078741073608,
+      "nuisance_margin": -0.0012677311897277832,
+      "nuisance_query_shift": 0.009651809930801392,
+      "target_change_distance": 0.02639716863632202,
+      "nuisance_distance": 0.06185203790664673
+    },
+    {
+      "id": "0002/shape",
+      "scene_group": 2,
+      "attribute": "shape",
+      "anchor_margin": 0.004797756671905518,
+      "nuisance_margin": 0.0019714534282684326,
+      "nuisance_query_shift": 0.002826303243637085,
+      "target_change_distance": 0.02880561351776123,
+      "nuisance_distance": 0.06185203790664673
+    },
+    {
+      "id": "0002/number",
+      "scene_group": 2,
+      "attribute": "number",
+      "anchor_margin": 0.008522212505340576,
+      "nuisance_margin": 0.01059827208518982,
+      "nuisance_query_shift": 0.002076059579849243,
+      "target_change_distance": 0.006005465984344482,
+      "nuisance_distance": 0.06185203790664673
+    },
+    {
+      "id": "0002/position",
+      "scene_group": 2,
+      "attribute": "position",
+      "anchor_margin": 0.00024825334548950195,
+      "nuisance_margin": -0.005594015121459961,
+      "nuisance_query_shift": 0.005842268466949463,
+      "target_change_distance": 0.011949300765991211,
+      "nuisance_distance": 0.06185203790664673
+    },
+    {
+      "id": "0003/color",
+      "scene_group": 3,
+      "attribute": "color",
+      "anchor_margin": 0.016688823699951172,
+      "nuisance_margin": 0.011783599853515625,
+      "nuisance_query_shift": 0.004905223846435547,
+      "target_change_distance": 0.019771933555603027,
+      "nuisance_distance": 0.05787193775177002
+    },
+    {
+      "id": "0003/shape",
+      "scene_group": 3,
+      "attribute": "shape",
+      "anchor_margin": -0.0035429000854492188,
+      "nuisance_margin": -0.005528539419174194,
+      "nuisance_query_shift": 0.0019856393337249756,
+      "target_change_distance": 0.050308048725128174,
+      "nuisance_distance": 0.05787193775177002
+    },
+    {
+      "id": "0003/number",
+      "scene_group": 3,
+      "attribute": "number",
+      "anchor_margin": 0.00021892786026000977,
+      "nuisance_margin": -0.009680062532424927,
+      "nuisance_query_shift": 0.009898990392684937,
+      "target_change_distance": 0.014415740966796875,
+      "nuisance_distance": 0.05787193775177002
+    },
+    {
+      "id": "0003/position",
+      "scene_group": 3,
+      "attribute": "position",
+      "anchor_margin": 0.006541609764099121,
+      "nuisance_margin": 0.010371595621109009,
+      "nuisance_query_shift": 0.0038299858570098877,
+      "target_change_distance": 0.01134955883026123,
+      "nuisance_distance": 0.05787193775177002
+    },
+    {
+      "id": "0004/color",
+      "scene_group": 4,
+      "attribute": "color",
+      "anchor_margin": 0.008785426616668701,
+      "nuisance_margin": -0.0005576610565185547,
+      "nuisance_query_shift": 0.009343087673187256,
+      "target_change_distance": 0.017289340496063232,
+      "nuisance_distance": 0.07278949022293091
+    },
+    {
+      "id": "0004/shape",
+      "scene_group": 4,
+      "attribute": "shape",
+      "anchor_margin": 0.022307872772216797,
+      "nuisance_margin": 0.01792353391647339,
+      "nuisance_query_shift": 0.004384338855743408,
+      "target_change_distance": 0.033189475536346436,
+      "nuisance_distance": 0.07278949022293091
+    },
+    {
+      "id": "0004/number",
+      "scene_group": 4,
+      "attribute": "number",
+      "anchor_margin": 0.00028699636459350586,
+      "nuisance_margin": -0.005224406719207764,
+      "nuisance_query_shift": 0.0055114030838012695,
+      "target_change_distance": 0.0076329708099365234,
+      "nuisance_distance": 0.07278949022293091
+    },
+    {
+      "id": "0004/position",
+      "scene_group": 4,
+      "attribute": "position",
+      "anchor_margin": 0.005665123462677002,
+      "nuisance_margin": 0.008922696113586426,
+      "nuisance_query_shift": 0.003257572650909424,
+      "target_change_distance": 0.016364634037017822,
+      "nuisance_distance": 0.07278949022293091
+    },
+    {
+      "id": "0005/color",
+      "scene_group": 5,
+      "attribute": "color",
+      "anchor_margin": 0.006371289491653442,
+      "nuisance_margin": 0.01869344711303711,
+      "nuisance_query_shift": 0.012322157621383667,
+      "target_change_distance": 0.013540506362915039,
+      "nuisance_distance": 0.0781436562538147
+    },
+    {
+      "id": "0005/shape",
+      "scene_group": 5,
+      "attribute": "shape",
+      "anchor_margin": -0.00036007165908813477,
+      "nuisance_margin": -0.006887763738632202,
+      "nuisance_query_shift": 0.006527692079544067,
+      "target_change_distance": 0.028290390968322754,
+      "nuisance_distance": 0.0781436562538147
+    },
+    {
+      "id": "0005/number",
+      "scene_group": 5,
+      "attribute": "number",
+      "anchor_margin": 0.00038295984268188477,
+      "nuisance_margin": 0.0039009153842926025,
+      "nuisance_query_shift": 0.0035179555416107178,
+      "target_change_distance": 0.006329476833343506,
+      "nuisance_distance": 0.0781436562538147
+    },
+    {
+      "id": "0005/position",
+      "scene_group": 5,
+      "attribute": "position",
+      "anchor_margin": -0.000993281602859497,
+      "nuisance_margin": 0.014760047197341919,
+      "nuisance_query_shift": 0.015753328800201416,
+      "target_change_distance": 0.013308405876159668,
+      "nuisance_distance": 0.0781436562538147
+    },
+    {
+      "id": "0006/color",
+      "scene_group": 6,
+      "attribute": "color",
+      "anchor_margin": 0.020862609148025513,
+      "nuisance_margin": 0.030567407608032227,
+      "nuisance_query_shift": 0.009704798460006714,
+      "target_change_distance": 0.022522568702697754,
+      "nuisance_distance": 0.08513367176055908
+    },
+    {
+      "id": "0006/shape",
+      "scene_group": 6,
+      "attribute": "shape",
+      "anchor_margin": 0.001812577247619629,
+      "nuisance_margin": 0.011989116668701172,
+      "nuisance_query_shift": 0.010176539421081543,
+      "target_change_distance": 0.02900785207748413,
+      "nuisance_distance": 0.08513367176055908
+    },
+    {
+      "id": "0006/number",
+      "scene_group": 6,
+      "attribute": "number",
+      "anchor_margin": -0.0029587745666503906,
+      "nuisance_margin": 0.0024636685848236084,
+      "nuisance_query_shift": 0.005422443151473999,
+      "target_change_distance": 0.01373976469039917,
+      "nuisance_distance": 0.08513367176055908
+    },
+    {
+      "id": "0006/position",
+      "scene_group": 6,
+      "attribute": "position",
+      "anchor_margin": -0.00030609965324401855,
+      "nuisance_margin": 0.01755422353744507,
+      "nuisance_query_shift": 0.017860323190689087,
+      "target_change_distance": 0.015192568302154541,
+      "nuisance_distance": 0.08513367176055908
+    },
+    {
+      "id": "0007/color",
+      "scene_group": 7,
+      "attribute": "color",
+      "anchor_margin": 0.01019352674484253,
+      "nuisance_margin": 0.02041265368461609,
+      "nuisance_query_shift": 0.01021912693977356,
+      "target_change_distance": 0.030499696731567383,
+      "nuisance_distance": 0.0678054690361023
+    },
+    {
+      "id": "0007/shape",
+      "scene_group": 7,
+      "attribute": "shape",
+      "anchor_margin": -0.011799037456512451,
+      "nuisance_margin": 0.004706054925918579,
+      "nuisance_query_shift": 0.01650509238243103,
+      "target_change_distance": 0.0413508415222168,
+      "nuisance_distance": 0.0678054690361023
+    },
+    {
+      "id": "0007/number",
+      "scene_group": 7,
+      "attribute": "number",
+      "anchor_margin": -0.004238098859786987,
+      "nuisance_margin": 0.01534852385520935,
+      "nuisance_query_shift": 0.019586622714996338,
+      "target_change_distance": 0.005855977535247803,
+      "nuisance_distance": 0.0678054690361023
+    },
+    {
+      "id": "0007/position",
+      "scene_group": 7,
+      "attribute": "position",
+      "anchor_margin": -0.013353109359741211,
+      "nuisance_margin": 0.008897930383682251,
+      "nuisance_query_shift": 0.022251039743423462,
+      "target_change_distance": 0.015233993530273438,
+      "nuisance_distance": 0.0678054690361023
+    },
+    {
+      "id": "0008/color",
+      "scene_group": 8,
+      "attribute": "color",
+      "anchor_margin": 0.00544583797454834,
+      "nuisance_margin": -0.009295135736465454,
+      "nuisance_query_shift": 0.014740973711013794,
+      "target_change_distance": 0.020183145999908447,
+      "nuisance_distance": 0.07483792304992676
+    },
+    {
+      "id": "0008/shape",
+      "scene_group": 8,
+      "attribute": "shape",
+      "anchor_margin": 0.00683322548866272,
+      "nuisance_margin": -0.004927635192871094,
+      "nuisance_query_shift": 0.011760860681533813,
+      "target_change_distance": 0.017566680908203125,
+      "nuisance_distance": 0.07483792304992676
+    },
+    {
+      "id": "0008/number",
+      "scene_group": 8,
+      "attribute": "number",
+      "anchor_margin": -0.0010617971420288086,
+      "nuisance_margin": -0.01738607883453369,
+      "nuisance_query_shift": 0.016324281692504883,
+      "target_change_distance": 0.003988742828369141,
+      "nuisance_distance": 0.07483792304992676
+    },
+    {
+      "id": "0008/position",
+      "scene_group": 8,
+      "attribute": "position",
+      "anchor_margin": 0.01569199562072754,
+      "nuisance_margin": 0.01213216781616211,
+      "nuisance_query_shift": 0.0035598278045654297,
+      "target_change_distance": 0.018950462341308594,
+      "nuisance_distance": 0.07483792304992676
+    },
+    {
+      "id": "0009/color",
+      "scene_group": 9,
+      "attribute": "color",
+      "anchor_margin": 0.034344494342803955,
+      "nuisance_margin": 0.02525612711906433,
+      "nuisance_query_shift": 0.009088367223739624,
+      "target_change_distance": 0.016709983348846436,
+      "nuisance_distance": 0.054313063621520996
+    },
+    {
+      "id": "0009/shape",
+      "scene_group": 9,
+      "attribute": "shape",
+      "anchor_margin": 0.013912558555603027,
+      "nuisance_margin": 0.012032300233840942,
+      "nuisance_query_shift": 0.001880258321762085,
+      "target_change_distance": 0.015694141387939453,
+      "nuisance_distance": 0.054313063621520996
+    },
+    {
+      "id": "0009/number",
+      "scene_group": 9,
+      "attribute": "number",
+      "anchor_margin": 0.009629786014556885,
+      "nuisance_margin": -0.0026275813579559326,
+      "nuisance_query_shift": 0.012257367372512817,
+      "target_change_distance": 0.00654524564743042,
+      "nuisance_distance": 0.054313063621520996
+    },
+    {
+      "id": "0009/position",
+      "scene_group": 9,
+      "attribute": "position",
+      "anchor_margin": 0.008847832679748535,
+      "nuisance_margin": 0.008776098489761353,
+      "nuisance_query_shift": 7.173418998718262e-05,
+      "target_change_distance": 0.016598880290985107,
+      "nuisance_distance": 0.054313063621520996
+    },
+    {
+      "id": "0010/color",
+      "scene_group": 10,
+      "attribute": "color",
+      "anchor_margin": 0.027842044830322266,
+      "nuisance_margin": 0.014869153499603271,
+      "nuisance_query_shift": 0.012972891330718994,
+      "target_change_distance": 0.031385064125061035,
+      "nuisance_distance": 0.07229620218276978
+    },
+    {
+      "id": "0010/shape",
+      "scene_group": 10,
+      "attribute": "shape",
+      "anchor_margin": -0.0038740038871765137,
+      "nuisance_margin": -0.014983803033828735,
+      "nuisance_query_shift": 0.011109799146652222,
+      "target_change_distance": 0.024135112762451172,
+      "nuisance_distance": 0.07229620218276978
+    },
+    {
+      "id": "0010/number",
+      "scene_group": 10,
+      "attribute": "number",
+      "anchor_margin": 0.003491908311843872,
+      "nuisance_margin": -0.016294658184051514,
+      "nuisance_query_shift": 0.019786566495895386,
+      "target_change_distance": 0.003867805004119873,
+      "nuisance_distance": 0.07229620218276978
+    },
+    {
+      "id": "0010/position",
+      "scene_group": 10,
+      "attribute": "position",
+      "anchor_margin": -0.003037095069885254,
+      "nuisance_margin": -0.002439528703689575,
+      "nuisance_query_shift": 0.0005975663661956787,
+      "target_change_distance": 0.022695958614349365,
+      "nuisance_distance": 0.07229620218276978
+    },
+    {
+      "id": "0011/color",
+      "scene_group": 11,
+      "attribute": "color",
+      "anchor_margin": 0.03259892761707306,
+      "nuisance_margin": 0.03723032772541046,
+      "nuisance_query_shift": 0.004631400108337402,
+      "target_change_distance": 0.018523097038269043,
+      "nuisance_distance": 0.0490376353263855
+    },
+    {
+      "id": "0011/shape",
+      "scene_group": 11,
+      "attribute": "shape",
+      "anchor_margin": 0.03207451105117798,
+      "nuisance_margin": 0.03556513786315918,
+      "nuisance_query_shift": 0.003490626811981201,
+      "target_change_distance": 0.032031238079071045,
+      "nuisance_distance": 0.0490376353263855
+    },
+    {
+      "id": "0011/number",
+      "scene_group": 11,
+      "attribute": "number",
+      "anchor_margin": 0.002376377582550049,
+      "nuisance_margin": 0.004435509443283081,
+      "nuisance_query_shift": 0.0020591318607330322,
+      "target_change_distance": 0.0056876540184021,
+      "nuisance_distance": 0.0490376353263855
+    },
+    {
+      "id": "0011/position",
+      "scene_group": 11,
+      "attribute": "position",
+      "anchor_margin": -0.004209667444229126,
+      "nuisance_margin": 0.000588536262512207,
+      "nuisance_query_shift": 0.004798203706741333,
+      "target_change_distance": 0.016414344310760498,
+      "nuisance_distance": 0.0490376353263855
+    },
+    {
+      "id": "0012/color",
+      "scene_group": 12,
+      "attribute": "color",
+      "anchor_margin": 0.01708388328552246,
+      "nuisance_margin": 0.02195727825164795,
+      "nuisance_query_shift": 0.004873394966125488,
+      "target_change_distance": 0.03917813301086426,
+      "nuisance_distance": 0.08403301239013672
+    },
+    {
+      "id": "0012/shape",
+      "scene_group": 12,
+      "attribute": "shape",
+      "anchor_margin": 0.0082416832447052,
+      "nuisance_margin": 0.018966376781463623,
+      "nuisance_query_shift": 0.010724693536758423,
+      "target_change_distance": 0.022309422492980957,
+      "nuisance_distance": 0.08403301239013672
+    },
+    {
+      "id": "0012/number",
+      "scene_group": 12,
+      "attribute": "number",
+      "anchor_margin": 0.005686163902282715,
+      "nuisance_margin": 0.008851706981658936,
+      "nuisance_query_shift": 0.0031655430793762207,
+      "target_change_distance": 0.007034480571746826,
+      "nuisance_distance": 0.08403301239013672
+    },
+    {
+      "id": "0012/position",
+      "scene_group": 12,
+      "attribute": "position",
+      "anchor_margin": -0.01011282205581665,
+      "nuisance_margin": 0.0024098455905914307,
+      "nuisance_query_shift": 0.012522667646408081,
+      "target_change_distance": 0.017115116119384766,
+      "nuisance_distance": 0.08403301239013672
+    },
+    {
+      "id": "0013/color",
+      "scene_group": 13,
+      "attribute": "color",
+      "anchor_margin": 0.02409154176712036,
+      "nuisance_margin": 0.03676280379295349,
+      "nuisance_query_shift": 0.01267126202583313,
+      "target_change_distance": 0.025603413581848145,
+      "nuisance_distance": 0.07239103317260742
+    },
+    {
+      "id": "0013/shape",
+      "scene_group": 13,
+      "attribute": "shape",
+      "anchor_margin": 0.017539650201797485,
+      "nuisance_margin": 0.03132173418998718,
+      "nuisance_query_shift": 0.013782083988189697,
+      "target_change_distance": 0.029471635818481445,
+      "nuisance_distance": 0.07239103317260742
+    },
+    {
+      "id": "0013/number",
+      "scene_group": 13,
+      "attribute": "number",
+      "anchor_margin": 0.0011811256408691406,
+      "nuisance_margin": 0.007527470588684082,
+      "nuisance_query_shift": 0.006346344947814941,
+      "target_change_distance": 0.003177165985107422,
+      "nuisance_distance": 0.07239103317260742
+    },
+    {
+      "id": "0013/position",
+      "scene_group": 13,
+      "attribute": "position",
+      "anchor_margin": -0.002188175916671753,
+      "nuisance_margin": 0.013020992279052734,
+      "nuisance_query_shift": 0.015209168195724487,
+      "target_change_distance": 0.01340264081954956,
+      "nuisance_distance": 0.07239103317260742
+    },
+    {
+      "id": "0014/color",
+      "scene_group": 14,
+      "attribute": "color",
+      "anchor_margin": 0.030516326427459717,
+      "nuisance_margin": 0.011248975992202759,
+      "nuisance_query_shift": 0.019267350435256958,
+      "target_change_distance": 0.011134207248687744,
+      "nuisance_distance": 0.09628599882125854
+    },
+    {
+      "id": "0014/shape",
+      "scene_group": 14,
+      "attribute": "shape",
+      "anchor_margin": -0.0002566874027252197,
+      "nuisance_margin": -0.013377457857131958,
+      "nuisance_query_shift": 0.013120770454406738,
+      "target_change_distance": 0.033663928508758545,
+      "nuisance_distance": 0.09628599882125854
+    },
+    {
+      "id": "0014/number",
+      "scene_group": 14,
+      "attribute": "number",
+      "anchor_margin": 0.0061213672161102295,
+      "nuisance_margin": -0.0010065138339996338,
+      "nuisance_query_shift": 0.007127881050109863,
+      "target_change_distance": 0.002180337905883789,
+      "nuisance_distance": 0.09628599882125854
+    },
+    {
+      "id": "0014/position",
+      "scene_group": 14,
+      "attribute": "position",
+      "anchor_margin": -0.004444301128387451,
+      "nuisance_margin": -0.01006460189819336,
+      "nuisance_query_shift": 0.005620300769805908,
+      "target_change_distance": 0.012448906898498535,
+      "nuisance_distance": 0.09628599882125854
+    },
+    {
+      "id": "0015/color",
+      "scene_group": 15,
+      "attribute": "color",
+      "anchor_margin": 0.02620723843574524,
+      "nuisance_margin": 0.012361019849777222,
+      "nuisance_query_shift": 0.013846218585968018,
+      "target_change_distance": 0.02458977699279785,
+      "nuisance_distance": 0.05895578861236572
+    },
+    {
+      "id": "0015/shape",
+      "scene_group": 15,
+      "attribute": "shape",
+      "anchor_margin": 0.024303048849105835,
+      "nuisance_margin": 0.012584596872329712,
+      "nuisance_query_shift": 0.011718451976776123,
+      "target_change_distance": 0.030077338218688965,
+      "nuisance_distance": 0.05895578861236572
+    },
+    {
+      "id": "0015/number",
+      "scene_group": 15,
+      "attribute": "number",
+      "anchor_margin": 0.007488757371902466,
+      "nuisance_margin": -0.020029932260513306,
+      "nuisance_query_shift": 0.02751868963241577,
+      "target_change_distance": 0.00579380989074707,
+      "nuisance_distance": 0.05895578861236572
+    },
+    {
+      "id": "0015/position",
+      "scene_group": 15,
+      "attribute": "position",
+      "anchor_margin": 0.003359466791152954,
+      "nuisance_margin": -0.0075445473194122314,
+      "nuisance_query_shift": 0.010904014110565186,
+      "target_change_distance": 0.025784313678741455,
+      "nuisance_distance": 0.05895578861236572
+    },
+    {
+      "id": "0016/color",
+      "scene_group": 16,
+      "attribute": "color",
+      "anchor_margin": 0.018644064664840698,
+      "nuisance_margin": 0.009985089302062988,
+      "nuisance_query_shift": 0.00865897536277771,
+      "target_change_distance": 0.019035637378692627,
+      "nuisance_distance": 0.06269216537475586
+    },
+    {
+      "id": "0016/shape",
+      "scene_group": 16,
+      "attribute": "shape",
+      "anchor_margin": -0.004973620176315308,
+      "nuisance_margin": -0.012554049491882324,
+      "nuisance_query_shift": 0.007580429315567017,
+      "target_change_distance": 0.048758864402770996,
+      "nuisance_distance": 0.06269216537475586
+    },
+    {
+      "id": "0016/number",
+      "scene_group": 16,
+      "attribute": "number",
+      "anchor_margin": -0.004732400178909302,
+      "nuisance_margin": -0.012513220310211182,
+      "nuisance_query_shift": 0.00778082013130188,
+      "target_change_distance": 0.0134238600730896,
+      "nuisance_distance": 0.06269216537475586
+    },
+    {
+      "id": "0016/position",
+      "scene_group": 16,
+      "attribute": "position",
+      "anchor_margin": -0.012966573238372803,
+      "nuisance_margin": -0.010481208562850952,
+      "nuisance_query_shift": 0.0024853646755218506,
+      "target_change_distance": 0.01983720064163208,
+      "nuisance_distance": 0.06269216537475586
+    },
+    {
+      "id": "0017/color",
+      "scene_group": 17,
+      "attribute": "color",
+      "anchor_margin": 0.01899498701095581,
+      "nuisance_margin": 0.016908496618270874,
+      "nuisance_query_shift": 0.0020864903926849365,
+      "target_change_distance": 0.013876080513000488,
+      "nuisance_distance": 0.10131180286407471
+    },
+    {
+      "id": "0017/shape",
+      "scene_group": 17,
+      "attribute": "shape",
+      "anchor_margin": 0.009755194187164307,
+      "nuisance_margin": 0.01164194941520691,
+      "nuisance_query_shift": 0.0018867552280426025,
+      "target_change_distance": 0.02362966537475586,
+      "nuisance_distance": 0.10131180286407471
+    },
+    {
+      "id": "0017/number",
+      "scene_group": 17,
+      "attribute": "number",
+      "anchor_margin": 0.004899263381958008,
+      "nuisance_margin": 0.00827038288116455,
+      "nuisance_query_shift": 0.003371119499206543,
+      "target_change_distance": 0.01120060682296753,
+      "nuisance_distance": 0.10131180286407471
+    },
+    {
+      "id": "0017/position",
+      "scene_group": 17,
+      "attribute": "position",
+      "anchor_margin": -0.0031623542308807373,
+      "nuisance_margin": 0.010199695825576782,
+      "nuisance_query_shift": 0.01336205005645752,
+      "target_change_distance": 0.017380237579345703,
+      "nuisance_distance": 0.10131180286407471
+    },
+    {
+      "id": "0018/color",
+      "scene_group": 18,
+      "attribute": "color",
+      "anchor_margin": 0.0060884952545166016,
+      "nuisance_margin": -0.0272982120513916,
+      "nuisance_query_shift": 0.0333867073059082,
+      "target_change_distance": 0.02145785093307495,
+      "nuisance_distance": 0.10438573360443115
+    },
+    {
+      "id": "0018/shape",
+      "scene_group": 18,
+      "attribute": "shape",
+      "anchor_margin": 0.019955307245254517,
+      "nuisance_margin": 0.014767885208129883,
+      "nuisance_query_shift": 0.005187422037124634,
+      "target_change_distance": 0.03455555438995361,
+      "nuisance_distance": 0.10438573360443115
+    },
+    {
+      "id": "0018/number",
+      "scene_group": 18,
+      "attribute": "number",
+      "anchor_margin": 0.011642634868621826,
+      "nuisance_margin": -0.010018199682235718,
+      "nuisance_query_shift": 0.021660834550857544,
+      "target_change_distance": 0.004699349403381348,
+      "nuisance_distance": 0.10438573360443115
+    },
+    {
+      "id": "0018/position",
+      "scene_group": 18,
+      "attribute": "position",
+      "anchor_margin": 0.006531774997711182,
+      "nuisance_margin": -0.0020174384117126465,
+      "nuisance_query_shift": 0.008549213409423828,
+      "target_change_distance": 0.019135117530822754,
+      "nuisance_distance": 0.10438573360443115
+    },
+    {
+      "id": "0019/color",
+      "scene_group": 19,
+      "attribute": "color",
+      "anchor_margin": 0.005318135023117065,
+      "nuisance_margin": -0.017419636249542236,
+      "nuisance_query_shift": 0.022737771272659302,
+      "target_change_distance": 0.014944076538085938,
+      "nuisance_distance": 0.05824398994445801
+    },
+    {
+      "id": "0019/shape",
+      "scene_group": 19,
+      "attribute": "shape",
+      "anchor_margin": -0.0019845664501190186,
+      "nuisance_margin": -0.010632067918777466,
+      "nuisance_query_shift": 0.008647501468658447,
+      "target_change_distance": 0.02926039695739746,
+      "nuisance_distance": 0.05824398994445801
+    },
+    {
+      "id": "0019/number",
+      "scene_group": 19,
+      "attribute": "number",
+      "anchor_margin": 0.0026865601539611816,
+      "nuisance_margin": -0.014532774686813354,
+      "nuisance_query_shift": 0.017219334840774536,
+      "target_change_distance": 0.004507839679718018,
+      "nuisance_distance": 0.05824398994445801
+    },
+    {
+      "id": "0019/position",
+      "scene_group": 19,
+      "attribute": "position",
+      "anchor_margin": -0.004920631647109985,
+      "nuisance_margin": -0.007320046424865723,
+      "nuisance_query_shift": 0.0023994147777557373,
+      "target_change_distance": 0.012536823749542236,
+      "nuisance_distance": 0.05824398994445801
+    },
+    {
+      "id": "0020/color",
+      "scene_group": 20,
+      "attribute": "color",
+      "anchor_margin": 0.0069973766803741455,
+      "nuisance_margin": 0.0005892515182495117,
+      "nuisance_query_shift": 0.006408125162124634,
+      "target_change_distance": 0.010242223739624023,
+      "nuisance_distance": 0.055467069149017334
+    },
+    {
+      "id": "0020/shape",
+      "scene_group": 20,
+      "attribute": "shape",
+      "anchor_margin": -0.001640021800994873,
+      "nuisance_margin": -0.0201113224029541,
+      "nuisance_query_shift": 0.01847130060195923,
+      "target_change_distance": 0.028479158878326416,
+      "nuisance_distance": 0.055467069149017334
+    },
+    {
+      "id": "0020/number",
+      "scene_group": 20,
+      "attribute": "number",
+      "anchor_margin": 0.0007839500904083252,
+      "nuisance_margin": -0.004143178462982178,
+      "nuisance_query_shift": 0.004927128553390503,
+      "target_change_distance": 0.0036029815673828125,
+      "nuisance_distance": 0.055467069149017334
+    },
+    {
+      "id": "0020/position",
+      "scene_group": 20,
+      "attribute": "position",
+      "anchor_margin": -0.009536534547805786,
+      "nuisance_margin": -0.0039234459400177,
+      "nuisance_query_shift": 0.005613088607788086,
+      "target_change_distance": 0.012215852737426758,
+      "nuisance_distance": 0.055467069149017334
+    },
+    {
+      "id": "0021/color",
+      "scene_group": 21,
+      "attribute": "color",
+      "anchor_margin": 0.009196162223815918,
+      "nuisance_margin": -0.0026424825191497803,
+      "nuisance_query_shift": 0.011838644742965698,
+      "target_change_distance": 0.016317367553710938,
+      "nuisance_distance": 0.06749367713928223
+    },
+    {
+      "id": "0021/shape",
+      "scene_group": 21,
+      "attribute": "shape",
+      "anchor_margin": 0.026142537593841553,
+      "nuisance_margin": 0.019654661417007446,
+      "nuisance_query_shift": 0.0064878761768341064,
+      "target_change_distance": 0.02661895751953125,
+      "nuisance_distance": 0.06749367713928223
+    },
+    {
+      "id": "0021/number",
+      "scene_group": 21,
+      "attribute": "number",
+      "anchor_margin": -0.0026160478591918945,
+      "nuisance_margin": -0.007271111011505127,
+      "nuisance_query_shift": 0.004655063152313232,
+      "target_change_distance": 0.002413630485534668,
+      "nuisance_distance": 0.06749367713928223
+    },
+    {
+      "id": "0021/position",
+      "scene_group": 21,
+      "attribute": "position",
+      "anchor_margin": -0.0027813613414764404,
+      "nuisance_margin": -0.0020896196365356445,
+      "nuisance_query_shift": 0.0006917417049407959,
+      "target_change_distance": 0.01493215560913086,
+      "nuisance_distance": 0.06749367713928223
+    },
+    {
+      "id": "0022/color",
+      "scene_group": 22,
+      "attribute": "color",
+      "anchor_margin": 0.01639688014984131,
+      "nuisance_margin": -0.01587986946105957,
+      "nuisance_query_shift": 0.03227674961090088,
+      "target_change_distance": 0.0182340145111084,
+      "nuisance_distance": 0.1047167181968689
+    },
+    {
+      "id": "0022/shape",
+      "scene_group": 22,
+      "attribute": "shape",
+      "anchor_margin": -0.0017991065979003906,
+      "nuisance_margin": -0.01728576421737671,
+      "nuisance_query_shift": 0.015486657619476318,
+      "target_change_distance": 0.04661417007446289,
+      "nuisance_distance": 0.1047167181968689
+    },
+    {
+      "id": "0022/number",
+      "scene_group": 22,
+      "attribute": "number",
+      "anchor_margin": 0.006493031978607178,
+      "nuisance_margin": -0.022440075874328613,
+      "nuisance_query_shift": 0.02893310785293579,
+      "target_change_distance": 0.003999471664428711,
+      "nuisance_distance": 0.1047167181968689
+    },
+    {
+      "id": "0022/position",
+      "scene_group": 22,
+      "attribute": "position",
+      "anchor_margin": 0.013940960168838501,
+      "nuisance_margin": -0.002819925546646118,
+      "nuisance_query_shift": 0.01676088571548462,
+      "target_change_distance": 0.023396551609039307,
+      "nuisance_distance": 0.1047167181968689
+    },
+    {
+      "id": "0023/color",
+      "scene_group": 23,
+      "attribute": "color",
+      "anchor_margin": 0.016836553812026978,
+      "nuisance_margin": 0.013425976037979126,
+      "nuisance_query_shift": 0.0034105777740478516,
+      "target_change_distance": 0.04270082712173462,
+      "nuisance_distance": 0.0832972526550293
+    },
+    {
+      "id": "0023/shape",
+      "scene_group": 23,
+      "attribute": "shape",
+      "anchor_margin": -0.014777064323425293,
+      "nuisance_margin": -0.017806410789489746,
+      "nuisance_query_shift": 0.003029346466064453,
+      "target_change_distance": 0.0367659330368042,
+      "nuisance_distance": 0.0832972526550293
+    },
+    {
+      "id": "0023/number",
+      "scene_group": 23,
+      "attribute": "number",
+      "anchor_margin": -0.002304673194885254,
+      "nuisance_margin": -0.01678842306137085,
+      "nuisance_query_shift": 0.014483749866485596,
+      "target_change_distance": 0.007597684860229492,
+      "nuisance_distance": 0.0832972526550293
+    },
+    {
+      "id": "0023/position",
+      "scene_group": 23,
+      "attribute": "position",
+      "anchor_margin": -0.0006766319274902344,
+      "nuisance_margin": -0.0111846923828125,
+      "nuisance_query_shift": 0.010508060455322266,
+      "target_change_distance": 0.028007805347442627,
+      "nuisance_distance": 0.0832972526550293
+    },
+    {
+      "id": "0024/color",
+      "scene_group": 24,
+      "attribute": "color",
+      "anchor_margin": 0.0074454545974731445,
+      "nuisance_margin": -0.0035136044025421143,
+      "nuisance_query_shift": 0.010959059000015259,
+      "target_change_distance": 0.01938188076019287,
+      "nuisance_distance": 0.07765281200408936
+    },
+    {
+      "id": "0024/shape",
+      "scene_group": 24,
+      "attribute": "shape",
+      "anchor_margin": 0.0027618110179901123,
+      "nuisance_margin": -0.01889127492904663,
+      "nuisance_query_shift": 0.021653085947036743,
+      "target_change_distance": 0.026454627513885498,
+      "nuisance_distance": 0.07765281200408936
+    },
+    {
+      "id": "0024/number",
+      "scene_group": 24,
+      "attribute": "number",
+      "anchor_margin": 0.007114291191101074,
+      "nuisance_margin": -0.01129770278930664,
+      "nuisance_query_shift": 0.018411993980407715,
+      "target_change_distance": 0.0076174139976501465,
+      "nuisance_distance": 0.07765281200408936
+    },
+    {
+      "id": "0024/position",
+      "scene_group": 24,
+      "attribute": "position",
+      "anchor_margin": 0.004808604717254639,
+      "nuisance_margin": 0.002783536911010742,
+      "nuisance_query_shift": 0.0020250678062438965,
+      "target_change_distance": 0.01653313636779785,
+      "nuisance_distance": 0.07765281200408936
+    },
+    {
+      "id": "0025/color",
+      "scene_group": 25,
+      "attribute": "color",
+      "anchor_margin": 0.024911344051361084,
+      "nuisance_margin": 0.024468928575515747,
+      "nuisance_query_shift": 0.0004424154758453369,
+      "target_change_distance": 0.02166086435317993,
+      "nuisance_distance": 0.04652106761932373
+    },
+    {
+      "id": "0025/shape",
+      "scene_group": 25,
+      "attribute": "shape",
+      "anchor_margin": 0.018022090196609497,
+      "nuisance_margin": 0.01075834035873413,
+      "nuisance_query_shift": 0.007263749837875366,
+      "target_change_distance": 0.024289488792419434,
+      "nuisance_distance": 0.04652106761932373
+    },
+    {
+      "id": "0025/number",
+      "scene_group": 25,
+      "attribute": "number",
+      "anchor_margin": 0.005303680896759033,
+      "nuisance_margin": -0.0027926862239837646,
+      "nuisance_query_shift": 0.008096367120742798,
+      "target_change_distance": 0.0106009840965271,
+      "nuisance_distance": 0.04652106761932373
+    },
+    {
+      "id": "0025/position",
+      "scene_group": 25,
+      "attribute": "position",
+      "anchor_margin": 0.0024694204330444336,
+      "nuisance_margin": -0.0004439353942871094,
+      "nuisance_query_shift": 0.002913355827331543,
+      "target_change_distance": 0.016323089599609375,
+      "nuisance_distance": 0.04652106761932373
+    },
+    {
+      "id": "0026/color",
+      "scene_group": 26,
+      "attribute": "color",
+      "anchor_margin": 0.020145684480667114,
+      "nuisance_margin": 0.014332622289657593,
+      "nuisance_query_shift": 0.0058130621910095215,
+      "target_change_distance": 0.012236416339874268,
+      "nuisance_distance": 0.05887573957443237
+    },
+    {
+      "id": "0026/shape",
+      "scene_group": 26,
+      "attribute": "shape",
+      "anchor_margin": 0.006602883338928223,
+      "nuisance_margin": -0.010400980710983276,
+      "nuisance_query_shift": 0.0170038640499115,
+      "target_change_distance": 0.030689001083374023,
+      "nuisance_distance": 0.05887573957443237
+    },
+    {
+      "id": "0026/number",
+      "scene_group": 26,
+      "attribute": "number",
+      "anchor_margin": 0.003107219934463501,
+      "nuisance_margin": -0.009571075439453125,
+      "nuisance_query_shift": 0.012678295373916626,
+      "target_change_distance": 0.005290508270263672,
+      "nuisance_distance": 0.05887573957443237
+    },
+    {
+      "id": "0026/position",
+      "scene_group": 26,
+      "attribute": "position",
+      "anchor_margin": 0.011401742696762085,
+      "nuisance_margin": 0.0034323930740356445,
+      "nuisance_query_shift": 0.00796934962272644,
+      "target_change_distance": 0.01473379135131836,
+      "nuisance_distance": 0.05887573957443237
+    },
+    {
+      "id": "0027/color",
+      "scene_group": 27,
+      "attribute": "color",
+      "anchor_margin": 0.00702396035194397,
+      "nuisance_margin": 0.010368883609771729,
+      "nuisance_query_shift": 0.003344923257827759,
+      "target_change_distance": 0.017061054706573486,
+      "nuisance_distance": 0.07216954231262207
+    },
+    {
+      "id": "0027/shape",
+      "scene_group": 27,
+      "attribute": "shape",
+      "anchor_margin": 0.005461394786834717,
+      "nuisance_margin": -0.002013653516769409,
+      "nuisance_query_shift": 0.007475048303604126,
+      "target_change_distance": 0.018698811531066895,
+      "nuisance_distance": 0.07216954231262207
+    },
+    {
+      "id": "0027/number",
+      "scene_group": 27,
+      "attribute": "number",
+      "anchor_margin": 0.0001634657382965088,
+      "nuisance_margin": 0.0003223419189453125,
+      "nuisance_query_shift": 0.0001588761806488037,
+      "target_change_distance": 0.004202723503112793,
+      "nuisance_distance": 0.07216954231262207
+    },
+    {
+      "id": "0027/position",
+      "scene_group": 27,
+      "attribute": "position",
+      "anchor_margin": -0.00402495265007019,
+      "nuisance_margin": 0.010323017835617065,
+      "nuisance_query_shift": 0.014347970485687256,
+      "target_change_distance": 0.015814363956451416,
+      "nuisance_distance": 0.07216954231262207
+    },
+    {
+      "id": "0028/color",
+      "scene_group": 28,
+      "attribute": "color",
+      "anchor_margin": 0.026488006114959717,
+      "nuisance_margin": 0.008253633975982666,
+      "nuisance_query_shift": 0.01823437213897705,
+      "target_change_distance": 0.019531667232513428,
+      "nuisance_distance": 0.06872206926345825
+    },
+    {
+      "id": "0028/shape",
+      "scene_group": 28,
+      "attribute": "shape",
+      "anchor_margin": 0.007790356874465942,
+      "nuisance_margin": -0.01549634337425232,
+      "nuisance_query_shift": 0.02328670024871826,
+      "target_change_distance": 0.01919853687286377,
+      "nuisance_distance": 0.06872206926345825
+    },
+    {
+      "id": "0028/number",
+      "scene_group": 28,
+      "attribute": "number",
+      "anchor_margin": -0.005752265453338623,
+      "nuisance_margin": -0.023194849491119385,
+      "nuisance_query_shift": 0.01744258403778076,
+      "target_change_distance": 0.004980862140655518,
+      "nuisance_distance": 0.06872206926345825
+    },
+    {
+      "id": "0028/position",
+      "scene_group": 28,
+      "attribute": "position",
+      "anchor_margin": -0.0030425190925598145,
+      "nuisance_margin": -0.01387813687324524,
+      "nuisance_query_shift": 0.010835617780685425,
+      "target_change_distance": 0.012571215629577637,
+      "nuisance_distance": 0.06872206926345825
+    },
+    {
+      "id": "0029/color",
+      "scene_group": 29,
+      "attribute": "color",
+      "anchor_margin": 0.030983269214630127,
+      "nuisance_margin": 0.019469887018203735,
+      "nuisance_query_shift": 0.011513382196426392,
+      "target_change_distance": 0.04189974069595337,
+      "nuisance_distance": 0.08108758926391602
+    },
+    {
+      "id": "0029/shape",
+      "scene_group": 29,
+      "attribute": "shape",
+      "anchor_margin": -2.3543834686279297e-05,
+      "nuisance_margin": -0.014816612005233765,
+      "nuisance_query_shift": 0.014793068170547485,
+      "target_change_distance": 0.02311795949935913,
+      "nuisance_distance": 0.08108758926391602
+    },
+    {
+      "id": "0029/number",
+      "scene_group": 29,
+      "attribute": "number",
+      "anchor_margin": 0.005877435207366943,
+      "nuisance_margin": -0.01144629716873169,
+      "nuisance_query_shift": 0.017323732376098633,
+      "target_change_distance": 0.013380050659179688,
+      "nuisance_distance": 0.08108758926391602
+    },
+    {
+      "id": "0029/position",
+      "scene_group": 29,
+      "attribute": "position",
+      "anchor_margin": 0.00010445713996887207,
+      "nuisance_margin": -0.005925923585891724,
+      "nuisance_query_shift": 0.006030380725860596,
+      "target_change_distance": 0.022732675075531006,
+      "nuisance_distance": 0.08108758926391602
+    },
+    {
+      "id": "0030/color",
+      "scene_group": 30,
+      "attribute": "color",
+      "anchor_margin": 0.011168599128723145,
+      "nuisance_margin": 0.01788043975830078,
+      "nuisance_query_shift": 0.006711840629577637,
+      "target_change_distance": 0.010751068592071533,
+      "nuisance_distance": 0.05654633045196533
+    },
+    {
+      "id": "0030/shape",
+      "scene_group": 30,
+      "attribute": "shape",
+      "anchor_margin": 0.0009273290634155273,
+      "nuisance_margin": 0.0039047598838806152,
+      "nuisance_query_shift": 0.002977430820465088,
+      "target_change_distance": 0.022061586380004883,
+      "nuisance_distance": 0.05654633045196533
+    },
+    {
+      "id": "0030/number",
+      "scene_group": 30,
+      "attribute": "number",
+      "anchor_margin": 0.010329067707061768,
+      "nuisance_margin": 0.011539638042449951,
+      "nuisance_query_shift": 0.0012105703353881836,
+      "target_change_distance": 0.003216266632080078,
+      "nuisance_distance": 0.05654633045196533
+    },
+    {
+      "id": "0030/position",
+      "scene_group": 30,
+      "attribute": "position",
+      "anchor_margin": -0.0007656216621398926,
+      "nuisance_margin": 0.009272336959838867,
+      "nuisance_query_shift": 0.01003795862197876,
+      "target_change_distance": 0.01672762632369995,
+      "nuisance_distance": 0.05654633045196533
+    },
+    {
+      "id": "0031/color",
+      "scene_group": 31,
+      "attribute": "color",
+      "anchor_margin": 0.009341806173324585,
+      "nuisance_margin": -0.0018972158432006836,
+      "nuisance_query_shift": 0.011239022016525269,
+      "target_change_distance": 0.021497905254364014,
+      "nuisance_distance": 0.07605922222137451
+    },
+    {
+      "id": "0031/shape",
+      "scene_group": 31,
+      "attribute": "shape",
+      "anchor_margin": 0.0017850399017333984,
+      "nuisance_margin": -0.00808042287826538,
+      "nuisance_query_shift": 0.00986546277999878,
+      "target_change_distance": 0.018460333347320557,
+      "nuisance_distance": 0.07605922222137451
+    },
+    {
+      "id": "0031/number",
+      "scene_group": 31,
+      "attribute": "number",
+      "anchor_margin": 0.00011652708053588867,
+      "nuisance_margin": -0.011872857809066772,
+      "nuisance_query_shift": 0.011989384889602661,
+      "target_change_distance": 0.009696245193481445,
+      "nuisance_distance": 0.07605922222137451
+    },
+    {
+      "id": "0031/position",
+      "scene_group": 31,
+      "attribute": "position",
+      "anchor_margin": -0.010205328464508057,
+      "nuisance_margin": -0.015259802341461182,
+      "nuisance_query_shift": 0.005054473876953125,
+      "target_change_distance": 0.018089354038238525,
+      "nuisance_distance": 0.07605922222137451
+    },
+    {
+      "id": "0032/color",
+      "scene_group": 32,
+      "attribute": "color",
+      "anchor_margin": 0.01996251940727234,
+      "nuisance_margin": 0.01388654112815857,
+      "nuisance_query_shift": 0.0060759782791137695,
+      "target_change_distance": 0.015052080154418945,
+      "nuisance_distance": 0.033481478691101074
+    },
+    {
+      "id": "0032/shape",
+      "scene_group": 32,
+      "attribute": "shape",
+      "anchor_margin": 0.026508212089538574,
+      "nuisance_margin": 0.02504792809486389,
+      "nuisance_query_shift": 0.0014602839946746826,
+      "target_change_distance": 0.03515779972076416,
+      "nuisance_distance": 0.033481478691101074
+    },
+    {
+      "id": "0032/number",
+      "scene_group": 32,
+      "attribute": "number",
+      "anchor_margin": -0.00024753808975219727,
+      "nuisance_margin": -0.011433303356170654,
+      "nuisance_query_shift": 0.011185765266418457,
+      "target_change_distance": 0.011970043182373047,
+      "nuisance_distance": 0.033481478691101074
+    },
+    {
+      "id": "0032/position",
+      "scene_group": 32,
+      "attribute": "position",
+      "anchor_margin": -0.005165606737136841,
+      "nuisance_margin": -0.002754002809524536,
+      "nuisance_query_shift": 0.0024116039276123047,
+      "target_change_distance": 0.014803826808929443,
+      "nuisance_distance": 0.033481478691101074
+    },
+    {
+      "id": "0033/color",
+      "scene_group": 33,
+      "attribute": "color",
+      "anchor_margin": 0.020432889461517334,
+      "nuisance_margin": 0.00786125659942627,
+      "nuisance_query_shift": 0.012571632862091064,
+      "target_change_distance": 0.019988059997558594,
+      "nuisance_distance": 0.051848411560058594
+    },
+    {
+      "id": "0033/shape",
+      "scene_group": 33,
+      "attribute": "shape",
+      "anchor_margin": 0.0050682127475738525,
+      "nuisance_margin": -0.01103326678276062,
+      "nuisance_query_shift": 0.016101479530334473,
+      "target_change_distance": 0.022113800048828125,
+      "nuisance_distance": 0.051848411560058594
+    },
+    {
+      "id": "0033/number",
+      "scene_group": 33,
+      "attribute": "number",
+      "anchor_margin": 0.0008176863193511963,
+      "nuisance_margin": -0.003795415163040161,
+      "nuisance_query_shift": 0.004613101482391357,
+      "target_change_distance": 0.002671539783477783,
+      "nuisance_distance": 0.051848411560058594
+    },
+    {
+      "id": "0033/position",
+      "scene_group": 33,
+      "attribute": "position",
+      "anchor_margin": 0.008198469877243042,
+      "nuisance_margin": 0.0035403668880462646,
+      "nuisance_query_shift": 0.004658102989196777,
+      "target_change_distance": 0.019777417182922363,
+      "nuisance_distance": 0.051848411560058594
+    },
+    {
+      "id": "0034/color",
+      "scene_group": 34,
+      "attribute": "color",
+      "anchor_margin": 0.03147038817405701,
+      "nuisance_margin": 0.026191264390945435,
+      "nuisance_query_shift": 0.005279123783111572,
+      "target_change_distance": 0.020768582820892334,
+      "nuisance_distance": 0.08003044128417969
+    },
+    {
+      "id": "0034/shape",
+      "scene_group": 34,
+      "attribute": "shape",
+      "anchor_margin": 0.020216435194015503,
+      "nuisance_margin": 0.0060384273529052734,
+      "nuisance_query_shift": 0.01417800784111023,
+      "target_change_distance": 0.031017541885375977,
+      "nuisance_distance": 0.08003044128417969
+    },
+    {
+      "id": "0034/number",
+      "scene_group": 34,
+      "attribute": "number",
+      "anchor_margin": 0.0022754669189453125,
+      "nuisance_margin": -0.010663151741027832,
+      "nuisance_query_shift": 0.012938618659973145,
+      "target_change_distance": 0.0032387375831604004,
+      "nuisance_distance": 0.08003044128417969
+    },
+    {
+      "id": "0034/position",
+      "scene_group": 34,
+      "attribute": "position",
+      "anchor_margin": 0.002689570188522339,
+      "nuisance_margin": -0.011361271142959595,
+      "nuisance_query_shift": 0.014050841331481934,
+      "target_change_distance": 0.014867544174194336,
+      "nuisance_distance": 0.08003044128417969
+    },
+    {
+      "id": "0035/color",
+      "scene_group": 35,
+      "attribute": "color",
+      "anchor_margin": 0.014249026775360107,
+      "nuisance_margin": 0.0030894875526428223,
+      "nuisance_query_shift": 0.011159539222717285,
+      "target_change_distance": 0.018426895141601562,
+      "nuisance_distance": 0.07278776168823242
+    },
+    {
+      "id": "0035/shape",
+      "scene_group": 35,
+      "attribute": "shape",
+      "anchor_margin": 0.003501385450363159,
+      "nuisance_margin": -0.004359394311904907,
+      "nuisance_query_shift": 0.007860779762268066,
+      "target_change_distance": 0.019685447216033936,
+      "nuisance_distance": 0.07278776168823242
+    },
+    {
+      "id": "0035/number",
+      "scene_group": 35,
+      "attribute": "number",
+      "anchor_margin": 0.004994690418243408,
+      "nuisance_margin": -0.0033049285411834717,
+      "nuisance_query_shift": 0.00829961895942688,
+      "target_change_distance": 0.009343385696411133,
+      "nuisance_distance": 0.07278776168823242
+    },
+    {
+      "id": "0035/position",
+      "scene_group": 35,
+      "attribute": "position",
+      "anchor_margin": -0.002781003713607788,
+      "nuisance_margin": 0.0015287697315216064,
+      "nuisance_query_shift": 0.0043097734451293945,
+      "target_change_distance": 0.02834540605545044,
+      "nuisance_distance": 0.07278776168823242
+    },
+    {
+      "id": "0036/color",
+      "scene_group": 36,
+      "attribute": "color",
+      "anchor_margin": 0.03220027685165405,
+      "nuisance_margin": 0.038891494274139404,
+      "nuisance_query_shift": 0.0066912174224853516,
+      "target_change_distance": 0.03967595100402832,
+      "nuisance_distance": 0.06113779544830322
+    },
+    {
+      "id": "0036/shape",
+      "scene_group": 36,
+      "attribute": "shape",
+      "anchor_margin": -0.011182278394699097,
+      "nuisance_margin": -0.008977949619293213,
+      "nuisance_query_shift": 0.002204328775405884,
+      "target_change_distance": 0.0406109094619751,
+      "nuisance_distance": 0.06113779544830322
+    },
+    {
+      "id": "0036/number",
+      "scene_group": 36,
+      "attribute": "number",
+      "anchor_margin": 0.010027199983596802,
+      "nuisance_margin": 0.0048951804637908936,
+      "nuisance_query_shift": 0.005132019519805908,
+      "target_change_distance": 0.010902822017669678,
+      "nuisance_distance": 0.06113779544830322
+    },
+    {
+      "id": "0036/position",
+      "scene_group": 36,
+      "attribute": "position",
+      "anchor_margin": -0.013183057308197021,
+      "nuisance_margin": -0.007479071617126465,
+      "nuisance_query_shift": 0.005703985691070557,
+      "target_change_distance": 0.02246272563934326,
+      "nuisance_distance": 0.06113779544830322
+    },
+    {
+      "id": "0037/color",
+      "scene_group": 37,
+      "attribute": "color",
+      "anchor_margin": 0.013124585151672363,
+      "nuisance_margin": -0.0019176006317138672,
+      "nuisance_query_shift": 0.01504218578338623,
+      "target_change_distance": 0.02649158239364624,
+      "nuisance_distance": 0.07182615995407104
+    },
+    {
+      "id": "0037/shape",
+      "scene_group": 37,
+      "attribute": "shape",
+      "anchor_margin": 0.004220008850097656,
+      "nuisance_margin": 0.006158202886581421,
+      "nuisance_query_shift": 0.0019381940364837646,
+      "target_change_distance": 0.02333730459213257,
+      "nuisance_distance": 0.07182615995407104
+    },
+    {
+      "id": "0037/number",
+      "scene_group": 37,
+      "attribute": "number",
+      "anchor_margin": 0.0027992725372314453,
+      "nuisance_margin": -0.0005377829074859619,
+      "nuisance_query_shift": 0.0033370554447174072,
+      "target_change_distance": 0.005074024200439453,
+      "nuisance_distance": 0.07182615995407104
+    },
+    {
+      "id": "0037/position",
+      "scene_group": 37,
+      "attribute": "position",
+      "anchor_margin": -0.008079826831817627,
+      "nuisance_margin": -0.0030036568641662598,
+      "nuisance_query_shift": 0.005076169967651367,
+      "target_change_distance": 0.016257286071777344,
+      "nuisance_distance": 0.07182615995407104
+    },
+    {
+      "id": "0038/color",
+      "scene_group": 38,
+      "attribute": "color",
+      "anchor_margin": 0.021393388509750366,
+      "nuisance_margin": 0.005294770002365112,
+      "nuisance_query_shift": 0.016098618507385254,
+      "target_change_distance": 0.019109249114990234,
+      "nuisance_distance": 0.04255950450897217
+    },
+    {
+      "id": "0038/shape",
+      "scene_group": 38,
+      "attribute": "shape",
+      "anchor_margin": 0.01568126678466797,
+      "nuisance_margin": 0.005420207977294922,
+      "nuisance_query_shift": 0.010261058807373047,
+      "target_change_distance": 0.020061075687408447,
+      "nuisance_distance": 0.04255950450897217
+    },
+    {
+      "id": "0038/number",
+      "scene_group": 38,
+      "attribute": "number",
+      "anchor_margin": 0.001453995704650879,
+      "nuisance_margin": -0.020365118980407715,
+      "nuisance_query_shift": 0.021819114685058594,
+      "target_change_distance": 0.00768125057220459,
+      "nuisance_distance": 0.04255950450897217
+    },
+    {
+      "id": "0038/position",
+      "scene_group": 38,
+      "attribute": "position",
+      "anchor_margin": -0.003553539514541626,
+      "nuisance_margin": -0.013826727867126465,
+      "nuisance_query_shift": 0.010273188352584839,
+      "target_change_distance": 0.013116061687469482,
+      "nuisance_distance": 0.04255950450897217
+    },
+    {
+      "id": "0039/color",
+      "scene_group": 39,
+      "attribute": "color",
+      "anchor_margin": 0.024658411741256714,
+      "nuisance_margin": 0.018605679273605347,
+      "nuisance_query_shift": 0.006052732467651367,
+      "target_change_distance": 0.018036365509033203,
+      "nuisance_distance": 0.043903887271881104
+    },
+    {
+      "id": "0039/shape",
+      "scene_group": 39,
+      "attribute": "shape",
+      "anchor_margin": 0.026268839836120605,
+      "nuisance_margin": 0.027239203453063965,
+      "nuisance_query_shift": 0.0009703636169433594,
+      "target_change_distance": 0.026171088218688965,
+      "nuisance_distance": 0.043903887271881104
+    },
+    {
+      "id": "0039/number",
+      "scene_group": 39,
+      "attribute": "number",
+      "anchor_margin": 0.0033617913722991943,
+      "nuisance_margin": -0.005194365978240967,
+      "nuisance_query_shift": 0.008556157350540161,
+      "target_change_distance": 0.004103362560272217,
+      "nuisance_distance": 0.043903887271881104
+    },
+    {
+      "id": "0039/position",
+      "scene_group": 39,
+      "attribute": "position",
+      "anchor_margin": 0.0031740963459014893,
+      "nuisance_margin": 0.0042189061641693115,
+      "nuisance_query_shift": 0.0010448098182678223,
+      "target_change_distance": 0.010132551193237305,
+      "nuisance_distance": 0.043903887271881104
+    },
+    {
+      "id": "0040/color",
+      "scene_group": 40,
+      "attribute": "color",
+      "anchor_margin": 0.007102310657501221,
+      "nuisance_margin": -0.0076514482498168945,
+      "nuisance_query_shift": 0.014753758907318115,
+      "target_change_distance": 0.03774005174636841,
+      "nuisance_distance": 0.0715489387512207
+    },
+    {
+      "id": "0040/shape",
+      "scene_group": 40,
+      "attribute": "shape",
+      "anchor_margin": -0.014507442712783813,
+      "nuisance_margin": -0.010541915893554688,
+      "nuisance_query_shift": 0.003965526819229126,
+      "target_change_distance": 0.040028929710388184,
+      "nuisance_distance": 0.0715489387512207
+    },
+    {
+      "id": "0040/number",
+      "scene_group": 40,
+      "attribute": "number",
+      "anchor_margin": 0.0013333261013031006,
+      "nuisance_margin": 0.0007203221321105957,
+      "nuisance_query_shift": 0.0006130039691925049,
+      "target_change_distance": 0.010675191879272461,
+      "nuisance_distance": 0.0715489387512207
+    },
+    {
+      "id": "0040/position",
+      "scene_group": 40,
+      "attribute": "position",
+      "anchor_margin": -0.015211701393127441,
+      "nuisance_margin": -0.015894770622253418,
+      "nuisance_query_shift": 0.0006830692291259766,
+      "target_change_distance": 0.028158903121948242,
+      "nuisance_distance": 0.0715489387512207
+    },
+    {
+      "id": "0041/color",
+      "scene_group": 41,
+      "attribute": "color",
+      "anchor_margin": 0.018501251935958862,
+      "nuisance_margin": 0.011059939861297607,
+      "nuisance_query_shift": 0.007441312074661255,
+      "target_change_distance": 0.016306042671203613,
+      "nuisance_distance": 0.06214761734008789
+    },
+    {
+      "id": "0041/shape",
+      "scene_group": 41,
+      "attribute": "shape",
+      "anchor_margin": 0.01554560661315918,
+      "nuisance_margin": 0.01548275351524353,
+      "nuisance_query_shift": 6.285309791564941e-05,
+      "target_change_distance": 0.023362457752227783,
+      "nuisance_distance": 0.06214761734008789
+    },
+    {
+      "id": "0041/number",
+      "scene_group": 41,
+      "attribute": "number",
+      "anchor_margin": 0.010930299758911133,
+      "nuisance_margin": 0.0047588348388671875,
+      "nuisance_query_shift": 0.006171464920043945,
+      "target_change_distance": 0.01349329948425293,
+      "nuisance_distance": 0.06214761734008789
+    },
+    {
+      "id": "0041/position",
+      "scene_group": 41,
+      "attribute": "position",
+      "anchor_margin": 0.0007326006889343262,
+      "nuisance_margin": 0.005224406719207764,
+      "nuisance_query_shift": 0.0044918060302734375,
+      "target_change_distance": 0.0130653977394104,
+      "nuisance_distance": 0.06214761734008789
+    },
+    {
+      "id": "0042/color",
+      "scene_group": 42,
+      "attribute": "color",
+      "anchor_margin": 0.010077089071273804,
+      "nuisance_margin": -0.003508925437927246,
+      "nuisance_query_shift": 0.01358601450920105,
+      "target_change_distance": 0.01223897933959961,
+      "nuisance_distance": 0.07510673999786377
+    },
+    {
+      "id": "0042/shape",
+      "scene_group": 42,
+      "attribute": "shape",
+      "anchor_margin": 0.0016457736492156982,
+      "nuisance_margin": -0.013828396797180176,
+      "nuisance_query_shift": 0.015474170446395874,
+      "target_change_distance": 0.016284584999084473,
+      "nuisance_distance": 0.07510673999786377
+    },
+    {
+      "id": "0042/number",
+      "scene_group": 42,
+      "attribute": "number",
+      "anchor_margin": 0.005037188529968262,
+      "nuisance_margin": -0.009020596742630005,
+      "nuisance_query_shift": 0.014057785272598267,
+      "target_change_distance": 0.007599234580993652,
+      "nuisance_distance": 0.07510673999786377
+    },
+    {
+      "id": "0042/position",
+      "scene_group": 42,
+      "attribute": "position",
+      "anchor_margin": 0.0038029849529266357,
+      "nuisance_margin": 0.003086596727371216,
+      "nuisance_query_shift": 0.0007163882255554199,
+      "target_change_distance": 0.01829981803894043,
+      "nuisance_distance": 0.07510673999786377
+    },
+    {
+      "id": "0043/color",
+      "scene_group": 43,
+      "attribute": "color",
+      "anchor_margin": 0.024996042251586914,
+      "nuisance_margin": 0.010552287101745605,
+      "nuisance_query_shift": 0.014443755149841309,
+      "target_change_distance": 0.03182309865951538,
+      "nuisance_distance": 0.0881814956665039
+    },
+    {
+      "id": "0043/shape",
+      "scene_group": 43,
+      "attribute": "shape",
+      "anchor_margin": -0.0035778582096099854,
+      "nuisance_margin": -0.012455791234970093,
+      "nuisance_query_shift": 0.008877933025360107,
+      "target_change_distance": 0.03111046552658081,
+      "nuisance_distance": 0.0881814956665039
+    },
+    {
+      "id": "0043/number",
+      "scene_group": 43,
+      "attribute": "number",
+      "anchor_margin": 0.0024935007095336914,
+      "nuisance_margin": -0.00585097074508667,
+      "nuisance_query_shift": 0.008344471454620361,
+      "target_change_distance": 0.0027355551719665527,
+      "nuisance_distance": 0.0881814956665039
+    },
+    {
+      "id": "0043/position",
+      "scene_group": 43,
+      "attribute": "position",
+      "anchor_margin": 0.013025522232055664,
+      "nuisance_margin": 0.0038833916187286377,
+      "nuisance_query_shift": 0.009142130613327026,
+      "target_change_distance": 0.019589364528656006,
+      "nuisance_distance": 0.0881814956665039
+    },
+    {
+      "id": "0044/color",
+      "scene_group": 44,
+      "attribute": "color",
+      "anchor_margin": 0.005772829055786133,
+      "nuisance_margin": -0.020085185766220093,
+      "nuisance_query_shift": 0.025858014822006226,
+      "target_change_distance": 0.02902209758758545,
+      "nuisance_distance": 0.07917171716690063
+    },
+    {
+      "id": "0044/shape",
+      "scene_group": 44,
+      "attribute": "shape",
+      "anchor_margin": 0.03197869658470154,
+      "nuisance_margin": 0.024430811405181885,
+      "nuisance_query_shift": 0.007547885179519653,
+      "target_change_distance": 0.03003770112991333,
+      "nuisance_distance": 0.07917171716690063
+    },
+    {
+      "id": "0044/number",
+      "scene_group": 44,
+      "attribute": "number",
+      "anchor_margin": 0.0116557776927948,
+      "nuisance_margin": -0.009884148836135864,
+      "nuisance_query_shift": 0.021539926528930664,
+      "target_change_distance": 0.00499957799911499,
+      "nuisance_distance": 0.07917171716690063
+    },
+    {
+      "id": "0044/position",
+      "scene_group": 44,
+      "attribute": "position",
+      "anchor_margin": 0.003120720386505127,
+      "nuisance_margin": -0.015799224376678467,
+      "nuisance_query_shift": 0.018919944763183594,
+      "target_change_distance": 0.0139390230178833,
+      "nuisance_distance": 0.07917171716690063
+    },
+    {
+      "id": "0045/color",
+      "scene_group": 45,
+      "attribute": "color",
+      "anchor_margin": 0.008815228939056396,
+      "nuisance_margin": -0.0010618865489959717,
+      "nuisance_query_shift": 0.009877115488052368,
+      "target_change_distance": 0.022763729095458984,
+      "nuisance_distance": 0.04796278476715088
+    },
+    {
+      "id": "0045/shape",
+      "scene_group": 45,
+      "attribute": "shape",
+      "anchor_margin": 0.01810470223426819,
+      "nuisance_margin": 0.018629103899002075,
+      "nuisance_query_shift": 0.0005244016647338867,
+      "target_change_distance": 0.04016530513763428,
+      "nuisance_distance": 0.04796278476715088
+    },
+    {
+      "id": "0045/number",
+      "scene_group": 45,
+      "attribute": "number",
+      "anchor_margin": 0.002455472946166992,
+      "nuisance_margin": -0.004519253969192505,
+      "nuisance_query_shift": 0.006974726915359497,
+      "target_change_distance": 0.006488919258117676,
+      "nuisance_distance": 0.04796278476715088
+    },
+    {
+      "id": "0045/position",
+      "scene_group": 45,
+      "attribute": "position",
+      "anchor_margin": -0.0021952688694000244,
+      "nuisance_margin": 0.002361863851547241,
+      "nuisance_query_shift": 0.004557132720947266,
+      "target_change_distance": 0.012033820152282715,
+      "nuisance_distance": 0.04796278476715088
+    },
+    {
+      "id": "0046/color",
+      "scene_group": 46,
+      "attribute": "color",
+      "anchor_margin": 0.017629921436309814,
+      "nuisance_margin": 0.002714782953262329,
+      "nuisance_query_shift": 0.014915138483047485,
+      "target_change_distance": 0.018207669258117676,
+      "nuisance_distance": 0.07344621419906616
+    },
+    {
+      "id": "0046/shape",
+      "scene_group": 46,
+      "attribute": "shape",
+      "anchor_margin": 0.02400153875350952,
+      "nuisance_margin": 0.024109840393066406,
+      "nuisance_query_shift": 0.00010830163955688477,
+      "target_change_distance": 0.03491133451461792,
+      "nuisance_distance": 0.07344621419906616
+    },
+    {
+      "id": "0046/number",
+      "scene_group": 46,
+      "attribute": "number",
+      "anchor_margin": 0.00029730796813964844,
+      "nuisance_margin": -0.011446118354797363,
+      "nuisance_query_shift": 0.011743426322937012,
+      "target_change_distance": 0.004844486713409424,
+      "nuisance_distance": 0.07344621419906616
+    },
+    {
+      "id": "0046/position",
+      "scene_group": 46,
+      "attribute": "position",
+      "anchor_margin": 0.0023141205310821533,
+      "nuisance_margin": -0.0008431971073150635,
+      "nuisance_query_shift": 0.003157317638397217,
+      "target_change_distance": 0.012535452842712402,
+      "nuisance_distance": 0.07344621419906616
+    },
+    {
+      "id": "0047/color",
+      "scene_group": 47,
+      "attribute": "color",
+      "anchor_margin": -0.0013959407806396484,
+      "nuisance_margin": -0.0242176353931427,
+      "nuisance_query_shift": 0.022821694612503052,
+      "target_change_distance": 0.030189156532287598,
+      "nuisance_distance": 0.08254742622375488
+    },
+    {
+      "id": "0047/shape",
+      "scene_group": 47,
+      "attribute": "shape",
+      "anchor_margin": 0.012707948684692383,
+      "nuisance_margin": -0.003300219774246216,
+      "nuisance_query_shift": 0.0160081684589386,
+      "target_change_distance": 0.026070237159729004,
+      "nuisance_distance": 0.08254742622375488
+    },
+    {
+      "id": "0047/number",
+      "scene_group": 47,
+      "attribute": "number",
+      "anchor_margin": 0.0017327964305877686,
+      "nuisance_margin": -0.027411460876464844,
+      "nuisance_query_shift": 0.029144257307052612,
+      "target_change_distance": 0.0016514062881469727,
+      "nuisance_distance": 0.08254742622375488
+    },
+    {
+      "id": "0047/position",
+      "scene_group": 47,
+      "attribute": "position",
+      "anchor_margin": 0.005742907524108887,
+      "nuisance_margin": -0.00971531867980957,
+      "nuisance_query_shift": 0.015458226203918457,
+      "target_change_distance": 0.019141197204589844,
+      "nuisance_distance": 0.08254742622375488
+    },
+    {
+      "id": "0048/color",
+      "scene_group": 48,
+      "attribute": "color",
+      "anchor_margin": 0.014956235885620117,
+      "nuisance_margin": 0.013383150100708008,
+      "nuisance_query_shift": 0.0015730857849121094,
+      "target_change_distance": 0.012437105178833008,
+      "nuisance_distance": 0.027949154376983643
+    },
+    {
+      "id": "0048/shape",
+      "scene_group": 48,
+      "attribute": "shape",
+      "anchor_margin": 0.0035014748573303223,
+      "nuisance_margin": 0.0023038089275360107,
+      "nuisance_query_shift": 0.0011976659297943115,
+      "target_change_distance": 0.022207915782928467,
+      "nuisance_distance": 0.027949154376983643
+    },
+    {
+      "id": "0048/number",
+      "scene_group": 48,
+      "attribute": "number",
+      "anchor_margin": 0.0095425546169281,
+      "nuisance_margin": 0.010478824377059937,
+      "nuisance_query_shift": 0.0009362697601318359,
+      "target_change_distance": 0.007438242435455322,
+      "nuisance_distance": 0.027949154376983643
+    },
+    {
+      "id": "0048/position",
+      "scene_group": 48,
+      "attribute": "position",
+      "anchor_margin": -0.006740689277648926,
+      "nuisance_margin": -0.0005818605422973633,
+      "nuisance_query_shift": 0.0061588287353515625,
+      "target_change_distance": 0.01342463493347168,
+      "nuisance_distance": 0.027949154376983643
+    },
+    {
+      "id": "0049/color",
+      "scene_group": 49,
+      "attribute": "color",
+      "anchor_margin": 0.034000247716903687,
+      "nuisance_margin": 0.024149775505065918,
+      "nuisance_query_shift": 0.009850472211837769,
+      "target_change_distance": 0.01811659336090088,
+      "nuisance_distance": 0.06692993640899658
+    },
+    {
+      "id": "0049/shape",
+      "scene_group": 49,
+      "attribute": "shape",
+      "anchor_margin": -0.002535611391067505,
+      "nuisance_margin": -0.012764424085617065,
+      "nuisance_query_shift": 0.01022881269454956,
+      "target_change_distance": 0.027312755584716797,
+      "nuisance_distance": 0.06692993640899658
+    },
+    {
+      "id": "0049/number",
+      "scene_group": 49,
+      "attribute": "number",
+      "anchor_margin": 0.007140547037124634,
+      "nuisance_margin": -0.003023892641067505,
+      "nuisance_query_shift": 0.010164439678192139,
+      "target_change_distance": 0.003457486629486084,
+      "nuisance_distance": 0.06692993640899658
+    },
+    {
+      "id": "0049/position",
+      "scene_group": 49,
+      "attribute": "position",
+      "anchor_margin": -0.008662760257720947,
+      "nuisance_margin": -0.005729407072067261,
+      "nuisance_query_shift": 0.0029333531856536865,
+      "target_change_distance": 0.01698833703994751,
+      "nuisance_distance": 0.06692993640899658
+    },
+    {
+      "id": "0050/color",
+      "scene_group": 50,
+      "attribute": "color",
+      "anchor_margin": 0.0159415602684021,
+      "nuisance_margin": 0.009431332349777222,
+      "nuisance_query_shift": 0.006510227918624878,
+      "target_change_distance": 0.015285968780517578,
+      "nuisance_distance": 0.07301157712936401
+    },
+    {
+      "id": "0050/shape",
+      "scene_group": 50,
+      "attribute": "shape",
+      "anchor_margin": 0.016258269548416138,
+      "nuisance_margin": 0.030496209859848022,
+      "nuisance_query_shift": 0.014237940311431885,
+      "target_change_distance": 0.04762732982635498,
+      "nuisance_distance": 0.07301157712936401
+    },
+    {
+      "id": "0050/number",
+      "scene_group": 50,
+      "attribute": "number",
+      "anchor_margin": -0.002997845411300659,
+      "nuisance_margin": -0.008154869079589844,
+      "nuisance_query_shift": 0.005157023668289185,
+      "target_change_distance": 0.002721846103668213,
+      "nuisance_distance": 0.07301157712936401
+    },
+    {
+      "id": "0050/position",
+      "scene_group": 50,
+      "attribute": "position",
+      "anchor_margin": -0.0036919116973876953,
+      "nuisance_margin": 0.0002142488956451416,
+      "nuisance_query_shift": 0.003906160593032837,
+      "target_change_distance": 0.010670065879821777,
+      "nuisance_distance": 0.07301157712936401
+    },
+    {
+      "id": "0051/color",
+      "scene_group": 51,
+      "attribute": "color",
+      "anchor_margin": 0.02132207155227661,
+      "nuisance_margin": 0.0006035268306732178,
+      "nuisance_query_shift": 0.020718544721603394,
+      "target_change_distance": 0.015926599502563477,
+      "nuisance_distance": 0.054423630237579346
+    },
+    {
+      "id": "0051/shape",
+      "scene_group": 51,
+      "attribute": "shape",
+      "anchor_margin": 0.02779260277748108,
+      "nuisance_margin": 0.02397778630256653,
+      "nuisance_query_shift": 0.0038148164749145508,
+      "target_change_distance": 0.03784012794494629,
+      "nuisance_distance": 0.054423630237579346
+    },
+    {
+      "id": "0051/number",
+      "scene_group": 51,
+      "attribute": "number",
+      "anchor_margin": 0.004461824893951416,
+      "nuisance_margin": -0.007926702499389648,
+      "nuisance_query_shift": 0.012388527393341064,
+      "target_change_distance": 0.0058231353759765625,
+      "nuisance_distance": 0.054423630237579346
+    },
+    {
+      "id": "0051/position",
+      "scene_group": 51,
+      "attribute": "position",
+      "anchor_margin": -0.0017157196998596191,
+      "nuisance_margin": -0.003726065158843994,
+      "nuisance_query_shift": 0.002010345458984375,
+      "target_change_distance": 0.011136949062347412,
+      "nuisance_distance": 0.054423630237579346
+    },
+    {
+      "id": "0052/color",
+      "scene_group": 52,
+      "attribute": "color",
+      "anchor_margin": 0.022319257259368896,
+      "nuisance_margin": 0.007763475179672241,
+      "nuisance_query_shift": 0.014555782079696655,
+      "target_change_distance": 0.025609612464904785,
+      "nuisance_distance": 0.05784404277801514
+    },
+    {
+      "id": "0052/shape",
+      "scene_group": 52,
+      "attribute": "shape",
+      "anchor_margin": 0.017337411642074585,
+      "nuisance_margin": 0.0037256181240081787,
+      "nuisance_query_shift": 0.013611793518066406,
+      "target_change_distance": 0.03154289722442627,
+      "nuisance_distance": 0.05784404277801514
+    },
+    {
+      "id": "0052/number",
+      "scene_group": 52,
+      "attribute": "number",
+      "anchor_margin": -0.006079912185668945,
+      "nuisance_margin": -0.027199387550354004,
+      "nuisance_query_shift": 0.02111947536468506,
+      "target_change_distance": 0.004246175289154053,
+      "nuisance_distance": 0.05784404277801514
+    },
+    {
+      "id": "0052/position",
+      "scene_group": 52,
+      "attribute": "position",
+      "anchor_margin": -0.0075196921825408936,
+      "nuisance_margin": -0.020351439714431763,
+      "nuisance_query_shift": 0.01283174753189087,
+      "target_change_distance": 0.011369884014129639,
+      "nuisance_distance": 0.05784404277801514
+    },
+    {
+      "id": "0053/color",
+      "scene_group": 53,
+      "attribute": "color",
+      "anchor_margin": -0.0014750659465789795,
+      "nuisance_margin": 0.010485023260116577,
+      "nuisance_query_shift": 0.011960089206695557,
+      "target_change_distance": 0.018415093421936035,
+      "nuisance_distance": 0.0716172456741333
+    },
+    {
+      "id": "0053/shape",
+      "scene_group": 53,
+      "attribute": "shape",
+      "anchor_margin": 0.0019551515579223633,
+      "nuisance_margin": -0.004385828971862793,
+      "nuisance_query_shift": 0.006340980529785156,
+      "target_change_distance": 0.039170026779174805,
+      "nuisance_distance": 0.0716172456741333
+    },
+    {
+      "id": "0053/number",
+      "scene_group": 53,
+      "attribute": "number",
+      "anchor_margin": -0.008341193199157715,
+      "nuisance_margin": 0.0012935101985931396,
+      "nuisance_query_shift": 0.009634703397750854,
+      "target_change_distance": 0.0040100812911987305,
+      "nuisance_distance": 0.0716172456741333
+    },
+    {
+      "id": "0053/position",
+      "scene_group": 53,
+      "attribute": "position",
+      "anchor_margin": 0.0003841221332550049,
+      "nuisance_margin": 0.012002885341644287,
+      "nuisance_query_shift": 0.011618763208389282,
+      "target_change_distance": 0.015516698360443115,
+      "nuisance_distance": 0.0716172456741333
+    },
+    {
+      "id": "0054/color",
+      "scene_group": 54,
+      "attribute": "color",
+      "anchor_margin": 0.011527270078659058,
+      "nuisance_margin": 0.00976020097732544,
+      "nuisance_query_shift": 0.0017670691013336182,
+      "target_change_distance": 0.007858037948608398,
+      "nuisance_distance": 0.0659450888633728
+    },
+    {
+      "id": "0054/shape",
+      "scene_group": 54,
+      "attribute": "shape",
+      "anchor_margin": 0.02123868465423584,
+      "nuisance_margin": 0.029574215412139893,
+      "nuisance_query_shift": 0.008335530757904053,
+      "target_change_distance": 0.02962946891784668,
+      "nuisance_distance": 0.0659450888633728
+    },
+    {
+      "id": "0054/number",
+      "scene_group": 54,
+      "attribute": "number",
+      "anchor_margin": 0.0014407634735107422,
+      "nuisance_margin": -0.011538684368133545,
+      "nuisance_query_shift": 0.012979447841644287,
+      "target_change_distance": 0.01241236925125122,
+      "nuisance_distance": 0.0659450888633728
+    },
+    {
+      "id": "0054/position",
+      "scene_group": 54,
+      "attribute": "position",
+      "anchor_margin": -0.008695244789123535,
+      "nuisance_margin": 0.0006007850170135498,
+      "nuisance_query_shift": 0.009296029806137085,
+      "target_change_distance": 0.018142342567443848,
+      "nuisance_distance": 0.0659450888633728
+    },
+    {
+      "id": "0055/color",
+      "scene_group": 55,
+      "attribute": "color",
+      "anchor_margin": 0.011953413486480713,
+      "nuisance_margin": 0.007878482341766357,
+      "nuisance_query_shift": 0.0040749311447143555,
+      "target_change_distance": 0.01436084508895874,
+      "nuisance_distance": 0.07021844387054443
+    },
+    {
+      "id": "0055/shape",
+      "scene_group": 55,
+      "attribute": "shape",
+      "anchor_margin": 0.018713802099227905,
+      "nuisance_margin": 0.007887065410614014,
+      "nuisance_query_shift": 0.010826736688613892,
+      "target_change_distance": 0.028418123722076416,
+      "nuisance_distance": 0.07021844387054443
+    },
+    {
+      "id": "0055/number",
+      "scene_group": 55,
+      "attribute": "number",
+      "anchor_margin": 0.0044960081577301025,
+      "nuisance_margin": -0.008929014205932617,
+      "nuisance_query_shift": 0.01342502236366272,
+      "target_change_distance": 0.018343687057495117,
+      "nuisance_distance": 0.07021844387054443
+    },
+    {
+      "id": "0055/position",
+      "scene_group": 55,
+      "attribute": "position",
+      "anchor_margin": -0.0032549798488616943,
+      "nuisance_margin": -0.008949100971221924,
+      "nuisance_query_shift": 0.0056941211223602295,
+      "target_change_distance": 0.022632956504821777,
+      "nuisance_distance": 0.07021844387054443
+    },
+    {
+      "id": "0056/color",
+      "scene_group": 56,
+      "attribute": "color",
+      "anchor_margin": 0.031820088624954224,
+      "nuisance_margin": 0.014390885829925537,
+      "nuisance_query_shift": 0.017429202795028687,
+      "target_change_distance": 0.024830877780914307,
+      "nuisance_distance": 0.10763788223266602
+    },
+    {
+      "id": "0056/shape",
+      "scene_group": 56,
+      "attribute": "shape",
+      "anchor_margin": 0.01592877507209778,
+      "nuisance_margin": -0.0033017098903656006,
+      "nuisance_query_shift": 0.01923048496246338,
+      "target_change_distance": 0.014146089553833008,
+      "nuisance_distance": 0.10763788223266602
+    },
+    {
+      "id": "0056/number",
+      "scene_group": 56,
+      "attribute": "number",
+      "anchor_margin": 0.013292968273162842,
+      "nuisance_margin": -0.01538175344467163,
+      "nuisance_query_shift": 0.028674721717834473,
+      "target_change_distance": 0.007165133953094482,
+      "nuisance_distance": 0.10763788223266602
+    },
+    {
+      "id": "0056/position",
+      "scene_group": 56,
+      "attribute": "position",
+      "anchor_margin": 0.003249228000640869,
+      "nuisance_margin": -0.01386350393295288,
+      "nuisance_query_shift": 0.01711273193359375,
+      "target_change_distance": 0.01801401376724243,
+      "nuisance_distance": 0.10763788223266602
+    },
+    {
+      "id": "0057/color",
+      "scene_group": 57,
+      "attribute": "color",
+      "anchor_margin": 0.02181220054626465,
+      "nuisance_margin": 0.013722151517868042,
+      "nuisance_query_shift": 0.008090049028396606,
+      "target_change_distance": 0.01043081283569336,
+      "nuisance_distance": 0.08062601089477539
+    },
+    {
+      "id": "0057/shape",
+      "scene_group": 57,
+      "attribute": "shape",
+      "anchor_margin": -0.0020779073238372803,
+      "nuisance_margin": -0.004201233386993408,
+      "nuisance_query_shift": 0.002123326063156128,
+      "target_change_distance": 0.029388606548309326,
+      "nuisance_distance": 0.08062601089477539
+    },
+    {
+      "id": "0057/number",
+      "scene_group": 57,
+      "attribute": "number",
+      "anchor_margin": 0.0020626485347747803,
+      "nuisance_margin": -0.006506681442260742,
+      "nuisance_query_shift": 0.008569329977035522,
+      "target_change_distance": 0.0042955875396728516,
+      "nuisance_distance": 0.08062601089477539
+    },
+    {
+      "id": "0057/position",
+      "scene_group": 57,
+      "attribute": "position",
+      "anchor_margin": -0.010047852993011475,
+      "nuisance_margin": -0.011316657066345215,
+      "nuisance_query_shift": 0.0012688040733337402,
+      "target_change_distance": 0.01648610830307007,
+      "nuisance_distance": 0.08062601089477539
+    },
+    {
+      "id": "0058/color",
+      "scene_group": 58,
+      "attribute": "color",
+      "anchor_margin": 0.006507813930511475,
+      "nuisance_margin": 0.010635852813720703,
+      "nuisance_query_shift": 0.0041280388832092285,
+      "target_change_distance": 0.01532435417175293,
+      "nuisance_distance": 0.06096982955932617
+    },
+    {
+      "id": "0058/shape",
+      "scene_group": 58,
+      "attribute": "shape",
+      "anchor_margin": 0.006350398063659668,
+      "nuisance_margin": -0.01548534631729126,
+      "nuisance_query_shift": 0.021835744380950928,
+      "target_change_distance": 0.026800155639648438,
+      "nuisance_distance": 0.06096982955932617
+    },
+    {
+      "id": "0058/number",
+      "scene_group": 58,
+      "attribute": "number",
+      "anchor_margin": 0.0005183517932891846,
+      "nuisance_margin": -0.0012968182563781738,
+      "nuisance_query_shift": 0.0018151700496673584,
+      "target_change_distance": 0.012782037258148193,
+      "nuisance_distance": 0.06096982955932617
+    },
+    {
+      "id": "0058/position",
+      "scene_group": 58,
+      "attribute": "position",
+      "anchor_margin": 0.008528143167495728,
+      "nuisance_margin": 0.00840499997138977,
+      "nuisance_query_shift": 0.00012314319610595703,
+      "target_change_distance": 0.01230686902999878,
+      "nuisance_distance": 0.06096982955932617
+    },
+    {
+      "id": "0059/color",
+      "scene_group": 59,
+      "attribute": "color",
+      "anchor_margin": 0.03284695744514465,
+      "nuisance_margin": 0.02999737858772278,
+      "nuisance_query_shift": 0.002849578857421875,
+      "target_change_distance": 0.02078080177307129,
+      "nuisance_distance": 0.04388833045959473
+    },
+    {
+      "id": "0059/shape",
+      "scene_group": 59,
+      "attribute": "shape",
+      "anchor_margin": 0.004883557558059692,
+      "nuisance_margin": 0.0034149587154388428,
+      "nuisance_query_shift": 0.0014685988426208496,
+      "target_change_distance": 0.02329087257385254,
+      "nuisance_distance": 0.04388833045959473
+    },
+    {
+      "id": "0059/number",
+      "scene_group": 59,
+      "attribute": "number",
+      "anchor_margin": 0.0006619393825531006,
+      "nuisance_margin": -0.004240274429321289,
+      "nuisance_query_shift": 0.00490221381187439,
+      "target_change_distance": 0.0032542943954467773,
+      "nuisance_distance": 0.04388833045959473
+    },
+    {
+      "id": "0059/position",
+      "scene_group": 59,
+      "attribute": "position",
+      "anchor_margin": -0.0055807530879974365,
+      "nuisance_margin": -0.013482868671417236,
+      "nuisance_query_shift": 0.0079021155834198,
+      "target_change_distance": 0.013918399810791016,
+      "nuisance_distance": 0.04388833045959473
+    },
+    {
+      "id": "0060/color",
+      "scene_group": 60,
+      "attribute": "color",
+      "anchor_margin": 0.040565699338912964,
+      "nuisance_margin": 0.030281007289886475,
+      "nuisance_query_shift": 0.01028469204902649,
+      "target_change_distance": 0.021714448928833008,
+      "nuisance_distance": 0.04144322872161865
+    },
+    {
+      "id": "0060/shape",
+      "scene_group": 60,
+      "attribute": "shape",
+      "anchor_margin": 0.014398455619812012,
+      "nuisance_margin": 0.006553590297698975,
+      "nuisance_query_shift": 0.007844865322113037,
+      "target_change_distance": 0.018674612045288086,
+      "nuisance_distance": 0.04144322872161865
+    },
+    {
+      "id": "0060/number",
+      "scene_group": 60,
+      "attribute": "number",
+      "anchor_margin": 0.0025229156017303467,
+      "nuisance_margin": -0.012077659368515015,
+      "nuisance_query_shift": 0.014600574970245361,
+      "target_change_distance": 0.006498098373413086,
+      "nuisance_distance": 0.04144322872161865
+    },
+    {
+      "id": "0060/position",
+      "scene_group": 60,
+      "attribute": "position",
+      "anchor_margin": -0.004796087741851807,
+      "nuisance_margin": -0.011200666427612305,
+      "nuisance_query_shift": 0.006404578685760498,
+      "target_change_distance": 0.012200236320495605,
+      "nuisance_distance": 0.04144322872161865
+    },
+    {
+      "id": "0061/color",
+      "scene_group": 61,
+      "attribute": "color",
+      "anchor_margin": 0.030543729662895203,
+      "nuisance_margin": 0.03208933770656586,
+      "nuisance_query_shift": 0.0015456080436706543,
+      "target_change_distance": 0.0158461332321167,
+      "nuisance_distance": 0.04642844200134277
+    },
+    {
+      "id": "0061/shape",
+      "scene_group": 61,
+      "attribute": "shape",
+      "anchor_margin": -0.012514501810073853,
+      "nuisance_margin": -0.005896955728530884,
+      "nuisance_query_shift": 0.006617546081542969,
+      "target_change_distance": 0.022704780101776123,
+      "nuisance_distance": 0.04642844200134277
+    },
+    {
+      "id": "0061/number",
+      "scene_group": 61,
+      "attribute": "number",
+      "anchor_margin": 0.003719329833984375,
+      "nuisance_margin": 0.009499311447143555,
+      "nuisance_query_shift": 0.00577998161315918,
+      "target_change_distance": 0.0034790635108947754,
+      "nuisance_distance": 0.04642844200134277
+    },
+    {
+      "id": "0061/position",
+      "scene_group": 61,
+      "attribute": "position",
+      "anchor_margin": -0.012727618217468262,
+      "nuisance_margin": -0.0005052387714385986,
+      "nuisance_query_shift": 0.012222379446029663,
+      "target_change_distance": 0.017033874988555908,
+      "nuisance_distance": 0.04642844200134277
+    },
+    {
+      "id": "0062/color",
+      "scene_group": 62,
+      "attribute": "color",
+      "anchor_margin": 0.009343624114990234,
+      "nuisance_margin": -0.0048233866691589355,
+      "nuisance_query_shift": 0.01416701078414917,
+      "target_change_distance": 0.01730591058731079,
+      "nuisance_distance": 0.062450945377349854
+    },
+    {
+      "id": "0062/shape",
+      "scene_group": 62,
+      "attribute": "shape",
+      "anchor_margin": -0.0070269107818603516,
+      "nuisance_margin": -0.0179293155670166,
+      "nuisance_query_shift": 0.01090240478515625,
+      "target_change_distance": 0.025820136070251465,
+      "nuisance_distance": 0.062450945377349854
+    },
+    {
+      "id": "0062/number",
+      "scene_group": 62,
+      "attribute": "number",
+      "anchor_margin": -0.004508852958679199,
+      "nuisance_margin": -0.013923883438110352,
+      "nuisance_query_shift": 0.009415030479431152,
+      "target_change_distance": 0.008199453353881836,
+      "nuisance_distance": 0.062450945377349854
+    },
+    {
+      "id": "0062/position",
+      "scene_group": 62,
+      "attribute": "position",
+      "anchor_margin": -0.003068298101425171,
+      "nuisance_margin": -0.004363507032394409,
+      "nuisance_query_shift": 0.0012952089309692383,
+      "target_change_distance": 0.02577120065689087,
+      "nuisance_distance": 0.062450945377349854
+    },
+    {
+      "id": "0063/color",
+      "scene_group": 63,
+      "attribute": "color",
+      "anchor_margin": 0.0027368366718292236,
+      "nuisance_margin": -0.010777652263641357,
+      "nuisance_query_shift": 0.013514488935470581,
+      "target_change_distance": 0.029245078563690186,
+      "nuisance_distance": 0.07114279270172119
+    },
+    {
+      "id": "0063/shape",
+      "scene_group": 63,
+      "attribute": "shape",
+      "anchor_margin": 0.024711012840270996,
+      "nuisance_margin": 0.020003676414489746,
+      "nuisance_query_shift": 0.00470733642578125,
+      "target_change_distance": 0.041137874126434326,
+      "nuisance_distance": 0.07114279270172119
+    },
+    {
+      "id": "0063/number",
+      "scene_group": 63,
+      "attribute": "number",
+      "anchor_margin": 0.012885510921478271,
+      "nuisance_margin": 0.006008148193359375,
+      "nuisance_query_shift": 0.0068773627281188965,
+      "target_change_distance": 0.007040560245513916,
+      "nuisance_distance": 0.07114279270172119
+    },
+    {
+      "id": "0063/position",
+      "scene_group": 63,
+      "attribute": "position",
+      "anchor_margin": -0.00044405460357666016,
+      "nuisance_margin": 0.0046041905879974365,
+      "nuisance_query_shift": 0.005048245191574097,
+      "target_change_distance": 0.013953030109405518,
+      "nuisance_distance": 0.07114279270172119
+    }
+  ],
+  "seconds_this_invocation": 19.909054499992635,
+  "scope": "Frozen no-training diagnostic; CPU timings are not comparable with GPU/API latency"
+}

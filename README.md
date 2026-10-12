@@ -1,5 +1,11 @@
 # SuperEmbedding
 
+**2026-10-12 interim progress snapshot:** V5 training is continuing toward fixed Step2000; this commit publishes research progress, not a final model release or leakage-cleared result. Step1000 reached 53.77% macro R@1 on the eight-source development set (Step500: 47.39%; Step750: 53.06%); VSR110 is 84/110 (76.36%) in CUDA BF16. Completed restricted-budget CPU baselines: WeMM-2B 75.83%, GME-2B 45.57%; Qwen3-VL-Embedding-2B previously scored 67.85%. WeMM/GME ScienceQA1000 accuracy is 77.40%/27.30% (text-only: 28.10%/12.40%). All completed WeMM/GME predictions were replayed from saved vectors. These are diagnostic comparisons, not full paper reproductions. [Live-run snapshot and outstanding work](reports/ACTIVE_EXPERIMENTS.zh.md) · [Baseline results and limitations](reports/PAPER_BASELINES_CPU.zh.md) · [Snapshot scope](reports/PROGRESS_SNAPSHOT_2026-10-12.zh.md).
+
+**2026-10-12 continuation:** The original step-556 run remains preserved. A separate diagnostic run resumes its complete optimizer/RNG state to the predeclared step 2000; old validation-best selection is ineligible for confirmatory evaluation. The first resumed update (557) passed checkpoint and gradient-replay checks. New holdouts must be isolated from all historical development data. See [continuation protocol](reports/STEP556_CONTINUATION.zh.md).
+
+**2026-10-11 audit correction:** Cross-split duplicate photos/scenes were found in CUB/DTD, and V5 DocVQA has document-entity/fixed-answer overlap. Historical tables below are preserved exploratory results, not leakage-cleared evidence. The original V5 run remains checkpoint-paused at step556; a separate diagnostic continuation is running. Confirmatory evaluation and final model release remain blocked pending remediation. See [leakage review](reports/DATA_LEAKAGE_REVIEW.zh.md).
+
 Reusable attribute memory vectors from OmniJev-0.8B / Qwen3.5-0.8B, trained and evaluated locally on an RTX 5070 Laptop with 8 GB VRAM.
 
 Each image is encoded once under fixed attribute directions. Store normalized 256d **slots**, plus a global vector from concatenation or an optional output projection. Select slots at retrieval time without re-encoding gallery images. New attribute directions require re-encoding. Domains use separate heads.

@@ -1,0 +1,553 @@
+{
+  "observed_utc": "2026-10-11T07:19:14.551958+00:00",
+  "purpose": "Pinned official inference baselines; download is not reproduction completion. Never execute unreviewed remote code.",
+  "models": [
+    {
+      "repo": "Qwen/Qwen3-VL-Embedding-2B",
+      "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "gated": false,
+      "license": "apache-2.0",
+      "files": [
+        {
+          "path": "1_Pooling/config.json",
+          "bytes": 96,
+          "lfs_sha256": null
+        },
+        {
+          "path": "README.md",
+          "bytes": 24249,
+          "lfs_sha256": null
+        },
+        {
+          "path": "added_tokens.json",
+          "bytes": 707,
+          "lfs_sha256": null
+        },
+        {
+          "path": "chat_template.jinja",
+          "bytes": 5519,
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "bytes": 1570,
+          "lfs_sha256": null
+        },
+        {
+          "path": "config_sentence_transformers.json",
+          "bytes": 238,
+          "lfs_sha256": null
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 1671853,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 4255140312,
+          "lfs_sha256": "c73fa9caeddeb3ff831d46c085a7a5708343248ca777e90f2d486964464509c1"
+        },
+        {
+          "path": "modules.json",
+          "bytes": 429,
+          "lfs_sha256": null
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 783,
+          "lfs_sha256": null
+        },
+        {
+          "path": "scripts/qwen3_vl_embedding.py",
+          "bytes": 13258,
+          "lfs_sha256": null
+        },
+        {
+          "path": "sentence_bert_config.json",
+          "bytes": 770,
+          "lfs_sha256": null
+        },
+        {
+          "path": "special_tokens_map.json",
+          "bytes": 613,
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 11423705,
+          "lfs_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 5404,
+          "lfs_sha256": null
+        },
+        {
+          "path": "video_preprocessor_config.json",
+          "bytes": 817,
+          "lfs_sha256": null
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 2776833,
+          "lfs_sha256": null
+        }
+      ],
+      "total_bytes": 4271067156
+    },
+    {
+      "repo": "tencent/WeMM-Embedding-2B",
+      "revision": "bbd6cd4bf52cfc6716f752a2df80b2706720bd95",
+      "gated": false,
+      "license": "other",
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 24546,
+          "lfs_sha256": null
+        },
+        {
+          "path": "README.md",
+          "bytes": 7993,
+          "lfs_sha256": null
+        },
+        {
+          "path": "additional_chat_templates/sentence_transformers.jinja",
+          "bytes": 1452,
+          "lfs_sha256": null
+        },
+        {
+          "path": "chat_template.jinja",
+          "bytes": 7755,
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "bytes": 2853,
+          "lfs_sha256": null
+        },
+        {
+          "path": "config_sentence_transformers.json",
+          "bytes": 245,
+          "lfs_sha256": null
+        },
+        {
+          "path": "embedding_chat_template.jinja",
+          "bytes": 1086,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 5441695216,
+          "lfs_sha256": "e1a1ad752808c26965aa97d37bf4a9bca71d838513f41e83790cb1e71cac6e59"
+        },
+        {
+          "path": "modeling_st_wemm.py",
+          "bytes": 3180,
+          "lfs_sha256": null
+        },
+        {
+          "path": "modeling_wemm_embedding.py",
+          "bytes": 1205,
+          "lfs_sha256": null
+        },
+        {
+          "path": "modules.json",
+          "bytes": 106,
+          "lfs_sha256": null
+        },
+        {
+          "path": "patch_sglang_video.py",
+          "bytes": 1983,
+          "lfs_sha256": null
+        },
+        {
+          "path": "processor_config.json",
+          "bytes": 1192,
+          "lfs_sha256": null
+        },
+        {
+          "path": "sentence_bert_config.json",
+          "bytes": 950,
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 19990378,
+          "lfs_sha256": "40e444c744512f423da4c8443c47c21e22ff76056ba4e9796a81c04c13a9daf0"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 1148,
+          "lfs_sha256": null
+        }
+      ],
+      "total_bytes": 5461741288
+    },
+    {
+      "repo": "VLM2Vec/VLM2Vec-V2.0",
+      "revision": "e39ff079b8275ef876d3656da8c0bddbff3c4dde",
+      "gated": false,
+      "license": "apache-2.0",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 4064,
+          "lfs_sha256": null
+        },
+        {
+          "path": "adapter_config.json",
+          "bytes": 879,
+          "lfs_sha256": null
+        },
+        {
+          "path": "added_tokens.json",
+          "bytes": 392,
+          "lfs_sha256": null
+        },
+        {
+          "path": "chat_template.json",
+          "bytes": 1049,
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "bytes": 1245,
+          "lfs_sha256": null
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 1671853,
+          "lfs_sha256": null
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 566,
+          "lfs_sha256": null
+        },
+        {
+          "path": "special_tokens_map.json",
+          "bytes": 613,
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 11420371,
+          "lfs_sha256": "091aa7594dc2fcfbfa06b9e3c22a5f0562ac14f30375c13af7309407a0e67b8a"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 4327,
+          "lfs_sha256": null
+        },
+        {
+          "path": "trainer_state.json",
+          "bytes": 807397,
+          "lfs_sha256": null
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 2776833,
+          "lfs_sha256": null
+        },
+        {
+          "path": "adapter_model.bin",
+          "bytes": 36966810,
+          "lfs_sha256": "ded672307be1e3e20acfe5d01a287dfb388c2d931e9d236b11c05bfdd99c59e0"
+        }
+      ],
+      "total_bytes": 53656399,
+      "base_dependency": "Qwen/Qwen2-VL-2B-Instruct",
+      "base_revision": "895c3a49bc3fa70a340399125c650a463535e71c"
+    },
+    {
+      "repo": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+      "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "gated": false,
+      "license": "apache-2.0",
+      "files": [
+        {
+          "path": "1_Pooling/config.json",
+          "bytes": 316,
+          "lfs_sha256": null
+        },
+        {
+          "path": "README.md",
+          "bytes": 101455,
+          "lfs_sha256": null
+        },
+        {
+          "path": "added_tokens.json",
+          "bytes": 392,
+          "lfs_sha256": null
+        },
+        {
+          "path": "chat_template.json",
+          "bytes": 1050,
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "bytes": 1251,
+          "lfs_sha256": null
+        },
+        {
+          "path": "config_sentence_transformers.json",
+          "bytes": 161,
+          "lfs_sha256": null
+        },
+        {
+          "path": "custom_st.py",
+          "bytes": 8622,
+          "lfs_sha256": null
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 249,
+          "lfs_sha256": null
+        },
+        {
+          "path": "gme_inference.py",
+          "bytes": 13192,
+          "lfs_sha256": null
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 1671853,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model-00001-of-00003.safetensors",
+          "bytes": 4046085544,
+          "lfs_sha256": "ce525de1d47307ebf63285ce4f2f80ca8ffffd94235b2151585e5714307e4e99"
+        },
+        {
+          "path": "model-00002-of-00003.safetensors",
+          "bytes": 4063188000,
+          "lfs_sha256": "7b42b76064f5d14ee9d0390f9a1f3571fc66eae4f40764f818cb5e9aafc5d6f5"
+        },
+        {
+          "path": "model-00003-of-00003.safetensors",
+          "bytes": 726747736,
+          "lfs_sha256": "e3f1342fe1dd7df1582be00ebd45557316015050ae2edb841e61150825f16adc"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "bytes": 56411,
+          "lfs_sha256": null
+        },
+        {
+          "path": "modeling_gme_qwen2vl.py",
+          "bytes": 13261,
+          "lfs_sha256": null
+        },
+        {
+          "path": "modules.json",
+          "bytes": 341,
+          "lfs_sha256": null
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 347,
+          "lfs_sha256": null
+        },
+        {
+          "path": "results.json",
+          "bytes": 15851,
+          "lfs_sha256": null
+        },
+        {
+          "path": "special_tokens_map.json",
+          "bytes": 613,
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 7030148,
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 4256,
+          "lfs_sha256": null
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 2776833,
+          "lfs_sha256": null
+        }
+      ],
+      "total_bytes": 8847717882
+    },
+    {
+      "repo": "ATH-MaaS/Ovis-Omni-Embedding-3B",
+      "revision": "9726d1ad56420a07ba745aafaf5d7030963cda4e",
+      "gated": false,
+      "license": "apache-2.0",
+      "files": [
+        {
+          "path": "Adaptor/README.md",
+          "bytes": 4715,
+          "lfs_sha256": null
+        },
+        {
+          "path": "README.md",
+          "bytes": 9853,
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "bytes": 13094,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/LICENSE",
+          "bytes": 11544,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/args.json",
+          "bytes": 96,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/chat_template.jinja",
+          "bytes": 1281,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/config.json",
+          "bytes": 13094,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/generation_config.json",
+          "bytes": 154,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/model-00001-of-00003.safetensors",
+          "bytes": 4985032488,
+          "lfs_sha256": "3859069435a04d363906c0ad05a5fcf480917225de6686f3a37489a27241d9ad"
+        },
+        {
+          "path": "model/model-00002-of-00003.safetensors",
+          "bytes": 4999949856,
+          "lfs_sha256": "2ab4c3c8ab840be3614be89ac5521e6f6df48dce62a03adfac31cc83f0209ce4"
+        },
+        {
+          "path": "model/model-00003-of-00003.safetensors",
+          "bytes": 1089579000,
+          "lfs_sha256": "6eebd641ef74ae7f865f8ca817ccbf3c6fe20a1b9107f8085f2ec79b2b519556"
+        },
+        {
+          "path": "model/model.safetensors.index.json",
+          "bytes": 241759,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/preprocessor_config.json",
+          "bytes": 667,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/processor_config.json",
+          "bytes": 2750,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/tokenizer.json",
+          "bytes": 11421866,
+          "lfs_sha256": "1ab7a851e5c63d5fafbfdac72e3b4a8d08613f6bbb06ee39036fdf870ef59c93"
+        },
+        {
+          "path": "model/tokenizer_config.json",
+          "bytes": 939,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model/zero_to_fp32.py",
+          "bytes": 33270,
+          "lfs_sha256": null
+        }
+      ],
+      "total_bytes": 11086316426
+    },
+    {
+      "repo": "Qwen/Qwen2-VL-2B-Instruct",
+      "revision": "895c3a49bc3fa70a340399125c650a463535e71c",
+      "gated": false,
+      "license": "apache-2.0",
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 11343,
+          "lfs_sha256": null
+        },
+        {
+          "path": "README.md",
+          "bytes": 17392,
+          "lfs_sha256": null
+        },
+        {
+          "path": "chat_template.json",
+          "bytes": 1050,
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "bytes": 1196,
+          "lfs_sha256": null
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 272,
+          "lfs_sha256": null
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 1671839,
+          "lfs_sha256": null
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "bytes": 3988609112,
+          "lfs_sha256": "994ac2b03f97de8bc647d0fe5eba2e4b632b3e28dc03574c29bdfc36cf47e1b9"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "bytes": 429441656,
+          "lfs_sha256": "92540d8353c8d226a589a3b179bdb33851c970ee2cc2ac7ba035f79425e7b833"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "bytes": 56411,
+          "lfs_sha256": null
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 347,
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 7029741,
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 4190,
+          "lfs_sha256": null
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 2776833,
+          "lfs_sha256": null
+        }
+      ],
+      "total_bytes": 4429621382,
+      "role": "VLM2Vec V2 frozen base dependency"
+    }
+  ]
+}

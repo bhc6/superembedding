@@ -1,0 +1,50 @@
+{
+  "backend": "flair",
+  "dataset": {
+    "dataset": "BeichenZhang/Urban1k",
+    "revision": "953fcf1d1a3bde031d9424a91a0154e594b5a586",
+    "annotations": "FLAIR official repo 0f9ce05886d1ee0aa2c628653104cce77a1fff14",
+    "images": 1000
+  },
+  "queries": 1000,
+  "candidates": 1000,
+  "metrics": {
+    "native_text_conditioned": {
+      "text_to_image_R@1": 0.877,
+      "text_to_image_R@5": 0.975,
+      "text_to_image_R@10": 0.991,
+      "text_to_image_mean_rank": 1.975000023841858,
+      "text_to_image_median_rank": 1.0,
+      "image_to_text_R@1": 0.835,
+      "image_to_text_R@5": 0.96,
+      "image_to_text_R@10": 0.979,
+      "image_to_text_mean_rank": 2.621999979019165,
+      "image_to_text_median_rank": 1.0
+    },
+    "global": {
+      "text_to_image_R@1": 0.861,
+      "text_to_image_R@5": 0.968,
+      "text_to_image_R@10": 0.987,
+      "text_to_image_mean_rank": 2.1269999742507935,
+      "text_to_image_median_rank": 1.0,
+      "image_to_text_R@1": 0.827,
+      "image_to_text_R@5": 0.952,
+      "image_to_text_R@10": 0.977,
+      "image_to_text_mean_rank": 2.3830000162124634,
+      "image_to_text_median_rank": 1.0
+    }
+  },
+  "provenance": {
+    "repo_revision": "0f9ce05886d1ee0aa2c628653104cce77a1fff14",
+    "model": "xiaorui638/flair",
+    "model_revision": "0a306fd7060ba3076da3c9ee75b569e6aabea6c6",
+    "weight": "flair-merged30m.pt",
+    "preprocessing": "official ViT-B-16-FLAIR tokenizer and image transform",
+    "scoring": "all 1000 captions attention-pool each image; exact official scorer equivalence audited",
+    "precision": "float32 (official script defaults AMP); no retraining",
+    "memory_caveat": "Native FLAIR conditioning depends on every query, not a fixed cached image vector"
+  },
+  "seconds": 4.150383899999724,
+  "annotation_sha256": "bb692605a4633ab4cbfe61794c1d7ebcac5eb71fb75308fb212d138196e7cff3",
+  "scope": "Full official FLAIR Urban1k annotations; pretrained-weight inference reproduction, not full training reproduction."
+}

@@ -1,0 +1,59 @@
+{
+  "dataset": "cub_attributes",
+  "output": "D:\\DEMO\\superembedding\\data\\cub_attributes_leakage_v2_draft",
+  "status": "draft_not_cleared_for_training_or_claims",
+  "source_sha256": "495255edad7301650c63c25dc65a950955e358ae54fb89922e535abe923599f4",
+  "manifest_sha256": "5334ea7e96348533c5ae135c1f9821110030984274c3b67466b0d48fce825556",
+  "audit_sha256": "05ee4fc44c49fdd076a6da646fec63be2f32ca3e00846f7d4ae27edab200941f",
+  "policy": "All screened pairs treated conservatively as grouping edges; not all are confirmed duplicates.",
+  "components": [
+    {
+      "members": [
+        "cub_01413",
+        "cub_01460"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "cub_01460"
+      ]
+    },
+    {
+      "members": [
+        "cub_10371",
+        "cub_10379"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "cub_10379"
+      ]
+    },
+    {
+      "members": [
+        "cub_11592",
+        "cub_11594"
+      ],
+      "retained_split": "test",
+      "quarantined_ids": [
+        "cub_11594"
+      ]
+    }
+  ],
+  "quarantined_by_split": {
+    "train": 2,
+    "val": 1
+  },
+  "retained_by_split": {
+    "test": 5794,
+    "train": 4791,
+    "val": 1199
+  },
+  "test_ids_unchanged": true,
+  "screened_cross_split_edges_remaining": 0,
+  "further_work": [
+    "Crop/scene review beyond hash threshold",
+    "Fresh trainable head initialization; never resume contaminated heads",
+    "Rerun all matched baselines; unchanged frozen encoders may reuse verified per-image features",
+    "Seen test remains diagnostic; new unseen confirmation needed"
+  ],
+  "predictions_used_for_filtering": false
+}

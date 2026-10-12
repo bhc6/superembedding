@@ -1,0 +1,28 @@
+{
+  "backend": "qwen3_vl",
+  "metrics": {
+    "image_to_text_R@1": 0.9879879951477051,
+    "image_to_text_R@5": 0.9989989995956421,
+    "image_to_text_R@10": 0.9989989995956421,
+    "text_to_image_R@1": 0.9929929971694946,
+    "text_to_image_R@5": 0.9989989995956421,
+    "text_to_image_R@10": 0.9989989995956421
+  },
+  "queries": 999,
+  "candidates": 999,
+  "excluded_indices": [
+    548
+  ],
+  "scope": "Common nonempty-caption subset, NOT official full Urban1k. API rejects empty strings.",
+  "dataset": {
+    "dataset": "BeichenZhang/Urban1k",
+    "revision": "953fcf1d1a3bde031d9424a91a0154e594b5a586",
+    "annotations": "FLAIR official repo 0f9ce05886d1ee0aa2c628653104cce77a1fff14",
+    "images": 1000
+  },
+  "dimension": 2560,
+  "conditioning": "native image/text, no additional instructions",
+  "training": false,
+  "alias_warning": "Unversioned provider API; cannot identify with the open 2B/8B checkpoints",
+  "annotation_sha256": "bb692605a4633ab4cbfe61794c1d7ebcac5eb71fb75308fb212d138196e7cff3"
+}

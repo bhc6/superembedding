@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "plan": {
+    "indices": [
+      0,
+      55,
+      109
+    ],
+    "ids": [
+      "vsr:1057",
+      "vsr:1846",
+      "vsr:989"
+    ],
+    "selection": "First/middle/last in sealed record-ID order; no outcome-based selection",
+    "protocol_hash": "460c9f4d789569d598b2b7f4b82f6e01fce3ba6a32d5c92f39664ca32cebb650",
+    "script_sha256": "7c2b12d132fddeae4a86218947b2edb2e3ba45303a8ea9a8fbe3d642fe70e80a",
+    "fresh_original": "Official loader and ask API directly, no reconstructed checkpoint",
+    "fresh_step500": "Official loader, then all immutable Step500 trained tensors; original decision head unchanged",
+    "max_pixels": 65536,
+    "device": "CPU FP32 one thread",
+    "tolerances": {
+      "embedding_max_abs": 1e-06,
+      "rounded_noul": 0
+    },
+    "api_requeried": false
+  },
+  "checks": [
+    {
+      "arm": "original",
+      "id": "vsr:1057",
+      "fresh_probability": 0.5612,
+      "cached_probability": 0.5612,
+      "official_noul_exact": true
+    },
+    {
+      "arm": "original",
+      "id": "vsr:1846",
+      "fresh_probability": 0.5617,
+      "cached_probability": 0.5617,
+      "official_noul_exact": true
+    },
+    {
+      "arm": "original",
+      "id": "vsr:989",
+      "fresh_probability": 0.496,
+      "cached_probability": 0.496,
+      "official_noul_exact": true
+    },
+    {
+      "arm": "step500",
+      "id": "vsr:1057",
+      "fresh_probability": 0.6246,
+      "cached_probability": 0.6246,
+      "official_noul_exact": true,
+      "full": {
+        "fresh_prediction": "yes",
+        "cached_prediction": "yes",
+        "embedding_max_abs": 0.0
+      },
+      "text_only": {
+        "fresh_prediction": "no",
+        "cached_prediction": "no",
+        "embedding_max_abs": 0.0
+      }
+    },
+    {
+      "arm": "step500",
+      "id": "vsr:1846",
+      "fresh_probability": 0.5904,
+      "cached_probability": 0.5904,
+      "official_noul_exact": true,
+      "full": {
+        "fresh_prediction": "no",
+        "cached_prediction": "no",
+        "embedding_max_abs": 0.0
+      },
+      "text_only": {
+        "fresh_prediction": "no",
+        "cached_prediction": "no",
+        "embedding_max_abs": 0.0
+      }
+    },
+    {
+      "arm": "step500",
+      "id": "vsr:989",
+      "fresh_probability": 0.4693,
+      "cached_probability": 0.4693,
+      "official_noul_exact": true,
+      "full": {
+        "fresh_prediction": "yes",
+        "cached_prediction": "yes",
+        "embedding_max_abs": 0.0
+      },
+      "text_only": {
+        "fresh_prediction": "yes",
+        "cached_prediction": "yes",
+        "embedding_max_abs": 0.0
+      }
+    }
+  ],
+  "source_annotations_checked": 110,
+  "query_ground_truth_field_injected": false,
+  "unique_images": 110,
+  "limits": "Fresh inference spot-check, not all-110 fresh rerun. Qwen vectors replayed separately; API was not requeried. No claim of leakage-free generalization."
+}

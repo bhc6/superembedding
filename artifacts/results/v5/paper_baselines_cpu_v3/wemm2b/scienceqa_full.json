@@ -1,0 +1,6136 @@
+{
+  "protocol_fingerprint": "fb47569c91d74a557e68017944271dffe5d169da2bc2c934371f8b9cb387e699",
+  "dataset_sha256": "ee300b032eb566134f81545d0a9b530ae414e5a67e7eda0bca1c8299d582a7b0",
+  "metric": "Original per-query candidate list, first target positive; exact text equality",
+  "provenance": {
+    "protocol": "paper-baseline-cpu-v3",
+    "model": "wemm2b",
+    "download": {
+      "repo": "tencent/WeMM-Embedding-2B",
+      "revision": "bbd6cd4bf52cfc6716f752a2df80b2706720bd95",
+      "path": "D:\\DEMO\\superembedding-storage\\official_models\\tencent--WeMM-Embedding-2B",
+      "files": [
+        {
+          "file": "LICENSE",
+          "bytes": 24546,
+          "sha256": "e87f02efc35e9bdde65c8cd5cfa26fbd3a8dcb209c5b82ed91b274b2ff643b53"
+        },
+        {
+          "file": "README.md",
+          "bytes": 7993,
+          "sha256": "c194dcd545e03e2b0806ffbc25a05cccdd176964fe851a04713a177cc64fc968"
+        },
+        {
+          "file": "additional_chat_templates/sentence_transformers.jinja",
+          "bytes": 1452,
+          "sha256": "69c72e7d4579f377e15c79de4d4bf5964f929ac2cf8c1b1231f95940ed97cd97"
+        },
+        {
+          "file": "chat_template.jinja",
+          "bytes": 7755,
+          "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+        },
+        {
+          "file": "config.json",
+          "bytes": 2853,
+          "sha256": "f6e5925cba6a907adedb9c86ab61f336947c4010eee3bf8583086cb90067eec2"
+        },
+        {
+          "file": "config_sentence_transformers.json",
+          "bytes": 245,
+          "sha256": "7957a6bc6c8f20335abd7b4e55d433db830551b86be932400a6a1200a28d4bb6"
+        },
+        {
+          "file": "embedding_chat_template.jinja",
+          "bytes": 1086,
+          "sha256": "7c3df2aab83ab9096428ec27b6b99ad87c4790418b830d119957634f28c677ba"
+        },
+        {
+          "file": "model.safetensors",
+          "bytes": 5441695216,
+          "sha256": "e1a1ad752808c26965aa97d37bf4a9bca71d838513f41e83790cb1e71cac6e59"
+        },
+        {
+          "file": "modeling_st_wemm.py",
+          "bytes": 3180,
+          "sha256": "521d02c1c60ae727cc9dc6500cdb0b28c53b259e0ce3d37197920a33ba4dd333"
+        },
+        {
+          "file": "modeling_wemm_embedding.py",
+          "bytes": 1205,
+          "sha256": "ac255e1fad459cc3e68891d6c3327f4486922aed02fb3c5c13fb53277ba8e94f"
+        },
+        {
+          "file": "modules.json",
+          "bytes": 106,
+          "sha256": "be6481eec30eb56a0020baea14d5fc6d14a2134a44c6485e3595781cceb04f8f"
+        },
+        {
+          "file": "patch_sglang_video.py",
+          "bytes": 1983,
+          "sha256": "c20c73e803a634e5dc54c39bc1c20cec0e7929c0320121769268a3dfb2e58a2d"
+        },
+        {
+          "file": "processor_config.json",
+          "bytes": 1192,
+          "sha256": "d601e2fe0de1bc11852de3aa843f01a1677ca84f4dc743916c9ce4b8d30fb384"
+        },
+        {
+          "file": "sentence_bert_config.json",
+          "bytes": 950,
+          "sha256": "9d3d5f6695cf12784c13b03dbef305c80ee2bdf378abf5cb15ed032de578d00b"
+        },
+        {
+          "file": "tokenizer.json",
+          "bytes": 19990378,
+          "sha256": "40e444c744512f423da4c8443c47c21e22ff76056ba4e9796a81c04c13a9daf0"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "bytes": 1148,
+          "sha256": "35db43580d8c551641a5fe1d1daafb10e73d0a1243db18ff7bc00413a6152ff5"
+        }
+      ],
+      "scope": "Official files downloaded and hashed only; inference reproduction pending; remote code not executed."
+    },
+    "scienceqa_inputs": {
+      "parquet_sha256": "ee300b032eb566134f81545d0a9b530ae414e5a67e7eda0bca1c8299d582a7b0",
+      "image_sha256": {
+        "ScienceQA/image_0.jpg": "86aa8c009e515061029cc5d049f9bd9d6c2744799d936b6cb80c47a9218ed68a",
+        "ScienceQA/image_1.jpg": "759b5294798dee2b18abaa8714468bdca7b2c3a0e5a05e9b36730f28957cd0c0",
+        "ScienceQA/image_2.jpg": "39fc7f8388ef3fb68c0633aae43da25fafb9459b0a469f9b696716a50816dfbf",
+        "ScienceQA/image_3.jpg": "eaf7f504f8960e70aef6e83f0b23961e3366c8ea011955aabfa8c45641024f5c",
+        "ScienceQA/image_4.jpg": "446c42c0d726c95e7f98c1f1c2a768c9c0d65838641cbc7813572015f358a123",
+        "ScienceQA/image_5.jpg": "0098679c9ef5b212d1bd8a22cc2315e9e7e143583336153cfedf28cd20cfe3a8",
+        "ScienceQA/image_6.jpg": "4efce8956fae4813cca0aa67f1db2952583c9afb9dae1170f827f359e59660fe",
+        "ScienceQA/image_7.jpg": "d62d61b46223c58bd1b6de24eaa9a761cc64b72b975c4ec4f4a6bf7aca86f3f3",
+        "ScienceQA/image_8.jpg": "853a89adb44664f507f2466d07b92364b9260bb0c8e8360c90cfd563a309478e",
+        "ScienceQA/image_9.jpg": "1f7291d43ad40d0446896e50815eecd06b6034e19ff5f03f205bac8cc152e95c",
+        "ScienceQA/image_10.jpg": "47d880b531cd30e81d76c9b6e45607d35583fde3bd5f84913a62f476e3887917",
+        "ScienceQA/image_11.jpg": "62ced68c67a0133048558930de17347683bbe51a808e549e104b4da106ec42d0",
+        "ScienceQA/image_12.jpg": "1e921ae8d3da488998c93255050782a296b64bf7c5e0dd13a365eb9018ce87c8",
+        "ScienceQA/image_13.jpg": "b5539d36480ecc456963c5fe13dcaa2bf656a608bf43ddae8bcda379d8b275db",
+        "ScienceQA/image_14.jpg": "2a87a333415c2ea94a863e3dfb6b20a2e2f09c143ae07235f5b067c170b4ab9c",
+        "ScienceQA/image_15.jpg": "ffb498c2d3f2cb00a721777eaf0f10fe973824fae3dd75bb42d5c65188358cf5",
+        "ScienceQA/image_16.jpg": "c3ef3387845764aa96d83bb771e4f2cb316a07b2889f373f3a8695c859fe30a2",
+        "ScienceQA/image_17.jpg": "90659389c228d0daa84188774a4ce1a2a5ee3eb90cfc0d2a843584b3dc044af3",
+        "ScienceQA/image_18.jpg": "bc91b59799df26d6fd5aa80ccebe1200c8d840d89078b269d6f86fa3ea05bd5f",
+        "ScienceQA/image_19.jpg": "40cac0ed078c68a9d0a78af1a1bd12fe1d939d4a875bde6319388c53cfe86e47",
+        "ScienceQA/image_20.jpg": "476092dab56d62a130bd02b4ab65f9afe23946006775e2080a18845871cd1b38",
+        "ScienceQA/image_21.jpg": "8e14383e6e22a802c030995715d48e2a8b06541eddf6a740b876813aee8f6d6b",
+        "ScienceQA/image_22.jpg": "9fc9ef8f649c86c0e27dd5563a2e66faab5d467628282ed1e5249941c9d74d42",
+        "ScienceQA/image_23.jpg": "401a5699d1606dbcc1753b49d6a3c4eda651422ecaaaaede78ee0d8fdd45ccd5",
+        "ScienceQA/image_24.jpg": "50aa6a79fe8dfbf5718c5ad9bbe54b780f2953cacbf91b88bfd19da01a9417bd",
+        "ScienceQA/image_25.jpg": "b86399eacff7f92019a0b8510b10bb25d4f5fb9d8918dce6723258b7d0f2e02b",
+        "ScienceQA/image_26.jpg": "ed4bfe045d5629c92459928d21c0e330c12555aaa2f36b66c3841e8e888be11d",
+        "ScienceQA/image_27.jpg": "0b5f5dc8aaadf54461d9a5f55fe58a96a5ab8dd8afcd759383b27f1b628b36d8",
+        "ScienceQA/image_28.jpg": "66688bab528882ae299270705c36ce7f2de0fdbbac4d8b377e837a7c61c3086b",
+        "ScienceQA/image_29.jpg": "322e9888a15d09e78168bf8179b8edac4264a4286535de0f609a7bb0616159c8",
+        "ScienceQA/image_30.jpg": "b3e8d07ff5cd00de470c51a5d2709c9f93bfc8a974d5c05e0f60d9fae0ece07d",
+        "ScienceQA/image_31.jpg": "4b9663744a08291c540d08572eda724187661fc2f16370d949bfbf91ccc27507",
+        "ScienceQA/image_32.jpg": "4f66a7cb660e131694408e576fb3f043d2400d3bb176c8ee10c94ea071a48bbb",
+        "ScienceQA/image_33.jpg": "7eb5e51968e0de1a26cfe57e49ca2cd5aebcc772fe1981c83dcef1701ebb8bf6",
+        "ScienceQA/image_34.jpg": "c3ef3387845764aa96d83bb771e4f2cb316a07b2889f373f3a8695c859fe30a2",
+        "ScienceQA/image_35.jpg": "77e4ea914dedd7652a60652adee0631c27d0a78ac47fa77c308aa951aeb02d2e",
+        "ScienceQA/image_36.jpg": "46562ddee94c79c696799a167f82a9c7828f885c0f347e69066b196d7f9d5e26",
+        "ScienceQA/image_37.jpg": "3cdf80661bd21526f42d464c3abe7874f1f6fee9059490a3e71650d16af5b9a7",
+        "ScienceQA/image_38.jpg": "880e23baf9a1a6cf6c6658c2cc1ffafe5db72172d39b26ae28572c22cda1ac7e",
+        "ScienceQA/image_39.jpg": "17cd163f224326b8af5915e93d513fec9b865b1f43935b549569c70549da9907",
+        "ScienceQA/image_40.jpg": "575e306026f1e846ca5f9575ab42c832e25050b2cfc96ac330a906e8da54783d",
+        "ScienceQA/image_41.jpg": "fe313de62f710c22b4b9a93cfed11c5c2fb29b60793a5a4d6fc7c7b8d3013302",
+        "ScienceQA/image_42.jpg": "1b45aaf42ec23c76b82880ea5eec521c4e5d7effd3761e8e5fa39768086ee51f",
+        "ScienceQA/image_43.jpg": "ad635fa9c031f3e918bd3575a4f47ff6ff09dcc476fd8cff6bc1894236d8953a",
+        "ScienceQA/image_44.jpg": "ce228e86e1df222dfa7a4203eda75b8623a01472c16c4555133e15782bd724b5",
+        "ScienceQA/image_45.jpg": "1901a16e29ae9de9ef2d3f12b18c28addc2c4de831ec25e1ecf34b8dd0c49c05",
+        "ScienceQA/image_46.jpg": "2c82b161586929cd8d6e6b8e77941d0504e7cb25a331eb8ff9297f1f43d68d27",
+        "ScienceQA/image_47.jpg": "7ac15031b5b238bae441de509e64810b42f300441bf663c4812e2a70a55b7255",
+        "ScienceQA/image_48.jpg": "bbe1e1c8106e1f082db298de12ced6a83443802db8e0b40002ca4f0b5f661d75",
+        "ScienceQA/image_49.jpg": "10b2a899760afc9392708cff8353a0e3024cad723c9cc5c3abf802427bd207b3",
+        "ScienceQA/image_50.jpg": "4d8e108d48dea4a7b44a58642b8991b1e1b5296075ab0e923abe72da2c86404b",
+        "ScienceQA/image_51.jpg": "8779dedb5605936566cc3fcb74ac82f8b8bec0131cfab29c16c3cfd539352d0a",
+        "ScienceQA/image_52.jpg": "a89d6392777850e5a58d987babba524793b7732cfa79e0fb0ea94fd13029ee2f",
+        "ScienceQA/image_53.jpg": "25d1de42275fbaf8b10231c1c7aaea40c5fdff805b4465b69f3ab0acf89761b4",
+        "ScienceQA/image_54.jpg": "16634b5ed50defe6e32da221259c7b3d374102780fff1114d39439bf1f4d2c2c",
+        "ScienceQA/image_55.jpg": "8fe12f637a1caf321d3a30a6805bb1716313b11d2686f1eabc93ab9929d13d41",
+        "ScienceQA/image_56.jpg": "f6ff8f24a9ea0bf537a447dffb0a227c080d13129b32a666e0c285f34f48f579",
+        "ScienceQA/image_57.jpg": "59afe9f9ac47dc04cb60e3d388df65d7b6f78780295c197b339996b4a8d73aa4",
+        "ScienceQA/image_58.jpg": "ecf928e028ff50519997e0b93d0b7c0b7c4f8f75e273d51d9bad9b6decf69ead",
+        "ScienceQA/image_59.jpg": "7e91cd86ec8c78a07ebbfe05f6acfad109ba1fa2a8bfde6e7d316836e6bfd76f",
+        "ScienceQA/image_60.jpg": "2b1787ec9e8d2e7294d15de7e011d4e25cc80125fbe9ab7e5536a1abebb549e6",
+        "ScienceQA/image_61.jpg": "15701af5c4f529564b30ec9918fbd2dd8e51d8f1f73ef93769b11e8feff79cdc",
+        "ScienceQA/image_62.jpg": "c7b8c45d2db5e3224b6510cd7c615c1c021a3ee6091d6298de4ac0cbc497848b",
+        "ScienceQA/image_63.jpg": "12956104de51318739b740a59f4922bce49322b08a329c5d561e0f225bd885d8",
+        "ScienceQA/image_64.jpg": "6ffc352dac50de75e633bb49c5234e996a32a7b133fe2648c5031b40334353c7",
+        "ScienceQA/image_65.jpg": "9d49f7777353a16d8c89f081fe04eec629d48e9e071642ef02877cba7f0b5f66",
+        "ScienceQA/image_66.jpg": "a5afd218b31b8ac02398e37d6c16f53e19121ac43b559928815990b2df17249b",
+        "ScienceQA/image_67.jpg": "10a8e120fdd654edabb46e780e6ee3f67ba9f85bf44c130cb48b33488602eaac",
+        "ScienceQA/image_68.jpg": "4dc91b6a50bd99d40f160c684eb40c909e832bb3ea5ae48b615c3141e6c1ba92",
+        "ScienceQA/image_69.jpg": "e73a50d24a3f20fac7a934f7a05030cc42de633fa8e316cacec2207eb0d8e118",
+        "ScienceQA/image_70.jpg": "971be5c3e68f1f86d357d8abec57c149722cb413368b2f663c0d07025e944075",
+        "ScienceQA/image_71.jpg": "a0c063f726d9b2ddda5111cecdc13dcb5e103da792f91fbc512845fee35183f1",
+        "ScienceQA/image_72.jpg": "0bb86a86618bac0cd5f752a7ed15ebbc260be566d39a76a79ed9dfd99eb0f1c3",
+        "ScienceQA/image_73.jpg": "0ab85a23fa60c1185a40c87edf5af0865eb302bd268506ec4cd20f2c2109abfe",
+        "ScienceQA/image_74.jpg": "0a618b9199447ad1d692326229392ff3e2ba0c563ebcfa10558e2f33081b8efb",
+        "ScienceQA/image_75.jpg": "dcf5bfeaa9b6656fb35e80c60959de87c78d0c935386be3e24704ac33879d157",
+        "ScienceQA/image_76.jpg": "b177c353974e26e587e1f8f56715c5e618acabc8e4605a84bbcb525ede5fddc2",
+        "ScienceQA/image_77.jpg": "7de9a2360b56403ae8393e451bdfb9b4fef22208cd18d2a5775fca7a4387e816",
+        "ScienceQA/image_78.jpg": "e44db98b45ba6432107eb46bd58c71e31c701fb2fa174e42ce7dbe0cf4350bbc",
+        "ScienceQA/image_79.jpg": "cf13ca24777a9b94b4ccaa8a0655ea559fc057a710f4c5c00efe1668797ae79e",
+        "ScienceQA/image_80.jpg": "cfbd86ef393bac6f7d61aaa96b080629394adb78850056ac000d09a041fce7ac",
+        "ScienceQA/image_81.jpg": "598bea0ef1beaa5e8a638c74c7aa4364cdf7fd7d95ad68e8ee0ec1b1b7693872",
+        "ScienceQA/image_82.jpg": "ca52935236bcd8783cd762a786e34e946c4f5219c2f20e361922e16f27aa7fa9",
+        "ScienceQA/image_83.jpg": "a725b7be028f4aeebcb02a5d4d589512b6fd56fb5176bd4069f634a541d0e28f",
+        "ScienceQA/image_84.jpg": "516a4d5b4683cd03c86eb8e64f22e768a7e65662e5a848cc58e66ccea96b5320",
+        "ScienceQA/image_85.jpg": "fcd34f08bf253b9adf327d7cecb988cc2723b1010bdcb49a691d122fa51c7f5d",
+        "ScienceQA/image_86.jpg": "67d3ad4896eb1918f35b188cf27b04c4d8755cd5558e6edafe59986d9062b834",
+        "ScienceQA/image_87.jpg": "c7fdedfc48d449f1902d7a6544c748b73ae634b77c8feb7745a8adf8e0a0c91c",
+        "ScienceQA/image_88.jpg": "b42022cdc6db599df661a6a28554ac79e4ee1bcda2e55859eca2b2e7a7534b83",
+        "ScienceQA/image_89.jpg": "b3fae1ffd1372bda488c61a7a4527a2b62d3f09e00bd372a5df148e38a1611ca",
+        "ScienceQA/image_90.jpg": "a2c9b0080201b08c4737a1dff9aa07c139dd4f2781a940366e6c840dc7a6dbcf",
+        "ScienceQA/image_91.jpg": "0cff7451b7487ad84e598b439d23cf01ae8ed6bf0465073c4f1b0c932d1ea2c7",
+        "ScienceQA/image_92.jpg": "ff5d86ac652258a1727bdb84858c0b2344c5340c276821c86df6c1985535c896",
+        "ScienceQA/image_93.jpg": "3e5aed62884fac8efadc0d32a7733b54a7de754f1711096abd43fbd358fdc226",
+        "ScienceQA/image_94.jpg": "5135ae0b924e1f278c6cfe008e244c14154d21b9aa6e6510fa42b4c8628142c4",
+        "ScienceQA/image_95.jpg": "39fc7f8388ef3fb68c0633aae43da25fafb9459b0a469f9b696716a50816dfbf",
+        "ScienceQA/image_96.jpg": "46071032853f2830d2265286622d08d2cb113c36b10e562a71e96e9eaa6f8c3e",
+        "ScienceQA/image_97.jpg": "80a8925a97839a177e8806e7a55239621aacd8ae9d527d4773badb409e974fbb",
+        "ScienceQA/image_98.jpg": "de4a839ee018521e7742c5cd7f89170c2b0c9e6c6a81d20dc6b44e216f83f71d",
+        "ScienceQA/image_99.jpg": "08611565ed031729c7a69126c88e9ce6ba1cdfc02580c1293fe97c36bc518233",
+        "ScienceQA/image_100.jpg": "351da386174babe48bcfea254373bac617c386309a5eb3933b7702b1fab32484",
+        "ScienceQA/image_101.jpg": "8ec8b21c3b12b2be0519b8c9813ab995789213bff64900b73cdd49989de0c830",
+        "ScienceQA/image_102.jpg": "0f66af2b7d43a766772a1e3ff9bef0f2a3fafabd33b62d33475d4267be1dbe09",
+        "ScienceQA/image_103.jpg": "3836038bd411a8a11c0d078f40c7b3790ba55b9878ea66caf4361e2077651b3c",
+        "ScienceQA/image_104.jpg": "0cac74589e7e60f27c43a9e3847aed2ff8765399bf9c2679da3b5c0a33422215",
+        "ScienceQA/image_105.jpg": "3106ddf8b0d31ab509c8483fe15651cff547b49dfe06f731e3d9bbe679de4d75",
+        "ScienceQA/image_106.jpg": "e4d5680c8c07849491600daf892276e901fef6d5922655c9d8fa160fe4164ab9",
+        "ScienceQA/image_107.jpg": "8b5df88464a719e0967e90c65d659133838d05de563983ff70bc4d8549102719",
+        "ScienceQA/image_108.jpg": "c0cc9530599b448037125e40115aba70aa717ce6a24fc96a8cabff0e6e033bf7",
+        "ScienceQA/image_109.jpg": "f9ca6b4ad4ce456993695453c9864136d5f4b5e9f2cd19936d335a6568cc09aa",
+        "ScienceQA/image_110.jpg": "59ad9c3d71dbcb8899f22a5bdb23d1021f5b5eaef2d947dc27359ae0fde17526",
+        "ScienceQA/image_111.jpg": "f30daebe9e3685126b87d0e2ddd301c4cc30e5b34795fa5d8a17cb8c7550d0b7",
+        "ScienceQA/image_112.jpg": "a150ede93aa1e62558a5af0828dee1b8269bfb48db186542f9e5464a0bb7b305",
+        "ScienceQA/image_113.jpg": "aebc30f8eaa384ee8258ac7233672c742c5dd8c5b9e6f5f8c199e298a5219064",
+        "ScienceQA/image_114.jpg": "96bc9f17146bd4c0966fb254a12f5e62ac48e5a49619ed3680d6d61699ff25c6",
+        "ScienceQA/image_115.jpg": "08d1f92cb4530f61c77ef2cdd619a84da588a55c0bea4a078ce5b21183d6dc68",
+        "ScienceQA/image_116.jpg": "adadfd09e27483ecd863edbdcf7ff841d614fb21b13532a187e55b709da6f1c7",
+        "ScienceQA/image_117.jpg": "433dd6963ee78b4e1d9ca1c6b78287a8c9ff0dbeb087b8c9025bf4ffbb9238a5",
+        "ScienceQA/image_118.jpg": "8320a9416996462fd510455c939d0431adbeb1b410bd990a4e205076e721495f",
+        "ScienceQA/image_119.jpg": "c0a52fcc6f0e1c120455c63a5322e6f365d719650737e55acc8ecc94b6bbf60e",
+        "ScienceQA/image_120.jpg": "c8d493e6c94b7b9bfe7af7212e41d76b424dd1cb2db05ecdb6c32db85577fe7c",
+        "ScienceQA/image_121.jpg": "e57e838f302ae3eb16d05d7eb302fd33f864a19cf4b85d1a1629c20482ad40ff",
+        "ScienceQA/image_122.jpg": "5f990003c16bd406c797d2479432b8106a3bc87d099dad5300b6d6822c9fbb05",
+        "ScienceQA/image_123.jpg": "44d873afcd54999d1c28c7ff921db329e3fa1a9949f32aba6cb72091c13273b6",
+        "ScienceQA/image_124.jpg": "30c967d5244f62958c22d8c0e8baf29ef2df47ddeda1c1ccfaca2b65721ac2f9",
+        "ScienceQA/image_125.jpg": "adb9702eea8bca64de8dae9e79f8c673a35cbb27192be3621744ea34acf84976",
+        "ScienceQA/image_126.jpg": "ac4564bbcb731fa08af105c8ea9d15931af20ad51bda9674d2fc02c4937548c4",
+        "ScienceQA/image_127.jpg": "c0a547b13e329c51323e751835368431127435774489b9af298c1324b8d4a4b2",
+        "ScienceQA/image_128.jpg": "f6f7a0d962489209a3d3a27aaa0f8af3ccaf0f6bc0dd25bcc1d63a9b41750ac2",
+        "ScienceQA/image_129.jpg": "5a3941570938d8ec612255c9727069dae252efb1a170e5cf1b9ee35670ccb3fa",
+        "ScienceQA/image_130.jpg": "782b401cde7f77211141f363f84d20fd6b469ccb4d9f3fdc59e7d21a85c52df0",
+        "ScienceQA/image_131.jpg": "cd4fb5706b57d92713c07339767e2a0e4865453ddf5f6bb50450191c5ea7e121",
+        "ScienceQA/image_132.jpg": "074efe0e4b8f5abceee70fae0888dec7258f899a3323d0acb28543b3dd6e8255",
+        "ScienceQA/image_133.jpg": "e5c9489dc8afda8c28ca7dc3c3cc398c8f3b35e84e99054712808eccf59dfd78",
+        "ScienceQA/image_134.jpg": "3f71e06c90622ef3bd075434900598d1fa5d89a4abb32c8e4f23d27d68b82c67",
+        "ScienceQA/image_135.jpg": "9d0cbdc9ee9dbf098ae5676282e481911cdc0ba3b0f70cd61c13e706b54fef84",
+        "ScienceQA/image_136.jpg": "4281b4def04def619fdfcd8b7cf36216025292b890c3a71f7c72225e3b7526be",
+        "ScienceQA/image_137.jpg": "6dc09dc70518dda50445dafb0dd5abbe887b7db73486e601774d43717144dae6",
+        "ScienceQA/image_138.jpg": "5aa9677dfb1a4448fae46c95bd509ddf8eac2e0f8947ac85b8b3c3408e23560f",
+        "ScienceQA/image_139.jpg": "927241b90a9f7e8a824b65d5b30c6d906a6749a2a18c62c5a111ecc2b78627d5",
+        "ScienceQA/image_140.jpg": "3889328e5f8eff5a6d07548f7563843e936657ced25d0fbfd33e17f9b32f619c",
+        "ScienceQA/image_141.jpg": "22027954ccac33bd26d464b9654e8c33e0c6d711cf327368fb69301032b090ad",
+        "ScienceQA/image_142.jpg": "eb2f19c3e11e86b06b00150f037e7773aa3ccbec1e2bc408f4d8db0ee5525fd1",
+        "ScienceQA/image_143.jpg": "676aa3dfb8ab1a35b0c54f8137faa0596a18b06dcc8b3be646ed5e57c6eee7d4",
+        "ScienceQA/image_144.jpg": "539a323262c2b9a9f4978fecb1811191bdf5750958247f56c324814af517213e",
+        "ScienceQA/image_145.jpg": "e71fd6fe0ebc9074f5c92e868ed8fbbde6e7ff5b4d0d47271eb6d3cc0a0f11c8",
+        "ScienceQA/image_146.jpg": "d7a774cab5ef6285597a87a304b3a0295f747e67c32e623bbd9aa06cf4931c03",
+        "ScienceQA/image_147.jpg": "49b0b677844e54e8089d4ff21b1e1d231f6f6792865ab269393c49ba3bdd112d",
+        "ScienceQA/image_148.jpg": "8d82ea957b68f8623afc078e4cbb571938c6e7adbe90a47cdcc9b46aa6a41068",
+        "ScienceQA/image_149.jpg": "bca7ca9b7188fad923cef590942741d051cded7a5dc03fc1e16cd126fa7f4587",
+        "ScienceQA/image_150.jpg": "8c646072cb109c7580b522f732471bd55f0128c02d35167f327f7b3a3326446b",
+        "ScienceQA/image_151.jpg": "4f3a620f1cbcb2164db2971917b378f3b62159f59e7b12429acbc96ff63159d7",
+        "ScienceQA/image_152.jpg": "4736b4fa623df382652b94e37063821024abd0890aa714b4df578105d44d1fca",
+        "ScienceQA/image_153.jpg": "1cbfaa4bacaf0ccffa383f23109c8aa65e78cf39eacfa73e2e71205facee36d3",
+        "ScienceQA/image_154.jpg": "83fd24d90cb2ac118b409303181f53ddd42b7205351a6d99d75133e6347250ed",
+        "ScienceQA/image_155.jpg": "b545ee519e1acf107f98d7a023534fd94f507b0b73fb710da3e9125ebd88a167",
+        "ScienceQA/image_156.jpg": "8712c02e50b056d7263f6ca4ed0862906e5a9298f52eab797ea70163fa451992",
+        "ScienceQA/image_157.jpg": "21b5bc430ec362f97832845f1ac43232bae6bd2b90d531cd82d948d54f7cda0a",
+        "ScienceQA/image_158.jpg": "e3672030866f60720a4edf5299809e63731930fac8e2f1c63a6171bac601786e",
+        "ScienceQA/image_159.jpg": "0e1eb08b14bbff1afcf764acffd330ee4eedc22bf1d4c8963ea1f572b59c0b17",
+        "ScienceQA/image_160.jpg": "b790aba34ca0a213f9b54f18e8ce5bb6d26356b02c32e38e93c3cd15c63b19b7",
+        "ScienceQA/image_161.jpg": "7dd533ff74768328beceb6ca71e459af0258d9bc2db65dbea46d91038bfce6df",
+        "ScienceQA/image_162.jpg": "0050aa959a38f772cab3dbddc1debc1e0e127efcf2f377678f9983f7b2b79d02",
+        "ScienceQA/image_163.jpg": "b026c66f4257d7b6ac01b0f63167bac57fa5f31e2d289ba50ff5967a0bef5962",
+        "ScienceQA/image_164.jpg": "151c8e3fd7e1a355d7c957577c3707d4218c5ddb5fc427d6d5e3cfc564206748",
+        "ScienceQA/image_165.jpg": "149e6a224baf18c015e8ea923455bced133fbc1c68070e4c4ae69ceff8f0c6df",
+        "ScienceQA/image_166.jpg": "0be917e17777d4956ea49557564e49d7fe79a2e5b6f3463df006f97b1fe91b21",
+        "ScienceQA/image_167.jpg": "5f688c75d9578c9239c64ec82110ffc37924b05de125dce57bfafbe35ee84e03",
+        "ScienceQA/image_168.jpg": "288353f3a44b1ea56dd2f7af196dcbd25a671af05859637d1a4aa539cf385648",
+        "ScienceQA/image_169.jpg": "25a384114562bcf5d80be90ff172629cdd1e4e6b0d68e9305353bc5127e59695",
+        "ScienceQA/image_170.jpg": "96364343a0dfee908e592e63d9f938e0273c62587068fda47ee06a52ef0c9859",
+        "ScienceQA/image_171.jpg": "a99a8d9a3f18e61c0bca781f42ee4630b7dd170fcd94a12b9713fd9e5b3ebbf1",
+        "ScienceQA/image_172.jpg": "95192189b825eeb87b2478ad71c3c81bd81a6849ea2736ebf1a604af3619f8bb",
+        "ScienceQA/image_173.jpg": "c08531f9c952fa386eabe3929e5c4ceaf1d9a55c119a68af57e1956e59b1a9e6",
+        "ScienceQA/image_174.jpg": "f05fdd40bbf91f96e7ad046ee3694aaf514b7193c01f7755015a10f72dc5f25f",
+        "ScienceQA/image_175.jpg": "54c986b67a9d7943728e5b0ac2ffc2698babe2cb22eb94df3b5f03a64fe3ff98",
+        "ScienceQA/image_176.jpg": "5b62850e4e0b7c175206fa9f44a02bdede381cbcaac43d73e3776a0312ce0a77",
+        "ScienceQA/image_177.jpg": "ae098cf17ac4e1c42e9100e8792a145a97e048e9501b026e7aea6106d52ebae0",
+        "ScienceQA/image_178.jpg": "5f39585e0f4811bd618691545bf4ae8f79cd06ca8c7e743ce9194cc91e4e8102",
+        "ScienceQA/image_179.jpg": "c2218702e9836ece3029482809860ea67c9798c619082801139e9e7c7a1e34d0",
+        "ScienceQA/image_180.jpg": "ae2b1c1b81b07fb98ff67f56dfbf07fea1464494c655e7b42b3aa4d158935ae6",
+        "ScienceQA/image_181.jpg": "a1961d97f28579b9ce0c8c6ec6d1455d882491635064fbf660e8adab8a45b9b6",
+        "ScienceQA/image_182.jpg": "abdf6deb3700e9b8fbb71a492e5bb8516a5f84841698d4dceb617ed7dfd72567",
+        "ScienceQA/image_183.jpg": "ad688779ab510739b49bad114c8ed852d623ee11ad8b75e353f58d832f7acdd8",
+        "ScienceQA/image_184.jpg": "22899c9afe8155a41913b8cc74e6ba320fef2956ea25b27e69c1118d8022a89a",
+        "ScienceQA/image_185.jpg": "9fae7322e6af711851baa7da1d33bf40929b119701178924db931ae7a535e07f",
+        "ScienceQA/image_186.jpg": "914b92dfb43a08f919615982231958deb35538deb1c9a5c89afdf9f838c8c7d4",
+        "ScienceQA/image_187.jpg": "5b1f3dfea8bc0a733ff830dee4e3a6cab993dd6d0ab2364b557170a3f1fd6f3d",
+        "ScienceQA/image_188.jpg": "6f2acad21597cd2eae206370016a1755f564044c5814e68b34aa17824e1f7635",
+        "ScienceQA/image_189.jpg": "9c31ed3d751203c65bb5bb07fd47fa322f753c94fcf444d4126d7089594b2aed",
+        "ScienceQA/image_190.jpg": "d70415c68a1653d9f4e8744dd032fa962a4ab2fc4d7848927fcc34db4efa3caf",
+        "ScienceQA/image_191.jpg": "5074a3fc60322ab54500ad56eb4a55e5b6e23357600f3b355d035ed5ee3eff41",
+        "ScienceQA/image_192.jpg": "aa1989887e03f71438baef617936c21ee6367e53a0e6bf95571f78646d863223",
+        "ScienceQA/image_193.jpg": "88a187041d4ba97eb844f6a70d6043fc9b88baf1640cb3680a7919334d91f3de",
+        "ScienceQA/image_194.jpg": "82087ef70c2458169ecf3a44785114ab6359866ce683c4f16e310b13a8043e1b",
+        "ScienceQA/image_195.jpg": "bb232dc85dd44ce0fe1c56f290f39d1a74bf0462bfe17abe84411b8a90efece1",
+        "ScienceQA/image_196.jpg": "741a62f1df138626c02299b51544dfc79163992730c3063717da1134e9638602",
+        "ScienceQA/image_197.jpg": "8b45d453e8670c77f93b9b5b80ec9801e06c9f772cebe9edbd07ee7576c3f833",
+        "ScienceQA/image_198.jpg": "b0bc71ce5465cfb4cd75a6cda8f8d29cd6d3a712eaea7626e5ec90a0ba05adbe",
+        "ScienceQA/image_199.jpg": "5f688c75d9578c9239c64ec82110ffc37924b05de125dce57bfafbe35ee84e03",
+        "ScienceQA/image_200.jpg": "b761fcbca7c7ee5785936e14900e0aefd575929b2293e67b08e59f27bb84285d",
+        "ScienceQA/image_201.jpg": "0b6b94cf4fbd77ac4fdb802a395a3002a3dd6ac96b6e980ee2f0d17b28fd13d9",
+        "ScienceQA/image_202.jpg": "80b26403b490387657668f1bea4d6829486dde7ab993bd51da81d6fb881acba9",
+        "ScienceQA/image_203.jpg": "91250e533b228a4f7cb4d6a47d74b20905966b4c2769ea4c4a98e353c30f4e32",
+        "ScienceQA/image_204.jpg": "6888d264dc2e89d119633d57e7e693877fc098b829e21036c86a9ec56266919a",
+        "ScienceQA/image_205.jpg": "d222a20f521780ce54b392f08beda62b103d4d0e4ba9b8eb34a49163e694890f",
+        "ScienceQA/image_206.jpg": "a34244565c0f8d41c461038a6d287e653a0c3ff6c536492c9ff54d95e14b7d9d",
+        "ScienceQA/image_207.jpg": "2bb35dfda062870d2550c08bd7dffab2a4e290b8bd68d498b6c4aadec432ff5e",
+        "ScienceQA/image_208.jpg": "9ef6952fc1a0eaa41a26ca9bebd92c1091722953931f30caaeff92ed715c1c51",
+        "ScienceQA/image_209.jpg": "e40b288be778e44c336920c76308427f15f5e8df0c6f6078958f41d28a1d9533",
+        "ScienceQA/image_210.jpg": "ca24a01d191bfc6f34f9074e777b594d5a38863ad025bea0e1d14dc3bc1b4d63",
+        "ScienceQA/image_211.jpg": "450b1cda3b436e81c3521fd97f05530fd926046d8ba27367438a97748cca727a",
+        "ScienceQA/image_212.jpg": "556421347e18855d9b2ca4bef78e4ce45952b5048ae5c62b818e3fe03ecb7a24",
+        "ScienceQA/image_213.jpg": "33d310bd143006b365d6f692d42ce3167fd431588826e2b6d19e4d76d6377adf",
+        "ScienceQA/image_214.jpg": "25cfcea2ab1720fa87d5b6b0f12e23eb3bc13669f9db7da99df509427c117fb0",
+        "ScienceQA/image_215.jpg": "6889630272a660463f3ee51dd0c14e8a3e0f88724b4c9db0738ea47d06b00a9b",
+        "ScienceQA/image_216.jpg": "385ccc55f650a5c40b2bd2413ef4beac90eb7b3995cfa8a1218e62e8bc7a7bb0",
+        "ScienceQA/image_217.jpg": "a21c7f86d710df32ee73c180d2a6555b611d3eb2d5d77ef02ddecdaf8c04813c",
+        "ScienceQA/image_218.jpg": "909fa6265aefe190a8d2072eec62b4c244b70484773ca1b58db3167f32f22847",
+        "ScienceQA/image_219.jpg": "80dfaa37a3c0df13b18232dd63380601a5929742223de797ace9526c2d41dd34",
+        "ScienceQA/image_220.jpg": "64538e242e3f3d3b5d1adf0ab623545bbbc2b60adb31162cb6d7062d459049d4",
+        "ScienceQA/image_221.jpg": "5fec074167d0f62deaf957b684e10c957b284c3102d36826136db0fd78b02e09",
+        "ScienceQA/image_222.jpg": "8a388580b1994b0adb8d7b1378f0686554ad76a7d08c20f84dbf98f1a0a45f11",
+        "ScienceQA/image_223.jpg": "2376168bda2cc575b1837bf7fea3434f12ab71d442e65eae6008422f0e6b42c8",
+        "ScienceQA/image_224.jpg": "cca1f4b2a0454189b3c8590fff724fdd38f970e093673e670719a01902a58f13",
+        "ScienceQA/image_225.jpg": "9d5c4035c38dd95eb55ea87645d7a8567d184ccf6c3ef03d0996ee42d9673019",
+        "ScienceQA/image_226.jpg": "aae53ad75a906541c2ebc3f123e8438db54211305976387c2aff8ee133539a5c",
+        "ScienceQA/image_227.jpg": "7e03484ba90cc009451d2429276b9d598d5e578f550a8d8c918c7d3b3f60d64e",
+        "ScienceQA/image_228.jpg": "38739a128e6f747027dd6b044400c40ca906aa352fa384c749a753d656c31f5a",
+        "ScienceQA/image_229.jpg": "df565f45a9e7a439e3f6e79f8717b0eca29b3426d939e7c6cf487c5505e03a27",
+        "ScienceQA/image_230.jpg": "5adcab2e4dba907510edc38304e16a5d893c34a5ecad59fbd5df0001d3b9f721",
+        "ScienceQA/image_231.jpg": "1b52216cb475560c8fce4f9fa26ea459b9d305f8530f59886ca15c5e108fb7a6",
+        "ScienceQA/image_232.jpg": "5ba494af0dbacc5183d5c335dcd29e1db13f56c34ea598b4b1ce4095515ed4f9",
+        "ScienceQA/image_233.jpg": "df3bff6a26d4e58905b7e524b99e264a417c31e24da3c4acc5b6711dce9fde99",
+        "ScienceQA/image_234.jpg": "30158708b84df13c4469ea33967eab4936d921e33d4a39239f1cb70ae9c42482",
+        "ScienceQA/image_235.jpg": "c1f77fa57a6ffb66c2d8934bbb517658028fd688c99daa2ceaf85e36ab35b2fc",
+        "ScienceQA/image_236.jpg": "f81b17f16bf02302fba96c433a9e8c6d1bd03b1238ca28902897c6ca58af5f18",
+        "ScienceQA/image_237.jpg": "2382fe8c70e7d15f3e469a18bf3b5cc92b80cedc56e28d523fb742146241051d",
+        "ScienceQA/image_238.jpg": "564546c42f926a24013f7d5da9df75ff8aa5e2dd918e971bca60afad342e8716",
+        "ScienceQA/image_239.jpg": "32fe8bdf874bb2bc0378df565ba7448e27c8d23ff1f5867acab16739f33b4d09",
+        "ScienceQA/image_240.jpg": "ff77d98df1e001506eba6af9855b84d7d767e5ddc814165a6f18c0227abadc68",
+        "ScienceQA/image_241.jpg": "dd0e914ca64c2eea2060580d5ad14bb912b5711207392ceee24392233c417149",
+        "ScienceQA/image_242.jpg": "156ea9fcc7ec7ac97c1aafed72d5e5c86c492cda16e245dc04402f2ae56cc3f2",
+        "ScienceQA/image_243.jpg": "235ebf4542d704b7ec167ce57bbebea0cb9a4a0305328a84e5e2e9045fbd10e8",
+        "ScienceQA/image_244.jpg": "ff7660bd703712c05654d4815d1e237b8e786ed047a43e86ec05ca80a4723a87",
+        "ScienceQA/image_245.jpg": "8b43ab999fed571f7b22b010f13eb01e6ceb3b6c3b90f614ce1916e17cfc51fb",
+        "ScienceQA/image_246.jpg": "c08a1c25140fdaa24cc71670e0a761f4b8a1748b62f83658f0350a988ef59bca",
+        "ScienceQA/image_247.jpg": "a08d949761b916299221e33a9554b3f4c24be5a8a5ac2cc7d7ea118640e963f7",
+        "ScienceQA/image_248.jpg": "b33a61e007c0f36260508f67526d06bfccb05d3ce39d37f808025c1f5dc21dbf",
+        "ScienceQA/image_249.jpg": "15e05d76214520950748d9888a87b3bd1e32ac7c7ec90d12b3e0b2f570c14890",
+        "ScienceQA/image_250.jpg": "57650980bf1973b8666d5f52d71b2b34af6f247f5c16dd761117373ef94576cf",
+        "ScienceQA/image_251.jpg": "ed1f2c0fbc42a5356b2edf05841dc620ffe24b1d264e32f08c5556f222b5add3",
+        "ScienceQA/image_252.jpg": "38c04930f72461c7d2012d7b4425a87aa19bd16f5cee11ca257be1716f26e9e4",
+        "ScienceQA/image_253.jpg": "3e5987f18936285ff76a3c4772ddbbf703c517ce476c34fc402fce6581880d48",
+        "ScienceQA/image_254.jpg": "0d9555c5add110c8f9bd19136a824524443c3bf09c6f9906d7e73b434e4ec445",
+        "ScienceQA/image_255.jpg": "30db4767379c4252bb24e8e6d16c3989ef79db943aa177decb1f610a6522ce45",
+        "ScienceQA/image_256.jpg": "df3bff6a26d4e58905b7e524b99e264a417c31e24da3c4acc5b6711dce9fde99",
+        "ScienceQA/image_257.jpg": "3e64144a48d95ab6fa74aa5b5b82e39ebca29e5c4848bfb768695253c9d78a88",
+        "ScienceQA/image_258.jpg": "37e4d384d90417fd60556ff0161e45e36c993806a50ffbfb71f00cca8ce10228",
+        "ScienceQA/image_259.jpg": "f2c956a6dcede41f1b7d840a3a4a26d8655a4d642a31c1b3392b236f60fdc204",
+        "ScienceQA/image_260.jpg": "fa9047efdd205febb16084d7c73ee91a96156c2c39a8d4ad3e5abe5721556298",
+        "ScienceQA/image_261.jpg": "01c91359ff327cf227868bfa3df83ab3075d5ebf31bd9825e045b56575082db7",
+        "ScienceQA/image_262.jpg": "1391abd6f69bdd70b305eb4a19d63b2800dfe80e6219a0298e87ffe2ba7e56d3",
+        "ScienceQA/image_263.jpg": "bd1ced73d72bee171762df2f874552907d3eff27403e03e49500606439fa223c",
+        "ScienceQA/image_264.jpg": "060cf530b4af233452da5ed9233e3535d1d22a8ee5dcb2f00b5e3fc036669155",
+        "ScienceQA/image_265.jpg": "44881fe23be57c547c66ab6faa74cac9e95f44af55503f60e068eb0d3593a70b",
+        "ScienceQA/image_266.jpg": "b4362a68a73d286b23529c5dd9094a9c8484ecbb6d0a598cdfb2926cd0b3c096",
+        "ScienceQA/image_267.jpg": "b1eb773bd303a3aa3b24a112f1ae1542b085148dba6af8f66e7f9475daec2174",
+        "ScienceQA/image_268.jpg": "69f3310d5abee0f918ecd11d14cf4321fc639a1cc50dedf14b21b275464c26cd",
+        "ScienceQA/image_269.jpg": "4261e06116af720edcc5f93825d981bda1a2c054722b55f83fd227695b159abd",
+        "ScienceQA/image_270.jpg": "5388a36c51fa626bed1c3243fad5d017382fc6c98fc2ce4940fd9475ecb49ddb",
+        "ScienceQA/image_271.jpg": "099bf709b080bf0081b488810b861d42c2b5e372f4a2f385bc209ecdabcc8f40",
+        "ScienceQA/image_272.jpg": "34e688df9c69809393804cc62952fe49ab140de7daa76d6992649ad84392face",
+        "ScienceQA/image_273.jpg": "a8e137834215787ce9880f59a4ab771db927a7c90cbd86c3dbd0be5e46bcfae0",
+        "ScienceQA/image_274.jpg": "a7ef22f5f3dca367c7d8ede5ba61f60ca86f9f1688d1f10d77359f7e6506a68d",
+        "ScienceQA/image_275.jpg": "08abe7c2fc43dc8f179a5edbc176226d2c11fe7c63c1717b6eb3ca216a0e165f",
+        "ScienceQA/image_276.jpg": "59dbed41698d68311b6a79675ce9c8964c091971e5f3e9d4db95570d9b4116fb",
+        "ScienceQA/image_277.jpg": "0336d85c07ae00f1b126fb4501deb9fc49ba2d886323a884955a28ba8464ef8e",
+        "ScienceQA/image_278.jpg": "c50dd216d0d374314eeaaee3c4a82d2dd4e3b4782b5c771bee09526ee767e6d4",
+        "ScienceQA/image_279.jpg": "df63a6b423aa09fcedcaeea828c209bcc5b00afe1fed664046a104003cfcfc5d",
+        "ScienceQA/image_280.jpg": "a3ec3677cb2dfa68eb12bf08ee859db696b94ea0970b2d1180b924f9e96a4784",
+        "ScienceQA/image_281.jpg": "598450d162e82d4a801285175d72b6675634f397dc399005629d226e33b1fec5",
+        "ScienceQA/image_282.jpg": "aa7e735c001047a35dae7df0c6a6cf9a0dcf767ef34d84832d671888cbe8d092",
+        "ScienceQA/image_283.jpg": "a9c61df68a326a53296803dea5c4f2113de45502e6151b2de40d6da00c618d89",
+        "ScienceQA/image_284.jpg": "9e751a0b80ca5ce940a09adfa703e9640b6d6b44e9189e920dc3bcef5ee65ea7",
+        "ScienceQA/image_285.jpg": "411b41d8cd2db6b3521f92c14c8da4a457f5d5b046a5a05d161da6a75ed670c4",
+        "ScienceQA/image_286.jpg": "88825a808ad1c141581f7b743d9e58d967adba77fcf84076a0b935b3814c3542",
+        "ScienceQA/image_287.jpg": "49788ac449f17c2f788b2d3d545378dccf16f2a187e2c345531959b82cf76a86",
+        "ScienceQA/image_288.jpg": "f393a96e72fe4ef08e23c84045c13e5728e4c264dec2cfff969ca729f3fc6296",
+        "ScienceQA/image_289.jpg": "1cbfaa4bacaf0ccffa383f23109c8aa65e78cf39eacfa73e2e71205facee36d3",
+        "ScienceQA/image_290.jpg": "d658e962516b2008bed06e8a469059e7473a0cd075d199851e640e4e0b188002",
+        "ScienceQA/image_291.jpg": "cac8807980abc7adeb93620cebe4155b86d1c418184264ae7b375a33c06d0e3a",
+        "ScienceQA/image_292.jpg": "2b4c66f6aa0109c0648c61d54ce718306f973bdf04a8248cdebe7eeed21dacf1",
+        "ScienceQA/image_293.jpg": "7cca5cf6c945757be2b75bc32982ffff2c283329fe8b049e36e822f59edd24c8",
+        "ScienceQA/image_294.jpg": "28b47f0d67cddda5c29bfaa30313f0b990ae096749090c874449f3b6fbf33caf",
+        "ScienceQA/image_295.jpg": "2169808e5177d1eb15a2760a9df25e52bd8f21957cb0f95085c758783a7dd45a",
+        "ScienceQA/image_296.jpg": "83de89d3fb31838fcdecdd1ea17b3c76e70623291e490d328d7ae4049d470774",
+        "ScienceQA/image_297.jpg": "0373eaafd5f2e86b177863556ebf6cc26d4bd4b2092a7f6dfa30f5652b182d0b",
+        "ScienceQA/image_298.jpg": "8189969ca7765588d1d8baec991e3a9f2730662bac16e55f67ec615e46a3e381",
+        "ScienceQA/image_299.jpg": "4f6ffa6941d43328edf5246e146e87e2063ad09705a49eeb2ca45be1dee19140",
+        "ScienceQA/image_300.jpg": "61307edf1782ad6d101214a5a8ab96e5a402bfaeec0b87c4ac7afa5f149b6c87",
+        "ScienceQA/image_301.jpg": "6a611f5a8cdacea707b21cdc70bb32bd88ffebf89483b1a71dcb7b0458464857",
+        "ScienceQA/image_302.jpg": "7d81e40b7f6e01c024c2345afd63ac527ca86b53edd2874baba2f0b2f8e4e818",
+        "ScienceQA/image_303.jpg": "91a33b023165390d536edcd5bc2892e4e68726ce593ec91108ce3b9fc75f247b",
+        "ScienceQA/image_304.jpg": "e3fd599cc89c4965326ea2ef3030a55f0cebdf5e19d1068cabe91e5eb86e7027",
+        "ScienceQA/image_305.jpg": "1a7950f36b03e7246a5048fc0d703eacdd8b50da860e0ad4fd53097a289898a9",
+        "ScienceQA/image_306.jpg": "c3e4a6925595081d21a8ae928caed91d36ee376699c90e179b8629ce7215a1f8",
+        "ScienceQA/image_307.jpg": "96a8da53a1d753b1a9a77c7a77b0fcceee11d8969b9b9ab3f930b83438fa3742",
+        "ScienceQA/image_308.jpg": "31f16c6d4d13b488dde166df52e35374692d7b94032295baa1c69a4c99702f54",
+        "ScienceQA/image_309.jpg": "d1bf4f5f4f409d84bb0e4e0ca1b0c6c0f69a6c83774ae87f298d4a89b4c08541",
+        "ScienceQA/image_310.jpg": "1bbb26bf2163b92fac2c88236b440af6292a322a341695bd0c3997685601c134",
+        "ScienceQA/image_311.jpg": "ae098cf17ac4e1c42e9100e8792a145a97e048e9501b026e7aea6106d52ebae0",
+        "ScienceQA/image_312.jpg": "02d2cbcdc9c6212fd449a03356f0bbb3771f1fcda1455ca757027c896983042a",
+        "ScienceQA/image_313.jpg": "021a47a5369a4454f8a8c7dd9a1afb41a03fcf9c1a5efb5cef92f9632fad01a8",
+        "ScienceQA/image_314.jpg": "24813d846783c5794b442e32adc237c7fb1de6d0ef11e9a61fee23fdbbbafa36",
+        "ScienceQA/image_315.jpg": "4775262a295dbb0c5c3d10038d2dfe628d9194f077f591914e0a771bb98f58c7",
+        "ScienceQA/image_316.jpg": "0f1b3a77463ffa3ed6cf6d0d6157a5d7de01f9eb7502984be55d8222f7ff75aa",
+        "ScienceQA/image_317.jpg": "2a53d3cb71c9fb1b633ed29b7806f591c134a1bf6363207972cf8310e5559ef0",
+        "ScienceQA/image_318.jpg": "b2f86ac3dc7151d29b1da44fcae6653bd3b45b13a458bd4e95597cc5f304a0d3",
+        "ScienceQA/image_319.jpg": "da2efc91f9235cd6f1e09dea13ba9f8fe81877ef34f6baa2f6b8bf3e8d2a99d5",
+        "ScienceQA/image_320.jpg": "b234d34c4494bd53e75d959d01ba9ee9218badd9a10134cbceb72365ade31806",
+        "ScienceQA/image_321.jpg": "b52d4a5b754a0dee6698e455ccba09f306dea03acca6cf3e6c601ae7b86b1784",
+        "ScienceQA/image_322.jpg": "b842c25be38fef31e8ea6f446b55b49a06892f00f935372bbdd2bfab8db0b9e8",
+        "ScienceQA/image_323.jpg": "6fd80562a51ddb4c096dbeb7f5ed965e2649eaa41ad8e81c15a3f7c1758c2bab",
+        "ScienceQA/image_324.jpg": "197182c48315252b6b1acad5965cdf22ef61d6101052553bfdb323b03fdf5cb8",
+        "ScienceQA/image_325.jpg": "d3e44736aebe99647186d02fc1fc7a1a2b46159f55752af71237c55b7603a8b4",
+        "ScienceQA/image_326.jpg": "729c3e7337a826a7c1e8ea117c8cb27ddf32dbb746426e56571725402212669b",
+        "ScienceQA/image_327.jpg": "d3fa57d31d636528c068a46746e4ce96654b1db38c2c4ab61e68c7776f527ca8",
+        "ScienceQA/image_328.jpg": "f4b7abbc284bae701a7b985a42969f0144cf8cac9dc31913bab6f88935bd2c5c",
+        "ScienceQA/image_329.jpg": "21b5bc430ec362f97832845f1ac43232bae6bd2b90d531cd82d948d54f7cda0a",
+        "ScienceQA/image_330.jpg": "b37e0450eeb5e418ffb8cec012c1aa2a732a2cc0bae28368df13d5d5fae6f31c",
+        "ScienceQA/image_331.jpg": "2bec46516c4311eab2fb4da90908565eae63598d06b0d857ac35dd6ba4285cd5",
+        "ScienceQA/image_332.jpg": "8fdf8f7e0deaa419fe295f86dcdd76b15016404c5a98751dee0be13f31e6f421",
+        "ScienceQA/image_333.jpg": "9e941289c65e896c338e8ba352e51bc24af33d8ea2672b942b47b21c7b50de45",
+        "ScienceQA/image_334.jpg": "5e6cd31133deb96a773ea8087eba5db3f616d34cbf3620321755bb1430f13934",
+        "ScienceQA/image_335.jpg": "8d3ee80428cdfd1c3b6398ee2b5624647957f5263acba1ecbfbe8e3f7beea8dd",
+        "ScienceQA/image_336.jpg": "9ee1d1b2eb961a371a57d1c1c0e86fa802e9863c3b618642e18bf3b8dfb5c83d",
+        "ScienceQA/image_337.jpg": "55290cc2a7d4977bbec865029916bfda08dba15669603af639e076d8e81f4aaf",
+        "ScienceQA/image_338.jpg": "1315f9d02264fff34a0f7778eb01e0b0ef723b9e271d36f99d1e818d6a094d33",
+        "ScienceQA/image_339.jpg": "5e2cf13a5ab0c809b58ad12ee43d7cb011e3881189091a1dfe2044819efebea4",
+        "ScienceQA/image_340.jpg": "e1d78414679a5c421333411e8b22ef955cad79d281f2440e5eb2fcb96c05283e",
+        "ScienceQA/image_341.jpg": "6adae0f3491dfb16c2214887fa17528256040a535fec204b57282e093995b510",
+        "ScienceQA/image_342.jpg": "d12178b03aabcf820261f882541fec43a443c43b9c11fbc5480d5b5b4f8c6d7e",
+        "ScienceQA/image_343.jpg": "ffae315e7da499b51c2c378e617086446890505664169434b4296982cb5b3526",
+        "ScienceQA/image_344.jpg": "21b5bc430ec362f97832845f1ac43232bae6bd2b90d531cd82d948d54f7cda0a",
+        "ScienceQA/image_345.jpg": "f344b99f9cc729fcc4c165d923df39fd9dc182db0ce6e971f7f504af8ed1580e",
+        "ScienceQA/image_346.jpg": "3cd82492ff61e2ad01df7c6aacc28ea3589eeb319d4c53f67bc50ff6cb142dbd",
+        "ScienceQA/image_347.jpg": "b237508ae633f7ef91c25f7a46a8c18690ee3302ae3ac91a3584168ca9484125",
+        "ScienceQA/image_348.jpg": "41f7d99ae43f31a4a9fb4146c9f378ca35701a9bb0dfd67b8d6d5363dfb55a4c",
+        "ScienceQA/image_349.jpg": "e1823307c2f3704989ba3a97bd43a8b70cadbca49d1e130045eaada8e4589fa1",
+        "ScienceQA/image_350.jpg": "ce2a367a6d0c2c65df148b72cc73c0315fb5686ab412a85bfbe5e6f76fd5be6a",
+        "ScienceQA/image_351.jpg": "3afd599c2be038bbb3c821fccbd41045944dc1a4c796408f7a6dcb4bcef1f1d7",
+        "ScienceQA/image_352.jpg": "1d085357c7662a3eb333bdb83421b472a9a831091793bc32133439f5294b9726",
+        "ScienceQA/image_353.jpg": "d99bd0e54105910bc33b48554e8f063a556420a936824fab4cf49569ca6098f5",
+        "ScienceQA/image_354.jpg": "daab0d62a1fc9e0a0250e8e17414244e8b3478e6a038a48d9d7215bf346f2e77",
+        "ScienceQA/image_355.jpg": "51162dc31eec41648128f098b8c0cd70ca300f1b50c407500763085234982e69",
+        "ScienceQA/image_356.jpg": "3068a02b7a354ea709fc61886f85c4e82f18d062462c404994be7e8f4db6aeaf",
+        "ScienceQA/image_357.jpg": "9b4a48a3459a561d092c0d7a414a417a9cf491be8684d6c2892994c6ce6e17eb",
+        "ScienceQA/image_358.jpg": "fdfadc370439aaf7321c6b01b74a43d937b2a545ae0e642b497013478a518c6c",
+        "ScienceQA/image_359.jpg": "5594016bd612642d302700c4d922e7d7ab885229f7e362df83472c19b50a63ff",
+        "ScienceQA/image_360.jpg": "21b5bc430ec362f97832845f1ac43232bae6bd2b90d531cd82d948d54f7cda0a",
+        "ScienceQA/image_361.jpg": "a215688dcbb8bc7ad68c02ebdea970ee0edb2e6ae2c8f369b43dffc93b9ba203",
+        "ScienceQA/image_362.jpg": "d7b30e343f4090c1156cde2cf0fed8430af371698ca482d36e31a4e81934b06a",
+        "ScienceQA/image_363.jpg": "8b745c5fe57603736114090c5bacd8f791fb6df0aa8679638041c67e139ff2d3",
+        "ScienceQA/image_364.jpg": "331577cbdd19714ce1d06caac1a1bd7d81c121c8a1d7382c99da1b1c5f5acf52",
+        "ScienceQA/image_365.jpg": "91250e533b228a4f7cb4d6a47d74b20905966b4c2769ea4c4a98e353c30f4e32",
+        "ScienceQA/image_366.jpg": "eafb8f717ddec54eb69d5fe54f4845b32c28653fbc66b69d14ef0fa3ddd006df",
+        "ScienceQA/image_367.jpg": "d49a82b06d7b7bef916508db9d6abe7fe5fbc5238b5ab9fb51f913cfb6621fa9",
+        "ScienceQA/image_368.jpg": "c479d5bf0c429a1aa3de498df325e4d1b767575fa7f2000f4545708a4016a3cd",
+        "ScienceQA/image_369.jpg": "af5bffab7f69e284d5213e6aa4851c61751c20fb5602e6761260f197aef16520",
+        "ScienceQA/image_370.jpg": "9316db1cc3f71a9305c8f12275e986c6a6ed444da528a9913615af7cb2818995",
+        "ScienceQA/image_371.jpg": "e08a3de8675f1f4e65a69da9ece8e13e66eb8ccf56a2d436fa3df28d9ad6fee0",
+        "ScienceQA/image_372.jpg": "54c72a5d91af22dfc920a140531d894ae9af89704d8ad2d79cc95527d37d8a35",
+        "ScienceQA/image_373.jpg": "e8115aba3b816e8e831d56f6987fd1dde47669bba104760e4e96ddeabfd43ac2",
+        "ScienceQA/image_374.jpg": "c3e60a5c0a116ed2503294700ce05a5b68a227f21f3555efc2169a9ed6a72d34",
+        "ScienceQA/image_375.jpg": "b492ffd4c7758adf9bd8021a68309e668e61047e0fa1e4d99f9cbd91279be38b",
+        "ScienceQA/image_376.jpg": "51644bbe933f1f5e9ddda4d43e90326dcbd638f1f4c48925e9666e5c23e1d0fa",
+        "ScienceQA/image_377.jpg": "21582fe3b9532b9414d1c00650e8b3289f3a99ee7115543a4ac85950ab215eb1",
+        "ScienceQA/image_378.jpg": "0f1b3a77463ffa3ed6cf6d0d6157a5d7de01f9eb7502984be55d8222f7ff75aa",
+        "ScienceQA/image_379.jpg": "b2b1ca3f7ee529f2061ab464408d8a738da3657adf2ba32fc8eff800f01a945e",
+        "ScienceQA/image_380.jpg": "bf49346b2e9b17f08678f6a03bdb3bceabb49ff51103c2bd8817ed72566beec8",
+        "ScienceQA/image_381.jpg": "568079d3ce476188f0fd5e3c1cf5584b47bdbfe813a4318302fce2bf5b856be9",
+        "ScienceQA/image_382.jpg": "10e709c83f6c5f82519874b83b1dd03cdb3f8addc935b4d2494b60058f079895",
+        "ScienceQA/image_383.jpg": "4e724e0d25b8b567c93d45ce22e3da0c240968dcaa7582774356c86e9d4ff9d9",
+        "ScienceQA/image_384.jpg": "192edbf050d6e64918b64c70e151fc7e569ac6be401e3957852475d38e3f046b",
+        "ScienceQA/image_385.jpg": "40f220c2bd64a210ec9ec61600103126aecf8bc208ac2fda4e17cd3dfc129985",
+        "ScienceQA/image_386.jpg": "8630350e41f2a483db3866c892a8b5aa645936892b73aebe26e8dc9c0d4e5628",
+        "ScienceQA/image_387.jpg": "7c2f2b2cfd9b503faaa5da933f90e00ffbfe230cf42d7ab92d6de3009e338b33",
+        "ScienceQA/image_388.jpg": "543bf1bb4364c8a1c7b21fda72e076589e5a5958084aa9f22151a1d181323d16",
+        "ScienceQA/image_389.jpg": "3055b203ff29556735b1ad34952e30904bc20266d00f0603c94e5b29247477b1",
+        "ScienceQA/image_390.jpg": "98252122b36a3f0261146d7669c2b9c80459566659d291af103e6cc6793c191c",
+        "ScienceQA/image_391.jpg": "93ccdc4577a824b88e340774488ca865e0eb2f821ce7f0e882132ba5b05ba5fa",
+        "ScienceQA/image_392.jpg": "81dcf3b23194d6511a84299cbde58e1e6d74138e2d15264230f6607065733f93",
+        "ScienceQA/image_393.jpg": "2726b95aa41341e82daa94045cc1d37559f0ae3d05177179fdaee479a16e1062",
+        "ScienceQA/image_394.jpg": "08cabeac35d927956bb58035eb76671b0a7ab000197a87f8e6165c255de2fde3",
+        "ScienceQA/image_395.jpg": "2aca84d42370ed373280d8b1aa6a6701662ff117d29f04f97f41cbe019d56809",
+        "ScienceQA/image_396.jpg": "56cb5d736bf146c137c3ff123029035c1f290104571bc2e0adf723352315df1c",
+        "ScienceQA/image_397.jpg": "12f1aaf96abb95ab29c6fd9f593bf11089979798d27f4e1c354a52a52f3880e0",
+        "ScienceQA/image_398.jpg": "6752eaa4ecdf1900f1d6812b8311396298776784b7f0a37c9c3636ffc3e99885",
+        "ScienceQA/image_399.jpg": "2b0b50411b747b3ee950872cb6bbc8ffc46609da43bc4d9af6a1af409559dbac",
+        "ScienceQA/image_400.jpg": "3db02827fc9a9f136d42a927f172aedbab18b22827b39577da4fc17bb178d80d",
+        "ScienceQA/image_401.jpg": "83fd24d90cb2ac118b409303181f53ddd42b7205351a6d99d75133e6347250ed",
+        "ScienceQA/image_402.jpg": "f9251c2db745f67ecf640df161b3d5e2396e7e5df492ee6f309e8040b81e8c6c",
+        "ScienceQA/image_403.jpg": "dda42cccc75f3993d5d6675d67085286e329a645177deb169a7a5b8fe8ecda2a",
+        "ScienceQA/image_404.jpg": "9590cf8cfe2f1976b2ed4b0f91e55e3cdd9acd196962cf7ccebad9836eb4af01",
+        "ScienceQA/image_405.jpg": "f13d1210bf93fc767379f87c47dabac16649393826889c4fd8d648178b09ad11",
+        "ScienceQA/image_406.jpg": "4d3e20ed2ff01ac60574d8eb78e55d9678c883fa5cc6ea08ee25a4715e138024",
+        "ScienceQA/image_407.jpg": "32fef011f854ef32164357a007eb2feea25b1567fd7af99f1fed6c0708cb4b5d",
+        "ScienceQA/image_408.jpg": "5d9d3188c09590bf107fc77d1614acdc6654bd0eda68df53529f195dce736267",
+        "ScienceQA/image_409.jpg": "dd713df2441c3fc626c940c8eb7f7123bcf10782f9e158b8b1a7b79276fd2678",
+        "ScienceQA/image_410.jpg": "4003b4bcb4dd28a933f07a0fad3fd178ea0d8da182af4483adbca7cb909b9262",
+        "ScienceQA/image_411.jpg": "df3bff6a26d4e58905b7e524b99e264a417c31e24da3c4acc5b6711dce9fde99",
+        "ScienceQA/image_412.jpg": "6ba25a647b1f710df0f1ce39f9038ccc157031e308c4598d398c2ad080c32bcb",
+        "ScienceQA/image_413.jpg": "93465099263719fc7b8123123c85cfe65e4cc6d994cf61c6e775208fa843c803",
+        "ScienceQA/image_414.jpg": "ef4360a361527b8ca1db324cc94f045e083b406cd187af9141e6caecbe040950",
+        "ScienceQA/image_415.jpg": "9567dfd423ad0af8ee72da7dbc88c44dccb3dc15ebdac55d67a4bda663fa2e2c",
+        "ScienceQA/image_416.jpg": "2fc41c224cb5e4bbdf4c491329d3cb57f8098050c091e88735133a79c6914c84",
+        "ScienceQA/image_417.jpg": "b1b7aa74fb78685913e9781486da424b9f7851d1985c038787e10c82275bb199",
+        "ScienceQA/image_418.jpg": "ffda74813437f021960e9fa5eca8c1bab79d3ba603147d9c93f5af3248697451",
+        "ScienceQA/image_419.jpg": "b0c8166a5acd91bbee37f872c4b43c9fc0025c8af263d3c07ee9c17a8a23ca23",
+        "ScienceQA/image_420.jpg": "6c8743378651bfa9a2d82c895034fc2ddf86de6e2381f0b801587c7908decd11",
+        "ScienceQA/image_421.jpg": "b6d0aeb9482d979dcd342013751e520cb52981988e2eae362abc1a347bd87b9c",
+        "ScienceQA/image_422.jpg": "2427bba561b4e46b839a81979a7cdb296c0b30e183812625e3de9b5cdb2d067d",
+        "ScienceQA/image_423.jpg": "940c5db34e4c9a84c455dfcdf7fa416c194c4f47402cf161942d5cd9f4f8eb04",
+        "ScienceQA/image_424.jpg": "580be39ed8bd40e32adfb640e77fe8e0e9c91cb17cff6a8ff943b2ef1c1044e9",
+        "ScienceQA/image_425.jpg": "b2ddc6ce3ac2a5cb509fbca27f058a29fec67361fa77a1934e23570b307cd2f4",
+        "ScienceQA/image_426.jpg": "7d6b175d56e86bf24802579acf39c5e8b92cea2a2df0135047d316942b3384cb",
+        "ScienceQA/image_427.jpg": "0f07cdfdd721602731473c084f2bf48754a0abfc783f5162e5b059c381518e16",
+        "ScienceQA/image_428.jpg": "f44919c2e6c6396c6e97a4d5fe03ae13d18de10d8ecf3aa1854169098c519286",
+        "ScienceQA/image_429.jpg": "af3918c9fc2f2627977ada3240b23c41949550e8a7b12e657ef0871d374f23d8",
+        "ScienceQA/image_430.jpg": "3e4da5fa2898e1232e2928f6b078e9ce1c34aca5ee9c88dab0a85a1dd70a45df",
+        "ScienceQA/image_431.jpg": "683a8401655e47a8fcbd0d5f0e120e95cb22320fb3b0a7d194915bd76a2cfc57",
+        "ScienceQA/image_432.jpg": "c84e98de40f38b35a940600f1806ce509d3a27117a87f75f0378c13a23f04c19",
+        "ScienceQA/image_433.jpg": "59dbc29e23b831aac3cfb942eec1a34de9d561672f6e0419de17611b1b4941f7",
+        "ScienceQA/image_434.jpg": "92372cc774eb207c30ae7497163d199d8f64ddca8eb223dcd739e5e42150c219",
+        "ScienceQA/image_435.jpg": "0c82e50e24cd4e9c011a4da16df3e0a0102fd42e1005630f6d92660f5cd216c9",
+        "ScienceQA/image_436.jpg": "a67bde48377080c81db150fa759d1f991a7fd1961ee8f5402928da52cb538739",
+        "ScienceQA/image_437.jpg": "42f08a0fa7b4bedb49fc4f18e11c70c02b085f0a69372d89806a4fd0a16fd457",
+        "ScienceQA/image_438.jpg": "1cbfaa4bacaf0ccffa383f23109c8aa65e78cf39eacfa73e2e71205facee36d3",
+        "ScienceQA/image_439.jpg": "2ba22ec0e554f49ee660758130c33bd344db5ded70d06ace25b4ec1ed2ecc94d",
+        "ScienceQA/image_440.jpg": "f0e2e711461eee3eebd87d2943f64758644adb46fc60cb0d532ef3e14cb00542",
+        "ScienceQA/image_441.jpg": "b66bcfbce708ad1c0437e95acf4e333eabce7cfe662c235a5780367b959a00e7",
+        "ScienceQA/image_442.jpg": "0e8c36a8aaaa0bbd32a58a1b1d124d600bec6e26e98077d6c846615bbe1d097e",
+        "ScienceQA/image_443.jpg": "f7d47f2d09f645eaa623db021bd67b15df35bcbcb43c74b6f5162dec86e6f67f",
+        "ScienceQA/image_444.jpg": "2784f03a8ffc137b064898b8ec43ccd43907db9d9ec3c7aca03b967376c5cac9",
+        "ScienceQA/image_445.jpg": "89174c79f2ac5dd3a7711f06d3cddc8215c26cb205daa71ca4643bc88300b67f",
+        "ScienceQA/image_446.jpg": "15b6f42048d116f2162965f5494b13984c248c794f323003fb3c646e6ed4273f",
+        "ScienceQA/image_447.jpg": "7d201dbf9f4ae794522910c062896b13fd9c8e52ebc79d4f86e0accc8ab0d301",
+        "ScienceQA/image_448.jpg": "ba90667dd92dacdd50b6d02d94f344209d09874b8c711f30b670013ffff19ade",
+        "ScienceQA/image_449.jpg": "5b45059a40f641170147ebce4b2b9e091e8c375c805749f65ae64eeb9822ddda",
+        "ScienceQA/image_450.jpg": "60ba7d9d6e50d30df6c279c9818791d8796b06758335367fb7b7b38fc3f72d92",
+        "ScienceQA/image_451.jpg": "42a541fe48ab83b7199c6bfb4ebcc05af535d89c558a979356859756859638d2",
+        "ScienceQA/image_452.jpg": "a69ef62bb6bca090d252c784c10a814ddb37e84be21eb28b05ef48bba5553f24",
+        "ScienceQA/image_453.jpg": "ffe9d4fb6dbd27d0b5159983d5c03a4e0ff71c7a0f2c940e4284a35095b6d5fc",
+        "ScienceQA/image_454.jpg": "584c6a9d6fb948d53fa1082ea26e7931addaa56eba7b059f04868ff7fe91f91d",
+        "ScienceQA/image_455.jpg": "3be83729d304211edad51c42925438a51c8865f64294ddcbca0ecb4ae2d99a12",
+        "ScienceQA/image_456.jpg": "88add83e6f591582573e04f1386afe5977829db8a1d94b36d41705f34be4831f",
+        "ScienceQA/image_457.jpg": "ab4a406ae263c40ec89c0336a763b70032b6a8d294a09eb234b7f1ebb90ea123",
+        "ScienceQA/image_458.jpg": "582955a0abd3f2160b309858c5a2be9d4da031f71d725a378f9b5dbfeae6398d",
+        "ScienceQA/image_459.jpg": "6898b1385e1d0a5a3cf723fb625edd8dc84be7cbad0d7d071d640ef11f2faae9",
+        "ScienceQA/image_460.jpg": "a10421293f9207b4bf7c8500e0996e60a20095a0581cbf31fcff3734a6b67ccd",
+        "ScienceQA/image_461.jpg": "5688c634345e192a4a0b8d91bf21d51f61af9ee10004cc7553a6396950b8c27f",
+        "ScienceQA/image_462.jpg": "7ad07fd261f016a678300f4d3b3f5081be9a3f9ba53315e5f375c60f95bd96ba",
+        "ScienceQA/image_463.jpg": "1d2ad16de2a17e8b3994be796aae2c078e4f32e0559038eaacde1eccc785b920",
+        "ScienceQA/image_464.jpg": "a0b587c20167325b03dbda2fc7994a3aebce278f13eb9b72f5cb0f26c60cf72c",
+        "ScienceQA/image_465.jpg": "be8d2841a134c6abedda0ee0f5d0163d98acf0cc17f969af2551faf3231fe16e",
+        "ScienceQA/image_466.jpg": "83d046394a9df5c18d7067b5c53a303fda9686678d44a584663f6065fcbad555",
+        "ScienceQA/image_467.jpg": "39d1209372c2471ad4050756df632961324c5019027fa0bf68f318f61d866a3a",
+        "ScienceQA/image_468.jpg": "5a5aea901799665271276dc8d44449b65ce207f4e856fa93bcc363099ff1992e",
+        "ScienceQA/image_469.jpg": "b134997a6aed03ae5c06c552e9a2bb404bdc0c05926e7593c59610127026105b",
+        "ScienceQA/image_470.jpg": "b5f64b3c85a5a124a85c117870c8273411902da3e4814c9ed7e805075100321f",
+        "ScienceQA/image_471.jpg": "1f295b2ffd2aa01426c52b14ec6e1ed0db763badda66064f9eeed28a210c1c15",
+        "ScienceQA/image_472.jpg": "7bfc962986eb368194a7a98e2ef21a4dafeae71879afde7aced8135897488e6f",
+        "ScienceQA/image_473.jpg": "20e565d03dc312b9525001d1136a5e71caf07250529c83ba0fd3a59c5fceff1a",
+        "ScienceQA/image_474.jpg": "1cbfaa4bacaf0ccffa383f23109c8aa65e78cf39eacfa73e2e71205facee36d3",
+        "ScienceQA/image_475.jpg": "e7785992ddc1e20b2b54c1d3c5d376a6029ee5fb6e82551dcdfa2574b56e3f5e",
+        "ScienceQA/image_476.jpg": "d128f3e306c4a39502140dd2bb013e035197e77a6a984d5db6796d9c19e6e490",
+        "ScienceQA/image_477.jpg": "b75a420b4d348afdca6a4f3ca5ebdf46e65321f16d175788ad86afc0da07c70b",
+        "ScienceQA/image_478.jpg": "0694487ccc868c4eaf90e01e860c070bd74cdd4646929a4692165a1435b46760",
+        "ScienceQA/image_479.jpg": "385ccc55f650a5c40b2bd2413ef4beac90eb7b3995cfa8a1218e62e8bc7a7bb0",
+        "ScienceQA/image_480.jpg": "06e42308d12eb35c72e0a16ba8a3ba2c5bb7bb635aaef2a6bf3c2fbb39a4c7f2",
+        "ScienceQA/image_481.jpg": "3e336e5c4c3db314f9617063139c928292fc93d6fb91aa6b5b5625521d8a7d58",
+        "ScienceQA/image_482.jpg": "934420c9ed80ebe981bea137d696b6a0469d4c91d9eedafa4650bb425a85b202",
+        "ScienceQA/image_483.jpg": "a937562f2448204a6769ea8612f395fb59c2f98fdb1856cccc2eceee409b2899",
+        "ScienceQA/image_484.jpg": "46842f41440f5dfc2064e574b5a17f21447da34b45cc4fa3ee7d4d02b2e1fdee",
+        "ScienceQA/image_485.jpg": "1cda098cb2e631c84c1497f6ca770ef1a3a6aacbcf2a97d3d527a12c48898b6e",
+        "ScienceQA/image_486.jpg": "e355f0441b5373dd7f183a57d9ada499e45f3b602ab44b09c03b5413f555126e",
+        "ScienceQA/image_487.jpg": "096e2b108dbe2e7531d0b28d09a49a50bfc0ee0caaea02e355b30b39e57a9dcd",
+        "ScienceQA/image_488.jpg": "1f160454d08204b2c5386559d9a7756ec3a54910a804add9f1a78328aa16dc2e",
+        "ScienceQA/image_489.jpg": "bbcc0d1ab3ac3b7e017aa85464cbd21b20b43e66a16d69a76cf6da566a8e08d8",
+        "ScienceQA/image_490.jpg": "1527ecc967afd54ac481e89bf063c64b14b36fca88ba1d154132cf02720c25bc",
+        "ScienceQA/image_491.jpg": "dc433b19d80d7f0fdd94b76b2c84238737c50944ec63bbb413f62ec425651478",
+        "ScienceQA/image_492.jpg": "3889328e5f8eff5a6d07548f7563843e936657ced25d0fbfd33e17f9b32f619c",
+        "ScienceQA/image_493.jpg": "6822a962126ed57b639a129fc91acff030f04f510d00aa7aa6831e256f785c03",
+        "ScienceQA/image_494.jpg": "961a721983705787b7f2f138e650299917e28aa930924dc3747350dc42ef4690",
+        "ScienceQA/image_495.jpg": "d8447372417e307c90ae4fbcd6861b560e4e50ed0f8009d9babf16e304faa0b3",
+        "ScienceQA/image_496.jpg": "35573c354ef9bfddd45434626d335675b6d44d77e636662f38e5a6fe60e0baad",
+        "ScienceQA/image_497.jpg": "c8580d49bb57ff23edc095836f2f4df0cacdb164c465bd6cc139221980c55ce2",
+        "ScienceQA/image_498.jpg": "d5107319f457c9f54bea2b97895d5816d2dd2ecd423e290bdf613b5f90ff611a",
+        "ScienceQA/image_499.jpg": "247ba86212b0f717201b7cce19bd536ab8cc8f2a80bc198fb064d4755d445774",
+        "ScienceQA/image_500.jpg": "84f77b2b158401f11fa3c090a67bbf028e607f5f0af2526b325bd573a493c182",
+        "ScienceQA/image_501.jpg": "62e4af966ce4c563090e1617377f4019a95bfea515b2d0e146180bcb43b811d7",
+        "ScienceQA/image_502.jpg": "c19df234d36e85a4d97c0a44851846840cc0d18bd17a871003256941ff63ddc0",
+        "ScienceQA/image_503.jpg": "43d3d42d5fbbbd72c5167a791fea185b00b089412f9477b4d93b2bcc65cfe11a",
+        "ScienceQA/image_504.jpg": "ef4360a361527b8ca1db324cc94f045e083b406cd187af9141e6caecbe040950",
+        "ScienceQA/image_505.jpg": "1a31d534a9dfdf129298e4bcd232f1e1506269ee6c1c45c28111b60c7d3e6bd2",
+        "ScienceQA/image_506.jpg": "fbbe4312526c6da4883feecaffe41f8594ff5febd1ffcbe8ede4eb06cd79c3dc",
+        "ScienceQA/image_507.jpg": "401b7b381a9b248317585b3f07984cce7d38561f8c5d2c071e94346b605a3c78",
+        "ScienceQA/image_508.jpg": "c4de8348ec407948e0b8e9c1192f688179b9c3be6b909eead444763d649f44b2",
+        "ScienceQA/image_509.jpg": "8d1bef2e6fd4d67e6e19e64eb5580f50e8aed3aef4860c98d11bac2a848e8562",
+        "ScienceQA/image_510.jpg": "934420c9ed80ebe981bea137d696b6a0469d4c91d9eedafa4650bb425a85b202",
+        "ScienceQA/image_511.jpg": "0d918c555369390dfc4c1a1b9c61fb2e33680f7e150d71648273df2f4e0480e2",
+        "ScienceQA/image_512.jpg": "95fc34d73d2a93b20a11e916b0e0a82504ea7066e67eb8e47caeddcd3a4b243b",
+        "ScienceQA/image_513.jpg": "5f688c75d9578c9239c64ec82110ffc37924b05de125dce57bfafbe35ee84e03",
+        "ScienceQA/image_514.jpg": "2011e7fff3cab1aa9f7d69299b97f56eb84f547eec22bd62acbc770f5c4f7ea4",
+        "ScienceQA/image_515.jpg": "35573c354ef9bfddd45434626d335675b6d44d77e636662f38e5a6fe60e0baad",
+        "ScienceQA/image_516.jpg": "c254a5f9ef733063c7730abd20560f65f06a430e908dc4bbf93c87912bed2251",
+        "ScienceQA/image_517.jpg": "edce0bcac48e32d14790707c0ca55010d667174b7a362fd86fda835e72ad4cb8",
+        "ScienceQA/image_518.jpg": "aa6ccd9854a93a49bdf1935badf68a37bec3acea9d535eb2db57073704b403d9",
+        "ScienceQA/image_519.jpg": "1a38ac11a9a1adfaac7f6849993656d0da017c6742528a8894290ada39eb09d3",
+        "ScienceQA/image_520.jpg": "c506cc8c8e9f4576fca4b409b56ead3eab0e7e54a6cbbf52aa8a7b046a8908f0",
+        "ScienceQA/image_521.jpg": "aae53ad75a906541c2ebc3f123e8438db54211305976387c2aff8ee133539a5c",
+        "ScienceQA/image_522.jpg": "eacc863e5866d8209bb94902fad530d686de5ab3f1c1e828315539478dc4944d",
+        "ScienceQA/image_523.jpg": "efa6cf72f888e851e2f5a5ba3729fd39e2699ae2fc7b3d0b8d62e50bb3f601e7",
+        "ScienceQA/image_524.jpg": "09dfb6cd8d9364a938ee6491154b13cf4c1f8756dba1ce1a0edb782449a9afe1",
+        "ScienceQA/image_525.jpg": "39e5f6c50f6894e226c42181cc849880b46fad087b46357f7c75944de11d59f1",
+        "ScienceQA/image_526.jpg": "582955a0abd3f2160b309858c5a2be9d4da031f71d725a378f9b5dbfeae6398d",
+        "ScienceQA/image_527.jpg": "549b0538717d2fa2f7bab137da0a5ceb98320a4bc78d0955d5306aea9af095cd",
+        "ScienceQA/image_528.jpg": "21b5bc430ec362f97832845f1ac43232bae6bd2b90d531cd82d948d54f7cda0a",
+        "ScienceQA/image_529.jpg": "2acd441bbd632ebeda52f8148da141625fad293f3b1add4cfdf5c1736bc2a46d",
+        "ScienceQA/image_530.jpg": "633bee5d02d711aff99f65954acce44a46aa4bb2b3f8794716f4a9d5c6509c09",
+        "ScienceQA/image_531.jpg": "5ba5dfb720f14149ec400485d2623a0c48f2c2d46c5b5746ce10c9008fdf621e",
+        "ScienceQA/image_532.jpg": "c69c4783b30bc55b26b041fc39529ed3d887a15ffb5c9fc9d2d752a35a5e754a",
+        "ScienceQA/image_533.jpg": "e9a98dd21a356332a6b299daeb2ae3f2ec6b5a4e522fc538b6c37c257effa50e",
+        "ScienceQA/image_534.jpg": "c466903fc4fefd6245c97405f9fd04d9589ef460cca78374e4913675bbfd7847",
+        "ScienceQA/image_535.jpg": "59990250317baa1b0909eff88c3c8fd021b3ec28ec2403203ddbafda8b8d16a5",
+        "ScienceQA/image_536.jpg": "3e05d9475a2ddf320252a4838ae28094b5abcd68679c225b077e8f52cbb4cd9d",
+        "ScienceQA/image_537.jpg": "52a3fcfae05d8a0a91c68c62e231eb0bceeac45a46926b1223236e594c37fe92",
+        "ScienceQA/image_538.jpg": "2f66cf7ee6b6a6e67e173273dbaf667e2926883b810845f0dc6a26d4d6d03ecb",
+        "ScienceQA/image_539.jpg": "9e6c7901bc7bcf8ee988746fba97c4010a79cbc8bde4403e8fa944d4f870c336",
+        "ScienceQA/image_540.jpg": "af9dfa5e18fe74875a13b2832b414fe7afcf42286fc24472ca2d52a486e47602",
+        "ScienceQA/image_541.jpg": "8ea1dbefd369f81708758eb3d9e804bd1d85e1c7ca6a31c678362dea08ec00e1",
+        "ScienceQA/image_542.jpg": "f392ed138532065db92f379c492358bbc4870ef6a86f2c0a4f8e3b5d5b0c0093",
+        "ScienceQA/image_543.jpg": "91250e533b228a4f7cb4d6a47d74b20905966b4c2769ea4c4a98e353c30f4e32",
+        "ScienceQA/image_544.jpg": "a55ced829ef5bd9df3a65d7eb0d21b7a957a57056ae471b515687fab3cb603e7",
+        "ScienceQA/image_545.jpg": "eab393738ef10c538d5724ea97d70847e59273498eca037f9224525616e7ef5b",
+        "ScienceQA/image_546.jpg": "2661c1070f0f8906e92d197b4e92103213f38587251a5704cf5992347567370d",
+        "ScienceQA/image_547.jpg": "28cd1465630f8918352745065cc038905ebf9c21dd794725628e9a4829c081db",
+        "ScienceQA/image_548.jpg": "095e09c1365532efbec67235b0942bb4772cc6dbdd674569f5b6790a1e7a8380",
+        "ScienceQA/image_549.jpg": "b1dc8ac4748ab0cdda39f79e570adeef414fbbf113ad84d202c182f3c69e8d91",
+        "ScienceQA/image_550.jpg": "ba6716fe538f4d54fa68be36e34c2d138d36d7e9c25df1e53447e1a94193f574",
+        "ScienceQA/image_551.jpg": "1a42a31a651cc2cb0a0148044b1e7673fe00125d946abf6fee5e2b2b06210290",
+        "ScienceQA/image_552.jpg": "f841f3d7b1b86221757bff847d80bededfc6383682536548dba916886d3801cb",
+        "ScienceQA/image_553.jpg": "71737da7434f1e9994fc117277f1e04e3776a74a194253419ab9bb12075527af",
+        "ScienceQA/image_554.jpg": "33787ecb0a7b228cda73bae561ceabb256de6b95485867af25cfe97da73112eb",
+        "ScienceQA/image_555.jpg": "aefef87722d51fb96edbeddf30d42112bf1ac6dfc732b50c4a08fdd70ba8b9ee",
+        "ScienceQA/image_556.jpg": "d165380b30741bc8f0d56554c6575bcc9c23c76f51393ec03aae6744d72709de",
+        "ScienceQA/image_557.jpg": "eab393738ef10c538d5724ea97d70847e59273498eca037f9224525616e7ef5b",
+        "ScienceQA/image_558.jpg": "bbbfa6a9912bcf8b59ee9314b63f7dffff5086f3e9aa8f5ae1ab13d63bf0325f",
+        "ScienceQA/image_559.jpg": "6d2b80610a96cfa88e29c68038762731e51a57e73185f106e348a0d6924a6639",
+        "ScienceQA/image_560.jpg": "39238f55d11c119d14bbe63da6d71f9e0415f7867424748ac9905636ed5eac60",
+        "ScienceQA/image_561.jpg": "8885fbebe7e4b83c79ad2edecdb755b1825dde2277488a2be750a0f39fa9c997",
+        "ScienceQA/image_562.jpg": "69c756e78feed52a6910d5477f6ebb268e9f9ff102a88e8940e6ef81d07365e7",
+        "ScienceQA/image_563.jpg": "f165d6465f2061f29663af11c4603aef493ea4a238a2987f271d47ce3047a37d",
+        "ScienceQA/image_564.jpg": "7a45c60795e051fb0b911e5cc5464cc0c11c32ccd80aa9eaac1226f419762d65",
+        "ScienceQA/image_565.jpg": "8164b51199c9131210c91ee5d1b5fe63273b5be99fa23c76f9116216f2af44ae",
+        "ScienceQA/image_566.jpg": "7b5208e931811ad2514e0ab6692c3d90b81ce27f3ee02c43667a8d31459e5bf2",
+        "ScienceQA/image_567.jpg": "a4c0a3f5d08dd966104d174138b68da966ec29e15bb3d8192c83f79caa307850",
+        "ScienceQA/image_568.jpg": "e8cf4208ba0e08d4d7a5f225fc1a1dbc889d4aca317cb4f80aad73664e3931eb",
+        "ScienceQA/image_569.jpg": "f9ca6b4ad4ce456993695453c9864136d5f4b5e9f2cd19936d335a6568cc09aa",
+        "ScienceQA/image_570.jpg": "93735de8723cc02e8622c4d417df9a03c3e93d604af48059d8125920de1f8b84",
+        "ScienceQA/image_571.jpg": "91250e533b228a4f7cb4d6a47d74b20905966b4c2769ea4c4a98e353c30f4e32",
+        "ScienceQA/image_572.jpg": "cebf8922c19cbc8f892bb1e397e1951f74fa2cf2cf5c31a8d9849e6f14504bfd",
+        "ScienceQA/image_573.jpg": "35381d2574fec10ca73772aa7691c3afd86baab7594e8f0340815030516f9cf1",
+        "ScienceQA/image_574.jpg": "1d8ca7cab53ae7d81f34e3e7df0b60e9b1e983dc751e972722a33014f6ca011b",
+        "ScienceQA/image_575.jpg": "5bb82f8975a18b64def55387852ff360cf71b5ec35a234d061d03ffb1bca2911",
+        "ScienceQA/image_576.jpg": "4b30d08b2c1ae932c9e78cab2bc9171b8d2a17a9d39a83b4a33fc7eee93d6a63",
+        "ScienceQA/image_577.jpg": "f9ca6b4ad4ce456993695453c9864136d5f4b5e9f2cd19936d335a6568cc09aa",
+        "ScienceQA/image_578.jpg": "8407d4098f012fbbb87bb448a8bb05492f6981262af16d45cd96d39a76bcbbcf",
+        "ScienceQA/image_579.jpg": "2f5ed0b3b7c996b0821a91a649e28cbd9cfeb52a360a3c2beb27e213b1b25a4c",
+        "ScienceQA/image_580.jpg": "b64b250d02aa2f276de053ba113313627c2b4a1c56bc91ff0d66c3606af00dee",
+        "ScienceQA/image_581.jpg": "14e27fd10068bd4c7067b3871533dd068efb911ab3efc5245b2c0c8e25c7075b",
+        "ScienceQA/image_582.jpg": "81d8e13fd5f35ff1b36105458b47d785b94bba97592e390c3f9de29baafb596b",
+        "ScienceQA/image_583.jpg": "b2a849991bd6d20c876efdbedca48a48279e6fb0e7417bf68ff61a035f0f494b",
+        "ScienceQA/image_584.jpg": "7d81e40b7f6e01c024c2345afd63ac527ca86b53edd2874baba2f0b2f8e4e818",
+        "ScienceQA/image_585.jpg": "a7cc0058a738ee4932b42d957604444eb221d8158179eb0c057e3acdff042535",
+        "ScienceQA/image_586.jpg": "f242ca3db8991ddf003bba4d5b8ad1b27c8e39a8cb458f327c1d478b6a6902f6",
+        "ScienceQA/image_587.jpg": "f0d005267816eef23d32105ccb61b5a516ecd7bf5056cace8900f0972b1031e0",
+        "ScienceQA/image_588.jpg": "4a4d4d5a2777d9a3698094a3d33d4b269382ee5cd77330700faec560741980bc",
+        "ScienceQA/image_589.jpg": "168a6307bf8bf69ed5a7e3d3155c84f9c83d9104f08e1105abb6e23369e5fe67",
+        "ScienceQA/image_590.jpg": "7d81e40b7f6e01c024c2345afd63ac527ca86b53edd2874baba2f0b2f8e4e818",
+        "ScienceQA/image_591.jpg": "514668fb3f499241cb4f1ed98cd445691ab8cefefaa2a10006caf7cd70ec5299",
+        "ScienceQA/image_592.jpg": "9032a41f3379d01449f7924eb8e7752e11a312e09e89bd4089d5920913c63212",
+        "ScienceQA/image_593.jpg": "732c80eb82329b4f699697fee1b725b2edbb1351660271375a0e5d71df4501f1",
+        "ScienceQA/image_594.jpg": "3fc63bf22718bf698f56ca062b0ef709df8860628b7c2ad3acb0775290a89ad4",
+        "ScienceQA/image_595.jpg": "709e6fbb239cccd6cacfe45c383fbcb580fc4b9a3ab357d184cfb02f2f14e9da",
+        "ScienceQA/image_596.jpg": "9827243cc11b3de75b10ecfbdee2f63be6beaa1f2b01f0d75410554b086c9b9b",
+        "ScienceQA/image_597.jpg": "ed796100fc7948b354e7d86d9cfa6a032fb939fdb899467f4d13e67ba9f2a127",
+        "ScienceQA/image_598.jpg": "5e8f9f60c0bf543e89c2fc129444700b85f60217b593095cce227f7629433eee",
+        "ScienceQA/image_599.jpg": "05447822c4ee1784b7292cb980d8d561e6a3e569e784af32d6f4b4ac956cb31a",
+        "ScienceQA/image_600.jpg": "2947c534d3bb8abb5372e50037b91ebcb628151f6d0dbf08b7b206acfe0bb94c",
+        "ScienceQA/image_601.jpg": "2b06d1b96866a8d1f6ed59d17ca0c6015a91390504b4c3ff3ffc6094c855178e",
+        "ScienceQA/image_602.jpg": "539f26b303af61242e2d5d6abd442bcf5607861128f13cc942aaad8a3ba2e985",
+        "ScienceQA/image_603.jpg": "8d304d25bdfa0ef1d58ac5ec821edbf74b2d9cb1ee37f866d8cb97d57ab6e04e",
+        "ScienceQA/image_604.jpg": "44b7d92bb9b86641b9444825cf5e6cbec91ee7b959e2e3320ad7facc8f816b3f",
+        "ScienceQA/image_605.jpg": "ed1f2c0fbc42a5356b2edf05841dc620ffe24b1d264e32f08c5556f222b5add3",
+        "ScienceQA/image_606.jpg": "2e58cf08c44565def126a00ae42aa8a7fbd0189b4aba20950a102f6db3d3c8d4",
+        "ScienceQA/image_607.jpg": "4c20dc001df7b765e2afaeb904c8507901835b40d5f647356c4edb269fa7044c",
+        "ScienceQA/image_608.jpg": "5b8ad6d78c33a7b0868819349bf6e0a883666872acf0d8b2d47c966733198243",
+        "ScienceQA/image_609.jpg": "91250e533b228a4f7cb4d6a47d74b20905966b4c2769ea4c4a98e353c30f4e32",
+        "ScienceQA/image_610.jpg": "e9f83ebb57e87abbf4baab19a4e38cbe150d52f3efeb836a0c04c83f5e287100",
+        "ScienceQA/image_611.jpg": "5c101ce1476317c0fc7913144ed208d8bd5ae9b9ba80daea813c72fa3606434a",
+        "ScienceQA/image_612.jpg": "e03b268d2be13280588d253ed69d48a60d0d9555488366d04d59a60dc6d4671c",
+        "ScienceQA/image_613.jpg": "9b9e731e2ac6da96697c525782f845c82e3869fa4aca2d6e0c7b2ebabd69d56b",
+        "ScienceQA/image_614.jpg": "1df2589d36b138cfab2f252a2e22c72942019ad838cf97170ae11cad0eb16632",
+        "ScienceQA/image_615.jpg": "57a623df28ca586dd332a306c13988f9cc3f721843f4ece83b208aa1d488a842",
+        "ScienceQA/image_616.jpg": "a6bce5d990eabc4a36c29093e036189388b633650f14c34508a1d5e5a11dba46",
+        "ScienceQA/image_617.jpg": "5b0ecb059a512de423d20ed1d358ec1302bbdad1f2c7a2df42339bcc423e56a0",
+        "ScienceQA/image_618.jpg": "885bcb428874b5cb002b2b39f6a6978264b9574e8a446e37c9ec5360007fae52",
+        "ScienceQA/image_619.jpg": "3821b95bd4bd91eb0655ac1613420284cec8dec241fb31470f3445e76af11750",
+        "ScienceQA/image_620.jpg": "2040d0036d927bf8145161a05616f32467a7907123c4b6fb56fa924a33025a6c",
+        "ScienceQA/image_621.jpg": "f002702a40715241aad5510f36b137f1773328bed5d15922aaa740e2db1eb679",
+        "ScienceQA/image_622.jpg": "560496c936fdb540d1abe755ba30017b0dd0da2418072663818b6550296098f4",
+        "ScienceQA/image_623.jpg": "340f227091a4e3b2eb2e0a87f52d27073777c6d337a08d51120fcfd1786d467b",
+        "ScienceQA/image_624.jpg": "ab700c72bc436ae1b1a9fe4c3c015f8c2046983bbd8e684683c55b8290fbb94b",
+        "ScienceQA/image_625.jpg": "f978c941f6f496a76395a10545a423c4e75ccded3c3d71e085f942daf3f51f25",
+        "ScienceQA/image_626.jpg": "5f3195e007caea9ff55a18a7c1f18f6cdbcbb000b75336c566da1fbbebb90dd2",
+        "ScienceQA/image_627.jpg": "96a8da53a1d753b1a9a77c7a77b0fcceee11d8969b9b9ab3f930b83438fa3742",
+        "ScienceQA/image_628.jpg": "ca83c3b5fe89fe9c4383526773d6ae9c6cd3fdd167a7ba26d03fd9d9327b0cca",
+        "ScienceQA/image_629.jpg": "e0d214340738a53a89332c047c5598b31d9bf626f42b2f3c5a015b60f5b4b846",
+        "ScienceQA/image_630.jpg": "85148eece90b531eb529d54b9847a40190367a5a46f9e71098f921b51b86b79c",
+        "ScienceQA/image_631.jpg": "89b7b3d1189ab790fc4d587e8ae60b43bf121144e86c5a740f75d24834522562",
+        "ScienceQA/image_632.jpg": "1cb6c34632db1bda0ae654bd439120cfdaff119c14e14db00034790276643494",
+        "ScienceQA/image_633.jpg": "9733d74f09c6028a768032895c26a0aba09de792961cc7e6ea1fd8413139cdb0",
+        "ScienceQA/image_634.jpg": "2a0d6840f16e63a811506e39fdfdaa04ae05089ce247a78f60ffbe88f08cd7b9",
+        "ScienceQA/image_635.jpg": "3056d2bebb097d57e64ceaa9f7ba79275b190af0f21b1ed378bb12121631712d",
+        "ScienceQA/image_636.jpg": "064fa93a146fbc213c92df4f5813445a215279136d008f85a79f7b26ec98c857",
+        "ScienceQA/image_637.jpg": "5d4b7f45af9d7de7fd4459e6d5bdb98bc5735450b72b4e15bac4b9912538b58d",
+        "ScienceQA/image_638.jpg": "a572563bc955cb0d767c6ea1af7327f0fe93a41ff7495003f8c639a8e7eda1d2",
+        "ScienceQA/image_639.jpg": "2fc59b407019ba7202bc2e9482e84ab64a2238aa6b847a782751149408f7b7ff",
+        "ScienceQA/image_640.jpg": "b50ba7ab160e7df20848b5e207e7d0a7477ec80a0d9a79fe00fe3cd3f5944434",
+        "ScienceQA/image_641.jpg": "a1070519bfa8320f8cdc015d38d49f34f6d9f251a26815fb9afc42d19255cf38",
+        "ScienceQA/image_642.jpg": "30c967d5244f62958c22d8c0e8baf29ef2df47ddeda1c1ccfaca2b65721ac2f9",
+        "ScienceQA/image_643.jpg": "30e9c114ef422789a727a784475cf42fc748e6e8c26a18ec9b5fe0bd31ff7ab9",
+        "ScienceQA/image_644.jpg": "869cee28cf50cc61fc298dcf3235fdae88355a0d5294e2da0df2179c64dd6399",
+        "ScienceQA/image_645.jpg": "baaa2a3a4c52efa92e4e5676f985da6af3acc182035ca548ef9d24da143f8fa5",
+        "ScienceQA/image_646.jpg": "14d85766508de7e1dc6eafaa9153cd901d4aed3a71d8e04703bcd80baa3e7dd5",
+        "ScienceQA/image_647.jpg": "01aa983a72ca72a7d3e033c8e5dd9be5783e7c8dc492b26c47d9070d9f3871ca",
+        "ScienceQA/image_648.jpg": "fbfd9f88cf88598d1dfeb416d98e594c837536fcff0c06fef4cd724231041721",
+        "ScienceQA/image_649.jpg": "07f9c988fce9180b78d361893ab68ef1896f3bdb6b2c101dfffde7d66108098d",
+        "ScienceQA/image_650.jpg": "7de204f3f3748ad3ce2823494e36a10d4e8de41a9b81cf0891434fc06bbc5a1b",
+        "ScienceQA/image_651.jpg": "bef3e70539ffb3c98ee7d8b8f60ab79693c2e88dbd803e6f6f099cdd24e880c9",
+        "ScienceQA/image_652.jpg": "91a752695006078e13459e270105d755f2994d1fa4de9ee24147f5abd0fcce10",
+        "ScienceQA/image_653.jpg": "31a7769c1f49b8d8081d2cf80acc8616bc9596580eb4e25096e503e0f34d20cf",
+        "ScienceQA/image_654.jpg": "ef926a685137d0b54d41c4faf20cac17506d6fac08b6c54e4a9f7344465e374a",
+        "ScienceQA/image_655.jpg": "824039d94b2b99ba36698e278249ea92ad322aa6b13d0816386807aa399b8b75",
+        "ScienceQA/image_656.jpg": "f4621dd9a9a5356d34cb0b9968853b47c4ba18660cb1a45bdb22021e71807e4a",
+        "ScienceQA/image_657.jpg": "c08c1c90c0abfe49805cd53d06dac9a8da75d0767c69f2c296486e3a35806893",
+        "ScienceQA/image_658.jpg": "1a14e1340f31d824996cc204350504d1a542545bc4ffc0fccbd5e618e1d8562d",
+        "ScienceQA/image_659.jpg": "d7868d47ebc7a033d565e6bbcb84b41b79bdb295a6e5e68587b275d0f7c25a77",
+        "ScienceQA/image_660.jpg": "d794fe0b2496647f2397525b1c90bf80205575bee3cbe716d77b1362a89219f8",
+        "ScienceQA/image_661.jpg": "e039ad081ad6a12059043e6449a0b79ab41d180852cb21906c2d295da4f12847",
+        "ScienceQA/image_662.jpg": "1cbfaa4bacaf0ccffa383f23109c8aa65e78cf39eacfa73e2e71205facee36d3",
+        "ScienceQA/image_663.jpg": "544a5bbf82ad42fc2b424251e09116c3ff70fb4ff8de4d947b304d63f3be4d57",
+        "ScienceQA/image_664.jpg": "9380c609a135e49709c1f1dd6bed998206180fbcd2eb2837739aa9f2ff79260b",
+        "ScienceQA/image_665.jpg": "5f2308e937b8d1bd38ffa97b4ab277cf77626a91a335fcf2dee00cc98e406c25",
+        "ScienceQA/image_666.jpg": "b7647e2e859b07d108ead638645886637a71abc17606a6dc3f92425b6ab383f3",
+        "ScienceQA/image_667.jpg": "bbf28b168a7146fd7ca74387e80f0b41cd9cedcddc47d1a86b599d8245e6a1cf",
+        "ScienceQA/image_668.jpg": "21bbeefe9a308b7c8536100602f55492d8d8d5d851c17b958096186e5e700a19",
+        "ScienceQA/image_669.jpg": "2996329d04ce2faadad31c1e9e9a2ace0ee61a197f7c378c79d4edb718c58a16",
+        "ScienceQA/image_670.jpg": "b666222feda3d7186b39f9fa4941f0f673342d4952f700cc3deba35f26afdedc",
+        "ScienceQA/image_671.jpg": "5f774c222ef7dd04977eea5f80036a6e1c495151064284503f517a4718117bbf",
+        "ScienceQA/image_672.jpg": "6526ebf6aeefcece09234bbf100345789af32529f5a01c961008c0aad63e6584",
+        "ScienceQA/image_673.jpg": "8cb8131257d307969c73536cc5dc4d91667b37c9aa34419143be8084b24a0ce0",
+        "ScienceQA/image_674.jpg": "0e8f950884e24d8fc027dd966605f47b23b13201f978d135f4543a11b06c638d",
+        "ScienceQA/image_675.jpg": "2764323e4efc6f0a3c98b93309604a677f26370dd0790de90de0ab14658ee9db",
+        "ScienceQA/image_676.jpg": "a41ef11f4424e5aa80922d257abf19befb28f71d16ff2cf64202f1f2823ace0a",
+        "ScienceQA/image_677.jpg": "2b71982fcae312ab65f421b1b8fc1ecf9e436fecd894632e67928638302949c1",
+        "ScienceQA/image_678.jpg": "4742d77783e31955454c19f389458506336b993d1bd5ca2e77b58b56a1828c38",
+        "ScienceQA/image_679.jpg": "be900126a15bb0d2f3af1c2783243fadc5e142da615485179171a9771f5c07ed",
+        "ScienceQA/image_680.jpg": "4438f835e7e46beabac1343070c69651ae4712220af3420935e1ae18a41a9a0c",
+        "ScienceQA/image_681.jpg": "d33ceebe4828d47c512cb25505f642b17d1337a2a53fb18fe450d1ce3f56609b",
+        "ScienceQA/image_682.jpg": "774cc4104050706ae7d309f08813b38a95fac3c628e8b465c941903e659a7485",
+        "ScienceQA/image_683.jpg": "5292635bbc564a42781e7dddbbd37fe30b74e16d9388d476e0d4a916b72466d4",
+        "ScienceQA/image_684.jpg": "bcd358062d8c24895cf39e517d9d570eb87c9e2195880ebf8649ee6625d4fe75",
+        "ScienceQA/image_685.jpg": "96364343a0dfee908e592e63d9f938e0273c62587068fda47ee06a52ef0c9859",
+        "ScienceQA/image_686.jpg": "2a8a2eb5abda7a7d83ccd88da5db4c32e2953174551f26b3a1cc5899731f94f9",
+        "ScienceQA/image_687.jpg": "55502260626aa430e011565a5b4e3a2eeb506856c5a507a75e8e39408f0ceccc",
+        "ScienceQA/image_688.jpg": "390f404b84bf088dda184f66fe013f1b58ed6bcb69319a270ae4241310ce0940",
+        "ScienceQA/image_689.jpg": "c69ed18085d06010e130339b62bc63d8b506f3b9e422a2198c8612abd4247f53",
+        "ScienceQA/image_690.jpg": "291dd967f8d3e84cd7018d6ff5f318221b3e75aadce2da5e6d3e65f828ab418b",
+        "ScienceQA/image_691.jpg": "0a5a3f35a85d160bd642bea88075bc11a64ebe25b1c9a0c36bc310d6793e834f",
+        "ScienceQA/image_692.jpg": "30c967d5244f62958c22d8c0e8baf29ef2df47ddeda1c1ccfaca2b65721ac2f9",
+        "ScienceQA/image_693.jpg": "f305b9c17f0079788defe7c1865a645fdf7fd131e590e6bbce8fb19190f4d569",
+        "ScienceQA/image_694.jpg": "c3ede348f1f8848634b2e4990961094f5101314e2137f212e8de3fa757738737",
+        "ScienceQA/image_695.jpg": "a53179724ce838a2e894d72e3de5681bf41a3efb7143b16ac7f057cc8111e1d5",
+        "ScienceQA/image_696.jpg": "e7e7acb5bd39177fbaf8b3174a32a91bf8fff65fc22b9d6b2ecf1c2cd9af2f1d",
+        "ScienceQA/image_697.jpg": "b1573e42b70095dabc8a13c71ce37c0b28bf11b46820d29a3b3db8b73b61e51a",
+        "ScienceQA/image_698.jpg": "ba2fe6b9e3220276c703804d73bb64586cf9482e9ba3962ffc11d0e102e177a7",
+        "ScienceQA/image_699.jpg": "2dc387cc42b6196e61a12415ed78abb365103a42afb2775f25ae7758982e5387",
+        "ScienceQA/image_700.jpg": "14d77c39b020472c000d02e0494daf3cdf075635722727e052bcd459c12b6b87",
+        "ScienceQA/image_701.jpg": "10c070e21e4820d94e3f2b21028983905ef273ff893419aa7858b1137248df20",
+        "ScienceQA/image_702.jpg": "f5c6130473c533cf0c2cec2a1ba6b4e55ee272d4bcfa09f71bc506d93796a42d",
+        "ScienceQA/image_703.jpg": "db217a7fdfd1488f9fd43d77e10010cea97c23ef7ec454b6750077cf012e9555",
+        "ScienceQA/image_704.jpg": "927241b90a9f7e8a824b65d5b30c6d906a6749a2a18c62c5a111ecc2b78627d5",
+        "ScienceQA/image_705.jpg": "da6985e1d26fbeb6ae3d0450caff403528620115241db4a39e7d7275a5648f40",
+        "ScienceQA/image_706.jpg": "63edec9e300463dd45a9e521f5a04c0cc1faa842a659db7323acbcb4ee0f3678",
+        "ScienceQA/image_707.jpg": "1c98f18de1fe6af533d2dc038cdfc9e4b7b7fb5621a5520113eb7f735bf64552",
+        "ScienceQA/image_708.jpg": "9ec1e6bead30cd3bd4ab7ea6d3d10edac7d5dcdaf5b6aaafd4a6efc413ca15ce",
+        "ScienceQA/image_709.jpg": "e5a2a6a2a87da73467b5ad46f6a323915fb69d2f215bab3fb04c8c449bcd523d",
+        "ScienceQA/image_710.jpg": "9de94d7761c182273c480c3922ec3e869c49f130d0d4315b70d32eae7a37c377",
+        "ScienceQA/image_711.jpg": "a1fc4b44250d26b6939127a6a458d614caa5a614778a924aed480bdfef419385",
+        "ScienceQA/image_712.jpg": "185ceab8c790b5f8dac216fbad704a07561a0e4b827c10fb37e8fba78198dc41",
+        "ScienceQA/image_713.jpg": "dc36a32697277ffd03b0bad00948ad06de915f02d67dd51a15b426a23f68f163",
+        "ScienceQA/image_714.jpg": "2979dc3c3b2141b84d8ecab71cebaa104165774c9504ea69cee0d6888d8085bd",
+        "ScienceQA/image_715.jpg": "b73e34acb5fe0dcefc07fb8d1d4ffaa4067208fc2734f969774a3e55337985b8",
+        "ScienceQA/image_716.jpg": "78d506dafd8f9482729502887e73c311a8803e586502bf3fa695f6dffd6470a0",
+        "ScienceQA/image_717.jpg": "df3bff6a26d4e58905b7e524b99e264a417c31e24da3c4acc5b6711dce9fde99",
+        "ScienceQA/image_718.jpg": "12ee8b8dd5b72746d6fc21cb8b70457b4f7fd117eb6d10e44276d7cbdab5ce5c",
+        "ScienceQA/image_719.jpg": "1578be309370074b78210d80b50d96fe5c22ae26297056b50dd0f2d50515ce6f",
+        "ScienceQA/image_720.jpg": "78be8a0a1c7fad2af38984d6875af071e306885991c34acdd5c3522294939214",
+        "ScienceQA/image_721.jpg": "437f233fd02c90ed1c509c53bad51dadb00110f7b938364787dca448664f2275",
+        "ScienceQA/image_722.jpg": "ea538d651c7714d23d8ffc666e6b750b5b3767bd86219a6cba9835eacd841535",
+        "ScienceQA/image_723.jpg": "7e07b0eb1e374394432c0b42b5e2b600ddb14e89dbc1a95d5c6a90424f65cd60",
+        "ScienceQA/image_724.jpg": "419cb15272cab85f729020f0effbf77ba88da46b1d12caba4d511d2cb3ce6469",
+        "ScienceQA/image_725.jpg": "e1e0c6febea5c6519fbd2274d5de9a97cd66593cf58a582aade163425562b1d1",
+        "ScienceQA/image_726.jpg": "68b551810b7372c1f76507d34f89fcf31f6a49c46ddcd7a8e2610054648a8f86",
+        "ScienceQA/image_727.jpg": "34003b2fec20df3ca975733dcfa4fd04a6103337da8090f845a4b5e308c8f0da",
+        "ScienceQA/image_728.jpg": "45b27518a8b7979c0ae1cc72f25bfc8248c8e204524bf190ee5bca63ae86a1f4",
+        "ScienceQA/image_729.jpg": "da1a7e62a56e815fec3a60d66007a3608227e60e57557e5824244a404f876cc0",
+        "ScienceQA/image_730.jpg": "d9e6206b1dc2863d7a76d129e1ba46639b98d46dd63c785dc51fc1f96d31fb7f",
+        "ScienceQA/image_731.jpg": "f71c8cdc4ffd8a4f43a0f33e748eb953017973cb6a8745efdd1cc4d25af33ad4",
+        "ScienceQA/image_732.jpg": "f9ca6b4ad4ce456993695453c9864136d5f4b5e9f2cd19936d335a6568cc09aa",
+        "ScienceQA/image_733.jpg": "24579cbf56cde29b0001121a63fc26b9c84f775a50fa30941de0f2071639e00c",
+        "ScienceQA/image_734.jpg": "df3bff6a26d4e58905b7e524b99e264a417c31e24da3c4acc5b6711dce9fde99",
+        "ScienceQA/image_735.jpg": "8a18cfc76afe394384fb4fff627d90b51de89888e25381b6c69542e6fef7de8c",
+        "ScienceQA/image_736.jpg": "392359fdeaffb9f3082e11f8a6ca9629d8c6c601d8bc95e35c6d161fdbe051e0",
+        "ScienceQA/image_737.jpg": "49f1f6356c350ea6278407cc7b5335958811812ffa33238151401c05c43c9b44",
+        "ScienceQA/image_738.jpg": "75f639cad42b102c0b6c0cf3996c38d99fbaefc8474f62d80a9fdd8d145384ad",
+        "ScienceQA/image_739.jpg": "72c25222ce9456d737c8049ee6b296ee1e5aff9bbdda8522cefd1c04e3639551",
+        "ScienceQA/image_740.jpg": "9e0ccaa8cb4b0c242d2a62ce8ac8d8fa6646b8e27d350e20020e29a6b20d7014",
+        "ScienceQA/image_741.jpg": "c0c82dcb3dc67a455e92be4db4d8afe5afa34fe0a6f66f051a2cc72a336a5d7c",
+        "ScienceQA/image_742.jpg": "b45a9ead8a46b9b60fff2667b495de4d045e2858383649707f5aa57841599692",
+        "ScienceQA/image_743.jpg": "b17ff4b44e51fa51c3dce094856d8c850eaf20a3890469b61d88cc37dd0c33f2",
+        "ScienceQA/image_744.jpg": "e88fda95d5a3d2e76e9cec68f2d6c4e19278b92a6e4d1ede5a7ab538df4e8247",
+        "ScienceQA/image_745.jpg": "4cf48783e22b1a4b9e98d8e2011e3f93b0574c28c658d13134b0fe628fe65397",
+        "ScienceQA/image_746.jpg": "d092d9305c5c63074e5d3591711fc725026302dcc8ab8b5b4a5145509db9e654",
+        "ScienceQA/image_747.jpg": "e7eed8f03672fc16e11c6a97306725c470e68c61c75d1831b53fa442a28016b0",
+        "ScienceQA/image_748.jpg": "21b5bc430ec362f97832845f1ac43232bae6bd2b90d531cd82d948d54f7cda0a",
+        "ScienceQA/image_749.jpg": "97f8131420ba84597a5a08c04e8872bce364e07ac18109fcc95d65a4a6351e19",
+        "ScienceQA/image_750.jpg": "f3476de7f24925e1f05bb49e2964ea1e3c45420ebf2a4db9440bf7ef34503451",
+        "ScienceQA/image_751.jpg": "050309d8348d08fda7f305759de2f423bb9c3717083937d5339dfdeb63f8f308",
+        "ScienceQA/image_752.jpg": "89174c79f2ac5dd3a7711f06d3cddc8215c26cb205daa71ca4643bc88300b67f",
+        "ScienceQA/image_753.jpg": "2c09785ce0e524088165e83b8e5097ba3c0f7e5f1045f73ac43c7c6719e96803",
+        "ScienceQA/image_754.jpg": "8479504d359316a7726f48323a69d3f8b894b9057bb740ed544cb0570d4e7fc3",
+        "ScienceQA/image_755.jpg": "29083a8c4a0abf3aa3ab55eea75a70d00a6707334d714e0264a25298d3828d97",
+        "ScienceQA/image_756.jpg": "94b6485b207646c674ba758fad433022251804a60c612689f288879bbb1894af",
+        "ScienceQA/image_757.jpg": "e3532daf63d378aaf9591dcfcbef5d6ecfef23b0d1bbebae08f2a97b87eb64e3",
+        "ScienceQA/image_758.jpg": "98b356fa891e77e0bf48e4ddc8363b7a6458ec8ed1b9860b3a5afba75fae264a",
+        "ScienceQA/image_759.jpg": "783ee4e5a34d729e77b81d75d0f8ed2dd514759e10acccaa78ac05c70c2f636f",
+        "ScienceQA/image_760.jpg": "3a6a8b3047ebc2900234c6e8f58d7a7c5f24c296d2c487b2de007ab208574b3d",
+        "ScienceQA/image_761.jpg": "816662a079ed3e11d5d27bf2b57e484098c4a59fbab98bc959620b0428f7d9b1",
+        "ScienceQA/image_762.jpg": "d9003c0fe53318a4687e9fd8b4f4f0e93702e0c9364b9a21ad5ba9cb20ce5f2f",
+        "ScienceQA/image_763.jpg": "2ac690f1497010904bf8d0028eee4d50392c6c7880ba323e00a8edd324b55093",
+        "ScienceQA/image_764.jpg": "4131558c08163a85ba70f7e475f483a9be6269542496e85051dde0b29c675bfc",
+        "ScienceQA/image_765.jpg": "4a4d4d5a2777d9a3698094a3d33d4b269382ee5cd77330700faec560741980bc",
+        "ScienceQA/image_766.jpg": "7d67db54cc2bae2bef4e466298e986aa3bd18b8bd8fb1ab3075b0bedee4b0f06",
+        "ScienceQA/image_767.jpg": "1b3e34c8ffd995c56d85e4ff3482aaaacce94d6222bcf92191fb2f3d87271e97",
+        "ScienceQA/image_768.jpg": "d7b4851bb6e7497df85f1e8302a4ae77cf59a24b2dc55b01586dd575aed4448e",
+        "ScienceQA/image_769.jpg": "2adbaeb5acb039f3ed282edb1fe24eccbc7361264189ae00aece29f05027850d",
+        "ScienceQA/image_770.jpg": "448118713fdc98caccd26a2adcb0c21506abdcd4bf71610f71e2ab6bb1a04c9a",
+        "ScienceQA/image_771.jpg": "e21e9ca71978b6194c82504882ea57179f8e571afdfa6ef7f407fe05e7610248",
+        "ScienceQA/image_772.jpg": "af6db52c189004e490ad4de358b820097561e720fa9c20f07c43e1812525e0ff",
+        "ScienceQA/image_773.jpg": "d29aac801ae309cab77641c5aaa836cd18908afba9cdb9696672b673dea3719e",
+        "ScienceQA/image_774.jpg": "390fa7a2e75e3fb6d6b37c75e8b962b8f819b1b1671fa98f10666fd61c713f3d",
+        "ScienceQA/image_775.jpg": "a31345a2264298aa87557801bb8491e07368e7364f15d6eb5377675e66a7991a",
+        "ScienceQA/image_776.jpg": "ce5a95cc49a72cad08933b114ff84a0da0d13ed0c41b9f3090477c892d925b62",
+        "ScienceQA/image_777.jpg": "56cb5d736bf146c137c3ff123029035c1f290104571bc2e0adf723352315df1c",
+        "ScienceQA/image_778.jpg": "ef4360a361527b8ca1db324cc94f045e083b406cd187af9141e6caecbe040950",
+        "ScienceQA/image_779.jpg": "f97617403c33f9ee22d396b8733d7ea7d59e27e78855e4f7af753070af131d3e",
+        "ScienceQA/image_780.jpg": "6b818764b6f0ad02d84d1616ae63709363ff4817aac369e03ad4a204874a93c6",
+        "ScienceQA/image_781.jpg": "23283ff18c5cb0f7edc1d9577fd16691e5ab9d0650e9b21433076c439f3b299b",
+        "ScienceQA/image_782.jpg": "5388a36c51fa626bed1c3243fad5d017382fc6c98fc2ce4940fd9475ecb49ddb",
+        "ScienceQA/image_783.jpg": "ed1f2c0fbc42a5356b2edf05841dc620ffe24b1d264e32f08c5556f222b5add3",
+        "ScienceQA/image_784.jpg": "e1c532e520181d12d519a637e1dc4460c894b4b6d92844b19bb056832365ed23",
+        "ScienceQA/image_785.jpg": "7590b30ecefd380836b65e82a5d1c063557cd82702f43ec743e883a8b97ff2e6",
+        "ScienceQA/image_786.jpg": "ae59b1dbb6e9600996744fcb3e1b9509cbce19e719f5ee8fc8d241dad274e113",
+        "ScienceQA/image_787.jpg": "092971f0b215b29445176286cd1167ce36b0589dc34b109ce7dcb1c88bb51228",
+        "ScienceQA/image_788.jpg": "1ac39c9ccfbf1636bd3f96ef7475dcaf91d7d554a88ecd64075dd348cf28d4d8",
+        "ScienceQA/image_789.jpg": "2b6be89b5fa2e4c88cc7b1fb27eaae9283c49d1340259a942edc365119a52cac",
+        "ScienceQA/image_790.jpg": "8798d8fc552d12a3c8cafc268d2f80f44b59992da5b05a52bb90d3415708eefb",
+        "ScienceQA/image_791.jpg": "5cb2a64def5abe2668414c48f4f2bfe287011263e2308ae1a680eb4cd2c1131c",
+        "ScienceQA/image_792.jpg": "6b45e7c62167a4e6732c698569244057d58e5f19f924cbda5f5ca9e80f53c17f",
+        "ScienceQA/image_793.jpg": "955587da4655c1d0468e65350d83a25df6c5c8c9efa155f216c34372eb7e6cec",
+        "ScienceQA/image_794.jpg": "91250e533b228a4f7cb4d6a47d74b20905966b4c2769ea4c4a98e353c30f4e32",
+        "ScienceQA/image_795.jpg": "93bf83a0590bd40b894e24e84872213fb898d219e012fac65bd9794d8e964671",
+        "ScienceQA/image_796.jpg": "ff3892103dd8fd21bca7dc3120d2bb6373adbcc9958836abdaafbb39bf9b53df",
+        "ScienceQA/image_797.jpg": "1b588a36c6ed52362ccfab7367fbeda3a434c0f97153a64e9322a3dd79d53560",
+        "ScienceQA/image_798.jpg": "689ee9f187c40b66e9493454e8714c661a296379080b1aa985fba038c2d3c2ee",
+        "ScienceQA/image_799.jpg": "f5158cf968161da0eb34b823d9cfbb7a482134cd0ce3de3823ce5036971028c5",
+        "ScienceQA/image_800.jpg": "8484e3ebd0f78c0d722c4da1e40f6b2c48008b8db6add8c9e60a2611bb22a047",
+        "ScienceQA/image_801.jpg": "72f2f4caa04857354385d6e6016c9b5eab10386618537649e192cd081fe7f25e",
+        "ScienceQA/image_802.jpg": "4b794c63bc836098e9b4c868d4820653e0f0b9cd145e863cc36057873ee7bdcc",
+        "ScienceQA/image_803.jpg": "d8458d45a66ac1bdd27d21713f7ffe20102de22e3349dd81ce1507bca9e4d80f",
+        "ScienceQA/image_804.jpg": "7a4c7a52e7bbb8ca536fd4622e2639aa2dbcd6cd50e446e40bf0bb935a584a3c",
+        "ScienceQA/image_805.jpg": "dc48d22b6174ff077410bf83b57cd558459556f0d4a11b51cfc57aa8b1e5fbc5",
+        "ScienceQA/image_806.jpg": "faddb2569cdb1e910853641f55966900fd099ba76ca0df1bf8a4d4dd7fdc2a90",
+        "ScienceQA/image_807.jpg": "43e9f6ec315a3b939e08cd6210d45c46585f5b7cbc247584289dd37c71c0ac14",
+        "ScienceQA/image_808.jpg": "cf4c3cc70ec276d50394132fe565a5ea81c1221ff6d35d4f58e96a6c05e17295",
+        "ScienceQA/image_809.jpg": "6435865c331bb468750bf0bb2b2f4efa087ed43575b12bb576688eab07fbedf3",
+        "ScienceQA/image_810.jpg": "20f6123d8392e077fd88a350fe3685ff3e9e02c9f2231e923dad1c6ebcbff847",
+        "ScienceQA/image_811.jpg": "2ceb477935e39c9c1e780eddae55f6cef6253980caa5a5db2f8c7068b0a2d001",
+        "ScienceQA/image_812.jpg": "106582a2c506eed1b0487989afcb64fcb7f8fc5f30c62cf41f27fc0f8b8defe2",
+        "ScienceQA/image_813.jpg": "da5d6308165b19d22a23a0107c955b56cd759e61f0196d7d022391595d5d77f6",
+        "ScienceQA/image_814.jpg": "8f99fb09ab9f3b95607e898d423319710f17751ee598563075d4e7ea97dc1653",
+        "ScienceQA/image_815.jpg": "7b662eff8754c43543b24aeddc059d5b1da444e1c6692a11bd5ecca874cde2e7",
+        "ScienceQA/image_816.jpg": "1315f9d02264fff34a0f7778eb01e0b0ef723b9e271d36f99d1e818d6a094d33",
+        "ScienceQA/image_817.jpg": "a45f2ebd1259b99fd739418040d4d95354347a27cdd1aef9995c4fc7427a8c86",
+        "ScienceQA/image_818.jpg": "84b13cd5a3202c6c2451376cda437b1f400599be4e8f9de114063fc0296036e7",
+        "ScienceQA/image_819.jpg": "aeab9d11c346009691561901097aec421f5ceecb9f0aa7b3a93964166964bc6c",
+        "ScienceQA/image_820.jpg": "4f3d6910856ea04fcd2041c6465c65eaa2983c61b8954e5b10eb92963f4cb2b2",
+        "ScienceQA/image_821.jpg": "dde25a6e9bf7620033392ebb6b44956bce5b2d6c1d235972718cd24b287c1f01",
+        "ScienceQA/image_822.jpg": "367ccdcbcca9555d0a499c4c24701fd30b585e6d398974dbaf48ef8beb2a04b9",
+        "ScienceQA/image_823.jpg": "c3703e38f9c36d8520ca461694f1d41207a74445da1347dbff107a6b06cd25c5",
+        "ScienceQA/image_824.jpg": "f71b64d9601567f64ac479a937828403e9b3056321f766f7e911f6ac7a9b5bee",
+        "ScienceQA/image_825.jpg": "594539e738701f64d485722ca40207712ef60421a3b7b0d06c2f8f38903c05df",
+        "ScienceQA/image_826.jpg": "e65243f38882e6e9c2a0778af3d8c7fbe05f1b475d6f74624a617a2b1fa393da",
+        "ScienceQA/image_827.jpg": "85992841128d5c9a02bf0f4f6bf097641049e1d8154349e8393286c2fd9ce7d1",
+        "ScienceQA/image_828.jpg": "bf52cf28e64803a41275affdcf308cc0e294056eec2b21669519a0ceeca374d0",
+        "ScienceQA/image_829.jpg": "5c895bf4ae5148dfd0f7fdd919a7f70eb122bbf6a6bdf8f7af723fd5b3e82768",
+        "ScienceQA/image_830.jpg": "02528382bdf28e662d9e756ae6ca3f88f4429b4d107eebd4b305fd83cb55741f",
+        "ScienceQA/image_831.jpg": "f78aae5b15e90ac730aac7b5e7b3c55726f5c8ccc5cddc2b8e089cafd8bd4aee",
+        "ScienceQA/image_832.jpg": "cc2bf9f64eac390fba80eeb7da88b3db9d0fa92f647782981171a7d5cb42de97",
+        "ScienceQA/image_833.jpg": "5a4f4a9f73f8bfb40479f58232b94e8f997da4335335da82575e1fcade9963b0",
+        "ScienceQA/image_834.jpg": "8049855a1af264d7db7cda7ec84a6240ffed530683b1259677af80a63430a5c0",
+        "ScienceQA/image_835.jpg": "ef77ec4fddbd8f21cd8b1e51d53e91a8b99e3c95f095d65c7047d7c7346892c7",
+        "ScienceQA/image_836.jpg": "e4d5680c8c07849491600daf892276e901fef6d5922655c9d8fa160fe4164ab9",
+        "ScienceQA/image_837.jpg": "bee5cd18e0586bc176c7b1c1eeef0a74a763772eac60f9f6de6d56a41844f3f9",
+        "ScienceQA/image_838.jpg": "926e82ce5ef3d641bd10c2baa81eeaa517067c759270f4f596f390822ad08397",
+        "ScienceQA/image_839.jpg": "5f688c75d9578c9239c64ec82110ffc37924b05de125dce57bfafbe35ee84e03",
+        "ScienceQA/image_840.jpg": "9c633daaa0c41c8ee39ffd8727450ef4956cc28db3cee25b4cd62d6478e0ec12",
+        "ScienceQA/image_841.jpg": "86927f8df4de4424b8c098b941a181e1aa845956cf785b7fa5e249576ab572b7",
+        "ScienceQA/image_842.jpg": "798c1a114dd27370654374b3e95fc58d5413569f9ac760add54eba642d5d1078",
+        "ScienceQA/image_843.jpg": "972315b4d18f9e7120af258ea71baa8e6325ef829bd05eea2d2f108a71e870e0",
+        "ScienceQA/image_844.jpg": "853565870998041985bbb64f018b32c5937c60aa4f5b5909458c907de85a3da7",
+        "ScienceQA/image_845.jpg": "537e55f764b4e770ed380c95345eff109a1728dd9ab4e0b8b199bed1a1d9fccb",
+        "ScienceQA/image_846.jpg": "54c986b67a9d7943728e5b0ac2ffc2698babe2cb22eb94df3b5f03a64fe3ff98",
+        "ScienceQA/image_847.jpg": "52fcefd52026f81ac6ac6573574a4e9158dfc20bf6626b218601bfd50cd1f3a2",
+        "ScienceQA/image_848.jpg": "eb57a7261f9f0b585369332ab0f3cff42fa2d3feaf5d85f4f6a886e527c47616",
+        "ScienceQA/image_849.jpg": "2bff2b6c3b31ee3593af560f9241da4a5e2944315e0f0f79aec36cf4cbaa1689",
+        "ScienceQA/image_850.jpg": "d2e784e2a70a84914eca203aba6e9e5d4fd515502a290e24a77c55905ac6da85",
+        "ScienceQA/image_851.jpg": "9e2ea17847d6d2d361634afe8cecf5a71444b1653f4be96a3787557572f73fb7",
+        "ScienceQA/image_852.jpg": "f8f52c614d2954123184b520c01787af9cd6230bb18e7df7b20a694d6cbd8133",
+        "ScienceQA/image_853.jpg": "1e0de75d957402c1e078d9f56ecaa194d6ade42ba08d8e07736861293d07fdc4",
+        "ScienceQA/image_854.jpg": "e7479a3f1e80e1c3139e14dd3d393316b60708ca048d31fe775322b02da30505",
+        "ScienceQA/image_855.jpg": "91e243822e1bf3b0d863ab87a3e75c216037598996d7e6c106368194f5eb3d67",
+        "ScienceQA/image_856.jpg": "9e2ea17847d6d2d361634afe8cecf5a71444b1653f4be96a3787557572f73fb7",
+        "ScienceQA/image_857.jpg": "6826ab8ed2ca30296e031496baaf02019c15c98500222e227a840b9be5e67cb7",
+        "ScienceQA/image_858.jpg": "3a6278f58bb62fee3f3fbe829067d71c9a56f512296878611dd9db0f2dc89e80",
+        "ScienceQA/image_859.jpg": "43d48e925e39d656fe6184c8de172b61c5b6533dca9d3ef182c7698f0cd1c2dc",
+        "ScienceQA/image_860.jpg": "c14168bfd7e5eda927f2987c56efd8a5f845552cc5aa87478ed3d04e9ab901db",
+        "ScienceQA/image_861.jpg": "932a337b8d3fe6ca32eb91d2ab6a90d9644f7bd0f5bc1c05f658816837198406",
+        "ScienceQA/image_862.jpg": "a623cd851f3324c5d57e47ad7de707c29f3e9fafc05f4c40eb2d8f3e1f3cf501",
+        "ScienceQA/image_863.jpg": "830bb4f2ddc0f5e034325a364292d3ff4bfc7472f690a371408ebe76fa6219f7",
+        "ScienceQA/image_864.jpg": "3a11b900a56a6102243183770362ad8792145bde61af8c8d72c19896f517ff4f",
+        "ScienceQA/image_865.jpg": "fee4172a1f0d416c7f254c284e3bd0b2d6b7e151b3f37c3085d9933b9741ca2f",
+        "ScienceQA/image_866.jpg": "6694daaf03605845d9e3b725d681bbb4ea39a00c1dae6e591fdec2e532207594",
+        "ScienceQA/image_867.jpg": "5ccd03ec69691b8a83d004b139b9f62b935c4711440c29165721821346130de2",
+        "ScienceQA/image_868.jpg": "f8c7c9ee2fe4f962caf06f25b8c8c5d041fa44ee5cb33fbbcbb7f25fb7797f9b",
+        "ScienceQA/image_869.jpg": "a4ba1d08db31685657933268aac6a8ad9e550d824e9e77c1c6200791aecb749f",
+        "ScienceQA/image_870.jpg": "ec38a0a55656a151d3857d553282ec5fd68f594e8dbf4c8234fbb1d6ce48b978",
+        "ScienceQA/image_871.jpg": "f666b2e0294c8bc257b237f4c238a031777aca31bedd93a7174da130a4b6f3c2",
+        "ScienceQA/image_872.jpg": "4a83065d2c15e7511d1736c679b5d8117aced8b9fbafcba508485a7d10e7ad9b",
+        "ScienceQA/image_873.jpg": "51c01d0bd16386883cab1a5c28e1d3741842e78dc1f2485d3f28a44878e443da",
+        "ScienceQA/image_874.jpg": "6c0a474d9c517e0020d931d4f53537ef27e811cc030e0d69dc0803ead4636091",
+        "ScienceQA/image_875.jpg": "561fa5075a50236025642594e1637363b8f778270e9204e19fb9ae133f96b975",
+        "ScienceQA/image_876.jpg": "0aa1bdfa9bd5779f4d3196232353d02403047248362cd4394bc39a661fbb8726",
+        "ScienceQA/image_877.jpg": "73b333edd951bf004b7688482294a1b3afc4ac94572911117289b4e027f39d2d",
+        "ScienceQA/image_878.jpg": "85cecf543282c7516516ceb9e08194d3287981661a8a0a265999f7933c03a04f",
+        "ScienceQA/image_879.jpg": "26e9d366f29d3ff52b80210412584bc04bda68c4f7b4c08655fd8ac69c07da86",
+        "ScienceQA/image_880.jpg": "e9cb203e768deb5ea83d06dd39221ae5bf9a0cbb372b391961c60498dac367ae",
+        "ScienceQA/image_881.jpg": "7d81e40b7f6e01c024c2345afd63ac527ca86b53edd2874baba2f0b2f8e4e818",
+        "ScienceQA/image_882.jpg": "3a7bf85772f337875dcfd597106841ab39b26e80690a765c1e254c9124176ea3",
+        "ScienceQA/image_883.jpg": "2731c4f13fa5fc8e82c029bb2c61900ff6ac970605fee59e7dc1410005abea2e",
+        "ScienceQA/image_884.jpg": "14aca5ac31b888623acc419c19f850e9696295e307b2865e62c89679152b64c8",
+        "ScienceQA/image_885.jpg": "0f42c753a59be7afdd889f8c2e89b0ce1922f4f315015116991ddf9e88eb0173",
+        "ScienceQA/image_886.jpg": "280df8a683f4e56f82c9ed95f1921789da1eed3690cebfcc49aff8a8d9561a68",
+        "ScienceQA/image_887.jpg": "28556d1a49bae91857d1d0f1ad61f52b060734b1ee766e384e1a45599ee8d350",
+        "ScienceQA/image_888.jpg": "8fb1f43197ed5466eaed0aaa884ddbae04c8d6e27f0630fd8cc051b2a0b8a6c0",
+        "ScienceQA/image_889.jpg": "a39e16e5190a74b84c47f28a2994ceca39380ca278e9c95b32f698572778ec1d",
+        "ScienceQA/image_890.jpg": "40cf8700ff03ea38357a709a90c06f5a122d764e20dc46479889fffdf38cabfa",
+        "ScienceQA/image_891.jpg": "de82d664fc2ca71494e0dfc5f2e9215d557557768d27cbfdf3b0444b76db1c7e",
+        "ScienceQA/image_892.jpg": "14ed731ba170b170cd64685f9a88fc1e506eda73666d7477abe591f058f2d0c8",
+        "ScienceQA/image_893.jpg": "b6cedfc2b96a18cf45696011092263f551d026da02cecbb3212f9e815b7f274e",
+        "ScienceQA/image_894.jpg": "42a78873a41f31cd9a39834e3903161ff2477fc2fff04e4505d9f10e83ea0115",
+        "ScienceQA/image_895.jpg": "a7cacc3e27ca792b2f5d66df00ab41b7bce4ca1e24fe65e33896ceb72cc45223",
+        "ScienceQA/image_896.jpg": "35573c354ef9bfddd45434626d335675b6d44d77e636662f38e5a6fe60e0baad",
+        "ScienceQA/image_897.jpg": "e15891d91987c08cd5af4ba2869a1addf9d025d336131e77830d7c0c8d6da213",
+        "ScienceQA/image_898.jpg": "22f97b1730bf7d2d5e23543c41f9d2aecbae365a24d81184457b200d27ccb747",
+        "ScienceQA/image_899.jpg": "0f469a2b57bebae285b784768fda9fd90618ad0bcc70700e38acbec7a9d7d03d",
+        "ScienceQA/image_900.jpg": "2430fa305cd1cbe92f8cf102608bcf38b9b1f91930bb1d8e5e70b8d8d813830d",
+        "ScienceQA/image_901.jpg": "c1acfb97aba51442eda3d8565486fac39b94611c1fdd60e5e7202b2fdbab5d8c",
+        "ScienceQA/image_902.jpg": "edd28b6e45069db2eebaba782f386d248ad451ac46985d40ddc1f34bf4e33fb2",
+        "ScienceQA/image_903.jpg": "35421f0540e3907e17ff0a963fba302942287550566fa72d36cf5be3dc04ca7d",
+        "ScienceQA/image_904.jpg": "83fd24d90cb2ac118b409303181f53ddd42b7205351a6d99d75133e6347250ed",
+        "ScienceQA/image_905.jpg": "bd9bb8016269e5ccf8107f1de2090f53c36ca7ec91702f8171a072af312babe2",
+        "ScienceQA/image_906.jpg": "ef4360a361527b8ca1db324cc94f045e083b406cd187af9141e6caecbe040950",
+        "ScienceQA/image_907.jpg": "763257549ec5a757e2c3bf5126bb4532c66c0026fc732c7255c1f5f4cfc07ecc",
+        "ScienceQA/image_908.jpg": "94623104622f89f111073e345b74aebb915a58c6006ebd766ef3ef1d9c23fa6e",
+        "ScienceQA/image_909.jpg": "7a84bb0c7dc075a74dc1b5b2681d9e4488a101742814731f10302d53ea21032c",
+        "ScienceQA/image_910.jpg": "0e09b590914bc727012b2b148ec5e02a73efe796f082baa8289872da1525b8f3",
+        "ScienceQA/image_911.jpg": "edfb36289e2e97b53d66e1289f35cd21f242120b401637ef42ebfa5049afbf1a",
+        "ScienceQA/image_912.jpg": "5f688c75d9578c9239c64ec82110ffc37924b05de125dce57bfafbe35ee84e03",
+        "ScienceQA/image_913.jpg": "1f6f97c3d0935009fb8462ca966b7768b340d8ff8df56fd6766e184f3744617c",
+        "ScienceQA/image_914.jpg": "599785bbf5f73f67b1c651feabad14e92ef2c7013434e604739e2d5ae5e41dfd",
+        "ScienceQA/image_915.jpg": "f0eca061bf6eecf98a4ea1cc21071b8c183642716565e5da3db9c40fc8b45479",
+        "ScienceQA/image_916.jpg": "fb6e0e07fa40d15a563fe749d9f5ebbdd14fb02ccc7173910c57e66d046384df",
+        "ScienceQA/image_917.jpg": "236399b8e3e2681330da368ddb84f2ed9a6e139554dbc1dff612022a8f09af5e",
+        "ScienceQA/image_918.jpg": "6245386249f0cc29b931f3264d26a4bb90d5696e7f6559c3d5e6086389302208",
+        "ScienceQA/image_919.jpg": "678f5e450906f42ce3e581faa97922771b730949797b93b0b822a3b039f7d7d7",
+        "ScienceQA/image_920.jpg": "fdc5d8bca8ffccc8f9f83980ec344a0ec00f6fd34a665d686cfb660399f42dd4",
+        "ScienceQA/image_921.jpg": "c7c1005b0e0212fd1d28b957cb442f52d863f55308e752157b1730b70223f2fb",
+        "ScienceQA/image_922.jpg": "cbc1f53bbc05399f6ee8f3fc3a83478b0f37eab009195a10c99a2c520893a1db",
+        "ScienceQA/image_923.jpg": "32fe8bdf874bb2bc0378df565ba7448e27c8d23ff1f5867acab16739f33b4d09",
+        "ScienceQA/image_924.jpg": "8165378ebb9c8f3cf4229ac9073f4be39539acfa0fe147c5b41703be9ae9e232",
+        "ScienceQA/image_925.jpg": "12131faa9f0852f4d20ac756632438158cef55700aeaff9accf3f6c5771dd7b2",
+        "ScienceQA/image_926.jpg": "7ce6a35d80af7dee902df9c138a1c0dffbca59d581ea46819ca25960bfdb6298",
+        "ScienceQA/image_927.jpg": "79fefa4d239ffb3b4e1e5dea9eed08bed6f66256136c6e6862b299d1946be203",
+        "ScienceQA/image_928.jpg": "462dccd1e8b677dae086820fa0ba368cc7bb1c262070f3311e4e7b2f024b2eec",
+        "ScienceQA/image_929.jpg": "47208126809ecbea9514d42786b370d87cfc34baf891e683113e21760c37954a",
+        "ScienceQA/image_930.jpg": "8b43ab999fed571f7b22b010f13eb01e6ceb3b6c3b90f614ce1916e17cfc51fb",
+        "ScienceQA/image_931.jpg": "3ccd480b98437fa149c25acba51903d2362c711dc295fa0ca56e4272de99cb5a",
+        "ScienceQA/image_932.jpg": "b6b211122cd35a9f15ed1e3ce7718f62b8648f30cf567a7bd0cb47750cc4892b",
+        "ScienceQA/image_933.jpg": "a31345a2264298aa87557801bb8491e07368e7364f15d6eb5377675e66a7991a",
+        "ScienceQA/image_934.jpg": "31a9e63e8df7a2277241a37ab93fd4981492e8fb75b80d984020987888ed991e",
+        "ScienceQA/image_935.jpg": "95301b0b36679b3c552450f4bd927ebac25d8b73067a789236b531fa6e9f6fa0",
+        "ScienceQA/image_936.jpg": "bba6071b40ab43bc0ed2532117ba7ea280993e5acd990a2d3a549dd6f515282c",
+        "ScienceQA/image_937.jpg": "30c967d5244f62958c22d8c0e8baf29ef2df47ddeda1c1ccfaca2b65721ac2f9",
+        "ScienceQA/image_938.jpg": "8b97a4cc112c1a4a0eb073df9724eb4c93d642318e05b19b6c36a38902d925ea",
+        "ScienceQA/image_939.jpg": "76436ed50176abf38edf4167bf0f5d2f6b248c83759664bb1d85a9c6845bd74c",
+        "ScienceQA/image_940.jpg": "00bbf0e44ccfdc8edf489db98a0d341701b0904b598e5d2cdd2e7adccc8ec201",
+        "ScienceQA/image_941.jpg": "73b1080958c15acd76867556802478f08aaf707ead6171e400e4c1d32eaa2a97",
+        "ScienceQA/image_942.jpg": "b1573e42b70095dabc8a13c71ce37c0b28bf11b46820d29a3b3db8b73b61e51a",
+        "ScienceQA/image_943.jpg": "32fe8bdf874bb2bc0378df565ba7448e27c8d23ff1f5867acab16739f33b4d09",
+        "ScienceQA/image_944.jpg": "7345e3818ca0b2ee0c5eb108ca57cd0a688806473ebc149fbe5b710674a728f3",
+        "ScienceQA/image_945.jpg": "450cce513f9ebfa3aaced2786965c398ac880f8d1ddc6b927c6387718a0d07c9",
+        "ScienceQA/image_946.jpg": "acf89990f102dff052f5343ec2168e1396b2c09ab3ddf6bb3ca4d3b8c0d2c781",
+        "ScienceQA/image_947.jpg": "a557dfb7c486aa98aaf185000a62752aeb6baa3b86d3fa31f0002f888eb5289b",
+        "ScienceQA/image_948.jpg": "150acac4152dcf7d946d87bdba2df55ae32d5635dd8c73111c977f9ed642a1f3",
+        "ScienceQA/image_949.jpg": "e88e9d93fd3dc6788f60df55b1e06d9bc888666f01750b0e75f7e4e920df7278",
+        "ScienceQA/image_950.jpg": "32fe8bdf874bb2bc0378df565ba7448e27c8d23ff1f5867acab16739f33b4d09",
+        "ScienceQA/image_951.jpg": "4c20dc001df7b765e2afaeb904c8507901835b40d5f647356c4edb269fa7044c",
+        "ScienceQA/image_952.jpg": "8ab1454714700258d9a1a543a8259c16d833a63afedb66a9c9d4d37f462bab8d",
+        "ScienceQA/image_953.jpg": "7c450a012f2e2b4de2c98094e1177a6f597b05a3579b6674c6f712fe3ae41119",
+        "ScienceQA/image_954.jpg": "91250e533b228a4f7cb4d6a47d74b20905966b4c2769ea4c4a98e353c30f4e32",
+        "ScienceQA/image_955.jpg": "18cb5e9f912e8255e5319cb02f04d2b20d7f20830a611c0277988e7b6f458697",
+        "ScienceQA/image_956.jpg": "13388c2136dc69a21c1958cf082b068d8b21b562d3a798cd26a4dd3305007c48",
+        "ScienceQA/image_957.jpg": "8a388580b1994b0adb8d7b1378f0686554ad76a7d08c20f84dbf98f1a0a45f11",
+        "ScienceQA/image_958.jpg": "def4a280bb672ebd4ce633e0a6e1910d8d12839990730f592810e6ec8f7df979",
+        "ScienceQA/image_959.jpg": "380c6c5737e5497794bf842c0e6e95fa063f54cb9d0a47ae040af68d75e3b512",
+        "ScienceQA/image_960.jpg": "f63b590be628c1f4cf1ac650f4bba0445e8c30d2ab6a44e2bc56db04f5e1e5cc",
+        "ScienceQA/image_961.jpg": "9077f96fe0ee5c300872a3c2381186ab41b82adec40440cd493c52a78214540d",
+        "ScienceQA/image_962.jpg": "96a8da53a1d753b1a9a77c7a77b0fcceee11d8969b9b9ab3f930b83438fa3742",
+        "ScienceQA/image_963.jpg": "c899c4dad4fd367dc123681b22bcb2f77f4df518ed11009d88303062c04d1396",
+        "ScienceQA/image_964.jpg": "31ace8d5a519fe186fefc9036917f9e23bfa39758c5da7a306bfa822ff5ab22d",
+        "ScienceQA/image_965.jpg": "30c967d5244f62958c22d8c0e8baf29ef2df47ddeda1c1ccfaca2b65721ac2f9",
+        "ScienceQA/image_966.jpg": "95cb67a8f50cc040a5dc2cf63390bac987fd7ec21c0ae27cfa06d658d5fa1393",
+        "ScienceQA/image_967.jpg": "3c9b9f61e53145fee39634c769fbbf1bd9211397533c1e2331662277a38d7f9c",
+        "ScienceQA/image_968.jpg": "dd64b2bb38e740be9cfb6bf4f70f08b09a38d5a06f0bcff4949e9e206576d8a9",
+        "ScienceQA/image_969.jpg": "44881fe23be57c547c66ab6faa74cac9e95f44af55503f60e068eb0d3593a70b",
+        "ScienceQA/image_970.jpg": "ddae46d218242c5c2288a3397f2ce23f394c2268f3bf474ccc25d7a803e96101",
+        "ScienceQA/image_971.jpg": "b4c3798d1499ccc84c031ffb8e55dcf527828bc5878b708c68306ba111b20474",
+        "ScienceQA/image_972.jpg": "2382c72fd9a65a3b48b0aa9fc389471d2eaefac24c02c13c81e6b320483cbafd",
+        "ScienceQA/image_973.jpg": "ae6d66332a553c197c8e2ea5ca0fd1ec6ceff48dd2a518301af5bfe66bad3b2e",
+        "ScienceQA/image_974.jpg": "d4478b3c943866a7c92ff670a386cef25491caec01499c47a990c9689754cff0",
+        "ScienceQA/image_975.jpg": "589494b0c0fe8b787edf31b90dbb799345dda521171d31dfe0c8556e4a4dfff7",
+        "ScienceQA/image_976.jpg": "254ebffcb8447f98894d27079b3ba68d2325b8503d7300165a06798e94bdc018",
+        "ScienceQA/image_977.jpg": "4508fd817d2ff97f28d5658605665c96fcdc999156975b887bc3f89bfc941005",
+        "ScienceQA/image_978.jpg": "dd202c794705bf9dcd0994332e2e421cc4ff178f89bd18ef2a49a22e874a28f8",
+        "ScienceQA/image_979.jpg": "8b43ab999fed571f7b22b010f13eb01e6ceb3b6c3b90f614ce1916e17cfc51fb",
+        "ScienceQA/image_980.jpg": "72fff8cf4ed466d1532715d7c6ae2d6e0049feeb66dc62f21238b415e5717229",
+        "ScienceQA/image_981.jpg": "28018c379a9663d6a034c21177a9371394453f24eec38d379cc6137b98b66912",
+        "ScienceQA/image_982.jpg": "d4a33639c766bbd3f04c75ff3df8bdfafd28913a65187f84875f73bc53b6dd30",
+        "ScienceQA/image_983.jpg": "d09462f9b7eb0ce081a38ce3b4991e1bda9834755972b05a27bd996c0c7fd280",
+        "ScienceQA/image_984.jpg": "dbd9f706ca2b162526ecee7caf37a241de91e9c53cbf1a7404f5b254a9fff964",
+        "ScienceQA/image_985.jpg": "224f7510abbb32116b74b5534473b4639e2f291f5ff6955dd725826cc992d116",
+        "ScienceQA/image_986.jpg": "5cfe7122da7f66fdedd09a8f31675792d92e5c2d50b4509ce187abcb2997c378",
+        "ScienceQA/image_987.jpg": "9ce735b30fa81953f1247321f989e8c23c4b7417784c9e561f1c31e2704c1538",
+        "ScienceQA/image_988.jpg": "96a8da53a1d753b1a9a77c7a77b0fcceee11d8969b9b9ab3f930b83438fa3742",
+        "ScienceQA/image_989.jpg": "c541f1786e0841b36269fa4ee2d31da1a5b3a05c97b20d790613771972f4ec1c",
+        "ScienceQA/image_990.jpg": "2e3501f47ca770b4b0ed433a94de79b343b3bb16a15e15d72a53a0b59e415463",
+        "ScienceQA/image_991.jpg": "1f3fead474a5d5a9c9821d484a01240200e785a8086c4516a547d58530ec021f",
+        "ScienceQA/image_992.jpg": "2e93d263084801019f18c6b7aadc5575b1b8153a45435c1088e05e1959c476be",
+        "ScienceQA/image_993.jpg": "ca962547db25b7a14acaf858a4c961cab02359b4fb5aaa5a707aac9b1bddac35",
+        "ScienceQA/image_994.jpg": "80e1bbbb75f6a531b795ecbe979bc1c305a79fab76c72f8ebaab96683e4b0a66",
+        "ScienceQA/image_995.jpg": "3178f37bedbf3e5ea49983ae83fa74e361efcd7213ee9dba7da52e62d2a56f97",
+        "ScienceQA/image_996.jpg": "91b39e8b5bd7060bf5306b4bde62509068059d6556351b1617008c9308e7063c",
+        "ScienceQA/image_997.jpg": "3ab7d31e84220b14dd052d49e617a7999d3fb2593538d3c0b85e5f9610186585",
+        "ScienceQA/image_998.jpg": "8b43ab999fed571f7b22b010f13eb01e6ceb3b6c3b90f614ce1916e17cfc51fb",
+        "ScienceQA/image_999.jpg": "1c6c3a81a631c0b8db993343c5370289617df302f7ac2cfe705f1ed8f39dd914"
+      }
+    },
+    "validation_protocol": {
+      "protocol": "v5-full-validation-controls-v1",
+      "data_sha256": "470b7a9b2ca8017fdaad15c404f54b9179a0d556434807d252e89102e9a92f44",
+      "items_sha256": "a3a167138ba8a45e0fde2fc66f7f29a5ad520b80173671648008981eda082207",
+      "queries": 760,
+      "selection": "All validation records; pair(random.Random(record.id)); sorted source then id",
+      "candidates": "All same-source validation targets, including duplicate targets",
+      "positives": "Exact training positive_mask; normalized answers or overlapping image/caption keys",
+      "ties": "First candidate in record-id order, exactly as training validation",
+      "types": "Question/source-only heuristic v1; not official question-type annotation",
+      "implementation_sha256": "738450f698de6581c54fd6d5495fcd776510fd9357538266be0ceced87ecdf9a",
+      "training_pair_sha256": "7bc859a22530508c7718c4dd6e4dc3666d034442275cf5a6e025d18f2064d624"
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 2,
+    "max_pixels": 65536,
+    "max_text_tokens": 1800,
+    "implementation": {
+      "scripts/evaluate_paper_baseline_cpu.py": "89c0853baa047ef3e196854da7d4b57d117fb9f184906ac0f8b0ecfedf8778bc",
+      "superembedding/validation_protocol.py": "738450f698de6581c54fd6d5495fcd776510fd9357538266be0ceced87ecdf9a",
+      "scripts/train_general.py": "7bc859a22530508c7718c4dd6e4dc3666d034442275cf5a6e025d18f2064d624",
+      "superembedding/general.py": "529b524c89295b2969e97a235ea25a4603f3ed88df5bcef677d4c040cf0f492b"
+    },
+    "torch": "2.10.0+cu128",
+    "transformers": "5.5.0",
+    "selection": "No fitting or model/prompt selection; evaluate fixed official weights.",
+    "scope": "Seen diagnostic validation and ScienceQA. Restricted image budget; not paper headline reproduction.",
+    "pretraining_contamination": "Unknown; benchmark may occur in upstream embedding training."
+  },
+  "mode": "full",
+  "n": 1000,
+  "accuracy": 0.774,
+  "predictions": [
+    {
+      "query": 0,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 1,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 2,
+      "candidate_index": 583,
+      "correct": false
+    },
+    {
+      "query": 3,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 4,
+      "candidate_index": 717,
+      "correct": false
+    },
+    {
+      "query": 5,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 6,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 7,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 8,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 9,
+      "candidate_index": 396,
+      "correct": false
+    },
+    {
+      "query": 10,
+      "candidate_index": 290,
+      "correct": false
+    },
+    {
+      "query": 11,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 12,
+      "candidate_index": 233,
+      "correct": false
+    },
+    {
+      "query": 13,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 14,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 15,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 16,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 17,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 18,
+      "candidate_index": 513,
+      "correct": false
+    },
+    {
+      "query": 19,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 20,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 21,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 22,
+      "candidate_index": 375,
+      "correct": false
+    },
+    {
+      "query": 23,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 24,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 25,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 26,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 27,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 28,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 29,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 30,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 31,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 32,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 33,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 34,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 35,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 36,
+      "candidate_index": 291,
+      "correct": false
+    },
+    {
+      "query": 37,
+      "candidate_index": 690,
+      "correct": false
+    },
+    {
+      "query": 38,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 39,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 40,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 41,
+      "candidate_index": 715,
+      "correct": false
+    },
+    {
+      "query": 42,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 43,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 44,
+      "candidate_index": 244,
+      "correct": false
+    },
+    {
+      "query": 45,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 46,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 47,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 48,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 49,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 50,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 51,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 52,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 53,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 54,
+      "candidate_index": 153,
+      "correct": false
+    },
+    {
+      "query": 55,
+      "candidate_index": 705,
+      "correct": false
+    },
+    {
+      "query": 56,
+      "candidate_index": 250,
+      "correct": false
+    },
+    {
+      "query": 57,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 58,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 59,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 60,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 61,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 62,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 63,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 64,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 65,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 66,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 67,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 68,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 69,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 70,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 71,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 72,
+      "candidate_index": 656,
+      "correct": false
+    },
+    {
+      "query": 73,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 74,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 75,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 76,
+      "candidate_index": 647,
+      "correct": false
+    },
+    {
+      "query": 77,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 78,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 79,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 80,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 81,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 82,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 83,
+      "candidate_index": 423,
+      "correct": false
+    },
+    {
+      "query": 84,
+      "candidate_index": 436,
+      "correct": false
+    },
+    {
+      "query": 85,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 86,
+      "candidate_index": 594,
+      "correct": false
+    },
+    {
+      "query": 87,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 88,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 89,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 90,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 91,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 92,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 93,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 94,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 95,
+      "candidate_index": 397,
+      "correct": false
+    },
+    {
+      "query": 96,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 97,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 98,
+      "candidate_index": 730,
+      "correct": false
+    },
+    {
+      "query": 99,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 100,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 101,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 102,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 103,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 104,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 105,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 106,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 107,
+      "candidate_index": 206,
+      "correct": false
+    },
+    {
+      "query": 108,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 109,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 110,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 111,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 112,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 113,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 114,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 115,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 116,
+      "candidate_index": 73,
+      "correct": false
+    },
+    {
+      "query": 117,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 118,
+      "candidate_index": 211,
+      "correct": false
+    },
+    {
+      "query": 119,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 120,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 121,
+      "candidate_index": 419,
+      "correct": false
+    },
+    {
+      "query": 122,
+      "candidate_index": 389,
+      "correct": false
+    },
+    {
+      "query": 123,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 124,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 125,
+      "candidate_index": 703,
+      "correct": false
+    },
+    {
+      "query": 126,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 127,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 128,
+      "candidate_index": 461,
+      "correct": false
+    },
+    {
+      "query": 129,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 130,
+      "candidate_index": 11,
+      "correct": false
+    },
+    {
+      "query": 131,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 132,
+      "candidate_index": 112,
+      "correct": false
+    },
+    {
+      "query": 133,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 134,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 135,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 136,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 137,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 138,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 139,
+      "candidate_index": 175,
+      "correct": false
+    },
+    {
+      "query": 140,
+      "candidate_index": 527,
+      "correct": false
+    },
+    {
+      "query": 141,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 142,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 143,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 144,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 145,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 146,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 147,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 148,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 149,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 150,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 151,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 152,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 153,
+      "candidate_index": 270,
+      "correct": false
+    },
+    {
+      "query": 154,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 155,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 156,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 157,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 158,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 159,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 160,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 161,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 162,
+      "candidate_index": 498,
+      "correct": false
+    },
+    {
+      "query": 163,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 164,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 165,
+      "candidate_index": 139,
+      "correct": false
+    },
+    {
+      "query": 166,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 167,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 168,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 169,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 170,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 171,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 172,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 173,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 174,
+      "candidate_index": 25,
+      "correct": false
+    },
+    {
+      "query": 175,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 176,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 177,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 178,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 179,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 180,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 181,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 182,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 183,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 184,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 185,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 186,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 187,
+      "candidate_index": 534,
+      "correct": false
+    },
+    {
+      "query": 188,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 189,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 190,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 191,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 192,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 193,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 194,
+      "candidate_index": 5,
+      "correct": false
+    },
+    {
+      "query": 195,
+      "candidate_index": 724,
+      "correct": false
+    },
+    {
+      "query": 196,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 197,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 198,
+      "candidate_index": 57,
+      "correct": false
+    },
+    {
+      "query": 199,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 200,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 201,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 202,
+      "candidate_index": 642,
+      "correct": false
+    },
+    {
+      "query": 203,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 204,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 205,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 206,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 207,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 208,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 209,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 210,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 211,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 212,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 213,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 214,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 215,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 216,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 217,
+      "candidate_index": 388,
+      "correct": false
+    },
+    {
+      "query": 218,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 219,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 220,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 221,
+      "candidate_index": 669,
+      "correct": false
+    },
+    {
+      "query": 222,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 223,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 224,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 225,
+      "candidate_index": 108,
+      "correct": false
+    },
+    {
+      "query": 226,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 227,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 228,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 229,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 230,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 231,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 232,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 233,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 234,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 235,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 236,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 237,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 238,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 239,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 240,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 241,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 242,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 243,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 244,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 245,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 246,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 247,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 248,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 249,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 250,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 251,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 252,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 253,
+      "candidate_index": 708,
+      "correct": false
+    },
+    {
+      "query": 254,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 255,
+      "candidate_index": 576,
+      "correct": false
+    },
+    {
+      "query": 256,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 257,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 258,
+      "candidate_index": 574,
+      "correct": false
+    },
+    {
+      "query": 259,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 260,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 261,
+      "candidate_index": 174,
+      "correct": false
+    },
+    {
+      "query": 262,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 263,
+      "candidate_index": 475,
+      "correct": false
+    },
+    {
+      "query": 264,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 265,
+      "candidate_index": 59,
+      "correct": false
+    },
+    {
+      "query": 266,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 267,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 268,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 269,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 270,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 271,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 272,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 273,
+      "candidate_index": 326,
+      "correct": false
+    },
+    {
+      "query": 274,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 275,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 276,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 277,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 278,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 279,
+      "candidate_index": 732,
+      "correct": false
+    },
+    {
+      "query": 280,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 281,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 282,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 283,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 284,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 285,
+      "candidate_index": 471,
+      "correct": false
+    },
+    {
+      "query": 286,
+      "candidate_index": 679,
+      "correct": false
+    },
+    {
+      "query": 287,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 288,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 289,
+      "candidate_index": 469,
+      "correct": false
+    },
+    {
+      "query": 290,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 291,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 292,
+      "candidate_index": 563,
+      "correct": false
+    },
+    {
+      "query": 293,
+      "candidate_index": 671,
+      "correct": false
+    },
+    {
+      "query": 294,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 295,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 296,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 297,
+      "candidate_index": 10,
+      "correct": false
+    },
+    {
+      "query": 298,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 299,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 300,
+      "candidate_index": 82,
+      "correct": false
+    },
+    {
+      "query": 301,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 302,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 303,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 304,
+      "candidate_index": 28,
+      "correct": false
+    },
+    {
+      "query": 305,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 306,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 307,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 308,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 309,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 310,
+      "candidate_index": 177,
+      "correct": false
+    },
+    {
+      "query": 311,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 312,
+      "candidate_index": 315,
+      "correct": false
+    },
+    {
+      "query": 313,
+      "candidate_index": 211,
+      "correct": false
+    },
+    {
+      "query": 314,
+      "candidate_index": 706,
+      "correct": false
+    },
+    {
+      "query": 315,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 316,
+      "candidate_index": 62,
+      "correct": false
+    },
+    {
+      "query": 317,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 318,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 319,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 320,
+      "candidate_index": 506,
+      "correct": false
+    },
+    {
+      "query": 321,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 322,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 323,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 324,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 325,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 326,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 327,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 328,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 329,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 330,
+      "candidate_index": 354,
+      "correct": false
+    },
+    {
+      "query": 331,
+      "candidate_index": 145,
+      "correct": false
+    },
+    {
+      "query": 332,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 333,
+      "candidate_index": 165,
+      "correct": false
+    },
+    {
+      "query": 334,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 335,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 336,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 337,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 338,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 339,
+      "candidate_index": 397,
+      "correct": false
+    },
+    {
+      "query": 340,
+      "candidate_index": 707,
+      "correct": false
+    },
+    {
+      "query": 341,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 342,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 343,
+      "candidate_index": 230,
+      "correct": false
+    },
+    {
+      "query": 344,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 345,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 346,
+      "candidate_index": 320,
+      "correct": false
+    },
+    {
+      "query": 347,
+      "candidate_index": 584,
+      "correct": false
+    },
+    {
+      "query": 348,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 349,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 350,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 351,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 352,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 353,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 354,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 355,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 356,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 357,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 358,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 359,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 360,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 361,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 362,
+      "candidate_index": 40,
+      "correct": false
+    },
+    {
+      "query": 363,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 364,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 365,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 366,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 367,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 368,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 369,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 370,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 371,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 372,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 373,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 374,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 375,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 376,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 377,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 378,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 379,
+      "candidate_index": 144,
+      "correct": false
+    },
+    {
+      "query": 380,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 381,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 382,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 383,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 384,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 385,
+      "candidate_index": 416,
+      "correct": false
+    },
+    {
+      "query": 386,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 387,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 388,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 389,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 390,
+      "candidate_index": 681,
+      "correct": false
+    },
+    {
+      "query": 391,
+      "candidate_index": 303,
+      "correct": false
+    },
+    {
+      "query": 392,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 393,
+      "candidate_index": 649,
+      "correct": false
+    },
+    {
+      "query": 394,
+      "candidate_index": 441,
+      "correct": false
+    },
+    {
+      "query": 395,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 396,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 397,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 398,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 399,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 400,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 401,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 402,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 403,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 404,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 405,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 406,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 407,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 408,
+      "candidate_index": 195,
+      "correct": false
+    },
+    {
+      "query": 409,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 410,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 411,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 412,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 413,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 414,
+      "candidate_index": 99,
+      "correct": false
+    },
+    {
+      "query": 415,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 416,
+      "candidate_index": 402,
+      "correct": false
+    },
+    {
+      "query": 417,
+      "candidate_index": 329,
+      "correct": false
+    },
+    {
+      "query": 418,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 419,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 420,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 421,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 422,
+      "candidate_index": 133,
+      "correct": false
+    },
+    {
+      "query": 423,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 424,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 425,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 426,
+      "candidate_index": 281,
+      "correct": false
+    },
+    {
+      "query": 427,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 428,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 429,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 430,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 431,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 432,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 433,
+      "candidate_index": 298,
+      "correct": false
+    },
+    {
+      "query": 434,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 435,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 436,
+      "candidate_index": 328,
+      "correct": false
+    },
+    {
+      "query": 437,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 438,
+      "candidate_index": 366,
+      "correct": false
+    },
+    {
+      "query": 439,
+      "candidate_index": 162,
+      "correct": false
+    },
+    {
+      "query": 440,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 441,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 442,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 443,
+      "candidate_index": 160,
+      "correct": false
+    },
+    {
+      "query": 444,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 445,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 446,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 447,
+      "candidate_index": 218,
+      "correct": false
+    },
+    {
+      "query": 448,
+      "candidate_index": 694,
+      "correct": false
+    },
+    {
+      "query": 449,
+      "candidate_index": 541,
+      "correct": false
+    },
+    {
+      "query": 450,
+      "candidate_index": 571,
+      "correct": false
+    },
+    {
+      "query": 451,
+      "candidate_index": 102,
+      "correct": false
+    },
+    {
+      "query": 452,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 453,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 454,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 455,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 456,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 457,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 458,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 459,
+      "candidate_index": 40,
+      "correct": false
+    },
+    {
+      "query": 460,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 461,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 462,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 463,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 464,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 465,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 466,
+      "candidate_index": 613,
+      "correct": false
+    },
+    {
+      "query": 467,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 468,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 469,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 470,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 471,
+      "candidate_index": 397,
+      "correct": false
+    },
+    {
+      "query": 472,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 473,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 474,
+      "candidate_index": 693,
+      "correct": false
+    },
+    {
+      "query": 475,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 476,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 477,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 478,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 479,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 480,
+      "candidate_index": 268,
+      "correct": false
+    },
+    {
+      "query": 481,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 482,
+      "candidate_index": 596,
+      "correct": false
+    },
+    {
+      "query": 483,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 484,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 485,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 486,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 487,
+      "candidate_index": 576,
+      "correct": false
+    },
+    {
+      "query": 488,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 489,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 490,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 491,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 492,
+      "candidate_index": 714,
+      "correct": false
+    },
+    {
+      "query": 493,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 494,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 495,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 496,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 497,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 498,
+      "candidate_index": 377,
+      "correct": false
+    },
+    {
+      "query": 499,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 500,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 501,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 502,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 503,
+      "candidate_index": 227,
+      "correct": false
+    },
+    {
+      "query": 504,
+      "candidate_index": 561,
+      "correct": false
+    },
+    {
+      "query": 505,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 506,
+      "candidate_index": 284,
+      "correct": false
+    },
+    {
+      "query": 507,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 508,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 509,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 510,
+      "candidate_index": 381,
+      "correct": false
+    },
+    {
+      "query": 511,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 512,
+      "candidate_index": 341,
+      "correct": false
+    },
+    {
+      "query": 513,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 514,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 515,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 516,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 517,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 518,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 519,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 520,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 521,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 522,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 523,
+      "candidate_index": 415,
+      "correct": false
+    },
+    {
+      "query": 524,
+      "candidate_index": 579,
+      "correct": false
+    },
+    {
+      "query": 525,
+      "candidate_index": 223,
+      "correct": false
+    },
+    {
+      "query": 526,
+      "candidate_index": 305,
+      "correct": false
+    },
+    {
+      "query": 527,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 528,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 529,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 530,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 531,
+      "candidate_index": 137,
+      "correct": false
+    },
+    {
+      "query": 532,
+      "candidate_index": 216,
+      "correct": false
+    },
+    {
+      "query": 533,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 534,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 535,
+      "candidate_index": 10,
+      "correct": false
+    },
+    {
+      "query": 536,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 537,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 538,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 539,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 540,
+      "candidate_index": 188,
+      "correct": false
+    },
+    {
+      "query": 541,
+      "candidate_index": 525,
+      "correct": false
+    },
+    {
+      "query": 542,
+      "candidate_index": 103,
+      "correct": false
+    },
+    {
+      "query": 543,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 544,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 545,
+      "candidate_index": 65,
+      "correct": false
+    },
+    {
+      "query": 546,
+      "candidate_index": 173,
+      "correct": false
+    },
+    {
+      "query": 547,
+      "candidate_index": 192,
+      "correct": false
+    },
+    {
+      "query": 548,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 549,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 550,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 551,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 552,
+      "candidate_index": 368,
+      "correct": false
+    },
+    {
+      "query": 553,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 554,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 555,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 556,
+      "candidate_index": 59,
+      "correct": false
+    },
+    {
+      "query": 557,
+      "candidate_index": 409,
+      "correct": false
+    },
+    {
+      "query": 558,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 559,
+      "candidate_index": 559,
+      "correct": false
+    },
+    {
+      "query": 560,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 561,
+      "candidate_index": 529,
+      "correct": false
+    },
+    {
+      "query": 562,
+      "candidate_index": 27,
+      "correct": false
+    },
+    {
+      "query": 563,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 564,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 565,
+      "candidate_index": 595,
+      "correct": false
+    },
+    {
+      "query": 566,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 567,
+      "candidate_index": 243,
+      "correct": false
+    },
+    {
+      "query": 568,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 569,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 570,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 571,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 572,
+      "candidate_index": 208,
+      "correct": false
+    },
+    {
+      "query": 573,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 574,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 575,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 576,
+      "candidate_index": 452,
+      "correct": false
+    },
+    {
+      "query": 577,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 578,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 579,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 580,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 581,
+      "candidate_index": 527,
+      "correct": false
+    },
+    {
+      "query": 582,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 583,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 584,
+      "candidate_index": 301,
+      "correct": false
+    },
+    {
+      "query": 585,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 586,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 587,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 588,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 589,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 590,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 591,
+      "candidate_index": 306,
+      "correct": false
+    },
+    {
+      "query": 592,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 593,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 594,
+      "candidate_index": 82,
+      "correct": false
+    },
+    {
+      "query": 595,
+      "candidate_index": 537,
+      "correct": false
+    },
+    {
+      "query": 596,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 597,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 598,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 599,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 600,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 601,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 602,
+      "candidate_index": 280,
+      "correct": false
+    },
+    {
+      "query": 603,
+      "candidate_index": 379,
+      "correct": false
+    },
+    {
+      "query": 604,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 605,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 606,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 607,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 608,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 609,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 610,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 611,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 612,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 613,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 614,
+      "candidate_index": 600,
+      "correct": false
+    },
+    {
+      "query": 615,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 616,
+      "candidate_index": 465,
+      "correct": false
+    },
+    {
+      "query": 617,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 618,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 619,
+      "candidate_index": 403,
+      "correct": false
+    },
+    {
+      "query": 620,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 621,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 622,
+      "candidate_index": 653,
+      "correct": false
+    },
+    {
+      "query": 623,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 624,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 625,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 626,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 627,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 628,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 629,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 630,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 631,
+      "candidate_index": 150,
+      "correct": false
+    },
+    {
+      "query": 632,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 633,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 634,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 635,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 636,
+      "candidate_index": 508,
+      "correct": false
+    },
+    {
+      "query": 637,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 638,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 639,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 640,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 641,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 642,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 643,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 644,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 645,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 646,
+      "candidate_index": 242,
+      "correct": false
+    },
+    {
+      "query": 647,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 648,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 649,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 650,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 651,
+      "candidate_index": 292,
+      "correct": false
+    },
+    {
+      "query": 652,
+      "candidate_index": 497,
+      "correct": false
+    },
+    {
+      "query": 653,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 654,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 655,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 656,
+      "candidate_index": 107,
+      "correct": false
+    },
+    {
+      "query": 657,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 658,
+      "candidate_index": 517,
+      "correct": false
+    },
+    {
+      "query": 659,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 660,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 661,
+      "candidate_index": 111,
+      "correct": false
+    },
+    {
+      "query": 662,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 663,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 664,
+      "candidate_index": 71,
+      "correct": false
+    },
+    {
+      "query": 665,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 666,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 667,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 668,
+      "candidate_index": 85,
+      "correct": false
+    },
+    {
+      "query": 669,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 670,
+      "candidate_index": 445,
+      "correct": false
+    },
+    {
+      "query": 671,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 672,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 673,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 674,
+      "candidate_index": 612,
+      "correct": false
+    },
+    {
+      "query": 675,
+      "candidate_index": 701,
+      "correct": false
+    },
+    {
+      "query": 676,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 677,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 678,
+      "candidate_index": 105,
+      "correct": false
+    },
+    {
+      "query": 679,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 680,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 681,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 682,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 683,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 684,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 685,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 686,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 687,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 688,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 689,
+      "candidate_index": 293,
+      "correct": false
+    },
+    {
+      "query": 690,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 691,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 692,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 693,
+      "candidate_index": 160,
+      "correct": false
+    },
+    {
+      "query": 694,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 695,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 696,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 697,
+      "candidate_index": 521,
+      "correct": false
+    },
+    {
+      "query": 698,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 699,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 700,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 701,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 702,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 703,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 704,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 705,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 706,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 707,
+      "candidate_index": 8,
+      "correct": false
+    },
+    {
+      "query": 708,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 709,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 710,
+      "candidate_index": 578,
+      "correct": false
+    },
+    {
+      "query": 711,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 712,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 713,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 714,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 715,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 716,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 717,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 718,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 719,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 720,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 721,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 722,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 723,
+      "candidate_index": 242,
+      "correct": false
+    },
+    {
+      "query": 724,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 725,
+      "candidate_index": 261,
+      "correct": false
+    },
+    {
+      "query": 726,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 727,
+      "candidate_index": 72,
+      "correct": false
+    },
+    {
+      "query": 728,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 729,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 730,
+      "candidate_index": 204,
+      "correct": false
+    },
+    {
+      "query": 731,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 732,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 733,
+      "candidate_index": 247,
+      "correct": false
+    },
+    {
+      "query": 734,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 735,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 736,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 737,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 738,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 739,
+      "candidate_index": 584,
+      "correct": false
+    },
+    {
+      "query": 740,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 741,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 742,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 743,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 744,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 745,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 746,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 747,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 748,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 749,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 750,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 751,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 752,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 753,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 754,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 755,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 756,
+      "candidate_index": 443,
+      "correct": false
+    },
+    {
+      "query": 757,
+      "candidate_index": 410,
+      "correct": false
+    },
+    {
+      "query": 758,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 759,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 760,
+      "candidate_index": 172,
+      "correct": false
+    },
+    {
+      "query": 761,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 762,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 763,
+      "candidate_index": 419,
+      "correct": false
+    },
+    {
+      "query": 764,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 765,
+      "candidate_index": 220,
+      "correct": false
+    },
+    {
+      "query": 766,
+      "candidate_index": 196,
+      "correct": false
+    },
+    {
+      "query": 767,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 768,
+      "candidate_index": 65,
+      "correct": false
+    },
+    {
+      "query": 769,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 770,
+      "candidate_index": 505,
+      "correct": false
+    },
+    {
+      "query": 771,
+      "candidate_index": 137,
+      "correct": false
+    },
+    {
+      "query": 772,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 773,
+      "candidate_index": 253,
+      "correct": false
+    },
+    {
+      "query": 774,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 775,
+      "candidate_index": 70,
+      "correct": false
+    },
+    {
+      "query": 776,
+      "candidate_index": 683,
+      "correct": false
+    },
+    {
+      "query": 777,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 778,
+      "candidate_index": 542,
+      "correct": false
+    },
+    {
+      "query": 779,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 780,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 781,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 782,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 783,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 784,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 785,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 786,
+      "candidate_index": 189,
+      "correct": false
+    },
+    {
+      "query": 787,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 788,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 789,
+      "candidate_index": 608,
+      "correct": false
+    },
+    {
+      "query": 790,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 791,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 792,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 793,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 794,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 795,
+      "candidate_index": 361,
+      "correct": false
+    },
+    {
+      "query": 796,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 797,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 798,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 799,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 800,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 801,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 802,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 803,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 804,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 805,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 806,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 807,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 808,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 809,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 810,
+      "candidate_index": 690,
+      "correct": false
+    },
+    {
+      "query": 811,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 812,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 813,
+      "candidate_index": 493,
+      "correct": false
+    },
+    {
+      "query": 814,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 815,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 816,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 817,
+      "candidate_index": 522,
+      "correct": false
+    },
+    {
+      "query": 818,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 819,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 820,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 821,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 822,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 823,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 824,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 825,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 826,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 827,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 828,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 829,
+      "candidate_index": 171,
+      "correct": false
+    },
+    {
+      "query": 830,
+      "candidate_index": 28,
+      "correct": false
+    },
+    {
+      "query": 831,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 832,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 833,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 834,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 835,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 836,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 837,
+      "candidate_index": 249,
+      "correct": false
+    },
+    {
+      "query": 838,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 839,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 840,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 841,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 842,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 843,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 844,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 845,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 846,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 847,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 848,
+      "candidate_index": 461,
+      "correct": false
+    },
+    {
+      "query": 849,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 850,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 851,
+      "candidate_index": 147,
+      "correct": false
+    },
+    {
+      "query": 852,
+      "candidate_index": 524,
+      "correct": false
+    },
+    {
+      "query": 853,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 854,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 855,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 856,
+      "candidate_index": 244,
+      "correct": false
+    },
+    {
+      "query": 857,
+      "candidate_index": 660,
+      "correct": false
+    },
+    {
+      "query": 858,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 859,
+      "candidate_index": 191,
+      "correct": false
+    },
+    {
+      "query": 860,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 861,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 862,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 863,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 864,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 865,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 866,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 867,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 868,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 869,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 870,
+      "candidate_index": 40,
+      "correct": false
+    },
+    {
+      "query": 871,
+      "candidate_index": 503,
+      "correct": false
+    },
+    {
+      "query": 872,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 873,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 874,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 875,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 876,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 877,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 878,
+      "candidate_index": 679,
+      "correct": false
+    },
+    {
+      "query": 879,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 880,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 881,
+      "candidate_index": 16,
+      "correct": false
+    },
+    {
+      "query": 882,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 883,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 884,
+      "candidate_index": 54,
+      "correct": false
+    },
+    {
+      "query": 885,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 886,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 887,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 888,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 889,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 890,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 891,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 892,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 893,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 894,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 895,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 896,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 897,
+      "candidate_index": 41,
+      "correct": false
+    },
+    {
+      "query": 898,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 899,
+      "candidate_index": 532,
+      "correct": false
+    },
+    {
+      "query": 900,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 901,
+      "candidate_index": 317,
+      "correct": false
+    },
+    {
+      "query": 902,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 903,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 904,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 905,
+      "candidate_index": 1,
+      "correct": false
+    },
+    {
+      "query": 906,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 907,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 908,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 909,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 910,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 911,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 912,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 913,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 914,
+      "candidate_index": 49,
+      "correct": false
+    },
+    {
+      "query": 915,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 916,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 917,
+      "candidate_index": 680,
+      "correct": false
+    },
+    {
+      "query": 918,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 919,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 920,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 921,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 922,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 923,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 924,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 925,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 926,
+      "candidate_index": 464,
+      "correct": false
+    },
+    {
+      "query": 927,
+      "candidate_index": 228,
+      "correct": false
+    },
+    {
+      "query": 928,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 929,
+      "candidate_index": 2,
+      "correct": false
+    },
+    {
+      "query": 930,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 931,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 932,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 933,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 934,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 935,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 936,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 937,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 938,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 939,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 940,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 941,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 942,
+      "candidate_index": 494,
+      "correct": false
+    },
+    {
+      "query": 943,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 944,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 945,
+      "candidate_index": 72,
+      "correct": false
+    },
+    {
+      "query": 946,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 947,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 948,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 949,
+      "candidate_index": 25,
+      "correct": false
+    },
+    {
+      "query": 950,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 951,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 952,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 953,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 954,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 955,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 956,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 957,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 958,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 959,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 960,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 961,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 962,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 963,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 964,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 965,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 966,
+      "candidate_index": 385,
+      "correct": false
+    },
+    {
+      "query": 967,
+      "candidate_index": 238,
+      "correct": false
+    },
+    {
+      "query": 968,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 969,
+      "candidate_index": 302,
+      "correct": false
+    },
+    {
+      "query": 970,
+      "candidate_index": 108,
+      "correct": false
+    },
+    {
+      "query": 971,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 972,
+      "candidate_index": 668,
+      "correct": false
+    },
+    {
+      "query": 973,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 974,
+      "candidate_index": 203,
+      "correct": false
+    },
+    {
+      "query": 975,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 976,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 977,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 978,
+      "candidate_index": 52,
+      "correct": false
+    },
+    {
+      "query": 979,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 980,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 981,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 982,
+      "candidate_index": 187,
+      "correct": false
+    },
+    {
+      "query": 983,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 984,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 985,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 986,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 987,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 988,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 989,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 990,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 991,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 992,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 993,
+      "candidate_index": 170,
+      "correct": false
+    },
+    {
+      "query": 994,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 995,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 996,
+      "candidate_index": 534,
+      "correct": false
+    },
+    {
+      "query": 997,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 998,
+      "candidate_index": 0,
+      "correct": true
+    },
+    {
+      "query": 999,
+      "candidate_index": 160,
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "excluded": [
+    548
+  ],
+  "reason": "Official empty caption; all models share same 999 candidates/queries",
+  "results": [
+    {
+      "model": "flair",
+      "mode": "native_text_conditioned",
+      "text_to_image_R1": 0.8778778910636902,
+      "image_to_text_R1": 0.8388388156890869,
+      "n": 999
+    },
+    {
+      "model": "flair",
+      "mode": "global",
+      "text_to_image_R1": 0.8618618845939636,
+      "image_to_text_R1": 0.8278278112411499,
+      "n": 999
+    },
+    {
+      "model": "clip_b32",
+      "mode": "native_global",
+      "text_to_image_R1": 0.46846845746040344,
+      "image_to_text_R1": 0.6106106042861938,
+      "n": 999
+    },
+    {
+      "model": "siglip2_b16",
+      "mode": "native_global",
+      "text_to_image_R1": 0.33733734488487244,
+      "image_to_text_R1": 0.38038039207458496,
+      "n": 999
+    },
+    {
+      "model": "qwen3_vl",
+      "mode": "native",
+      "text_to_image_R1": 0.9929929971694946,
+      "image_to_text_R1": 0.9879879951477051,
+      "n": 999
+    }
+  ]
+}

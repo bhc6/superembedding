@@ -1,0 +1,1584 @@
+{
+  "selection_sha256": "6a35f124fc6a083730c8755ecc42928cf820d8f7ff39700c862ec9cfc71637a5",
+  "feature_provenance": "4cc925e8b11347416cdf6d731ab51e079b469e27cbb0e3fee0f42f796a911053",
+  "baseline": {
+    "validation": {
+      "macro_r1": 0.12606946704909205,
+      "per_source": {
+        "chart2text": {
+          "queries": 80,
+          "R1": 0.05000000074505806,
+          "MRR": 0.11691653728485107,
+          "mean_positive_candidates": 1.0
+        },
+        "chartqa": {
+          "queries": 65,
+          "R1": 0.03076923079788685,
+          "MRR": 0.09712360054254532,
+          "mean_positive_candidates": 1.0615384578704834
+        },
+        "clevr": {
+          "queries": 117,
+          "R1": 0.09401709586381912,
+          "MRR": 0.11706080287694931,
+          "mean_positive_candidates": 15.700854301452637
+        },
+        "docvqa": {
+          "queries": 96,
+          "R1": 0.0,
+          "MRR": 0.06198503449559212,
+          "mean_positive_candidates": 1.0416666269302368
+        },
+        "localized_narratives": {
+          "queries": 110,
+          "R1": 0.06363636255264282,
+          "MRR": 0.14989058673381805,
+          "mean_positive_candidates": 1.0
+        },
+        "screen2words": {
+          "queries": 100,
+          "R1": 0.029999999329447746,
+          "MRR": 0.09791296720504761,
+          "mean_positive_candidates": 1.0399999618530273
+        },
+        "textcaps": {
+          "queries": 82,
+          "R1": 0.12195122241973877,
+          "MRR": 0.22239205241203308,
+          "mean_positive_candidates": 1.0
+        },
+        "vsr": {
+          "queries": 110,
+          "R1": 0.6181818246841431,
+          "MRR": 0.6237154006958008,
+          "mean_positive_candidates": 58.07272720336914
+        }
+      }
+    },
+    "ood": {
+      "macro_r1": 0.253420390188694,
+      "per_source": {
+        "ai2d": {
+          "queries": 96,
+          "R1": 0.2083333283662796,
+          "MRR": 0.2278890609741211,
+          "mean_positive_candidates": 24.52083396911621
+        },
+        "scienceqa": {
+          "queries": 67,
+          "R1": 0.2985074520111084,
+          "MRR": 0.3235287368297577,
+          "mean_positive_candidates": 23.059701919555664
+        }
+      }
+    },
+    "dimension": 4096
+  },
+  "runs": [
+    {
+      "architecture": "shared_concat",
+      "seed": 17,
+      "lr": 0.0001,
+      "step": 1000,
+      "checkpoint_sha256": "0cb84403fc7c114700b025f2210ad43d8bfb4f25dca07c74c859841e2d1b33d9",
+      "parameters": 264448,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.2724294252693653,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.17499999701976776,
+            "MRR": 0.2981126308441162,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.10769230872392654,
+            "MRR": 0.18866881728172302,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.2649572789669037,
+            "MRR": 0.3046381175518036,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0729166641831398,
+            "MRR": 0.1862061768770218,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3545454442501068,
+            "MRR": 0.4961444139480591,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.15000000596046448,
+            "MRR": 0.26667702198028564,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.46341463923454285,
+            "MRR": 0.6063016653060913,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5909090638160706,
+            "MRR": 0.5978736281394958,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.2780628129839897,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.1979166716337204,
+            "MRR": 0.21839545667171478,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.35820895433425903,
+            "MRR": 0.3785873353481293,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "shared_concat",
+      "seed": 42,
+      "lr": 0.0001,
+      "step": 700,
+      "checkpoint_sha256": "3e90a610cfc16dcaa057bcca35e4d4624807a87f8c8b1d70df9e6ab9c18905e0",
+      "parameters": 264448,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.27837216947227716,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.16249999403953552,
+            "MRR": 0.27859073877334595,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.0923076942563057,
+            "MRR": 0.16097021102905273,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.25641027092933655,
+            "MRR": 0.3127461075782776,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0625,
+            "MRR": 0.15693995356559753,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3545454442501068,
+            "MRR": 0.48794040083885193,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.2199999988079071,
+            "MRR": 0.3294576406478882,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.4878048896789551,
+            "MRR": 0.6287088394165039,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5909090638160706,
+            "MRR": 0.5987498164176941,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.3086131885647774,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.2291666716337204,
+            "MRR": 0.24902598559856415,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.38805970549583435,
+            "MRR": 0.4056571125984192,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "shared_concat",
+      "seed": 91,
+      "lr": 0.0001,
+      "step": 700,
+      "checkpoint_sha256": "839b20d6b6805c087599741639ea663a8b8ab59ebd1c2e0ae7358bac54c81f17",
+      "parameters": 264448,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.2577849170193076,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.17499999701976776,
+            "MRR": 0.28896912932395935,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.07692307978868484,
+            "MRR": 0.1517646461725235,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.23076923191547394,
+            "MRR": 0.2890683710575104,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.03125,
+            "MRR": 0.13787825405597687,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3272727131843567,
+            "MRR": 0.46175116300582886,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.20000000298023224,
+            "MRR": 0.32605159282684326,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.47560974955558777,
+            "MRR": 0.6185523867607117,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5454545617103577,
+            "MRR": 0.5543524026870728,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.32579290866851807,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.21875,
+            "MRR": 0.23804092407226562,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.43283581733703613,
+            "MRR": 0.44917142391204834,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "output_equal",
+      "seed": 17,
+      "lr": 0.0001,
+      "step": 900,
+      "checkpoint_sha256": "05b39e64ded883d23836abd9d38983220fa3e27f17bb7f9c2f65526451156799",
+      "parameters": 1313024,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.27608749736100435,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.17499999701976776,
+            "MRR": 0.29898905754089355,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.0923076942563057,
+            "MRR": 0.19064253568649292,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.2735042870044708,
+            "MRR": 0.3337496817111969,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0625,
+            "MRR": 0.1584656983613968,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3545454442501068,
+            "MRR": 0.5136569142341614,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.23000000417232513,
+            "MRR": 0.34478455781936646,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.4390243887901306,
+            "MRR": 0.5796902179718018,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.581818163394928,
+            "MRR": 0.5889145135879517,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.2728544771671295,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.1875,
+            "MRR": 0.20787620544433594,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.35820895433425903,
+            "MRR": 0.38216304779052734,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "output_equal",
+      "seed": 42,
+      "lr": 0.0001,
+      "step": 900,
+      "checkpoint_sha256": "31b2d1572f97949cc417ce39c19a5732e872e48dd9b4a096bd536fe2351b0223",
+      "parameters": 1313024,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.27669629314914346,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.11249999701976776,
+            "MRR": 0.2676745355129242,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.04615384712815285,
+            "MRR": 0.1478731781244278,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.2905983030796051,
+            "MRR": 0.3435388207435608,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0625,
+            "MRR": 0.16327254474163055,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3636363744735718,
+            "MRR": 0.5039692521095276,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.2199999988079071,
+            "MRR": 0.31956884264945984,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.5,
+            "MRR": 0.6205306053161621,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.6181818246841431,
+            "MRR": 0.624432384967804,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.2900341972708702,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.1770833283662796,
+            "MRR": 0.1987731009721756,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.4029850661754608,
+            "MRR": 0.4247888922691345,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "output_equal",
+      "seed": 91,
+      "lr": 0.0001,
+      "step": 700,
+      "checkpoint_sha256": "bd0d6d70617b40091f7bc2e53dbd2f2696745711e83b07f834b826bf4cdccbae",
+      "parameters": 1313024,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.2643469227477908,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.1875,
+            "MRR": 0.2973455488681793,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.07692307978868484,
+            "MRR": 0.14965595304965973,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.28205129504203796,
+            "MRR": 0.33319345116615295,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.03125,
+            "MRR": 0.1294199377298355,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.30000001192092896,
+            "MRR": 0.46926918625831604,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.20999999344348907,
+            "MRR": 0.32124218344688416,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.46341463923454285,
+            "MRR": 0.588581383228302,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5636363625526428,
+            "MRR": 0.5708367824554443,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.3407182842493057,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.21875,
+            "MRR": 0.23817361891269684,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.46268656849861145,
+            "MRR": 0.4766799211502075,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "output_small",
+      "seed": 17,
+      "lr": 0.0001,
+      "step": 900,
+      "checkpoint_sha256": "f0f2c8a6b246b41b84e88c5dde8976c76d1c41fbd8911a02e158b399c0d5ef9c",
+      "parameters": 526592,
+      "dimension": 256,
+      "validation": {
+        "macro_r1": 0.24052963918074965,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.10000000149011612,
+            "MRR": 0.23576626181602478,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.0615384615957737,
+            "MRR": 0.15536421537399292,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.3333333432674408,
+            "MRR": 0.37543997168540955,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.03125,
+            "MRR": 0.12253740429878235,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.30000001192092896,
+            "MRR": 0.44330039620399475,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.15000000596046448,
+            "MRR": 0.25136277079582214,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.4390243887901306,
+            "MRR": 0.5634047389030457,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5090909004211426,
+            "MRR": 0.5191531181335449,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.2706001326441765,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.1979166716337204,
+            "MRR": 0.2166474312543869,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.34328359365463257,
+            "MRR": 0.3754592537879944,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "output_small",
+      "seed": 42,
+      "lr": 0.0001,
+      "step": 600,
+      "checkpoint_sha256": "df78abbbb0924a0c146136ba4576d19f80a8668d1b533e194b44ff15a6f795b7",
+      "parameters": 526592,
+      "dimension": 256,
+      "validation": {
+        "macro_r1": 0.25838535418733954,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.13750000298023224,
+            "MRR": 0.26597651839256287,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.04615384712815285,
+            "MRR": 0.141775980591774,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.25641027092933655,
+            "MRR": 0.2988972067832947,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0729166641831398,
+            "MRR": 0.15810129046440125,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3909091055393219,
+            "MRR": 0.5051002502441406,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.20000000298023224,
+            "MRR": 0.31110066175460815,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.4268292784690857,
+            "MRR": 0.5490200519561768,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5363636612892151,
+            "MRR": 0.5455525517463684,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.2848258689045906,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.1666666716337204,
+            "MRR": 0.18769319355487823,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.4029850661754608,
+            "MRR": 0.4202802777290344,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "output_small",
+      "seed": 91,
+      "lr": 0.0001,
+      "step": 700,
+      "checkpoint_sha256": "84267c4391e75fa834f697f2fe507ee1f3287ef4e06bba3b9aab669215ab9b8d",
+      "parameters": 526592,
+      "dimension": 256,
+      "validation": {
+        "macro_r1": 0.2356173690641299,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.11249999701976776,
+            "MRR": 0.24010172486305237,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.015384615398943424,
+            "MRR": 0.10816264897584915,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.2905983030796051,
+            "MRR": 0.33972734212875366,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0416666679084301,
+            "MRR": 0.12998966872692108,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.30000001192092896,
+            "MRR": 0.45283618569374084,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.18000000715255737,
+            "MRR": 0.26367437839508057,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.39024388790130615,
+            "MRR": 0.5427348613739014,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5545454621315002,
+            "MRR": 0.56203693151474,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.2936878129839897,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.2291666716337204,
+            "MRR": 0.247871994972229,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.35820895433425903,
+            "MRR": 0.38686057925224304,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "independent_equal",
+      "seed": 17,
+      "lr": 0.0001,
+      "step": 800,
+      "checkpoint_sha256": "65e0ab8061b8f42a43ec4111db9a07908d5a17fbd87fece5571d34ad86cc699b",
+      "parameters": 1057792,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.2854458084329963,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.1875,
+            "MRR": 0.2999641001224518,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.10769230872392654,
+            "MRR": 0.19717849791049957,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.3076923191547394,
+            "MRR": 0.36423173546791077,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0625,
+            "MRR": 0.1703563779592514,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3636363744735718,
+            "MRR": 0.5079029202461243,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.20000000298023224,
+            "MRR": 0.31669941544532776,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.5,
+            "MRR": 0.6358391642570496,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5545454621315002,
+            "MRR": 0.5629929304122925,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.3034048527479172,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.21875,
+            "MRR": 0.23980514705181122,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.38805970549583435,
+            "MRR": 0.40605759620666504,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "independent_equal",
+      "seed": 42,
+      "lr": 0.0001,
+      "step": 1000,
+      "checkpoint_sha256": "2e42b7ca79e638efa9259eda1cd911a69d0c7e2206ac8961de8ba31048c0508a",
+      "parameters": 1057792,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.29415963776409626,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.1875,
+            "MRR": 0.29373985528945923,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.07692307978868484,
+            "MRR": 0.16401387751102448,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.2905983030796051,
+            "MRR": 0.3439675569534302,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0833333358168602,
+            "MRR": 0.18890684843063354,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.41818180680274963,
+            "MRR": 0.528992235660553,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.23000000417232513,
+            "MRR": 0.3300830125808716,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.5121951103210449,
+            "MRR": 0.6437039971351624,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5545454621315002,
+            "MRR": 0.5629132986068726,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.2936878129839897,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.2291666716337204,
+            "MRR": 0.2485988885164261,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.35820895433425903,
+            "MRR": 0.3790716528892517,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "independent_equal",
+      "seed": 91,
+      "lr": 0.0001,
+      "step": 1000,
+      "checkpoint_sha256": "61796d44fef30264d1095c7d5881679639e6b03bf5ec26760b9958f78fca5d42",
+      "parameters": 1057792,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.2630340028554201,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.17499999701976776,
+            "MRR": 0.2923598885536194,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.07692307978868484,
+            "MRR": 0.18112598359584808,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.3162393271923065,
+            "MRR": 0.35797542333602905,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0729166641831398,
+            "MRR": 0.1655726283788681,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.30000001192092896,
+            "MRR": 0.4540136456489563,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.20000000298023224,
+            "MRR": 0.3140040636062622,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.4268292784690857,
+            "MRR": 0.580680251121521,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5363636612892151,
+            "MRR": 0.5453932881355286,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.31016790866851807,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.1875,
+            "MRR": 0.20718996226787567,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.43283581733703613,
+            "MRR": 0.45454666018486023,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "independent_matched",
+      "seed": 17,
+      "lr": 0.0001,
+      "step": 900,
+      "checkpoint_sha256": "994c6afb46a0bc3dc498a5b44f2cc9a83c56b694fec5ecf3b1976d96a4412dff",
+      "parameters": 270592,
+      "dimension": 256,
+      "validation": {
+        "macro_r1": 0.26199541008099914,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.125,
+            "MRR": 0.2563425898551941,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.04615384712815285,
+            "MRR": 0.14600582420825958,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.2649572789669037,
+            "MRR": 0.32359588146209717,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0833333358168602,
+            "MRR": 0.18614192306995392,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3181818127632141,
+            "MRR": 0.4677056074142456,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.20999999344348907,
+            "MRR": 0.31382113695144653,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.47560974955558777,
+            "MRR": 0.599714457988739,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5727272629737854,
+            "MRR": 0.5805925726890564,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.29073382169008255,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.2083333283662796,
+            "MRR": 0.2281109243631363,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.3731343150138855,
+            "MRR": 0.3969147503376007,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "independent_matched",
+      "seed": 42,
+      "lr": 0.0001,
+      "step": 900,
+      "checkpoint_sha256": "bd7dd07c21012e4e42c13adf423def546ccdf69b599ba00c94e0a3d4396b620c",
+      "parameters": 270592,
+      "dimension": 256,
+      "validation": {
+        "macro_r1": 0.26348649291321635,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.21250000596046448,
+            "MRR": 0.31330960988998413,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.13846154510974884,
+            "MRR": 0.217958003282547,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.3162393271923065,
+            "MRR": 0.3586113452911377,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0416666679084301,
+            "MRR": 0.13871480524539948,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.30909091234207153,
+            "MRR": 0.46306073665618896,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.1599999964237213,
+            "MRR": 0.27463576197624207,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.4390243887901306,
+            "MRR": 0.5885233879089355,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.4909090995788574,
+            "MRR": 0.5017127394676208,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.28552549332380295,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.1979166716337204,
+            "MRR": 0.21849721670150757,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.3731343150138855,
+            "MRR": 0.3966582417488098,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "independent_matched",
+      "seed": 91,
+      "lr": 0.0001,
+      "step": 1000,
+      "checkpoint_sha256": "d391811230b2e59d0f43a075eb008fccc3a6a6560b4804f631decf62fc755587",
+      "parameters": 270592,
+      "dimension": 256,
+      "validation": {
+        "macro_r1": 0.2708407323807478,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.13750000298023224,
+            "MRR": 0.26325008273124695,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.10769230872392654,
+            "MRR": 0.19506584107875824,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.29914531111717224,
+            "MRR": 0.3448903262615204,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.1145833358168602,
+            "MRR": 0.19596092402935028,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.2454545497894287,
+            "MRR": 0.40362903475761414,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.2199999988079071,
+            "MRR": 0.33806824684143066,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.4878048896789551,
+            "MRR": 0.6132452487945557,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5545454621315002,
+            "MRR": 0.5629929304122925,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.2706001326441765,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.1979166716337204,
+            "MRR": 0.2170398086309433,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.34328359365463257,
+            "MRR": 0.3843558132648468,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "mean_pool",
+      "seed": 17,
+      "lr": 0.0001,
+      "step": 600,
+      "checkpoint_sha256": "3df896b730d252d190cc76246ab2bbc967560d3e7890f0c11108a31f8b674a66",
+      "parameters": 1051648,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.28498920565471053,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.17499999701976776,
+            "MRR": 0.29069218039512634,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.0615384615957737,
+            "MRR": 0.1451139599084854,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.28205129504203796,
+            "MRR": 0.34151139855384827,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.1145833358168602,
+            "MRR": 0.19275547564029694,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.37272727489471436,
+            "MRR": 0.492287278175354,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.18000000715255737,
+            "MRR": 0.2897997796535492,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.5121951103210449,
+            "MRR": 0.6371617913246155,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.581818163394928,
+            "MRR": 0.5887551307678223,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.2586287260055542,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.21875,
+            "MRR": 0.2394634634256363,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.2985074520111084,
+            "MRR": 0.3377760052680969,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "mean_pool",
+      "seed": 42,
+      "lr": 0.0001,
+      "step": 700,
+      "checkpoint_sha256": "21e3be03d0f646dc6081a01f3039b2450af08072b9da1ca9301d89665aec15b8",
+      "parameters": 1051648,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.27095220936462283,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.15000000596046448,
+            "MRR": 0.2732946276664734,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.0615384615957737,
+            "MRR": 0.15710721909999847,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.24786324799060822,
+            "MRR": 0.3062238097190857,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0729166641831398,
+            "MRR": 0.18491442501544952,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3272727131843567,
+            "MRR": 0.45969003438949585,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.2199999988079071,
+            "MRR": 0.30808699131011963,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.5243902206420898,
+            "MRR": 0.628126323223114,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.5636363625526428,
+            "MRR": 0.571792721748352,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.24595770984888077,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.2083333283662796,
+            "MRR": 0.2292318344116211,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.28358209133148193,
+            "MRR": 0.31854039430618286,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    },
+    {
+      "architecture": "mean_pool",
+      "seed": 91,
+      "lr": 0.0001,
+      "step": 700,
+      "checkpoint_sha256": "2d722126b09e2e83ff8df761edea26f63c3df97ae8c3ca4df9ec882a30732a0c",
+      "parameters": 1051648,
+      "dimension": 1024,
+      "validation": {
+        "macro_r1": 0.2715930216945708,
+        "per_source": {
+          "chart2text": {
+            "queries": 80,
+            "R1": 0.10000000149011612,
+            "MRR": 0.24000218510627747,
+            "mean_positive_candidates": 1.0
+          },
+          "chartqa": {
+            "queries": 65,
+            "R1": 0.07692307978868484,
+            "MRR": 0.14272761344909668,
+            "mean_positive_candidates": 1.0615384578704834
+          },
+          "clevr": {
+            "queries": 117,
+            "R1": 0.2649572789669037,
+            "MRR": 0.321480929851532,
+            "mean_positive_candidates": 15.700854301452637
+          },
+          "docvqa": {
+            "queries": 96,
+            "R1": 0.0520833320915699,
+            "MRR": 0.15809695422649384,
+            "mean_positive_candidates": 1.0416666269302368
+          },
+          "localized_narratives": {
+            "queries": 110,
+            "R1": 0.3181818127632141,
+            "MRR": 0.46806085109710693,
+            "mean_positive_candidates": 1.0
+          },
+          "screen2words": {
+            "queries": 100,
+            "R1": 0.23000000417232513,
+            "MRR": 0.3417600989341736,
+            "mean_positive_candidates": 1.0399999618530273
+          },
+          "textcaps": {
+            "queries": 82,
+            "R1": 0.5487805008888245,
+            "MRR": 0.6610072255134583,
+            "mean_positive_candidates": 1.0
+          },
+          "vsr": {
+            "queries": 110,
+            "R1": 0.581818163394928,
+            "MRR": 0.5890737175941467,
+            "mean_positive_candidates": 58.07272720336914
+          }
+        }
+      },
+      "ood": {
+        "macro_r1": 0.27510882169008255,
+        "per_source": {
+          "ai2d": {
+            "queries": 96,
+            "R1": 0.1770833283662796,
+            "MRR": 0.19890666007995605,
+            "mean_positive_candidates": 24.52083396911621
+          },
+          "scienceqa": {
+            "queries": 67,
+            "R1": 0.3731343150138855,
+            "MRR": 0.4034113585948944,
+            "mean_positive_candidates": 23.059701919555664
+          }
+        }
+      }
+    }
+  ],
+  "summary": [
+    {
+      "architecture": "shared_concat",
+      "mean_ood_r1": 0.3041563034057617,
+      "seed_sd": 0.024175160340813635,
+      "parameters": 264448,
+      "dimension": 1024,
+      "mean_val_r1": 0.26952883725365,
+      "steps": [
+        1000,
+        700,
+        700
+      ]
+    },
+    {
+      "architecture": "output_equal",
+      "mean_ood_r1": 0.30120231956243515,
+      "seed_sd": 0.03528341387339411,
+      "parameters": 1313024,
+      "dimension": 1024,
+      "mean_val_r1": 0.2723769044193129,
+      "steps": [
+        900,
+        900,
+        700
+      ]
+    },
+    {
+      "architecture": "output_small",
+      "mean_ood_r1": 0.2830379381775856,
+      "seed_sd": 0.011647221474745645,
+      "parameters": 526592,
+      "dimension": 256,
+      "mean_val_r1": 0.2448441208107397,
+      "steps": [
+        900,
+        600,
+        700
+      ]
+    },
+    {
+      "architecture": "independent_equal",
+      "mean_ood_r1": 0.3024201914668083,
+      "seed_sd": 0.008284054371000271,
+      "parameters": 1057792,
+      "dimension": 1024,
+      "mean_val_r1": 0.28087981635083753,
+      "steps": [
+        800,
+        1000,
+        1000
+      ]
+    },
+    {
+      "architecture": "independent_matched",
+      "mean_ood_r1": 0.28228648255268735,
+      "seed_sd": 0.010450346967008403,
+      "parameters": 270592,
+      "dimension": 256,
+      "mean_val_r1": 0.2654408784583211,
+      "steps": [
+        900,
+        900,
+        1000
+      ]
+    },
+    {
+      "architecture": "mean_pool",
+      "mean_ood_r1": 0.25989841918150586,
+      "seed_sd": 0.014616973728010779,
+      "parameters": 1051648,
+      "dimension": 1024,
+      "mean_val_r1": 0.27584481223796803,
+      "steps": [
+        600,
+        700,
+        700
+      ]
+    }
+  ],
+  "validation_replay_passed": true,
+  "scope": "Frozen pretrained OmniJev, 128 train images/source, one fixed supervision/image. OOD from upstream train sources, not official test.",
+  "architecture_scope": "Mean-pool retains four branch computations; not a single-branch/global-backbone ablation. Output projections change parameter counts."
+}

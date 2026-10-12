@@ -1,0 +1,107 @@
+{
+  "utc": "2026-10-12T14:42:07.102178+00:00",
+  "statuses": {
+    "training": {
+      "step": 1043,
+      "source": "textcaps",
+      "loss": 0.10511934757232666,
+      "lr": 5.5520831363597785e-06,
+      "gradient_norm": 9.166900634765625,
+      "lora_probe_grad_norm": 0.1432635486125946,
+      "lora_probe_delta_from_launch": 0.0006103287450969219,
+      "gradient_replay_max_error": 0.0,
+      "seconds": 56.77945949998684,
+      "peak_allocated_MiB": 5257.9150390625,
+      "pid": 36016,
+      "state": "running",
+      "last_checkpoint_step": 1040,
+      "completed_this_launch": 486,
+      "elapsed_seconds": 30652.8586907
+    },
+    "training_wrapper": {
+      "state": "running",
+      "pid": 34388,
+      "command": [
+        "D:\\DEMO\\superembedding\\.venv\\Scripts\\python.exe",
+        "-u",
+        "scripts/train_general.py",
+        "--data",
+        "D:\\DEMO\\superembedding-storage\\superembedding\\v5\\data_v51",
+        "--output",
+        "D:\\DEMO\\superembedding-storage\\superembedding\\v5\\general_step556_continuation_v1",
+        "--steps",
+        "2000",
+        "--batch-size",
+        "16",
+        "--checkpoint-every",
+        "5",
+        "--validate-every",
+        "250",
+        "--milestone-every",
+        "500"
+      ],
+      "utc": "2026-10-12T06:10:27.551710+00:00",
+      "formal_selection_enabled": false
+    },
+    "cpu_queue": {
+      "state": "completed",
+      "models": [
+        "wemm2b",
+        "gme2b"
+      ]
+    },
+    "wemm": {
+      "state": "completed",
+      "pid": 39960,
+      "new_vectors": 3861,
+      "scope": "Seen diagnostic validation and ScienceQA. Restricted image budget; not paper headline reproduction."
+    },
+    "gme": {
+      "state": "completed",
+      "pid": 37196,
+      "new_vectors": 3861,
+      "scope": "Seen diagnostic validation and ScienceQA. Restricted image budget; not paper headline reproduction."
+    },
+    "official_vsr": {
+      "state": "screened_review_required",
+      "rows": 2195,
+      "quarantined_queries": 385,
+      "retained_queries_pending_scene_review": 1810
+    },
+    "frozen_control_queue": {
+      "state": "waiting_for_continuation",
+      "parent_state": "running",
+      "free_gpu_MiB": 2166,
+      "pid": 39600,
+      "stable_polls": 0,
+      "updates_planned": 2000,
+      "lrs": [
+        1e-05,
+        0.0001,
+        0.001
+      ]
+    }
+  },
+  "vector_counts": {
+    "wemm2b": 3864,
+    "gme2b": 3864
+  },
+  "pending": [
+    "VLM2Vec-V2: official 420 DoRA tensors inspected; Transformers 5 module mapping and forward equivalence still need verification.",
+    "Ovis: pinned repository has README only; downloaded checkpoint includes thinker/talker/token2wav. Native embedding preprocessing and memory-compatible loading remain to be verified.",
+    "Fresh official VSR: complete acquisition, input sealing and scene/crop review before inference. Filtered subset is not an official full-test score.",
+    "Fixed-terminal full LoRA+head roundtrip audit and cleared independent evaluation; validation best remains diagnostic.",
+    "Natural/compositional paired evidence, actual branch-count/decision-pretraining controls, training seeds, broader data and method experiments.",
+    "CUB/DTD/Fashion separate family leakage remediation, final data rights/model card/release audit."
+  ],
+  "whole_project_complete": false,
+  "git_publication_performed": false,
+  "checks_this_launch": "22 relevant existing pytest tests passed; both official baselines produced 3 real image-query vectors; frozen schedule preflight matched 556 historical sources and step60 RNG.",
+  "resume_commands": [
+    "python -B -u scripts/continue_step556.py",
+    "python -B -u scripts/run_paper_cpu_queue.py",
+    "python -B -u scripts/prepare_official_vsr_holdout_v2.py",
+    "python -B -u scripts/queue_frozen_after_continuation.py"
+  ],
+  "resume_note": "Dot-source scripts/use_d_storage.ps1 first; use project .venv. Do not start a second worker while its lock is held."
+}

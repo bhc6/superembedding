@@ -1,0 +1,116 @@
+{
+  "state": "migrated",
+  "total_bytes": 23418733859.0,
+  "roots": [
+    {
+      "source": "C:\\Users\\123\\.cache\\superembedding",
+      "destination": "D:\\DEMO\\superembedding-storage\\superembedding",
+      "files": 38458,
+      "bytes": 12634089755,
+      "sha256_verified": true,
+      "junction_verified": true,
+      "source_copy_removed": true
+    },
+    {
+      "source": "C:\\Users\\123\\.cache\\huggingface",
+      "destination": "D:\\DEMO\\superembedding-storage\\huggingface",
+      "files": 236,
+      "bytes": 3951276938,
+      "sha256_verified": true,
+      "junction_verified": true,
+      "source_copy_removed": true
+    },
+    {
+      "source": "C:\\Users\\123\\AppData\\Local\\pip\\Cache",
+      "destination": "D:\\DEMO\\superembedding-storage\\pip-cache",
+      "files": 2224,
+      "bytes": 1464677484,
+      "sha256_verified": true,
+      "junction_verified": true,
+      "source_copy_removed": true
+    },
+    {
+      "source": "C:\\Users\\123\\AppData\\Local\\uv\\cache",
+      "destination": "D:\\DEMO\\superembedding-storage\\uv-cache",
+      "files": 36628,
+      "bytes": 5368689682,
+      "sha256_verified": true,
+      "junction_verified": true,
+      "source_copy_removed": true
+    }
+  ],
+  "completed_utc": "2026-10-11T07:18:53.8854154Z",
+  "checkpoint_step": 205,
+  "optimizer_states": 304,
+  "implementation_hashes_unchanged": true,
+  "data_hash_unchanged": true,
+  "resumable_feature_shards": 615,
+  "legacy_image_path_resolves_to_D": true,
+  "HF_HOME": "D:\\DEMO\\superembedding-storage\\huggingface",
+  "temporary_directory": "D:\\DEMO\\superembedding-storage\\tmp",
+  "scope": "Storage relocation only; no training protocol or weights changed.",
+  "training_after_migration": {
+    "step": 207,
+    "source": "chart2text",
+    "loss": 1.417354941368103,
+    "lr": 9.929755957750016e-06,
+    "gradient_norm": 26.57360076904297,
+    "lora_probe_grad_norm": 0.15102225542068481,
+    "lora_probe_delta_from_launch": 1.8490944057703018e-05,
+    "gradient_replay_max_error": 0.0,
+    "seconds": 89.58775200000673,
+    "peak_allocated_MiB": 5257.9150390625,
+    "pid": 40056,
+    "state": "running",
+    "last_checkpoint_step": 205,
+    "completed_this_launch": 2,
+    "elapsed_seconds": 166.38423349999357
+  },
+  "features_after_migration": {
+    "state": "extracting",
+    "pid": 32860,
+    "last_index": 659,
+    "total": 1947,
+    "completed_this_launch": 45,
+    "seconds_this_launch": 188.1527397000027,
+    "last_pair_seconds": 3.5762035000079777
+  },
+  "resumed_and_progressing": true,
+  "cache_environment": {
+    "HF_HOME": "D:\\DEMO\\superembedding-storage\\huggingface",
+    "HF_HUB_CACHE": "D:\\DEMO\\superembedding-storage\\huggingface\\hub",
+    "HF_DATASETS_CACHE": "D:\\DEMO\\superembedding-storage\\huggingface\\datasets",
+    "TORCH_HOME": "D:\\DEMO\\superembedding-storage\\torch",
+    "PIP_CACHE_DIR": "D:\\DEMO\\superembedding-storage\\pip-cache",
+    "UV_CACHE_DIR": "D:\\DEMO\\superembedding-storage\\uv-cache",
+    "TEMP": "D:\\DEMO\\superembedding-storage\\tmp",
+    "TMP": "D:\\DEMO\\superembedding-storage\\tmp",
+    "TORCH_EXTENSIONS_DIR": "D:\\DEMO\\superembedding-storage\\torch-extensions"
+  },
+  "worker_environment": {
+    "training": {
+      "HF_HOME": "D:\\DEMO\\superembedding-storage\\huggingface",
+      "HF_HUB_CACHE": "D:\\DEMO\\superembedding-storage\\huggingface\\hub",
+      "HF_DATASETS_CACHE": "D:\\DEMO\\superembedding-storage\\huggingface\\datasets",
+      "TORCH_HOME": "D:\\DEMO\\superembedding-storage\\torch",
+      "PIP_CACHE_DIR": "D:\\DEMO\\superembedding-storage\\pip-cache",
+      "UV_CACHE_DIR": "D:\\DEMO\\superembedding-storage\\uv-cache",
+      "TEMP": "D:\\DEMO\\superembedding-storage\\tmp",
+      "TMP": "D:\\DEMO\\superembedding-storage\\tmp",
+      "TORCH_EXTENSIONS_DIR": "D:\\DEMO\\superembedding-storage\\torch-extensions"
+    },
+    "features": {
+      "HF_HOME": "D:\\DEMO\\superembedding-storage\\huggingface",
+      "HF_HUB_CACHE": "D:\\DEMO\\superembedding-storage\\huggingface\\hub",
+      "HF_DATASETS_CACHE": "D:\\DEMO\\superembedding-storage\\huggingface\\datasets",
+      "TORCH_HOME": "D:\\DEMO\\superembedding-storage\\torch",
+      "PIP_CACHE_DIR": "D:\\DEMO\\superembedding-storage\\pip-cache",
+      "UV_CACHE_DIR": "D:\\DEMO\\superembedding-storage\\uv-cache",
+      "TEMP": "D:\\DEMO\\superembedding-storage\\tmp",
+      "TMP": "D:\\DEMO\\superembedding-storage\\tmp",
+      "TORCH_EXTENSIONS_DIR": "D:\\DEMO\\superembedding-storage\\torch-extensions"
+    }
+  },
+  "C_free_bytes": 25889619968,
+  "D_free_bytes": 175604879360
+}

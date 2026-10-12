@@ -1,0 +1,190 @@
+{
+  "observed_utc": "2026-10-11T06:42:50.168983+00:00",
+  "sources": [
+    {
+      "id": "cauldron_card",
+      "url": "https://huggingface.co/datasets/HuggingFaceM4/the_cauldron/raw/847a98a779b1652d65111daf20c972dfcd333605/README.md",
+      "error_type": "ConnectError"
+    },
+    {
+      "id": "localized_narratives",
+      "url": "https://google.github.io/localized-narratives/",
+      "status": 200,
+      "resolved_url": "https://google.github.io/localized-narratives/",
+      "sha256": "45f3d3ec5a478f28a5fe645d916bc01eadbcf511f6868ce670599d6f800d89ee",
+      "license_excerpts": [
+        "    All the annotations available through this website are released under a <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\">CC BY 4.0</a> license.",
+        "          <a id=\"image-license\" target=\"_blank\">Image license</a>."
+      ]
+    },
+    {
+      "id": "textcaps",
+      "url": "https://textvqa.org/textcaps/",
+      "status": 200,
+      "resolved_url": "https://textvqa.org/textcaps/",
+      "sha256": "f38607977e76bf20e6ab98e4930514040a6c9f2a4cdaee916a980179bf2e071b",
+      "license_excerpts": []
+    },
+    {
+      "id": "screen2words_license",
+      "url": "https://raw.githubusercontent.com/google-research-datasets/screen2words/master/LICENSE",
+      "status": 404,
+      "resolved_url": "https://raw.githubusercontent.com/google-research-datasets/screen2words/master/LICENSE"
+    },
+    {
+      "id": "chart2text_readme",
+      "url": "https://raw.githubusercontent.com/vis-nlp/Chart-to-text/main/README.md",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/vis-nlp/Chart-to-text/main/README.md",
+      "sha256": "d4b3064b642acd63ac4cd56c21a21f8052ddbbb5031fbf58e8173bde6a4d5f39",
+      "license_excerpts": []
+    },
+    {
+      "id": "chartqa_readme",
+      "url": "https://raw.githubusercontent.com/vis-nlp/ChartQA/main/README.md",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/vis-nlp/ChartQA/main/README.md",
+      "sha256": "8379d8c2e3f7cde9e6c0b9c6183caafdf6b0cf268d9c0ad209f3b38c45f0023b",
+      "license_excerpts": []
+    },
+    {
+      "id": "clevr",
+      "url": "https://cs.stanford.edu/people/jcjohns/clevr/",
+      "status": 200,
+      "resolved_url": "https://cs.stanford.edu/people/jcjohns/clevr/",
+      "sha256": "242e393a82b537b199e0488c312b92e00e70bf9c25488b6ea079db6d794aeabb",
+      "license_excerpts": [
+        "        <a href='https://creativecommons.org/licenses/by/4.0/'>Creative Commons CC BY 4.0</a> license."
+      ]
+    },
+    {
+      "id": "vsr_readme",
+      "url": "https://raw.githubusercontent.com/cambridgeltl/visual-spatial-reasoning/main/README.md",
+      "status": 404,
+      "resolved_url": "https://raw.githubusercontent.com/cambridgeltl/visual-spatial-reasoning/main/README.md"
+    },
+    {
+      "id": "scienceqa_readme",
+      "url": "https://raw.githubusercontent.com/lupantech/ScienceQA/main/README.md",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/lupantech/ScienceQA/main/README.md",
+      "sha256": "281397769efd1a3aad6ad12a065e4344025525acd4e973f9d8a72a2994649580",
+      "license_excerpts": [
+        "## :warning: Licenses",
+        "[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)",
+        "This work is licensed under a [MIT License](http://creativecommons.org/licenses/by-nc-sa/4.0/).",
+        "[![CC BY-NC-SA 4.0 license](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+        "The **ScienceQA** dataset is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)."
+      ]
+    },
+    {
+      "id": "docvqa",
+      "url": "https://www.docvqa.org/datasets/docvqa",
+      "status": 200,
+      "resolved_url": "https://www.docvqa.org/datasets/docvqa",
+      "sha256": "4d701c8473a6b8e50009bd29f35bf13375968ba3359d00c710d885e38f9eeb68",
+      "license_excerpts": []
+    },
+    {
+      "id": "screen2words_readme",
+      "url": "https://raw.githubusercontent.com/google-research-datasets/screen2words/main/README.md",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/google-research-datasets/screen2words/main/README.md",
+      "sha256": "8be66dc5a3907e0e84993a66679416d928ed1a32aae70db8bb0e0f771c7a8715",
+      "license_excerpts": []
+    },
+    {
+      "id": "screen2words_license_main",
+      "url": "https://raw.githubusercontent.com/google-research-datasets/screen2words/main/LICENSE",
+      "status": 404,
+      "resolved_url": "https://raw.githubusercontent.com/google-research-datasets/screen2words/main/LICENSE"
+    },
+    {
+      "id": "vsr_readme_master",
+      "url": "https://raw.githubusercontent.com/cambridgeltl/visual-spatial-reasoning/master/README.md",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/cambridgeltl/visual-spatial-reasoning/master/README.md",
+      "sha256": "7265fa1077f9a454e119ea08a1bda4e07334d61a2edd56feba216ba9e990f3d8",
+      "license_excerpts": [
+        "### License",
+        "This project is licensed under the [Apache-2.0 License](https://github.com/cambridgeltl/visual-spatial-reasoning/blob/master/LICENSE)."
+      ]
+    },
+    {
+      "id": "vsr_license",
+      "url": "https://raw.githubusercontent.com/cambridgeltl/visual-spatial-reasoning/master/LICENSE",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/cambridgeltl/visual-spatial-reasoning/master/LICENSE",
+      "sha256": "8b80649fd4d7e5eec9201159e418a324f42edba5d2f6e46b16f5b17747b8f1c9",
+      "license_excerpts": [
+        "                                 Apache License"
+      ]
+    },
+    {
+      "id": "chartqa_license",
+      "url": "https://raw.githubusercontent.com/vis-nlp/ChartQA/main/LICENSE",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/vis-nlp/ChartQA/main/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "license_excerpts": [
+        "                    GNU GENERAL PUBLIC LICENSE"
+      ]
+    },
+    {
+      "id": "chart2text_license",
+      "url": "https://raw.githubusercontent.com/vis-nlp/Chart-to-text/main/LICENSE",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/vis-nlp/Chart-to-text/main/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "license_excerpts": [
+        "                    GNU GENERAL PUBLIC LICENSE"
+      ]
+    },
+    {
+      "id": "textcaps_download",
+      "url": "https://textvqa.org/textcaps/download/",
+      "status": 200,
+      "resolved_url": "https://textvqa.org/textcaps/download/",
+      "sha256": "f38607977e76bf20e6ab98e4930514040a6c9f2a4cdaee916a980179bf2e071b",
+      "license_excerpts": []
+    },
+    {
+      "id": "ai2d_readme",
+      "url": "https://raw.githubusercontent.com/allenai/ai2d/master/README.md",
+      "status": 404,
+      "resolved_url": "https://raw.githubusercontent.com/allenai/ai2d/master/README.md"
+    },
+    {
+      "id": "cauldron_card_retry",
+      "url": "https://huggingface.co/datasets/HuggingFaceM4/the_cauldron/raw/847a98a779b1652d65111daf20c972dfcd333605/README.md",
+      "status": 200,
+      "resolved_url": "https://huggingface.co/datasets/HuggingFaceM4/the_cauldron/raw/847a98a779b1652d65111daf20c972dfcd333605/README.md",
+      "sha256": "c12cf33570dd437c381c34d3434e88eabe1d1cc90310b83c4afbea67aa1a95fb",
+      "license_excerpts": [
+        "  copyright = {Creative Commons Attribution Share Alike 4.0 International}",
+        "Each of the publicly available sub-datasets present in the Cauldron are governed by specific licensing conditions. Therefore, when making use of them you must take into consideration each of the licenses governing each dataset.",
+        "To the extent we have any rights in the prompts, these are licensed under CC-BY-4.0."
+      ]
+    }
+  ],
+  "local_model_licenses": [
+    {
+      "path": "models/OmniJev-0.8B-v1.1/LICENSE",
+      "sha256": "c35d34d2a8cc22ca043ecaf7989586960c9305d45a9ec81ff839b736a3ffbd21"
+    },
+    {
+      "path": "models/Qwen3.5-0.8B/LICENSE",
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+    }
+  ],
+  "scope": "Primary-source retrieval audit, incomplete; website JavaScript license banners excluded from dataset conclusions.",
+  "unresolved": [
+    "TextCaps images and annotations",
+    "RICO/Screen2Words",
+    "DocVQA",
+    "AI2D",
+    "third-party chart/image rights"
+  ],
+  "raw_upstream_images_in_release": false,
+  "raw_upstream_annotations_in_rebuild_manifest": false
+}

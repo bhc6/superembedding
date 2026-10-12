@@ -13,6 +13,7 @@ import sys
 import httpx
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT))
 
 
 def main():
@@ -24,6 +25,8 @@ def main():
     ap.add_argument('--record',default='runs/github_publication.json')
     ap.add_argument('--upload-workers',type=int,default=1)
     args=ap.parse_args()
+    from superembedding.leakage_guard import require_promotion_clearance
+    require_promotion_clearance()
     if args.upload_workers not in (1,2,3): raise ValueError('Use one to three upload workers')
     credential=subprocess.run(['git','credential','fill'],input='protocol=https\nhost=github.com\n\n',
         text=True,capture_output=True,check=True,env={**os.environ,'GIT_TERMINAL_PROMPT':'0','GCM_INTERACTIVE':'never'})

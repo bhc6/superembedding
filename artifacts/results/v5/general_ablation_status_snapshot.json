@@ -1,0 +1,12 @@
+{
+  "pipeline": {
+    "state": "completed",
+    "stages": 3,
+    "publication": "not submitted"
+  },
+  "features": {
+    "state": "completed",
+    "pairs": 1947,
+    "fingerprint": "4cc925e8b11347416cdf6d731ab51e079b469e27cbb0e3fee0f42f796a911053"
+  }
+}

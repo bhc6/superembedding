@@ -1,0 +1,650 @@
+{
+  "dataset_sha256": "998427f3c4f808df7ccc2f4c5723dcf2c7409395ebaefc74b09b7ba283de30a2",
+  "result_sha256": {
+    "qwen3_vl": "84622401ad7d7e6500a8a75585b09af28dd70385acf3af0b1c8116c9b4ad73f1",
+    "clip_b32": "858a86c51a6ed062162005b9c3194181feda5721ec8c5131dd9306aaadb148f8",
+    "siglip2_b16": "0cce472d604245cabbd5510b67ecdb0d53f44f2fdfa7c7c692213f37508d90d4",
+    "flair_global": "0711063033acc792e63b9777665eb7b03febea480daba9c75d9d6280599d0a40",
+    "flair_native": "eaecc843a12aed0a500aac795c7fed082f2cf7bdea4b80f323e550144164f05b"
+  },
+  "reference": "qwen3_vl",
+  "scene_groups": 64,
+  "cases": 256,
+  "bootstrap_replicates": 10000,
+  "seed": 20261011,
+  "metrics": {
+    "color": {
+      "anchor_preference": {
+        "qwen3_vl": {
+          "rate": 0.953125,
+          "cluster_bootstrap_95": [
+            0.890625,
+            1.0
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.953125,
+          "cluster_bootstrap_95": [
+            0.890625,
+            1.0
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            -0.046875,
+            0.046875
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 1.0,
+          "cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "minus_reference": 0.046875,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.109375
+          ]
+        },
+        "flair_global": {
+          "rate": 1.0,
+          "cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "minus_reference": 0.046875,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.109375
+          ]
+        },
+        "flair_native": {
+          "rate": 1.0,
+          "cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "minus_reference": 0.046875,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.109375
+          ]
+        }
+      },
+      "robust_both_preference": {
+        "qwen3_vl": {
+          "rate": 0.90625,
+          "cluster_bootstrap_95": [
+            0.828125,
+            0.96875
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.6875,
+          "cluster_bootstrap_95": [
+            0.578125,
+            0.796875
+          ],
+          "minus_reference": -0.21875,
+          "paired_cluster_bootstrap_95": [
+            -0.328125,
+            -0.125
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 0.859375,
+          "cluster_bootstrap_95": [
+            0.765625,
+            0.9375
+          ],
+          "minus_reference": -0.046875,
+          "paired_cluster_bootstrap_95": [
+            -0.109375,
+            0.0
+          ]
+        },
+        "flair_global": {
+          "rate": 0.84375,
+          "cluster_bootstrap_95": [
+            0.75,
+            0.921875
+          ],
+          "minus_reference": -0.0625,
+          "paired_cluster_bootstrap_95": [
+            -0.15625,
+            0.03125
+          ]
+        },
+        "flair_native": {
+          "rate": 0.84375,
+          "cluster_bootstrap_95": [
+            0.75,
+            0.921875
+          ],
+          "minus_reference": -0.0625,
+          "paired_cluster_bootstrap_95": [
+            -0.15625,
+            0.03125
+          ]
+        }
+      }
+    },
+    "number": {
+      "anchor_preference": {
+        "qwen3_vl": {
+          "rate": 1.0,
+          "cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.796875,
+          "cluster_bootstrap_95": [
+            0.6875,
+            0.890625
+          ],
+          "minus_reference": -0.203125,
+          "paired_cluster_bootstrap_95": [
+            -0.3125,
+            -0.109375
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 1.0,
+          "cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "flair_global": {
+          "rate": 0.65625,
+          "cluster_bootstrap_95": [
+            0.5464843750000004,
+            0.765625
+          ],
+          "minus_reference": -0.34375,
+          "paired_cluster_bootstrap_95": [
+            -0.45351562499999964,
+            -0.234375
+          ]
+        },
+        "flair_native": {
+          "rate": 0.734375,
+          "cluster_bootstrap_95": [
+            0.625,
+            0.828125
+          ],
+          "minus_reference": -0.265625,
+          "paired_cluster_bootstrap_95": [
+            -0.375,
+            -0.171875
+          ]
+        }
+      },
+      "robust_both_preference": {
+        "qwen3_vl": {
+          "rate": 0.984375,
+          "cluster_bootstrap_95": [
+            0.953125,
+            1.0
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.234375,
+          "cluster_bootstrap_95": [
+            0.140625,
+            0.34375
+          ],
+          "minus_reference": -0.75,
+          "paired_cluster_bootstrap_95": [
+            -0.859375,
+            -0.640625
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 1.0,
+          "cluster_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "minus_reference": 0.015625,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.046875
+          ]
+        },
+        "flair_global": {
+          "rate": 0.5,
+          "cluster_bootstrap_95": [
+            0.375,
+            0.625
+          ],
+          "minus_reference": -0.484375,
+          "paired_cluster_bootstrap_95": [
+            -0.609375,
+            -0.359375
+          ]
+        },
+        "flair_native": {
+          "rate": 0.46875,
+          "cluster_bootstrap_95": [
+            0.34375,
+            0.59375
+          ],
+          "minus_reference": -0.515625,
+          "paired_cluster_bootstrap_95": [
+            -0.640625,
+            -0.390625
+          ]
+        }
+      }
+    },
+    "position": {
+      "anchor_preference": {
+        "qwen3_vl": {
+          "rate": 0.40625,
+          "cluster_bootstrap_95": [
+            0.296875,
+            0.53125
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.390625,
+          "cluster_bootstrap_95": [
+            0.28085937500000036,
+            0.515625
+          ],
+          "minus_reference": -0.015625,
+          "paired_cluster_bootstrap_95": [
+            -0.125,
+            0.09375
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 0.671875,
+          "cluster_bootstrap_95": [
+            0.546875,
+            0.78125
+          ],
+          "minus_reference": 0.265625,
+          "paired_cluster_bootstrap_95": [
+            0.046875,
+            0.46875
+          ]
+        },
+        "flair_global": {
+          "rate": 0.546875,
+          "cluster_bootstrap_95": [
+            0.421875,
+            0.671875
+          ],
+          "minus_reference": 0.140625,
+          "paired_cluster_bootstrap_95": [
+            -0.015625,
+            0.296875
+          ]
+        },
+        "flair_native": {
+          "rate": 0.484375,
+          "cluster_bootstrap_95": [
+            0.359375,
+            0.609375
+          ],
+          "minus_reference": 0.078125,
+          "paired_cluster_bootstrap_95": [
+            -0.109375,
+            0.265625
+          ]
+        }
+      },
+      "robust_both_preference": {
+        "qwen3_vl": {
+          "rate": 0.265625,
+          "cluster_bootstrap_95": [
+            0.15625,
+            0.375
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.21875,
+          "cluster_bootstrap_95": [
+            0.125,
+            0.328125
+          ],
+          "minus_reference": -0.046875,
+          "paired_cluster_bootstrap_95": [
+            -0.171875,
+            0.0625
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 0.5625,
+          "cluster_bootstrap_95": [
+            0.4375,
+            0.6875
+          ],
+          "minus_reference": 0.296875,
+          "paired_cluster_bootstrap_95": [
+            0.09375,
+            0.484375
+          ]
+        },
+        "flair_global": {
+          "rate": 0.28125,
+          "cluster_bootstrap_95": [
+            0.171875,
+            0.390625
+          ],
+          "minus_reference": 0.015625,
+          "paired_cluster_bootstrap_95": [
+            -0.140625,
+            0.171875
+          ]
+        },
+        "flair_native": {
+          "rate": 0.28125,
+          "cluster_bootstrap_95": [
+            0.171875,
+            0.390625
+          ],
+          "minus_reference": 0.015625,
+          "paired_cluster_bootstrap_95": [
+            -0.140625,
+            0.171875
+          ]
+        }
+      }
+    },
+    "shape": {
+      "anchor_preference": {
+        "qwen3_vl": {
+          "rate": 0.796875,
+          "cluster_bootstrap_95": [
+            0.6875,
+            0.890625
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.703125,
+          "cluster_bootstrap_95": [
+            0.59375,
+            0.8125
+          ],
+          "minus_reference": -0.09375,
+          "paired_cluster_bootstrap_95": [
+            -0.203125,
+            0.03125
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 0.84375,
+          "cluster_bootstrap_95": [
+            0.75,
+            0.921875
+          ],
+          "minus_reference": 0.046875,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.109375
+          ]
+        },
+        "flair_global": {
+          "rate": 0.71875,
+          "cluster_bootstrap_95": [
+            0.609375,
+            0.828125
+          ],
+          "minus_reference": -0.078125,
+          "paired_cluster_bootstrap_95": [
+            -0.21875,
+            0.0625
+          ]
+        },
+        "flair_native": {
+          "rate": 0.796875,
+          "cluster_bootstrap_95": [
+            0.6875,
+            0.890625
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            -0.125,
+            0.125
+          ]
+        }
+      },
+      "robust_both_preference": {
+        "qwen3_vl": {
+          "rate": 0.703125,
+          "cluster_bootstrap_95": [
+            0.59375,
+            0.8125
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.484375,
+          "cluster_bootstrap_95": [
+            0.359375,
+            0.609375
+          ],
+          "minus_reference": -0.21875,
+          "paired_cluster_bootstrap_95": [
+            -0.34375,
+            -0.109375
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 0.75,
+          "cluster_bootstrap_95": [
+            0.640625,
+            0.859375
+          ],
+          "minus_reference": 0.046875,
+          "paired_cluster_bootstrap_95": [
+            -0.015625,
+            0.125
+          ]
+        },
+        "flair_global": {
+          "rate": 0.625,
+          "cluster_bootstrap_95": [
+            0.5,
+            0.734375
+          ],
+          "minus_reference": -0.078125,
+          "paired_cluster_bootstrap_95": [
+            -0.1875,
+            0.046875
+          ]
+        },
+        "flair_native": {
+          "rate": 0.703125,
+          "cluster_bootstrap_95": [
+            0.59375,
+            0.8125
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            -0.109375,
+            0.125
+          ]
+        }
+      }
+    },
+    "macro_all_attributes": {
+      "anchor_preference": {
+        "qwen3_vl": {
+          "rate": 0.7890625,
+          "cluster_bootstrap_95": [
+            0.7421875,
+            0.8359375
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.7109375,
+          "cluster_bootstrap_95": [
+            0.65625,
+            0.765625
+          ],
+          "minus_reference": -0.078125,
+          "paired_cluster_bootstrap_95": [
+            -0.12890625,
+            -0.02734375
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 0.87890625,
+          "cluster_bootstrap_95": [
+            0.84375,
+            0.9140625
+          ],
+          "minus_reference": 0.08984375,
+          "paired_cluster_bootstrap_95": [
+            0.03125,
+            0.14453125
+          ]
+        },
+        "flair_global": {
+          "rate": 0.73046875,
+          "cluster_bootstrap_95": [
+            0.67578125,
+            0.78125
+          ],
+          "minus_reference": -0.05859375,
+          "paired_cluster_bootstrap_95": [
+            -0.12109375,
+            0.0078125
+          ]
+        },
+        "flair_native": {
+          "rate": 0.75390625,
+          "cluster_bootstrap_95": [
+            0.703125,
+            0.8046875
+          ],
+          "minus_reference": -0.03515625,
+          "paired_cluster_bootstrap_95": [
+            -0.10546875,
+            0.03515625
+          ]
+        }
+      },
+      "robust_both_preference": {
+        "qwen3_vl": {
+          "rate": 0.71484375,
+          "cluster_bootstrap_95": [
+            0.66796875,
+            0.76171875
+          ],
+          "minus_reference": 0.0,
+          "paired_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "clip_b32": {
+          "rate": 0.40625,
+          "cluster_bootstrap_95": [
+            0.3515625,
+            0.4609375
+          ],
+          "minus_reference": -0.30859375,
+          "paired_cluster_bootstrap_95": [
+            -0.37109375,
+            -0.24609375
+          ]
+        },
+        "siglip2_b16": {
+          "rate": 0.79296875,
+          "cluster_bootstrap_95": [
+            0.74609375,
+            0.8360351562499986
+          ],
+          "minus_reference": 0.078125,
+          "paired_cluster_bootstrap_95": [
+            0.0234375,
+            0.1328125
+          ]
+        },
+        "flair_global": {
+          "rate": 0.5625,
+          "cluster_bootstrap_95": [
+            0.49609375,
+            0.625
+          ],
+          "minus_reference": -0.15234375,
+          "paired_cluster_bootstrap_95": [
+            -0.23046875,
+            -0.078125
+          ]
+        },
+        "flair_native": {
+          "rate": 0.57421875,
+          "cluster_bootstrap_95": [
+            0.51171875,
+            0.6328125
+          ],
+          "minus_reference": -0.140625,
+          "paired_cluster_bootstrap_95": [
+            -0.21484375,
+            -0.06640625
+          ]
+        }
+      }
+    }
+  },
+  "scope": "Exploratory diagnostic; percentile intervals are marginal, not multiplicity-adjusted; no architecture selection.",
+  "dependence": "Resample complete scenes, preserving paired models and all four interventions.",
+  "position_caveat": "Swaps both A/B positions; pooled macro is descriptive, not one homogeneous causal intervention."
+}

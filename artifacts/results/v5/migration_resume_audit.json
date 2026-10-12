@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "active_run": "C:\\Users\\123\\.cache\\superembedding\\v5\\general_stage1_v51",
+  "parent_step": 60,
+  "persisted_child_step": 65,
+  "model_tensors": 304,
+  "optimizer_states": 304,
+  "optimizer_steps": [
+    65.0
+  ],
+  "validation": {
+    "chart2text": {
+      "queries": 80,
+      "distinct_positive_keys": 80
+    },
+    "chartqa": {
+      "queries": 65,
+      "distinct_positive_keys": 63
+    },
+    "clevr": {
+      "queries": 117,
+      "distinct_positive_keys": 18
+    },
+    "docvqa": {
+      "queries": 96,
+      "distinct_positive_keys": 94
+    },
+    "localized_narratives": {
+      "queries": 110,
+      "distinct_positive_keys": 110
+    },
+    "screen2words": {
+      "queries": 100,
+      "distinct_positive_keys": 100
+    },
+    "textcaps": {
+      "queries": 82,
+      "distinct_positive_keys": 82
+    },
+    "vsr": {
+      "queries": 110,
+      "distinct_positive_keys": 2
+    }
+  },
+  "full_validation_queries": 760,
+  "implementation_snapshot_verified": true,
+  "lineage_verified": true,
+  "scope": "Read-only post-migration checkpoint audit; validation scores not computed here"
+}
